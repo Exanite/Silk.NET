@@ -734,8 +734,8 @@
             },
             "output": {
                 "path": "src/Vulkan",
-                "licenseFile": "license_header.txt",
-                "props": "msbuild.props"
+                "licenseFile": "build/LICENSE_HEADER.txt",
+                "props": "build/props/bindings.props"
             },
             "prefix": "Vma",
             "namespace": "Silk.NET.Vulkan.Vma",
