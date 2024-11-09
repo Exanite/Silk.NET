@@ -751,7 +751,7 @@
             },
             "typeMaps": [
                 {
-                    "$include.commonTypeMap": "csharp_typemap.json"
+                    "$include.commonTypeMap": "build/csharp_typemap.json"
                 }
             ]
         },
