@@ -705,7 +705,7 @@
         {
             "profileName": "VulkanMemoryAllocator",
             "sources": [
-                "src/Vulkan/vulkan_vma.h"
+                "src/Vulkan/vk_vma.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
@@ -722,18 +722,18 @@
                 ],
                 "traverse": [],
                 "classes": {
-                    "vulkan_vma.h": "[Core]Vma"
+                    "vk_vma.h": "[Core]Vma"
                 }
             },
             "exclude": [],
             "rename": {},
             "bakery": {
                 "profileNames": [
-                    "vulkan_vma"
+                    "vk_vma"
                 ]
             },
             "output": {
-                "path": "projects",
+                "path": "src/Vulkan",
                 "licenseFile": "license_header.txt",
                 "props": "msbuild.props"
             },
