@@ -12,15 +12,6 @@ namespace Silk.NET.Vulkan.Vma
     [NativeName("Name", "VmaDefragmentationMoveOperation")]
     public enum DefragmentationMoveOperation : int
     {
-        [Obsolete("Deprecated in favour of \"Copy\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_MOVE_OPERATION_COPY")]
-        DefragmentationMoveOperationCopy = 0x0,
-        [Obsolete("Deprecated in favour of \"Ignore\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_MOVE_OPERATION_IGNORE")]
-        DefragmentationMoveOperationIgnore = 0x1,
-        [Obsolete("Deprecated in favour of \"Destroy\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_MOVE_OPERATION_DESTROY")]
-        DefragmentationMoveOperationDestroy = 0x2,
         [NativeName("Name", "VMA_DEFRAGMENTATION_MOVE_OPERATION_COPY")]
         Copy = 0x0,
         [NativeName("Name", "VMA_DEFRAGMENTATION_MOVE_OPERATION_IGNORE")]

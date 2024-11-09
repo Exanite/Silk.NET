@@ -15,24 +15,6 @@ namespace Silk.NET.Vulkan.Vma
     {
         [NativeName("Name", "")]
         None = 0,
-        [Obsolete("Deprecated in favour of \"AlgorithmFastBit\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_ALGORITHM_FAST_BIT")]
-        DefragmentationFlagAlgorithmFastBit = 0x1,
-        [Obsolete("Deprecated in favour of \"AlgorithmBalancedBit\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_ALGORITHM_BALANCED_BIT")]
-        DefragmentationFlagAlgorithmBalancedBit = 0x2,
-        [Obsolete("Deprecated in favour of \"AlgorithmFullBit\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_ALGORITHM_FULL_BIT")]
-        DefragmentationFlagAlgorithmFullBit = 0x4,
-        [Obsolete("Deprecated in favour of \"AlgorithmExtensiveBit\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_ALGORITHM_EXTENSIVE_BIT")]
-        DefragmentationFlagAlgorithmExtensiveBit = 0x8,
-        [Obsolete("Deprecated in favour of \"AlgorithmMask\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_ALGORITHM_MASK")]
-        DefragmentationFlagAlgorithmMask = 0xF,
-        [Obsolete("Deprecated in favour of \"BitsMaxEnum\"")]
-        [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_BITS_MAX_ENUM")]
-        DefragmentationFlagBitsMaxEnum = 0x7FFFFFFF,
         [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_ALGORITHM_FAST_BIT")]
         AlgorithmFastBit = 0x1,
         [NativeName("Name", "VMA_DEFRAGMENTATION_FLAG_ALGORITHM_BALANCED_BIT")]
