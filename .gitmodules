@@ -55,3 +55,6 @@
 [submodule "build/submodules/openal-soft"]
 	path = build/submodules/openal-soft
 	url = https://github.com/kcat/openal-soft
+[submodule "build/submodules/VulkanMemoryAllocator"]
+	path = build/submodules/VulkanMemoryAllocator
+	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
