@@ -65,7 +65,7 @@ partial class Build
         var pushableToken = EnvironmentInfo.GetVariable<string>("PUSHABLE_GITHUB_TOKEN");
         var curBranch = GitCurrentBranch(RootDirectory);
         if (!string.IsNullOrWhiteSpace(pushableToken) &&
-            GitHubActions.Instance?.Repository == "dotnet/Silk.NET" &&
+            GitHubActions.Instance?.Repository == "Exanite/Silk.NET" &&
             curBranch != "HEAD" &&
             !string.IsNullOrWhiteSpace(curBranch))
         {
@@ -110,7 +110,7 @@ partial class Build
                     );
 
                     var pr = github.PullRequest.Create
-                            ("dotnet", "Silk.NET", new($"Regenerate bindings as of {DateTime.UtcNow:dd/MM/yyyy}", newBranch, curBranch))
+                            ("Exanite", "Silk.NET", new($"Regenerate bindings as of {DateTime.UtcNow:dd/MM/yyyy}", newBranch, curBranch))
                         .GetAwaiter()
                         .GetResult();
                 }
