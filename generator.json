@@ -710,7 +710,9 @@
             "mode": "Clang",
             "cacheDir": "build/cache",
             "cacheKey": "vulkan_vma",
-            "controlDescriptors": [""],
+            "controlDescriptors": [
+                "no-pre-2.18-obsolete-enums",
+            ],
             "converter": {},
             "clang": {
                 "args": [
