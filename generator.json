@@ -703,6 +703,59 @@
             ]
         },
         {
+            "profileName": "VulkanMemoryAllocator",
+            "sources": [
+                "src/Vulkan/vulkan_vma.h"
+            ],
+            "mode": "Clang",
+            "cacheDir": "build/cache",
+            "cacheKey": "vulkan_vma",
+            "controlDescriptors": [""],
+            "converter": {},
+            "clang": {
+                "args": [
+                    "--language=c++",
+                    "--std=c++17",
+                    "-m64",
+                    "-Ibuild/submodules/VulkanMemoryAllocator/include",
+                    "-Ibuild/submodules/Vulkan-Headers/include",
+                ],
+                "traverse": [],
+                "classes": {
+                    "vulkan_vma.h": "[Core]Vma"
+                }
+            },
+            "exclude": [],
+            "rename": {},
+            "bakery": {
+                "profileNames": [
+                    "vulkan_vma"
+                ]
+            },
+            "output": {
+                "path": "projects",
+                "licenseFile": "license_header.txt",
+                "props": "msbuild.props"
+            },
+            "prefix": "Vma",
+            "namespace": "Silk.NET.Vulkan.Vma",
+            "extensionsNamespace": "Silk.NET.Vulkan.Vma.Extensions",
+            "nameContainer": {
+                "linux-x64": "libvma.so",
+                "win-x64": "vma.dll",
+                "win-x86": "vma.dll",
+                "osx-x64": "libvma.dylib",
+                "android": "libvma.so",
+                "iOS": "libvma.dylib",
+                "className": "VulkanMemoryAllocatorLibraryNameContainer"
+            },
+            "typeMaps": [
+                {
+                    "$include.commonTypeMap": "csharp_typemap.json"
+                }
+            ]
+        },
+        {
             "profileName": "Assimp",
             "sources": [
                 "src/Assimp/Include/assimp.h"
