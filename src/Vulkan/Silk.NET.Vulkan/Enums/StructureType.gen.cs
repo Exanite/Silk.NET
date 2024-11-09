@@ -1918,6 +1918,10 @@ namespace Silk.NET.Vulkan
         PhysicalDeviceDepthClampControlFeaturesExt = 1000582000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_DEPTH_CLAMP_CONTROL_CREATE_INFO_EXT")]
         PipelineViewportDepthClampControlCreateInfoExt = 1000582001,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_HDR_VIVID_FEATURES_HUAWEI")]
+        PhysicalDeviceHdrVividFeaturesHuawei = 1000590000,
+        [NativeName("Name", "VK_STRUCTURE_TYPE_HDR_VIVID_DYNAMIC_METADATA_HUAWEI")]
+        HdrVividDynamicMetadataHuawei = 1000590001,
         [NativeName("Name", "VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_COOPERATIVE_MATRIX_2_FEATURES_NV")]
         PhysicalDeviceCooperativeMatrix2FeaturesNV = 1000593000,
         [NativeName("Name", "VK_STRUCTURE_TYPE_COOPERATIVE_MATRIX_FLEXIBLE_DIMENSIONS_PROPERTIES_NV")]

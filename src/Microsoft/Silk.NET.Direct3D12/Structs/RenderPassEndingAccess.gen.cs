@@ -23,8 +23,7 @@ namespace Silk.NET.Direct3D12
         (
             RenderPassEndingAccessType? type = null,
             RenderPassEndingAccessUnion? anonymous = null,
-            RenderPassEndingAccessResolveParameters? resolve = null,
-            RenderPassEndingAccessPreserveLocalParameters? preserveLocal = null
+            RenderPassEndingAccessResolveParameters? resolve = null
         ) : this()
         {
             if (type is not null)
@@ -41,11 +40,6 @@ namespace Silk.NET.Direct3D12
             {
                 Resolve = resolve.Value;
             }
-
-            if (preserveLocal is not null)
-            {
-                PreserveLocal = preserveLocal.Value;
-            }
         }
 
 
@@ -55,7 +49,7 @@ namespace Silk.NET.Direct3D12
         public RenderPassEndingAccessType Type;
 
         [NativeName("Type", "")]
-        [NativeName("Type.Name", "__AnonymousRecord_d3d12_L20724_C5")]
+        [NativeName("Type.Name", "__AnonymousRecord_d3d12_L18998_C5")]
         [NativeName("Name", "anonymous1")]
         public RenderPassEndingAccessUnion Anonymous;
 #if NETSTANDARD2_1 || NETCOREAPP3_1 || NET5_0 || NET5_0_OR_GREATER
@@ -69,20 +63,6 @@ namespace Silk.NET.Direct3D12
         {
             get => Anonymous.Resolve;
             set => Anonymous.Resolve = value;
-        }
-#endif
-
-#if NETSTANDARD2_1 || NETCOREAPP3_1 || NET5_0 || NET5_0_OR_GREATER
-        public ref RenderPassEndingAccessPreserveLocalParameters PreserveLocal
-        {
-            [MethodImpl((MethodImplOptions) 768)]
-            get => ref MemoryMarshal.CreateSpan(ref Anonymous, 1)[0].PreserveLocal;
-        }
-#else
-        public RenderPassEndingAccessPreserveLocalParameters PreserveLocal
-        {
-            get => Anonymous.PreserveLocal;
-            set => Anonymous.PreserveLocal = value;
         }
 #endif
 

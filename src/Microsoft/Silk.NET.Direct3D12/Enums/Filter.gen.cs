@@ -36,9 +36,6 @@ namespace Silk.NET.Direct3D12
         [Obsolete("Deprecated in favour of \"MinMagMipLinear\"")]
         [NativeName("Name", "D3D12_FILTER_MIN_MAG_MIP_LINEAR")]
         FilterMinMagMipLinear = 0x15,
-        [Obsolete("Deprecated in favour of \"MinMagAnisotropicMipPoint\"")]
-        [NativeName("Name", "D3D12_FILTER_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        FilterMinMagAnisotropicMipPoint = 0x54,
         [Obsolete("Deprecated in favour of \"Anisotropic\"")]
         [NativeName("Name", "D3D12_FILTER_ANISOTROPIC")]
         FilterAnisotropic = 0x55,
@@ -66,9 +63,6 @@ namespace Silk.NET.Direct3D12
         [Obsolete("Deprecated in favour of \"ComparisonMinMagMipLinear\"")]
         [NativeName("Name", "D3D12_FILTER_COMPARISON_MIN_MAG_MIP_LINEAR")]
         FilterComparisonMinMagMipLinear = 0x95,
-        [Obsolete("Deprecated in favour of \"ComparisonMinMagAnisotropicMipPoint\"")]
-        [NativeName("Name", "D3D12_FILTER_COMPARISON_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        FilterComparisonMinMagAnisotropicMipPoint = 0xD4,
         [Obsolete("Deprecated in favour of \"ComparisonAnisotropic\"")]
         [NativeName("Name", "D3D12_FILTER_COMPARISON_ANISOTROPIC")]
         FilterComparisonAnisotropic = 0xD5,
@@ -96,9 +90,6 @@ namespace Silk.NET.Direct3D12
         [Obsolete("Deprecated in favour of \"MinimumMinMagMipLinear\"")]
         [NativeName("Name", "D3D12_FILTER_MINIMUM_MIN_MAG_MIP_LINEAR")]
         FilterMinimumMinMagMipLinear = 0x115,
-        [Obsolete("Deprecated in favour of \"MinimumMinMagAnisotropicMipPoint\"")]
-        [NativeName("Name", "D3D12_FILTER_MINIMUM_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        FilterMinimumMinMagAnisotropicMipPoint = 0x154,
         [Obsolete("Deprecated in favour of \"MinimumAnisotropic\"")]
         [NativeName("Name", "D3D12_FILTER_MINIMUM_ANISOTROPIC")]
         FilterMinimumAnisotropic = 0x155,
@@ -126,9 +117,6 @@ namespace Silk.NET.Direct3D12
         [Obsolete("Deprecated in favour of \"MaximumMinMagMipLinear\"")]
         [NativeName("Name", "D3D12_FILTER_MAXIMUM_MIN_MAG_MIP_LINEAR")]
         FilterMaximumMinMagMipLinear = 0x195,
-        [Obsolete("Deprecated in favour of \"MaximumMinMagAnisotropicMipPoint\"")]
-        [NativeName("Name", "D3D12_FILTER_MAXIMUM_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        FilterMaximumMinMagAnisotropicMipPoint = 0x1D4,
         [Obsolete("Deprecated in favour of \"MaximumAnisotropic\"")]
         [NativeName("Name", "D3D12_FILTER_MAXIMUM_ANISOTROPIC")]
         FilterMaximumAnisotropic = 0x1D5,
@@ -148,8 +136,6 @@ namespace Silk.NET.Direct3D12
         MinMagLinearMipPoint = 0x14,
         [NativeName("Name", "D3D12_FILTER_MIN_MAG_MIP_LINEAR")]
         MinMagMipLinear = 0x15,
-        [NativeName("Name", "D3D12_FILTER_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        MinMagAnisotropicMipPoint = 0x54,
         [NativeName("Name", "D3D12_FILTER_ANISOTROPIC")]
         Anisotropic = 0x55,
         [NativeName("Name", "D3D12_FILTER_COMPARISON_MIN_MAG_MIP_POINT")]
@@ -168,8 +154,6 @@ namespace Silk.NET.Direct3D12
         ComparisonMinMagLinearMipPoint = 0x94,
         [NativeName("Name", "D3D12_FILTER_COMPARISON_MIN_MAG_MIP_LINEAR")]
         ComparisonMinMagMipLinear = 0x95,
-        [NativeName("Name", "D3D12_FILTER_COMPARISON_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        ComparisonMinMagAnisotropicMipPoint = 0xD4,
         [NativeName("Name", "D3D12_FILTER_COMPARISON_ANISOTROPIC")]
         ComparisonAnisotropic = 0xD5,
         [NativeName("Name", "D3D12_FILTER_MINIMUM_MIN_MAG_MIP_POINT")]
@@ -188,8 +172,6 @@ namespace Silk.NET.Direct3D12
         MinimumMinMagLinearMipPoint = 0x114,
         [NativeName("Name", "D3D12_FILTER_MINIMUM_MIN_MAG_MIP_LINEAR")]
         MinimumMinMagMipLinear = 0x115,
-        [NativeName("Name", "D3D12_FILTER_MINIMUM_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        MinimumMinMagAnisotropicMipPoint = 0x154,
         [NativeName("Name", "D3D12_FILTER_MINIMUM_ANISOTROPIC")]
         MinimumAnisotropic = 0x155,
         [NativeName("Name", "D3D12_FILTER_MAXIMUM_MIN_MAG_MIP_POINT")]
@@ -208,8 +190,6 @@ namespace Silk.NET.Direct3D12
         MaximumMinMagLinearMipPoint = 0x194,
         [NativeName("Name", "D3D12_FILTER_MAXIMUM_MIN_MAG_MIP_LINEAR")]
         MaximumMinMagMipLinear = 0x195,
-        [NativeName("Name", "D3D12_FILTER_MAXIMUM_MIN_MAG_ANISOTROPIC_MIP_POINT")]
-        MaximumMinMagAnisotropicMipPoint = 0x1D4,
         [NativeName("Name", "D3D12_FILTER_MAXIMUM_ANISOTROPIC")]
         MaximumAnisotropic = 0x1D5,
     }
