@@ -16,11 +16,11 @@ using Silk.NET.Core.Loader;
 
 namespace Silk.NET.Direct3D12
 {
-    [Guid("61f307d3-d34e-4e7c-8374-3ba4de23cccb")]
+    [Guid("cd310fac-c78c-413d-a799-3da46a952cb7")]
     [NativeName("Name", "ID3D12DeviceFactory")]
     public unsafe partial struct ID3D12DeviceFactory : IComVtbl<ID3D12DeviceFactory>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
-        public static readonly Guid Guid = new("61f307d3-d34e-4e7c-8374-3ba4de23cccb");
+        public static readonly Guid Guid = new("cd310fac-c78c-413d-a799-3da46a952cb7");
 
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
@@ -363,40 +363,40 @@ namespace Silk.NET.Direct3D12
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, Guid* riid, void** ppvDevice)
+        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, Guid* riid, void** ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, FeatureLevel, riid, ppvDevice);
+            ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, riid, ppvDevice);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, Guid* riid, ref void* ppvDevice)
+        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, Guid* riid, ref void* ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void** ppvDevicePtr = &ppvDevice)
             {
-                ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, FeatureLevel, riid, ppvDevicePtr);
+                ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, riid, ppvDevicePtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, ref Guid riid, void** ppvDevice)
+        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, ref Guid riid, void** ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Guid* riidPtr = &riid)
             {
-                ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, FeatureLevel, riidPtr, ppvDevice);
+                ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, riidPtr, ppvDevice);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, ref Guid riid, ref void* ppvDevice)
+        public readonly unsafe int CreateDevice(Silk.NET.Core.Native.IUnknown* adapter, ref Guid riid, ref void* ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -404,26 +404,26 @@ namespace Silk.NET.Direct3D12
             {
                 fixed (void** ppvDevicePtr = &ppvDevice)
                 {
-                    ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, FeatureLevel, riidPtr, ppvDevicePtr);
+                    ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapter, riidPtr, ppvDevicePtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, Guid* riid, void** ppvDevice)
+        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, Guid* riid, void** ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Silk.NET.Core.Native.IUnknown* adapterPtr = &adapter)
             {
-                ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, FeatureLevel, riid, ppvDevice);
+                ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, riid, ppvDevice);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, Guid* riid, ref void* ppvDevice)
+        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, Guid* riid, ref void* ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -431,14 +431,14 @@ namespace Silk.NET.Direct3D12
             {
                 fixed (void** ppvDevicePtr = &ppvDevice)
                 {
-                    ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, FeatureLevel, riid, ppvDevicePtr);
+                    ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, riid, ppvDevicePtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, ref Guid riid, void** ppvDevice)
+        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, ref Guid riid, void** ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -446,14 +446,14 @@ namespace Silk.NET.Direct3D12
             {
                 fixed (Guid* riidPtr = &riid)
                 {
-                    ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, FeatureLevel, riidPtr, ppvDevice);
+                    ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, riidPtr, ppvDevice);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, ref Guid riid, ref void* ppvDevice)
+        public readonly unsafe int CreateDevice(ref Silk.NET.Core.Native.IUnknown adapter, ref Guid riid, ref void* ppvDevice)
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -463,7 +463,7 @@ namespace Silk.NET.Direct3D12
                 {
                     fixed (void** ppvDevicePtr = &ppvDevice)
                     {
-                        ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Silk.NET.Core.Native.D3DFeatureLevel, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, FeatureLevel, riidPtr, ppvDevicePtr);
+                        ret = ((delegate* unmanaged[Stdcall]<ID3D12DeviceFactory*, Silk.NET.Core.Native.IUnknown*, Guid*, void**, int>)@this->LpVtbl[9])(@this, adapterPtr, riidPtr, ppvDevicePtr);
                     }
                 }
             }
@@ -498,45 +498,45 @@ namespace Silk.NET.Direct3D12
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int CreateDevice<TI0, TI1>(ComPtr<TI0> adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, out ComPtr<TI1> ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<TI1>
+        public readonly int CreateDevice<TI0, TI1>(ComPtr<TI0> adapter, out ComPtr<TI1> ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<TI1>
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
             ppvDevice = default;
-            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, FeatureLevel, SilkMarshal.GuidPtrOf<TI1>(), (void**) ppvDevice.GetAddressOf());
+            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, SilkMarshal.GuidPtrOf<TI1>(), (void**) ppvDevice.GetAddressOf());
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice<TI0>(ComPtr<TI0> adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, Guid* riid, ref void* ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
+        public readonly unsafe int CreateDevice<TI0>(ComPtr<TI0> adapter, Guid* riid, ref void* ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
-            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, FeatureLevel, riid, ref ppvDevice);
+            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, riid, ref ppvDevice);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice<TI0>(ComPtr<TI0> adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, ref Guid riid, void** ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
+        public readonly unsafe int CreateDevice<TI0>(ComPtr<TI0> adapter, ref Guid riid, void** ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
-            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, FeatureLevel, ref riid, ppvDevice);
+            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, ref riid, ppvDevice);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateDevice<TI0>(ComPtr<TI0> adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, ref Guid riid, ref void* ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
+        public readonly unsafe int CreateDevice<TI0>(ComPtr<TI0> adapter, ref Guid riid, ref void* ppvDevice) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
-            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, FeatureLevel, ref riid, ref ppvDevice);
+            return @this->CreateDevice((Silk.NET.Core.Native.IUnknown*) adapter.Handle, ref riid, ref ppvDevice);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int CreateDevice<TI0>(ref Silk.NET.Core.Native.IUnknown adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel, out ComPtr<TI0> ppvDevice) where TI0 : unmanaged, IComVtbl<TI0>
+        public readonly int CreateDevice<TI0>(ref Silk.NET.Core.Native.IUnknown adapter, out ComPtr<TI0> ppvDevice) where TI0 : unmanaged, IComVtbl<TI0>
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
             ppvDevice = default;
-            return @this->CreateDevice(ref adapter, FeatureLevel, SilkMarshal.GuidPtrOf<TI0>(), (void**) ppvDevice.GetAddressOf());
+            return @this->CreateDevice(ref adapter, SilkMarshal.GuidPtrOf<TI0>(), (void**) ppvDevice.GetAddressOf());
         }
 
         /// <summary>To be documented.</summary>
@@ -567,20 +567,20 @@ namespace Silk.NET.Direct3D12
         }
 
         /// <summary>To be documented.</summary>
-        public readonly ComPtr<TI1> CreateDevice<TI0, TI1>(ComPtr<TI0> adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<TI1>
+        public readonly ComPtr<TI1> CreateDevice<TI0, TI1>(ComPtr<TI0> adapter) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<TI1>
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // NonKhrReturnTypeOverloader
-            SilkMarshal.ThrowHResult(@this->CreateDevice(adapter, FeatureLevel, out ComPtr<TI1> silkRet));
+            SilkMarshal.ThrowHResult(@this->CreateDevice(adapter, out ComPtr<TI1> silkRet));
             return silkRet;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly ComPtr<TI0> CreateDevice<TI0>(ref Silk.NET.Core.Native.IUnknown adapter, Silk.NET.Core.Native.D3DFeatureLevel FeatureLevel) where TI0 : unmanaged, IComVtbl<TI0>
+        public readonly ComPtr<TI0> CreateDevice<TI0>(ref Silk.NET.Core.Native.IUnknown adapter) where TI0 : unmanaged, IComVtbl<TI0>
         {
             var @this = (ID3D12DeviceFactory*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // NonKhrReturnTypeOverloader
-            SilkMarshal.ThrowHResult(@this->CreateDevice(ref adapter, FeatureLevel, out ComPtr<TI0> silkRet));
+            SilkMarshal.ThrowHResult(@this->CreateDevice(ref adapter, out ComPtr<TI0> silkRet));
             return silkRet;
         }
 
