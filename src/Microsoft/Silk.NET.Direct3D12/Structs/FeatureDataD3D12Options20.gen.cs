@@ -21,12 +21,18 @@ namespace Silk.NET.Direct3D12
     {
         public FeatureDataD3D12Options20
         (
-            Silk.NET.Core.Bool32? computeOnlyWriteWatchSupported = null
+            Silk.NET.Core.Bool32? computeOnlyWriteWatchSupported = null,
+            RecreateATTier? recreateAtTier = null
         ) : this()
         {
             if (computeOnlyWriteWatchSupported is not null)
             {
                 ComputeOnlyWriteWatchSupported = computeOnlyWriteWatchSupported.Value;
+            }
+
+            if (recreateAtTier is not null)
+            {
+                RecreateAtTier = recreateAtTier.Value;
             }
         }
 
@@ -35,5 +41,10 @@ namespace Silk.NET.Direct3D12
         [NativeName("Type.Name", "BOOL")]
         [NativeName("Name", "ComputeOnlyWriteWatchSupported")]
         public Silk.NET.Core.Bool32 ComputeOnlyWriteWatchSupported;
+
+        [NativeName("Type", "D3D12_RECREATE_AT_TIER")]
+        [NativeName("Type.Name", "D3D12_RECREATE_AT_TIER")]
+        [NativeName("Name", "RecreateAtTier")]
+        public RecreateATTier RecreateAtTier;
     }
 }
