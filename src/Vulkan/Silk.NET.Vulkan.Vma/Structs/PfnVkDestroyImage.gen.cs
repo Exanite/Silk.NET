@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkDestroyImage : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkDevice_T*, VkImage_T*, VkAllocationCallbacks*, void> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, VkImage_T*, VkAllocationCallbacks*, void>) _handle;
+        public delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.Image*, VkAllocationCallbacks*, void> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.Image*, VkAllocationCallbacks*, void>) _handle;
         public PfnVkDestroyImage
         (
-            delegate* unmanaged[Cdecl]<VkDevice_T*, VkImage_T*, VkAllocationCallbacks*, void> ptr
+            delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.Image*, VkAllocationCallbacks*, void> ptr
         ) => _handle = ptr;
 
         public PfnVkDestroyImage
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkDestroyImage pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkDestroyImage(nint pfn)
-            => new PfnVkDestroyImage((delegate* unmanaged[Cdecl]<VkDevice_T*, VkImage_T*, VkAllocationCallbacks*, void>) pfn);
+            => new PfnVkDestroyImage((delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.Image*, VkAllocationCallbacks*, void>) pfn);
 
         public static implicit operator PfnVkDestroyImage(VkDestroyImage proc)
             => new PfnVkDestroyImage(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkDestroyImage(PfnVkDestroyImage pfn)
             => SilkMarshal.PtrToDelegate<VkDestroyImage>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, VkImage_T*, VkAllocationCallbacks*, void>(PfnVkDestroyImage pfn) => pfn.Handle;
-        public static implicit operator PfnVkDestroyImage(delegate* unmanaged[Cdecl]<VkDevice_T*, VkImage_T*, VkAllocationCallbacks*, void> ptr) => new PfnVkDestroyImage(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.Image*, VkAllocationCallbacks*, void>(PfnVkDestroyImage pfn) => pfn.Handle;
+        public static implicit operator PfnVkDestroyImage(delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.Image*, VkAllocationCallbacks*, void> ptr) => new PfnVkDestroyImage(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate void VkDestroyImage(VkDevice_T* arg0, VkImage_T* arg1, VkAllocationCallbacks* arg2);
+    public unsafe delegate void VkDestroyImage(VkDevice_T* arg0, Silk.NET.Vulkan.Image* arg1, VkAllocationCallbacks* arg2);
 }
 

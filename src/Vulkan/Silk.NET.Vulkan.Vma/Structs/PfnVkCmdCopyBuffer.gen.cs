@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkCmdCopyBuffer : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, VkBuffer_T*, VkBuffer_T*, uint, VkBufferCopy*, void> Handle => (delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, VkBuffer_T*, VkBuffer_T*, uint, VkBufferCopy*, void>) _handle;
+        public delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, Silk.NET.Vulkan.Buffer*, Silk.NET.Vulkan.Buffer*, uint, VkBufferCopy*, void> Handle => (delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, Silk.NET.Vulkan.Buffer*, Silk.NET.Vulkan.Buffer*, uint, VkBufferCopy*, void>) _handle;
         public PfnVkCmdCopyBuffer
         (
-            delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, VkBuffer_T*, VkBuffer_T*, uint, VkBufferCopy*, void> ptr
+            delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, Silk.NET.Vulkan.Buffer*, Silk.NET.Vulkan.Buffer*, uint, VkBufferCopy*, void> ptr
         ) => _handle = ptr;
 
         public PfnVkCmdCopyBuffer
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkCmdCopyBuffer pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkCmdCopyBuffer(nint pfn)
-            => new PfnVkCmdCopyBuffer((delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, VkBuffer_T*, VkBuffer_T*, uint, VkBufferCopy*, void>) pfn);
+            => new PfnVkCmdCopyBuffer((delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, Silk.NET.Vulkan.Buffer*, Silk.NET.Vulkan.Buffer*, uint, VkBufferCopy*, void>) pfn);
 
         public static implicit operator PfnVkCmdCopyBuffer(VkCmdCopyBuffer proc)
             => new PfnVkCmdCopyBuffer(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkCmdCopyBuffer(PfnVkCmdCopyBuffer pfn)
             => SilkMarshal.PtrToDelegate<VkCmdCopyBuffer>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, VkBuffer_T*, VkBuffer_T*, uint, VkBufferCopy*, void>(PfnVkCmdCopyBuffer pfn) => pfn.Handle;
-        public static implicit operator PfnVkCmdCopyBuffer(delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, VkBuffer_T*, VkBuffer_T*, uint, VkBufferCopy*, void> ptr) => new PfnVkCmdCopyBuffer(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, Silk.NET.Vulkan.Buffer*, Silk.NET.Vulkan.Buffer*, uint, VkBufferCopy*, void>(PfnVkCmdCopyBuffer pfn) => pfn.Handle;
+        public static implicit operator PfnVkCmdCopyBuffer(delegate* unmanaged[Cdecl]<VkCommandBuffer_T*, Silk.NET.Vulkan.Buffer*, Silk.NET.Vulkan.Buffer*, uint, VkBufferCopy*, void> ptr) => new PfnVkCmdCopyBuffer(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate void VkCmdCopyBuffer(VkCommandBuffer_T* arg0, VkBuffer_T* arg1, VkBuffer_T* arg2, uint arg3, VkBufferCopy* arg4);
+    public unsafe delegate void VkCmdCopyBuffer(VkCommandBuffer_T* arg0, Silk.NET.Vulkan.Buffer* arg1, Silk.NET.Vulkan.Buffer* arg2, uint arg3, VkBufferCopy* arg4);
 }
 

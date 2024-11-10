@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkBindBufferMemory2KHR : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, VkResult> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, VkResult>) _handle;
+        public delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, Silk.NET.Vulkan.Result>) _handle;
         public PfnVkBindBufferMemory2KHR
         (
-            delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, VkResult> ptr
+            delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, Silk.NET.Vulkan.Result> ptr
         ) => _handle = ptr;
 
         public PfnVkBindBufferMemory2KHR
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkBindBufferMemory2KHR pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkBindBufferMemory2KHR(nint pfn)
-            => new PfnVkBindBufferMemory2KHR((delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, VkResult>) pfn);
+            => new PfnVkBindBufferMemory2KHR((delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, Silk.NET.Vulkan.Result>) pfn);
 
         public static implicit operator PfnVkBindBufferMemory2KHR(VkBindBufferMemory2KHR proc)
             => new PfnVkBindBufferMemory2KHR(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkBindBufferMemory2KHR(PfnVkBindBufferMemory2KHR pfn)
             => SilkMarshal.PtrToDelegate<VkBindBufferMemory2KHR>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, VkResult>(PfnVkBindBufferMemory2KHR pfn) => pfn.Handle;
-        public static implicit operator PfnVkBindBufferMemory2KHR(delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, VkResult> ptr) => new PfnVkBindBufferMemory2KHR(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, Silk.NET.Vulkan.Result>(PfnVkBindBufferMemory2KHR pfn) => pfn.Handle;
+        public static implicit operator PfnVkBindBufferMemory2KHR(delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkBindBufferMemoryInfo*, Silk.NET.Vulkan.Result> ptr) => new PfnVkBindBufferMemory2KHR(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate VkResult VkBindBufferMemory2KHR(VkDevice_T* arg0, uint arg1, VkBindBufferMemoryInfo* arg2);
+    public unsafe delegate Silk.NET.Vulkan.Result VkBindBufferMemory2KHR(VkDevice_T* arg0, uint arg1, VkBindBufferMemoryInfo* arg2);
 }
 

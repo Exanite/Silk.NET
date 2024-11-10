@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkCreateBuffer : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkDevice_T*, VkBufferCreateInfo*, VkAllocationCallbacks*, VkBuffer_T**, VkResult> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, VkBufferCreateInfo*, VkAllocationCallbacks*, VkBuffer_T**, VkResult>) _handle;
+        public delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.BufferCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Buffer**, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.BufferCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Buffer**, Silk.NET.Vulkan.Result>) _handle;
         public PfnVkCreateBuffer
         (
-            delegate* unmanaged[Cdecl]<VkDevice_T*, VkBufferCreateInfo*, VkAllocationCallbacks*, VkBuffer_T**, VkResult> ptr
+            delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.BufferCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Buffer**, Silk.NET.Vulkan.Result> ptr
         ) => _handle = ptr;
 
         public PfnVkCreateBuffer
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkCreateBuffer pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkCreateBuffer(nint pfn)
-            => new PfnVkCreateBuffer((delegate* unmanaged[Cdecl]<VkDevice_T*, VkBufferCreateInfo*, VkAllocationCallbacks*, VkBuffer_T**, VkResult>) pfn);
+            => new PfnVkCreateBuffer((delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.BufferCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Buffer**, Silk.NET.Vulkan.Result>) pfn);
 
         public static implicit operator PfnVkCreateBuffer(VkCreateBuffer proc)
             => new PfnVkCreateBuffer(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkCreateBuffer(PfnVkCreateBuffer pfn)
             => SilkMarshal.PtrToDelegate<VkCreateBuffer>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, VkBufferCreateInfo*, VkAllocationCallbacks*, VkBuffer_T**, VkResult>(PfnVkCreateBuffer pfn) => pfn.Handle;
-        public static implicit operator PfnVkCreateBuffer(delegate* unmanaged[Cdecl]<VkDevice_T*, VkBufferCreateInfo*, VkAllocationCallbacks*, VkBuffer_T**, VkResult> ptr) => new PfnVkCreateBuffer(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.BufferCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Buffer**, Silk.NET.Vulkan.Result>(PfnVkCreateBuffer pfn) => pfn.Handle;
+        public static implicit operator PfnVkCreateBuffer(delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.BufferCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Buffer**, Silk.NET.Vulkan.Result> ptr) => new PfnVkCreateBuffer(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate VkResult VkCreateBuffer(VkDevice_T* arg0, VkBufferCreateInfo* arg1, VkAllocationCallbacks* arg2, VkBuffer_T** arg3);
+    public unsafe delegate Silk.NET.Vulkan.Result VkCreateBuffer(VkDevice_T* arg0, Silk.NET.Vulkan.BufferCreateInfo* arg1, VkAllocationCallbacks* arg2, Silk.NET.Vulkan.Buffer** arg3);
 }
 

@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkAllocateMemory : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, VkResult> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, VkResult>) _handle;
+        public delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, Silk.NET.Vulkan.Result>) _handle;
         public PfnVkAllocateMemory
         (
-            delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, VkResult> ptr
+            delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, Silk.NET.Vulkan.Result> ptr
         ) => _handle = ptr;
 
         public PfnVkAllocateMemory
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkAllocateMemory pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkAllocateMemory(nint pfn)
-            => new PfnVkAllocateMemory((delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, VkResult>) pfn);
+            => new PfnVkAllocateMemory((delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, Silk.NET.Vulkan.Result>) pfn);
 
         public static implicit operator PfnVkAllocateMemory(VkAllocateMemory proc)
             => new PfnVkAllocateMemory(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkAllocateMemory(PfnVkAllocateMemory pfn)
             => SilkMarshal.PtrToDelegate<VkAllocateMemory>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, VkResult>(PfnVkAllocateMemory pfn) => pfn.Handle;
-        public static implicit operator PfnVkAllocateMemory(delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, VkResult> ptr) => new PfnVkAllocateMemory(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, Silk.NET.Vulkan.Result>(PfnVkAllocateMemory pfn) => pfn.Handle;
+        public static implicit operator PfnVkAllocateMemory(delegate* unmanaged[Cdecl]<VkDevice_T*, VkMemoryAllocateInfo*, VkAllocationCallbacks*, VkDeviceMemory_T**, Silk.NET.Vulkan.Result> ptr) => new PfnVkAllocateMemory(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate VkResult VkAllocateMemory(VkDevice_T* arg0, VkMemoryAllocateInfo* arg1, VkAllocationCallbacks* arg2, VkDeviceMemory_T** arg3);
+    public unsafe delegate Silk.NET.Vulkan.Result VkAllocateMemory(VkDevice_T* arg0, VkMemoryAllocateInfo* arg1, VkAllocationCallbacks* arg2, VkDeviceMemory_T** arg3);
 }
 
