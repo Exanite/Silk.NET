@@ -728,7 +728,14 @@
                 }
             },
             "exclude": [],
-            "rename": {},
+            "rename": {
+                "VmaAllocation_T": "Allocation",
+                "VmaAllocator_T": "Allocator",
+                "VmaDefragmentationContext_T": "DefragmentationContext",
+                "VmaPool_T": "Pool",
+                "VmaVirtualAllocation_T": "VirtualAllocation",
+                "VmaVirtualBlock_T": "VirtualBlock",
+            },
             "bakery": {
                 "profileNames": [
                     "vk_vma"

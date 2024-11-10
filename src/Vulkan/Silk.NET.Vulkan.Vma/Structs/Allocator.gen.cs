@@ -16,8 +16,8 @@ using Silk.NET.Core.Loader;
 
 namespace Silk.NET.Vulkan.Vma
 {
-    [NativeName("Name", "VmaVirtualAllocation_T")]
-    public unsafe partial struct VirtualAllocationT
+    [NativeName("Name", "VmaAllocator_T")]
+    public unsafe partial struct Allocator
     {
     }
 }

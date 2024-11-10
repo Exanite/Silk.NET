@@ -53,1651 +53,1651 @@ namespace Silk.NET.Vulkan.Vma
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1671, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAllocator")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocatorCreateInfo* pCreateInfo, AllocatorT** pAllocator);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocatorCreateInfo* pCreateInfo, Allocator** pAllocator);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1671, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAllocator")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocatorCreateInfo* pCreateInfo, ref AllocatorT* pAllocator);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocatorCreateInfo* pCreateInfo, ref Allocator* pAllocator);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1671, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAllocator")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocatorCreateInfo pCreateInfo, AllocatorT** pAllocator);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocatorCreateInfo pCreateInfo, Allocator** pAllocator);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1671, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAllocator")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocatorCreateInfo pCreateInfo, ref AllocatorT* pAllocator);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAllocator([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocatorCreateInfo pCreateInfo, ref Allocator* pAllocator);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1676, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaDestroyAllocator")]
-        public unsafe partial void DestroyAllocator(AllocatorT* allocator);
+        public unsafe partial void DestroyAllocator(Allocator* allocator);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1684, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocatorInfo")]
-        public unsafe partial void GetAllocatorInfo(AllocatorT* allocator, AllocatorInfo* pAllocatorInfo);
+        public unsafe partial void GetAllocatorInfo(Allocator* allocator, AllocatorInfo* pAllocatorInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1684, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocatorInfo")]
-        public unsafe partial void GetAllocatorInfo(AllocatorT* allocator, ref AllocatorInfo pAllocatorInfo);
+        public unsafe partial void GetAllocatorInfo(Allocator* allocator, ref AllocatorInfo pAllocatorInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1692, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetPhysicalDeviceProperties")]
-        public unsafe partial void GetPhysicalDeviceProperties(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.PhysicalDeviceProperties** ppPhysicalDeviceProperties);
+        public unsafe partial void GetPhysicalDeviceProperties(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.PhysicalDeviceProperties** ppPhysicalDeviceProperties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1692, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetPhysicalDeviceProperties")]
-        public unsafe partial void GetPhysicalDeviceProperties(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.PhysicalDeviceProperties* ppPhysicalDeviceProperties);
+        public unsafe partial void GetPhysicalDeviceProperties(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.PhysicalDeviceProperties* ppPhysicalDeviceProperties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1700, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetMemoryProperties")]
-        public unsafe partial void GetMemoryProperties(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.PhysicalDeviceMemoryProperties** ppPhysicalDeviceMemoryProperties);
+        public unsafe partial void GetMemoryProperties(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.PhysicalDeviceMemoryProperties** ppPhysicalDeviceMemoryProperties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1700, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetMemoryProperties")]
-        public unsafe partial void GetMemoryProperties(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.PhysicalDeviceMemoryProperties* ppPhysicalDeviceMemoryProperties);
+        public unsafe partial void GetMemoryProperties(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.PhysicalDeviceMemoryProperties* ppPhysicalDeviceMemoryProperties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1710, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetMemoryTypeProperties")]
-        public unsafe partial void GetMemoryTypeProperties(AllocatorT* allocator, uint memoryTypeIndex, uint* pFlags);
+        public unsafe partial void GetMemoryTypeProperties(Allocator* allocator, uint memoryTypeIndex, uint* pFlags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1710, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetMemoryTypeProperties")]
-        public unsafe partial void GetMemoryTypeProperties(AllocatorT* allocator, uint memoryTypeIndex, ref uint pFlags);
+        public unsafe partial void GetMemoryTypeProperties(Allocator* allocator, uint memoryTypeIndex, ref uint pFlags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1717, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetCurrentFrameIndex")]
-        public unsafe partial void SetCurrentFrameIndex(AllocatorT* allocator, uint frameIndex);
+        public unsafe partial void SetCurrentFrameIndex(Allocator* allocator, uint frameIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1738, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCalculateStatistics")]
-        public unsafe partial void CalculateStatistics(AllocatorT* allocator, TotalStatistics* pStats);
+        public unsafe partial void CalculateStatistics(Allocator* allocator, TotalStatistics* pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1738, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCalculateStatistics")]
-        public unsafe partial void CalculateStatistics(AllocatorT* allocator, ref TotalStatistics pStats);
+        public unsafe partial void CalculateStatistics(Allocator* allocator, ref TotalStatistics pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1753, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetHeapBudgets")]
-        public unsafe partial void GetHeapBudgets(AllocatorT* allocator, Budget* pBudgets);
+        public unsafe partial void GetHeapBudgets(Allocator* allocator, Budget* pBudgets);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1753, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetHeapBudgets")]
-        public unsafe partial void GetHeapBudgets(AllocatorT* allocator, ref Budget pBudgets);
+        public unsafe partial void GetHeapBudgets(Allocator* allocator, ref Budget pBudgets);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1780, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndex")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(AllocatorT* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(Allocator* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1780, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndex")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(AllocatorT* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(Allocator* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1780, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndex")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(AllocatorT* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(Allocator* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1780, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndex")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(AllocatorT* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndex(Allocator* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForBufferInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, uint* pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFindMemoryTypeIndexForImageInfo")]
-        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
+        public unsafe partial Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref uint pMemoryTypeIndex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1816, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreatePool")]
-        public unsafe partial Silk.NET.Vulkan.Result CreatePool(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] PoolCreateInfo* pCreateInfo, PoolT** pPool);
+        public unsafe partial Silk.NET.Vulkan.Result CreatePool(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] PoolCreateInfo* pCreateInfo, Pool** pPool);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1816, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreatePool")]
-        public unsafe partial Silk.NET.Vulkan.Result CreatePool(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] PoolCreateInfo* pCreateInfo, ref PoolT* pPool);
+        public unsafe partial Silk.NET.Vulkan.Result CreatePool(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] PoolCreateInfo* pCreateInfo, ref Pool* pPool);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1816, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreatePool")]
-        public unsafe partial Silk.NET.Vulkan.Result CreatePool(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PoolCreateInfo pCreateInfo, PoolT** pPool);
+        public unsafe partial Silk.NET.Vulkan.Result CreatePool(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PoolCreateInfo pCreateInfo, Pool** pPool);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1816, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreatePool")]
-        public unsafe partial Silk.NET.Vulkan.Result CreatePool(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PoolCreateInfo pCreateInfo, ref PoolT* pPool);
+        public unsafe partial Silk.NET.Vulkan.Result CreatePool(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PoolCreateInfo pCreateInfo, ref Pool* pPool);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1823, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaDestroyPool")]
-        public unsafe partial void DestroyPool(AllocatorT* allocator, PoolT* pool);
+        public unsafe partial void DestroyPool(Allocator* allocator, Pool* pool);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1843, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetPoolStatistics")]
-        public unsafe partial void GetPoolStatistics(AllocatorT* allocator, PoolT* pool, Statistics* pPoolStats);
+        public unsafe partial void GetPoolStatistics(Allocator* allocator, Pool* pool, Statistics* pPoolStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1843, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetPoolStatistics")]
-        public unsafe partial void GetPoolStatistics(AllocatorT* allocator, PoolT* pool, ref Statistics pPoolStats);
+        public unsafe partial void GetPoolStatistics(Allocator* allocator, Pool* pool, ref Statistics pPoolStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1854, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCalculatePoolStatistics")]
-        public unsafe partial void CalculatePoolStatistics(AllocatorT* allocator, PoolT* pool, DetailedStatistics* pPoolStats);
+        public unsafe partial void CalculatePoolStatistics(Allocator* allocator, Pool* pool, DetailedStatistics* pPoolStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1854, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCalculatePoolStatistics")]
-        public unsafe partial void CalculatePoolStatistics(AllocatorT* allocator, PoolT* pool, ref DetailedStatistics pPoolStats);
+        public unsafe partial void CalculatePoolStatistics(Allocator* allocator, Pool* pool, ref DetailedStatistics pPoolStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1880, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCheckPoolCorruption")]
-        public unsafe partial Silk.NET.Vulkan.Result CheckPoolCorruption(AllocatorT* allocator, PoolT* pool);
+        public unsafe partial Silk.NET.Vulkan.Result CheckPoolCorruption(Allocator* allocator, Pool* pool);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1890, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetPoolName")]
-        public unsafe partial void GetPoolName(AllocatorT* allocator, PoolT* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** ppName);
+        public unsafe partial void GetPoolName(Allocator* allocator, Pool* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** ppName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1890, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetPoolName")]
-        public unsafe partial void GetPoolName(AllocatorT* allocator, PoolT* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* ppName);
+        public unsafe partial void GetPoolName(Allocator* allocator, Pool* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* ppName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1900, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetPoolName")]
-        public unsafe partial void SetPoolName(AllocatorT* allocator, PoolT* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* pName);
+        public unsafe partial void SetPoolName(Allocator* allocator, Pool* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* pName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1900, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetPoolName")]
-        public unsafe partial void SetPoolName(AllocatorT* allocator, PoolT* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pName);
+        public unsafe partial void SetPoolName(Allocator* allocator, Pool* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1900, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetPoolName")]
-        public unsafe partial void SetPoolName(AllocatorT* allocator, PoolT* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pName);
+        public unsafe partial void SetPoolName(Allocator* allocator, Pool* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemory(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, AllocationT** pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, Allocation** pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, AllocationT** pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, Allocation** pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, AllocationT** pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, Allocation** pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, AllocationT** pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, Allocation** pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, AllocationT** pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, Allocation** pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, AllocationT** pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, Allocation** pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, AllocationT** pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, Allocation** pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, AllocationT** pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, Allocation** pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryPages")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref AllocationT* pAllocations, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryPages(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.MemoryRequirements pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaAllocateMemoryForImage")]
-        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result AllocateMemoryForImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pCreateInfo, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1998, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeMemory")]
-        public unsafe partial void FreeMemory(AllocatorT* allocator, AllocationT* allocation);
+        public unsafe partial void FreeMemory(Allocator* allocator, Allocation* allocation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2012, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeMemoryPages")]
-        public unsafe partial void FreeMemoryPages(AllocatorT* allocator, nuint allocationCount, AllocationT** pAllocations);
+        public unsafe partial void FreeMemoryPages(Allocator* allocator, nuint allocationCount, Allocation** pAllocations);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2012, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeMemoryPages")]
-        public unsafe partial void FreeMemoryPages(AllocatorT* allocator, nuint allocationCount, ref AllocationT* pAllocations);
+        public unsafe partial void FreeMemoryPages(Allocator* allocator, nuint allocationCount, ref Allocation* pAllocations);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2030, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocationInfo")]
-        public unsafe partial void GetAllocationInfo(AllocatorT* allocator, AllocationT* allocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial void GetAllocationInfo(Allocator* allocator, Allocation* allocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2030, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocationInfo")]
-        public unsafe partial void GetAllocationInfo(AllocatorT* allocator, AllocationT* allocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial void GetAllocationInfo(Allocator* allocator, Allocation* allocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2042, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocationInfo2")]
-        public unsafe partial void GetAllocationInfo2(AllocatorT* allocator, AllocationT* allocation, AllocationInfo2* pAllocationInfo);
+        public unsafe partial void GetAllocationInfo2(Allocator* allocator, Allocation* allocation, AllocationInfo2* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2042, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocationInfo2")]
-        public unsafe partial void GetAllocationInfo2(AllocatorT* allocator, AllocationT* allocation, ref AllocationInfo2 pAllocationInfo);
+        public unsafe partial void GetAllocationInfo2(Allocator* allocator, Allocation* allocation, ref AllocationInfo2 pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2053, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetAllocationUserData")]
-        public unsafe partial void SetAllocationUserData(AllocatorT* allocator, AllocationT* allocation, void* pUserData);
+        public unsafe partial void SetAllocationUserData(Allocator* allocator, Allocation* allocation, void* pUserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2053, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetAllocationUserData")]
-        public unsafe partial void SetAllocationUserData<T0>(AllocatorT* allocator, AllocationT* allocation, ref T0 pUserData) where T0 : unmanaged;
+        public unsafe partial void SetAllocationUserData<T0>(Allocator* allocator, Allocation* allocation, ref T0 pUserData) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2066, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetAllocationName")]
-        public unsafe partial void SetAllocationName(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* pName);
+        public unsafe partial void SetAllocationName(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* pName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2066, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetAllocationName")]
-        public unsafe partial void SetAllocationName(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pName);
+        public unsafe partial void SetAllocationName(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2066, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetAllocationName")]
-        public unsafe partial void SetAllocationName(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pName);
+        public unsafe partial void SetAllocationName(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2077, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocationMemoryProperties")]
-        public unsafe partial void GetAllocationMemoryProperties(AllocatorT* allocator, AllocationT* allocation, uint* pFlags);
+        public unsafe partial void GetAllocationMemoryProperties(Allocator* allocator, Allocation* allocation, uint* pFlags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2077, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetAllocationMemoryProperties")]
-        public unsafe partial void GetAllocationMemoryProperties(AllocatorT* allocator, AllocationT* allocation, ref uint pFlags);
+        public unsafe partial void GetAllocationMemoryProperties(Allocator* allocator, Allocation* allocation, ref uint pFlags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2153, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaMapMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result MapMemory(AllocatorT* allocator, AllocationT* allocation, void** ppData);
+        public unsafe partial Silk.NET.Vulkan.Result MapMemory(Allocator* allocator, Allocation* allocation, void** ppData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2153, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaMapMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result MapMemory(AllocatorT* allocator, AllocationT* allocation, ref void* ppData);
+        public unsafe partial Silk.NET.Vulkan.Result MapMemory(Allocator* allocator, Allocation* allocation, ref void* ppData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2166, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaUnmapMemory")]
-        public unsafe partial void UnmapMemory(AllocatorT* allocator, AllocationT* allocation);
+        public unsafe partial void UnmapMemory(Allocator* allocator, Allocation* allocation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2191, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocation")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocation(AllocatorT* allocator, AllocationT* allocation, ulong offset, ulong size);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocation(Allocator* allocator, Allocation* allocation, ulong offset, ulong size);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2218, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocation")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocation(AllocatorT* allocator, AllocationT* allocation, ulong offset, ulong size);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocation(Allocator* allocator, Allocation* allocation, ulong offset, ulong size);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFlushAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result FlushAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, AllocationT** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaInvalidateAllocations")]
-        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(AllocatorT* allocator, uint allocationCount, ref AllocationT* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
+        public unsafe partial Silk.NET.Vulkan.Result InvalidateAllocations(Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ulong sizes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2286, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCopyMemoryToAllocation")]
-        public unsafe partial Silk.NET.Vulkan.Result CopyMemoryToAllocation(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pSrcHostPointer, AllocationT* dstAllocation, ulong dstAllocationLocalOffset, ulong size);
+        public unsafe partial Silk.NET.Vulkan.Result CopyMemoryToAllocation(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pSrcHostPointer, Allocation* dstAllocation, ulong dstAllocationLocalOffset, ulong size);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2286, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCopyMemoryToAllocation")]
-        public unsafe partial Silk.NET.Vulkan.Result CopyMemoryToAllocation<T0>(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pSrcHostPointer, AllocationT* dstAllocation, ulong dstAllocationLocalOffset, ulong size) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Vulkan.Result CopyMemoryToAllocation<T0>(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pSrcHostPointer, Allocation* dstAllocation, ulong dstAllocationLocalOffset, ulong size) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2314, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCopyAllocationToMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result CopyAllocationToMemory(AllocatorT* allocator, AllocationT* srcAllocation, ulong srcAllocationLocalOffset, void* pDstHostPointer, ulong size);
+        public unsafe partial Silk.NET.Vulkan.Result CopyAllocationToMemory(Allocator* allocator, Allocation* srcAllocation, ulong srcAllocationLocalOffset, void* pDstHostPointer, ulong size);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2314, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCopyAllocationToMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result CopyAllocationToMemory<T0>(AllocatorT* allocator, AllocationT* srcAllocation, ulong srcAllocationLocalOffset, ref T0 pDstHostPointer, ulong size) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Vulkan.Result CopyAllocationToMemory<T0>(Allocator* allocator, Allocation* srcAllocation, ulong srcAllocationLocalOffset, ref T0 pDstHostPointer, ulong size) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2338, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCheckCorruption")]
-        public unsafe partial Silk.NET.Vulkan.Result CheckCorruption(AllocatorT* allocator, uint memoryTypeBits);
+        public unsafe partial Silk.NET.Vulkan.Result CheckCorruption(Allocator* allocator, uint memoryTypeBits);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2354, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBeginDefragmentation")]
-        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] DefragmentationInfo* pInfo, DefragmentationContextT** pContext);
+        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] DefragmentationInfo* pInfo, DefragmentationContext** pContext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2354, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBeginDefragmentation")]
-        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] DefragmentationInfo* pInfo, ref DefragmentationContextT* pContext);
+        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] DefragmentationInfo* pInfo, ref DefragmentationContext* pContext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2354, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBeginDefragmentation")]
-        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in DefragmentationInfo pInfo, DefragmentationContextT** pContext);
+        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in DefragmentationInfo pInfo, DefragmentationContext** pContext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2354, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBeginDefragmentation")]
-        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in DefragmentationInfo pInfo, ref DefragmentationContextT* pContext);
+        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentation(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in DefragmentationInfo pInfo, ref DefragmentationContext* pContext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2367, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaEndDefragmentation")]
-        public unsafe partial void EndDefragmentation(AllocatorT* allocator, DefragmentationContextT* context, DefragmentationStats* pStats);
+        public unsafe partial void EndDefragmentation(Allocator* allocator, DefragmentationContext* context, DefragmentationStats* pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2367, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaEndDefragmentation")]
-        public unsafe partial void EndDefragmentation(AllocatorT* allocator, DefragmentationContextT* context, ref DefragmentationStats pStats);
+        public unsafe partial void EndDefragmentation(Allocator* allocator, DefragmentationContext* context, ref DefragmentationStats pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2382, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBeginDefragmentationPass")]
-        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentationPass(AllocatorT* allocator, DefragmentationContextT* context, DefragmentationPassMoveInfo* pPassInfo);
+        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentationPass(Allocator* allocator, DefragmentationContext* context, DefragmentationPassMoveInfo* pPassInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2382, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBeginDefragmentationPass")]
-        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentationPass(AllocatorT* allocator, DefragmentationContextT* context, ref DefragmentationPassMoveInfo pPassInfo);
+        public unsafe partial Silk.NET.Vulkan.Result BeginDefragmentationPass(Allocator* allocator, DefragmentationContext* context, ref DefragmentationPassMoveInfo pPassInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2405, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaEndDefragmentationPass")]
-        public unsafe partial Silk.NET.Vulkan.Result EndDefragmentationPass(AllocatorT* allocator, DefragmentationContextT* context, DefragmentationPassMoveInfo* pPassInfo);
+        public unsafe partial Silk.NET.Vulkan.Result EndDefragmentationPass(Allocator* allocator, DefragmentationContext* context, DefragmentationPassMoveInfo* pPassInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2405, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaEndDefragmentationPass")]
-        public unsafe partial Silk.NET.Vulkan.Result EndDefragmentationPass(AllocatorT* allocator, DefragmentationContextT* context, ref DefragmentationPassMoveInfo pPassInfo);
+        public unsafe partial Silk.NET.Vulkan.Result EndDefragmentationPass(Allocator* allocator, DefragmentationContext* context, ref DefragmentationPassMoveInfo pPassInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2422, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindBufferMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory(AllocatorT* allocator, AllocationT* allocation, Silk.NET.Vulkan.Buffer* buffer);
+        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory(Allocator* allocator, Allocation* allocation, Silk.NET.Vulkan.Buffer* buffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2422, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindBufferMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory(AllocatorT* allocator, AllocationT* allocation, ref Silk.NET.Vulkan.Buffer buffer);
+        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory(Allocator* allocator, Allocation* allocation, ref Silk.NET.Vulkan.Buffer buffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2440, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindBufferMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
+        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2440, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindBufferMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2<T0>(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2<T0>(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2440, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindBufferMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
+        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2440, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindBufferMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2<T0>(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Vulkan.Result BindBufferMemory2<T0>(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Buffer buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2459, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindImageMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory(AllocatorT* allocator, AllocationT* allocation, Silk.NET.Vulkan.Image* image);
+        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory(Allocator* allocator, Allocation* allocation, Silk.NET.Vulkan.Image* image);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2459, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindImageMemory")]
-        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory(AllocatorT* allocator, AllocationT* allocation, ref Silk.NET.Vulkan.Image image);
+        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory(Allocator* allocator, Allocation* allocation, ref Silk.NET.Vulkan.Image image);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2477, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindImageMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
+        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2477, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindImageMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2<T0>(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2<T0>(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2477, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindImageMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
+        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2477, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBindImageMemory2")]
-        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2<T0>(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Vulkan.Result BindImageMemory2<T0>(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, ref Silk.NET.Vulkan.Image image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pNext) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBuffer(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateBufferWithAlignment")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateBufferWithAlignment(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2562, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2562, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2562, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2562, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2590, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2590, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2590, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2590, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingBuffer2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingBuffer2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.BufferCreateInfo pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2608, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaDestroyBuffer")]
-        public unsafe partial void DestroyBuffer(AllocatorT* allocator, Silk.NET.Vulkan.Buffer* buffer, AllocationT* allocation);
+        public unsafe partial void DestroyBuffer(Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, Allocation* allocation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2608, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaDestroyBuffer")]
-        public unsafe partial void DestroyBuffer(AllocatorT* allocator, ref Silk.NET.Vulkan.Buffer buffer, AllocationT* allocation);
+        public unsafe partial void DestroyBuffer(Allocator* allocator, ref Silk.NET.Vulkan.Buffer buffer, Allocation* allocation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, AllocationT** pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, AllocationInfo* pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateImage(AllocatorT* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref AllocationT* pAllocation, ref AllocationInfo pAllocationInfo);
+        public unsafe partial Silk.NET.Vulkan.Result CreateImage(Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in AllocationCreateInfo pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, ref AllocationInfo pAllocationInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2623, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2623, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2623, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2623, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(AllocatorT* allocator, AllocationT* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage(Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2630, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2630, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2630, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, Silk.NET.Vulkan.Image** pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2630, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateAliasingImage2")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(AllocatorT* allocator, AllocationT* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
+        public unsafe partial Silk.NET.Vulkan.Result CreateAliasingImage2(Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Silk.NET.Vulkan.ImageCreateInfo pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2648, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaDestroyImage")]
-        public unsafe partial void DestroyImage(AllocatorT* allocator, Silk.NET.Vulkan.Image* image, AllocationT* allocation);
+        public unsafe partial void DestroyImage(Allocator* allocator, Silk.NET.Vulkan.Image* image, Allocation* allocation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2648, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaDestroyImage")]
-        public unsafe partial void DestroyImage(AllocatorT* allocator, ref Silk.NET.Vulkan.Image image, AllocationT* allocation);
+        public unsafe partial void DestroyImage(Allocator* allocator, ref Silk.NET.Vulkan.Image image, Allocation* allocation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2665, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateVirtualBlock")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualBlockCreateInfo* pCreateInfo, VirtualBlockT** pVirtualBlock);
+        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualBlockCreateInfo* pCreateInfo, VirtualBlock** pVirtualBlock);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2665, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateVirtualBlock")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualBlockCreateInfo* pCreateInfo, ref VirtualBlockT* pVirtualBlock);
+        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualBlockCreateInfo* pCreateInfo, ref VirtualBlock* pVirtualBlock);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2665, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateVirtualBlock")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualBlockCreateInfo pCreateInfo, VirtualBlockT** pVirtualBlock);
+        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualBlockCreateInfo pCreateInfo, VirtualBlock** pVirtualBlock);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2665, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCreateVirtualBlock")]
-        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualBlockCreateInfo pCreateInfo, ref VirtualBlockT* pVirtualBlock);
+        public unsafe partial Silk.NET.Vulkan.Result CreateVirtualBlock([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualBlockCreateInfo pCreateInfo, ref VirtualBlock* pVirtualBlock);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2678, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaDestroyVirtualBlock")]
-        public unsafe partial void DestroyVirtualBlock(VirtualBlockT* virtualBlock);
+        public unsafe partial void DestroyVirtualBlock(VirtualBlock* virtualBlock);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2683, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaIsVirtualBlockEmpty")]
-        public unsafe partial uint IsVirtualBlockEmpty(VirtualBlockT* virtualBlock);
+        public unsafe partial uint IsVirtualBlockEmpty(VirtualBlock* virtualBlock);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2688, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetVirtualAllocationInfo")]
-        public unsafe partial void GetVirtualAllocationInfo(VirtualBlockT* virtualBlock, VirtualAllocationT* allocation, VirtualAllocationInfo* pVirtualAllocInfo);
+        public unsafe partial void GetVirtualAllocationInfo(VirtualBlock* virtualBlock, VirtualAllocation* allocation, VirtualAllocationInfo* pVirtualAllocInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2688, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetVirtualAllocationInfo")]
-        public unsafe partial void GetVirtualAllocationInfo(VirtualBlockT* virtualBlock, VirtualAllocationT* allocation, ref VirtualAllocationInfo pVirtualAllocInfo);
+        public unsafe partial void GetVirtualAllocationInfo(VirtualBlock* virtualBlock, VirtualAllocation* allocation, ref VirtualAllocationInfo pVirtualAllocInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, VirtualAllocationT** pAllocation, ulong* pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, VirtualAllocation** pAllocation, ulong* pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, VirtualAllocationT** pAllocation, ref ulong pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, VirtualAllocation** pAllocation, ref ulong pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, ref VirtualAllocationT* pAllocation, ulong* pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, ref VirtualAllocation* pAllocation, ulong* pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, ref VirtualAllocationT* pAllocation, ref ulong pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, ref VirtualAllocation* pAllocation, ref ulong pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, VirtualAllocationT** pAllocation, ulong* pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, VirtualAllocation** pAllocation, ulong* pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, VirtualAllocationT** pAllocation, ref ulong pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, VirtualAllocation** pAllocation, ref ulong pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, ref VirtualAllocationT* pAllocation, ulong* pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, ref VirtualAllocation* pAllocation, ulong* pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualAllocate")]
-        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlockT* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, ref VirtualAllocationT* pAllocation, ref ulong pOffset);
+        public unsafe partial Silk.NET.Vulkan.Result VirtualAllocate(VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VirtualAllocationCreateInfo pCreateInfo, ref VirtualAllocation* pAllocation, ref ulong pOffset);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2713, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaVirtualFree")]
-        public unsafe partial void VirtualFree(VirtualBlockT* virtualBlock, VirtualAllocationT* allocation);
+        public unsafe partial void VirtualFree(VirtualBlock* virtualBlock, VirtualAllocation* allocation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2725, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaClearVirtualBlock")]
-        public unsafe partial void ClearVirtualBlock(VirtualBlockT* virtualBlock);
+        public unsafe partial void ClearVirtualBlock(VirtualBlock* virtualBlock);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2730, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetVirtualAllocationUserData")]
-        public unsafe partial void SetVirtualAllocationUserData(VirtualBlockT* virtualBlock, VirtualAllocationT* allocation, void* pUserData);
+        public unsafe partial void SetVirtualAllocationUserData(VirtualBlock* virtualBlock, VirtualAllocation* allocation, void* pUserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2730, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaSetVirtualAllocationUserData")]
-        public unsafe partial void SetVirtualAllocationUserData<T0>(VirtualBlockT* virtualBlock, VirtualAllocationT* allocation, ref T0 pUserData) where T0 : unmanaged;
+        public unsafe partial void SetVirtualAllocationUserData<T0>(VirtualBlock* virtualBlock, VirtualAllocation* allocation, ref T0 pUserData) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2739, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetVirtualBlockStatistics")]
-        public unsafe partial void GetVirtualBlockStatistics(VirtualBlockT* virtualBlock, Statistics* pStats);
+        public unsafe partial void GetVirtualBlockStatistics(VirtualBlock* virtualBlock, Statistics* pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2739, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaGetVirtualBlockStatistics")]
-        public unsafe partial void GetVirtualBlockStatistics(VirtualBlockT* virtualBlock, ref Statistics pStats);
+        public unsafe partial void GetVirtualBlockStatistics(VirtualBlock* virtualBlock, ref Statistics pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2748, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCalculateVirtualBlockStatistics")]
-        public unsafe partial void CalculateVirtualBlockStatistics(VirtualBlockT* virtualBlock, DetailedStatistics* pStats);
+        public unsafe partial void CalculateVirtualBlockStatistics(VirtualBlock* virtualBlock, DetailedStatistics* pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2748, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaCalculateVirtualBlockStatistics")]
-        public unsafe partial void CalculateVirtualBlockStatistics(VirtualBlockT* virtualBlock, ref DetailedStatistics pStats);
+        public unsafe partial void CalculateVirtualBlockStatistics(VirtualBlock* virtualBlock, ref DetailedStatistics pStats);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2767, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBuildVirtualBlockStatsString")]
-        public unsafe partial void BuildVirtualBlockStatsString(VirtualBlockT* virtualBlock, byte** ppStatsString, uint detailedMap);
+        public unsafe partial void BuildVirtualBlockStatsString(VirtualBlock* virtualBlock, byte** ppStatsString, uint detailedMap);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2767, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBuildVirtualBlockStatsString")]
-        public unsafe partial void BuildVirtualBlockStatsString(VirtualBlockT* virtualBlock, ref byte* ppStatsString, uint detailedMap);
+        public unsafe partial void BuildVirtualBlockStatsString(VirtualBlock* virtualBlock, ref byte* ppStatsString, uint detailedMap);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2773, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeVirtualBlockStatsString")]
-        public unsafe partial void FreeVirtualBlockStatsString(VirtualBlockT* virtualBlock, byte* pStatsString);
+        public unsafe partial void FreeVirtualBlockStatsString(VirtualBlock* virtualBlock, byte* pStatsString);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2773, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeVirtualBlockStatsString")]
-        public unsafe partial void FreeVirtualBlockStatsString(VirtualBlockT* virtualBlock, ref byte pStatsString);
+        public unsafe partial void FreeVirtualBlockStatsString(VirtualBlock* virtualBlock, ref byte pStatsString);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2773, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeVirtualBlockStatsString")]
-        public unsafe partial void FreeVirtualBlockStatsString(VirtualBlockT* virtualBlock, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pStatsString);
+        public unsafe partial void FreeVirtualBlockStatsString(VirtualBlock* virtualBlock, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pStatsString);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2782, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBuildStatsString")]
-        public unsafe partial void BuildStatsString(AllocatorT* allocator, byte** ppStatsString, uint detailedMap);
+        public unsafe partial void BuildStatsString(Allocator* allocator, byte** ppStatsString, uint detailedMap);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2782, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaBuildStatsString")]
-        public unsafe partial void BuildStatsString(AllocatorT* allocator, ref byte* ppStatsString, uint detailedMap);
+        public unsafe partial void BuildStatsString(Allocator* allocator, ref byte* ppStatsString, uint detailedMap);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2787, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeStatsString")]
-        public unsafe partial void FreeStatsString(AllocatorT* allocator, byte* pStatsString);
+        public unsafe partial void FreeStatsString(Allocator* allocator, byte* pStatsString);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2787, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeStatsString")]
-        public unsafe partial void FreeStatsString(AllocatorT* allocator, ref byte pStatsString);
+        public unsafe partial void FreeStatsString(Allocator* allocator, ref byte pStatsString);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2787, Column 33 in vk_vma.h")]
         [NativeApi(EntryPoint = "vmaFreeStatsString")]
-        public unsafe partial void FreeStatsString(AllocatorT* allocator, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pStatsString);
+        public unsafe partial void FreeStatsString(Allocator* allocator, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string pStatsString);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1890, Column 33 in vk_vma.h")]
-        public unsafe void GetPoolName(AllocatorT* allocator, PoolT* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] ppNameSa)
+        public unsafe void GetPoolName(Allocator* allocator, Pool* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] ppNameSa)
         {
             // StringArrayOverloader
             var ppName = (byte**) SilkMarshal.StringArrayToPtr(ppNameSa);
@@ -1708,7 +1708,7 @@ namespace Silk.NET.Vulkan.Vma
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2767, Column 33 in vk_vma.h")]
-        public unsafe void BuildVirtualBlockStatsString(VirtualBlockT* virtualBlock, string[] ppStatsStringSa, uint detailedMap)
+        public unsafe void BuildVirtualBlockStatsString(VirtualBlock* virtualBlock, string[] ppStatsStringSa, uint detailedMap)
         {
             // StringArrayOverloader
             var ppStatsString = (byte**) SilkMarshal.StringArrayToPtr(ppStatsStringSa);
@@ -1719,7 +1719,7 @@ namespace Silk.NET.Vulkan.Vma
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2782, Column 33 in vk_vma.h")]
-        public unsafe void BuildStatsString(AllocatorT* allocator, string[] ppStatsStringSa, uint detailedMap)
+        public unsafe void BuildStatsString(Allocator* allocator, string[] ppStatsStringSa, uint detailedMap)
         {
             // StringArrayOverloader
             var ppStatsString = (byte**) SilkMarshal.StringArrayToPtr(ppStatsStringSa);
