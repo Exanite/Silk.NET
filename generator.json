@@ -753,6 +753,16 @@
             },
             "typeMaps": [
                 {
+                    "VkBufferCreateInfo": "Silk.NET.Vulkan.BufferCreateInfo",
+                    "VkBuffer_T": "Silk.NET.Vulkan.Buffer",
+                    "VkImageCreateInfo": "Silk.NET.Vulkan.ImageCreateInfo",
+                    "VkImage_T": "Silk.NET.Vulkan.Image",
+                    "VkMemoryRequirements": "Silk.NET.Vulkan.MemoryRequirements",
+                    "VkPhysicalDeviceMemoryProperties": "Silk.NET.Vulkan.PhysicalDeviceMemoryProperties",
+                    "VkPhysicalDeviceProperties": "Silk.NET.Vulkan.PhysicalDeviceProperties",
+                    "VkResult": "Silk.NET.Vulkan.Result",
+                },
+                {
                     "$include.commonTypeMap": "build/csharp_typemap.json"
                 }
             ]
