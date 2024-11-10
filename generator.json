@@ -735,6 +735,7 @@
                 ]
             },
             "output": {
+                "mode": "Default",
                 "path": "src/Vulkan",
                 "licenseFile": "build/LICENSE_HEADER.txt",
                 "props": "build/props/bindings.props"
