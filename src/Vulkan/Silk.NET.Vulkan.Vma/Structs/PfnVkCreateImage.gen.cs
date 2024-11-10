@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkCreateImage : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.ImageCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.ImageCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageCreateInfo*, Silk.NET.Vulkan.AllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageCreateInfo*, Silk.NET.Vulkan.AllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result>) _handle;
         public PfnVkCreateImage
         (
-            delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.ImageCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageCreateInfo*, Silk.NET.Vulkan.AllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result> ptr
         ) => _handle = ptr;
 
         public PfnVkCreateImage
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkCreateImage pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkCreateImage(nint pfn)
-            => new PfnVkCreateImage((delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.ImageCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result>) pfn);
+            => new PfnVkCreateImage((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageCreateInfo*, Silk.NET.Vulkan.AllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result>) pfn);
 
         public static implicit operator PfnVkCreateImage(VkCreateImage proc)
             => new PfnVkCreateImage(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkCreateImage(PfnVkCreateImage pfn)
             => SilkMarshal.PtrToDelegate<VkCreateImage>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.ImageCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result>(PfnVkCreateImage pfn) => pfn.Handle;
-        public static implicit operator PfnVkCreateImage(delegate* unmanaged[Cdecl]<VkDevice_T*, Silk.NET.Vulkan.ImageCreateInfo*, VkAllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result> ptr) => new PfnVkCreateImage(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageCreateInfo*, Silk.NET.Vulkan.AllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result>(PfnVkCreateImage pfn) => pfn.Handle;
+        public static implicit operator PfnVkCreateImage(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageCreateInfo*, Silk.NET.Vulkan.AllocationCallbacks*, Silk.NET.Vulkan.Image**, Silk.NET.Vulkan.Result> ptr) => new PfnVkCreateImage(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate Silk.NET.Vulkan.Result VkCreateImage(VkDevice_T* arg0, Silk.NET.Vulkan.ImageCreateInfo* arg1, VkAllocationCallbacks* arg2, Silk.NET.Vulkan.Image** arg3);
+    public unsafe delegate Silk.NET.Vulkan.Result VkCreateImage(Silk.NET.Vulkan.Device* arg0, Silk.NET.Vulkan.ImageCreateInfo* arg1, Silk.NET.Vulkan.AllocationCallbacks* arg2, Silk.NET.Vulkan.Image** arg3);
 }
 

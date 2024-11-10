@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkGetPhysicalDeviceProperties : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkPhysicalDevice_T*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void> Handle => (delegate* unmanaged[Cdecl]<VkPhysicalDevice_T*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.PhysicalDevice*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.PhysicalDevice*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void>) _handle;
         public PfnVkGetPhysicalDeviceProperties
         (
-            delegate* unmanaged[Cdecl]<VkPhysicalDevice_T*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.PhysicalDevice*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void> ptr
         ) => _handle = ptr;
 
         public PfnVkGetPhysicalDeviceProperties
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkGetPhysicalDeviceProperties pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkGetPhysicalDeviceProperties(nint pfn)
-            => new PfnVkGetPhysicalDeviceProperties((delegate* unmanaged[Cdecl]<VkPhysicalDevice_T*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void>) pfn);
+            => new PfnVkGetPhysicalDeviceProperties((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.PhysicalDevice*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void>) pfn);
 
         public static implicit operator PfnVkGetPhysicalDeviceProperties(VkGetPhysicalDeviceProperties proc)
             => new PfnVkGetPhysicalDeviceProperties(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkGetPhysicalDeviceProperties(PfnVkGetPhysicalDeviceProperties pfn)
             => SilkMarshal.PtrToDelegate<VkGetPhysicalDeviceProperties>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkPhysicalDevice_T*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void>(PfnVkGetPhysicalDeviceProperties pfn) => pfn.Handle;
-        public static implicit operator PfnVkGetPhysicalDeviceProperties(delegate* unmanaged[Cdecl]<VkPhysicalDevice_T*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void> ptr) => new PfnVkGetPhysicalDeviceProperties(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.PhysicalDevice*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void>(PfnVkGetPhysicalDeviceProperties pfn) => pfn.Handle;
+        public static implicit operator PfnVkGetPhysicalDeviceProperties(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.PhysicalDevice*, Silk.NET.Vulkan.PhysicalDeviceProperties*, void> ptr) => new PfnVkGetPhysicalDeviceProperties(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate void VkGetPhysicalDeviceProperties(VkPhysicalDevice_T* arg0, Silk.NET.Vulkan.PhysicalDeviceProperties* arg1);
+    public unsafe delegate void VkGetPhysicalDeviceProperties(Silk.NET.Vulkan.PhysicalDevice* arg0, Silk.NET.Vulkan.PhysicalDeviceProperties* arg1);
 }
 

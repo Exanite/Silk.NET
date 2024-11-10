@@ -23,7 +23,7 @@ namespace Silk.NET.Vulkan.Vma
         (
             ulong? size = null,
             uint? flags = null,
-            VkAllocationCallbacks* pAllocationCallbacks = null
+            Silk.NET.Vulkan.AllocationCallbacks* pAllocationCallbacks = null
         ) : this()
         {
             if (size is not null)
@@ -56,6 +56,6 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "const VkAllocationCallbacks * _Nullable")]
         [NativeName("Type.Name", "const VkAllocationCallbacks * _Nullable")]
         [NativeName("Name", "pAllocationCallbacks")]
-        public VkAllocationCallbacks* PAllocationCallbacks;
+        public Silk.NET.Vulkan.AllocationCallbacks* PAllocationCallbacks;
     }
 }

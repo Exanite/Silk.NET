@@ -22,14 +22,14 @@ namespace Silk.NET.Vulkan.Vma
         public AllocatorCreateInfo
         (
             uint? flags = null,
-            VkPhysicalDevice_T* physicalDevice = null,
-            VkDevice_T* device = null,
+            Silk.NET.Vulkan.PhysicalDevice* physicalDevice = null,
+            Silk.NET.Vulkan.Device* device = null,
             ulong? preferredLargeHeapBlockSize = null,
-            VkAllocationCallbacks* pAllocationCallbacks = null,
+            Silk.NET.Vulkan.AllocationCallbacks* pAllocationCallbacks = null,
             DeviceMemoryCallbacks* pDeviceMemoryCallbacks = null,
             ulong* pHeapSizeLimit = null,
             VulkanFunctions* pVulkanFunctions = null,
-            VkInstance_T* instance = null,
+            Silk.NET.Vulkan.Instance* instance = null,
             uint? vulkanApiVersion = null,
             uint* pTypeExternalMemoryHandleTypes = null
         ) : this()
@@ -99,12 +99,12 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "VkPhysicalDevice _Nonnull")]
         [NativeName("Type.Name", "VkPhysicalDevice _Nonnull")]
         [NativeName("Name", "physicalDevice")]
-        public VkPhysicalDevice_T* PhysicalDevice;
+        public Silk.NET.Vulkan.PhysicalDevice* PhysicalDevice;
 
         [NativeName("Type", "VkDevice _Nonnull")]
         [NativeName("Type.Name", "VkDevice _Nonnull")]
         [NativeName("Name", "device")]
-        public VkDevice_T* Device;
+        public Silk.NET.Vulkan.Device* Device;
 
         [NativeName("Type", "VkDeviceSize")]
         [NativeName("Type.Name", "VkDeviceSize")]
@@ -114,7 +114,7 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "const VkAllocationCallbacks * _Nullable")]
         [NativeName("Type.Name", "const VkAllocationCallbacks * _Nullable")]
         [NativeName("Name", "pAllocationCallbacks")]
-        public VkAllocationCallbacks* PAllocationCallbacks;
+        public Silk.NET.Vulkan.AllocationCallbacks* PAllocationCallbacks;
 
         [NativeName("Type", "const VmaDeviceMemoryCallbacks * _Nullable")]
         [NativeName("Type.Name", "const VmaDeviceMemoryCallbacks * _Nullable")]
@@ -134,7 +134,7 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "VkInstance _Nonnull")]
         [NativeName("Type.Name", "VkInstance _Nonnull")]
         [NativeName("Name", "instance")]
-        public VkInstance_T* Instance;
+        public Silk.NET.Vulkan.Instance* Instance;
 
         [NativeName("Type", "uint32_t")]
         [NativeName("Type.Name", "uint32_t")]

@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkFlushMappedMemoryRanges : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkMappedMemoryRange*, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkMappedMemoryRange*, Silk.NET.Vulkan.Result>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.MappedMemoryRange*, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.MappedMemoryRange*, Silk.NET.Vulkan.Result>) _handle;
         public PfnVkFlushMappedMemoryRanges
         (
-            delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkMappedMemoryRange*, Silk.NET.Vulkan.Result> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.MappedMemoryRange*, Silk.NET.Vulkan.Result> ptr
         ) => _handle = ptr;
 
         public PfnVkFlushMappedMemoryRanges
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkFlushMappedMemoryRanges pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkFlushMappedMemoryRanges(nint pfn)
-            => new PfnVkFlushMappedMemoryRanges((delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkMappedMemoryRange*, Silk.NET.Vulkan.Result>) pfn);
+            => new PfnVkFlushMappedMemoryRanges((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.MappedMemoryRange*, Silk.NET.Vulkan.Result>) pfn);
 
         public static implicit operator PfnVkFlushMappedMemoryRanges(VkFlushMappedMemoryRanges proc)
             => new PfnVkFlushMappedMemoryRanges(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkFlushMappedMemoryRanges(PfnVkFlushMappedMemoryRanges pfn)
             => SilkMarshal.PtrToDelegate<VkFlushMappedMemoryRanges>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkMappedMemoryRange*, Silk.NET.Vulkan.Result>(PfnVkFlushMappedMemoryRanges pfn) => pfn.Handle;
-        public static implicit operator PfnVkFlushMappedMemoryRanges(delegate* unmanaged[Cdecl]<VkDevice_T*, uint, VkMappedMemoryRange*, Silk.NET.Vulkan.Result> ptr) => new PfnVkFlushMappedMemoryRanges(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.MappedMemoryRange*, Silk.NET.Vulkan.Result>(PfnVkFlushMappedMemoryRanges pfn) => pfn.Handle;
+        public static implicit operator PfnVkFlushMappedMemoryRanges(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.MappedMemoryRange*, Silk.NET.Vulkan.Result> ptr) => new PfnVkFlushMappedMemoryRanges(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate Silk.NET.Vulkan.Result VkFlushMappedMemoryRanges(VkDevice_T* arg0, uint arg1, VkMappedMemoryRange* arg2);
+    public unsafe delegate Silk.NET.Vulkan.Result VkFlushMappedMemoryRanges(Silk.NET.Vulkan.Device* arg0, uint arg1, Silk.NET.Vulkan.MappedMemoryRange* arg2);
 }
 
