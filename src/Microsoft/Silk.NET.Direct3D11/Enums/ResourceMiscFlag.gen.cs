@@ -72,6 +72,9 @@ namespace Silk.NET.Direct3D11
         [Obsolete("Deprecated in favour of \"SharedExclusiveWriter\"")]
         [NativeName("Name", "D3D11_RESOURCE_MISC_SHARED_EXCLUSIVE_WRITER")]
         ResourceMiscSharedExclusiveWriter = 0x200000,
+        [Obsolete("Deprecated in favour of \"NoShaderAccess\"")]
+        [NativeName("Name", "D3D11_RESOURCE_MISC_NO_SHADER_ACCESS")]
+        ResourceMiscNoShaderAccess = 0x400000,
         [NativeName("Name", "D3D11_RESOURCE_MISC_GENERATE_MIPS")]
         GenerateMips = 0x1,
         [NativeName("Name", "D3D11_RESOURCE_MISC_SHARED")]
@@ -110,5 +113,7 @@ namespace Silk.NET.Direct3D11
         SharedDisplayable = 0x100000,
         [NativeName("Name", "D3D11_RESOURCE_MISC_SHARED_EXCLUSIVE_WRITER")]
         SharedExclusiveWriter = 0x200000,
+        [NativeName("Name", "D3D11_RESOURCE_MISC_NO_SHADER_ACCESS")]
+        NoShaderAccess = 0x400000,
     }
 }

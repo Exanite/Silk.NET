@@ -52545,7 +52545,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52553,7 +52553,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52561,7 +52561,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52569,7 +52569,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52577,7 +52577,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52585,7 +52585,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52593,7 +52593,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52601,7 +52601,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52609,7 +52609,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52617,7 +52617,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1731, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceW(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52625,7 +52625,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52633,7 +52633,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52641,7 +52641,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52649,7 +52649,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52657,7 +52657,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52665,7 +52665,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52673,7 +52673,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52681,7 +52681,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52689,7 +52689,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52697,7 +52697,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1746, Column 1 in evntrace.h")]
         public static unsafe uint StartTraceA(this Windows thisApi, Span<ulong> TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52705,7 +52705,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1738, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1765, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52713,7 +52713,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1738, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1765, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52721,7 +52721,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1738, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1765, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52729,7 +52729,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1738, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1765, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52737,7 +52737,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1753, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1780, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52745,7 +52745,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1753, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1780, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52753,7 +52753,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1753, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1780, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52761,7 +52761,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1753, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1780, Column 1 in evntrace.h")]
         public static unsafe uint StopTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52769,7 +52769,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1772, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1799, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52777,7 +52777,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1772, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1799, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52785,7 +52785,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1772, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1799, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52793,7 +52793,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1772, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1799, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52801,7 +52801,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1787, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1814, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52809,7 +52809,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1787, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1814, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52817,7 +52817,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1787, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1814, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52825,7 +52825,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1787, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1814, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52833,7 +52833,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1800, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1827, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52841,7 +52841,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1800, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1827, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52849,7 +52849,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1800, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1827, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52857,7 +52857,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1800, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1827, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52865,7 +52865,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1809, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1836, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52873,7 +52873,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1809, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1836, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52881,7 +52881,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1809, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1836, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52889,7 +52889,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1809, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1836, Column 1 in evntrace.h")]
         public static unsafe uint UpdateTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52897,7 +52897,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1830, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1857, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52905,7 +52905,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1830, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1857, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52913,7 +52913,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1830, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1857, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52921,7 +52921,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1830, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1857, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52929,7 +52929,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1847, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1874, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52937,7 +52937,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1847, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1874, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, EventTraceProperties* Properties)
         {
             // SpanOverloader
@@ -52945,7 +52945,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1847, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1874, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52953,7 +52953,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1847, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1874, Column 1 in evntrace.h")]
         public static unsafe uint FlushTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, Span<EventTraceProperties> Properties)
         {
             // SpanOverloader
@@ -52961,7 +52961,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1866, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1893, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* InstanceName, Span<EventTraceProperties> Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -52969,7 +52969,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1866, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1893, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, EventTraceProperties* Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -52977,7 +52977,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1866, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1893, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> InstanceName, Span<EventTraceProperties> Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -52985,7 +52985,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1866, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1893, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceW(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string InstanceName, Span<EventTraceProperties> Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -52993,7 +52993,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1882, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1909, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* InstanceName, Span<EventTraceProperties> Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -53001,7 +53001,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1882, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1909, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, EventTraceProperties* Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -53009,7 +53009,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1882, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1909, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> InstanceName, Span<EventTraceProperties> Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -53017,7 +53017,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1882, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1909, Column 1 in evntrace.h")]
         public static unsafe uint ControlTraceA(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string InstanceName, Span<EventTraceProperties> Properties, uint ControlCode)
         {
             // SpanOverloader
@@ -53025,7 +53025,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1892, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1919, Column 1 in evntrace.h")]
         public static unsafe uint QueryAllTracesW(this Windows thisApi, EventTraceProperties** PropertyArray, uint PropertyArrayCount, Span<uint> LoggerCount)
         {
             // SpanOverloader
@@ -53033,7 +53033,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1892, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1919, Column 1 in evntrace.h")]
         public static unsafe uint QueryAllTracesW(this Windows thisApi, ref EventTraceProperties* PropertyArray, uint PropertyArrayCount, Span<uint> LoggerCount)
         {
             // SpanOverloader
@@ -53041,7 +53041,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1901, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1928, Column 1 in evntrace.h")]
         public static unsafe uint QueryAllTracesA(this Windows thisApi, EventTraceProperties** PropertyArray, uint PropertyArrayCount, Span<uint> LoggerCount)
         {
             // SpanOverloader
@@ -53049,7 +53049,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1901, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1928, Column 1 in evntrace.h")]
         public static unsafe uint QueryAllTracesA(this Windows thisApi, ref EventTraceProperties* PropertyArray, uint PropertyArrayCount, Span<uint> LoggerCount)
         {
             // SpanOverloader
@@ -53057,7 +53057,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1920, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1947, Column 1 in evntrace.h")]
         public static unsafe uint EnableTrace(this Windows thisApi, uint Enable, uint EnableFlag, uint EnableLevel, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, ulong TraceId)
         {
             // SpanOverloader
@@ -53065,7 +53065,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1969, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, Span<EventFilterDescriptor> EnableFilterDesc)
         {
             // SpanOverloader
@@ -53073,7 +53073,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1969, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc)
         {
             // SpanOverloader
@@ -53081,7 +53081,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1969, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, Span<EventFilterDescriptor> EnableFilterDesc)
         {
             // SpanOverloader
@@ -53089,7 +53089,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1969, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc)
         {
             // SpanOverloader
@@ -53097,7 +53097,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1969, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, Span<EventFilterDescriptor> EnableFilterDesc)
         {
             // SpanOverloader
@@ -53105,7 +53105,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1969, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc)
         {
             // SpanOverloader
@@ -53113,7 +53113,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 1969, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, Span<EventFilterDescriptor> EnableFilterDesc)
         {
             // SpanOverloader
@@ -53121,7 +53121,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1989, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2016, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx2(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, uint ControlCode, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint Timeout, Span<EnableTraceParameters> EnableParameters)
         {
             // SpanOverloader
@@ -53129,7 +53129,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1989, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2016, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx2(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ProviderId, uint ControlCode, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint Timeout, EnableTraceParameters* EnableParameters)
         {
             // SpanOverloader
@@ -53137,7 +53137,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1989, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2016, Column 1 in evntrace.h")]
         public static unsafe uint EnableTraceEx2(this Windows thisApi, ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ProviderId, uint ControlCode, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint Timeout, Span<EnableTraceParameters> EnableParameters)
         {
             // SpanOverloader
@@ -53145,7 +53145,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2409, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuidsEx(this Windows thisApi, TraceQueryInfoClass TraceQueryInfoClass, void* InBuffer, uint InBufferSize, void* OutBuffer, uint OutBufferSize, Span<uint> ReturnLength)
         {
             // SpanOverloader
@@ -53153,7 +53153,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2409, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuidsEx<T0>(this Windows thisApi, TraceQueryInfoClass TraceQueryInfoClass, void* InBuffer, uint InBufferSize, Span<T0> OutBuffer, uint OutBufferSize, uint* ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53161,7 +53161,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2409, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuidsEx<T0>(this Windows thisApi, TraceQueryInfoClass TraceQueryInfoClass, void* InBuffer, uint InBufferSize, Span<T0> OutBuffer, uint OutBufferSize, Span<uint> ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53169,7 +53169,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2409, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuidsEx<T0>(this Windows thisApi, TraceQueryInfoClass TraceQueryInfoClass, Span<T0> InBuffer, uint InBufferSize, void* OutBuffer, uint OutBufferSize, uint* ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53177,7 +53177,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2409, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuidsEx<T0>(this Windows thisApi, TraceQueryInfoClass TraceQueryInfoClass, Span<T0> InBuffer, uint InBufferSize, void* OutBuffer, uint OutBufferSize, Span<uint> ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53185,7 +53185,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2409, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuidsEx<T0, T1>(this Windows thisApi, TraceQueryInfoClass TraceQueryInfoClass, Span<T0> InBuffer, uint InBufferSize, Span<T1> OutBuffer, uint OutBufferSize, uint* ReturnLength) where T0 : unmanaged where T1 : unmanaged
         {
             // SpanOverloader
@@ -53193,7 +53193,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2409, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuidsEx<T0, T1>(this Windows thisApi, TraceQueryInfoClass TraceQueryInfoClass, Span<T0> InBuffer, uint InBufferSize, Span<T1> OutBuffer, uint OutBufferSize, Span<uint> ReturnLength) where T0 : unmanaged where T1 : unmanaged
         {
             // SpanOverloader
@@ -53201,7 +53201,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2439, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2466, Column 1 in evntrace.h")]
         public static unsafe uint TraceSetInformation<T0>(this Windows thisApi, ulong TraceId, TraceQueryInfoClass InformationClass, Span<T0> TraceInformation, uint InformationLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53209,7 +53209,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2451, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2478, Column 1 in evntrace.h")]
         public static unsafe uint TraceQueryInformation(this Windows thisApi, ulong TraceId, TraceQueryInfoClass InformationClass, void* TraceInformation, uint InformationLength, Span<uint> ReturnLength)
         {
             // SpanOverloader
@@ -53217,7 +53217,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2451, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2478, Column 1 in evntrace.h")]
         public static unsafe uint TraceQueryInformation<T0>(this Windows thisApi, ulong TraceId, TraceQueryInfoClass InformationClass, Span<T0> TraceInformation, uint InformationLength, uint* ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53225,7 +53225,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2451, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2478, Column 1 in evntrace.h")]
         public static unsafe uint TraceQueryInformation<T0>(this Windows thisApi, ulong TraceId, TraceQueryInfoClass InformationClass, Span<T0> TraceInformation, uint InformationLength, Span<uint> ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53233,7 +53233,15 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2473, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2490, Column 1 in evntrace.h")]
+        public static unsafe uint TraceConfigureLastBranchRecord(this Windows thisApi, ulong TraceId, TraceLbrConfiguration LbrConfiguration, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ClassicEventID> Events, uint EventCount)
+        {
+            // SpanOverloader
+            return thisApi.TraceConfigureLastBranchRecord(TraceId, LbrConfiguration, in Events.GetPinnableReference(), EventCount);
+        }
+
+        /// <summary>To be documented.</summary>
+        [NativeName("Src", "Line 2510, Column 1 in evntrace.h")]
         public static unsafe uint CreateTraceInstanceId(this Windows thisApi, void* RegHandle, Span<EventInstanceInfo> InstInfo)
         {
             // SpanOverloader
@@ -53241,7 +53249,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2473, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2510, Column 1 in evntrace.h")]
         public static unsafe uint CreateTraceInstanceId<T0>(this Windows thisApi, Span<T0> RegHandle, EventInstanceInfo* InstInfo) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53249,7 +53257,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2473, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2510, Column 1 in evntrace.h")]
         public static unsafe uint CreateTraceInstanceId<T0>(this Windows thisApi, Span<T0> RegHandle, Span<EventInstanceInfo> InstInfo) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53257,7 +53265,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2503, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2540, Column 1 in evntrace.h")]
         public static unsafe uint TraceEvent(this Windows thisApi, ulong TraceHandle, Span<EventTraceHeader> EventTrace)
         {
             // SpanOverloader
@@ -53265,7 +53273,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2517, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2554, Column 1 in evntrace.h")]
         public static unsafe uint TraceEventInstance(this Windows thisApi, ulong TraceHandle, EventInstanceHeader* EventTrace, EventInstanceInfo* InstInfo, Span<EventInstanceInfo> ParentInstInfo)
         {
             // SpanOverloader
@@ -53273,7 +53281,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2517, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2554, Column 1 in evntrace.h")]
         public static unsafe uint TraceEventInstance(this Windows thisApi, ulong TraceHandle, EventInstanceHeader* EventTrace, Span<EventInstanceInfo> InstInfo, EventInstanceInfo* ParentInstInfo)
         {
             // SpanOverloader
@@ -53281,7 +53289,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2517, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2554, Column 1 in evntrace.h")]
         public static unsafe uint TraceEventInstance(this Windows thisApi, ulong TraceHandle, EventInstanceHeader* EventTrace, Span<EventInstanceInfo> InstInfo, Span<EventInstanceInfo> ParentInstInfo)
         {
             // SpanOverloader
@@ -53289,7 +53297,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2517, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2554, Column 1 in evntrace.h")]
         public static unsafe uint TraceEventInstance(this Windows thisApi, ulong TraceHandle, Span<EventInstanceHeader> EventTrace, EventInstanceInfo* InstInfo, EventInstanceInfo* ParentInstInfo)
         {
             // SpanOverloader
@@ -53297,7 +53305,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2517, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2554, Column 1 in evntrace.h")]
         public static unsafe uint TraceEventInstance(this Windows thisApi, ulong TraceHandle, Span<EventInstanceHeader> EventTrace, EventInstanceInfo* InstInfo, Span<EventInstanceInfo> ParentInstInfo)
         {
             // SpanOverloader
@@ -53305,7 +53313,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2517, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2554, Column 1 in evntrace.h")]
         public static unsafe uint TraceEventInstance(this Windows thisApi, ulong TraceHandle, Span<EventInstanceHeader> EventTrace, Span<EventInstanceInfo> InstInfo, EventInstanceInfo* ParentInstInfo)
         {
             // SpanOverloader
@@ -53313,7 +53321,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2517, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2554, Column 1 in evntrace.h")]
         public static unsafe uint TraceEventInstance(this Windows thisApi, ulong TraceHandle, Span<EventInstanceHeader> EventTrace, Span<EventInstanceInfo> InstInfo, Span<EventInstanceInfo> ParentInstInfo)
         {
             // SpanOverloader
@@ -53321,7 +53329,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53329,7 +53337,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53337,7 +53345,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53345,7 +53353,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53353,7 +53361,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53361,7 +53369,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53369,7 +53377,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53377,7 +53385,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53385,7 +53393,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53393,7 +53401,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53401,7 +53409,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53409,7 +53417,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53417,7 +53425,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53425,7 +53433,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53433,7 +53441,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53441,7 +53449,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53449,7 +53457,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53457,7 +53465,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53465,7 +53473,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53473,7 +53481,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53481,7 +53489,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53489,7 +53497,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53497,7 +53505,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53505,7 +53513,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53513,7 +53521,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53521,7 +53529,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53529,7 +53537,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53537,7 +53545,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53545,7 +53553,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53553,7 +53561,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53561,7 +53569,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53569,7 +53577,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53577,7 +53585,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53585,7 +53593,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53593,7 +53601,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53601,7 +53609,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53609,7 +53617,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53617,7 +53625,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53625,7 +53633,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53633,7 +53641,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53641,7 +53649,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53649,7 +53657,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53657,7 +53665,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53665,7 +53673,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53673,7 +53681,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53681,7 +53689,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53689,7 +53697,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53697,7 +53705,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53705,7 +53713,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53713,7 +53721,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53721,7 +53729,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53729,7 +53737,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53737,7 +53745,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53745,7 +53753,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53753,7 +53761,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53761,7 +53769,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53769,7 +53777,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53777,7 +53785,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53785,7 +53793,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53793,7 +53801,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53801,7 +53809,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53809,7 +53817,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53817,7 +53825,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53825,7 +53833,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53833,7 +53841,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53841,7 +53849,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53849,7 +53857,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -53857,7 +53865,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -53865,7 +53873,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53873,7 +53881,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53881,7 +53889,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53889,7 +53897,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53897,7 +53905,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53905,7 +53913,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53913,7 +53921,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53921,7 +53929,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53929,7 +53937,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53937,7 +53945,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53945,7 +53953,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53953,7 +53961,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53961,7 +53969,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53969,7 +53977,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53977,7 +53985,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53985,7 +53993,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -53993,7 +54001,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54001,7 +54009,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54009,7 +54017,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54017,7 +54025,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54025,7 +54033,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54033,7 +54041,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54041,7 +54049,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54049,7 +54057,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54057,7 +54065,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54065,7 +54073,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54073,7 +54081,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54081,7 +54089,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54089,7 +54097,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54097,7 +54105,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54105,7 +54113,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54113,7 +54121,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54121,7 +54129,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54129,7 +54137,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54137,7 +54145,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54145,7 +54153,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54153,7 +54161,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54161,7 +54169,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54169,7 +54177,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54177,7 +54185,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54185,7 +54193,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54193,7 +54201,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54201,7 +54209,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54209,7 +54217,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54217,7 +54225,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54225,7 +54233,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54233,7 +54241,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54241,7 +54249,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54249,7 +54257,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54257,7 +54265,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54265,7 +54273,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54273,7 +54281,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54281,7 +54289,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54289,7 +54297,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54297,7 +54305,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54305,7 +54313,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54313,7 +54321,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54321,7 +54329,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54329,7 +54337,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54337,7 +54345,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54345,7 +54353,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54353,7 +54361,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54361,7 +54369,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54369,7 +54377,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54377,7 +54385,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54385,7 +54393,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54393,7 +54401,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54401,7 +54409,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54409,7 +54417,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54417,7 +54425,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54425,7 +54433,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54433,7 +54441,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2574, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsW<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54441,7 +54449,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54449,7 +54457,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54457,7 +54465,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54465,7 +54473,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54473,7 +54481,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54481,7 +54489,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54489,7 +54497,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54497,7 +54505,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54505,7 +54513,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54513,7 +54521,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54521,7 +54529,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54529,7 +54537,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54537,7 +54545,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54545,7 +54553,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54553,7 +54561,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54561,7 +54569,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54569,7 +54577,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54577,7 +54585,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54585,7 +54593,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54593,7 +54601,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54601,7 +54609,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54609,7 +54617,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54617,7 +54625,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54625,7 +54633,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54633,7 +54641,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54641,7 +54649,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54649,7 +54657,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54657,7 +54665,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54665,7 +54673,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54673,7 +54681,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54681,7 +54689,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54689,7 +54697,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54697,7 +54705,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54705,7 +54713,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54713,7 +54721,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54721,7 +54729,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54729,7 +54737,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54737,7 +54745,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54745,7 +54753,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54753,7 +54761,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54761,7 +54769,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54769,7 +54777,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54777,7 +54785,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54785,7 +54793,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54793,7 +54801,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54801,7 +54809,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54809,7 +54817,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54817,7 +54825,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54825,7 +54833,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54833,7 +54841,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54841,7 +54849,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54849,7 +54857,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54857,7 +54865,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54865,7 +54873,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54873,7 +54881,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54881,7 +54889,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54889,7 +54897,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54897,7 +54905,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54905,7 +54913,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54913,7 +54921,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54921,7 +54929,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54929,7 +54937,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54937,7 +54945,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54945,7 +54953,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54953,7 +54961,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54961,7 +54969,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54969,7 +54977,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle)
         {
             // SpanOverloader
@@ -54977,7 +54985,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA(this Windows thisApi, PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle)
         {
             // SpanOverloader
@@ -54985,7 +54993,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -54993,7 +55001,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55001,7 +55009,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55009,7 +55017,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55017,7 +55025,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55025,7 +55033,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55033,7 +55041,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55041,7 +55049,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55049,7 +55057,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55057,7 +55065,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55065,7 +55073,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55073,7 +55081,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55081,7 +55089,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55089,7 +55097,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55097,7 +55105,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55105,7 +55113,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55113,7 +55121,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55121,7 +55129,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55129,7 +55137,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55137,7 +55145,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55145,7 +55153,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55153,7 +55161,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55161,7 +55169,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55169,7 +55177,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55177,7 +55185,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55185,7 +55193,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55193,7 +55201,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55201,7 +55209,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55209,7 +55217,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55217,7 +55225,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55225,7 +55233,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55233,7 +55241,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55241,7 +55249,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55249,7 +55257,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55257,7 +55265,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55265,7 +55273,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55273,7 +55281,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55281,7 +55289,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55289,7 +55297,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55297,7 +55305,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55305,7 +55313,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55313,7 +55321,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55321,7 +55329,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55329,7 +55337,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55337,7 +55345,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55345,7 +55353,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55353,7 +55361,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55361,7 +55369,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55369,7 +55377,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55377,7 +55385,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55385,7 +55393,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55393,7 +55401,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55401,7 +55409,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55409,7 +55417,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55417,7 +55425,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55425,7 +55433,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55433,7 +55441,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55441,7 +55449,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55449,7 +55457,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55457,7 +55465,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55465,7 +55473,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55473,7 +55481,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55481,7 +55489,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55489,7 +55497,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55497,7 +55505,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55505,7 +55513,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55513,7 +55521,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55521,7 +55529,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55529,7 +55537,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55537,7 +55545,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55545,7 +55553,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55553,7 +55561,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2594, Column 1 in evntrace.h")]
         public static unsafe uint RegisterTraceGuidsA<T0>(this Windows thisApi, PfnWmidprequest RequestAddress, Span<T0> RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> ControlGuid, uint GuidCount, Span<TraceGuidRegistration> TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, Span<ulong> RegistrationHandle) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55561,7 +55569,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2572, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2609, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuids(this Windows thisApi, TraceGuidProperties** GuidPropertiesArray, uint PropertyArrayCount, Span<uint> GuidCount)
         {
             // SpanOverloader
@@ -55569,7 +55577,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2572, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2609, Column 1 in evntrace.h")]
         public static unsafe uint EnumerateTraceGuids(this Windows thisApi, ref TraceGuidProperties* GuidPropertiesArray, uint PropertyArrayCount, Span<uint> GuidCount)
         {
             // SpanOverloader
@@ -55577,7 +55585,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2595, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2632, Column 1 in evntrace.h")]
         public static unsafe ulong GetTraceLoggerHandle<T0>(this Windows thisApi, Span<T0> Buffer) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55585,7 +55593,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2627, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2664, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceW(this Windows thisApi, Span<EventTraceLogfilew> Logfile)
         {
             // SpanOverloader
@@ -55593,7 +55601,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2635, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2672, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTrace(this Windows thisApi, ulong* HandleArray, uint HandleCount, Filetime* StartTime, Span<Filetime> EndTime)
         {
             // SpanOverloader
@@ -55601,7 +55609,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2635, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2672, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTrace(this Windows thisApi, ulong* HandleArray, uint HandleCount, Span<Filetime> StartTime, Filetime* EndTime)
         {
             // SpanOverloader
@@ -55609,7 +55617,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2635, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2672, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTrace(this Windows thisApi, ulong* HandleArray, uint HandleCount, Span<Filetime> StartTime, Span<Filetime> EndTime)
         {
             // SpanOverloader
@@ -55617,7 +55625,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2635, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2672, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTrace(this Windows thisApi, Span<ulong> HandleArray, uint HandleCount, Filetime* StartTime, Filetime* EndTime)
         {
             // SpanOverloader
@@ -55625,7 +55633,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2635, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2672, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTrace(this Windows thisApi, Span<ulong> HandleArray, uint HandleCount, Filetime* StartTime, Span<Filetime> EndTime)
         {
             // SpanOverloader
@@ -55633,7 +55641,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2635, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2672, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTrace(this Windows thisApi, Span<ulong> HandleArray, uint HandleCount, Span<Filetime> StartTime, Filetime* EndTime)
         {
             // SpanOverloader
@@ -55641,7 +55649,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2635, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2672, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTrace(this Windows thisApi, Span<ulong> HandleArray, uint HandleCount, Span<Filetime> StartTime, Span<Filetime> EndTime)
         {
             // SpanOverloader
@@ -55649,7 +55657,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2655, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2692, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromBufferStream<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, PfnPetwBufferCompletionCallback BufferCompletionCallback, Span<T0> BufferCompletionContext) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55657,7 +55665,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2655, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2692, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromBufferStream(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, PfnPetwBufferCompletionCallback BufferCompletionCallback, void* BufferCompletionContext)
         {
             // SpanOverloader
@@ -55665,7 +55673,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2655, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2692, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromBufferStream<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, PfnPetwBufferCompletionCallback BufferCompletionCallback, Span<T0> BufferCompletionContext) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55673,7 +55681,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55681,7 +55689,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55689,7 +55697,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55697,7 +55705,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55705,7 +55713,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55713,7 +55721,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55721,7 +55729,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55729,7 +55737,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55737,7 +55745,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55745,7 +55753,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2703, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLogger(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55753,7 +55761,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55761,7 +55769,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55769,7 +55777,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55777,7 +55785,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55785,7 +55793,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, void* MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55793,7 +55801,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55801,7 +55809,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55809,7 +55817,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55817,7 +55825,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55825,7 +55833,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55833,7 +55841,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55841,7 +55849,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55849,7 +55857,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, void* MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55857,7 +55865,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55865,7 +55873,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55873,7 +55881,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55881,7 +55889,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55889,7 +55897,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55897,7 +55905,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55905,7 +55913,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, void* MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55913,7 +55921,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55921,7 +55929,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2714, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, nuint AllocationSize, Span<T0> MemoryPartitionHandle, Span<TraceLogfileHeader> LogFileHeader) where T0 : unmanaged
         {
             // SpanOverloader
@@ -55929,7 +55937,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55937,7 +55945,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55945,7 +55953,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55953,7 +55961,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55961,7 +55969,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55969,7 +55977,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -55977,7 +55985,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55985,7 +55993,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -55993,7 +56001,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, TraceLogfileHeader* LogFileHeader)
         {
             // SpanOverloader
@@ -56001,7 +56009,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2727, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceFromFile(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwOpenTraceOptions> Options, Span<TraceLogfileHeader> LogFileHeader)
         {
             // SpanOverloader
@@ -56009,7 +56017,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2701, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2738, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTraceBufferIncrementReference(this Windows thisApi, ulong TraceHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwBufferHeader> Buffer)
         {
             // SpanOverloader
@@ -56017,7 +56025,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2711, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2748, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTraceBufferDecrementReference(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwBufferHeader> Buffer)
         {
             // SpanOverloader
@@ -56025,7 +56033,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2720, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
         public static unsafe uint ProcessTraceAddBufferToBufferStream(this Windows thisApi, ulong TraceHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<EtwBufferHeader> Buffer, uint BufferSize)
         {
             // SpanOverloader
@@ -56033,7 +56041,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2794, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceProcessingHandle(this Windows thisApi, ulong ProcessingHandle, EtwProcessHandleInfoType InformationClass, void* InBuffer, uint InBufferSize, void* OutBuffer, uint OutBufferSize, Span<uint> ReturnLength)
         {
             // SpanOverloader
@@ -56041,7 +56049,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2794, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceProcessingHandle<T0>(this Windows thisApi, ulong ProcessingHandle, EtwProcessHandleInfoType InformationClass, void* InBuffer, uint InBufferSize, Span<T0> OutBuffer, uint OutBufferSize, uint* ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -56049,7 +56057,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2794, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceProcessingHandle<T0>(this Windows thisApi, ulong ProcessingHandle, EtwProcessHandleInfoType InformationClass, void* InBuffer, uint InBufferSize, Span<T0> OutBuffer, uint OutBufferSize, Span<uint> ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -56057,7 +56065,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2794, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceProcessingHandle<T0>(this Windows thisApi, ulong ProcessingHandle, EtwProcessHandleInfoType InformationClass, Span<T0> InBuffer, uint InBufferSize, void* OutBuffer, uint OutBufferSize, uint* ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -56065,7 +56073,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2794, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceProcessingHandle<T0>(this Windows thisApi, ulong ProcessingHandle, EtwProcessHandleInfoType InformationClass, Span<T0> InBuffer, uint InBufferSize, void* OutBuffer, uint OutBufferSize, Span<uint> ReturnLength) where T0 : unmanaged
         {
             // SpanOverloader
@@ -56073,7 +56081,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2794, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceProcessingHandle<T0, T1>(this Windows thisApi, ulong ProcessingHandle, EtwProcessHandleInfoType InformationClass, Span<T0> InBuffer, uint InBufferSize, Span<T1> OutBuffer, uint OutBufferSize, uint* ReturnLength) where T0 : unmanaged where T1 : unmanaged
         {
             // SpanOverloader
@@ -56081,7 +56089,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2794, Column 1 in evntrace.h")]
         public static unsafe uint QueryTraceProcessingHandle<T0, T1>(this Windows thisApi, ulong ProcessingHandle, EtwProcessHandleInfoType InformationClass, Span<T0> InBuffer, uint InBufferSize, Span<T1> OutBuffer, uint OutBufferSize, Span<uint> ReturnLength) where T0 : unmanaged where T1 : unmanaged
         {
             // SpanOverloader
@@ -56089,7 +56097,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2780, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2817, Column 1 in evntrace.h")]
         public static unsafe ulong OpenTraceA(this Windows thisApi, Span<EventTraceLogfilea> Logfile)
         {
             // SpanOverloader
@@ -56097,7 +56105,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2787, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2824, Column 1 in evntrace.h")]
         public static unsafe uint SetTraceCallback(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> pGuid, PfnPeventCallback EventCallback)
         {
             // SpanOverloader
@@ -56105,7 +56113,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2795, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2832, Column 1 in evntrace.h")]
         public static unsafe uint RemoveTraceCallback(this Windows thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> pGuid)
         {
             // SpanOverloader
@@ -56113,7 +56121,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2812, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2849, Column 1 in evntrace.h")]
         public static unsafe uint TraceMessage(this Windows thisApi, ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> MessageGuid, ushort MessageNumber)
         {
             // SpanOverloader
@@ -56121,7 +56129,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2865, Column 1 in evntrace.h")]
         public static unsafe uint TraceMessageVa(this Windows thisApi, ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* MessageGuid, ushort MessageNumber, Span<byte> MessageArgList)
         {
             // SpanOverloader
@@ -56129,7 +56137,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2865, Column 1 in evntrace.h")]
         public static unsafe uint TraceMessageVa(this Windows thisApi, ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> MessageGuid, ushort MessageNumber, byte* MessageArgList)
         {
             // SpanOverloader
@@ -56137,7 +56145,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2865, Column 1 in evntrace.h")]
         public static unsafe uint TraceMessageVa(this Windows thisApi, ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> MessageGuid, ushort MessageNumber, Span<byte> MessageArgList)
         {
             // SpanOverloader
@@ -56145,7 +56153,7 @@ namespace Silk.NET.Core.Win32Extras
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
+        [NativeName("Src", "Line 2865, Column 1 in evntrace.h")]
         public static unsafe uint TraceMessageVa(this Windows thisApi, ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Guid> MessageGuid, ushort MessageNumber, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string MessageArgList)
         {
             // SpanOverloader
