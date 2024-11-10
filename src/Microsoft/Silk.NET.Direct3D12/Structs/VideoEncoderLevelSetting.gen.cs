@@ -24,8 +24,7 @@ namespace Silk.NET.Direct3D12
             uint? dataSize = null,
             VideoEncoderLevelSettingUnion? anonymous = null,
             VideoEncoderLevelsH264* pH264LevelSetting = null,
-            VideoEncoderLevelTierConstraintsHevc* pHEVCLevelSetting = null,
-            VideoEncoderAV1LevelTierConstraints* pAV1LevelSetting = null
+            VideoEncoderLevelTierConstraintsHevc* pHEVCLevelSetting = null
         ) : this()
         {
             if (dataSize is not null)
@@ -47,11 +46,6 @@ namespace Silk.NET.Direct3D12
             {
                 PHEVCLevelSetting = pHEVCLevelSetting;
             }
-
-            if (pAV1LevelSetting is not null)
-            {
-                PAV1LevelSetting = pAV1LevelSetting;
-            }
         }
 
 
@@ -61,7 +55,7 @@ namespace Silk.NET.Direct3D12
         public uint DataSize;
 
         [NativeName("Type", "")]
-        [NativeName("Type.Name", "__AnonymousRecord_d3d12video_L7041_C5")]
+        [NativeName("Type.Name", "__AnonymousRecord_d3d12video_L6390_C5")]
         [NativeName("Name", "anonymous1")]
         public VideoEncoderLevelSettingUnion Anonymous;
 #if NETSTANDARD2_1 || NETCOREAPP3_1 || NET5_0 || NET5_0_OR_GREATER
@@ -89,20 +83,6 @@ namespace Silk.NET.Direct3D12
         {
             get => Anonymous.PHEVCLevelSetting;
             set => Anonymous.PHEVCLevelSetting = value;
-        }
-#endif
-
-#if NETSTANDARD2_1 || NETCOREAPP3_1 || NET5_0 || NET5_0_OR_GREATER
-        public ref VideoEncoderAV1LevelTierConstraints* PAV1LevelSetting
-        {
-            [MethodImpl((MethodImplOptions) 768)]
-            get => ref MemoryMarshal.CreateSpan(ref Anonymous, 1)[0].PAV1LevelSetting;
-        }
-#else
-        public VideoEncoderAV1LevelTierConstraints* PAV1LevelSetting
-        {
-            get => Anonymous.PAV1LevelSetting;
-            set => Anonymous.PAV1LevelSetting = value;
         }
 #endif
 

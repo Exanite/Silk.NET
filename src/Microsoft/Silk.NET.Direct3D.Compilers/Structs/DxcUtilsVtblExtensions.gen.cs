@@ -133,130 +133,130 @@ public unsafe static class DxcUtilsVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlobFromPinned(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int CreateBlobFromPinned(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pData, size, codePage, ppBlobEncoding);
+        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pData, size, codePage, pBlobEncoding);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlobFromPinned(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int CreateBlobFromPinned(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+        fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pData, size, codePage, ppBlobEncodingPtr);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pData, size, codePage, pBlobEncodingPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void* pDataPtr = &pData)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pDataPtr, size, codePage, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pDataPtr, size, codePage, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void* pDataPtr = &pData)
         {
-            fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pDataPtr, size, codePage, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[4])(@this, pDataPtr, size, codePage, pBlobEncodingPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, IMalloc* pIMalloc, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, IMalloc* pIMalloc, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMalloc, size, codePage, ppBlobEncoding);
+        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMalloc, size, codePage, pBlobEncoding);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, IMalloc* pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, IMalloc* pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+        fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMalloc, size, codePage, ppBlobEncodingPtr);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMalloc, size, codePage, pBlobEncodingPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ref IMalloc pIMalloc, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ref IMalloc pIMalloc, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IMalloc* pIMallocPtr = &pIMalloc)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMallocPtr, size, codePage, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMallocPtr, size, codePage, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ref IMalloc pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ref IMalloc pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IMalloc* pIMallocPtr = &pIMalloc)
         {
-            fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMallocPtr, size, codePage, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pData, pIMallocPtr, size, codePage, pBlobEncodingPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, IMalloc* pIMalloc, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, IMalloc* pIMalloc, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void* pDataPtr = &pData)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMalloc, size, codePage, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMalloc, size, codePage, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, IMalloc* pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, IMalloc* pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void* pDataPtr = &pData)
         {
-            fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMalloc, size, codePage, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMalloc, size, codePage, pBlobEncodingPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ref IMalloc pIMalloc, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ref IMalloc pIMalloc, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -264,14 +264,14 @@ public unsafe static class DxcUtilsVtblExtensions
         {
             fixed (IMalloc* pIMallocPtr = &pIMalloc)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMallocPtr, size, codePage, ppBlobEncoding);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMallocPtr, size, codePage, pBlobEncoding);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ref IMalloc pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ref IMalloc pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -279,9 +279,9 @@ public unsafe static class DxcUtilsVtblExtensions
         {
             fixed (IMalloc* pIMallocPtr = &pIMalloc)
             {
-                fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+                fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
                 {
-                    ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMallocPtr, size, codePage, ppBlobEncodingPtr);
+                    ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, IMalloc*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[5])(@this, pDataPtr, pIMallocPtr, size, codePage, pBlobEncodingPtr);
                 }
             }
         }
@@ -289,130 +289,130 @@ public unsafe static class DxcUtilsVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int CreateBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pData, size, codePage, ppBlobEncoding);
+        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pData, size, codePage, pBlobEncoding);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int CreateBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+        fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pData, size, codePage, ppBlobEncodingPtr);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pData, size, codePage, pBlobEncodingPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void* pDataPtr = &pData)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pDataPtr, size, codePage, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pDataPtr, size, codePage, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void* pDataPtr = &pData)
         {
-            fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pDataPtr, size, codePage, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, void*, uint, uint, IDxcBlobEncoding**, int>)@this->LpVtbl[6])(@this, pDataPtr, size, codePage, pBlobEncodingPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, uint* pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, uint* pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePage, ppBlobEncoding);
+        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePage, pBlobEncoding);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, uint* pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, uint* pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+        fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePage, ppBlobEncodingPtr);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePage, pBlobEncodingPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, ref uint pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, ref uint pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (uint* pCodePagePtr = &pCodePage)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePagePtr, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePagePtr, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, ref uint pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, ref uint pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (uint* pCodePagePtr = &pCodePage)
         {
-            fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePagePtr, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileName, pCodePagePtr, pBlobEncodingPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, uint* pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, uint* pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (char* pFileNamePtr = &pFileName)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, uint* pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, uint* pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (char* pFileNamePtr = &pFileName)
         {
-            fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, pBlobEncodingPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, ref uint pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, ref uint pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -420,14 +420,14 @@ public unsafe static class DxcUtilsVtblExtensions
         {
             fixed (uint* pCodePagePtr = &pCodePage)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, ppBlobEncoding);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, pBlobEncoding);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, ref uint pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, ref uint pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -435,9 +435,9 @@ public unsafe static class DxcUtilsVtblExtensions
         {
             fixed (uint* pCodePagePtr = &pCodePage)
             {
-                fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+                fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
                 {
-                    ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, ppBlobEncodingPtr);
+                    ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, char*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, pBlobEncodingPtr);
                 }
             }
         }
@@ -445,55 +445,55 @@ public unsafe static class DxcUtilsVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, uint* pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, uint* pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pFileNamePtr = (byte*) SilkMarshal.StringToPtr(pFileName, NativeStringEncoding.LPWStr);
-        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, ppBlobEncoding);
+        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, pBlobEncoding);
         SilkMarshal.Free((nint)pFileNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, uint* pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, uint* pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pFileNamePtr = (byte*) SilkMarshal.StringToPtr(pFileName, NativeStringEncoding.LPWStr);
-        fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+        fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, ppBlobEncodingPtr);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePage, pBlobEncodingPtr);
         }
         SilkMarshal.Free((nint)pFileNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, ref uint pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, ref uint pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pFileNamePtr = (byte*) SilkMarshal.StringToPtr(pFileName, NativeStringEncoding.LPWStr);
         fixed (uint* pCodePagePtr = &pCodePage)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, pBlobEncoding);
         }
         SilkMarshal.Free((nint)pFileNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, ref uint pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, ref uint pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pFileNamePtr = (byte*) SilkMarshal.StringToPtr(pFileName, NativeStringEncoding.LPWStr);
         fixed (uint* pCodePagePtr = &pCodePage)
         {
-            fixed (IDxcBlobEncoding** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobEncoding** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, byte*, uint*, IDxcBlobEncoding**, int>)@this->LpVtbl[7])(@this, pFileNamePtr, pCodePagePtr, pBlobEncodingPtr);
             }
         }
         SilkMarshal.Free((nint)pFileNamePtr);
@@ -570,96 +570,96 @@ public unsafe static class DxcUtilsVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, IDxcBlobUtf8** ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, IDxcBlobUtf8** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlob, ppBlobEncoding);
+        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlob, pBlobEncoding);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, ref IDxcBlobUtf8* ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, ref IDxcBlobUtf8* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (IDxcBlobUtf8** ppBlobEncodingPtr = &ppBlobEncoding)
+        fixed (IDxcBlobUtf8** pBlobEncodingPtr = &pBlobEncoding)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlob, ppBlobEncodingPtr);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlob, pBlobEncodingPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, IDxcBlobUtf8** ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, IDxcBlobUtf8** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IDxcBlob* pBlobPtr = &pBlob)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlobPtr, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlobPtr, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref IDxcBlobUtf8* ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref IDxcBlobUtf8* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IDxcBlob* pBlobPtr = &pBlob)
         {
-            fixed (IDxcBlobUtf8** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobUtf8** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlobPtr, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf8**, int>)@this->LpVtbl[10])(@this, pBlobPtr, pBlobEncodingPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsWide(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, IDxcBlobWide** ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf16(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, IDxcBlobUtf16** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobWide**, int>)@this->LpVtbl[11])(@this, pBlob, ppBlobEncoding);
+        ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf16**, int>)@this->LpVtbl[11])(@this, pBlob, pBlobEncoding);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsWide(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, ref IDxcBlobWide* ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf16(this ComPtr<IDxcUtils> thisVtbl, IDxcBlob* pBlob, ref IDxcBlobUtf16* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (IDxcBlobWide** ppBlobEncodingPtr = &ppBlobEncoding)
+        fixed (IDxcBlobUtf16** pBlobEncodingPtr = &pBlobEncoding)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobWide**, int>)@this->LpVtbl[11])(@this, pBlob, ppBlobEncodingPtr);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf16**, int>)@this->LpVtbl[11])(@this, pBlob, pBlobEncodingPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsWide(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, IDxcBlobWide** ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf16(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, IDxcBlobUtf16** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IDxcBlob* pBlobPtr = &pBlob)
         {
-            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobWide**, int>)@this->LpVtbl[11])(@this, pBlobPtr, ppBlobEncoding);
+            ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf16**, int>)@this->LpVtbl[11])(@this, pBlobPtr, pBlobEncoding);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsWide(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref IDxcBlobWide* ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf16(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref IDxcBlobUtf16* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IDxcBlob* pBlobPtr = &pBlob)
         {
-            fixed (IDxcBlobWide** ppBlobEncodingPtr = &ppBlobEncoding)
+            fixed (IDxcBlobUtf16** pBlobEncodingPtr = &pBlobEncoding)
             {
-                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobWide**, int>)@this->LpVtbl[11])(@this, pBlobPtr, ppBlobEncodingPtr);
+                ret = ((delegate* unmanaged[Stdcall]<IDxcUtils*, IDxcBlob*, IDxcBlobUtf16**, int>)@this->LpVtbl[11])(@this, pBlobPtr, pBlobEncodingPtr);
             }
         }
         return ret;
@@ -5051,275 +5051,275 @@ public unsafe static class DxcUtilsVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlobFromPinned<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static unsafe int CreateBlobFromPinned<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->CreateBlobFromPinned(pData, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->CreateBlobFromPinned(pData, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->CreateBlobFromPinned(in pData.GetPinnableReference(), size, codePage, ppBlobEncoding);
+        return @this->CreateBlobFromPinned(in pData.GetPinnableReference(), size, codePage, pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int CreateBlobFromPinned<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref ComPtr<TI0> ppBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static int CreateBlobFromPinned<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref ComPtr<TI0> pBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->CreateBlobFromPinned(in pData, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->CreateBlobFromPinned(in pData, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlobFromPinned<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->CreateBlobFromPinned(in pData.GetPinnableReference(), size, codePage, ref ppBlobEncoding);
+        return @this->CreateBlobFromPinned(in pData.GetPinnableReference(), size, codePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref ComPtr<TI1> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI1>
+    public static unsafe int MoveToBlob<TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref ComPtr<TI1> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI1>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->MoveToBlob(pData, (IMalloc*) pIMalloc.Handle, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->MoveToBlob(pData, (IMalloc*) pIMalloc.Handle, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0>
+    public static unsafe int MoveToBlob<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->MoveToBlob(pData, (IMalloc*) pIMalloc.Handle, size, codePage, ref ppBlobEncoding);
+        return @this->MoveToBlob(pData, (IMalloc*) pIMalloc.Handle, size, codePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, Span<IMalloc> pIMalloc, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, Span<IMalloc> pIMalloc, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->MoveToBlob(pData, ref pIMalloc.GetPinnableReference(), size, codePage, ppBlobEncoding);
+        return @this->MoveToBlob(pData, ref pIMalloc.GetPinnableReference(), size, codePage, pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ref IMalloc pIMalloc, uint size, uint codePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static unsafe int MoveToBlob<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, ref IMalloc pIMalloc, uint size, uint codePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->MoveToBlob(pData, ref pIMalloc, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->MoveToBlob(pData, ref pIMalloc, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, Span<IMalloc> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int MoveToBlob(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, Span<IMalloc> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->MoveToBlob(pData, ref pIMalloc.GetPinnableReference(), size, codePage, ref ppBlobEncoding);
+        return @this->MoveToBlob(pData, ref pIMalloc.GetPinnableReference(), size, codePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, IMalloc* pIMalloc, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, IMalloc* pIMalloc, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->MoveToBlob(in pData.GetPinnableReference(), pIMalloc, size, codePage, ppBlobEncoding);
+        return @this->MoveToBlob(in pData.GetPinnableReference(), pIMalloc, size, codePage, pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int MoveToBlob<T0, TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref ComPtr<TI1> ppBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI1>
+    public static int MoveToBlob<T0, TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref ComPtr<TI1> pBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI1>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->MoveToBlob(in pData, (IMalloc*) pIMalloc.Handle, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->MoveToBlob(in pData, (IMalloc*) pIMalloc.Handle, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, IMalloc* pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, IMalloc* pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->MoveToBlob(in pData.GetPinnableReference(), pIMalloc, size, codePage, ref ppBlobEncoding);
+        return @this->MoveToBlob(in pData.GetPinnableReference(), pIMalloc, size, codePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0>
+    public static unsafe int MoveToBlob<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ComPtr<TI0> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IMalloc>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->MoveToBlob(in pData, (IMalloc*) pIMalloc.Handle, size, codePage, ref ppBlobEncoding);
+        return @this->MoveToBlob(in pData, (IMalloc*) pIMalloc.Handle, size, codePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, Span<IMalloc> pIMalloc, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, Span<IMalloc> pIMalloc, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->MoveToBlob(in pData.GetPinnableReference(), ref pIMalloc.GetPinnableReference(), size, codePage, ppBlobEncoding);
+        return @this->MoveToBlob(in pData.GetPinnableReference(), ref pIMalloc.GetPinnableReference(), size, codePage, pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int MoveToBlob<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ref IMalloc pIMalloc, uint size, uint codePage, ref ComPtr<TI0> ppBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static int MoveToBlob<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, ref IMalloc pIMalloc, uint size, uint codePage, ref ComPtr<TI0> pBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->MoveToBlob(in pData, ref pIMalloc, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->MoveToBlob(in pData, ref pIMalloc, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, Span<IMalloc> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int MoveToBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, Span<IMalloc> pIMalloc, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->MoveToBlob(in pData.GetPinnableReference(), ref pIMalloc.GetPinnableReference(), size, codePage, ref ppBlobEncoding);
+        return @this->MoveToBlob(in pData.GetPinnableReference(), ref pIMalloc.GetPinnableReference(), size, codePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlob<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static unsafe int CreateBlob<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pData, uint size, uint codePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->CreateBlob(pData, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->CreateBlob(pData, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, IDxcBlobEncoding** ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, IDxcBlobEncoding** pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->CreateBlob(in pData.GetPinnableReference(), size, codePage, ppBlobEncoding);
+        return @this->CreateBlob(in pData.GetPinnableReference(), size, codePage, pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int CreateBlob<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref ComPtr<TI0> ppBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static int CreateBlob<T0, TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pData, uint size, uint codePage, ref ComPtr<TI0> pBlobEncoding) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->CreateBlob(in pData, size, codePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->CreateBlob(in pData, size, codePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, ref IDxcBlobEncoding* ppBlobEncoding) where T0 : unmanaged
+    public static unsafe int CreateBlob<T0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pData, uint size, uint codePage, ref IDxcBlobEncoding* pBlobEncoding) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->CreateBlob(in pData.GetPinnableReference(), size, codePage, ref ppBlobEncoding);
+        return @this->CreateBlob(in pData.GetPinnableReference(), size, codePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, uint* pCodePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, uint* pCodePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->LoadFile(pFileName, pCodePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->LoadFile(pFileName, pCodePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, Span<uint> pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, Span<uint> pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), ppBlobEncoding);
+        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, ref uint pCodePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, ref uint pCodePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->LoadFile(pFileName, ref pCodePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->LoadFile(pFileName, ref pCodePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, Span<uint> pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* pFileName, Span<uint> pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), ref ppBlobEncoding);
+        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, uint* pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, uint* pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(in pFileName.GetPinnableReference(), pCodePage, ppBlobEncoding);
+        return @this->LoadFile(in pFileName.GetPinnableReference(), pCodePage, pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, uint* pCodePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, uint* pCodePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->LoadFile(in pFileName, pCodePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->LoadFile(in pFileName, pCodePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, uint* pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, uint* pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(in pFileName.GetPinnableReference(), pCodePage, ref ppBlobEncoding);
+        return @this->LoadFile(in pFileName.GetPinnableReference(), pCodePage, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, Span<uint> pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, Span<uint> pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(in pFileName.GetPinnableReference(), ref pCodePage.GetPinnableReference(), ppBlobEncoding);
+        return @this->LoadFile(in pFileName.GetPinnableReference(), ref pCodePage.GetPinnableReference(), pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, ref uint pCodePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pFileName, ref uint pCodePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->LoadFile(in pFileName, ref pCodePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->LoadFile(in pFileName, ref pCodePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, Span<uint> pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<char> pFileName, Span<uint> pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(in pFileName.GetPinnableReference(), ref pCodePage.GetPinnableReference(), ref ppBlobEncoding);
+        return @this->LoadFile(in pFileName.GetPinnableReference(), ref pCodePage.GetPinnableReference(), ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, uint* pCodePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static unsafe int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, uint* pCodePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->LoadFile(pFileName, pCodePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->LoadFile(pFileName, pCodePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, Span<uint> pCodePage, IDxcBlobEncoding** ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, Span<uint> pCodePage, IDxcBlobEncoding** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), ppBlobEncoding);
+        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, ref uint pCodePage, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
+    public static int LoadFile<TI0>(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, ref uint pCodePage, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobEncoding>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->LoadFile(pFileName, ref pCodePage, (IDxcBlobEncoding**) ppBlobEncoding.GetAddressOf());
+        return @this->LoadFile(pFileName, ref pCodePage, (IDxcBlobEncoding**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, Span<uint> pCodePage, ref IDxcBlobEncoding* ppBlobEncoding)
+    public static unsafe int LoadFile(this ComPtr<IDxcUtils> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string pFileName, Span<uint> pCodePage, ref IDxcBlobEncoding* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), ref ppBlobEncoding);
+        return @this->LoadFile(pFileName, ref pCodePage.GetPinnableReference(), ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
@@ -5363,83 +5363,83 @@ public unsafe static class DxcUtilsVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetBlobAsUtf8<TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref ComPtr<TI1> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobUtf8>, IComVtbl<TI1>
+    public static int GetBlobAsUtf8<TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref ComPtr<TI1> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobUtf8>, IComVtbl<TI1>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->GetBlobAsUtf8((IDxcBlob*) pBlob.Handle, (IDxcBlobUtf8**) ppBlobEncoding.GetAddressOf());
+        return @this->GetBlobAsUtf8((IDxcBlob*) pBlob.Handle, (IDxcBlobUtf8**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsUtf8<TI0>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref IDxcBlobUtf8* ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0>
+    public static unsafe int GetBlobAsUtf8<TI0>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref IDxcBlobUtf8* pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->GetBlobAsUtf8((IDxcBlob*) pBlob.Handle, ref ppBlobEncoding);
+        return @this->GetBlobAsUtf8((IDxcBlob*) pBlob.Handle, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, IDxcBlobUtf8** ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, IDxcBlobUtf8** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->GetBlobAsUtf8(ref pBlob.GetPinnableReference(), ppBlobEncoding);
+        return @this->GetBlobAsUtf8(ref pBlob.GetPinnableReference(), pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetBlobAsUtf8<TI0>(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobUtf8>, IComVtbl<TI0>
+    public static int GetBlobAsUtf8<TI0>(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobUtf8>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->GetBlobAsUtf8(ref pBlob, (IDxcBlobUtf8**) ppBlobEncoding.GetAddressOf());
+        return @this->GetBlobAsUtf8(ref pBlob, (IDxcBlobUtf8**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, ref IDxcBlobUtf8* ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf8(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, ref IDxcBlobUtf8* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->GetBlobAsUtf8(ref pBlob.GetPinnableReference(), ref ppBlobEncoding);
+        return @this->GetBlobAsUtf8(ref pBlob.GetPinnableReference(), ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetBlobAsWide<TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref ComPtr<TI1> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobWide>, IComVtbl<TI1>
+    public static int GetBlobAsUtf16<TI0, TI1>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref ComPtr<TI1> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IDxcBlobUtf16>, IComVtbl<TI1>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->GetBlobAsWide((IDxcBlob*) pBlob.Handle, (IDxcBlobWide**) ppBlobEncoding.GetAddressOf());
+        return @this->GetBlobAsUtf16((IDxcBlob*) pBlob.Handle, (IDxcBlobUtf16**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsWide<TI0>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref IDxcBlobWide* ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0>
+    public static unsafe int GetBlobAsUtf16<TI0>(this ComPtr<IDxcUtils> thisVtbl, ComPtr<TI0> pBlob, ref IDxcBlobUtf16* pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlob>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->GetBlobAsWide((IDxcBlob*) pBlob.Handle, ref ppBlobEncoding);
+        return @this->GetBlobAsUtf16((IDxcBlob*) pBlob.Handle, ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsWide(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, IDxcBlobWide** ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf16(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, IDxcBlobUtf16** pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->GetBlobAsWide(ref pBlob.GetPinnableReference(), ppBlobEncoding);
+        return @this->GetBlobAsUtf16(ref pBlob.GetPinnableReference(), pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetBlobAsWide<TI0>(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref ComPtr<TI0> ppBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobWide>, IComVtbl<TI0>
+    public static int GetBlobAsUtf16<TI0>(this ComPtr<IDxcUtils> thisVtbl, ref IDxcBlob pBlob, ref ComPtr<TI0> pBlobEncoding) where TI0 : unmanaged, IComVtbl<IDxcBlobUtf16>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->GetBlobAsWide(ref pBlob, (IDxcBlobWide**) ppBlobEncoding.GetAddressOf());
+        return @this->GetBlobAsUtf16(ref pBlob, (IDxcBlobUtf16**) pBlobEncoding.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetBlobAsWide(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, ref IDxcBlobWide* ppBlobEncoding)
+    public static unsafe int GetBlobAsUtf16(this ComPtr<IDxcUtils> thisVtbl, Span<IDxcBlob> pBlob, ref IDxcBlobUtf16* pBlobEncoding)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
-        return @this->GetBlobAsWide(ref pBlob.GetPinnableReference(), ref ppBlobEncoding);
+        return @this->GetBlobAsUtf16(ref pBlob.GetPinnableReference(), ref pBlobEncoding);
     }
 
     /// <summary>To be documented.</summary>
