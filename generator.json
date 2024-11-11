@@ -705,7 +705,7 @@
         {
             "profileName": "VulkanMemoryAllocator",
             "sources": [
-                "src/Vulkan/vk_vma.h"
+                "build/submodules/VulkanMemoryAllocator/include/vk_mem_alloc.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
@@ -724,7 +724,7 @@
                 ],
                 "traverse": [],
                 "classes": {
-                    "vk_vma.h": "[Core]Vma"
+                    "vk_mem_alloc.h": "[Core]Vma"
                 }
             },
             "exclude": [],
@@ -738,7 +738,7 @@
             },
             "bakery": {
                 "profileNames": [
-                    "vk_vma"
+                    "vk_mem_alloc"
                 ]
             },
             "output": {
@@ -792,7 +792,6 @@
                 }
             ]
         },
-        
         {
             "profileName": "Assimp",
             "sources": [

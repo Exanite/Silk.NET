@@ -17,7 +17,7 @@ namespace Silk.NET.Vulkan.Vma
     public static class VmaOverloads
     {
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1671, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1671, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAllocator(this Vma thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocatorCreateInfo> pCreateInfo, Allocator** pAllocator)
         {
             // SpanOverloader
@@ -25,7 +25,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1671, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1671, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAllocator(this Vma thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocatorCreateInfo> pCreateInfo, ref Allocator* pAllocator)
         {
             // SpanOverloader
@@ -33,7 +33,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1684, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 1684, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetAllocatorInfo(this Vma thisApi, Allocator* allocator, Span<AllocatorInfo> pAllocatorInfo)
         {
             // SpanOverloader
@@ -41,7 +41,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1710, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 1710, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetMemoryTypeProperties(this Vma thisApi, Allocator* allocator, uint memoryTypeIndex, Span<uint> pFlags)
         {
             // SpanOverloader
@@ -49,7 +49,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1738, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 1738, Column 33 in vk_mem_alloc.h")]
         public static unsafe void CalculateStatistics(this Vma thisApi, Allocator* allocator, Span<TotalStatistics> pStats)
         {
             // SpanOverloader
@@ -57,7 +57,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1753, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 1753, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetHeapBudgets(this Vma thisApi, Allocator* allocator, Span<Budget> pBudgets)
         {
             // SpanOverloader
@@ -65,7 +65,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1780, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1780, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndex(this Vma thisApi, Allocator* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -73,7 +73,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1780, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1780, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndex(this Vma thisApi, Allocator* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, uint* pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -81,7 +81,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1780, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1780, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndex(this Vma thisApi, Allocator* allocator, uint memoryTypeBits, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -89,7 +89,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1792, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -97,7 +97,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1792, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, uint* pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -105,7 +105,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1792, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -113,7 +113,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1792, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -121,7 +121,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1792, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -129,7 +129,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1792, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, uint* pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -137,7 +137,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1792, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1792, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForBufferInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -145,7 +145,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1804, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -153,7 +153,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1804, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, uint* pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -161,7 +161,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1804, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -169,7 +169,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1804, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, uint* pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -177,7 +177,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1804, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -185,7 +185,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1804, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, uint* pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -193,7 +193,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1804, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1804, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FindMemoryTypeIndexForImageInfo(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Span<uint> pMemoryTypeIndex)
         {
             // SpanOverloader
@@ -201,7 +201,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1816, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1816, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreatePool(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<PoolCreateInfo> pCreateInfo, Pool** pPool)
         {
             // SpanOverloader
@@ -209,7 +209,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1816, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1816, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreatePool(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<PoolCreateInfo> pCreateInfo, ref Pool* pPool)
         {
             // SpanOverloader
@@ -217,7 +217,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1843, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 1843, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetPoolStatistics(this Vma thisApi, Allocator* allocator, Pool* pool, Span<Statistics> pPoolStats)
         {
             // SpanOverloader
@@ -225,7 +225,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1854, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 1854, Column 33 in vk_mem_alloc.h")]
         public static unsafe void CalculatePoolStatistics(this Vma thisApi, Allocator* allocator, Pool* pool, Span<DetailedStatistics> pPoolStats)
         {
             // SpanOverloader
@@ -233,7 +233,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1900, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 1900, Column 33 in vk_mem_alloc.h")]
         public static unsafe void SetPoolName(this Vma thisApi, Allocator* allocator, Pool* pool, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> pName)
         {
             // SpanOverloader
@@ -241,7 +241,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -249,7 +249,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -257,7 +257,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -265,7 +265,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -273,7 +273,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -281,7 +281,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -289,7 +289,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -297,7 +297,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -305,7 +305,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -313,7 +313,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -321,7 +321,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -329,7 +329,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -337,7 +337,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -345,7 +345,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1918, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1918, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemory(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -353,7 +353,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, Allocation** pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -361,7 +361,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -369,7 +369,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, Allocation** pAllocations, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -377,7 +377,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, Allocation** pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -385,7 +385,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -393,7 +393,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.MemoryRequirements* pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -401,7 +401,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, Allocation** pAllocations, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -409,7 +409,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, Allocation** pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -417,7 +417,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -425,7 +425,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -433,7 +433,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, Allocation** pAllocations, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -441,7 +441,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, Allocation** pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -449,7 +449,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -457,7 +457,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1944, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1944, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryPages(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.MemoryRequirements> pVkMemoryRequirements, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, nuint allocationCount, ref Allocation* pAllocations, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -465,7 +465,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -473,7 +473,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -481,7 +481,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -489,7 +489,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -497,7 +497,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -505,7 +505,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -513,7 +513,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -521,7 +521,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -529,7 +529,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -537,7 +537,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -545,7 +545,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -553,7 +553,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -561,7 +561,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -569,7 +569,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1966, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1966, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -577,7 +577,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -585,7 +585,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -593,7 +593,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -601,7 +601,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -609,7 +609,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -617,7 +617,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -625,7 +625,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -633,7 +633,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -641,7 +641,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -649,7 +649,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -657,7 +657,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -665,7 +665,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -673,7 +673,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -681,7 +681,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 1987, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 1987, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result AllocateMemoryForImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pCreateInfo, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -689,7 +689,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2030, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2030, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetAllocationInfo(this Vma thisApi, Allocator* allocator, Allocation* allocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -697,7 +697,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2042, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2042, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetAllocationInfo2(this Vma thisApi, Allocator* allocator, Allocation* allocation, Span<AllocationInfo2> pAllocationInfo)
         {
             // SpanOverloader
@@ -705,7 +705,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2053, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2053, Column 33 in vk_mem_alloc.h")]
         public static unsafe void SetAllocationUserData<T0>(this Vma thisApi, Allocator* allocator, Allocation* allocation, Span<T0> pUserData) where T0 : unmanaged
         {
             // SpanOverloader
@@ -713,7 +713,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2066, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2066, Column 33 in vk_mem_alloc.h")]
         public static unsafe void SetAllocationName(this Vma thisApi, Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> pName)
         {
             // SpanOverloader
@@ -721,7 +721,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2077, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2077, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetAllocationMemoryProperties(this Vma thisApi, Allocator* allocator, Allocation* allocation, Span<uint> pFlags)
         {
             // SpanOverloader
@@ -729,7 +729,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2238, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FlushAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -737,7 +737,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2238, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FlushAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes)
         {
             // SpanOverloader
@@ -745,7 +745,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2238, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FlushAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -753,7 +753,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2238, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FlushAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -761,7 +761,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2238, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FlushAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes)
         {
             // SpanOverloader
@@ -769,7 +769,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2238, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2238, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result FlushAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -777,7 +777,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2259, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result InvalidateAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -785,7 +785,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2259, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result InvalidateAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes)
         {
             // SpanOverloader
@@ -793,7 +793,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2259, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result InvalidateAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, Allocation** allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -801,7 +801,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2259, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result InvalidateAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -809,7 +809,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2259, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result InvalidateAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ulong* sizes)
         {
             // SpanOverloader
@@ -817,7 +817,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2259, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2259, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result InvalidateAllocations(this Vma thisApi, Allocator* allocator, uint allocationCount, ref Allocation* allocations, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> offsets, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ulong> sizes)
         {
             // SpanOverloader
@@ -825,7 +825,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2286, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2286, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CopyMemoryToAllocation<T0>(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pSrcHostPointer, Allocation* dstAllocation, ulong dstAllocationLocalOffset, ulong size) where T0 : unmanaged
         {
             // SpanOverloader
@@ -833,7 +833,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2314, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2314, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CopyAllocationToMemory<T0>(this Vma thisApi, Allocator* allocator, Allocation* srcAllocation, ulong srcAllocationLocalOffset, Span<T0> pDstHostPointer, ulong size) where T0 : unmanaged
         {
             // SpanOverloader
@@ -841,7 +841,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2354, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2354, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BeginDefragmentation(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<DefragmentationInfo> pInfo, DefragmentationContext** pContext)
         {
             // SpanOverloader
@@ -849,7 +849,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2354, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2354, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BeginDefragmentation(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<DefragmentationInfo> pInfo, ref DefragmentationContext* pContext)
         {
             // SpanOverloader
@@ -857,7 +857,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2367, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2367, Column 33 in vk_mem_alloc.h")]
         public static unsafe void EndDefragmentation(this Vma thisApi, Allocator* allocator, DefragmentationContext* context, Span<DefragmentationStats> pStats)
         {
             // SpanOverloader
@@ -865,7 +865,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2382, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2382, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BeginDefragmentationPass(this Vma thisApi, Allocator* allocator, DefragmentationContext* context, Span<DefragmentationPassMoveInfo> pPassInfo)
         {
             // SpanOverloader
@@ -873,7 +873,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2405, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2405, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result EndDefragmentationPass(this Vma thisApi, Allocator* allocator, DefragmentationContext* context, Span<DefragmentationPassMoveInfo> pPassInfo)
         {
             // SpanOverloader
@@ -881,7 +881,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2422, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2422, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindBufferMemory(this Vma thisApi, Allocator* allocator, Allocation* allocation, Span<Silk.NET.Vulkan.Buffer> buffer)
         {
             // SpanOverloader
@@ -889,7 +889,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2440, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2440, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindBufferMemory2<T0>(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Buffer* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pNext) where T0 : unmanaged
         {
             // SpanOverloader
@@ -897,7 +897,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2440, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2440, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindBufferMemory2(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext)
         {
             // SpanOverloader
@@ -905,7 +905,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2440, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2440, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindBufferMemory2<T0>(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Span<Silk.NET.Vulkan.Buffer> buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pNext) where T0 : unmanaged
         {
             // SpanOverloader
@@ -913,7 +913,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2459, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2459, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindImageMemory(this Vma thisApi, Allocator* allocator, Allocation* allocation, Span<Silk.NET.Vulkan.Image> image)
         {
             // SpanOverloader
@@ -921,7 +921,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2477, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2477, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindImageMemory2<T0>(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Silk.NET.Vulkan.Image* image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pNext) where T0 : unmanaged
         {
             // SpanOverloader
@@ -929,7 +929,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2477, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2477, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindImageMemory2(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* pNext)
         {
             // SpanOverloader
@@ -937,7 +937,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2477, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2477, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result BindImageMemory2<T0>(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, Span<Silk.NET.Vulkan.Image> image, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> pNext) where T0 : unmanaged
         {
             // SpanOverloader
@@ -945,7 +945,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -953,7 +953,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -961,7 +961,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -969,7 +969,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -977,7 +977,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -985,7 +985,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -993,7 +993,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1001,7 +1001,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1009,7 +1009,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1017,7 +1017,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1025,7 +1025,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1033,7 +1033,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1041,7 +1041,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1049,7 +1049,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1057,7 +1057,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1065,7 +1065,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1073,7 +1073,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1081,7 +1081,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1089,7 +1089,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1097,7 +1097,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1105,7 +1105,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1113,7 +1113,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1121,7 +1121,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1129,7 +1129,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1137,7 +1137,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1145,7 +1145,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1153,7 +1153,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1161,7 +1161,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2518, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2518, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBuffer(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1169,7 +1169,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1177,7 +1177,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1185,7 +1185,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1193,7 +1193,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1201,7 +1201,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1209,7 +1209,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1217,7 +1217,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1225,7 +1225,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1233,7 +1233,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1241,7 +1241,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1249,7 +1249,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1257,7 +1257,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.BufferCreateInfo* pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1265,7 +1265,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1273,7 +1273,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1281,7 +1281,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1289,7 +1289,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1297,7 +1297,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1305,7 +1305,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1313,7 +1313,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1321,7 +1321,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1329,7 +1329,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1337,7 +1337,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1345,7 +1345,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1353,7 +1353,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, Silk.NET.Vulkan.Buffer** pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1361,7 +1361,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1369,7 +1369,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1377,7 +1377,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1385,7 +1385,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2532, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2532, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateBufferWithAlignment(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ulong minAlignment, ref Silk.NET.Vulkan.Buffer* pBuffer, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1393,7 +1393,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2562, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2562, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingBuffer(this Vma thisApi, Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer)
         {
             // SpanOverloader
@@ -1401,7 +1401,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2562, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2562, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingBuffer(this Vma thisApi, Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer)
         {
             // SpanOverloader
@@ -1409,7 +1409,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2590, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2590, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingBuffer2(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, Silk.NET.Vulkan.Buffer** pBuffer)
         {
             // SpanOverloader
@@ -1417,7 +1417,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2590, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2590, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingBuffer2(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.BufferCreateInfo> pBufferCreateInfo, ref Silk.NET.Vulkan.Buffer* pBuffer)
         {
             // SpanOverloader
@@ -1425,7 +1425,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2608, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2608, Column 33 in vk_mem_alloc.h")]
         public static unsafe void DestroyBuffer(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Buffer> buffer, Allocation* allocation)
         {
             // SpanOverloader
@@ -1433,7 +1433,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1441,7 +1441,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1449,7 +1449,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1457,7 +1457,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1465,7 +1465,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1473,7 +1473,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1481,7 +1481,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1489,7 +1489,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1497,7 +1497,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1505,7 +1505,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1513,7 +1513,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1521,7 +1521,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Silk.NET.Vulkan.ImageCreateInfo* pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1529,7 +1529,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1537,7 +1537,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1545,7 +1545,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1553,7 +1553,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1561,7 +1561,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1569,7 +1569,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1577,7 +1577,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1585,7 +1585,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] AllocationCreateInfo* pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1593,7 +1593,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1601,7 +1601,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1609,7 +1609,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1617,7 +1617,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, Silk.NET.Vulkan.Image** pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1625,7 +1625,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1633,7 +1633,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, Allocation** pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1641,7 +1641,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, AllocationInfo* pAllocationInfo)
         {
             // SpanOverloader
@@ -1649,7 +1649,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2614, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2614, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateImage(this Vma thisApi, Allocator* allocator, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<AllocationCreateInfo> pAllocationCreateInfo, ref Silk.NET.Vulkan.Image* pImage, ref Allocation* pAllocation, Span<AllocationInfo> pAllocationInfo)
         {
             // SpanOverloader
@@ -1657,7 +1657,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2623, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2623, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingImage(this Vma thisApi, Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, Silk.NET.Vulkan.Image** pImage)
         {
             // SpanOverloader
@@ -1665,7 +1665,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2623, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2623, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingImage(this Vma thisApi, Allocator* allocator, Allocation* allocation, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage)
         {
             // SpanOverloader
@@ -1673,7 +1673,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2630, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2630, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingImage2(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, Silk.NET.Vulkan.Image** pImage)
         {
             // SpanOverloader
@@ -1681,7 +1681,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2630, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2630, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateAliasingImage2(this Vma thisApi, Allocator* allocator, Allocation* allocation, ulong allocationLocalOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Silk.NET.Vulkan.ImageCreateInfo> pImageCreateInfo, ref Silk.NET.Vulkan.Image* pImage)
         {
             // SpanOverloader
@@ -1689,7 +1689,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2648, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2648, Column 33 in vk_mem_alloc.h")]
         public static unsafe void DestroyImage(this Vma thisApi, Allocator* allocator, Span<Silk.NET.Vulkan.Image> image, Allocation* allocation)
         {
             // SpanOverloader
@@ -1697,7 +1697,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2665, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2665, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateVirtualBlock(this Vma thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<VirtualBlockCreateInfo> pCreateInfo, VirtualBlock** pVirtualBlock)
         {
             // SpanOverloader
@@ -1705,7 +1705,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2665, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2665, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result CreateVirtualBlock(this Vma thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<VirtualBlockCreateInfo> pCreateInfo, ref VirtualBlock* pVirtualBlock)
         {
             // SpanOverloader
@@ -1713,7 +1713,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2688, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2688, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetVirtualAllocationInfo(this Vma thisApi, VirtualBlock* virtualBlock, VirtualAllocation* allocation, Span<VirtualAllocationInfo> pVirtualAllocInfo)
         {
             // SpanOverloader
@@ -1721,7 +1721,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2703, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result VirtualAllocate(this Vma thisApi, VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, VirtualAllocation** pAllocation, Span<ulong> pOffset)
         {
             // SpanOverloader
@@ -1729,7 +1729,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2703, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result VirtualAllocate(this Vma thisApi, VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] VirtualAllocationCreateInfo* pCreateInfo, ref VirtualAllocation* pAllocation, Span<ulong> pOffset)
         {
             // SpanOverloader
@@ -1737,7 +1737,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2703, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result VirtualAllocate(this Vma thisApi, VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<VirtualAllocationCreateInfo> pCreateInfo, VirtualAllocation** pAllocation, ulong* pOffset)
         {
             // SpanOverloader
@@ -1745,7 +1745,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2703, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result VirtualAllocate(this Vma thisApi, VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<VirtualAllocationCreateInfo> pCreateInfo, VirtualAllocation** pAllocation, Span<ulong> pOffset)
         {
             // SpanOverloader
@@ -1753,7 +1753,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2703, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result VirtualAllocate(this Vma thisApi, VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<VirtualAllocationCreateInfo> pCreateInfo, ref VirtualAllocation* pAllocation, ulong* pOffset)
         {
             // SpanOverloader
@@ -1761,7 +1761,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2703, Column 37 in vk_vma.h")]
+        [NativeName("Src", "Line 2703, Column 37 in vk_mem_alloc.h")]
         public static unsafe Silk.NET.Vulkan.Result VirtualAllocate(this Vma thisApi, VirtualBlock* virtualBlock, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<VirtualAllocationCreateInfo> pCreateInfo, ref VirtualAllocation* pAllocation, Span<ulong> pOffset)
         {
             // SpanOverloader
@@ -1769,7 +1769,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2730, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2730, Column 33 in vk_mem_alloc.h")]
         public static unsafe void SetVirtualAllocationUserData<T0>(this Vma thisApi, VirtualBlock* virtualBlock, VirtualAllocation* allocation, Span<T0> pUserData) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1777,7 +1777,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2739, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2739, Column 33 in vk_mem_alloc.h")]
         public static unsafe void GetVirtualBlockStatistics(this Vma thisApi, VirtualBlock* virtualBlock, Span<Statistics> pStats)
         {
             // SpanOverloader
@@ -1785,7 +1785,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2748, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2748, Column 33 in vk_mem_alloc.h")]
         public static unsafe void CalculateVirtualBlockStatistics(this Vma thisApi, VirtualBlock* virtualBlock, Span<DetailedStatistics> pStats)
         {
             // SpanOverloader
@@ -1793,7 +1793,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2773, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2773, Column 33 in vk_mem_alloc.h")]
         public static unsafe void FreeVirtualBlockStatsString(this Vma thisApi, VirtualBlock* virtualBlock, Span<byte> pStatsString)
         {
             // SpanOverloader
@@ -1801,7 +1801,7 @@ namespace Silk.NET.Vulkan.Vma
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 2787, Column 33 in vk_vma.h")]
+        [NativeName("Src", "Line 2787, Column 33 in vk_mem_alloc.h")]
         public static unsafe void FreeStatsString(this Vma thisApi, Allocator* allocator, Span<byte> pStatsString)
         {
             // SpanOverloader
