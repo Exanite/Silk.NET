@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkBindImageMemory2KHR : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result>) _handle;
         public PfnVkBindImageMemory2KHR
         (
-            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result> ptr
         ) => _handle = ptr;
 
         public PfnVkBindImageMemory2KHR
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkBindImageMemory2KHR pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkBindImageMemory2KHR(nint pfn)
-            => new PfnVkBindImageMemory2KHR((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result>) pfn);
+            => new PfnVkBindImageMemory2KHR((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result>) pfn);
 
         public static implicit operator PfnVkBindImageMemory2KHR(VkBindImageMemory2KHR proc)
             => new PfnVkBindImageMemory2KHR(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkBindImageMemory2KHR(PfnVkBindImageMemory2KHR pfn)
             => SilkMarshal.PtrToDelegate<VkBindImageMemory2KHR>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result>(PfnVkBindImageMemory2KHR pfn) => pfn.Handle;
-        public static implicit operator PfnVkBindImageMemory2KHR(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result> ptr) => new PfnVkBindImageMemory2KHR(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result>(PfnVkBindImageMemory2KHR pfn) => pfn.Handle;
+        public static implicit operator PfnVkBindImageMemory2KHR(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, uint, Silk.NET.Vulkan.BindImageMemoryInfo*, Silk.NET.Vulkan.Result> ptr) => new PfnVkBindImageMemory2KHR(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate Silk.NET.Vulkan.Result VkBindImageMemory2KHR(Silk.NET.Vulkan.Device* arg0, uint arg1, Silk.NET.Vulkan.BindImageMemoryInfo* arg2);
+    public unsafe delegate Silk.NET.Vulkan.Result VkBindImageMemory2KHR(Silk.NET.Vulkan.Device arg0, uint arg1, Silk.NET.Vulkan.BindImageMemoryInfo* arg2);
 }
 

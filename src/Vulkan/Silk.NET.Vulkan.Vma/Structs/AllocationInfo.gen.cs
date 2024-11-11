@@ -22,7 +22,7 @@ namespace Silk.NET.Vulkan.Vma
         public AllocationInfo
         (
             uint? memoryType = null,
-            Silk.NET.Vulkan.DeviceMemory* deviceMemory = null,
+            Silk.NET.Vulkan.DeviceMemory? deviceMemory = null,
             ulong? offset = null,
             ulong? size = null,
             void* pMappedData = null,
@@ -37,7 +37,7 @@ namespace Silk.NET.Vulkan.Vma
 
             if (deviceMemory is not null)
             {
-                DeviceMemory = deviceMemory;
+                DeviceMemory = deviceMemory.Value;
             }
 
             if (offset is not null)
@@ -75,7 +75,7 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "VkDeviceMemory _Nullable")]
         [NativeName("Type.Name", "VkDeviceMemory _Nullable")]
         [NativeName("Name", "deviceMemory")]
-        public Silk.NET.Vulkan.DeviceMemory* DeviceMemory;
+        public Silk.NET.Vulkan.DeviceMemory DeviceMemory;
 
         [NativeName("Type", "VkDeviceSize")]
         [NativeName("Type.Name", "VkDeviceSize")]

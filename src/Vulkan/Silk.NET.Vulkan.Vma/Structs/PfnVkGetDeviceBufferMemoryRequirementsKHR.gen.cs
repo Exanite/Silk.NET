@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkGetDeviceBufferMemoryRequirementsKHR : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void>) _handle;
         public PfnVkGetDeviceBufferMemoryRequirementsKHR
         (
-            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr
         ) => _handle = ptr;
 
         public PfnVkGetDeviceBufferMemoryRequirementsKHR
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkGetDeviceBufferMemoryRequirementsKHR pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkGetDeviceBufferMemoryRequirementsKHR(nint pfn)
-            => new PfnVkGetDeviceBufferMemoryRequirementsKHR((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void>) pfn);
+            => new PfnVkGetDeviceBufferMemoryRequirementsKHR((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void>) pfn);
 
         public static implicit operator PfnVkGetDeviceBufferMemoryRequirementsKHR(VkGetDeviceBufferMemoryRequirementsKHR proc)
             => new PfnVkGetDeviceBufferMemoryRequirementsKHR(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkGetDeviceBufferMemoryRequirementsKHR(PfnVkGetDeviceBufferMemoryRequirementsKHR pfn)
             => SilkMarshal.PtrToDelegate<VkGetDeviceBufferMemoryRequirementsKHR>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void>(PfnVkGetDeviceBufferMemoryRequirementsKHR pfn) => pfn.Handle;
-        public static implicit operator PfnVkGetDeviceBufferMemoryRequirementsKHR(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr) => new PfnVkGetDeviceBufferMemoryRequirementsKHR(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void>(PfnVkGetDeviceBufferMemoryRequirementsKHR pfn) => pfn.Handle;
+        public static implicit operator PfnVkGetDeviceBufferMemoryRequirementsKHR(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceBufferMemoryRequirements*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr) => new PfnVkGetDeviceBufferMemoryRequirementsKHR(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate void VkGetDeviceBufferMemoryRequirementsKHR(Silk.NET.Vulkan.Device* arg0, Silk.NET.Vulkan.DeviceBufferMemoryRequirements* arg1, Silk.NET.Vulkan.MemoryRequirements2* arg2);
+    public unsafe delegate void VkGetDeviceBufferMemoryRequirementsKHR(Silk.NET.Vulkan.Device arg0, Silk.NET.Vulkan.DeviceBufferMemoryRequirements* arg1, Silk.NET.Vulkan.MemoryRequirements2* arg2);
 }
 

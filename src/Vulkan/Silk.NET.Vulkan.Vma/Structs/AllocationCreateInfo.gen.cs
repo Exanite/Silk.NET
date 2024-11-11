@@ -26,7 +26,7 @@ namespace Silk.NET.Vulkan.Vma
             uint? requiredFlags = null,
             uint? preferredFlags = null,
             uint? memoryTypeBits = null,
-            Pool* pool = null,
+            Silk.NET.Vulkan.Vma.Pool? pool = null,
             void* pUserData = null,
             float? priority = null
         ) : this()
@@ -58,7 +58,7 @@ namespace Silk.NET.Vulkan.Vma
 
             if (pool is not null)
             {
-                Pool = pool;
+                Pool = pool.Value;
             }
 
             if (pUserData is not null)
@@ -101,7 +101,7 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "VmaPool _Nullable")]
         [NativeName("Type.Name", "VmaPool _Nullable")]
         [NativeName("Name", "pool")]
-        public Pool* Pool;
+        public Silk.NET.Vulkan.Vma.Pool Pool;
 
         [NativeName("Type", "void * _Nullable")]
         [NativeName("Type.Name", "void * _Nullable")]

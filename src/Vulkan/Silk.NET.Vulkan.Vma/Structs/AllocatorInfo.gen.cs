@@ -21,24 +21,24 @@ namespace Silk.NET.Vulkan.Vma
     {
         public AllocatorInfo
         (
-            Silk.NET.Vulkan.Instance* instance = null,
-            Silk.NET.Vulkan.PhysicalDevice* physicalDevice = null,
-            Silk.NET.Vulkan.Device* device = null
+            Silk.NET.Vulkan.Instance? instance = null,
+            Silk.NET.Vulkan.PhysicalDevice? physicalDevice = null,
+            Silk.NET.Vulkan.Device? device = null
         ) : this()
         {
             if (instance is not null)
             {
-                Instance = instance;
+                Instance = instance.Value;
             }
 
             if (physicalDevice is not null)
             {
-                PhysicalDevice = physicalDevice;
+                PhysicalDevice = physicalDevice.Value;
             }
 
             if (device is not null)
             {
-                Device = device;
+                Device = device.Value;
             }
         }
 
@@ -46,16 +46,16 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "VkInstance _Nonnull")]
         [NativeName("Type.Name", "VkInstance _Nonnull")]
         [NativeName("Name", "instance")]
-        public Silk.NET.Vulkan.Instance* Instance;
+        public Silk.NET.Vulkan.Instance Instance;
 
         [NativeName("Type", "VkPhysicalDevice _Nonnull")]
         [NativeName("Type.Name", "VkPhysicalDevice _Nonnull")]
         [NativeName("Name", "physicalDevice")]
-        public Silk.NET.Vulkan.PhysicalDevice* PhysicalDevice;
+        public Silk.NET.Vulkan.PhysicalDevice PhysicalDevice;
 
         [NativeName("Type", "VkDevice _Nonnull")]
         [NativeName("Type.Name", "VkDevice _Nonnull")]
         [NativeName("Name", "device")]
-        public Silk.NET.Vulkan.Device* Device;
+        public Silk.NET.Vulkan.Device Device;
     }
 }

@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkGetImageMemoryRequirements2KHR : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void>) _handle;
         public PfnVkGetImageMemoryRequirements2KHR
         (
-            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr
         ) => _handle = ptr;
 
         public PfnVkGetImageMemoryRequirements2KHR
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkGetImageMemoryRequirements2KHR pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkGetImageMemoryRequirements2KHR(nint pfn)
-            => new PfnVkGetImageMemoryRequirements2KHR((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void>) pfn);
+            => new PfnVkGetImageMemoryRequirements2KHR((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void>) pfn);
 
         public static implicit operator PfnVkGetImageMemoryRequirements2KHR(VkGetImageMemoryRequirements2KHR proc)
             => new PfnVkGetImageMemoryRequirements2KHR(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkGetImageMemoryRequirements2KHR(PfnVkGetImageMemoryRequirements2KHR pfn)
             => SilkMarshal.PtrToDelegate<VkGetImageMemoryRequirements2KHR>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void>(PfnVkGetImageMemoryRequirements2KHR pfn) => pfn.Handle;
-        public static implicit operator PfnVkGetImageMemoryRequirements2KHR(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr) => new PfnVkGetImageMemoryRequirements2KHR(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void>(PfnVkGetImageMemoryRequirements2KHR pfn) => pfn.Handle;
+        public static implicit operator PfnVkGetImageMemoryRequirements2KHR(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2*, Silk.NET.Vulkan.MemoryRequirements2*, void> ptr) => new PfnVkGetImageMemoryRequirements2KHR(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate void VkGetImageMemoryRequirements2KHR(Silk.NET.Vulkan.Device* arg0, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2* arg1, Silk.NET.Vulkan.MemoryRequirements2* arg2);
+    public unsafe delegate void VkGetImageMemoryRequirements2KHR(Silk.NET.Vulkan.Device arg0, Silk.NET.Vulkan.ImageMemoryRequirementsInfo2* arg1, Silk.NET.Vulkan.MemoryRequirements2* arg2);
 }
 

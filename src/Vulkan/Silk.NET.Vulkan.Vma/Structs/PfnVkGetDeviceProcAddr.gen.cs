@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkGetDeviceProcAddr : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, byte*, PfnVkVoidFunction> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, byte*, PfnVkVoidFunction>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, byte*, PfnVkVoidFunction> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, byte*, PfnVkVoidFunction>) _handle;
         public PfnVkGetDeviceProcAddr
         (
-            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, byte*, PfnVkVoidFunction> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, byte*, PfnVkVoidFunction> ptr
         ) => _handle = ptr;
 
         public PfnVkGetDeviceProcAddr
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkGetDeviceProcAddr pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkGetDeviceProcAddr(nint pfn)
-            => new PfnVkGetDeviceProcAddr((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, byte*, PfnVkVoidFunction>) pfn);
+            => new PfnVkGetDeviceProcAddr((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, byte*, PfnVkVoidFunction>) pfn);
 
         public static implicit operator PfnVkGetDeviceProcAddr(VkGetDeviceProcAddr proc)
             => new PfnVkGetDeviceProcAddr(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkGetDeviceProcAddr(PfnVkGetDeviceProcAddr pfn)
             => SilkMarshal.PtrToDelegate<VkGetDeviceProcAddr>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, byte*, PfnVkVoidFunction>(PfnVkGetDeviceProcAddr pfn) => pfn.Handle;
-        public static implicit operator PfnVkGetDeviceProcAddr(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, byte*, PfnVkVoidFunction> ptr) => new PfnVkGetDeviceProcAddr(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, byte*, PfnVkVoidFunction>(PfnVkGetDeviceProcAddr pfn) => pfn.Handle;
+        public static implicit operator PfnVkGetDeviceProcAddr(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, byte*, PfnVkVoidFunction> ptr) => new PfnVkGetDeviceProcAddr(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate PfnVkVoidFunction VkGetDeviceProcAddr(Silk.NET.Vulkan.Device* arg0, byte* arg1);
+    public unsafe delegate PfnVkVoidFunction VkGetDeviceProcAddr(Silk.NET.Vulkan.Device arg0, byte* arg1);
 }
 

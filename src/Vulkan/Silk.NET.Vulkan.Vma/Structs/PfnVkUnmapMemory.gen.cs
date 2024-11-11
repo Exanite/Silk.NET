@@ -19,10 +19,10 @@ namespace Silk.NET.Vulkan.Vma
     public unsafe readonly struct PfnVkUnmapMemory : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceMemory*, void> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceMemory*, void>) _handle;
+        public delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceMemory, void> Handle => (delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceMemory, void>) _handle;
         public PfnVkUnmapMemory
         (
-            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceMemory*, void> ptr
+            delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceMemory, void> ptr
         ) => _handle = ptr;
 
         public PfnVkUnmapMemory
@@ -35,7 +35,7 @@ namespace Silk.NET.Vulkan.Vma
 
         public static implicit operator nint(PfnVkUnmapMemory pfn) => (nint) pfn.Handle;
         public static explicit operator PfnVkUnmapMemory(nint pfn)
-            => new PfnVkUnmapMemory((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceMemory*, void>) pfn);
+            => new PfnVkUnmapMemory((delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceMemory, void>) pfn);
 
         public static implicit operator PfnVkUnmapMemory(VkUnmapMemory proc)
             => new PfnVkUnmapMemory(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Vulkan.Vma
         public static explicit operator VkUnmapMemory(PfnVkUnmapMemory pfn)
             => SilkMarshal.PtrToDelegate<VkUnmapMemory>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceMemory*, void>(PfnVkUnmapMemory pfn) => pfn.Handle;
-        public static implicit operator PfnVkUnmapMemory(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device*, Silk.NET.Vulkan.DeviceMemory*, void> ptr) => new PfnVkUnmapMemory(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceMemory, void>(PfnVkUnmapMemory pfn) => pfn.Handle;
+        public static implicit operator PfnVkUnmapMemory(delegate* unmanaged[Cdecl]<Silk.NET.Vulkan.Device, Silk.NET.Vulkan.DeviceMemory, void> ptr) => new PfnVkUnmapMemory(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate void VkUnmapMemory(Silk.NET.Vulkan.Device* arg0, Silk.NET.Vulkan.DeviceMemory* arg1);
+    public delegate void VkUnmapMemory(Silk.NET.Vulkan.Device arg0, Silk.NET.Vulkan.DeviceMemory arg1);
 }
 

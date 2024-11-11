@@ -22,8 +22,8 @@ namespace Silk.NET.Vulkan.Vma
         public DefragmentationMove
         (
             DefragmentationMoveOperation? operation = null,
-            Allocation* srcAllocation = null,
-            Allocation* dstTmpAllocation = null
+            Silk.NET.Vulkan.Vma.Allocation? srcAllocation = null,
+            Silk.NET.Vulkan.Vma.Allocation? dstTmpAllocation = null
         ) : this()
         {
             if (operation is not null)
@@ -33,12 +33,12 @@ namespace Silk.NET.Vulkan.Vma
 
             if (srcAllocation is not null)
             {
-                SrcAllocation = srcAllocation;
+                SrcAllocation = srcAllocation.Value;
             }
 
             if (dstTmpAllocation is not null)
             {
-                DstTmpAllocation = dstTmpAllocation;
+                DstTmpAllocation = dstTmpAllocation.Value;
             }
         }
 
@@ -51,11 +51,11 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "VmaAllocation _Nonnull")]
         [NativeName("Type.Name", "VmaAllocation _Nonnull")]
         [NativeName("Name", "srcAllocation")]
-        public Allocation* SrcAllocation;
+        public Silk.NET.Vulkan.Vma.Allocation SrcAllocation;
 
         [NativeName("Type", "VmaAllocation _Nonnull")]
         [NativeName("Type.Name", "VmaAllocation _Nonnull")]
         [NativeName("Name", "dstTmpAllocation")]
-        public Allocation* DstTmpAllocation;
+        public Silk.NET.Vulkan.Vma.Allocation DstTmpAllocation;
     }
 }
