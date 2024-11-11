@@ -22,7 +22,7 @@ namespace Silk.NET.Vulkan.Vma
         public DefragmentationInfo
         (
             uint? flags = null,
-            Silk.NET.Vulkan.Vma.Pool? pool = null,
+            Pool* pool = null,
             ulong? maxBytesPerPass = null,
             uint? maxAllocationsPerPass = null,
             PfnVmaCheckDefragmentationBreakFunction? pfnBreakCallback = null,
@@ -36,7 +36,7 @@ namespace Silk.NET.Vulkan.Vma
 
             if (pool is not null)
             {
-                Pool = pool.Value;
+                Pool = pool;
             }
 
             if (maxBytesPerPass is not null)
@@ -69,7 +69,7 @@ namespace Silk.NET.Vulkan.Vma
         [NativeName("Type", "VmaPool _Nullable")]
         [NativeName("Type.Name", "VmaPool _Nullable")]
         [NativeName("Name", "pool")]
-        public Silk.NET.Vulkan.Vma.Pool Pool;
+        public Pool* Pool;
 
         [NativeName("Type", "VkDeviceSize")]
         [NativeName("Type.Name", "VkDeviceSize")]
