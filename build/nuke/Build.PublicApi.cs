@@ -206,7 +206,7 @@ partial class Build
                     );
 
                     var pr = github.PullRequest.Create
-                            ("dotnet", "Silk.NET", new("Move unshipped APIs to shipped", newBranch, curBranch))
+                            ("Exanite", "Silk.NET", new("Move unshipped APIs to shipped", newBranch, curBranch))
                         .GetAwaiter()
                         .GetResult();
                 }

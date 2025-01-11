@@ -194,7 +194,7 @@ partial class Build
             new Octokit.Internal.InMemoryCredentialStore(new Credentials(githubToken))
         );
 
-        var existingComment = (await github.Issue.Comment.GetAllForIssue("dotnet", "Silk.NET", pr))
+        var existingComment = (await github.Issue.Comment.GetAllForIssue("Exanite", "Silk.NET", pr))
             .FirstOrDefault(x => x.Body.Contains($"`{type}`") && x.User.Name == "github-actions[bot]");
         if (existingComment is null && editOnly)
         {
@@ -216,12 +216,12 @@ partial class Build
         if (existingComment is not null)
         {
             Log.Information("Updated the comment on the PR.");
-            await github.Issue.Comment.Update("dotnet", "Silk.NET", existingComment.Id, commentText);
+            await github.Issue.Comment.Update("Exanite", "Silk.NET", existingComment.Id, commentText);
         }
         else
         {
             Log.Information("Added a comment to the PR.");
-            await github.Issue.Comment.Create("dotnet", "Silk.NET", pr, commentText);
+            await github.Issue.Comment.Create("Exanite", "Silk.NET", pr, commentText);
         }
     }
 

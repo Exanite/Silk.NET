@@ -110,7 +110,7 @@ partial class Build
                     );
 
                     var pr = github.PullRequest.Create
-                            ("dotnet", "Silk.NET", new($"Regenerate bindings as of {DateTime.UtcNow:dd/MM/yyyy}", newBranch, curBranch))
+                            ("Exanite", "Silk.NET", new($"Regenerate bindings as of {DateTime.UtcNow:dd/MM/yyyy}", newBranch, curBranch))
                         .GetAwaiter()
                         .GetResult();
                 }

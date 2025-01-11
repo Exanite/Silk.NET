@@ -106,7 +106,7 @@ partial class Build {
                     );
 
                     var pr = github.PullRequest.Create
-                            ("dotnet", "Silk.NET", new($"Update {name} binaries", newBranch, curBranch))
+                            ("Exanite", "Silk.NET", new($"Update {name} binaries", newBranch, curBranch))
                         .GetAwaiter()
                         .GetResult();
                 }
