@@ -12,7 +12,7 @@ on:
       - .github/workflows/spirv-reflect.yml
 jobs:
   Build:
-    if: github.repository == 'dotnet/Silk.NET'
+    if: github.repository == 'exanite/Silk.NET'
     strategy:
       fail-fast: false
       matrix:
@@ -47,4 +47,3 @@ jobs:
         run: ${{ matrix.env.nuke_invoke }} SPIRVReflect
         env:
           PUSHABLE_GITHUB_TOKEN: ${{ secrets.PUSHABLE_GITHUB_TOKEN }}
-

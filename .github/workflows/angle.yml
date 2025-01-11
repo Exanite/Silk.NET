@@ -12,7 +12,7 @@ on:
             - .github/workflows/angle.yml
 jobs:
     Build:
-        if: github.repository == 'dotnet/Silk.NET'
+        if: github.repository == 'exanite/Silk.NET'
         strategy:
             fail-fast: false
             matrix:

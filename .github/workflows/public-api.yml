@@ -17,14 +17,14 @@ jobs:
             - uses: actions/checkout@v2
             - uses: actions/checkout@v2
               name: Checkout PR
-              if: ${{ github.repository == 'dotnet/Silk.NET' && github.event_name == 'pull_request_target' }}
+              if: ${{ github.repository == 'exanite/Silk.NET' && github.event_name == 'pull_request_target' }}
               with:
                   repository: ${{ github.event.pull_request.head.repo.full_name }}
                   path: inbound_pr
                   ref: ${{ github.event.pull_request.head.ref }}
             - uses: actions/checkout@v2
               name: Checkout branch
-              if: ${{ github.repository == 'dotnet/Silk.NET' && github.event_name != 'pull_request_target' }}
+              if: ${{ github.repository == 'exanite/Silk.NET' && github.event_name != 'pull_request_target' }}
               with:
                   path: inbound_pr
             - name: Cache .tmp, ~/.nuget/packages
@@ -48,7 +48,7 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     Ship:
-        if: ${{ github.repository == 'dotnet/Silk.NET' && github.event_name == 'create' }}
+        if: ${{ github.repository == 'exanite/Silk.NET' && github.event_name == 'create' }}
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2

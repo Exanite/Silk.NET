@@ -155,7 +155,7 @@ partial class Build
     {
         var pushableToken = EnvironmentInfo.GetVariable<string>("PUSHABLE_GITHUB_TOKEN");
         var curBranch = GitCurrentBranch(RootDirectory);
-        if (GitHubActions.Instance?.Repository == "dotnet/Silk.NET" &&
+        if (GitHubActions.Instance?.Repository == "exanite/Silk.NET" &&
             !string.IsNullOrWhiteSpace(pushableToken))
         {
             if (curBranch == "HEAD" || string.IsNullOrWhiteSpace(curBranch))

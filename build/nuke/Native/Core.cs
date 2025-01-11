@@ -55,7 +55,7 @@ partial class Build {
         var pushableToken = EnvironmentInfo.GetVariable<string>("PUSHABLE_GITHUB_TOKEN");
         var curBranch = GitCurrentBranch(RootDirectory);
         if (!string.IsNullOrWhiteSpace(pushableToken) &&
-            GitHubActions.Instance?.Repository == "dotnet/Silk.NET" &&
+            GitHubActions.Instance?.Repository == "exanite/Silk.NET" &&
             curBranch != "HEAD" &&
             !string.IsNullOrWhiteSpace(curBranch) &&
             !curBranch.StartsWith("ci/", StringComparison.OrdinalIgnoreCase) && // ignore other CI branches
