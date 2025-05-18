@@ -711,7 +711,8 @@
             "cacheDir": "build/cache",
             "cacheKey": "vulkan_vma",
             "controlDescriptors": [
-                "no-pre-2.18-obsolete-enums"
+                "no-pre-2.18-obsolete-enums",
+                "convert-windows-only"
             ],
             "converter": {},
             "clang": {
