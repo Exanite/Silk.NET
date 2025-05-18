@@ -56,7 +56,7 @@
         <RepositoryUrl>https://github.com/dotnet/Silk.NET.git</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
-        <VersionPrefix>2.22.0</VersionPrefix>
+        <VersionPrefix>2.22.1</VersionPrefix>
         <VersionSuffix Condition="'$(VersionSuffix)' == ''"></VersionSuffix>
         <Description Condition="'$(Description)' == ''">
             Silk.NET is a high-speed, advanced library, providing bindings to popular low-level APIs such as OpenGL, OpenCL, OpenAL, OpenXR, GLFW, SDL, Vulkan, Assimp, and DirectX.
