@@ -832,10 +832,7 @@
                     "-DTRACY_ENABLE",
                     "-Ibuild/submodules/tracy/public/tracy"
                 ],
-                "traverse": [
-                    "build/submodules/tracy/public/tracy/TracyC.h",
-                    "build/submodules/tracy/public/*"
-                ],
+                "traverse": [],
                 "classes": {
                     "TracyC.h": "[Core]Tracy"
                 }
