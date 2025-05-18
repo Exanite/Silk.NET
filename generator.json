@@ -812,6 +812,61 @@
             ]
         },
         {
+            "profileName": "Tracy",
+            "sources": [
+                "build/submodules/tracy/public/tracy/TracyC.h"
+            ],
+            "mode": "Clang",
+            "cacheDir": "build/cache",
+            "cacheKey": "tracy",
+            "controlDescriptors": [
+                "no-pre-2.18-obsolete-enums",
+                "convert-windows-only"
+            ],
+            "converter": {},
+            "clang": {
+                "args": [
+                    "--language=c++",
+                    "--std=c++17",
+                    "-m64"
+                ],
+                "traverse": [],
+                "classes": {
+                    "TracyC.h": "[Core]Tracy"
+                }
+            },
+            "exclude": [],
+            "rename": {},
+            "bakery": {
+                "profileNames": [
+                    "TracyC"
+                ]
+            },
+            "output": {
+                "mode": "Default",
+                "path": "src/Tracy",
+                "licenseFile": "build/LICENSE_HEADER.txt",
+                "props": "build/props/bindings.props"
+            },
+            "prefix": "Tracy",
+            "namespace": "Silk.NET.Tracy",
+            "extensionsNamespace": "Silk.NET.Tracy.Extensions",
+            "nameContainer": {
+                "linux-x64": "libTracyClient.so",
+                "win-x64": "TracyClient.dll",
+                "win-x86": "TracyClient.dll",
+                "osx-x64": "libTracyClient.dylib",
+                "android": "libTracyClient.so",
+                "iOS": "libTracyClient.dylib",
+                "className": "TracyLibraryNameContainer"
+            },
+            "typeMaps": [
+                {
+                    "$include.commonTypeMap": "build/csharp_typemap.json"
+                }
+            ]
+        },
+        {
             "profileName": "Assimp",
             "sources": [
                 "src/Assimp/Include/assimp.h"
