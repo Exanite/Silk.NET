@@ -829,9 +829,13 @@
                     "--language=c++",
                     "--std=c++17",
                     "-m64",
+                    "-DTRACY_ENABLE",
                     "-Ibuild/submodules/tracy/public/tracy"
                 ],
-                "traverse": [],
+                "traverse": [
+                    "build/submodules/tracy/public/tracy/TracyC.h",
+                    "build/submodules/tracy/public/*"
+                ],
                 "classes": {
                     "TracyC.h": "[Core]Tracy"
                 }
@@ -849,7 +853,7 @@
                 "licenseFile": "build/LICENSE_HEADER.txt",
                 "props": "build/props/bindings.props"
             },
-            "prefix": "Tracy",
+            "prefix": "___tracy_",
             "namespace": "Silk.NET.Tracy",
             "extensionsNamespace": "Silk.NET.Tracy.Extensions",
             "nameContainer": {
