@@ -828,7 +828,8 @@
                 "args": [
                     "--language=c++",
                     "--std=c++17",
-                    "-m64"
+                    "-m64",
+                    "-Ibuild/submodules/tracy/public/tracy"
                 ],
                 "traverse": [],
                 "classes": {
