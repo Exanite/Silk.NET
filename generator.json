@@ -871,9 +871,7 @@
         {
             "profileName": "Slang",
             "sources": [
-                "build/submodules/slang/include/slang.h",
-                "build/submodules/slang/include/slang-com-helper.h",
-                "build/submodules/slang/include/slang-com-ptr.h"
+                "build/submodules/slang/include/slang.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
@@ -893,14 +891,11 @@
                     "-Wno-ignored-pragma-intrinsic",
                     "-Wno-nonportable-include-path",
                     "-Wno-pragma-pack",
-                    "-I$windowsSdkIncludes",
                     "-Ibuild/submodules/slang/include"
                 ],
                 "traverse": [],
                 "classes": {
-                    "slang.h": "[Core]Slang",
-                    "slang-com-helper.h": "[Core]SlangHelper",
-                    "slang-com-ptr.h": "[Core]SlangPtr"
+                    "slang.h": "[Core]Slang"
                 },
                 "comRefs": []
             },
@@ -908,7 +903,7 @@
             "rename": {},
             "bakery": {
                 "profileNames": [
-                    "Slang"
+                    "slang"
                 ]
             },
             "output": {
