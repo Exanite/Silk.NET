@@ -366,48 +366,48 @@ public unsafe static class ComponentTypeVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ISlangSharedLibrary** outSharedLibrary, IBlob** outDiagnostics)
+    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ISlangSharedLibrary** outSharedLibrary, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ISlangSharedLibrary** outSharedLibrary, ref IBlob* outDiagnostics)
+    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ISlangSharedLibrary** outSharedLibrary, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, IBlob** outDiagnostics)
+    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ref IBlob* outDiagnostics)
+    public static unsafe int GetEntryPointHostCallable(this ComPtr<IComponentType> thisVtbl, int entryPointIndex, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IComponentType*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnosticsPtr);
             }
         }
         return ret;
