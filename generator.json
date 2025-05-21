@@ -869,6 +869,70 @@
             ]
         },
         {
+            "profileName": "Slang",
+            "sources": [
+                "build/submodules/slang/include/slang.h"
+            ],
+            "mode": "Clang",
+            "cacheDir": "build/cache",
+            "cacheKey": "slang",
+            "controlDescriptors": [
+                "no-pre-2.18-obsolete-enums",
+                "convert-windows-only"
+            ],
+            "prefix": "",
+            "clang": {
+                "args": [
+                    "--language=c++",
+                    "--std=c++17",
+                    "-m64",
+                    "-Wno-expansion-to-defined",
+                    "-Wno-ignored-attributes",
+                    "-Wno-ignored-pragma-intrinsic",
+                    "-Wno-nonportable-include-path",
+                    "-Wno-pragma-pack",
+                    "-Ibuild/submodules/slang/include"
+                ],
+                "traverse": [],
+                "classes": {
+                    "slang.h": "[Core]Slang"
+                },
+                "comRefs": []
+            },
+            "exclude": [],
+            "rename": {},
+            "bakery": {
+                "profileNames": [
+                    "slang"
+                ]
+            },
+            "output": {
+                "mode": "Default",
+                "path": "src/Slang",
+                "licenseFile": "build/LICENSE_HEADER.txt",
+                "props": "build/props/bindings.props"
+            },
+            "namespace": "Silk.NET.Slang",
+            "extensionsNamespace": "Silk.NET.Slang",
+            "nameContainer": {
+                "linux-x64": "libshaderslang.so",
+                "win-x64": "shaderslang.dll",
+                "win-x86": "shaderslang.dll",
+                "osx-x64": "libshaderslang.dylib",
+                "android": "libshaderslang.so",
+                "iOS": "libshaderslang.dylib",
+                "className": "SlangLibraryNameContainer"
+            },
+            "typeMaps": [
+                {
+                    "IBlob": "ISlangBlob"
+                },
+                {
+                    "$include.commonTypeMap": "build/csharp_typemap.json"
+                }
+            ]
+        },
+        {
             "profileName": "Assimp",
             "sources": [
                 "src/Assimp/Include/assimp.h"

@@ -61,3 +61,6 @@
 [submodule "build/submodules/tracy"]
 	path = build/submodules/tracy
 	url = https://github.com/wolfpld/tracy.git
+[submodule "build/submodules/slang"]
+	path = build/submodules/slang
+	url = https://github.com/shader-slang/slang.git
