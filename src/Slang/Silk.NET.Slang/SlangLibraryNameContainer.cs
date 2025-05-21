@@ -11,21 +11,21 @@ namespace Silk.NET.Slang
     internal class SlangLibraryNameContainer : SearchPathContainer
     {
         /// <inheritdoc />
-        public override string[] Linux => new[] { "libslang.so" };
+        public override string[] Linux => new[] { "libshaderslang.so" };
 
         /// <inheritdoc />
-        public override string[] MacOS => new[] { "libslang.dylib" };
+        public override string[] MacOS => new[] { "libshaderslang.dylib" };
 
         /// <inheritdoc />
-        public override string[] Android => new[] { "libslang.so" };
+        public override string[] Android => new[] { "libshaderslang.so" };
 
         /// <inheritdoc />
-        public override string[] IOS => new[] { "libslang.dylib" };
+        public override string[] IOS => new[] { "libshaderslang.dylib" };
 
         /// <inheritdoc />
-        public override string[] Windows64 => new[] { "slang.dll" };
+        public override string[] Windows64 => new[] { "shaderslang.dll" };
 
         /// <inheritdoc />
-        public override string[] Windows86 => new[] { "slang.dll" };
+        public override string[] Windows86 => new[] { "shaderslang.dll" };
     }
 }
