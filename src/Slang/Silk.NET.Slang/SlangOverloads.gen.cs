@@ -50,7 +50,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
-        public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<IBlob> moduleBlob, IBlob** outDisassemblyBlob)
+        public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ISlangBlob** outDisassemblyBlob)
         {
             // SpanOverloader
             return thisApi.SlangDisassembleByteCode(ref moduleBlob.GetPinnableReference(), outDisassemblyBlob);
@@ -58,7 +58,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
-        public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<IBlob> moduleBlob, ref IBlob* outDisassemblyBlob)
+        public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ref ISlangBlob* outDisassemblyBlob)
         {
             // SpanOverloader
             return thisApi.SlangDisassembleByteCode(ref moduleBlob.GetPinnableReference(), ref outDisassemblyBlob);

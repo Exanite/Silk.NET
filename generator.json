@@ -925,6 +925,9 @@
             },
             "typeMaps": [
                 {
+                    "IBlob": "ISlangBlob"
+                },
+                {
                     "$include.commonTypeMap": "build/csharp_typemap.json"
                 }
             ]

@@ -167,107 +167,107 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, source, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, source, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, sourcePtr, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, path, sourcePtr, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -275,55 +275,55 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)pathPtr);
@@ -331,59 +331,59 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -391,7 +391,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -399,14 +399,14 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -414,9 +414,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
                 }
             }
         }
@@ -424,7 +424,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -432,9 +432,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                fixed (IBlob* sourcePtr = &source)
+                fixed (ISlangBlob* sourcePtr = &source)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
                 }
             }
         }
@@ -442,7 +442,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -450,11 +450,11 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                fixed (IBlob* sourcePtr = &source)
+                fixed (ISlangBlob* sourcePtr = &source)
                 {
-                    fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                    fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
                     }
                 }
             }
@@ -463,30 +463,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
             }
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -494,16 +494,16 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
             }
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -511,18 +511,18 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
                 }
             }
         SilkMarshal.Free((nint)pathPtr);
@@ -531,55 +531,55 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnostics);
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -587,30 +587,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -618,16 +618,16 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -635,18 +635,18 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -655,28 +655,28 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -684,15 +684,15 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -700,17 +700,17 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[5])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)pathPtr);
@@ -1058,107 +1058,107 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, source, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, source, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, sourcePtr, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, path, sourcePtr, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -1166,55 +1166,55 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, source, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleName, pathPtr, sourcePtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)pathPtr);
@@ -1222,59 +1222,59 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -1282,7 +1282,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1290,14 +1290,14 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1305,9 +1305,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
                 }
             }
         }
@@ -1315,7 +1315,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1323,9 +1323,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                fixed (IBlob* sourcePtr = &source)
+                fixed (ISlangBlob* sourcePtr = &source)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
                 }
             }
         }
@@ -1333,7 +1333,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1341,11 +1341,11 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                fixed (IBlob* sourcePtr = &source)
+                fixed (ISlangBlob* sourcePtr = &source)
                 {
-                    fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                    fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
                     }
                 }
             }
@@ -1354,30 +1354,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
             }
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -1385,16 +1385,16 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
             }
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -1402,18 +1402,18 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
                 }
             }
         SilkMarshal.Free((nint)pathPtr);
@@ -1422,55 +1422,55 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnostics);
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, source, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, path, sourcePtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -1478,30 +1478,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -1509,16 +1509,16 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -1526,18 +1526,18 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob* sourcePtr = &source)
+            fixed (ISlangBlob* sourcePtr = &source)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -1546,28 +1546,28 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, source, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -1575,15 +1575,15 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -1591,17 +1591,17 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref IBlob source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob* sourcePtr = &source)
+        fixed (ISlangBlob* sourcePtr = &source)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, IBlob*, IBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, ISlangBlob*, ISlangBlob**, IModule*>)@this->LpVtbl[16])(@this, moduleNamePtr, pathPtr, sourcePtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)pathPtr);
@@ -1628,180 +1628,180 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* modulePath, IBlob* binaryModuleBlob)
+    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* modulePath, ISlangBlob* binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         bool ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, IBlob*, bool>)@this->LpVtbl[19])(@this, modulePath, binaryModuleBlob);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, ISlangBlob*, bool>)@this->LpVtbl[19])(@this, modulePath, binaryModuleBlob);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* modulePath, ref IBlob binaryModuleBlob)
+    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* modulePath, ref ISlangBlob binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         bool ret = default;
-        fixed (IBlob* binaryModuleBlobPtr = &binaryModuleBlob)
+        fixed (ISlangBlob* binaryModuleBlobPtr = &binaryModuleBlob)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, IBlob*, bool>)@this->LpVtbl[19])(@this, modulePath, binaryModuleBlobPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, ISlangBlob*, bool>)@this->LpVtbl[19])(@this, modulePath, binaryModuleBlobPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, IBlob* binaryModuleBlob)
-    {
-        var @this = thisVtbl.Handle;
-        bool ret = default;
-        fixed (byte* modulePathPtr = &modulePath)
-        {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, IBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlob);
-        }
-        return ret;
-    }
-
-    /// <summary>To be documented.</summary>
-    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, ref IBlob binaryModuleBlob)
+    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, ISlangBlob* binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         bool ret = default;
         fixed (byte* modulePathPtr = &modulePath)
         {
-            fixed (IBlob* binaryModuleBlobPtr = &binaryModuleBlob)
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, ISlangBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlob);
+        }
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
+    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, ref ISlangBlob binaryModuleBlob)
+    {
+        var @this = thisVtbl.Handle;
+        bool ret = default;
+        fixed (byte* modulePathPtr = &modulePath)
+        {
+            fixed (ISlangBlob* binaryModuleBlobPtr = &binaryModuleBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, IBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, ISlangBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlobPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string modulePath, IBlob* binaryModuleBlob)
+    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string modulePath, ISlangBlob* binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         bool ret = default;
         var modulePathPtr = (byte*) SilkMarshal.StringToPtr(modulePath, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, IBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlob);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, ISlangBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlob);
         SilkMarshal.Free((nint)modulePathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string modulePath, ref IBlob binaryModuleBlob)
+    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string modulePath, ref ISlangBlob binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         bool ret = default;
         var modulePathPtr = (byte*) SilkMarshal.StringToPtr(modulePath, NativeStringEncoding.UTF8);
-        fixed (IBlob* binaryModuleBlobPtr = &binaryModuleBlob)
+        fixed (ISlangBlob* binaryModuleBlobPtr = &binaryModuleBlob)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, IBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlobPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, ISlangBlob*, bool>)@this->LpVtbl[19])(@this, modulePathPtr, binaryModuleBlobPtr);
         }
         SilkMarshal.Free((nint)modulePathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @string, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @string, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @string, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @string, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* @stringPtr = &@string)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* @stringPtr = &@string)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, path, @stringPtr, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)@stringPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1809,14 +1809,14 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* @stringPtr = &@string)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1824,9 +1824,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* @stringPtr = &@string)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -1834,30 +1834,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* pathPtr = &path)
         {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
             }
         SilkMarshal.Free((nint)@stringPtr);
         }
@@ -1865,55 +1865,55 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @string, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         fixed (byte* @stringPtr = &@string)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         fixed (byte* @stringPtr = &@string)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)pathPtr);
@@ -1921,28 +1921,28 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleName, pathPtr, @stringPtr, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)pathPtr);
@@ -1950,34 +1950,34 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnosticsPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1985,14 +1985,14 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* @stringPtr = &@string)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2000,9 +2000,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* @stringPtr = &@string)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -2010,30 +2010,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
             }
         SilkMarshal.Free((nint)@stringPtr);
         }
@@ -2041,7 +2041,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2049,14 +2049,14 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2064,9 +2064,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
                 }
             }
         }
@@ -2074,7 +2074,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2084,7 +2084,7 @@ public unsafe static class SessionVtblExtensions
             {
                 fixed (byte* @stringPtr = &@string)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
                 }
             }
         }
@@ -2092,7 +2092,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2102,9 +2102,9 @@ public unsafe static class SessionVtblExtensions
             {
                 fixed (byte* @stringPtr = &@string)
                 {
-                    fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                    fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
                     }
                 }
             }
@@ -2113,7 +2113,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2122,7 +2122,7 @@ public unsafe static class SessionVtblExtensions
             fixed (byte* pathPtr = &path)
             {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
             }
         }
@@ -2130,7 +2130,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2139,9 +2139,9 @@ public unsafe static class SessionVtblExtensions
             fixed (byte* pathPtr = &path)
             {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
                 }
         SilkMarshal.Free((nint)@stringPtr);
             }
@@ -2150,30 +2150,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         fixed (byte* moduleNamePtr = &moduleName)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
             }
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -2181,7 +2181,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2190,7 +2190,7 @@ public unsafe static class SessionVtblExtensions
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
             fixed (byte* @stringPtr = &@string)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
             }
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -2198,7 +2198,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2207,9 +2207,9 @@ public unsafe static class SessionVtblExtensions
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
             fixed (byte* @stringPtr = &@string)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
                 }
             }
         SilkMarshal.Free((nint)pathPtr);
@@ -2218,7 +2218,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2226,7 +2226,7 @@ public unsafe static class SessionVtblExtensions
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -2234,7 +2234,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2242,9 +2242,9 @@ public unsafe static class SessionVtblExtensions
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
             }
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)pathPtr);
@@ -2253,55 +2253,55 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnostics);
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @string, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* @stringPtr = &@string)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* @stringPtr = &@string)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2309,28 +2309,28 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, path, @stringPtr, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2338,30 +2338,30 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2369,7 +2369,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2378,7 +2378,7 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* @stringPtr = &@string)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
             }
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2386,7 +2386,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2395,9 +2395,9 @@ public unsafe static class SessionVtblExtensions
         {
             fixed (byte* @stringPtr = &@string)
             {
-                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
                 }
             }
         }
@@ -2406,7 +2406,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2414,7 +2414,7 @@ public unsafe static class SessionVtblExtensions
         fixed (byte* pathPtr = &path)
         {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         }
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2422,7 +2422,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2430,9 +2430,9 @@ public unsafe static class SessionVtblExtensions
         fixed (byte* pathPtr = &path)
         {
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
             }
         SilkMarshal.Free((nint)@stringPtr);
         }
@@ -2441,28 +2441,28 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnostics);
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @string, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2470,7 +2470,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2478,7 +2478,7 @@ public unsafe static class SessionVtblExtensions
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         fixed (byte* @stringPtr = &@string)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
         }
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2486,7 +2486,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2494,9 +2494,9 @@ public unsafe static class SessionVtblExtensions
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         fixed (byte* @stringPtr = &@string)
         {
-            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
             }
         }
         SilkMarshal.Free((nint)pathPtr);
@@ -2505,14 +2505,14 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnostics);
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)moduleNamePtr);
@@ -2520,16 +2520,16 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
         var moduleNamePtr = (byte*) SilkMarshal.StringToPtr(moduleName, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         var @stringPtr = (byte*) SilkMarshal.StringToPtr(@string, NativeStringEncoding.UTF8);
-        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, IBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, byte*, byte*, byte*, ISlangBlob**, IModule*>)@this->LpVtbl[20])(@this, moduleNamePtr, pathPtr, @stringPtr, outDiagnosticsPtr);
         }
         SilkMarshal.Free((nint)@stringPtr);
         SilkMarshal.Free((nint)pathPtr);
@@ -2570,7 +2570,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2578,7 +2578,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2586,7 +2586,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2594,7 +2594,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2602,7 +2602,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2610,7 +2610,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2618,7 +2618,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2626,7 +2626,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2634,7 +2634,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2642,7 +2642,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2650,7 +2650,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2658,7 +2658,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2666,7 +2666,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2674,7 +2674,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2682,7 +2682,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2690,7 +2690,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2698,7 +2698,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2706,7 +2706,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2714,7 +2714,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2722,7 +2722,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2730,7 +2730,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2738,7 +2738,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2746,7 +2746,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2754,7 +2754,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2762,7 +2762,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2770,7 +2770,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2778,7 +2778,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2786,7 +2786,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2866,7 +2866,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2874,7 +2874,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2882,7 +2882,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2890,7 +2890,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2898,7 +2898,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2906,7 +2906,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2914,7 +2914,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2922,7 +2922,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2930,7 +2930,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2938,7 +2938,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2946,7 +2946,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2954,7 +2954,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2962,7 +2962,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2970,7 +2970,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2978,7 +2978,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2986,7 +2986,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -2994,7 +2994,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3002,7 +3002,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3010,7 +3010,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3018,7 +3018,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3026,7 +3026,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3034,7 +3034,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3042,7 +3042,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3050,7 +3050,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, IBlob* source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3058,7 +3058,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3066,7 +3066,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3074,7 +3074,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3082,7 +3082,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<IBlob> source, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<ISlangBlob> source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3090,7 +3090,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* modulePath, Span<IBlob> binaryModuleBlob)
+    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* modulePath, Span<ISlangBlob> binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3098,7 +3098,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> modulePath, IBlob* binaryModuleBlob)
+    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> modulePath, ISlangBlob* binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3106,7 +3106,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> modulePath, Span<IBlob> binaryModuleBlob)
+    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> modulePath, Span<ISlangBlob> binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3114,7 +3114,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string modulePath, Span<IBlob> binaryModuleBlob)
+    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string modulePath, Span<ISlangBlob> binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3122,7 +3122,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3130,7 +3130,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3138,7 +3138,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3146,7 +3146,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3154,7 +3154,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3162,7 +3162,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3170,7 +3170,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3178,7 +3178,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3186,7 +3186,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3194,7 +3194,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3202,7 +3202,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3210,7 +3210,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3218,7 +3218,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3226,7 +3226,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3234,7 +3234,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3242,7 +3242,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3250,7 +3250,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3258,7 +3258,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3266,7 +3266,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3274,7 +3274,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3282,7 +3282,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3290,7 +3290,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3298,7 +3298,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3306,7 +3306,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3314,7 +3314,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3322,7 +3322,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3330,7 +3330,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3338,7 +3338,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3346,7 +3346,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3354,7 +3354,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3362,7 +3362,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3370,7 +3370,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3378,7 +3378,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3386,7 +3386,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3394,7 +3394,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3402,7 +3402,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3410,7 +3410,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, IBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3418,7 +3418,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref IBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

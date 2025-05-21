@@ -244,22 +244,22 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SlangDisassembleByteCode(IBlob* moduleBlob, IBlob** outDisassemblyBlob);
+        public unsafe partial int SlangDisassembleByteCode(ISlangBlob* moduleBlob, ISlangBlob** outDisassemblyBlob);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SlangDisassembleByteCode(IBlob* moduleBlob, ref IBlob* outDisassemblyBlob);
+        public unsafe partial int SlangDisassembleByteCode(ISlangBlob* moduleBlob, ref ISlangBlob* outDisassemblyBlob);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SlangDisassembleByteCode(ref IBlob moduleBlob, IBlob** outDisassemblyBlob);
+        public unsafe partial int SlangDisassembleByteCode(ref ISlangBlob moduleBlob, ISlangBlob** outDisassemblyBlob);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SlangDisassembleByteCode(ref IBlob moduleBlob, ref IBlob* outDisassemblyBlob);
+        public unsafe partial int SlangDisassembleByteCode(ref ISlangBlob moduleBlob, ref ISlangBlob* outDisassemblyBlob);
 
 
         public Slang(INativeContext ctx)
