@@ -19,48 +19,48 @@ namespace Silk.NET.Slang;
 public unsafe static class SlangFileSystemExtVtblExtensions
 {
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void** outObjectPtr = &outObject)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (SlangUUID* uuidPtr = &uuid)
+        fixed (Uuid* uuidPtr = &uuid)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (SlangUUID* uuidPtr = &uuid)
+        fixed (Uuid* uuidPtr = &uuid)
         {
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
             }
         }
         return ret;
@@ -85,22 +85,22 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* guid)
     {
         var @this = thisVtbl.Handle;
         void* ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangUUID*, void*>)@this->LpVtbl[3])(@this, guid);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, Uuid*, void*>)@this->LpVtbl[3])(@this, guid);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid guid)
     {
         var @this = thisVtbl.Handle;
         void* ret = default;
-        fixed (SlangUUID* guidPtr = &guid)
+        fixed (Uuid* guidPtr = &guid)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangUUID*, void*>)@this->LpVtbl[3])(@this, guidPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, Uuid*, void*>)@this->LpVtbl[3])(@this, guidPtr);
         }
         return ret;
     }
@@ -252,40 +252,40 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, path, pathOut);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, path, pathOut);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (ISlangBlob** pathOutPtr = &pathOut)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, path, pathOutPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, path, pathOutPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOut);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOut);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -293,51 +293,51 @@ public unsafe static class SlangFileSystemExtVtblExtensions
         {
             fixed (ISlangBlob** pathOutPtr = &pathOut)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOutPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOutPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOut);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOut);
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         fixed (ISlangBlob** pathOutPtr = &pathOut)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOutPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPath, pathPtr, pathOutPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (byte* fromPathPtr = &fromPath)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOut);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOut);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -345,14 +345,14 @@ public unsafe static class SlangFileSystemExtVtblExtensions
         {
             fixed (ISlangBlob** pathOutPtr = &pathOut)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOutPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOutPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -360,14 +360,14 @@ public unsafe static class SlangFileSystemExtVtblExtensions
         {
             fixed (byte* pathPtr = &path)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -377,7 +377,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
             {
                 fixed (ISlangBlob** pathOutPtr = &pathOut)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
                 }
             }
         }
@@ -385,21 +385,21 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (byte* fromPathPtr = &fromPath)
         {
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
         SilkMarshal.Free((nint)pathPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -408,7 +408,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
             fixed (ISlangBlob** pathOutPtr = &pathOut)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
             }
         SilkMarshal.Free((nint)pathPtr);
         }
@@ -416,46 +416,46 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var fromPathPtr = (byte*) SilkMarshal.StringToPtr(fromPath, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOut);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOut);
         SilkMarshal.Free((nint)fromPathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var fromPathPtr = (byte*) SilkMarshal.StringToPtr(fromPath, NativeStringEncoding.UTF8);
         fixed (ISlangBlob** pathOutPtr = &pathOut)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOutPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, path, pathOutPtr);
         }
         SilkMarshal.Free((nint)fromPathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var fromPathPtr = (byte*) SilkMarshal.StringToPtr(fromPath, NativeStringEncoding.UTF8);
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
         }
         SilkMarshal.Free((nint)fromPathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -464,7 +464,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
         {
             fixed (ISlangBlob** pathOutPtr = &pathOut)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
             }
         }
         SilkMarshal.Free((nint)fromPathPtr);
@@ -472,20 +472,20 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var fromPathPtr = (byte*) SilkMarshal.StringToPtr(fromPath, NativeStringEncoding.UTF8);
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOut);
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)fromPathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -493,7 +493,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
         fixed (ISlangBlob** pathOutPtr = &pathOut)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, SlangPathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, PathType, byte*, byte*, ISlangBlob**, int>)@this->LpVtbl[6])(@this, fromPathType, fromPathPtr, pathPtr, pathOutPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         SilkMarshal.Free((nint)fromPathPtr);
@@ -501,73 +501,73 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, SlangPathType* pathTypeOut)
+    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, PathType* pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, SlangPathType*, int>)@this->LpVtbl[7])(@this, path, pathTypeOut);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, PathType*, int>)@this->LpVtbl[7])(@this, path, pathTypeOut);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref SlangPathType pathTypeOut)
+    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref PathType pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (SlangPathType* pathTypeOutPtr = &pathTypeOut)
+        fixed (PathType* pathTypeOutPtr = &pathTypeOut)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, SlangPathType*, int>)@this->LpVtbl[7])(@this, path, pathTypeOutPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, PathType*, int>)@this->LpVtbl[7])(@this, path, pathTypeOutPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, SlangPathType* pathTypeOut)
+    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, PathType* pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (byte* pathPtr = &path)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, SlangPathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOut);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, PathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOut);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref SlangPathType pathTypeOut)
+    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref PathType pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (byte* pathPtr = &path)
         {
-            fixed (SlangPathType* pathTypeOutPtr = &pathTypeOut)
+            fixed (PathType* pathTypeOutPtr = &pathTypeOut)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, SlangPathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOutPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, PathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOutPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, SlangPathType* pathTypeOut)
+    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, PathType* pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, SlangPathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOut);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, PathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOut);
         SilkMarshal.Free((nint)pathPtr);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref SlangPathType pathTypeOut)
+    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref PathType pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-        fixed (SlangPathType* pathTypeOutPtr = &pathTypeOut)
+        fixed (PathType* pathTypeOutPtr = &pathTypeOut)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, SlangPathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOutPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangFileSystemExt*, byte*, PathType*, int>)@this->LpVtbl[7])(@this, pathPtr, pathTypeOutPtr);
         }
         SilkMarshal.Free((nint)pathPtr);
         return ret;
@@ -736,7 +736,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -744,7 +744,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -752,7 +752,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> guid)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -792,7 +792,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -800,7 +800,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -808,7 +808,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -816,7 +816,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -824,7 +824,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -832,7 +832,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -840,7 +840,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -848,7 +848,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -856,7 +856,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -864,7 +864,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -872,7 +872,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<SlangPathType> pathTypeOut)
+    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, Span<PathType> pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -880,7 +880,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, SlangPathType* pathTypeOut)
+    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, PathType* pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -888,7 +888,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<SlangPathType> pathTypeOut)
+    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, Span<PathType> pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -896,7 +896,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<SlangPathType> pathTypeOut)
+    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, Span<PathType> pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

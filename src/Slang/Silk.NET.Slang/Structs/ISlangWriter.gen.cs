@@ -42,48 +42,48 @@ namespace Silk.NET.Slang
         [NativeName("Name", "lpVtbl")]
         public void** LpVtbl;
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
         {
             var @this = (ISlangWriter*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
         {
             var @this = (ISlangWriter*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
         {
             var @this = (ISlangWriter*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (SlangUUID* uuidPtr = &uuid)
+            fixed (Uuid* uuidPtr = &uuid)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
         {
             var @this = (ISlangWriter*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (SlangUUID* uuidPtr = &uuid)
+            fixed (Uuid* uuidPtr = &uuid)
             {
                 fixed (void** outObjectPtr = &outObject)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
                 }
             }
             return ret;
@@ -207,11 +207,11 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int SetMode(SlangWriterMode mode)
+        public readonly int SetMode(WriterMode mode)
         {
             var @this = (ISlangWriter*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, SlangWriterMode, int>)@this->LpVtbl[8])(@this, mode);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangWriter*, WriterMode, int>)@this->LpVtbl[8])(@this, mode);
             return ret;
         }
 

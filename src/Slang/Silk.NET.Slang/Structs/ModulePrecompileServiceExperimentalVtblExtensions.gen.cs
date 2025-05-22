@@ -19,48 +19,48 @@ namespace Silk.NET.Slang;
 public unsafe static class ModulePrecompileServiceExperimentalVtblExtensions
 {
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void** outObjectPtr = &outObject)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (SlangUUID* uuidPtr = &uuid)
+        fixed (Uuid* uuidPtr = &uuid)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (SlangUUID* uuidPtr = &uuid)
+        fixed (Uuid* uuidPtr = &uuid)
         {
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
             }
         }
         return ret;
@@ -85,61 +85,61 @@ public unsafe static class ModulePrecompileServiceExperimentalVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, SlangCompileTarget target, ISlangBlob** outDiagnostics)
+    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangCompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, SlangCompileTarget target, ref ISlangBlob* outDiagnostics)
-    {
-        var @this = thisVtbl.Handle;
-        int ret = default;
-        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
-        {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangCompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnosticsPtr);
-        }
-        return ret;
-    }
-
-    /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, SlangCompileTarget target, ISlangBlob** outCode, ISlangBlob** outDiagnostics)
-    {
-        var @this = thisVtbl.Handle;
-        int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangCompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnostics);
-        return ret;
-    }
-
-    /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, SlangCompileTarget target, ISlangBlob** outCode, ref ISlangBlob* outDiagnostics)
+    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangCompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, SlangCompileTarget target, ref ISlangBlob* outCode, ISlangBlob** outDiagnostics)
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ISlangBlob** outCode, ISlangBlob** outDiagnostics)
+    {
+        var @this = thisVtbl.Handle;
+        int ret = default;
+        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnostics);
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ISlangBlob** outCode, ref ISlangBlob* outDiagnostics)
+    {
+        var @this = thisVtbl.Handle;
+        int ret = default;
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+        {
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnosticsPtr);
+        }
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref ISlangBlob* outCode, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (ISlangBlob** outCodePtr = &outCode)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangCompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, SlangCompileTarget target, ref ISlangBlob* outCode, ref ISlangBlob* outDiagnostics)
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref ISlangBlob* outCode, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -147,7 +147,7 @@ public unsafe static class ModulePrecompileServiceExperimentalVtblExtensions
         {
             fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, SlangCompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnosticsPtr);
             }
         }
         return ret;
@@ -211,7 +211,7 @@ public unsafe static class ModulePrecompileServiceExperimentalVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -219,7 +219,7 @@ public unsafe static class ModulePrecompileServiceExperimentalVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

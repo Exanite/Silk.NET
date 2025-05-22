@@ -19,10 +19,10 @@ namespace Silk.NET.Slang
     public unsafe readonly struct PfnFileSystemContentsCallBack : IDisposable
     {
         private readonly void* _handle;
-        public delegate* unmanaged[Cdecl]<SlangPathType, byte*, void*, void> Handle => (delegate* unmanaged[Cdecl]<SlangPathType, byte*, void*, void>) _handle;
+        public delegate* unmanaged[Cdecl]<PathType, byte*, void*, void> Handle => (delegate* unmanaged[Cdecl]<PathType, byte*, void*, void>) _handle;
         public PfnFileSystemContentsCallBack
         (
-            delegate* unmanaged[Cdecl]<SlangPathType, byte*, void*, void> ptr
+            delegate* unmanaged[Cdecl]<PathType, byte*, void*, void> ptr
         ) => _handle = ptr;
 
         public PfnFileSystemContentsCallBack
@@ -35,7 +35,7 @@ namespace Silk.NET.Slang
 
         public static implicit operator nint(PfnFileSystemContentsCallBack pfn) => (nint) pfn.Handle;
         public static explicit operator PfnFileSystemContentsCallBack(nint pfn)
-            => new PfnFileSystemContentsCallBack((delegate* unmanaged[Cdecl]<SlangPathType, byte*, void*, void>) pfn);
+            => new PfnFileSystemContentsCallBack((delegate* unmanaged[Cdecl]<PathType, byte*, void*, void>) pfn);
 
         public static implicit operator PfnFileSystemContentsCallBack(FileSystemContentsCallBack proc)
             => new PfnFileSystemContentsCallBack(proc);
@@ -43,11 +43,11 @@ namespace Silk.NET.Slang
         public static explicit operator FileSystemContentsCallBack(PfnFileSystemContentsCallBack pfn)
             => SilkMarshal.PtrToDelegate<FileSystemContentsCallBack>(pfn);
 
-        public static implicit operator delegate* unmanaged[Cdecl]<SlangPathType, byte*, void*, void>(PfnFileSystemContentsCallBack pfn) => pfn.Handle;
-        public static implicit operator PfnFileSystemContentsCallBack(delegate* unmanaged[Cdecl]<SlangPathType, byte*, void*, void> ptr) => new PfnFileSystemContentsCallBack(ptr);
+        public static implicit operator delegate* unmanaged[Cdecl]<PathType, byte*, void*, void>(PfnFileSystemContentsCallBack pfn) => pfn.Handle;
+        public static implicit operator PfnFileSystemContentsCallBack(delegate* unmanaged[Cdecl]<PathType, byte*, void*, void> ptr) => new PfnFileSystemContentsCallBack(ptr);
     }
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public unsafe delegate void FileSystemContentsCallBack(SlangPathType arg0, byte* arg1, void* arg2);
+    public unsafe delegate void FileSystemContentsCallBack(PathType arg0, byte* arg1, void* arg2);
 }
 

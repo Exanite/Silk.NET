@@ -9,9 +9,14 @@ using Silk.NET.Core.Attributes;
 
 namespace Silk.NET.Slang
 {
-    [NativeName("Name", "LayoutRules")]
+    [Flags]
+    [NativeName("Name", "SlangLayoutRules")]
     public enum LayoutRules : uint
     {
+        [NativeName("Name", "SLANG_LAYOUT_RULES_DEFAULT")]
+        LayoutRulesDefault = 0x0,
+        [NativeName("Name", "SLANG_LAYOUT_RULES_METAL_ARGUMENT_BUFFER_TIER_2")]
+        LayoutRulesMetalArgumentBufferTier2 = 0x1,
         [NativeName("Name", "Default")]
         Default = 0x0,
         [NativeName("Name", "MetalArgumentBufferTier2")]

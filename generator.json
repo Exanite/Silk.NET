@@ -880,7 +880,7 @@
                 "no-pre-2.18-obsolete-enums",
                 "convert-windows-only"
             ],
-            "prefix": "",
+            "prefix": "Slang",
             "clang": {
                 "args": [
                     "--language=c++",

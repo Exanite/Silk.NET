@@ -25,7 +25,7 @@ namespace Silk.NET.Slang
             TargetDesc* targets = null,
             long? targetCount = null,
             uint? flags = null,
-            SlangMatrixLayoutMode? defaultMatrixLayoutMode = null,
+            MatrixLayoutMode? defaultMatrixLayoutMode = null,
             byte** searchPaths = null,
             long? searchPathCount = null,
             PreprocessorMacroDesc* preprocessorMacros = null,
@@ -138,7 +138,7 @@ namespace Silk.NET.Slang
         [NativeName("Type", "SlangMatrixLayoutMode")]
         [NativeName("Type.Name", "SlangMatrixLayoutMode")]
         [NativeName("Name", "defaultMatrixLayoutMode")]
-        public SlangMatrixLayoutMode DefaultMatrixLayoutMode;
+        public MatrixLayoutMode DefaultMatrixLayoutMode;
 
         [NativeName("Type", "const char *const *")]
         [NativeName("Type.Name", "const char *const *")]

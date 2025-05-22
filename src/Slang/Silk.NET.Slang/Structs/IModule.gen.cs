@@ -45,48 +45,48 @@ namespace Silk.NET.Slang
         [NativeName("Name", "lpVtbl")]
         public void** LpVtbl;
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (SlangUUID* uuidPtr = &uuid)
+            fixed (Uuid* uuidPtr = &uuid)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (SlangUUID* uuidPtr = &uuid)
+            fixed (Uuid* uuidPtr = &uuid)
             {
                 fixed (void** outObjectPtr = &outObject)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
                 }
             }
             return ret;
@@ -978,40 +978,40 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, SlangStage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, SlangStage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, SlangStage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, SlangStage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -1019,26 +1019,26 @@ namespace Silk.NET.Slang
             {
                 fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, SlangStage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (byte* namePtr = &name)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, SlangStage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -1046,14 +1046,14 @@ namespace Silk.NET.Slang
             {
                 fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, SlangStage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -1061,14 +1061,14 @@ namespace Silk.NET.Slang
             {
                 fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, SlangStage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -1078,7 +1078,7 @@ namespace Silk.NET.Slang
                 {
                     fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
                     }
                 }
             }
@@ -1086,46 +1086,46 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, SlangStage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, SlangStage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
             fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
             }
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, SlangStage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
             fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
             }
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, SlangStage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -1134,7 +1134,7 @@ namespace Silk.NET.Slang
             {
                 fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, SlangStage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
                 }
             }
             SilkMarshal.Free((nint)namePtr);

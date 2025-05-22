@@ -18,50 +18,50 @@ namespace Silk.NET.Slang
     {
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4545, Column 38 in slang.h")]
-        public static unsafe int SlangCreateGlobalSession2(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangGlobalSessionDesc> desc, IGlobalSession** outGlobalSession)
+        public static unsafe int SLANGcreateGlobalSession2(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<GlobalSessionDesc> desc, IGlobalSession** outGlobalSession)
         {
             // SpanOverloader
-            return thisApi.SlangCreateGlobalSession2(in desc.GetPinnableReference(), outGlobalSession);
+            return thisApi.SLANGcreateGlobalSession2(in desc.GetPinnableReference(), outGlobalSession);
         }
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4545, Column 38 in slang.h")]
-        public static unsafe int SlangCreateGlobalSession2(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangGlobalSessionDesc> desc, ref IGlobalSession* outGlobalSession)
+        public static unsafe int SLANGcreateGlobalSession2(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<GlobalSessionDesc> desc, ref IGlobalSession* outGlobalSession)
         {
             // SpanOverloader
-            return thisApi.SlangCreateGlobalSession2(in desc.GetPinnableReference(), ref outGlobalSession);
+            return thisApi.SLANGcreateGlobalSession2(in desc.GetPinnableReference(), ref outGlobalSession);
         }
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4691, Column 38 in slang.h")]
-        public static unsafe int SlangCreateByteCodeRunner(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ByteCodeRunnerDesc> desc, IByteCodeRunner** outByteCodeRunner)
+        public static unsafe int SLANGcreateByteCodeRunner(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ByteCodeRunnerDesc> desc, IByteCodeRunner** outByteCodeRunner)
         {
             // SpanOverloader
-            return thisApi.SlangCreateByteCodeRunner(in desc.GetPinnableReference(), outByteCodeRunner);
+            return thisApi.SLANGcreateByteCodeRunner(in desc.GetPinnableReference(), outByteCodeRunner);
         }
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4691, Column 38 in slang.h")]
-        public static unsafe int SlangCreateByteCodeRunner(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ByteCodeRunnerDesc> desc, ref IByteCodeRunner* outByteCodeRunner)
+        public static unsafe int SLANGcreateByteCodeRunner(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ByteCodeRunnerDesc> desc, ref IByteCodeRunner* outByteCodeRunner)
         {
             // SpanOverloader
-            return thisApi.SlangCreateByteCodeRunner(in desc.GetPinnableReference(), ref outByteCodeRunner);
+            return thisApi.SLANGcreateByteCodeRunner(in desc.GetPinnableReference(), ref outByteCodeRunner);
         }
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
-        public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ISlangBlob** outDisassemblyBlob)
+        public static unsafe int SLANGdisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ISlangBlob** outDisassemblyBlob)
         {
             // SpanOverloader
-            return thisApi.SlangDisassembleByteCode(ref moduleBlob.GetPinnableReference(), outDisassemblyBlob);
+            return thisApi.SLANGdisassembleByteCode(ref moduleBlob.GetPinnableReference(), outDisassemblyBlob);
         }
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
-        public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ref ISlangBlob* outDisassemblyBlob)
+        public static unsafe int SLANGdisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ref ISlangBlob* outDisassemblyBlob)
         {
             // SpanOverloader
-            return thisApi.SlangDisassembleByteCode(ref moduleBlob.GetPinnableReference(), ref outDisassemblyBlob);
+            return thisApi.SLANGdisassembleByteCode(ref moduleBlob.GetPinnableReference(), ref outDisassemblyBlob);
         }
 
     }

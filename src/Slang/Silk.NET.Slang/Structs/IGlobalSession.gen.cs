@@ -42,48 +42,48 @@ namespace Silk.NET.Slang
         [NativeName("Name", "lpVtbl")]
         public void** LpVtbl;
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (SlangUUID* uuidPtr = &uuid)
+            fixed (Uuid* uuidPtr = &uuid)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (SlangUUID* uuidPtr = &uuid)
+            fixed (Uuid* uuidPtr = &uuid)
             {
                 fixed (void** outObjectPtr = &outObject)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
                 }
             }
             return ret;
@@ -156,103 +156,103 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe SlangProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name)
+        public readonly unsafe ProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangProfileID ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, SlangProfileID>)@this->LpVtbl[4])(@this, name);
+            ProfileID ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, ProfileID>)@this->LpVtbl[4])(@this, name);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+        public readonly ProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangProfileID ret = default;
+            ProfileID ret = default;
             fixed (byte* namePtr = &name)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, SlangProfileID>)@this->LpVtbl[4])(@this, namePtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, ProfileID>)@this->LpVtbl[4])(@this, namePtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name)
+        public readonly ProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangProfileID ret = default;
+            ProfileID ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, SlangProfileID>)@this->LpVtbl[4])(@this, namePtr);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, ProfileID>)@this->LpVtbl[4])(@this, namePtr);
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void SetDownstreamCompilerPath(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path)
+        public readonly unsafe void SetDownstreamCompilerPath(PassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, byte*, void>)@this->LpVtbl[5])(@this, passThrough, path);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, byte*, void>)@this->LpVtbl[5])(@this, passThrough, path);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetDownstreamCompilerPath(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path)
+        public readonly void SetDownstreamCompilerPath(PassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* pathPtr = &path)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, byte*, void>)@this->LpVtbl[5])(@this, passThrough, pathPtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, byte*, void>)@this->LpVtbl[5])(@this, passThrough, pathPtr);
             }
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetDownstreamCompilerPath(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path)
+        public readonly void SetDownstreamCompilerPath(PassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             var pathPtr = (byte*) SilkMarshal.StringToPtr(path, NativeStringEncoding.UTF8);
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, byte*, void>)@this->LpVtbl[5])(@this, passThrough, pathPtr);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, byte*, void>)@this->LpVtbl[5])(@this, passThrough, pathPtr);
             SilkMarshal.Free((nint)pathPtr);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void SetDownstreamCompilerPrelude(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* preludeText)
+        public readonly unsafe void SetDownstreamCompilerPrelude(PassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, byte*, void>)@this->LpVtbl[6])(@this, passThrough, preludeText);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, byte*, void>)@this->LpVtbl[6])(@this, passThrough, preludeText);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetDownstreamCompilerPrelude(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
+        public readonly void SetDownstreamCompilerPrelude(PassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* preludeTextPtr = &preludeText)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, byte*, void>)@this->LpVtbl[6])(@this, passThrough, preludeTextPtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, byte*, void>)@this->LpVtbl[6])(@this, passThrough, preludeTextPtr);
             }
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetDownstreamCompilerPrelude(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string preludeText)
+        public readonly void SetDownstreamCompilerPrelude(PassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             var preludeTextPtr = (byte*) SilkMarshal.StringToPtr(preludeText, NativeStringEncoding.UTF8);
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, byte*, void>)@this->LpVtbl[6])(@this, passThrough, preludeTextPtr);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, byte*, void>)@this->LpVtbl[6])(@this, passThrough, preludeTextPtr);
             SilkMarshal.Free((nint)preludeTextPtr);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetDownstreamCompilerPrelude(SlangPassThrough passThrough, ISlangBlob** outPrelude)
+        public readonly unsafe void GetDownstreamCompilerPrelude(PassThrough passThrough, ISlangBlob** outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPrelude);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPrelude);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetDownstreamCompilerPrelude(SlangPassThrough passThrough, ref ISlangBlob* outPrelude)
+        public readonly unsafe void GetDownstreamCompilerPrelude(PassThrough passThrough, ref ISlangBlob* outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (ISlangBlob** outPreludePtr = &outPrelude)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPreludePtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPreludePtr);
             }
         }
 
@@ -276,63 +276,63 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int SetDefaultDownstreamCompiler(SlangSourceLanguage sourceLanguage, SlangPassThrough defaultCompiler)
+        public readonly int SetDefaultDownstreamCompiler(SourceLanguage sourceLanguage, PassThrough defaultCompiler)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangSourceLanguage, SlangPassThrough, int>)@this->LpVtbl[9])(@this, sourceLanguage, defaultCompiler);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, PassThrough, int>)@this->LpVtbl[9])(@this, sourceLanguage, defaultCompiler);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangPassThrough GetDefaultDownstreamCompiler(SlangSourceLanguage sourceLanguage)
+        public readonly PassThrough GetDefaultDownstreamCompiler(SourceLanguage sourceLanguage)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangPassThrough ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangSourceLanguage, SlangPassThrough>)@this->LpVtbl[10])(@this, sourceLanguage);
+            PassThrough ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, PassThrough>)@this->LpVtbl[10])(@this, sourceLanguage);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void SetLanguagePrelude(SlangSourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* preludeText)
+        public readonly unsafe void SetLanguagePrelude(SourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangSourceLanguage, byte*, void>)@this->LpVtbl[11])(@this, sourceLanguage, preludeText);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, byte*, void>)@this->LpVtbl[11])(@this, sourceLanguage, preludeText);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetLanguagePrelude(SlangSourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
+        public readonly void SetLanguagePrelude(SourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* preludeTextPtr = &preludeText)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangSourceLanguage, byte*, void>)@this->LpVtbl[11])(@this, sourceLanguage, preludeTextPtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, byte*, void>)@this->LpVtbl[11])(@this, sourceLanguage, preludeTextPtr);
             }
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetLanguagePrelude(SlangSourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string preludeText)
+        public readonly void SetLanguagePrelude(SourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             var preludeTextPtr = (byte*) SilkMarshal.StringToPtr(preludeText, NativeStringEncoding.UTF8);
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangSourceLanguage, byte*, void>)@this->LpVtbl[11])(@this, sourceLanguage, preludeTextPtr);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, byte*, void>)@this->LpVtbl[11])(@this, sourceLanguage, preludeTextPtr);
             SilkMarshal.Free((nint)preludeTextPtr);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetLanguagePrelude(SlangSourceLanguage sourceLanguage, ISlangBlob** outPrelude)
+        public readonly unsafe void GetLanguagePrelude(SourceLanguage sourceLanguage, ISlangBlob** outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangSourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPrelude);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPrelude);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetLanguagePrelude(SlangSourceLanguage sourceLanguage, ref ISlangBlob* outPrelude)
+        public readonly unsafe void GetLanguagePrelude(SourceLanguage sourceLanguage, ref ISlangBlob* outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (ISlangBlob** outPreludePtr = &outPrelude)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangSourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPreludePtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPreludePtr);
             }
         }
 
@@ -477,20 +477,20 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int CheckCompileTargetSupport(SlangCompileTarget target)
+        public readonly int CheckCompileTargetSupport(CompileTarget target)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangCompileTarget, int>)@this->LpVtbl[17])(@this, target);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, CompileTarget, int>)@this->LpVtbl[17])(@this, target);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int CheckPassThroughSupport(SlangPassThrough passThrough)
+        public readonly int CheckPassThroughSupport(PassThrough passThrough)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangPassThrough, int>)@this->LpVtbl[18])(@this, passThrough);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, int>)@this->LpVtbl[18])(@this, passThrough);
             return ret;
         }
 
@@ -525,71 +525,71 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveCoreModule(SlangArchiveType archiveType, ISlangBlob** outBlob)
+        public readonly unsafe int SaveCoreModule(ArchiveType archiveType, ISlangBlob** outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveCoreModule(SlangArchiveType archiveType, ref ISlangBlob* outBlob)
+        public readonly unsafe int SaveCoreModule(ArchiveType archiveType, ref ISlangBlob* outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (ISlangBlob** outBlobPtr = &outBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlobPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe SlangCapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name)
+        public readonly unsafe CapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangCapabilityID ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, SlangCapabilityID>)@this->LpVtbl[22])(@this, name);
+            CapabilityID ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, CapabilityID>)@this->LpVtbl[22])(@this, name);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangCapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+        public readonly CapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangCapabilityID ret = default;
+            CapabilityID ret = default;
             fixed (byte* namePtr = &name)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, SlangCapabilityID>)@this->LpVtbl[22])(@this, namePtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, CapabilityID>)@this->LpVtbl[22])(@this, namePtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangCapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name)
+        public readonly CapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangCapabilityID ret = default;
+            CapabilityID ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, SlangCapabilityID>)@this->LpVtbl[22])(@this, namePtr);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, byte*, CapabilityID>)@this->LpVtbl[22])(@this, namePtr);
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetDownstreamCompilerForTransition(SlangCompileTarget source, SlangCompileTarget target, SlangPassThrough compiler)
+        public readonly void SetDownstreamCompilerForTransition(CompileTarget source, CompileTarget target, PassThrough compiler)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangCompileTarget, SlangCompileTarget, SlangPassThrough, void>)@this->LpVtbl[23])(@this, source, target, compiler);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, CompileTarget, CompileTarget, PassThrough, void>)@this->LpVtbl[23])(@this, source, target, compiler);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangPassThrough GetDownstreamCompilerForTransition(SlangCompileTarget source, SlangCompileTarget target)
+        public readonly PassThrough GetDownstreamCompilerForTransition(CompileTarget source, CompileTarget target)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            SlangPassThrough ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SlangCompileTarget, SlangCompileTarget, SlangPassThrough>)@this->LpVtbl[24])(@this, source, target);
+            PassThrough ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, CompileTarget, CompileTarget, PassThrough>)@this->LpVtbl[24])(@this, source, target);
             return ret;
         }
 
@@ -852,22 +852,22 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, SlangArchiveType archiveType, ISlangBlob** outBlob)
+        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, ArchiveType archiveType, ISlangBlob** outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, SlangArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, SlangArchiveType archiveType, ref ISlangBlob* outBlob)
+        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, ArchiveType archiveType, ref ISlangBlob* outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (ISlangBlob** outBlobPtr = &outBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, SlangArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlobPtr);
             }
             return ret;
         }

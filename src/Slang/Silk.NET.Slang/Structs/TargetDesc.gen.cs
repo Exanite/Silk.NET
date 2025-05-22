@@ -22,11 +22,11 @@ namespace Silk.NET.Slang
         public TargetDesc
         (
             nuint? structureSize = null,
-            SlangCompileTarget? format = null,
-            SlangProfileID? profile = null,
+            CompileTarget? format = null,
+            ProfileID? profile = null,
             uint? flags = null,
-            SlangFloatingPointMode? floatingPointMode = null,
-            SlangLineDirectiveMode? lineDirectiveMode = null,
+            FloatingPointMode? floatingPointMode = null,
+            LineDirectiveMode? lineDirectiveMode = null,
             bool? forceGLSLScalarBufferLayout = null,
             CompilerOptionEntry* compilerOptionEntries = null,
             uint? compilerOptionEntryCount = null
@@ -87,12 +87,12 @@ namespace Silk.NET.Slang
         [NativeName("Type", "SlangCompileTarget")]
         [NativeName("Type.Name", "SlangCompileTarget")]
         [NativeName("Name", "format")]
-        public SlangCompileTarget Format;
+        public CompileTarget Format;
 
         [NativeName("Type", "SlangProfileID")]
         [NativeName("Type.Name", "SlangProfileID")]
         [NativeName("Name", "profile")]
-        public SlangProfileID Profile;
+        public ProfileID Profile;
 
         [NativeName("Type", "SlangTargetFlags")]
         [NativeName("Type.Name", "SlangTargetFlags")]
@@ -102,12 +102,12 @@ namespace Silk.NET.Slang
         [NativeName("Type", "SlangFloatingPointMode")]
         [NativeName("Type.Name", "SlangFloatingPointMode")]
         [NativeName("Name", "floatingPointMode")]
-        public SlangFloatingPointMode FloatingPointMode;
+        public FloatingPointMode FloatingPointMode;
 
         [NativeName("Type", "SlangLineDirectiveMode")]
         [NativeName("Type.Name", "SlangLineDirectiveMode")]
         [NativeName("Name", "lineDirectiveMode")]
-        public SlangLineDirectiveMode LineDirectiveMode;
+        public LineDirectiveMode LineDirectiveMode;
 
         [NativeName("Type", "bool")]
         [NativeName("Type.Name", "bool")]

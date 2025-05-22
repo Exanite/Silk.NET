@@ -19,48 +19,48 @@ namespace Silk.NET.Slang;
 public unsafe static class SlangCastableVtblExtensions
 {
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void** outObjectPtr = &outObject)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (SlangUUID* uuidPtr = &uuid)
+        fixed (Uuid* uuidPtr = &uuid)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (SlangUUID* uuidPtr = &uuid)
+        fixed (Uuid* uuidPtr = &uuid)
         {
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, SlangUUID*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
             }
         }
         return ret;
@@ -85,28 +85,28 @@ public unsafe static class SlangCastableVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SlangUUID* guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* guid)
     {
         var @this = thisVtbl.Handle;
         void* ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, SlangUUID*, void*>)@this->LpVtbl[3])(@this, guid);
+        ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void*>)@this->LpVtbl[3])(@this, guid);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid guid)
     {
         var @this = thisVtbl.Handle;
         void* ret = default;
-        fixed (SlangUUID* guidPtr = &guid)
+        fixed (Uuid* guidPtr = &guid)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, SlangUUID*, void*>)@this->LpVtbl[3])(@this, guidPtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void*>)@this->LpVtbl[3])(@this, guidPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -114,7 +114,7 @@ public unsafe static class SlangCastableVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -122,7 +122,7 @@ public unsafe static class SlangCastableVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangCastable> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> guid)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
