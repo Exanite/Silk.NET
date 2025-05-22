@@ -900,7 +900,20 @@
                 "comRefs": []
             },
             "exclude": [],
-            "rename": {},
+            "rename": {
+                "ISlangBlob": "IBlob",
+                "ISlangCastable": "ICastable",
+                "ISlangCloneable": "ICloneable",
+                "ISlangFileSystem": "IFileSystem",
+                "ISlangFileSystemExt": "IFileSystemExt",
+                "ISlangMutableFileSystem": "IMutableFileSystem",
+                "ISlangProfiler": "IProfiler",
+                "ISlangSharedLibrary": "ISharedLibrary",
+                "ISlangSharedLibraryDep1": "ISharedLibraryDep1",
+                "ISlangSharedLibraryLoader": "ISharedLibraryLoader",
+                "ISlangUnknown": "IUnknown",
+                "ISlangWriter": "IWriter"
+            },
             "bakery": {
                 "profileNames": [
                     "slang"
@@ -924,9 +937,6 @@
                 "className": "SlangLibraryNameContainer"
             },
             "typeMaps": [
-                {
-                    "IBlob": "ISlangBlob"
-                },
                 {
                     "$include.commonTypeMap": "build/csharp_typemap.json"
                 }

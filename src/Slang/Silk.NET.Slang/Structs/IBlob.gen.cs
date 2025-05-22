@@ -16,16 +16,16 @@ using Silk.NET.Core.Loader;
 
 namespace Silk.NET.Slang
 {
-    [NativeName("Name", "ISlangCastable")]
-    public unsafe partial struct ISlangCastable : IComVtbl<ISlangCastable>, IComVtbl<ISlangUnknown>
+    [NativeName("Name", "ISlangBlob")]
+    public unsafe partial struct IBlob : IComVtbl<IBlob>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangUnknown(ISlangCastable val)
-            => Unsafe.As<ISlangCastable, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(IBlob val)
+            => Unsafe.As<IBlob, Silk.NET.Core.Native.IUnknown>(ref val);
 
-        public ISlangCastable
+        public IBlob
         (
             void** lpVtbl = null
         ) : this()
@@ -44,20 +44,20 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<IBlob*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IBlob*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
             }
             return ret;
         }
@@ -65,11 +65,11 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Uuid* uuidPtr = &uuid)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+                ret = ((delegate* unmanaged[Cdecl]<IBlob*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
             }
             return ret;
         }
@@ -77,13 +77,13 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Uuid* uuidPtr = &uuid)
             {
                 fixed (void** outObjectPtr = &outObject)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IBlob*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
                 }
             }
             return ret;
@@ -92,39 +92,36 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly uint AddRef()
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             uint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, uint>)@this->LpVtbl[1])(@this);
+            ret = ((delegate* unmanaged[Cdecl]<IBlob*, uint>)@this->LpVtbl[1])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly uint Release()
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             uint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, uint>)@this->LpVtbl[2])(@this);
+            ret = ((delegate* unmanaged[Cdecl]<IBlob*, uint>)@this->LpVtbl[2])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void* CastAs([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* guid)
+        public readonly unsafe void* GetBufferPointer()
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             void* ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void*>)@this->LpVtbl[3])(@this, guid);
+            ret = ((delegate* unmanaged[Cdecl]<IBlob*, void*>)@this->LpVtbl[3])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void* CastAs([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid guid)
+        public readonly nuint GetBufferSize()
         {
-            var @this = (ISlangCastable*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            void* ret = default;
-            fixed (Uuid* guidPtr = &guid)
-            {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangCastable*, Uuid*, void*>)@this->LpVtbl[3])(@this, guidPtr);
-            }
+            var @this = (IBlob*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            nuint ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IBlob*, nuint>)@this->LpVtbl[4])(@this);
             return ret;
         }
 

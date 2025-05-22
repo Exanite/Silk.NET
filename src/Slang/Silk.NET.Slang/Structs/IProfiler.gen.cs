@@ -17,15 +17,15 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "ISlangProfiler")]
-    public unsafe partial struct ISlangProfiler : IComVtbl<ISlangProfiler>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct IProfiler : IComVtbl<IProfiler>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangUnknown(ISlangProfiler val)
-            => Unsafe.As<ISlangProfiler, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(IProfiler val)
+            => Unsafe.As<IProfiler, Silk.NET.Core.Native.IUnknown>(ref val);
 
-        public ISlangProfiler
+        public IProfiler
         (
             void** lpVtbl = null
         ) : this()
@@ -44,20 +44,20 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
             }
             return ret;
         }
@@ -65,11 +65,11 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Uuid* uuidPtr = &uuid)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+                ret = ((delegate* unmanaged[Cdecl]<IProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
             }
             return ret;
         }
@@ -77,13 +77,13 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Uuid* uuidPtr = &uuid)
             {
                 fixed (void** outObjectPtr = &outObject)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IProfiler*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
                 }
             }
             return ret;
@@ -92,36 +92,36 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly uint AddRef()
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             uint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, uint>)@this->LpVtbl[1])(@this);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, uint>)@this->LpVtbl[1])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly uint Release()
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             uint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, uint>)@this->LpVtbl[2])(@this);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, uint>)@this->LpVtbl[2])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly nuint GetEntryCount()
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             nuint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, nuint>)@this->LpVtbl[3])(@this);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, nuint>)@this->LpVtbl[3])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly unsafe byte* GetEntryName(uint index)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             byte* ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, uint, byte*>)@this->LpVtbl[4])(@this, index);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, uint, byte*>)@this->LpVtbl[4])(@this, index);
             return ret;
         }
 
@@ -129,27 +129,27 @@ namespace Silk.NET.Slang
         [return: UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)]
         public readonly string GetEntryNameS(uint index)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             string ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, uint, string>)@this->LpVtbl[4])(@this, index);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, uint, string>)@this->LpVtbl[4])(@this, index);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly int GetEntryTimeMS(uint index)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, uint, int>)@this->LpVtbl[5])(@this, index);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, uint, int>)@this->LpVtbl[5])(@this, index);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly uint GetEntryInvocationTimes(uint index)
         {
-            var @this = (ISlangProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (IProfiler*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             uint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangProfiler*, uint, uint>)@this->LpVtbl[6])(@this, index);
+            ret = ((delegate* unmanaged[Cdecl]<IProfiler*, uint, uint>)@this->LpVtbl[6])(@this, index);
             return ret;
         }
 

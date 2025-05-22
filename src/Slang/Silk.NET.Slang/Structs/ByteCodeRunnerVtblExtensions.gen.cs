@@ -85,22 +85,22 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModule(this ComPtr<IByteCodeRunner> thisVtbl, ISlangBlob* moduleBlob)
+    public static unsafe int LoadModule(this ComPtr<IByteCodeRunner> thisVtbl, IBlob* moduleBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob*, int>)@this->LpVtbl[3])(@this, moduleBlob);
+        ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob*, int>)@this->LpVtbl[3])(@this, moduleBlob);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static int LoadModule(this ComPtr<IByteCodeRunner> thisVtbl, ref ISlangBlob moduleBlob)
+    public static int LoadModule(this ComPtr<IByteCodeRunner> thisVtbl, ref IBlob moduleBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob* moduleBlobPtr = &moduleBlob)
+        fixed (IBlob* moduleBlobPtr = &moduleBlob)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob*, int>)@this->LpVtbl[3])(@this, moduleBlobPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob*, int>)@this->LpVtbl[3])(@this, moduleBlobPtr);
         }
         return ret;
     }
@@ -198,19 +198,19 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void GetErrorString(this ComPtr<IByteCodeRunner> thisVtbl, ISlangBlob** outBlob)
+    public static unsafe void GetErrorString(this ComPtr<IByteCodeRunner> thisVtbl, IBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
-        ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob**, void>)@this->LpVtbl[9])(@this, outBlob);
+        ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob**, void>)@this->LpVtbl[9])(@this, outBlob);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void GetErrorString(this ComPtr<IByteCodeRunner> thisVtbl, ref ISlangBlob* outBlob)
+    public static unsafe void GetErrorString(this ComPtr<IByteCodeRunner> thisVtbl, ref IBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
-        fixed (ISlangBlob** outBlobPtr = &outBlob)
+        fixed (IBlob** outBlobPtr = &outBlob)
         {
-            ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob**, void>)@this->LpVtbl[9])(@this, outBlobPtr);
+            ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob**, void>)@this->LpVtbl[9])(@this, outBlobPtr);
         }
     }
 
@@ -322,7 +322,7 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int LoadModule(this ComPtr<IByteCodeRunner> thisVtbl, Span<ISlangBlob> moduleBlob)
+    public static int LoadModule(this ComPtr<IByteCodeRunner> thisVtbl, Span<IBlob> moduleBlob)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

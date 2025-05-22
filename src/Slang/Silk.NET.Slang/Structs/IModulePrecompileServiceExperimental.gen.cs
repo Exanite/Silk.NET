@@ -17,13 +17,13 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "IModulePrecompileService_Experimental")]
-    public unsafe partial struct IModulePrecompileServiceExperimental : IComVtbl<IModulePrecompileServiceExperimental>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct IModulePrecompileServiceExperimental : IComVtbl<IModulePrecompileServiceExperimental>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangUnknown(IModulePrecompileServiceExperimental val)
-            => Unsafe.As<IModulePrecompileServiceExperimental, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(IModulePrecompileServiceExperimental val)
+            => Unsafe.As<IModulePrecompileServiceExperimental, Silk.NET.Core.Native.IUnknown>(ref val);
 
         public IModulePrecompileServiceExperimental
         (
@@ -108,69 +108,69 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int PrecompileForTarget(CompileTarget target, ISlangBlob** outDiagnostics)
+        public readonly unsafe int PrecompileForTarget(CompileTarget target, IBlob** outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int PrecompileForTarget(CompileTarget target, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int PrecompileForTarget(CompileTarget target, ref IBlob* outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, ISlangBlob** outCode, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, IBlob** outCode, IBlob** outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, ISlangBlob** outCode, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, IBlob** outCode, ref IBlob* outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, ref ISlangBlob* outCode, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, ref IBlob* outCode, IBlob** outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outCodePtr = &outCode)
+            fixed (IBlob** outCodePtr = &outCode)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, ref ISlangBlob* outCode, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetPrecompiledTargetCode(CompileTarget target, ref IBlob* outCode, ref IBlob* outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outCodePtr = &outCode)
+            fixed (IBlob** outCodePtr = &outCode)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnosticsPtr);
                 }
             }
             return ret;
@@ -186,48 +186,48 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetModuleDependency(long dependencyIndex, IModule** outModule, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetModuleDependency(long dependencyIndex, IModule** outModule, IBlob** outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetModuleDependency(long dependencyIndex, IModule** outModule, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetModuleDependency(long dependencyIndex, IModule** outModule, ref IBlob* outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetModuleDependency(long dependencyIndex, ref IModule* outModule, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetModuleDependency(long dependencyIndex, ref IModule* outModule, IBlob** outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IModule** outModulePtr = &outModule)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetModuleDependency(long dependencyIndex, ref IModule* outModule, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetModuleDependency(long dependencyIndex, ref IModule* outModule, ref IBlob* outDiagnostics)
         {
             var @this = (IModulePrecompileServiceExperimental*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IModule** outModulePtr = &outModule)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnosticsPtr);
                 }
             }
             return ret;

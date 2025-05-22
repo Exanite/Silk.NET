@@ -17,13 +17,13 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "ISlangSharedLibrary_Dep1")]
-    public unsafe partial struct ISlangSharedLibraryDep1 : IComVtbl<ISlangSharedLibraryDep1>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct ISlangSharedLibraryDep1 : IComVtbl<ISlangSharedLibraryDep1>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangUnknown(ISlangSharedLibraryDep1 val)
-            => Unsafe.As<ISlangSharedLibraryDep1, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(ISlangSharedLibraryDep1 val)
+            => Unsafe.As<ISlangSharedLibraryDep1, Silk.NET.Core.Native.IUnknown>(ref val);
 
         public ISlangSharedLibraryDep1
         (

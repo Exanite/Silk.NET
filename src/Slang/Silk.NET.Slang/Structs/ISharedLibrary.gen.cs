@@ -17,18 +17,18 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "ISlangSharedLibrary")]
-    public unsafe partial struct ISlangSharedLibrary : IComVtbl<ISlangSharedLibrary>, IComVtbl<ISlangCastable>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct ISharedLibrary : IComVtbl<ISharedLibrary>, IComVtbl<ICastable>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangCastable(ISlangSharedLibrary val)
-            => Unsafe.As<ISlangSharedLibrary, ISlangCastable>(ref val);
+        public static implicit operator ICastable(ISharedLibrary val)
+            => Unsafe.As<ISharedLibrary, ICastable>(ref val);
 
-        public static implicit operator ISlangUnknown(ISlangSharedLibrary val)
-            => Unsafe.As<ISlangSharedLibrary, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(ISharedLibrary val)
+            => Unsafe.As<ISharedLibrary, Silk.NET.Core.Native.IUnknown>(ref val);
 
-        public ISlangSharedLibrary
+        public ISharedLibrary
         (
             void** lpVtbl = null
         ) : this()
@@ -47,20 +47,20 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
             }
             return ret;
         }
@@ -68,11 +68,11 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Uuid* uuidPtr = &uuid)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+                ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
             }
             return ret;
         }
@@ -80,13 +80,13 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (Uuid* uuidPtr = &uuid)
             {
                 fixed (void** outObjectPtr = &outObject)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
                 }
             }
             return ret;
@@ -95,38 +95,38 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly uint AddRef()
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             uint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, uint>)@this->LpVtbl[1])(@this);
+            ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, uint>)@this->LpVtbl[1])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly uint Release()
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             uint ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, uint>)@this->LpVtbl[2])(@this);
+            ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, uint>)@this->LpVtbl[2])(@this);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly unsafe void* CastAs([Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* guid)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             void* ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, Uuid*, void*>)@this->LpVtbl[3])(@this, guid);
+            ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, Uuid*, void*>)@this->LpVtbl[3])(@this, guid);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly unsafe void* CastAs([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid guid)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             void* ret = default;
             fixed (Uuid* guidPtr = &guid)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, Uuid*, void*>)@this->LpVtbl[3])(@this, guidPtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, Uuid*, void*>)@this->LpVtbl[3])(@this, guidPtr);
             }
             return ret;
         }
@@ -134,20 +134,20 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe void* FindSymbolAddressByName([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             void* ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, byte*, void*>)@this->LpVtbl[4])(@this, name);
+            ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, byte*, void*>)@this->LpVtbl[4])(@this, name);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
         public readonly unsafe void* FindSymbolAddressByName([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             void* ret = default;
             fixed (byte* namePtr = &name)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, byte*, void*>)@this->LpVtbl[4])(@this, namePtr);
+                ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, byte*, void*>)@this->LpVtbl[4])(@this, namePtr);
             }
             return ret;
         }
@@ -155,10 +155,10 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         public readonly unsafe void* FindSymbolAddressByName([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name)
         {
-            var @this = (ISlangSharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            var @this = (ISharedLibrary*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             void* ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<ISlangSharedLibrary*, byte*, void*>)@this->LpVtbl[4])(@this, namePtr);
+            ret = ((delegate* unmanaged[Cdecl]<ISharedLibrary*, byte*, void*>)@this->LpVtbl[4])(@this, namePtr);
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }

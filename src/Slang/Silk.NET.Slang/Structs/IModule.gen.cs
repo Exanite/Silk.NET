@@ -17,7 +17,7 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "IModule")]
-    public unsafe partial struct IModule : IComVtbl<IModule>, IComVtbl<IComponentType>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct IModule : IComVtbl<IModule>, IComVtbl<IComponentType>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
@@ -25,8 +25,8 @@ namespace Silk.NET.Slang
         public static implicit operator IComponentType(IModule val)
             => Unsafe.As<IModule, IComponentType>(ref val);
 
-        public static implicit operator ISlangUnknown(IModule val)
-            => Unsafe.As<IModule, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(IModule val)
+            => Unsafe.As<IModule, Silk.NET.Core.Native.IUnknown>(ref val);
 
         public IModule
         (
@@ -120,22 +120,22 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe ShaderReflection* GetLayout(long targetIndex, ISlangBlob** outDiagnostics)
+        public readonly unsafe ShaderReflection* GetLayout(long targetIndex, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             ShaderReflection* ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, ISlangBlob**, ShaderReflection*>)@this->LpVtbl[4])(@this, targetIndex, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IBlob**, ShaderReflection*>)@this->LpVtbl[4])(@this, targetIndex, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe ShaderReflection* GetLayout(long targetIndex, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe ShaderReflection* GetLayout(long targetIndex, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             ShaderReflection* ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, ISlangBlob**, ShaderReflection*>)@this->LpVtbl[4])(@this, targetIndex, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IBlob**, ShaderReflection*>)@this->LpVtbl[4])(@this, targetIndex, outDiagnosticsPtr);
             }
             return ret;
         }
@@ -150,168 +150,168 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, ISlangBlob** outCode, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, IBlob** outCode, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCode, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IBlob**, IBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCode, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, ISlangBlob** outCode, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, IBlob** outCode, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCode, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IBlob**, IBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCode, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, ref ISlangBlob* outCode, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, ref IBlob* outCode, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outCodePtr = &outCode)
+            fixed (IBlob** outCodePtr = &outCode)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCodePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IBlob**, IBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCodePtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, ref ISlangBlob* outCode, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetEntryPointCode(long entryPointIndex, long targetIndex, ref IBlob* outCode, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outCodePtr = &outCode)
+            fixed (IBlob** outCodePtr = &outCode)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCodePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IBlob**, IBlob**, int>)@this->LpVtbl[6])(@this, entryPointIndex, targetIndex, outCodePtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetResultAsFileSystem(long entryPointIndex, long targetIndex, ISlangMutableFileSystem** outFileSystem)
+        public readonly unsafe int GetResultAsFileSystem(long entryPointIndex, long targetIndex, IMutableFileSystem** outFileSystem)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangMutableFileSystem**, int>)@this->LpVtbl[7])(@this, entryPointIndex, targetIndex, outFileSystem);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMutableFileSystem**, int>)@this->LpVtbl[7])(@this, entryPointIndex, targetIndex, outFileSystem);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetResultAsFileSystem(long entryPointIndex, long targetIndex, ref ISlangMutableFileSystem* outFileSystem)
+        public readonly unsafe int GetResultAsFileSystem(long entryPointIndex, long targetIndex, ref IMutableFileSystem* outFileSystem)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangMutableFileSystem** outFileSystemPtr = &outFileSystem)
+            fixed (IMutableFileSystem** outFileSystemPtr = &outFileSystem)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangMutableFileSystem**, int>)@this->LpVtbl[7])(@this, entryPointIndex, targetIndex, outFileSystemPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMutableFileSystem**, int>)@this->LpVtbl[7])(@this, entryPointIndex, targetIndex, outFileSystemPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetEntryPointHash(long entryPointIndex, long targetIndex, ISlangBlob** outHash)
+        public readonly unsafe void GetEntryPointHash(long entryPointIndex, long targetIndex, IBlob** outHash)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangBlob**, void>)@this->LpVtbl[8])(@this, entryPointIndex, targetIndex, outHash);
+            ((delegate* unmanaged[Cdecl]<IModule*, long, long, IBlob**, void>)@this->LpVtbl[8])(@this, entryPointIndex, targetIndex, outHash);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetEntryPointHash(long entryPointIndex, long targetIndex, ref ISlangBlob* outHash)
+        public readonly unsafe void GetEntryPointHash(long entryPointIndex, long targetIndex, ref IBlob* outHash)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            fixed (ISlangBlob** outHashPtr = &outHash)
+            fixed (IBlob** outHashPtr = &outHash)
             {
-                ((delegate* unmanaged[Cdecl]<IModule*, long, long, ISlangBlob**, void>)@this->LpVtbl[8])(@this, entryPointIndex, targetIndex, outHashPtr);
+                ((delegate* unmanaged[Cdecl]<IModule*, long, long, IBlob**, void>)@this->LpVtbl[8])(@this, entryPointIndex, targetIndex, outHashPtr);
             }
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentType, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentType, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentType, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentType, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IComponentType** outSpecializedComponentTypePtr = &outSpecializedComponentType)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentTypePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentTypePtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IComponentType** outSpecializedComponentTypePtr = &outSpecializedComponentType)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentTypePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgs, specializationArgCount, outSpecializedComponentTypePtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (SpecializationArg* specializationArgsPtr = &specializationArgs)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentType, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentType, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (SpecializationArg* specializationArgsPtr = &specializationArgs)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentType, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentType, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -319,14 +319,14 @@ namespace Silk.NET.Slang
             {
                 fixed (IComponentType** outSpecializedComponentTypePtr = &outSpecializedComponentType)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentTypePtr, outDiagnostics);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentTypePtr, outDiagnostics);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -334,9 +334,9 @@ namespace Silk.NET.Slang
             {
                 fixed (IComponentType** outSpecializedComponentTypePtr = &outSpecializedComponentType)
                 {
-                    fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                    fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentTypePtr, outDiagnosticsPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<IModule*, SpecializationArg*, long, IComponentType**, IBlob**, int>)@this->LpVtbl[9])(@this, specializationArgsPtr, specializationArgCount, outSpecializedComponentTypePtr, outDiagnosticsPtr);
                     }
                 }
             }
@@ -344,96 +344,96 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Link(IComponentType** outLinkedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Link(IComponentType** outLinkedComponentType, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentType, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, IBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentType, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Link(IComponentType** outLinkedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Link(IComponentType** outLinkedComponentType, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentType, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, IBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentType, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Link(ref IComponentType* outLinkedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Link(ref IComponentType* outLinkedComponentType, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IComponentType** outLinkedComponentTypePtr = &outLinkedComponentType)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentTypePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, IBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentTypePtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Link(ref IComponentType* outLinkedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Link(ref IComponentType* outLinkedComponentType, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IComponentType** outLinkedComponentTypePtr = &outLinkedComponentType)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, ISlangBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentTypePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, IBlob**, int>)@this->LpVtbl[10])(@this, outLinkedComponentTypePtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ISlangSharedLibrary** outSharedLibrary, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ISharedLibrary** outSharedLibrary, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ISlangSharedLibrary** outSharedLibrary, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ISharedLibrary** outSharedLibrary, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibrary, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ref ISharedLibrary* outSharedLibrary, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
+            fixed (ISharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetEntryPointHostCallable(int entryPointIndex, int targetIndex, ref ISharedLibrary* outSharedLibrary, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
+            fixed (ISharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, int, int, ISharedLibrary**, IBlob**, int>)@this->LpVtbl[11])(@this, entryPointIndex, targetIndex, outSharedLibraryPtr, outDiagnosticsPtr);
                 }
             }
             return ret;
@@ -513,82 +513,82 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ISlangBlob** outDiagnostics)
+        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntries, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntries, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntries, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntries, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ISlangBlob** outDiagnostics)
+        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (CompilerOptionEntry* compilerOptionEntriesPtr = &compilerOptionEntries)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int LinkWithOptions(IComponentType** outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (CompilerOptionEntry* compilerOptionEntriesPtr = &compilerOptionEntries)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentType, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ISlangBlob** outDiagnostics)
+        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IComponentType** outLinkedComponentTypePtr = &outLinkedComponentType)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntries, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntries, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IComponentType** outLinkedComponentTypePtr = &outLinkedComponentType)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntries, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntries, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ISlangBlob** outDiagnostics)
+        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -596,14 +596,14 @@ namespace Silk.NET.Slang
             {
                 fixed (CompilerOptionEntry* compilerOptionEntriesPtr = &compilerOptionEntries)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnostics);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnostics);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int LinkWithOptions(ref IComponentType* outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -611,9 +611,9 @@ namespace Silk.NET.Slang
             {
                 fixed (CompilerOptionEntry* compilerOptionEntriesPtr = &compilerOptionEntries)
                 {
-                    fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                    fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, ISlangBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnosticsPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<IModule*, IComponentType**, uint, CompilerOptionEntry*, IBlob**, int>)@this->LpVtbl[13])(@this, outLinkedComponentTypePtr, compilerOptionEntryCount, compilerOptionEntriesPtr, outDiagnosticsPtr);
                     }
                 }
             }
@@ -621,144 +621,144 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetCode(long targetIndex, ISlangBlob** outCode, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetTargetCode(long targetIndex, IBlob** outCode, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCode, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IBlob**, IBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCode, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetCode(long targetIndex, ISlangBlob** outCode, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetTargetCode(long targetIndex, IBlob** outCode, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCode, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IBlob**, IBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCode, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetCode(long targetIndex, ref ISlangBlob* outCode, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetTargetCode(long targetIndex, ref IBlob* outCode, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outCodePtr = &outCode)
+            fixed (IBlob** outCodePtr = &outCode)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCodePtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IBlob**, IBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCodePtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetCode(long targetIndex, ref ISlangBlob* outCode, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetTargetCode(long targetIndex, ref IBlob* outCode, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outCodePtr = &outCode)
+            fixed (IBlob** outCodePtr = &outCode)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCodePtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IBlob**, IBlob**, int>)@this->LpVtbl[14])(@this, targetIndex, outCodePtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetMetadata(long targetIndex, IMetadata** outMetadata, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetTargetMetadata(long targetIndex, IMetadata** outMetadata, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadata, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, IBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadata, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetMetadata(long targetIndex, IMetadata** outMetadata, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetTargetMetadata(long targetIndex, IMetadata** outMetadata, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadata, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, IBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadata, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetMetadata(long targetIndex, ref IMetadata* outMetadata, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetTargetMetadata(long targetIndex, ref IMetadata* outMetadata, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IMetadata** outMetadataPtr = &outMetadata)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadataPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, IBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadataPtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetTargetMetadata(long targetIndex, ref IMetadata* outMetadata, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetTargetMetadata(long targetIndex, ref IMetadata* outMetadata, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IMetadata** outMetadataPtr = &outMetadata)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadataPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, IMetadata**, IBlob**, int>)@this->LpVtbl[15])(@this, targetIndex, outMetadataPtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, IMetadata** outMetadata, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, IMetadata** outMetadata, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadata, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, IBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadata, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, IMetadata** outMetadata, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, IMetadata** outMetadata, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadata, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, IBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadata, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, ref IMetadata* outMetadata, ISlangBlob** outDiagnostics)
+        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, ref IMetadata* outMetadata, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IMetadata** outMetadataPtr = &outMetadata)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadataPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, IBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadataPtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, ref IMetadata* outMetadata, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int GetEntryPointMetadata(long entryPointIndex, long targetIndex, ref IMetadata* outMetadata, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IMetadata** outMetadataPtr = &outMetadata)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, ISlangBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadataPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, long, long, IMetadata**, IBlob**, int>)@this->LpVtbl[16])(@this, entryPointIndex, targetIndex, outMetadataPtr, outDiagnosticsPtr);
                 }
             }
             return ret;
@@ -868,22 +868,22 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Serialize(ISlangBlob** outSerializedBlob)
+        public readonly unsafe int Serialize(IBlob** outSerializedBlob)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, ISlangBlob**, int>)@this->LpVtbl[20])(@this, outSerializedBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, IBlob**, int>)@this->LpVtbl[20])(@this, outSerializedBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Serialize(ref ISlangBlob* outSerializedBlob)
+        public readonly unsafe int Serialize(ref IBlob* outSerializedBlob)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outSerializedBlobPtr = &outSerializedBlob)
+            fixed (IBlob** outSerializedBlobPtr = &outSerializedBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, ISlangBlob**, int>)@this->LpVtbl[20])(@this, outSerializedBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, IBlob**, int>)@this->LpVtbl[20])(@this, outSerializedBlobPtr);
             }
             return ret;
         }
@@ -978,82 +978,82 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, IEntryPoint** outEntryPoint, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnostics);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, IEntryPoint** outEntryPoint, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPoint, outDiagnosticsPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, ref IEntryPoint* outEntryPoint, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, Stage stage, ref IEntryPoint* outEntryPoint, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, name, stage, outEntryPointPtr, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, IEntryPoint** outEntryPoint, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (byte* namePtr = &name)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, IEntryPoint** outEntryPoint, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (byte* namePtr = &name)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, ref IEntryPoint* outEntryPoint, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -1061,14 +1061,14 @@ namespace Silk.NET.Slang
             {
                 fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, Stage stage, ref IEntryPoint* outEntryPoint, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -1076,9 +1076,9 @@ namespace Silk.NET.Slang
             {
                 fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
                 {
-                    fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                    fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
                     }
                 }
             }
@@ -1086,55 +1086,55 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, IEntryPoint** outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, IEntryPoint** outEntryPoint, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnostics);
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, IEntryPoint** outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, IEntryPoint** outEntryPoint, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPoint, outDiagnosticsPtr);
             }
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, ref IEntryPoint* outEntryPoint, ISlangBlob** outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, ref IEntryPoint* outEntryPoint, IBlob** outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
             fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnostics);
             }
             SilkMarshal.Free((nint)namePtr);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, ref IEntryPoint* outEntryPoint, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int FindAndCheckEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, Stage stage, ref IEntryPoint* outEntryPoint, ref IBlob* outDiagnostics)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             var namePtr = (byte*) SilkMarshal.StringToPtr(name, NativeStringEncoding.UTF8);
             fixed (IEntryPoint** outEntryPointPtr = &outEntryPoint)
             {
-                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, ISlangBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IModule*, byte*, Stage, IEntryPoint**, IBlob**, int>)@this->LpVtbl[25])(@this, namePtr, stage, outEntryPointPtr, outDiagnosticsPtr);
                 }
             }
             SilkMarshal.Free((nint)namePtr);
@@ -1179,28 +1179,28 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Disassemble(ISlangBlob** outDisassembledBlob)
+        public readonly unsafe int Disassemble(IBlob** outDisassembledBlob)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IModule*, ISlangBlob**, int>)@this->LpVtbl[29])(@this, outDisassembledBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IModule*, IBlob**, int>)@this->LpVtbl[29])(@this, outDisassembledBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Disassemble(ref ISlangBlob* outDisassembledBlob)
+        public readonly unsafe int Disassemble(ref IBlob* outDisassembledBlob)
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outDisassembledBlobPtr = &outDisassembledBlob)
+            fixed (IBlob** outDisassembledBlobPtr = &outDisassembledBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModule*, ISlangBlob**, int>)@this->LpVtbl[29])(@this, outDisassembledBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModule*, IBlob**, int>)@this->LpVtbl[29])(@this, outDisassembledBlobPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, IBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1208,7 +1208,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] SpecializationArg* specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref IBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1216,7 +1216,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, IBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1224,7 +1224,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref IBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1232,7 +1232,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Link<TI0>(ref ComPtr<TI0> outLinkedComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Link<TI0>(ref ComPtr<TI0> outLinkedComponentType, IBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1240,7 +1240,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Link<TI0>(ref ComPtr<TI0> outLinkedComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Link<TI0>(ref ComPtr<TI0> outLinkedComponentType, ref IBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1272,7 +1272,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, IBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1280,7 +1280,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, CompilerOptionEntry* compilerOptionEntries, ref IBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1288,7 +1288,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, IBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -1296,7 +1296,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int LinkWithOptions<TI0>(ref ComPtr<TI0> outLinkedComponentType, uint compilerOptionEntryCount, ref CompilerOptionEntry compilerOptionEntries, ref IBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (IModule*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader

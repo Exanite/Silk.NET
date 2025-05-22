@@ -17,13 +17,13 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "IGlobalSession")]
-    public unsafe partial struct IGlobalSession : IComVtbl<IGlobalSession>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct IGlobalSession : IComVtbl<IGlobalSession>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangUnknown(IGlobalSession val)
-            => Unsafe.As<IGlobalSession, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(IGlobalSession val)
+            => Unsafe.As<IGlobalSession, Silk.NET.Core.Native.IUnknown>(ref val);
 
         public IGlobalSession
         (
@@ -240,19 +240,19 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetDownstreamCompilerPrelude(PassThrough passThrough, ISlangBlob** outPrelude)
+        public readonly unsafe void GetDownstreamCompilerPrelude(PassThrough passThrough, IBlob** outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPrelude);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, IBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPrelude);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetDownstreamCompilerPrelude(PassThrough passThrough, ref ISlangBlob* outPrelude)
+        public readonly unsafe void GetDownstreamCompilerPrelude(PassThrough passThrough, ref IBlob* outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            fixed (ISlangBlob** outPreludePtr = &outPrelude)
+            fixed (IBlob** outPreludePtr = &outPrelude)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPreludePtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, IBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPreludePtr);
             }
         }
 
@@ -320,19 +320,19 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetLanguagePrelude(SourceLanguage sourceLanguage, ISlangBlob** outPrelude)
+        public readonly unsafe void GetLanguagePrelude(SourceLanguage sourceLanguage, IBlob** outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPrelude);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, IBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPrelude);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetLanguagePrelude(SourceLanguage sourceLanguage, ref ISlangBlob* outPrelude)
+        public readonly unsafe void GetLanguagePrelude(SourceLanguage sourceLanguage, ref IBlob* outPrelude)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            fixed (ISlangBlob** outPreludePtr = &outPrelude)
+            fixed (IBlob** outPreludePtr = &outPrelude)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPreludePtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, IBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPreludePtr);
             }
         }
 
@@ -451,28 +451,28 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void SetSharedLibraryLoader(ISlangSharedLibraryLoader* loader)
+        public readonly unsafe void SetSharedLibraryLoader(ISharedLibraryLoader* loader)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISlangSharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loader);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loader);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetSharedLibraryLoader(ref ISlangSharedLibraryLoader loader)
+        public readonly void SetSharedLibraryLoader(ref ISharedLibraryLoader loader)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            fixed (ISlangSharedLibraryLoader* loaderPtr = &loader)
+            fixed (ISharedLibraryLoader* loaderPtr = &loader)
             {
-                ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISlangSharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loaderPtr);
+                ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loaderPtr);
             }
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe ISlangSharedLibraryLoader* GetSharedLibraryLoader()
+        public readonly unsafe ISharedLibraryLoader* GetSharedLibraryLoader()
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ISlangSharedLibraryLoader* ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISlangSharedLibraryLoader*>)@this->LpVtbl[16])(@this);
+            ISharedLibraryLoader* ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISharedLibraryLoader*>)@this->LpVtbl[16])(@this);
             return ret;
         }
 
@@ -525,22 +525,22 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveCoreModule(ArchiveType archiveType, ISlangBlob** outBlob)
+        public readonly unsafe int SaveCoreModule(ArchiveType archiveType, IBlob** outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, IBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveCoreModule(ArchiveType archiveType, ref ISlangBlob* outBlob)
+        public readonly unsafe int SaveCoreModule(ArchiveType archiveType, ref IBlob* outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outBlobPtr = &outBlob)
+            fixed (IBlob** outBlobPtr = &outBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, IBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlobPtr);
             }
             return ret;
         }
@@ -666,82 +666,82 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocation);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocation);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+            fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocationPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocationPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocation);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocation);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
             {
-                fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+                fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocationPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocationPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (byte** argvPtr = &argv)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocation);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocation);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (byte** argvPtr = &argv)
             {
-                fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+                fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocationPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocationPtr);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -749,14 +749,14 @@ namespace Silk.NET.Slang
             {
                 fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocation);
+                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocation);
                 }
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -764,9 +764,9 @@ namespace Silk.NET.Slang
             {
                 fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
                 {
-                    fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+                    fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
                     {
-                        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocationPtr);
+                        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocationPtr);
                     }
                 }
             }
@@ -774,48 +774,48 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetSessionDescDigest(SessionDesc* sessionDesc, ISlangBlob** outBlob)
+        public readonly unsafe int GetSessionDescDigest(SessionDesc* sessionDesc, IBlob** outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetSessionDescDigest(SessionDesc* sessionDesc, ref ISlangBlob* outBlob)
+        public readonly unsafe int GetSessionDescDigest(SessionDesc* sessionDesc, ref IBlob* outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outBlobPtr = &outBlob)
+            fixed (IBlob** outBlobPtr = &outBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlobPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetSessionDescDigest(ref SessionDesc sessionDesc, ISlangBlob** outBlob)
+        public readonly unsafe int GetSessionDescDigest(ref SessionDesc sessionDesc, IBlob** outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (SessionDesc* sessionDescPtr = &sessionDesc)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlob);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlob);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int GetSessionDescDigest(ref SessionDesc sessionDesc, ref ISlangBlob* outBlob)
+        public readonly unsafe int GetSessionDescDigest(ref SessionDesc sessionDesc, ref IBlob* outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (SessionDesc* sessionDescPtr = &sessionDesc)
             {
-                fixed (ISlangBlob** outBlobPtr = &outBlob)
+                fixed (IBlob** outBlobPtr = &outBlob)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlobPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlobPtr);
                 }
             }
             return ret;
@@ -852,28 +852,28 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, ArchiveType archiveType, ISlangBlob** outBlob)
+        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, ArchiveType archiveType, IBlob** outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, IBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, ArchiveType archiveType, ref ISlangBlob* outBlob)
+        public readonly unsafe int SaveBuiltinModule(BuiltinModuleName module, ArchiveType archiveType, ref IBlob* outBlob)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob** outBlobPtr = &outBlob)
+            fixed (IBlob** outBlobPtr = &outBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, IBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlobPtr);
             }
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -885,15 +885,15 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
-            return @this->ParseCommandLineArguments(argc, argv, outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+            return @this->ParseCommandLineArguments(argc, argv, outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -905,7 +905,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -917,15 +917,15 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
-            return @this->ParseCommandLineArguments(argc, argv, ref outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+            return @this->ParseCommandLineArguments(argc, argv, ref outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -937,19 +937,19 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
-            return @this->ParseCommandLineArguments(argc, in argv, outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+            return @this->ParseCommandLineArguments(argc, in argv, outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
-            return @this->ParseCommandLineArguments(argc, in argv, ref outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+            return @this->ParseCommandLineArguments(argc, in argv, ref outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
         }
 
     }

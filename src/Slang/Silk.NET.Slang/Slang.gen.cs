@@ -203,7 +203,7 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4566, Column 23 in slang.h")]
         [NativeApi(EntryPoint = "slang_getEmbeddedCoreModule")]
-        public unsafe partial ISlangBlob* SLANGgetEmbeddedCoreModule();
+        public unsafe partial IBlob* SLANGgetEmbeddedCoreModule();
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4574, Column 31 in slang.h")]
@@ -244,22 +244,22 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SLANGdisassembleByteCode(ISlangBlob* moduleBlob, ISlangBlob** outDisassemblyBlob);
+        public unsafe partial int SLANGdisassembleByteCode(IBlob* moduleBlob, IBlob** outDisassemblyBlob);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SLANGdisassembleByteCode(ISlangBlob* moduleBlob, ref ISlangBlob* outDisassemblyBlob);
+        public unsafe partial int SLANGdisassembleByteCode(IBlob* moduleBlob, ref IBlob* outDisassemblyBlob);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SLANGdisassembleByteCode(ref ISlangBlob moduleBlob, ISlangBlob** outDisassemblyBlob);
+        public unsafe partial int SLANGdisassembleByteCode(ref IBlob moduleBlob, IBlob** outDisassemblyBlob);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4697, Column 1 in slang.h")]
         [NativeApi(EntryPoint = "slang_disassembleByteCode")]
-        public unsafe partial int SLANGdisassembleByteCode(ref ISlangBlob moduleBlob, ref ISlangBlob* outDisassemblyBlob);
+        public unsafe partial int SLANGdisassembleByteCode(ref IBlob moduleBlob, ref IBlob* outDisassemblyBlob);
 
 
         public Slang(INativeContext ctx)

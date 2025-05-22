@@ -17,13 +17,13 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "IByteCodeRunner")]
-    public unsafe partial struct IByteCodeRunner : IComVtbl<IByteCodeRunner>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct IByteCodeRunner : IComVtbl<IByteCodeRunner>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangUnknown(IByteCodeRunner val)
-            => Unsafe.As<IByteCodeRunner, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(IByteCodeRunner val)
+            => Unsafe.As<IByteCodeRunner, Silk.NET.Core.Native.IUnknown>(ref val);
 
         public IByteCodeRunner
         (
@@ -108,22 +108,22 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModule(ISlangBlob* moduleBlob)
+        public readonly unsafe int LoadModule(IBlob* moduleBlob)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob*, int>)@this->LpVtbl[3])(@this, moduleBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob*, int>)@this->LpVtbl[3])(@this, moduleBlob);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int LoadModule(ref ISlangBlob moduleBlob)
+        public readonly int LoadModule(ref IBlob moduleBlob)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            fixed (ISlangBlob* moduleBlobPtr = &moduleBlob)
+            fixed (IBlob* moduleBlobPtr = &moduleBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob*, int>)@this->LpVtbl[3])(@this, moduleBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob*, int>)@this->LpVtbl[3])(@this, moduleBlobPtr);
             }
             return ret;
         }
@@ -221,19 +221,19 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetErrorString(ISlangBlob** outBlob)
+        public readonly unsafe void GetErrorString(IBlob** outBlob)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob**, void>)@this->LpVtbl[9])(@this, outBlob);
+            ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob**, void>)@this->LpVtbl[9])(@this, outBlob);
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void GetErrorString(ref ISlangBlob* outBlob)
+        public readonly unsafe void GetErrorString(ref IBlob* outBlob)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
-            fixed (ISlangBlob** outBlobPtr = &outBlob)
+            fixed (IBlob** outBlobPtr = &outBlob)
             {
-                ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, ISlangBlob**, void>)@this->LpVtbl[9])(@this, outBlobPtr);
+                ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, IBlob**, void>)@this->LpVtbl[9])(@this, outBlobPtr);
             }
         }
 

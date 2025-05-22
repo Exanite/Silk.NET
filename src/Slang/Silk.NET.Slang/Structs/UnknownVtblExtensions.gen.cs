@@ -16,43 +16,43 @@ using Silk.NET.Core.Loader;
 
 namespace Silk.NET.Slang;
 
-public unsafe static class SlangUnknownVtblExtensions
+public unsafe static class UnknownVtblExtensions
 {
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
+        ret = ((delegate* unmanaged[Cdecl]<IUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObject);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Uuid* uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void** outObjectPtr = &outObject)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuid, outObjectPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (Uuid* uuidPtr = &uuid)
         {
-            ret = ((delegate* unmanaged[Cdecl]<ISlangUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
+            ret = ((delegate* unmanaged[Cdecl]<IUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObject);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Uuid uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -60,32 +60,32 @@ public unsafe static class SlangUnknownVtblExtensions
         {
             fixed (void** outObjectPtr = &outObject)
             {
-                ret = ((delegate* unmanaged[Cdecl]<ISlangUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IUnknown*, Uuid*, void**, int>)@this->LpVtbl[0])(@this, uuidPtr, outObjectPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static uint AddRef(this ComPtr<ISlangUnknown> thisVtbl)
+    public static uint AddRef(this ComPtr<IUnknown> thisVtbl)
     {
         var @this = thisVtbl.Handle;
         uint ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangUnknown*, uint>)@this->LpVtbl[1])(@this);
+        ret = ((delegate* unmanaged[Cdecl]<IUnknown*, uint>)@this->LpVtbl[1])(@this);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static uint Release(this ComPtr<ISlangUnknown> thisVtbl)
+    public static uint Release(this ComPtr<IUnknown> thisVtbl)
     {
         var @this = thisVtbl.Handle;
         uint ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<ISlangUnknown*, uint>)@this->LpVtbl[2])(@this);
+        ret = ((delegate* unmanaged[Cdecl]<IUnknown*, uint>)@this->LpVtbl[2])(@this);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -93,7 +93,7 @@ public unsafe static class SlangUnknownVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<Uuid> uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

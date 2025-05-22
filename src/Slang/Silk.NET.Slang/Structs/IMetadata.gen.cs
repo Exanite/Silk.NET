@@ -17,16 +17,16 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "IMetadata")]
-    public unsafe partial struct IMetadata : IComVtbl<IMetadata>, IComVtbl<ISlangCastable>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct IMetadata : IComVtbl<IMetadata>, IComVtbl<ICastable>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangCastable(IMetadata val)
-            => Unsafe.As<IMetadata, ISlangCastable>(ref val);
+        public static implicit operator ICastable(IMetadata val)
+            => Unsafe.As<IMetadata, ICastable>(ref val);
 
-        public static implicit operator ISlangUnknown(IMetadata val)
-            => Unsafe.As<IMetadata, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(IMetadata val)
+            => Unsafe.As<IMetadata, Silk.NET.Core.Native.IUnknown>(ref val);
 
         public IMetadata
         (

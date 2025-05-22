@@ -217,19 +217,19 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void GetDownstreamCompilerPrelude(this ComPtr<IGlobalSession> thisVtbl, PassThrough passThrough, ISlangBlob** outPrelude)
+    public static unsafe void GetDownstreamCompilerPrelude(this ComPtr<IGlobalSession> thisVtbl, PassThrough passThrough, IBlob** outPrelude)
     {
         var @this = thisVtbl.Handle;
-        ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPrelude);
+        ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, IBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPrelude);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void GetDownstreamCompilerPrelude(this ComPtr<IGlobalSession> thisVtbl, PassThrough passThrough, ref ISlangBlob* outPrelude)
+    public static unsafe void GetDownstreamCompilerPrelude(this ComPtr<IGlobalSession> thisVtbl, PassThrough passThrough, ref IBlob* outPrelude)
     {
         var @this = thisVtbl.Handle;
-        fixed (ISlangBlob** outPreludePtr = &outPrelude)
+        fixed (IBlob** outPreludePtr = &outPrelude)
         {
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, ISlangBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPreludePtr);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, PassThrough, IBlob**, void>)@this->LpVtbl[7])(@this, passThrough, outPreludePtr);
         }
     }
 
@@ -297,19 +297,19 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void GetLanguagePrelude(this ComPtr<IGlobalSession> thisVtbl, SourceLanguage sourceLanguage, ISlangBlob** outPrelude)
+    public static unsafe void GetLanguagePrelude(this ComPtr<IGlobalSession> thisVtbl, SourceLanguage sourceLanguage, IBlob** outPrelude)
     {
         var @this = thisVtbl.Handle;
-        ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPrelude);
+        ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, IBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPrelude);
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void GetLanguagePrelude(this ComPtr<IGlobalSession> thisVtbl, SourceLanguage sourceLanguage, ref ISlangBlob* outPrelude)
+    public static unsafe void GetLanguagePrelude(this ComPtr<IGlobalSession> thisVtbl, SourceLanguage sourceLanguage, ref IBlob* outPrelude)
     {
         var @this = thisVtbl.Handle;
-        fixed (ISlangBlob** outPreludePtr = &outPrelude)
+        fixed (IBlob** outPreludePtr = &outPrelude)
         {
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, ISlangBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPreludePtr);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, SourceLanguage, IBlob**, void>)@this->LpVtbl[12])(@this, sourceLanguage, outPreludePtr);
         }
     }
 
@@ -428,28 +428,28 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void SetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl, ISlangSharedLibraryLoader* loader)
+    public static unsafe void SetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl, ISharedLibraryLoader* loader)
     {
         var @this = thisVtbl.Handle;
-        ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISlangSharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loader);
+        ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loader);
     }
 
     /// <summary>To be documented.</summary>
-    public static void SetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl, ref ISlangSharedLibraryLoader loader)
+    public static void SetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl, ref ISharedLibraryLoader loader)
     {
         var @this = thisVtbl.Handle;
-        fixed (ISlangSharedLibraryLoader* loaderPtr = &loader)
+        fixed (ISharedLibraryLoader* loaderPtr = &loader)
         {
-            ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISlangSharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loaderPtr);
+            ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISharedLibraryLoader*, void>)@this->LpVtbl[15])(@this, loaderPtr);
         }
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe ISlangSharedLibraryLoader* GetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl)
+    public static unsafe ISharedLibraryLoader* GetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl)
     {
         var @this = thisVtbl.Handle;
-        ISlangSharedLibraryLoader* ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISlangSharedLibraryLoader*>)@this->LpVtbl[16])(@this);
+        ISharedLibraryLoader* ret = default;
+        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ISharedLibraryLoader*>)@this->LpVtbl[16])(@this);
         return ret;
     }
 
@@ -502,22 +502,22 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int SaveCoreModule(this ComPtr<IGlobalSession> thisVtbl, ArchiveType archiveType, ISlangBlob** outBlob)
+    public static unsafe int SaveCoreModule(this ComPtr<IGlobalSession> thisVtbl, ArchiveType archiveType, IBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlob);
+        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, IBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlob);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int SaveCoreModule(this ComPtr<IGlobalSession> thisVtbl, ArchiveType archiveType, ref ISlangBlob* outBlob)
+    public static unsafe int SaveCoreModule(this ComPtr<IGlobalSession> thisVtbl, ArchiveType archiveType, ref IBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outBlobPtr = &outBlob)
+        fixed (IBlob** outBlobPtr = &outBlob)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlobPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, ArchiveType, IBlob**, int>)@this->LpVtbl[21])(@this, archiveType, outBlobPtr);
         }
         return ret;
     }
@@ -643,82 +643,82 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocation);
+        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocation);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+        fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocationPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDesc, outAuxAllocationPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocation);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocation);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
         {
-            fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+            fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocationPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argv, outSessionDescPtr, outAuxAllocationPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (byte** argvPtr = &argv)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocation);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocation);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (byte** argvPtr = &argv)
         {
-            fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+            fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocationPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDesc, outAuxAllocationPtr);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -726,14 +726,14 @@ public unsafe static class GlobalSessionVtblExtensions
         {
             fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocation);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocation);
             }
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -741,9 +741,9 @@ public unsafe static class GlobalSessionVtblExtensions
         {
             fixed (SessionDesc* outSessionDescPtr = &outSessionDesc)
             {
-                fixed (ISlangUnknown** outAuxAllocationPtr = &outAuxAllocation)
+                fixed (Silk.NET.Core.Native.IUnknown** outAuxAllocationPtr = &outAuxAllocation)
                 {
-                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, ISlangUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocationPtr);
+                    ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, int, byte**, SessionDesc*, Silk.NET.Core.Native.IUnknown**, int>)@this->LpVtbl[27])(@this, argc, argvPtr, outSessionDescPtr, outAuxAllocationPtr);
                 }
             }
         }
@@ -751,48 +751,48 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, SessionDesc* sessionDesc, ISlangBlob** outBlob)
+    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, SessionDesc* sessionDesc, IBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlob);
+        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlob);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, SessionDesc* sessionDesc, ref ISlangBlob* outBlob)
+    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, SessionDesc* sessionDesc, ref IBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outBlobPtr = &outBlob)
+        fixed (IBlob** outBlobPtr = &outBlob)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlobPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDesc, outBlobPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, ref SessionDesc sessionDesc, ISlangBlob** outBlob)
+    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, ref SessionDesc sessionDesc, IBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (SessionDesc* sessionDescPtr = &sessionDesc)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlob);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlob);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, ref SessionDesc sessionDesc, ref ISlangBlob* outBlob)
+    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, ref SessionDesc sessionDesc, ref IBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (SessionDesc* sessionDescPtr = &sessionDesc)
         {
-            fixed (ISlangBlob** outBlobPtr = &outBlob)
+            fixed (IBlob** outBlobPtr = &outBlob)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, ISlangBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlobPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, SessionDesc*, IBlob**, int>)@this->LpVtbl[28])(@this, sessionDescPtr, outBlobPtr);
             }
         }
         return ret;
@@ -829,22 +829,22 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int SaveBuiltinModule(this ComPtr<IGlobalSession> thisVtbl, BuiltinModuleName module, ArchiveType archiveType, ISlangBlob** outBlob)
+    public static unsafe int SaveBuiltinModule(this ComPtr<IGlobalSession> thisVtbl, BuiltinModuleName module, ArchiveType archiveType, IBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlob);
+        ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, IBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlob);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int SaveBuiltinModule(this ComPtr<IGlobalSession> thisVtbl, BuiltinModuleName module, ArchiveType archiveType, ref ISlangBlob* outBlob)
+    public static unsafe int SaveBuiltinModule(this ComPtr<IGlobalSession> thisVtbl, BuiltinModuleName module, ArchiveType archiveType, ref IBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outBlobPtr = &outBlob)
+        fixed (IBlob** outBlobPtr = &outBlob)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, ISlangBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlobPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IGlobalSession*, BuiltinModuleName, ArchiveType, IBlob**, int>)@this->LpVtbl[31])(@this, module, archiveType, outBlobPtr);
         }
         return ret;
     }
@@ -954,7 +954,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static void SetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl, Span<ISlangSharedLibraryLoader> loader)
+    public static void SetSharedLibraryLoader(this ComPtr<IGlobalSession> thisVtbl, Span<ISharedLibraryLoader> loader)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -1010,7 +1010,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -1022,15 +1022,15 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->ParseCommandLineArguments(argc, argv, outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+        return @this->ParseCommandLineArguments(argc, argv, outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, SessionDesc* outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -1042,7 +1042,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -1054,7 +1054,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, Span<SessionDesc> outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, Span<SessionDesc> outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -1062,15 +1062,15 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->ParseCommandLineArguments(argc, argv, ref outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+        return @this->ParseCommandLineArguments(argc, argv, ref outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] argvSa, ref SessionDesc outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -1082,7 +1082,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, Span<SessionDesc> outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** argv, Span<SessionDesc> outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -1090,15 +1090,15 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->ParseCommandLineArguments(argc, in argv, outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+        return @this->ParseCommandLineArguments(argc, in argv, outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, Span<SessionDesc> outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, Span<SessionDesc> outSessionDesc, Silk.NET.Core.Native.IUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -1106,15 +1106,15 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
-        return @this->ParseCommandLineArguments(argc, in argv, ref outSessionDesc, (ISlangUnknown**) outAuxAllocation.GetAddressOf());
+        return @this->ParseCommandLineArguments(argc, in argv, ref outSessionDesc, (Silk.NET.Core.Native.IUnknown**) outAuxAllocation.GetAddressOf());
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, Span<SessionDesc> outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, Span<SessionDesc> outSessionDesc, ref Silk.NET.Core.Native.IUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -1122,7 +1122,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, Span<SessionDesc> sessionDesc, ISlangBlob** outBlob)
+    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, Span<SessionDesc> sessionDesc, IBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -1130,7 +1130,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, Span<SessionDesc> sessionDesc, ref ISlangBlob* outBlob)
+    public static unsafe int GetSessionDescDigest(this ComPtr<IGlobalSession> thisVtbl, Span<SessionDesc> sessionDesc, ref IBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

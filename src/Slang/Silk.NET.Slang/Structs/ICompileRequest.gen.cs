@@ -17,13 +17,13 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [NativeName("Name", "ICompileRequest")]
-    public unsafe partial struct ICompileRequest : IComVtbl<ICompileRequest>, IComVtbl<ISlangUnknown>
+    public unsafe partial struct ICompileRequest : IComVtbl<ICompileRequest>, IComVtbl<Silk.NET.Core.Native.IUnknown>
     {
         void*** IComVtbl.AsVtblPtr()
             => (void***) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
 
-        public static implicit operator ISlangUnknown(ICompileRequest val)
-            => Unsafe.As<ICompileRequest, ISlangUnknown>(ref val);
+        public static implicit operator Silk.NET.Core.Native.IUnknown(ICompileRequest val)
+            => Unsafe.As<ICompileRequest, Silk.NET.Core.Native.IUnknown>(ref val);
 
         public ICompileRequest
         (

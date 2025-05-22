@@ -30,7 +30,7 @@ namespace Silk.NET.Slang
             long? searchPathCount = null,
             PreprocessorMacroDesc* preprocessorMacros = null,
             long? preprocessorMacroCount = null,
-            ISlangFileSystem* fileSystem = null,
+            IFileSystem* fileSystem = null,
             bool? enableEffectAnnotations = null,
             bool? allowGLSLSyntax = null,
             CompilerOptionEntry* compilerOptionEntries = null,
@@ -163,7 +163,7 @@ namespace Silk.NET.Slang
         [NativeName("Type", "ISlangFileSystem *")]
         [NativeName("Type.Name", "ISlangFileSystem *")]
         [NativeName("Name", "fileSystem")]
-        public ISlangFileSystem* FileSystem;
+        public IFileSystem* FileSystem;
 
         [NativeName("Type", "bool")]
         [NativeName("Type.Name", "bool")]

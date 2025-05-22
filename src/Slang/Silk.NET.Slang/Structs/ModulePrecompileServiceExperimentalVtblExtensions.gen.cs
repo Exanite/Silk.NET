@@ -85,69 +85,69 @@ public unsafe static class ModulePrecompileServiceExperimentalVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ISlangBlob** outDiagnostics)
+    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, IBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref ISlangBlob* outDiagnostics)
+    public static unsafe int PrecompileForTarget(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref IBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, int>)@this->LpVtbl[3])(@this, target, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ISlangBlob** outCode, ISlangBlob** outDiagnostics)
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, IBlob** outCode, IBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ISlangBlob** outCode, ref ISlangBlob* outDiagnostics)
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, IBlob** outCode, ref IBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCode, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref ISlangBlob* outCode, ISlangBlob** outDiagnostics)
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref IBlob* outCode, IBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outCodePtr = &outCode)
+        fixed (IBlob** outCodePtr = &outCode)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref ISlangBlob* outCode, ref ISlangBlob* outDiagnostics)
+    public static unsafe int GetPrecompiledTargetCode(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, CompileTarget target, ref IBlob* outCode, ref IBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outCodePtr = &outCode)
+        fixed (IBlob** outCodePtr = &outCode)
         {
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, ISlangBlob**, ISlangBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, CompileTarget, IBlob**, IBlob**, int>)@this->LpVtbl[4])(@this, target, outCodePtr, outDiagnosticsPtr);
             }
         }
         return ret;
@@ -163,48 +163,48 @@ public unsafe static class ModulePrecompileServiceExperimentalVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, IModule** outModule, ISlangBlob** outDiagnostics)
+    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, IModule** outModule, IBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnostics);
+        ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnostics);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, IModule** outModule, ref ISlangBlob* outDiagnostics)
+    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, IModule** outModule, ref IBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+        fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnosticsPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModule, outDiagnosticsPtr);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, ref IModule* outModule, ISlangBlob** outDiagnostics)
+    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, ref IModule* outModule, IBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IModule** outModulePtr = &outModule)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnostics);
+            ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnostics);
         }
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, ref IModule* outModule, ref ISlangBlob* outDiagnostics)
+    public static unsafe int GetModuleDependency(this ComPtr<IModulePrecompileServiceExperimental> thisVtbl, long dependencyIndex, ref IModule* outModule, ref IBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (IModule** outModulePtr = &outModule)
         {
-            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            fixed (IBlob** outDiagnosticsPtr = &outDiagnostics)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, ISlangBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnosticsPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IModulePrecompileServiceExperimental*, long, IModule**, IBlob**, int>)@this->LpVtbl[6])(@this, dependencyIndex, outModulePtr, outDiagnosticsPtr);
             }
         }
         return ret;
