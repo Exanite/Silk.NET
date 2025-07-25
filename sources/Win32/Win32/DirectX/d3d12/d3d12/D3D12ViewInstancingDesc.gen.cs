@@ -1,0 +1,22 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from d3d12.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D12_VIEW_INSTANCING_DESC.xml' path='doc/member[@name="D3D12_VIEW_INSTANCING_DESC"]/*'/>
+public unsafe partial struct D3D12ViewInstancingDesc
+{
+    /// <include file='D3D12_VIEW_INSTANCING_DESC.xml' path='doc/member[@name="D3D12_VIEW_INSTANCING_DESC.ViewInstanceCount"]/*'/>
+
+    public uint ViewInstanceCount;
+
+    /// <include file='D3D12_VIEW_INSTANCING_DESC.xml' path='doc/member[@name="D3D12_VIEW_INSTANCING_DESC.pViewInstanceLocations"]/*'/>
+
+    [NativeTypeName("const D3D12_VIEW_INSTANCE_LOCATION *")]
+    public D3D12ViewInstanceLocation* PViewInstanceLocations;
+
+    /// <include file='D3D12_VIEW_INSTANCING_DESC.xml' path='doc/member[@name="D3D12_VIEW_INSTANCING_DESC.Flags"]/*'/>
+
+    public D3D12ViewInstancingFlags Flags;
+}

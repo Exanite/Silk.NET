@@ -1,0 +1,119 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from d3d12video.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+using System;
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS"]/*'/>
+[Flags]
+public enum D3D12VideoEncoderAv1FeatureFlags
+{
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_NONE"]/*'/>
+
+    FlagNone = 0,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_128x128_SUPERBLOCK"]/*'/>
+
+    FLAG128X128Superblock = 0x1,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_FILTER_INTRA"]/*'/>
+
+    FlagFilterIntra = 0x2,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_INTRA_EDGE_FILTER"]/*'/>
+
+    FlagIntraEdgeFilter = 0x4,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_INTERINTRA_COMPOUND"]/*'/>
+
+    FlagInterintraCompound = 0x8,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_MASKED_COMPOUND"]/*'/>
+
+    FlagMaskedCompound = 0x10,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_WARPED_MOTION"]/*'/>
+
+    FlagWarpedMotion = 0x20,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_DUAL_FILTER"]/*'/>
+
+    FlagDualFilter = 0x40,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_JNT_COMP"]/*'/>
+
+    FlagJntComp = 0x80,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_FORCED_INTEGER_MOTION_VECTORS"]/*'/>
+
+    FlagForcedIntegerMotionVectors = 0x100,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_SUPER_RESOLUTION"]/*'/>
+
+    FlagSuperResolution = 0x200,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_LOOP_RESTORATION_FILTER"]/*'/>
+
+    FlagLoopRestorationFilter = 0x400,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_PALETTE_ENCODING"]/*'/>
+
+    FlagPaletteEncoding = 0x800,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_CDEF_FILTERING"]/*'/>
+
+    FlagCdefFiltering = 0x1000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_INTRA_BLOCK_COPY"]/*'/>
+
+    FlagIntraBlockCopy = 0x2000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_FRAME_REFERENCE_MOTION_VECTORS"]/*'/>
+
+    FlagFrameReferenceMotionVectors = 0x4000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_ORDER_HINT_TOOLS"]/*'/>
+
+    FlagOrderHintTools = 0x8000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_AUTO_SEGMENTATION"]/*'/>
+
+    FlagAutoSegmentation = 0x10000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_CUSTOM_SEGMENTATION"]/*'/>
+
+    FlagCustomSegmentation = 0x20000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_LOOP_FILTER_DELTAS"]/*'/>
+
+    FlagLoopFilterDeltas = 0x40000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_QUANTIZATION_DELTAS"]/*'/>
+
+    FlagQuantizationDeltas = 0x80000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_QUANTIZATION_MATRIX"]/*'/>
+
+    FlagQuantizationMatrix = 0x100000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_REDUCED_TX_SET"]/*'/>
+
+    FlagReducedTxSet = 0x200000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_MOTION_MODE_SWITCHABLE"]/*'/>
+
+    FlagMotionModeSwitchable = 0x400000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_ALLOW_HIGH_PRECISION_MV"]/*'/>
+
+    FlagAllowHighPrecisionMv = 0x800000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_SKIP_MODE_PRESENT"]/*'/>
+
+    FlagSkipModePresent = 0x1000000,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAGS.D3D12_VIDEO_ENCODER_AV1_FEATURE_FLAG_DELTA_LF_PARAMS"]/*'/>
+
+    FlagDeltaLfParams = 0x2000000,
+}

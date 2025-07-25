@@ -1,0 +1,57 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from DirectML.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC"]/*'/>
+public unsafe partial struct DmlRoiAlignOperatorDesc
+{
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.InputTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* InputTensor;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.ROITensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* ROITensor;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.BatchIndicesTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* BatchIndicesTensor;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.OutputTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* OutputTensor;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.ReductionFunction"]/*'/>
+
+    public DmlReduceFunction ReductionFunction;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.InterpolationMode"]/*'/>
+
+    public DmlInterpolationMode InterpolationMode;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.SpatialScaleX"]/*'/>
+
+    public float SpatialScaleX;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.SpatialScaleY"]/*'/>
+
+    public float SpatialScaleY;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.OutOfBoundsInputValue"]/*'/>
+
+    public float OutOfBoundsInputValue;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.MinimumSamplesPerOutput"]/*'/>
+
+    public uint MinimumSamplesPerOutput;
+
+    /// <include file='DML_ROI_ALIGN_OPERATOR_DESC.xml' path='doc/member[@name="DML_ROI_ALIGN_OPERATOR_DESC.MaximumSamplesPerOutput"]/*'/>
+
+    public uint MaximumSamplesPerOutput;
+}

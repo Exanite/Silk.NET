@@ -1,0 +1,51 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from d3d12video.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+using System;
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS"]/*'/>
+[Flags]
+public enum D3D12VideoEncoderAv1PostEncodeValuesFlags
+{
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_NONE"]/*'/>
+
+    None = 0,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_QUANTIZATION"]/*'/>
+
+    Quantization = 0x1,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_QUANTIZATION_DELTA"]/*'/>
+
+    QuantizationDelta = 0x2,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_LOOP_FILTER"]/*'/>
+
+    LoopFilter = 0x4,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_LOOP_FILTER_DELTA"]/*'/>
+
+    LoopFilterDelta = 0x8,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_CDEF_DATA"]/*'/>
+
+    CdefData = 0x10,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_CONTEXT_UPDATE_TILE_ID"]/*'/>
+
+    ContextUpdateTileId = 0x20,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_COMPOUND_PREDICTION_MODE"]/*'/>
+
+    CompoundPredictionMode = 0x40,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_PRIMARY_REF_FRAME"]/*'/>
+
+    PrimaryRefFrame = 0x80,
+
+    /// <include file='D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.xml' path='doc/member[@name="D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAGS.D3D12_VIDEO_ENCODER_AV1_POST_ENCODE_VALUES_FLAG_REFERENCE_INDICES"]/*'/>
+
+    ReferenceIndices = 0x100,
+}

@@ -1,0 +1,21 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from d3d12sdklayers.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS.xml' path='doc/member[@name="D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS"]/*'/>
+public partial struct D3D12DebugDeviceGpuBasedValidationSettings
+{
+    /// <include file='D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS.xml' path='doc/member[@name="D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS.MaxMessagesPerCommandList"]/*'/>
+
+    public uint MaxMessagesPerCommandList;
+
+    /// <include file='D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS.xml' path='doc/member[@name="D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS.DefaultShaderPatchMode"]/*'/>
+
+    public D3D12GpuBasedValidationShaderPatchMode DefaultShaderPatchMode;
+
+    /// <include file='D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS.xml' path='doc/member[@name="D3D12_DEBUG_DEVICE_GPU_BASED_VALIDATION_SETTINGS.PipelineStateCreateFlags"]/*'/>
+
+    public D3D12GpuBasedValidationPipelineStateCreateFlags PipelineStateCreateFlags;
+}

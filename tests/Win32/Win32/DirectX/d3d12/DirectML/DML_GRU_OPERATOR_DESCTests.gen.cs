@@ -1,0 +1,43 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from DirectML.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+using System;
+using System.Runtime.InteropServices;
+using NUnit.Framework;
+
+namespace Silk.NET.DirectX.UnitTests;
+
+/// <summary>Provides validation of the <see cref = "DmlGruOperatorDesc"/> struct.</summary>
+public static unsafe partial class DML_GRU_OPERATOR_DESCTests
+{
+    /// <summary>Validates that the <see cref = "DmlGruOperatorDesc"/> struct is blittable.</summary>
+
+    [Test]
+    public static void IsBlittableTest()
+    {
+        Assert.That(Marshal.SizeOf<DmlGruOperatorDesc>(), Is.EqualTo(sizeof(DmlGruOperatorDesc)));
+    }
+
+    /// <summary>Validates that the <see cref = "DmlGruOperatorDesc"/> struct has the right <see cref = "LayoutKind"/>.</summary>
+
+    [Test]
+    public static void IsLayoutSequentialTest()
+    {
+        Assert.That(typeof(DmlGruOperatorDesc).IsLayoutSequential, Is.True);
+    }
+
+    /// <summary>Validates that the <see cref = "DmlGruOperatorDesc"/> struct has the correct size.</summary>
+
+    [Test]
+    public static void SizeOfTest()
+    {
+        if (Environment.Is64BitProcess)
+        {
+            Assert.That(sizeof(DmlGruOperatorDesc), Is.EqualTo(88));
+        }
+        else
+        {
+            Assert.That(sizeof(DmlGruOperatorDesc), Is.EqualTo(48));
+        }
+    }
+}

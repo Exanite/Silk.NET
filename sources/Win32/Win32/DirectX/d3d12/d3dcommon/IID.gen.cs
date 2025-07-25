@@ -12,7 +12,7 @@ namespace Silk.NET.Win32;
 public static partial class IID
 {
     [NativeTypeName("const GUID")]
-    public static ref readonly Guid IID_ID3D10Blob
+    public static ref readonly Guid ID3D10Blob
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         get
@@ -42,8 +42,8 @@ public static partial class IID
     }
 
     [NativeTypeName("#define IID_ID3DBlob IID_ID3D10Blob")]
-    public static ref readonly Guid IID_ID3DBlob => ref IID_ID3D10Blob;
-    public static ref readonly Guid IID_ID3DDestructionNotifier
+    public static ref readonly Guid ID3DBlob => ref ID3D10Blob;
+    public static ref readonly Guid ID3DDestructionNotifier
     {
         get
         {

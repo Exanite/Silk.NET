@@ -1,0 +1,29 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from d3d12.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D12_HEAP_PROPERTIES.xml' path='doc/member[@name="D3D12_HEAP_PROPERTIES"]/*'/>
+public partial struct D3D12HeapProperties
+{
+    /// <include file='D3D12_HEAP_PROPERTIES.xml' path='doc/member[@name="D3D12_HEAP_PROPERTIES.Type"]/*'/>
+
+    public D3D12HeapType Type;
+
+    /// <include file='D3D12_HEAP_PROPERTIES.xml' path='doc/member[@name="D3D12_HEAP_PROPERTIES.CPUPageProperty"]/*'/>
+
+    public D3D12CpuPageProperty CPUPageProperty;
+
+    /// <include file='D3D12_HEAP_PROPERTIES.xml' path='doc/member[@name="D3D12_HEAP_PROPERTIES.MemoryPoolPreference"]/*'/>
+
+    public D3D12MemoryPool MemoryPoolPreference;
+
+    /// <include file='D3D12_HEAP_PROPERTIES.xml' path='doc/member[@name="D3D12_HEAP_PROPERTIES.CreationNodeMask"]/*'/>
+
+    public uint CreationNodeMask;
+
+    /// <include file='D3D12_HEAP_PROPERTIES.xml' path='doc/member[@name="D3D12_HEAP_PROPERTIES.VisibleNodeMask"]/*'/>
+
+    public uint VisibleNodeMask;
+}

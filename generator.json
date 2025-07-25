@@ -20,9 +20,15 @@
       "ClangScraper": {
         "ClangSharpResponseFiles": [
           "eng/submodules/terrafx.interop.windows/generation/**/generate.rsp",
+          "!eng/submodules/terrafx.interop.windows/generation/DirectX/d3d12on7/**",
+          "!eng/submodules/terrafx.interop.windows/generation/DirectX/d3dx12/**",
+          "!eng/submodules/terrafx.interop.windows/generation/DirectX/d3dk12/**",
+          "!eng/submodules/terrafx.interop.windows/generation/DirectX/um/**",
           "!eng/submodules/terrafx.interop.windows/generation/DirectX/d3dx12/d3dx12_state_object/generate.rsp",
+          "!eng/submodules/terrafx.interop.windows/generation/Gdiplus/**",
+          "!eng/submodules/terrafx.interop.windows/generation/Windows/**",
           "!eng/submodules/terrafx.interop.windows/generation/Windows/um/Unknwnbase/generate.rsp",
-          "!eng/submodules/terrafx.interop.windows/generation/WinRT/winrt/inspectable/generate.rsp"
+          "!eng/submodules/terrafx.interop.windows/generation/WinRT/**"
         ],
         "ManualOverrides": {
           "sources/Windows/um/httpserv/IHttpResponse.gen.cs": "eng/submodules/terrafx.interop.windows/sources/Interop/Windows/Windows/um/httpserv/IHttpResponse.cs",

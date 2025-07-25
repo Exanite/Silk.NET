@@ -1,0 +1,38 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from d3d12.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D12_FEATURE_DATA_D3D12_OPTIONS9.xml' path='doc/member[@name="D3D12_FEATURE_DATA_D3D12_OPTIONS9"]/*'/>
+public partial struct D3D12FeatureDataD3D12Options9
+{
+    /// <include file='D3D12_FEATURE_DATA_D3D12_OPTIONS9.xml' path='doc/member[@name="D3D12_FEATURE_DATA_D3D12_OPTIONS9.MeshShaderPipelineStatsSupported"]/*'/>
+
+    [NativeTypeName("BOOL")]
+    public MaybeBool<int> MeshShaderPipelineStatsSupported;
+
+    /// <include file='D3D12_FEATURE_DATA_D3D12_OPTIONS9.xml' path='doc/member[@name="D3D12_FEATURE_DATA_D3D12_OPTIONS9.MeshShaderSupportsFullRangeRenderTargetArrayIndex"]/*'/>
+
+    [NativeTypeName("BOOL")]
+    public MaybeBool<int> MeshShaderSupportsFullRangeRenderTargetArrayIndex;
+
+    /// <include file='D3D12_FEATURE_DATA_D3D12_OPTIONS9.xml' path='doc/member[@name="D3D12_FEATURE_DATA_D3D12_OPTIONS9.AtomicInt64OnTypedResourceSupported"]/*'/>
+
+    [NativeTypeName("BOOL")]
+    public MaybeBool<int> AtomicInt64OnTypedResourceSupported;
+
+    /// <include file='D3D12_FEATURE_DATA_D3D12_OPTIONS9.xml' path='doc/member[@name="D3D12_FEATURE_DATA_D3D12_OPTIONS9.AtomicInt64OnGroupSharedSupported"]/*'/>
+
+    [NativeTypeName("BOOL")]
+    public MaybeBool<int> AtomicInt64OnGroupSharedSupported;
+
+    /// <include file='D3D12_FEATURE_DATA_D3D12_OPTIONS9.xml' path='doc/member[@name="D3D12_FEATURE_DATA_D3D12_OPTIONS9.DerivativesInMeshAndAmplificationShadersSupported"]/*'/>
+
+    [NativeTypeName("BOOL")]
+    public MaybeBool<int> DerivativesInMeshAndAmplificationShadersSupported;
+
+    /// <include file='D3D12_FEATURE_DATA_D3D12_OPTIONS9.xml' path='doc/member[@name="D3D12_FEATURE_DATA_D3D12_OPTIONS9.WaveMMATier"]/*'/>
+
+    public D3D12WaveMmaTier WaveMMATier;
+}

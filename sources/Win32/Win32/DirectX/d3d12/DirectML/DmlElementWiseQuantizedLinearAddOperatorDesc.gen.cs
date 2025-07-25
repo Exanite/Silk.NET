@@ -1,0 +1,54 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from DirectML.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC"]/*'/>
+public unsafe partial struct DmlElementWiseQuantizedLinearAddOperatorDesc
+{
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.ATensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* ATensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.AScaleTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* AScaleTensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.AZeroPointTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* AZeroPointTensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.BTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* BTensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.BScaleTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* BScaleTensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.BZeroPointTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* BZeroPointTensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.OutputScaleTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* OutputScaleTensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.OutputZeroPointTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* OutputZeroPointTensor;
+
+    /// <include file='DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.xml' path='doc/member[@name="DML_ELEMENT_WISE_QUANTIZED_LINEAR_ADD_OPERATOR_DESC.OutputTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* OutputTensor;
+}

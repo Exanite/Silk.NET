@@ -1,0 +1,21 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from D3D12TokenizedProgramFormat.hpp in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD.xml' path='doc/member[@name="D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD"]/*'/>
+public enum D3D10SbImmediateAddressOffsetCoord
+{
+    /// <include file='D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD.xml' path='doc/member[@name="D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD.D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_U"]/*'/>
+
+    U = 0,
+
+    /// <include file='D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD.xml' path='doc/member[@name="D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD.D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_V"]/*'/>
+
+    V = 1,
+
+    /// <include file='D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD.xml' path='doc/member[@name="D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_COORD.D3D10_SB_IMMEDIATE_ADDRESS_OFFSET_W"]/*'/>
+
+    W = 2,
+}

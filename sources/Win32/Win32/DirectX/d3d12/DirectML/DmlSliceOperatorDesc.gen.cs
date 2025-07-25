@@ -1,0 +1,38 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from DirectML.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='DML_SLICE_OPERATOR_DESC.xml' path='doc/member[@name="DML_SLICE_OPERATOR_DESC"]/*'/>
+public unsafe partial struct DmlSliceOperatorDesc
+{
+    /// <include file='DML_SLICE_OPERATOR_DESC.xml' path='doc/member[@name="DML_SLICE_OPERATOR_DESC.InputTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* InputTensor;
+
+    /// <include file='DML_SLICE_OPERATOR_DESC.xml' path='doc/member[@name="DML_SLICE_OPERATOR_DESC.OutputTensor"]/*'/>
+
+    [NativeTypeName("const DML_TENSOR_DESC *")]
+    public DmlTensorDesc* OutputTensor;
+
+    /// <include file='DML_SLICE_OPERATOR_DESC.xml' path='doc/member[@name="DML_SLICE_OPERATOR_DESC.DimensionCount"]/*'/>
+
+    public uint DimensionCount;
+
+    /// <include file='DML_SLICE_OPERATOR_DESC.xml' path='doc/member[@name="DML_SLICE_OPERATOR_DESC.Offsets"]/*'/>
+
+    [NativeTypeName("const UINT *")]
+    public uint* Offsets;
+
+    /// <include file='DML_SLICE_OPERATOR_DESC.xml' path='doc/member[@name="DML_SLICE_OPERATOR_DESC.Sizes"]/*'/>
+
+    [NativeTypeName("const UINT *")]
+    public uint* Sizes;
+
+    /// <include file='DML_SLICE_OPERATOR_DESC.xml' path='doc/member[@name="DML_SLICE_OPERATOR_DESC.Strides"]/*'/>
+
+    [NativeTypeName("const UINT *")]
+    public uint* Strides;
+}

@@ -11,7 +11,7 @@ namespace Silk.NET.DirectX;
 public static partial class DirectX
 {
     [NativeTypeName("const GUID")]
-    public static ref readonly Guid WKPDID_D3DDebugObjectName
+    public static ref readonly Guid WkpdidD3DDebugObjectName
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         get
@@ -41,7 +41,7 @@ public static partial class DirectX
     }
 
     [NativeTypeName("const GUID")]
-    public static ref readonly Guid WKPDID_D3DDebugObjectNameW
+    public static ref readonly Guid WkpdidD3DDebugObjectNameW
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         get
@@ -71,7 +71,7 @@ public static partial class DirectX
     }
 
     [NativeTypeName("const GUID")]
-    public static ref readonly Guid WKPDID_CommentStringW
+    public static ref readonly Guid WkpdidCommentStringW
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         get
@@ -101,7 +101,7 @@ public static partial class DirectX
     }
 
     [NativeTypeName("const GUID")]
-    public static ref readonly Guid WKPDID_D3D12UniqueObjectId
+    public static ref readonly Guid WkpdidD3D12UniqueObjectId
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         get

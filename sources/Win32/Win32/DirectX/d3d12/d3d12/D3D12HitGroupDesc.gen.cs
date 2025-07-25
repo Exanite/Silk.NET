@@ -1,0 +1,33 @@
+// Copyright © Tanner Gooding and Contributors. Licensed under the MIT License (MIT). See License.md in the repository root for more information.
+// Ported from d3d12.h in microsoft/DirectX-Headers tag v1.614.0
+// Original source is Copyright © Microsoft. Licensed under the MIT license
+#pragma warning disable CS1589, CS0419, CA1416, CS0618
+namespace Silk.NET.DirectX;
+
+/// <include file='D3D12_HIT_GROUP_DESC.xml' path='doc/member[@name="D3D12_HIT_GROUP_DESC"]/*'/>
+public unsafe partial struct D3D12HitGroupDesc
+{
+    /// <include file='D3D12_HIT_GROUP_DESC.xml' path='doc/member[@name="D3D12_HIT_GROUP_DESC.HitGroupExport"]/*'/>
+
+    [NativeTypeName("LPCWSTR")]
+    public ushort* HitGroupExport;
+
+    /// <include file='D3D12_HIT_GROUP_DESC.xml' path='doc/member[@name="D3D12_HIT_GROUP_DESC.Type"]/*'/>
+
+    public D3D12HitGroupType Type;
+
+    /// <include file='D3D12_HIT_GROUP_DESC.xml' path='doc/member[@name="D3D12_HIT_GROUP_DESC.AnyHitShaderImport"]/*'/>
+
+    [NativeTypeName("LPCWSTR")]
+    public ushort* AnyHitShaderImport;
+
+    /// <include file='D3D12_HIT_GROUP_DESC.xml' path='doc/member[@name="D3D12_HIT_GROUP_DESC.ClosestHitShaderImport"]/*'/>
+
+    [NativeTypeName("LPCWSTR")]
+    public ushort* ClosestHitShaderImport;
+
+    /// <include file='D3D12_HIT_GROUP_DESC.xml' path='doc/member[@name="D3D12_HIT_GROUP_DESC.IntersectionShaderImport"]/*'/>
+
+    [NativeTypeName("LPCWSTR")]
+    public ushort* IntersectionShaderImport;
+}
