@@ -308,22 +308,22 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int SetPrintCallback(PfnVMPrintFunc callback, void* userData)
+        public readonly unsafe int SetPrintCallback(PfnDiagnosticCallback callback, void* userData)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
-            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnVMPrintFunc, void*, int>)@this->LpVtbl[13])(@this, callback, userData);
+            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnDiagnosticCallback, void*, int>)@this->LpVtbl[13])(@this, callback, userData);
             return ret;
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int SetPrintCallback<T0>(PfnVMPrintFunc callback, ref T0 userData) where T0 : unmanaged
+        public readonly int SetPrintCallback<T0>(PfnDiagnosticCallback callback, ref T0 userData) where T0 : unmanaged
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
             fixed (void* userDataPtr = &userData)
             {
-                ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnVMPrintFunc, void*, int>)@this->LpVtbl[13])(@this, callback, userDataPtr);
+                ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnDiagnosticCallback, void*, int>)@this->LpVtbl[13])(@this, callback, userDataPtr);
             }
             return ret;
         }

@@ -893,7 +893,10 @@
                     "-Wno-pragma-pack",
                     "-Ibuild/submodules/slang/include"
                 ],
-                "traverse": [],
+                "traverse": [
+                    "build/submodules/slang/include/slang.h",
+                    "build/submodules/slang/include/slang-deprecated.h"
+                ],
                 "classes": {
                     "slang.h": "[Core]Slang"
                 },

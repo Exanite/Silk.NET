@@ -23,7 +23,7 @@ namespace Silk.NET.Slang
         (
             uint? structureSize = null,
             uint? apiVersion = null,
-            uint? languageVersion = null,
+            uint? minLanguageVersion = null,
             bool? enableGLSL = null
         ) : this()
         {
@@ -37,9 +37,9 @@ namespace Silk.NET.Slang
                 ApiVersion = apiVersion.Value;
             }
 
-            if (languageVersion is not null)
+            if (minLanguageVersion is not null)
             {
-                LanguageVersion = languageVersion.Value;
+                MinLanguageVersion = minLanguageVersion.Value;
             }
 
             if (enableGLSL is not null)
@@ -61,8 +61,8 @@ namespace Silk.NET.Slang
 
         [NativeName("Type", "uint32_t")]
         [NativeName("Type.Name", "uint32_t")]
-        [NativeName("Name", "languageVersion")]
-        public uint LanguageVersion;
+        [NativeName("Name", "minLanguageVersion")]
+        public uint MinLanguageVersion;
 
         [NativeName("Type", "bool")]
         [NativeName("Type.Name", "bool")]

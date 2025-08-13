@@ -10,8 +10,8 @@ using Silk.NET.Core.Attributes;
 namespace Silk.NET.Slang
 {
     [Flags]
-    [NativeName("Name", "__AnonymousEnum_slang_L703_C5")]
-    public enum AnonymousEnumSlangL703C5 : int
+    [NativeName("Name", "__AnonymousEnum_slang_L707_C5")]
+    public enum AnonymousEnumSlangL707C5 : int
     {
         [NativeName("Name", "")]
         None = 0,

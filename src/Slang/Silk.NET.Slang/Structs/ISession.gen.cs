@@ -2561,6 +2561,267 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
+        public readonly unsafe int GetDynamicObjectRTTIBytes(TypeReflection* type, TypeReflection* interfaceType, uint* outRTTIDataBuffer, uint bufferSizeInBytes)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, TypeReflection*, TypeReflection*, uint*, uint, int>)@this->LpVtbl[21])(@this, type, interfaceType, outRTTIDataBuffer, bufferSizeInBytes);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int GetDynamicObjectRTTIBytes(TypeReflection* type, TypeReflection* interfaceType, ref uint outRTTIDataBuffer, uint bufferSizeInBytes)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (uint* outRTTIDataBufferPtr = &outRTTIDataBuffer)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, TypeReflection*, TypeReflection*, uint*, uint, int>)@this->LpVtbl[21])(@this, type, interfaceType, outRTTIDataBufferPtr, bufferSizeInBytes);
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersion, outModuleCompilerVersion, outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (byte** outModuleNamePtr = &outModuleName)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersion, outModuleCompilerVersion, outModuleNamePtr);
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersion, outModuleCompilerVersionPtr, outModuleName);
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+            {
+                fixed (byte** outModuleNamePtr = &outModuleName)
+                {
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersion, outModuleCompilerVersionPtr, outModuleNamePtr);
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (long* outModuleVersionPtr = &outModuleVersion)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersionPtr, outModuleCompilerVersion, outModuleName);
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (long* outModuleVersionPtr = &outModuleVersion)
+            {
+                fixed (byte** outModuleNamePtr = &outModuleName)
+                {
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersionPtr, outModuleCompilerVersion, outModuleNamePtr);
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (long* outModuleVersionPtr = &outModuleVersion)
+            {
+                fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+                {
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersionPtr, outModuleCompilerVersionPtr, outModuleName);
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (long* outModuleVersionPtr = &outModuleVersion)
+            {
+                fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+                {
+                    fixed (byte** outModuleNamePtr = &outModuleName)
+                    {
+                        ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, source, outModuleVersionPtr, outModuleCompilerVersionPtr, outModuleNamePtr);
+                    }
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersion, outModuleCompilerVersion, outModuleName);
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                fixed (byte** outModuleNamePtr = &outModuleName)
+                {
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersion, outModuleCompilerVersion, outModuleNamePtr);
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+                {
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersion, outModuleCompilerVersionPtr, outModuleName);
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+                {
+                    fixed (byte** outModuleNamePtr = &outModuleName)
+                    {
+                        ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersion, outModuleCompilerVersionPtr, outModuleNamePtr);
+                    }
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                fixed (long* outModuleVersionPtr = &outModuleVersion)
+                {
+                    ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersionPtr, outModuleCompilerVersion, outModuleName);
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                fixed (long* outModuleVersionPtr = &outModuleVersion)
+                {
+                    fixed (byte** outModuleNamePtr = &outModuleName)
+                    {
+                        ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersionPtr, outModuleCompilerVersion, outModuleNamePtr);
+                    }
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                fixed (long* outModuleVersionPtr = &outModuleVersion)
+                {
+                    fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+                    {
+                        ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersionPtr, outModuleCompilerVersionPtr, outModuleName);
+                    }
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (IBlob* sourcePtr = &source)
+            {
+                fixed (long* outModuleVersionPtr = &outModuleVersion)
+                {
+                    fixed (byte** outModuleCompilerVersionPtr = &outModuleCompilerVersion)
+                    {
+                        fixed (byte** outModuleNamePtr = &outModuleName)
+                        {
+                            ret = ((delegate* unmanaged[Cdecl]<ISession*, IBlob*, long*, byte**, byte**, int>)@this->LpVtbl[22])(@this, sourcePtr, outModuleVersionPtr, outModuleCompilerVersionPtr, outModuleNamePtr);
+                        }
+                    }
+                }
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
         public readonly unsafe int CreateCompositeComponentType<TI0, TI1>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref ComPtr<TI0> componentTypes, long componentTypeCount, ref ComPtr<TI1> outCompositeComponentType, IBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI1>
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
@@ -2606,6 +2867,162 @@ namespace Silk.NET.Slang
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
             return @this->CreateCompositeComponentType(in componentTypes, componentTypeCount, (IComponentType**) outCompositeComponentType.GetAddressOf(), ref outDiagnostics);
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(source, outModuleVersion, outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(source, outModuleVersion, outModuleCompilerVersion, in outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(source, outModuleVersion, in outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(source, ref outModuleVersion, outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(source, ref outModuleVersion, outModuleCompilerVersion, in outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(IBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(source, ref outModuleVersion, in outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(ref source, outModuleVersion, outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(ref source, outModuleVersion, outModuleCompilerVersion, in outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(ref source, outModuleVersion, in outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly int LoadModuleInfoFromIRBlob(ref IBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(ref source, ref outModuleVersion, outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(ref source, ref outModuleVersion, outModuleCompilerVersion, in outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleCompilerVersion, outModuleCompilerVersionSa);
+            SilkMarshal.Free((nint) outModuleCompilerVersion);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref IBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        {
+            var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            // StringArrayOverloader
+            var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
+            var ret = @this->LoadModuleInfoFromIRBlob(ref source, ref outModuleVersion, in outModuleCompilerVersion, outModuleName);
+            SilkMarshal.CopyPtrToStringArray((nint) outModuleName, outModuleNameSa);
+            SilkMarshal.Free((nint) outModuleName);
+            return ret;
         }
 
     }

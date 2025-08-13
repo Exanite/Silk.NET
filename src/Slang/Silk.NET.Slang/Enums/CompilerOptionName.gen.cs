@@ -170,8 +170,8 @@ namespace Silk.NET.Slang
         OutputIncludes = 0x4D,
         [NativeName("Name", "ReproFileSystem")]
         ReproFileSystem = 0x4E,
-        [NativeName("Name", "SerialIr")]
-        SerialIr = 0x4F,
+        [NativeName("Name", "REMOVED_SerialIR")]
+        RemovedSerialIR = 0x4F,
         [NativeName("Name", "SkipCodeGen")]
         SkipCodeGen = 0x50,
         [NativeName("Name", "ValidateIr")]
@@ -222,31 +222,51 @@ namespace Silk.NET.Slang
         LoopInversion = 0x67,
         [NativeName("Name", "ParameterBlocksUseRegisterSpaces")]
         ParameterBlocksUseRegisterSpaces = 0x68,
-        [NativeName("Name", "CountOfParsableOptions")]
-        CountOfParsableOptions = 0x69,
-        [NativeName("Name", "DebugInformationFormat")]
-        DebugInformationFormat = 0x6A,
-        [NativeName("Name", "VulkanBindShiftAll")]
-        VulkanBindShiftAll = 0x6B,
-        [NativeName("Name", "GenerateWholeProgram")]
-        GenerateWholeProgram = 0x6C,
-        [NativeName("Name", "UseUpToDateBinaryModule")]
-        UseUpToDateBinaryModule = 0x6D,
-        [NativeName("Name", "EmbedDownstreamIR")]
-        EmbedDownstreamIR = 0x6E,
-        [NativeName("Name", "ForceDXLayout")]
-        ForceDxlayout = 0x6F,
-        [NativeName("Name", "EmitSpirvMethod")]
-        EmitSpirvMethod = 0x70,
+        [NativeName("Name", "LanguageVersion")]
+        LanguageVersion = 0x69,
+        [NativeName("Name", "TypeConformance")]
+        TypeConformance = 0x6A,
+        [NativeName("Name", "EnableExperimentalDynamicDispatch")]
+        EnableExperimentalDynamicDispatch = 0x6B,
         [NativeName("Name", "EmitReflectionJSON")]
-        EmitReflectionJson = 0x71,
+        EmitReflectionJson = 0x6C,
+        [NativeName("Name", "CountOfParsableOptions")]
+        CountOfParsableOptions = 0x6D,
+        [NativeName("Name", "DebugInformationFormat")]
+        DebugInformationFormat = 0x6E,
+        [NativeName("Name", "VulkanBindShiftAll")]
+        VulkanBindShiftAll = 0x6F,
+        [NativeName("Name", "GenerateWholeProgram")]
+        GenerateWholeProgram = 0x70,
+        [NativeName("Name", "UseUpToDateBinaryModule")]
+        UseUpToDateBinaryModule = 0x71,
+        [NativeName("Name", "EmbedDownstreamIR")]
+        EmbedDownstreamIR = 0x72,
+        [NativeName("Name", "ForceDXLayout")]
+        ForceDxlayout = 0x73,
+        [NativeName("Name", "EmitSpirvMethod")]
+        EmitSpirvMethod = 0x74,
         [NativeName("Name", "SaveGLSLModuleBinSource")]
-        SaveGlslmoduleBinSource = 0x72,
+        SaveGlslmoduleBinSource = 0x75,
         [NativeName("Name", "SkipDownstreamLinking")]
-        SkipDownstreamLinking = 0x73,
+        SkipDownstreamLinking = 0x76,
         [NativeName("Name", "DumpModule")]
-        DumpModule = 0x74,
+        DumpModule = 0x77,
+        [NativeName("Name", "GetModuleInfo")]
+        GetModuleInfo = 0x78,
+        [NativeName("Name", "GetSupportedModuleVersions")]
+        GetSupportedModuleVersions = 0x79,
+        [NativeName("Name", "EmitSeparateDebug")]
+        EmitSeparateDebug = 0x7A,
+        [NativeName("Name", "DenormalModeFp16")]
+        DenormalModeFp16 = 0x7B,
+        [NativeName("Name", "DenormalModeFp32")]
+        DenormalModeFp32 = 0x7C,
+        [NativeName("Name", "DenormalModeFp64")]
+        DenormalModeFp64 = 0x7D,
+        [NativeName("Name", "UseMSVCStyleBitfieldPacking")]
+        UseMsvcstyleBitfieldPacking = 0x7E,
         [NativeName("Name", "CountOf")]
-        CountOf = 0x75,
+        CountOf = 0x7F,
     }
 }

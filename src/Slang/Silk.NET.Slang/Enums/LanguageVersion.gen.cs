@@ -12,7 +12,17 @@ namespace Silk.NET.Slang
     [NativeName("Name", "SlangLanguageVersion")]
     public enum LanguageVersion : int
     {
+        [NativeName("Name", "SLANG_LANGUAGE_VERSION_UNKNOWN")]
+        LanguageVersionUnknown = 0x0,
+        [NativeName("Name", "SLANG_LANGUAGE_VERSION_LEGACY")]
+        LanguageVersionLegacy = 0x7E2,
         [NativeName("Name", "SLANG_LANGUAGE_VERSION_2025")]
-        Version2025 = 0x7E9,
+        LanguageVersion2025 = 0x7E9,
+        [NativeName("Name", "SLANG_LANGUAGE_VERSION_2026")]
+        LanguageVersion2026 = 0x7EA,
+        [NativeName("Name", "SLANG_LANGAUGE_VERSION_DEFAULT")]
+        LangaugeVersionDefault = 0x7E2,
+        [NativeName("Name", "SLANG_LANGUAGE_VERSION_LATEST")]
+        LanguageVersionLatest = 0x7EA,
     }
 }

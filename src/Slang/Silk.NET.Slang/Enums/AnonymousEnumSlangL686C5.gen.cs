@@ -10,8 +10,8 @@ using Silk.NET.Core.Attributes;
 namespace Silk.NET.Slang
 {
     [Flags]
-    [NativeName("Name", "__AnonymousEnum_slang_L682_C5")]
-    public enum AnonymousEnumSlangL682C5 : int
+    [NativeName("Name", "__AnonymousEnum_slang_L686_C5")]
+    public enum AnonymousEnumSlangL686C5 : int
     {
         [NativeName("Name", "SLANG_COMPILE_FLAG_NO_MANGLING")]
         NoMangling = 0x8,

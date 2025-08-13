@@ -285,22 +285,22 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int SetPrintCallback(this ComPtr<IByteCodeRunner> thisVtbl, PfnVMPrintFunc callback, void* userData)
+    public static unsafe int SetPrintCallback(this ComPtr<IByteCodeRunner> thisVtbl, PfnDiagnosticCallback callback, void* userData)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
-        ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnVMPrintFunc, void*, int>)@this->LpVtbl[13])(@this, callback, userData);
+        ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnDiagnosticCallback, void*, int>)@this->LpVtbl[13])(@this, callback, userData);
         return ret;
     }
 
     /// <summary>To be documented.</summary>
-    public static int SetPrintCallback<T0>(this ComPtr<IByteCodeRunner> thisVtbl, PfnVMPrintFunc callback, ref T0 userData) where T0 : unmanaged
+    public static int SetPrintCallback<T0>(this ComPtr<IByteCodeRunner> thisVtbl, PfnDiagnosticCallback callback, ref T0 userData) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
         fixed (void* userDataPtr = &userData)
         {
-            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnVMPrintFunc, void*, int>)@this->LpVtbl[13])(@this, callback, userDataPtr);
+            ret = ((delegate* unmanaged[Cdecl]<IByteCodeRunner*, PfnDiagnosticCallback, void*, int>)@this->LpVtbl[13])(@this, callback, userDataPtr);
         }
         return ret;
     }
@@ -378,7 +378,7 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int SetPrintCallback<T0>(this ComPtr<IByteCodeRunner> thisVtbl, PfnVMPrintFunc callback, Span<T0> userData) where T0 : unmanaged
+    public static int SetPrintCallback<T0>(this ComPtr<IByteCodeRunner> thisVtbl, PfnDiagnosticCallback callback, Span<T0> userData) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

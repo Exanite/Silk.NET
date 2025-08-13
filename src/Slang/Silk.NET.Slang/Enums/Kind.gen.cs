@@ -50,5 +50,7 @@ namespace Silk.NET.Slang
         Pointer = 0x12,
         [NativeName("Name", "DynamicResource")]
         DynamicResource = 0x13,
+        [NativeName("Name", "MeshOutput")]
+        MeshOutput = 0xF,
     }
 }
