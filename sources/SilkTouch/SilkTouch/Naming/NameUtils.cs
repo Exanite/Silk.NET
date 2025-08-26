@@ -355,6 +355,7 @@ public static partial class NameUtils
         bool includeCandidateLocations = false
     )
     {
+        using var _ = new ProfilingScope($"NameUtils.RenameAllAsync");
         var toRenameList = toRename.ToList();
         await LocationTransformationUtils.ModifyAllReferencesAsync(ctx, toRenameList.Select(t => t.Symbol), [
             new IdentifierRenamingTransformer(toRenameList, includeDeclarations, includeCandidateLocations)

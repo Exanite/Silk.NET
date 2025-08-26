@@ -75,6 +75,8 @@ public class SilkTouchGenerator(
         // Initialize the mods
         foreach (var jobMod in jobMods)
         {
+            using var _ = new ProfilingScope($"{jobMod.GetType().Name} Initialize");
+
             logger.LogDebug("Using mod {0} for {1}", jobMod.GetType().Name, key);
             await jobMod.InitializeAsync(ctx, ct);
             if (ctx.SourceProject != srcProj || ctx.TestProject != testProj)
@@ -87,6 +89,8 @@ public class SilkTouchGenerator(
 
         foreach (var jobMod in jobMods)
         {
+            using var _ = new ProfilingScope($"{jobMod.GetType().Name} Execute");
+
             logger.LogInformation("Executing {} for {}...", jobMod.GetType().Name, key);
             await jobMod.ExecuteAsync(ctx, ct);
         }
