@@ -915,12 +915,12 @@
             "namespace": "Silk.NET.Slang",
             "extensionsNamespace": "Silk.NET.Slang",
             "nameContainer": {
-                "linux-x64": "libshaderslang.so",
-                "win-x64": "shaderslang.dll",
-                "win-x86": "shaderslang.dll",
-                "osx-x64": "libshaderslang.dylib",
-                "android": "libshaderslang.so",
-                "iOS": "libshaderslang.dylib",
+                "linux-x64": "libslang-compiler.so",
+                "win-x64": "slang-compiler.dll",
+                "win-x86": "slang-compiler.dll",
+                "osx-x64": "libslang-compiler.dylib",
+                "android": "libslang-compiler.so",
+                "iOS": "libslang-compiler.dylib",
                 "className": "SlangLibraryNameContainer"
             },
             "typeMaps": [
