@@ -114,8 +114,8 @@ namespace Silk.NET.Slang
         [NativeName("Name", "forceGLSLScalarBufferLayout")]
         public bool ForceGLSLScalarBufferLayout;
 
-        [NativeName("Type", "slang::CompilerOptionEntry *")]
-        [NativeName("Type.Name", "slang::CompilerOptionEntry *")]
+        [NativeName("Type", "const slang::CompilerOptionEntry *")]
+        [NativeName("Type.Name", "const slang::CompilerOptionEntry *")]
         [NativeName("Name", "compilerOptionEntries")]
         public CompilerOptionEntry* CompilerOptionEntries;
 

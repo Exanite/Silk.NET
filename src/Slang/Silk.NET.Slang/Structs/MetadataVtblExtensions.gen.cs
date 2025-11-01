@@ -127,6 +127,25 @@ public unsafe static class MetadataVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
+    public static unsafe byte* GetDebugBuildIdentifier(this ComPtr<IMetadata> thisVtbl)
+    {
+        var @this = thisVtbl.Handle;
+        byte* ret = default;
+        ret = ((delegate* unmanaged[Cdecl]<IMetadata*, byte*>)@this->LpVtbl[5])(@this);
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
+    [return: UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)]
+    public static string GetDebugBuildIdentifierS(this ComPtr<IMetadata> thisVtbl)
+    {
+        var @this = thisVtbl.Handle;
+        string ret = default;
+        ret = ((delegate* unmanaged[Cdecl]<IMetadata*, string>)@this->LpVtbl[5])(@this);
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
     public static unsafe int QueryInterface(this ComPtr<IMetadata> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;

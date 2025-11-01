@@ -37,7 +37,7 @@ namespace Silk.NET.Slang
         [NativeName("Name", "SLANG_TEXTURE_SUBPASS")]
         TextureSubpass = 0xA,
         [NativeName("Name", "SLANG_RESOURCE_EXT_SHAPE_MASK")]
-        ResourceExtShapeMask = 0xF0,
+        ResourceExtShapeMask = 0x1F0,
         [NativeName("Name", "SLANG_TEXTURE_FEEDBACK_FLAG")]
         TextureFeedbackFlag = 0x10,
         [NativeName("Name", "SLANG_TEXTURE_SHADOW_FLAG")]
@@ -46,6 +46,8 @@ namespace Silk.NET.Slang
         TextureArrayFlag = 0x40,
         [NativeName("Name", "SLANG_TEXTURE_MULTISAMPLE_FLAG")]
         TextureMultisampleFlag = 0x80,
+        [NativeName("Name", "SLANG_TEXTURE_COMBINED_FLAG")]
+        TextureCombinedFlag = 0x100,
         [NativeName("Name", "SLANG_TEXTURE_1D_ARRAY")]
         Texture1DArray = 0x41,
         [NativeName("Name", "SLANG_TEXTURE_2D_ARRAY")]

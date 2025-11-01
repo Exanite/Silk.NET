@@ -17,17 +17,23 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [StructLayout(LayoutKind.Explicit)]
-    [NativeName("Name", "__AnonymousRecord_slang_L4485_C5")]
+    [NativeName("Name", "__AnonymousRecord_slang_L4652_C5")]
     public unsafe partial struct SpecializationArgUnion
     {
         public SpecializationArgUnion
         (
-            TypeReflection* type = null
+            TypeReflection* type = null,
+            byte* expr = null
         ) : this()
         {
             if (type is not null)
             {
                 Type = type;
+            }
+
+            if (expr is not null)
+            {
+                Expr = expr;
             }
         }
 
@@ -37,5 +43,11 @@ namespace Silk.NET.Slang
         [NativeName("Type.Name", "slang::TypeReflection *")]
         [NativeName("Name", "type")]
         public TypeReflection* Type;
+
+        [FieldOffset(0)]
+        [NativeName("Type", "const char *")]
+        [NativeName("Type.Name", "const char *")]
+        [NativeName("Name", "expr")]
+        public byte* Expr;
     }
 }

@@ -152,5 +152,24 @@ namespace Silk.NET.Slang
             return ret;
         }
 
+        /// <summary>To be documented.</summary>
+        public readonly unsafe byte* GetDebugBuildIdentifier()
+        {
+            var @this = (IMetadata*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            byte* ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IMetadata*, byte*>)@this->LpVtbl[5])(@this);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        [return: UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)]
+        public readonly string GetDebugBuildIdentifierS()
+        {
+            var @this = (IMetadata*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            string ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IMetadata*, string>)@this->LpVtbl[5])(@this);
+            return ret;
+        }
+
     }
 }

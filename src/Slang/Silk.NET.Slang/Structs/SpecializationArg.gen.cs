@@ -23,7 +23,8 @@ namespace Silk.NET.Slang
         (
             Kind? kind = null,
             SpecializationArgUnion? anonymous = null,
-            TypeReflection* type = null
+            TypeReflection* type = null,
+            byte* expr = null
         ) : this()
         {
             if (kind is not null)
@@ -40,6 +41,11 @@ namespace Silk.NET.Slang
             {
                 Type = type;
             }
+
+            if (expr is not null)
+            {
+                Expr = expr;
+            }
         }
 
 
@@ -49,7 +55,7 @@ namespace Silk.NET.Slang
         public Kind Kind;
 
         [NativeName("Type", "")]
-        [NativeName("Type.Name", "__AnonymousRecord_slang_L4485_C5")]
+        [NativeName("Type.Name", "__AnonymousRecord_slang_L4652_C5")]
         [NativeName("Name", "anonymous1")]
         public SpecializationArgUnion Anonymous;
 #if NETSTANDARD2_1 || NETCOREAPP3_1 || NET5_0 || NET5_0_OR_GREATER
@@ -63,6 +69,20 @@ namespace Silk.NET.Slang
         {
             get => Anonymous.Type;
             set => Anonymous.Type = value;
+        }
+#endif
+
+#if NETSTANDARD2_1 || NETCOREAPP3_1 || NET5_0 || NET5_0_OR_GREATER
+        public ref byte* Expr
+        {
+            [MethodImpl((MethodImplOptions) 768)]
+            get => ref MemoryMarshal.CreateSpan(ref Anonymous, 1)[0].Expr;
+        }
+#else
+        public byte* Expr
+        {
+            get => Anonymous.Expr;
+            set => Anonymous.Expr = value;
         }
 #endif
 
