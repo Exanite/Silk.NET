@@ -2337,9 +2337,9 @@ public partial class MixKhronosData(
                 {
                     // Handle the alias case
                     foreach (
-                        var ((_, applicable), value) in data.Annotations.Where(x =>
-                            x.Key.ContainingSymbol == aliasedFunc
-                        )
+                        var ((_, applicable), value) in data
+                            .Annotations.Where(x => x.Key.ContainingSymbol == aliasedFunc)
+                            .ToArray()
                     )
                     {
                         data.Annotations[(funcName, applicable)] = value;
