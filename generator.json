@@ -151,7 +151,7 @@
       },
       "PrettifyNames": {
         "LongAcronymThreshold": 4,
-        "GlobalPrefixHints": ["gl"]
+        "GlobalPrefixHints": ["gl"],
         "PrefixOverrides": {
           "SyncObjectMask": "GL_SYNC"
         }
@@ -210,6 +210,9 @@
           "Direct"
         ]
       },
+      "ExtractNestedTyping": {
+        "GenerateEmptyStructsForMissingHandleTypes": true
+      },
       "InterceptNativeFunctions": {
         "NativeFunctionNames": [
           "alcOpenDevice",
@@ -265,7 +268,6 @@
         "BenefitOfTheDoubtArrayTransformation": true
       },
       "TransformHandles": {
-        "AssumeMissingTypesOpaque": true,
         "UseDSL": true
       }
     },
@@ -311,7 +313,7 @@
       },
       "PrettifyNames": {
         "LongAcronymThreshold": 4,
-        "GlobalPrefixHint": "vk",
+        "GlobalPrefixHints": ["vk"],
         "PrefixOverrides": {
           "VkPipelineCreateFlags2": "VK_PIPELINE_CREATE_2"
         }
