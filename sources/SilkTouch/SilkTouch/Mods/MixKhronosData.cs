@@ -1788,16 +1788,23 @@ public partial class MixKhronosData(
         string? jobKey,
         string nativeName,
         [NotNullWhen(true)] out IEnumerable<SupportedApiProfileAttribute>? metadata
-    ) =>
-        (
-            metadata =
-                jobKey is null
-                || !Jobs.TryGetValue(jobKey, out var job)
-                || !(job.SupportedApiProfiles?.TryGetValue(nativeName, out var mdList) ?? false)
-                    ? null
-                    : mdList
-        )
-            is not null;
+    )
+    {
+        if (jobKey is null || !Jobs.TryGetValue(jobKey, out var job) || job.SupportedApiProfiles is null)
+        {
+            metadata = null;
+            return false;
+        }
+
+        if (!job.SupportedApiProfiles.TryGetValue(nativeName, out var mdList))
+        {
+            metadata = null;
+            return false;
+        }
+
+        metadata = mdList;
+        return true;
+    }
 
     /// <summary>
     /// This regex matches against known OpenGL function endings, picking them out from function names.
