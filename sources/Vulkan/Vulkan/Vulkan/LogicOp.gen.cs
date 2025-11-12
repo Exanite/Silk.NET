@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,291 +11,51 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum LogicOp : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Clear = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     And = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     AndReverse = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Copy = 3,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     AndInverted = 4,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     NoOp = 5,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Xor = 6,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Or = 7,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Nor = 8,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Equivalent = 9,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Invert = 10,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     OrReverse = 11,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     CopyInverted = 12,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     OrInverted = 13,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Nand = 14,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     Set = 15,
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,32 +12,16 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum LineRasterizationMode : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     Default = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     Rectangular = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     Bresenham = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     RectangularSmooth = 3,
 
     [SupportedApiProfile(

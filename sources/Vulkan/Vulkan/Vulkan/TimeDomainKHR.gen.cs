@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,44 +12,16 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum TimeDomainKHR : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_calibrated_timestamps"],
-        ImpliesSets = [
-            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DeviceKHR = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_calibrated_timestamps"],
-        ImpliesSets = [
-            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     ClockMonotonicKHR = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_calibrated_timestamps"],
-        ImpliesSets = [
-            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     ClockMonotonicRawKHR = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_calibrated_timestamps"],
-        ImpliesSets = [
-            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     QueryPerformanceCounterKHR = 3,
 
     [SupportedApiProfile(

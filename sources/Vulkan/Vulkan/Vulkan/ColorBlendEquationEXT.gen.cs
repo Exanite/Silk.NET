@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,63 +10,21 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ColorBlendEquationEXT
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BlendFactor SrcColorBlendFactor;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BlendFactor DstColorBlendFactor;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BlendOp ColorBlendOp;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BlendFactor SrcAlphaBlendFactor;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BlendFactor DstAlphaBlendFactor;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BlendOp AlphaBlendOp;
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,58 +15,18 @@ public enum OpticalFlowSessionCreateFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     EnableHintBitNV = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     EnableCostBitNV = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     EnableGlobalFlowBitNV = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     AllowRegionsBitNV = 0x00000008,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     BothDirectionsBitNV = 0x00000010,
 }

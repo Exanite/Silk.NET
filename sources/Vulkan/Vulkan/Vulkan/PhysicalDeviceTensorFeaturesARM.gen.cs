@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,30 +10,30 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceTensorFeaturesARM
 {
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> TensorNonPacked;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderTensorAccess;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderStorageTensorArrayDynamicIndexing;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderStorageTensorArrayNonUniformIndexing;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> DescriptorBindingStorageTensorUpdateAfterBind;
 
     [NativeTypeName("VkBool32")]

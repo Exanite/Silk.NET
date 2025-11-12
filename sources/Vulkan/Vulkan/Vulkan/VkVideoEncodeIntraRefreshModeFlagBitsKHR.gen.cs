@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -14,38 +13,18 @@ namespace Silk.NET.Vulkan;
 [Flags]
 public enum VideoEncodeIntraRefreshModeFlagsKHR : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     NoneKHR = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     PerPicturePartitionBitKHR = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     BlockBasedBitKHR = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     BlockRowBasedBitKHR = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     BlockColumnBasedBitKHR = 0x00000008,
 }

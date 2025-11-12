@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -14,74 +13,19 @@ namespace Silk.NET.Vulkan;
 [Flags]
 public enum ResolveModeFlags : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [SupportedApiProfile("vulkan")]
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [SupportedApiProfile("vulkan")]
     SampleZeroBit = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [SupportedApiProfile("vulkan")]
     AverageBit = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [SupportedApiProfile("vulkan")]
     MinBit = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [SupportedApiProfile("vulkan")]
     MaxBit = 0x00000008,
 
     [SupportedApiProfile(

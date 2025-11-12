@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,84 +15,19 @@ public enum ToolPurposeFlags : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     ValidationBit = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     ProfilingBit = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     TracingBit = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     AdditionalFeaturesBit = 0x00000008,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     ModifyingFeaturesBit = 0x00000010,
 
     [SupportedApiProfile(

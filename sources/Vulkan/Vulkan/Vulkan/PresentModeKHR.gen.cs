@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,16 +11,16 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum PresentModeKHR : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     ImmediateKHR = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     MailboxKHR = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     FifoKHR = 2,
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     FifoRelaxedKHR = 3,
 
     [SupportedApiProfile(

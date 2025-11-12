@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -14,53 +12,18 @@ namespace Silk.NET.Vulkan;
 [Flags]
 public enum VideoEncodeUsageFlagsKHR : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DefaultKHR = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     TranscodingBitKHR = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     StreamingBitKHR = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     RecordingBitKHR = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     ConferencingBitKHR = 0x00000008,
 }

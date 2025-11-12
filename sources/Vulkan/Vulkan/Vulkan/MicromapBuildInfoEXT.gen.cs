@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,140 +10,49 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct MicromapBuildInfoEXT
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MicromapTypeEXT Type;
 
     [NativeTypeName("VkBuildMicromapFlagsEXT")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BuildMicromapFlagsEXT Flags;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BuildMicromapModeEXT Mode;
 
     [NativeTypeName("VkMicromapEXT")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MicromapEXTHandle DstMicromap;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint UsageCountsCount;
 
     [NativeTypeName("const VkMicromapUsageEXT *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MicromapUsageEXT* PUsageCounts;
 
     [NativeTypeName("const VkMicromapUsageEXT *const *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MicromapUsageEXT** PpUsageCounts;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DeviceOrHostAddressConstKHR Data;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DeviceOrHostAddressKHR ScratchData;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DeviceOrHostAddressConstKHR TriangleArray;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong TriangleArrayStride;
 }

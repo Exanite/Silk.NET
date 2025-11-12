@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,63 +15,21 @@ public enum PresentScalingFlagsKHR : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     OneToOneBitKHR = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     AspectRatioStretchBitKHR = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     StretchBitKHR = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     OneToOneBitEXT = OneToOneBitKHR,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     AspectRatioStretchBitEXT = AspectRatioStretchBitKHR,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     StretchBitEXT = StretchBitKHR,
 }

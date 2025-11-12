@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,18 +12,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ValidationFeatureEnableEXT : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     GpuAssistedEXT = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     GpuAssistedReserveBindingSlotEXT = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     BestPracticesEXT = 2,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     DebugPrintfEXT = 3,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     SynchronizationValidationEXT = 4,
 }

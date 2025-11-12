@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,48 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageBlit2
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageSubresourceLayers SrcSubresource;
 
     [NativeTypeName("VkOffset3D[2]")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageBlit2SrcOffsets SrcOffsets;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageSubresourceLayers DstSubresource;
 
     [NativeTypeName("VkOffset3D[2]")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageBlit2DstOffsets DstOffsets;
 }

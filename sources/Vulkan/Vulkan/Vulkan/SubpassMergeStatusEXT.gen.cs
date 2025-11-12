@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,143 +12,45 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum SubpassMergeStatusEXT : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     MergedEXT = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DisallowedEXT = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedSideEffectsEXT = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedSamplesMismatchEXT = 3,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedViewsMismatchEXT = 4,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedAliasingEXT = 5,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedDependenciesEXT = 6,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedIncompatibleInputAttachmentEXT = 7,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedTooManyAttachmentsEXT = 8,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedInsufficientStorageEXT = 9,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedDepthStencilCountEXT = 10,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedResolveAttachmentReuseEXT = 11,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedSingleSubpassEXT = 12,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NotMergedUnspecifiedEXT = 13,
 }

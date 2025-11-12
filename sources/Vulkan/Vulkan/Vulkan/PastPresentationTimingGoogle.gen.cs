@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,42 +12,22 @@ namespace Silk.NET.Vulkan;
 public partial struct PastPresentationTimingGoogle
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GOOGLE_display_timing"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint PresentID;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GOOGLE_display_timing"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong DesiredPresentTime;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GOOGLE_display_timing"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong ActualPresentTime;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GOOGLE_display_timing"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong EarliestPresentTime;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GOOGLE_display_timing"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong PresentMargin;
 }

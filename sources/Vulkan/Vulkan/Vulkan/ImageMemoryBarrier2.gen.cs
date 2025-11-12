@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,203 +11,47 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageMemoryBarrier2
 {
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkPipelineStageFlags2")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineStageFlags2 SrcStageMask;
 
     [NativeTypeName("VkAccessFlags2")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public AccessFlags2 SrcAccessMask;
 
     [NativeTypeName("VkPipelineStageFlags2")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineStageFlags2 DstStageMask;
 
     [NativeTypeName("VkAccessFlags2")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public AccessFlags2 DstAccessMask;
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageLayout OldLayout;
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageLayout NewLayout;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint SrcQueueFamilyIndex;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint DstQueueFamilyIndex;
 
     [NativeTypeName("VkImage")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageHandle Image;
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.3"
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageSubresourceRange SubresourceRange;
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,38 +11,38 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplaySurfaceCreateInfoKHR
 {
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkDisplaySurfaceCreateFlagsKHR")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public uint Flags;
 
     [NativeTypeName("VkDisplayModeKHR")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public DisplayModeKHRHandle DisplayMode;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public uint PlaneIndex;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public uint PlaneStackIndex;
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public SurfaceTransformFlagsKHR Transform;
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public float GlobalAlpha;
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public DisplayPlaneAlphaFlagsKHR AlphaMode;
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public Extent2D ImageExtent;
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,73 +11,37 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCooperativeMatrix2FeaturesNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeMatrixWorkgroupScope;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeMatrixFlexibleDimensions;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeMatrixReductions;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeMatrixConversions;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeMatrixPerElementOperations;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeMatrixTensorAddressing;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeMatrixBlockLoads;
 }

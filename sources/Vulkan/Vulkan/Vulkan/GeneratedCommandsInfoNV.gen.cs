@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,121 +11,61 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct GeneratedCommandsInfoNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineBindPoint PipelineBindPoint;
 
     [NativeTypeName("VkPipeline")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineHandle Pipeline;
 
     [NativeTypeName("VkIndirectCommandsLayoutNV")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public IndirectCommandsLayoutNVHandle IndirectCommandsLayout;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint StreamCount;
 
     [NativeTypeName("const VkIndirectCommandsStreamNV *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public IndirectCommandsStreamNV* PStreams;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint SequencesCount;
 
     [NativeTypeName("VkBuffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BufferHandle PreprocessBuffer;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong PreprocessOffset;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong PreprocessSize;
 
     [NativeTypeName("VkBuffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BufferHandle SequencesCountBuffer;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong SequencesCountOffset;
 
     [NativeTypeName("VkBuffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BufferHandle SequencesIndexBuffer;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong SequencesIndexOffset;
 }

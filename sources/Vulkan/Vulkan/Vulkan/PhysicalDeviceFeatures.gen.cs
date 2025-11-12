@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -33,32 +32,7 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> IndependentBlend;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> GeometryShader;
 
     [NativeTypeName("VkBool32")]
@@ -81,32 +55,7 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> SampleRateShading;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> DualSrcBlend;
 
     [NativeTypeName("VkBool32")]
@@ -125,32 +74,7 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> LogicOp;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> MultiDrawIndirect;
 
     [NativeTypeName("VkBool32")]
@@ -181,61 +105,11 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> FillModeNonSolid;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> DepthBounds;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> WideLines;
 
     [NativeTypeName("VkBool32")]
@@ -258,32 +132,7 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> AlphaToOne;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> MultiViewport;
 
     [NativeTypeName("VkBool32")]
@@ -291,177 +140,27 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> SamplerAnisotropy;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> TextureCompressionETC2;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> TextureCompressionASTCLDR;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> TextureCompressionBC;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> OcclusionQueryPrecise;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> PipelineStatisticsQuery;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> VertexPipelineStoresAndAtomics;
 
     [NativeTypeName("VkBool32")]
@@ -469,32 +168,7 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> FragmentStoresAndAtomics;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderTessellationAndGeometryPointSize;
 
     [NativeTypeName("VkBool32")]
@@ -506,90 +180,15 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> ShaderStorageImageExtendedFormats;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderStorageImageMultisample;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderStorageImageReadWithoutFormat;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderStorageImageWriteWithoutFormat;
 
     [NativeTypeName("VkBool32")]
@@ -617,90 +216,15 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> ShaderStorageImageArrayDynamicIndexing;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderClipDistance;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderCullDistance;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderFloat64;
 
     [NativeTypeName("VkBool32")]
@@ -716,379 +240,54 @@ public partial struct PhysicalDeviceFeatures
     public MaybeBool<uint> ShaderInt16;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderResourceResidency;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ShaderResourceMinLod;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseBinding;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidencyBuffer;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidencyImage2D;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidencyImage3D;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidency2Samples;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidency4Samples;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidency8Samples;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidency16Samples;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SparseResidencyAliased;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> VariableMultisampleRate;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_0",
-            "VK_BASE_VERSION_1_1",
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_0",
-            "VK_COMPUTE_VERSION_1_1",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_0",
-            "VK_GRAPHICS_VERSION_1_1",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_0",
-            "VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.0"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> InheritedQueries;
 }

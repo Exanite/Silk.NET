@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,65 +11,23 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceTileShadingPropertiesQCOM
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxApronSize;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> PreferNonCoherent;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Extent2D TileGranularity;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Extent2D MaxTileShadingRate;
 }

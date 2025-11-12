@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,34 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct HdrMetadataEXT
 {
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public XYColorEXT DisplayPrimaryRed;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public XYColorEXT DisplayPrimaryGreen;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public XYColorEXT DisplayPrimaryBlue;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public XYColorEXT WhitePoint;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public float MaxLuminance;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public float MinLuminance;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public float MaxContentLightLevel;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_hdr_metadata"], ImpliesSets = ["VK_KHR_swapchain"])]
+    [SupportedApiProfile("vulkan")]
     public float MaxFrameAverageLightLevel;
 }

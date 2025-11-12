@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,27 +12,27 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ValidationFeatureDisableEXT : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     AllEXT = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     ShadersEXT = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     ThreadSafetyEXT = 2,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     ApiParametersEXT = 3,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     ObjectLifetimesEXT = 4,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     CoreChecksEXT = 5,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     UniqueHandlesEXT = 6,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [SupportedApiProfile("vulkan")]
     ShaderValidationCacheEXT = 7,
 }

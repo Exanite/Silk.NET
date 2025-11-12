@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,29 +11,11 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PresentWait2InfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait2"],
-        ImpliesSets = [
-            "VK_KHR_get_surface_capabilities2",
-            "VK_KHR_present_id2",
-            "VK_KHR_surface",
-            "VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait2"],
-        ImpliesSets = [
-            "VK_KHR_get_surface_capabilities2",
-            "VK_KHR_present_id2",
-            "VK_KHR_surface",
-            "VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint64_t")]
@@ -49,15 +30,6 @@ public unsafe partial struct PresentWait2InfoKHR
     public ulong PresentId;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait2"],
-        ImpliesSets = [
-            "VK_KHR_get_surface_capabilities2",
-            "VK_KHR_present_id2",
-            "VK_KHR_surface",
-            "VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong Timeout;
 }

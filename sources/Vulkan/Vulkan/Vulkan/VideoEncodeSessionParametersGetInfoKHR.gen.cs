@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,35 +11,14 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeSessionParametersGetInfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkVideoSessionParametersKHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public VideoSessionParametersKHRHandle VideoSessionParameters;
 }

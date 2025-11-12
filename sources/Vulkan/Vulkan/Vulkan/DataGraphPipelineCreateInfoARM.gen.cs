@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,50 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DataGraphPipelineCreateInfoARM
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkPipelineCreateFlags2KHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong Flags;
 
     [NativeTypeName("VkPipelineLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineLayoutHandle Layout;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint ResourceInfoCount;
 
     [NativeTypeName("const VkDataGraphPipelineResourceInfoARM *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DataGraphPipelineResourceInfoARM* PResourceInfos;
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,157 +11,53 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceOpticalFlowPropertiesNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkOpticalFlowGridSizeFlagsNV")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public OpticalFlowGridSizeFlagsNV SupportedOutputGridSizes;
 
     [NativeTypeName("VkOpticalFlowGridSizeFlagsNV")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public OpticalFlowGridSizeFlagsNV SupportedHintGridSizes;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> HintSupported;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CostSupported;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> BidirectionalFlowSupported;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> GlobalFlowSupported;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MinWidth;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MinHeight;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxWidth;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxHeight;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxNumRegionsOfInterest;
 }

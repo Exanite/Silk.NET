@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,15 +15,15 @@ public enum ExternalMemoryHandleTypeFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
+    [SupportedApiProfile("vulkan")]
     OpaqueWin32BitNV = 0x00000001,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
+    [SupportedApiProfile("vulkan")]
     OpaqueWin32KmtBitNV = 0x00000002,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
+    [SupportedApiProfile("vulkan")]
     D3D11ImageBitNV = 0x00000004,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
+    [SupportedApiProfile("vulkan")]
     D3D11ImageKmtBitNV = 0x00000008,
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,62 +11,22 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SwapchainPresentScalingCreateInfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_swapchain_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_swapchain_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_surface_maintenance1",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_swapchain_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_swapchain_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_surface_maintenance1",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkPresentScalingFlagsKHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_swapchain_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_swapchain_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_surface_maintenance1",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PresentScalingFlagsKHR ScalingBehavior;
 
     [NativeTypeName("VkPresentGravityFlagsKHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_swapchain_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_swapchain_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_surface_maintenance1",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PresentGravityFlagsKHR PresentGravityX;
 
     [NativeTypeName("VkPresentGravityFlagsKHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_swapchain_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_swapchain_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_surface_maintenance1",
-            "VK_KHR_swapchain_maintenance1+VK_KHR_swapchain",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PresentGravityFlagsKHR PresentGravityY;
 }

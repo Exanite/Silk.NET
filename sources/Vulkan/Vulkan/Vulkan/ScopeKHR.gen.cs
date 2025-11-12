@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,44 +12,16 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ScopeKHR : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DeviceKHR = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     WorkgroupKHR = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     SubgroupKHR = 3,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     QueueFamilyKHR = 5,
 
     [SupportedApiProfile(

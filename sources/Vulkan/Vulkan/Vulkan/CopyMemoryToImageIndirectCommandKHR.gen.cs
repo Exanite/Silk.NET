@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,65 +12,23 @@ namespace Silk.NET.Vulkan;
 public partial struct CopyMemoryToImageIndirectCommandKHR
 {
     [NativeTypeName("VkDeviceAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong SrcAddress;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint BufferRowLength;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint BufferImageHeight;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageSubresourceLayers ImageSubresource;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Offset3D ImageOffset;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Extent3D ImageExtent;
 }

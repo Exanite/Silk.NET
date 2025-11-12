@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -14,52 +13,24 @@ namespace Silk.NET.Vulkan;
 [Flags]
 public enum ClusterAccelerationStructureAddressResolutionFlagsNV : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     NoneNV = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndirectedDstImplicitDataBitNV = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndirectedScratchDataBitNV = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndirectedDstAddressArrayBitNV = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndirectedDstSizesArrayBitNV = 0x00000008,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndirectedSrcInfosArrayBitNV = 0x00000010,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndirectedSrcInfosCountBitNV = 0x00000020,
 }

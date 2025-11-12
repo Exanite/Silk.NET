@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,15 +12,15 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum CoverageModulationModeNV : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [SupportedApiProfile("vulkan")]
     NoneNV = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [SupportedApiProfile("vulkan")]
     RgbNV = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [SupportedApiProfile("vulkan")]
     AlphaNV = 2,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [SupportedApiProfile("vulkan")]
     RgbaNV = 3,
 }

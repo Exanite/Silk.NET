@@ -200,7 +200,7 @@ public unsafe partial interface IALContext
             DeviceHandle device,
             [NativeTypeName("ALCenum")] int pname,
             [NativeTypeName("ALsizei")] int size,
-            [NativeTypeName("ALCint64SOFT *")] long* values
+            [NativeTypeName("ALCint64SOFT *")] nint* values
         );
 
         [SupportedApiProfile("al", ["ALC_SOFT_device_clock"])]
@@ -210,13 +210,13 @@ public unsafe partial interface IALContext
             DeviceHandle device,
             [NativeTypeName("ALCenum")] int pname,
             [NativeTypeName("ALsizei")] int size,
-            [NativeTypeName("ALCint64SOFT *")] Ref<long> values
+            [NativeTypeName("ALCint64SOFT *")] Ref<nint> values
         );
 
         [SupportedApiProfile("al", ["ALC_SOFT_device_clock"])]
         [Transformed]
         [NativeFunction("openal", EntryPoint = "alcGetInteger64vSOFT")]
-        static abstract long GetInteger64SOFT(
+        static abstract nint GetInteger64SOFT(
             DeviceHandle device,
             [NativeTypeName("ALCenum")] int pname
         );
@@ -647,7 +647,7 @@ public unsafe partial interface IALContext
         DeviceHandle device,
         [NativeTypeName("ALCenum")] int pname,
         [NativeTypeName("ALsizei")] int size,
-        [NativeTypeName("ALCint64SOFT *")] long* values
+        [NativeTypeName("ALCint64SOFT *")] nint* values
     );
 
     [SupportedApiProfile("al", ["ALC_SOFT_device_clock"])]
@@ -657,13 +657,13 @@ public unsafe partial interface IALContext
         DeviceHandle device,
         [NativeTypeName("ALCenum")] int pname,
         [NativeTypeName("ALsizei")] int size,
-        [NativeTypeName("ALCint64SOFT *")] Ref<long> values
+        [NativeTypeName("ALCint64SOFT *")] Ref<nint> values
     );
 
     [SupportedApiProfile("al", ["ALC_SOFT_device_clock"])]
     [Transformed]
     [NativeFunction("openal", EntryPoint = "alcGetInteger64vSOFT")]
-    long GetInteger64SOFT(DeviceHandle device, [NativeTypeName("ALCenum")] int pname);
+    nint GetInteger64SOFT(DeviceHandle device, [NativeTypeName("ALCenum")] int pname);
 
     [SupportedApiProfile("alc", ["ALC_VERSION_1_0", "ALC_VERSION_1_1"], MinVersion = "1.0")]
     [NativeFunction("openal", EntryPoint = "alcGetIntegerv")]

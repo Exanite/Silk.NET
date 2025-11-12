@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,24 +15,12 @@ public enum VideoEncodeH265CtbSizeFlagsKHR : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     Size16BitKHR = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     Size32BitKHR = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     Size64BitKHR = 0x00000004,
 }

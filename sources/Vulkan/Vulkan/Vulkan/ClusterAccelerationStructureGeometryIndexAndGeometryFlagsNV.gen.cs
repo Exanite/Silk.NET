@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,19 +10,11 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
     [NativeTypeName("uint32_t : 24")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint geometryIndex
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -34,11 +24,7 @@ public partial struct ClusterAccelerationStructureGeometryIndexAndGeometryFlagsN
     }
 
     [NativeTypeName("uint32_t : 5")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint reserved
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -48,11 +34,7 @@ public partial struct ClusterAccelerationStructureGeometryIndexAndGeometryFlagsN
     }
 
     [NativeTypeName("uint32_t : 3")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint geometryFlags
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

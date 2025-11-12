@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,63 +12,21 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum PerformanceCounterStorageKHR : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     Int32KHR = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     Int64KHR = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     Uint32KHR = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     Uint64KHR = 3,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     Float32KHR = 4,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     Float64KHR = 5,
 }

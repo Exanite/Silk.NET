@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
@@ -11,33 +9,17 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeH264SessionParametersFeedbackInfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> HasStdSPSOverrides;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> HasStdPPSOverrides;
 }

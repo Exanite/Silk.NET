@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,50 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoDecodeH265SessionParametersCreateInfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_h265"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_h265"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_h265"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxStdVPSCount;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_h265"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxStdSPSCount;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_h265"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxStdPPSCount;
 
     [NativeTypeName("const VkVideoDecodeH265SessionParametersAddInfoKHR *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_h265"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public VideoDecodeH265SessionParametersAddInfoKHR* PParametersAddInfo;
 }

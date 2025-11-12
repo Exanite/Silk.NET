@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,50 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct GraphicsShaderGroupCreateInfoNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint StageCount;
 
     [NativeTypeName("const VkPipelineShaderStageCreateInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineShaderStageCreateInfo* PStages;
 
     [NativeTypeName("const VkPipelineVertexInputStateCreateInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineVertexInputStateCreateInfo* PVertexInputState;
 
     [NativeTypeName("const VkPipelineTessellationStateCreateInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineTessellationStateCreateInfo* PTessellationState;
 }

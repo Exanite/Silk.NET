@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,113 +12,36 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum PerformanceCounterUnitKHR : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     GenericKHR = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     PercentageKHR = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     NanosecondsKHR = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     BytesKHR = 3,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     BytesPerSecondKHR = 4,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     KelvinKHR = 5,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     WattsKHR = 6,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     VoltsKHR = 7,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     AmpsKHR = 8,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     HertzKHR = 9,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_performance_query"],
-        ImpliesSets = [
-            "VK_KHR_performance_query+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_performance_query+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     CyclesKHR = 10,
 }

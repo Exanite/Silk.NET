@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,25 +11,11 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageViewMinLodCreateInfoEXT
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_view_min_lod"],
-        ImpliesSets = [
-            "VK_EXT_image_view_min_lod+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_view_min_lod+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_view_min_lod"],
-        ImpliesSets = [
-            "VK_EXT_image_view_min_lod+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_view_min_lod+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [SupportedApiProfile(

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,18 +12,10 @@ namespace Silk.NET.Vulkan;
 public partial struct VertexInputBindingDivisorDescription
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint Binding;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint Divisor;
 }

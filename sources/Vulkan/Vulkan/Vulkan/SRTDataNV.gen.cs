@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,115 +11,51 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct SRTDataNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Sx;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float A;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float B;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Pvx;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Sy;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float C;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Pvy;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Sz;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Pvz;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Qx;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Qy;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Qz;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Qw;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Tx;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Ty;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public float Tz;
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,24 +11,10 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceYcbcrImageArraysFeaturesEXT
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_image_arrays"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_image_arrays+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_image_arrays+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_image_arrays"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_image_arrays+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_image_arrays+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

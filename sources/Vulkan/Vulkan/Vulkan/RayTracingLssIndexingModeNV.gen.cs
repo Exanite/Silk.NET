@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,17 +12,9 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum RayTracingLssIndexingModeNV : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     ListNV = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     SuccessiveNV = 1,
 }

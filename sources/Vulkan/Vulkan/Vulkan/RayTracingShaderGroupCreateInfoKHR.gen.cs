@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,89 +11,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct RayTracingShaderGroupCreateInfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public RayTracingShaderGroupTypeKHR Type;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint GeneralShader;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint ClosestHitShader;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint AnyHitShader;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint IntersectionShader;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PShaderGroupCaptureReplayHandle;
 }

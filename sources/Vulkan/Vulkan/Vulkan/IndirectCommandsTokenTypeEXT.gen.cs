@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,114 +12,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum IndirectCommandsTokenTypeEXT : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     ExecutionSetEXT = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     PushConstantEXT = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     SequenceIndexEXT = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndexBufferEXT = 3,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     VertexBufferEXT = 4,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DrawIndexedEXT = 5,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DrawEXT = 6,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DrawIndexedCountEXT = 7,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DrawCountEXT = 8,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DispatchEXT = 9,
 
     [SupportedApiProfile(

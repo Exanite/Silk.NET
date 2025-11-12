@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,25 +15,9 @@ public enum IndirectCommandsInputModeFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     VulkanIndexBufferEXT = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     DxgiIndexBufferEXT = 0x00000002,
 }

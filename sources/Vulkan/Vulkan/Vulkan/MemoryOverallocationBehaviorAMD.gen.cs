@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,12 +12,12 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum MemoryOverallocationBehaviorAMD : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_AMD_memory_overallocation_behavior"])]
+    [SupportedApiProfile("vulkan")]
     DefaultAMD = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_AMD_memory_overallocation_behavior"])]
+    [SupportedApiProfile("vulkan")]
     AllowedAMD = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_AMD_memory_overallocation_behavior"])]
+    [SupportedApiProfile("vulkan")]
     DisallowedAMD = 2,
 }

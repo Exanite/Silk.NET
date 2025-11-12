@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,43 +15,15 @@ public enum GraphicsPipelineLibraryFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     VertexInputInterfaceBitEXT = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     PreRasterizationShadersBitEXT = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     FragmentShaderBitEXT = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     FragmentOutputInterfaceBitEXT = 0x00000008,
 }

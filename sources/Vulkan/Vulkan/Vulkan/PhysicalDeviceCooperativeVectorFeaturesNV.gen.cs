@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,24 +11,10 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCooperativeVectorFeaturesNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_vector"],
-        ImpliesSets = [
-            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_vector+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_vector"],
-        ImpliesSets = [
-            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_vector+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -44,13 +29,6 @@ public unsafe partial struct PhysicalDeviceCooperativeVectorFeaturesNV
     public MaybeBool<uint> CooperativeVector;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_vector"],
-        ImpliesSets = [
-            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_vector+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> CooperativeVectorTraining;
 }

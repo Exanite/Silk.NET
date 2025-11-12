@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,156 +11,58 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct RayTracingPipelineCreateInfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkPipelineCreateFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineCreateFlags Flags;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint StageCount;
 
     [NativeTypeName("const VkPipelineShaderStageCreateInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineShaderStageCreateInfo* PStages;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint GroupCount;
 
     [NativeTypeName("const VkRayTracingShaderGroupCreateInfoKHR *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public RayTracingShaderGroupCreateInfoKHR* PGroups;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MaxPipelineRayRecursionDepth;
 
     [NativeTypeName("const VkPipelineLibraryCreateInfoKHR *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineLibraryCreateInfoKHR* PLibraryInfo;
 
     [NativeTypeName("const VkRayTracingPipelineInterfaceCreateInfoKHR *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public RayTracingPipelineInterfaceCreateInfoKHR* PLibraryInterface;
 
     [NativeTypeName("const VkPipelineDynamicStateCreateInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineDynamicStateCreateInfo* PDynamicState;
 
     [NativeTypeName("VkPipelineLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineLayoutHandle Layout;
 
     [NativeTypeName("VkPipeline")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineHandle BasePipelineHandle;
 
     [NativeTypeName("int32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public int BasePipelineIndex;
 }

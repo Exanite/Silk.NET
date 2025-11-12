@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,38 +15,18 @@ public enum PartitionedAccelerationStructureInstanceFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     TriangleFacingCullDisableBitNV = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     TriangleFlipFacingBitNV = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     ForceOpaqueBitNV = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     ForceNoOpaqueBitNV = 0x00000008,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     EnableExplicitBoundingBoxNV = 0x00000010,
 }

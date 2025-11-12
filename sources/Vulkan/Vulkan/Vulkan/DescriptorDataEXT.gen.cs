@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -15,128 +14,47 @@ public unsafe partial struct DescriptorDataEXT
 {
     [FieldOffset(0)]
     [NativeTypeName("const VkSampler *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public SamplerHandle* PSampler;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorImageInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorImageInfo* PCombinedImageSampler;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorImageInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorImageInfo* PInputAttachmentImage;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorImageInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorImageInfo* PSampledImage;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorImageInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorImageInfo* PStorageImage;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorAddressInfoEXT *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorAddressInfoEXT* PUniformTexelBuffer;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorAddressInfoEXT *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorAddressInfoEXT* PStorageTexelBuffer;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorAddressInfoEXT *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorAddressInfoEXT* PUniformBuffer;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkDescriptorAddressInfoEXT *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorAddressInfoEXT* PStorageBuffer;
 
     [FieldOffset(0)]

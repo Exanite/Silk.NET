@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,29 +12,29 @@ namespace Silk.NET.Vulkan;
 public partial struct ShaderStatisticsInfoAMD
 {
     [NativeTypeName("VkShaderStageFlags")]
-    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
+    [SupportedApiProfile("vulkan")]
     public ShaderStageFlags ShaderStageMask;
 
-    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
+    [SupportedApiProfile("vulkan")]
     public ShaderResourceUsageAMD ResourceUsage;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
+    [SupportedApiProfile("vulkan")]
     public uint NumPhysicalVgprs;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
+    [SupportedApiProfile("vulkan")]
     public uint NumPhysicalSgprs;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
+    [SupportedApiProfile("vulkan")]
     public uint NumAvailableVgprs;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
+    [SupportedApiProfile("vulkan")]
     public uint NumAvailableSgprs;
 
     [NativeTypeName("uint32_t[3]")]
-    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
+    [SupportedApiProfile("vulkan")]
     public ShaderStatisticsInfoAMDComputeWorkGroupSize ComputeWorkGroupSize;
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,46 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineViewportExclusiveScissorStateCreateInfoNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_scissor_exclusive"],
-        ImpliesSets = [
-            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
-            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_scissor_exclusive"],
-        ImpliesSets = [
-            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
-            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_scissor_exclusive"],
-        ImpliesSets = [
-            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
-            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint ExclusiveScissorCount;
 
     [NativeTypeName("const VkRect2D *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_scissor_exclusive"],
-        ImpliesSets = [
-            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
-            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Rect2D* PExclusiveScissors;
 }

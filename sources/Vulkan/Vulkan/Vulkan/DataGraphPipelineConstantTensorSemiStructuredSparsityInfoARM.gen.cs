@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
@@ -11,47 +9,22 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DataGraphPipelineConstantTensorSemiStructuredSparsityInfoARM
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint Dimension;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint ZeroCount;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint GroupSize;
 }

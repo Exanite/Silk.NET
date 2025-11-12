@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -15,25 +14,25 @@ public unsafe partial struct PerformanceValueDataIntel
 {
     [FieldOffset(0)]
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
+    [SupportedApiProfile("vulkan")]
     public uint Value32;
 
     [FieldOffset(0)]
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
+    [SupportedApiProfile("vulkan")]
     public ulong Value64;
 
     [FieldOffset(0)]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
+    [SupportedApiProfile("vulkan")]
     public float ValueFloat;
 
     [FieldOffset(0)]
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> ValueBool;
 
     [FieldOffset(0)]
     [NativeTypeName("const char *")]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
+    [SupportedApiProfile("vulkan")]
     public sbyte* ValueString;
 }

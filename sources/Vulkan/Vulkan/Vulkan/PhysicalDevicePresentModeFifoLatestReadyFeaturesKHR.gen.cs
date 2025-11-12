@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,18 +11,10 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePresentModeFifoLatestReadyFeaturesKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_mode_fifo_latest_ready"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_mode_fifo_latest_ready"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,24 +12,12 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum DisplayPowerStateEXT : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_display_control"],
-        ImpliesSets = ["VK_EXT_display_surface_counter", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     OffEXT = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_display_control"],
-        ImpliesSets = ["VK_EXT_display_surface_counter", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     SuspendEXT = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_display_control"],
-        ImpliesSets = ["VK_EXT_display_surface_counter", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     OnEXT = 2,
 }

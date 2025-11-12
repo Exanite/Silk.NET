@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,27 +12,27 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ViewportCoordinateSwizzleNV : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     PositiveXNV = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     NegativeXNV = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     PositiveYNV = 2,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     NegativeYNV = 3,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     PositiveZNV = 4,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     NegativeZNV = 5,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     PositiveWNV = 6,
 
-    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
+    [SupportedApiProfile("vulkan")]
     NegativeWNV = 7,
 }

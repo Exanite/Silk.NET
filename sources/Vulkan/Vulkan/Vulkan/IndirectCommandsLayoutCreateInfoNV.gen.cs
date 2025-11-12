@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,65 +11,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct IndirectCommandsLayoutCreateInfoNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkIndirectCommandsLayoutUsageFlagsNV")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public IndirectCommandsLayoutUsageFlagsNV Flags;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PipelineBindPoint PipelineBindPoint;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint TokenCount;
 
     [NativeTypeName("const VkIndirectCommandsLayoutTokenNV *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public IndirectCommandsLayoutTokenNV* PTokens;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint StreamCount;
 
     [NativeTypeName("const uint32_t *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint* PStreamStrides;
 }

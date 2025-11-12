@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
@@ -11,44 +9,16 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SurfacePresentModeCompatibilityKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint PresentModeCount;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PresentModeKHR* PPresentModes;
 }

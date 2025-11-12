@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,117 +11,40 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct CooperativeMatrixPropertiesKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint MSize;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint NSize;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint KSize;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ComponentTypeKHR AType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ComponentTypeKHR BType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ComponentTypeKHR CType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ComponentTypeKHR ResultType;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SaturatingAccumulation;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ScopeKHR Scope;
 }

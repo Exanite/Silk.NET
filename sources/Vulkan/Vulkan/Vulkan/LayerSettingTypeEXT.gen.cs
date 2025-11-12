@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
@@ -12,27 +10,27 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum LayerSettingTypeEXT : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     Bool32EXT = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     Int32EXT = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     Int64EXT = 2,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     Uint32EXT = 3,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     Uint64EXT = 4,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     Float32EXT = 5,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     Float64EXT = 6,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
+    [SupportedApiProfile("vulkan")]
     StringEXT = 7,
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,40 +11,20 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplayPresentInfoKHR
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_display_swapchain"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_display_swapchain"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_display_swapchain"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Rect2D SrcRect;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_display_swapchain"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Rect2D DstRect;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_display_swapchain"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> Persistent;
 }

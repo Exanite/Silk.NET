@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,66 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SampleLocationsInfoEXT
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public SampleCountFlags SampleLocationsPerPixel;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Extent2D SampleLocationGridSize;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint SampleLocationsCount;
 
     [NativeTypeName("const VkSampleLocationEXT *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public SampleLocationEXT* PSampleLocations;
 }

@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,28 +12,28 @@ namespace Silk.NET.Vulkan;
 public unsafe partial struct DisplayPropertiesKHR
 {
     [NativeTypeName("VkDisplayKHR")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public DisplayKHRHandle Display;
 
     [NativeTypeName("const char *")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public sbyte* DisplayName;
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public Extent2D PhysicalDimensions;
 
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public Extent2D PhysicalResolution;
 
     [NativeTypeName("VkSurfaceTransformFlagsKHR")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public SurfaceTransformFlagsKHR SupportedTransforms;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> PlaneReorderPossible;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> PersistentContent;
 }

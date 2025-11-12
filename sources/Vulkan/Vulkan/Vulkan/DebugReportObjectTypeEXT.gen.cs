@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,100 +12,100 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum DebugReportObjectTypeEXT : uint
 {
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     UnknownEXT = 0,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     InstanceEXT = 1,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     PhysicalDeviceEXT = 2,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DeviceEXT = 3,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     QueueEXT = 4,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     SemaphoreEXT = 5,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     CommandBufferEXT = 6,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     FenceEXT = 7,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DeviceMemoryEXT = 8,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     BufferEXT = 9,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     ImageEXT = 10,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     EventEXT = 11,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     QueryPoolEXT = 12,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     BufferViewEXT = 13,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     ImageViewEXT = 14,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     ShaderModuleEXT = 15,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     PipelineCacheEXT = 16,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     PipelineLayoutEXT = 17,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     RenderPassEXT = 18,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     PipelineEXT = 19,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DescriptorSetLayoutEXT = 20,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     SamplerEXT = 21,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DescriptorPoolEXT = 22,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DescriptorSetEXT = 23,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     FramebufferEXT = 24,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     CommandPoolEXT = 25,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     SurfaceKhrEXT = 26,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     SwapchainKhrEXT = 27,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DebugReportCallbackExtEXT = 28,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DisplayKhrEXT = 29,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     DisplayModeKhrEXT = 30,
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [SupportedApiProfile("vulkan")]
     ValidationCacheExtEXT = 33,
 
     [SupportedApiProfile("vulkan", ["VK_EXT_debug_report", "VK_VERSION_1_1"], RequireAll = true)]

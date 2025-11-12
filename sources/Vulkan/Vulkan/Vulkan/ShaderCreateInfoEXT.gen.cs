@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,168 +11,56 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ShaderCreateInfoEXT
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkShaderCreateFlagsEXT")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ShaderCreateFlagsEXT Flags;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ShaderStageFlags Stage;
 
     [NativeTypeName("VkShaderStageFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ShaderStageFlags NextStage;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ShaderCodeTypeEXT CodeType;
 
     [NativeTypeName("size_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public nuint CodeSize;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PCode;
 
     [NativeTypeName("const char *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public sbyte* PName;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint SetLayoutCount;
 
     [NativeTypeName("const VkDescriptorSetLayout *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DescriptorSetLayoutHandle* PSetLayouts;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint PushConstantRangeCount;
 
     [NativeTypeName("const VkPushConstantRange *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PushConstantRange* PPushConstantRanges;
 
     [NativeTypeName("const VkSpecializationInfo *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public SpecializationInfo* PSpecializationInfo;
 }

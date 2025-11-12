@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,24 +15,12 @@ public enum IndirectCommandsLayoutUsageFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     ExplicitPreprocessBitNV = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     IndexedSequencesBitNV = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     UnorderedSequencesBitNV = 0x00000004,
 }

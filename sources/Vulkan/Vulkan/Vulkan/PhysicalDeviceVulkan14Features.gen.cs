@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,28 +11,10 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceVulkan14Features
 {
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -57,16 +38,7 @@ public unsafe partial struct PhysicalDeviceVulkan14Features
     public MaybeBool<uint> ShaderExpectAssume;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> RectangularLines;
 
     [NativeTypeName("VkBool32")]
@@ -74,55 +46,19 @@ public unsafe partial struct PhysicalDeviceVulkan14Features
     public MaybeBool<uint> BresenhamLines;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> SmoothLines;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> StippledRectangularLines;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> StippledBresenhamLines;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> StippledSmoothLines;
 
     [NativeTypeName("VkBool32")]
@@ -130,16 +66,7 @@ public unsafe partial struct PhysicalDeviceVulkan14Features
     public MaybeBool<uint> VertexAttributeInstanceRateDivisor;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> VertexAttributeInstanceRateZeroDivisor;
 
     [NativeTypeName("VkBool32")]

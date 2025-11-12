@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,26 +11,14 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplayModeStereoPropertiesNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_display_stereo"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_display_stereo"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_display_stereo"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> Hdmi3DSupported;
 }

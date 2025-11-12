@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,98 +10,46 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct AccelerationStructureGeometryLinearSweptSpheresDataNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Format VertexFormat;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DeviceOrHostAddressConstKHR VertexData;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong VertexStride;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public Format RadiusFormat;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DeviceOrHostAddressConstKHR RadiusData;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong RadiusStride;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public IndexType IndexType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public DeviceOrHostAddressConstKHR IndexData;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong IndexStride;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public RayTracingLssIndexingModeNV IndexingMode;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_linear_swept_spheres"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public RayTracingLssPrimitiveEndCapsModeNV EndCapsMode;
 }

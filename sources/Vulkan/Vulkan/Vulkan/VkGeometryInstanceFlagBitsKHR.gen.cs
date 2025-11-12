@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -16,44 +15,16 @@ public enum GeometryInstanceFlagsKHR : uint
 {
     None = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_acceleration_structure"],
-        ImpliesSets = [
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_1+VK_EXT_descriptor_indexing+VK_KHR_buffer_device_address",
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     TriangleFacingCullDisableBitKHR = 0x00000001,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_acceleration_structure"],
-        ImpliesSets = [
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_1+VK_EXT_descriptor_indexing+VK_KHR_buffer_device_address",
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     TriangleFlipFacingBitKHR = 0x00000002,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_acceleration_structure"],
-        ImpliesSets = [
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_1+VK_EXT_descriptor_indexing+VK_KHR_buffer_device_address",
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     ForceOpaqueBitKHR = 0x00000004,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_acceleration_structure"],
-        ImpliesSets = [
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_1+VK_EXT_descriptor_indexing+VK_KHR_buffer_device_address",
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     ForceNoOpaqueBitKHR = 0x00000008,
 
     [SupportedApiProfile(
@@ -76,14 +47,7 @@ public enum GeometryInstanceFlagsKHR : uint
     )]
     DisableOpacityMicromapsBitEXT = 0x00000020,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_acceleration_structure"],
-        ImpliesSets = [
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_1+VK_EXT_descriptor_indexing+VK_KHR_buffer_device_address",
-            "VK_KHR_deferred_host_operations+VK_VERSION_1_2",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     TriangleFrontCounterclockwiseBitKHR = TriangleFlipFacingBitKHR,
 
     [SupportedApiProfile(

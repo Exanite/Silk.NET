@@ -2,8 +2,6 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
-using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,67 +10,35 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct PartitionedAccelerationStructureWriteInstanceDataNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public TransformMatrixKHR Transform;
 
     [NativeTypeName("float[6]")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PartitionedAccelerationStructureWriteInstanceDataNVExplicitAABB ExplicitAABB;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint InstanceID;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint InstanceMask;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint InstanceContributionToHitGroupIndex;
 
     [NativeTypeName("VkPartitionedAccelerationStructureInstanceFlagsNV")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public PartitionedAccelerationStructureInstanceFlagsNV InstanceFlags;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint InstanceIndex;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public uint PartitionIndex;
 
     [NativeTypeName("VkDeviceAddress")]

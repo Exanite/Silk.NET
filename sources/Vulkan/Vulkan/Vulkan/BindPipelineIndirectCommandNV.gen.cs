@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,10 +12,6 @@ namespace Silk.NET.Vulkan;
 public partial struct BindPipelineIndirectCommandNV
 {
     [NativeTypeName("VkDeviceAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands_compute"],
-        ImpliesSets = ["VK_NV_device_generated_commands"]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong PipelineAddress;
 }

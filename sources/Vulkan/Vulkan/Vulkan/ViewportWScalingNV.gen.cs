@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,9 +11,9 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ViewportWScalingNV
 {
-    [SupportedApiProfile("vulkan", ["VK_NV_clip_space_w_scaling"])]
+    [SupportedApiProfile("vulkan")]
     public float Xcoeff;
 
-    [SupportedApiProfile("vulkan", ["VK_NV_clip_space_w_scaling"])]
+    [SupportedApiProfile("vulkan")]
     public float Ycoeff;
 }

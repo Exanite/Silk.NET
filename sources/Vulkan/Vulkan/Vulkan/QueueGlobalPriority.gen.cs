@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,52 +12,16 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum QueueGlobalPriority : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     Low = 128,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     Medium = 256,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     High = 512,
 
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.4"
-    )]
+    [SupportedApiProfile("vulkan")]
     Realtime = 1024,
 
     [SupportedApiProfile("vulkan", ["VK_EXT_global_priority"])]

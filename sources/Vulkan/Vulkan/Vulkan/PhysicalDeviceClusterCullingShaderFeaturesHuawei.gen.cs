@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,24 +11,10 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceClusterCullingShaderFeaturesHuawei
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_cluster_culling_shader"],
-        ImpliesSets = [
-            "VK_HUAWEI_cluster_culling_shader+VK_KHR_get_physical_device_properties2",
-            "VK_HUAWEI_cluster_culling_shader+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_cluster_culling_shader"],
-        ImpliesSets = [
-            "VK_HUAWEI_cluster_culling_shader+VK_KHR_get_physical_device_properties2",
-            "VK_HUAWEI_cluster_culling_shader+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -44,13 +29,6 @@ public unsafe partial struct PhysicalDeviceClusterCullingShaderFeaturesHuawei
     public MaybeBool<uint> ClustercullingShader;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_cluster_culling_shader"],
-        ImpliesSets = [
-            "VK_HUAWEI_cluster_culling_shader+VK_KHR_get_physical_device_properties2",
-            "VK_HUAWEI_cluster_culling_shader+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public MaybeBool<uint> MultiviewClusterCullingShader;
 }

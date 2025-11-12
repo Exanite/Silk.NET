@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -12,56 +11,21 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceExtendedSparseAddressSpacePropertiesNV
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public StructureType SType;
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public void* PNext;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ulong ExtendedSparseAddressSpaceSize;
 
     [NativeTypeName("VkImageUsageFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public ImageUsageFlags ExtendedSparseImageUsageFlags;
 
     [NativeTypeName("VkBufferUsageFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [SupportedApiProfile("vulkan")]
     public BufferUsageFlags ExtendedSparseBufferUsageFlags;
 }

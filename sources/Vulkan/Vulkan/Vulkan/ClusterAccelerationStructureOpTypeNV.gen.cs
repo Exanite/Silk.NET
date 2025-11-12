@@ -3,7 +3,6 @@
 // Ported from the Vulkan headers and corresponding dependencies.
 // Original source is Copyright 2015-2023 The Khronos Group Inc. Licensed under the MIT license.
 using System;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,45 +12,21 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ClusterAccelerationStructureOpTypeNV : uint
 {
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     MoveObjectsNV = 0,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     BuildClustersBottomLevelNV = 1,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     BuildTriangleClusterNV = 2,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     BuildTriangleClusterTemplateNV = 3,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     InstantiateTriangleClusterNV = 4,
 
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [SupportedApiProfile("vulkan")]
     GetClusterTemplateIndicesNV = 5,
 }
