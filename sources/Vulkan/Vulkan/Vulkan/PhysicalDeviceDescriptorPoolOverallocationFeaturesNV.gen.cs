@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDescriptorPoolOverallocationFeaturesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_descriptor_pool_overallocation"],
+        ImpliesSets = ["VK_VERSION_1_1"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_descriptor_pool_overallocation"],
+        ImpliesSets = ["VK_VERSION_1_1"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

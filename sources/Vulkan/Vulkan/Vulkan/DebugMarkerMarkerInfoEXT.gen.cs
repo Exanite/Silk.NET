@@ -11,18 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugMarkerMarkerInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
     public void* PNext;
 
     [NativeTypeName("const char *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
     public sbyte* PMarkerName;
 
     [NativeTypeName("float[4]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
     public DebugMarkerMarkerInfoEXTColor Color;
 }

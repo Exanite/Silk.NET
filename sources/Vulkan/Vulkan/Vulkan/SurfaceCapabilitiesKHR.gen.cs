@@ -12,38 +12,38 @@ namespace Silk.NET.Vulkan;
 public partial struct SurfaceCapabilitiesKHR
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public uint MinImageCount;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public uint MaxImageCount;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public Extent2D CurrentExtent;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public Extent2D MinImageExtent;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public Extent2D MaxImageExtent;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public uint MaxImageArrayLayers;
 
     [NativeTypeName("VkSurfaceTransformFlagsKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public SurfaceTransformFlagsKHR SupportedTransforms;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public SurfaceTransformFlagsKHR CurrentTransform;
 
     [NativeTypeName("VkCompositeAlphaFlagsKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public CompositeAlphaFlagsKHR SupportedCompositeAlpha;
 
     [NativeTypeName("VkImageUsageFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     public ImageUsageFlags SupportedUsageFlags;
 }

@@ -12,15 +12,31 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum VideoEncodeAV1PredictionModeKHR : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_encode_av1"],
+        ImpliesSets = ["VK_KHR_video_encode_queue"]
+    )]
     IntraOnlyKHR = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_encode_av1"],
+        ImpliesSets = ["VK_KHR_video_encode_queue"]
+    )]
     SingleReferenceKHR = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_encode_av1"],
+        ImpliesSets = ["VK_KHR_video_encode_queue"]
+    )]
     UnidirectionalCompoundKHR = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_encode_av1"],
+        ImpliesSets = ["VK_KHR_video_encode_queue"]
+    )]
     BidirectionalCompoundKHR = 3,
 }

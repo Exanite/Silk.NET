@@ -11,29 +11,29 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugUtilsObjectTagInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public ObjectType ObjectType;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public ulong ObjectHandle;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public ulong TagName;
 
     [NativeTypeName("size_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public nuint TagSize;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public void* PTag;
 }

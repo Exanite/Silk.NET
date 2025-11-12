@@ -11,21 +11,21 @@ namespace Silk.NET.Vulkan;
 public unsafe partial struct LayerSettingEXT
 {
     [NativeTypeName("const char *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
     public sbyte* PLayerName;
 
     [NativeTypeName("const char *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
     public sbyte* PSettingName;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
     public LayerSettingTypeEXT Type;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
     public uint ValueCount;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_layer_settings"])]
     public void* PValues;
 }

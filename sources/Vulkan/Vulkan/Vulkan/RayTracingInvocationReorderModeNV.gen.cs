@@ -12,9 +12,17 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum RayTracingInvocationReorderModeNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_invocation_reorder"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     NoneNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_invocation_reorder"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     ReorderNV = 1,
 }

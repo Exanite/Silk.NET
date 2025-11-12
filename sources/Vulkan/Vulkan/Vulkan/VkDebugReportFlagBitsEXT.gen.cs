@@ -15,18 +15,18 @@ public enum DebugReportFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     InformationBitEXT = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     WarningBitEXT = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     PerformanceWarningBitEXT = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     ErrorBitEXT = 0x00000008,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     DebugBitEXT = 0x00000010,
 }

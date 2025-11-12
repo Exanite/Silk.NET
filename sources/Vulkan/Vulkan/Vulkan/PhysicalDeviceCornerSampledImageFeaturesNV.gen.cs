@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCornerSampledImageFeaturesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_corner_sampled_image"],
+        ImpliesSets = [
+            "VK_NV_corner_sampled_image+VK_KHR_get_physical_device_properties2",
+            "VK_NV_corner_sampled_image+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_corner_sampled_image"],
+        ImpliesSets = [
+            "VK_NV_corner_sampled_image+VK_KHR_get_physical_device_properties2",
+            "VK_NV_corner_sampled_image+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

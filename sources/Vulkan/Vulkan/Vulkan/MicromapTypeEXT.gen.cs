@@ -12,6 +12,13 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum MicromapTypeEXT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_opacity_micromap"],
+        ImpliesSets = [
+            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
+            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
+        ]
+    )]
     OpacityMicromapEXT = 0,
 }

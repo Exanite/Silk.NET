@@ -10,24 +10,66 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImportSemaphoreFdInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_semaphore_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_semaphore_fd+VK_KHR_external_semaphore",
+            "VK_KHR_external_semaphore_fd+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_semaphore_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_semaphore_fd+VK_KHR_external_semaphore",
+            "VK_KHR_external_semaphore_fd+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkSemaphore")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_semaphore_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_semaphore_fd+VK_KHR_external_semaphore",
+            "VK_KHR_external_semaphore_fd+VK_VERSION_1_1",
+        ]
+    )]
     public SemaphoreHandle Semaphore;
 
     [NativeTypeName("VkSemaphoreImportFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_semaphore_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_semaphore_fd+VK_KHR_external_semaphore",
+            "VK_KHR_external_semaphore_fd+VK_VERSION_1_1",
+        ]
+    )]
     public SemaphoreImportFlags Flags;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_semaphore_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_semaphore_fd+VK_KHR_external_semaphore",
+            "VK_KHR_external_semaphore_fd+VK_VERSION_1_1",
+        ]
+    )]
     public ExternalSemaphoreHandleTypeFlags HandleType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_semaphore_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_semaphore_fd+VK_KHR_external_semaphore",
+            "VK_KHR_external_semaphore_fd+VK_VERSION_1_1",
+        ]
+    )]
     public int Fd;
 }

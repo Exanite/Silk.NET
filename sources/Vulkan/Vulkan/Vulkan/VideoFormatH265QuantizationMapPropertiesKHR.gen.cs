@@ -10,13 +10,37 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoFormatH265QuantizationMapPropertiesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_encode_h265", "VK_KHR_video_encode_quantization_map"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
+        ],
+        RequireAll = true
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_encode_h265", "VK_KHR_video_encode_quantization_map"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
+        ],
+        RequireAll = true
+    )]
     public void* PNext;
 
     [NativeTypeName("VkVideoEncodeH265CtbSizeFlagsKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_encode_h265", "VK_KHR_video_encode_quantization_map"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
+        ],
+        RequireAll = true
+    )]
     public VideoEncodeH265CtbSizeFlagsKHR CompatibleCtbSizes;
 }

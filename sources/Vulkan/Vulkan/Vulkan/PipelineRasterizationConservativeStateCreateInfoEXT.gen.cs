@@ -10,20 +10,55 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineRasterizationConservativeStateCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkPipelineRasterizationConservativeStateCreateFlagsEXT")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     public uint Flags;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     public ConservativeRasterizationModeEXT ConservativeRasterizationMode;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     public float ExtraPrimitiveOverestimationSize;
 }

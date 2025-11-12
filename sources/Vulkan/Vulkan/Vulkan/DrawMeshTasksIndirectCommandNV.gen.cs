@@ -12,10 +12,24 @@ namespace Silk.NET.Vulkan;
 public partial struct DrawMeshTasksIndirectCommandNV
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_mesh_shader"],
+        ImpliesSets = [
+            "VK_NV_mesh_shader+VK_KHR_get_physical_device_properties2",
+            "VK_NV_mesh_shader+VK_VERSION_1_1",
+        ]
+    )]
     public uint TaskCount;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_mesh_shader"],
+        ImpliesSets = [
+            "VK_NV_mesh_shader+VK_KHR_get_physical_device_properties2",
+            "VK_NV_mesh_shader+VK_VERSION_1_1",
+        ]
+    )]
     public uint FirstTask;
 }

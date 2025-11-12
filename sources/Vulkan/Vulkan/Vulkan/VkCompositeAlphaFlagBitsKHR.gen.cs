@@ -14,15 +14,15 @@ public enum CompositeAlphaFlagsKHR : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     OpaqueBitKHR = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     PreMultipliedBitKHR = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     PostMultipliedBitKHR = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     InheritBitKHR = 0x00000008,
 }

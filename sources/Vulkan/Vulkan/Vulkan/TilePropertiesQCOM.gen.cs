@@ -11,18 +11,53 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct TilePropertiesQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_tile_properties"],
+        ImpliesSets = [
+            "VK_QCOM_tile_properties+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_tile_properties+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_tile_properties"],
+        ImpliesSets = [
+            "VK_QCOM_tile_properties+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_tile_properties+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_tile_properties"],
+        ImpliesSets = [
+            "VK_QCOM_tile_properties+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_tile_properties+VK_VERSION_1_1",
+        ]
+    )]
     public Extent3D TileSize;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_tile_properties"],
+        ImpliesSets = [
+            "VK_QCOM_tile_properties+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_tile_properties+VK_VERSION_1_1",
+        ]
+    )]
     public Extent2D ApronSize;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_tile_properties"],
+        ImpliesSets = [
+            "VK_QCOM_tile_properties+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_tile_properties+VK_VERSION_1_1",
+        ]
+    )]
     public Offset2D Origin;
 }

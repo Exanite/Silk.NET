@@ -11,9 +11,23 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum LayeredDriverUnderlyingApiMSFT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MSFT_layered_driver"],
+        ImpliesSets = [
+            "VK_MSFT_layered_driver+VK_KHR_get_physical_device_properties2",
+            "VK_MSFT_layered_driver+VK_VERSION_1_1",
+        ]
+    )]
     NoneMSFT = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MSFT_layered_driver"],
+        ImpliesSets = [
+            "VK_MSFT_layered_driver+VK_KHR_get_physical_device_properties2",
+            "VK_MSFT_layered_driver+VK_VERSION_1_1",
+        ]
+    )]
     D3D12Msft = 1,
 }

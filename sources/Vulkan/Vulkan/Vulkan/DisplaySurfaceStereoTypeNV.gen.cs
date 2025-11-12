@@ -12,15 +12,31 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum DisplaySurfaceStereoTypeNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     NoneNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     OnboardDinNV = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     Hdmi3DNV = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     InbandDisplayportNV = 3,
 }

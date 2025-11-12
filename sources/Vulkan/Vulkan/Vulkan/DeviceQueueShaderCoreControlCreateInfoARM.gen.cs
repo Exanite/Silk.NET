@@ -11,13 +11,25 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DeviceQueueShaderCoreControlCreateInfoARM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_scheduling_controls"],
+        ImpliesSets = ["VK_ARM_shader_core_builtins"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_scheduling_controls"],
+        ImpliesSets = ["VK_ARM_shader_core_builtins"]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_scheduling_controls"],
+        ImpliesSets = ["VK_ARM_shader_core_builtins"]
+    )]
     public uint ShaderCoreCount;
 }

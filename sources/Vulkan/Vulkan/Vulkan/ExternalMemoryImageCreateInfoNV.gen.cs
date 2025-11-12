@@ -11,14 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ExternalMemoryImageCreateInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_external_memory"],
+        ImpliesSets = ["VK_NV_external_memory_capabilities"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_external_memory"],
+        ImpliesSets = ["VK_NV_external_memory_capabilities"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkExternalMemoryHandleTypeFlagsNV")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_external_memory"],
+        ImpliesSets = ["VK_NV_external_memory_capabilities"]
+    )]
     public ExternalMemoryHandleTypeFlagsNV HandleTypes;
 }

@@ -10,22 +10,64 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DeviceFaultInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("char[256]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public DeviceFaultInfoEXTDescription Description;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public DeviceFaultAddressInfoEXT* PAddressInfos;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public DeviceFaultVendorInfoEXT* PVendorInfos;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public void* PVendorBinaryData;
 }

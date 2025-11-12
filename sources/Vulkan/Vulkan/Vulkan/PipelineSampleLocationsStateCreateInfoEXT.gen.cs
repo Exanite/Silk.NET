@@ -11,17 +11,45 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineSampleLocationsStateCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> SampleLocationsEnable;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public SampleLocationsInfoEXT SampleLocationsInfo;
 }

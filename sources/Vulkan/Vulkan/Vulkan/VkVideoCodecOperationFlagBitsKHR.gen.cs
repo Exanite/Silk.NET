@@ -13,7 +13,11 @@ namespace Silk.NET.Vulkan;
 [Flags]
 public enum VideoCodecOperationFlagsKHR : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_queue"],
+        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
+    )]
     NoneKHR = 0,
 
     [SupportedApiProfile(

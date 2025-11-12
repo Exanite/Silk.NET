@@ -12,6 +12,10 @@ namespace Silk.NET.Vulkan;
 public partial struct BindPipelineIndirectCommandNV
 {
     [NativeTypeName("VkDeviceAddress")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_generated_commands_compute"],
+        ImpliesSets = ["VK_NV_device_generated_commands"]
+    )]
     public ulong PipelineAddress;
 }

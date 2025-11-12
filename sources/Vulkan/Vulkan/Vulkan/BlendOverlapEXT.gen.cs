@@ -12,12 +12,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum BlendOverlapEXT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     UncorrelatedEXT = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     DisjointEXT = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     ConjointEXT = 2,
 }

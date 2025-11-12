@@ -11,13 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct CopyCommandTransformInfoQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_rotated_copy_commands"],
+        ImpliesSets = [
+            "VK_QCOM_rotated_copy_commands+VK_KHR_copy_commands2",
+            "VK_QCOM_rotated_copy_commands+VK_VERSION_1_3",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_rotated_copy_commands"],
+        ImpliesSets = [
+            "VK_QCOM_rotated_copy_commands+VK_KHR_copy_commands2",
+            "VK_QCOM_rotated_copy_commands+VK_VERSION_1_3",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_rotated_copy_commands"],
+        ImpliesSets = [
+            "VK_QCOM_rotated_copy_commands+VK_KHR_copy_commands2",
+            "VK_QCOM_rotated_copy_commands+VK_VERSION_1_3",
+        ]
+    )]
     public SurfaceTransformFlagsKHR Transform;
 }

@@ -11,13 +11,13 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineRasterizationStateRasterizationOrderAMD
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_rasterization_order"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_rasterization_order"])]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_rasterization_order"])]
     public RasterizationOrderAMD RasterizationOrder;
 }

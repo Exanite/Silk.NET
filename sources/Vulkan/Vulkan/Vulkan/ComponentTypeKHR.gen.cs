@@ -11,37 +11,114 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ComponentTypeKHR : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Float16KHR = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Float32KHR = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Float64KHR = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Sint8KHR = 3,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Sint16KHR = 4,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Sint32KHR = 5,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Sint64KHR = 6,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Uint8KHR = 7,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Uint16KHR = 8,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Uint32KHR = 9,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_vector"],
+        ImpliesSets = [
+            "VK_NV_cooperative_vector+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_vector+VK_VERSION_1_1",
+        ]
+    )]
     Uint64KHR = 10,
 
     [SupportedApiProfile(

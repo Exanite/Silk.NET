@@ -12,16 +12,44 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum TimeDomainKHR : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_calibrated_timestamps"],
+        ImpliesSets = [
+            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
+        ]
+    )]
     DeviceKHR = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_calibrated_timestamps"],
+        ImpliesSets = [
+            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
+        ]
+    )]
     ClockMonotonicKHR = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_calibrated_timestamps"],
+        ImpliesSets = [
+            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
+        ]
+    )]
     ClockMonotonicRawKHR = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_calibrated_timestamps"],
+        ImpliesSets = [
+            "VK_KHR_calibrated_timestamps+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_calibrated_timestamps+VK_VERSION_1_1",
+        ]
+    )]
     QueryPerformanceCounterKHR = 3,
 
     [SupportedApiProfile(

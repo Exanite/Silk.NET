@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePrimitiveTopologyListRestartFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_primitive_topology_list_restart"],
+        ImpliesSets = [
+            "VK_EXT_primitive_topology_list_restart+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_primitive_topology_list_restart+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_primitive_topology_list_restart"],
+        ImpliesSets = [
+            "VK_EXT_primitive_topology_list_restart+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_primitive_topology_list_restart+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -29,6 +43,13 @@ public unsafe partial struct PhysicalDevicePrimitiveTopologyListRestartFeaturesE
     public MaybeBool<uint> PrimitiveTopologyListRestart;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_primitive_topology_list_restart"],
+        ImpliesSets = [
+            "VK_EXT_primitive_topology_list_restart+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_primitive_topology_list_restart+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> PrimitiveTopologyPatchListRestart;
 }

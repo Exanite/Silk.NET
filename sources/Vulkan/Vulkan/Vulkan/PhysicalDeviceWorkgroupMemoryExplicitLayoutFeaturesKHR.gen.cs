@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_workgroup_memory_explicit_layout"],
+        ImpliesSets = [
+            "VK_KHR_workgroup_memory_explicit_layout+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_workgroup_memory_explicit_layout+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_workgroup_memory_explicit_layout"],
+        ImpliesSets = [
+            "VK_KHR_workgroup_memory_explicit_layout+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_workgroup_memory_explicit_layout+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -29,14 +43,35 @@ public unsafe partial struct PhysicalDeviceWorkgroupMemoryExplicitLayoutFeatures
     public MaybeBool<uint> WorkgroupMemoryExplicitLayout;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_workgroup_memory_explicit_layout"],
+        ImpliesSets = [
+            "VK_KHR_workgroup_memory_explicit_layout+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_workgroup_memory_explicit_layout+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> WorkgroupMemoryExplicitLayoutScalarBlockLayout;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_workgroup_memory_explicit_layout"],
+        ImpliesSets = [
+            "VK_KHR_workgroup_memory_explicit_layout+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_workgroup_memory_explicit_layout+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> WorkgroupMemoryExplicitLayout8BitAccess;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_workgroup_memory_explicit_layout"],
+        ImpliesSets = [
+            "VK_KHR_workgroup_memory_explicit_layout+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_workgroup_memory_explicit_layout+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> WorkgroupMemoryExplicitLayout16BitAccess;
 }

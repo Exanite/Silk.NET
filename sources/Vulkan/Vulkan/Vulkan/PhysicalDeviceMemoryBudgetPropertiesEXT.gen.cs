@@ -11,17 +11,45 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceMemoryBudgetPropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_memory_budget"],
+        ImpliesSets = [
+            "VK_EXT_memory_budget+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_memory_budget+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_memory_budget"],
+        ImpliesSets = [
+            "VK_EXT_memory_budget+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_memory_budget+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkDeviceSize[16]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_memory_budget"],
+        ImpliesSets = [
+            "VK_EXT_memory_budget+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_memory_budget+VK_VERSION_1_1",
+        ]
+    )]
     public PhysicalDeviceMemoryBudgetPropertiesEXTHeapBudget HeapBudget;
 
     [NativeTypeName("VkDeviceSize[16]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_memory_budget"],
+        ImpliesSets = [
+            "VK_EXT_memory_budget+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_memory_budget+VK_VERSION_1_1",
+        ]
+    )]
     public PhysicalDeviceMemoryBudgetPropertiesEXTHeapUsage HeapUsage;
 }

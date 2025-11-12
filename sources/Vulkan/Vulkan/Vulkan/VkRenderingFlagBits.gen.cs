@@ -15,13 +15,25 @@ public enum RenderingFlags : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
+        MinVersion = "1.3"
+    )]
     ContentsSecondaryCommandBuffersBit = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
+        MinVersion = "1.3"
+    )]
     SuspendingBit = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
+        MinVersion = "1.3"
+    )]
     ResumingBit = 0x00000004,
 
     [SupportedApiProfile(

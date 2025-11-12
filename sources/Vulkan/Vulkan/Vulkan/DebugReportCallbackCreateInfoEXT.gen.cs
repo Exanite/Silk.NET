@@ -11,21 +11,21 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugReportCallbackCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     public void* PNext;
 
     [NativeTypeName("VkDebugReportFlagsEXT")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     public DebugReportFlagsEXT Flags;
 
     [NativeTypeName("PFN_vkDebugReportCallbackEXT")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     public PFNVkDebugReportCallbackEXT PfnCallback;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     public void* PUserData;
 }

@@ -11,13 +11,25 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct RectLayerKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_incremental_present"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public Offset2D Offset;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_incremental_present"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public Extent2D Extent;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_incremental_present"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public uint Layer;
 }

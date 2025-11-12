@@ -11,9 +11,9 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum PerformanceParameterTypeIntel : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     HwCountersSupportedIntel = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     StreamMarkerValidBitsIntel = 1,
 }

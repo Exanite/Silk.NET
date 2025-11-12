@@ -12,9 +12,9 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum RasterizationOrderAMD : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_rasterization_order"])]
     StrictAMD = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_rasterization_order"])]
     RelaxedAMD = 1,
 }

@@ -15,15 +15,15 @@ public enum ExternalMemoryHandleTypeFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     OpaqueWin32BitNV = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     OpaqueWin32KmtBitNV = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     D3D11ImageBitNV = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     D3D11ImageKmtBitNV = 0x00000008,
 }

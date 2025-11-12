@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFaultFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -29,6 +43,13 @@ public unsafe partial struct PhysicalDeviceFaultFeaturesEXT
     public MaybeBool<uint> DeviceFault;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> DeviceFaultVendorBinary;
 }

@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePrimitivesGeneratedQueryFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_primitives_generated_query"],
+        ImpliesSets = ["VK_EXT_transform_feedback"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_primitives_generated_query"],
+        ImpliesSets = ["VK_EXT_transform_feedback"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -26,10 +34,18 @@ public unsafe partial struct PhysicalDevicePrimitivesGeneratedQueryFeaturesEXT
     public MaybeBool<uint> PrimitivesGeneratedQuery;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_primitives_generated_query"],
+        ImpliesSets = ["VK_EXT_transform_feedback"]
+    )]
     public MaybeBool<uint> PrimitivesGeneratedQueryWithRasterizerDiscard;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_primitives_generated_query"],
+        ImpliesSets = ["VK_EXT_transform_feedback"]
+    )]
     public MaybeBool<uint> PrimitivesGeneratedQueryWithNonZeroStreams;
 }

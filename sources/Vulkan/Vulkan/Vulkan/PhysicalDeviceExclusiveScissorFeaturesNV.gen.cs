@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceExclusiveScissorFeaturesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_scissor_exclusive"],
+        ImpliesSets = [
+            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
+            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_scissor_exclusive"],
+        ImpliesSets = [
+            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
+            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

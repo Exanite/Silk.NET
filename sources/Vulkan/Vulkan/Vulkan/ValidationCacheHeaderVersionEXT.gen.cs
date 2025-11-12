@@ -12,6 +12,6 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ValidationCacheHeaderVersionEXT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_cache"])]
     OneEXT = 1,
 }

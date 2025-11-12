@@ -10,20 +10,40 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineFragmentShadingRateEnumStateCreateInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_fragment_shading_rate_enums"],
+        ImpliesSets = ["VK_KHR_fragment_shading_rate"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_fragment_shading_rate_enums"],
+        ImpliesSets = ["VK_KHR_fragment_shading_rate"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_fragment_shading_rate_enums"],
+        ImpliesSets = ["VK_KHR_fragment_shading_rate"]
+    )]
     public FragmentShadingRateTypeNV ShadingRateType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_fragment_shading_rate_enums"],
+        ImpliesSets = ["VK_KHR_fragment_shading_rate"]
+    )]
     public FragmentShadingRateNV ShadingRate;
 
     [NativeTypeName("VkFragmentShadingRateCombinerOpKHR[2]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_fragment_shading_rate_enums"],
+        ImpliesSets = ["VK_KHR_fragment_shading_rate"]
+    )]
     public PipelineFragmentShadingRateEnumStateCreateInfoNVCombinerOps CombinerOps;
 }

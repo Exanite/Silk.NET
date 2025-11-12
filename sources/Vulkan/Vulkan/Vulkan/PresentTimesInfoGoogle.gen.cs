@@ -10,18 +10,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PresentTimesInfoGoogle
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GOOGLE_display_timing"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GOOGLE_display_timing"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GOOGLE_display_timing"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public uint SwapchainCount;
 
     [NativeTypeName("const VkPresentTimeGOOGLE *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GOOGLE_display_timing"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public PresentTimeGoogle* PTimes;
 }

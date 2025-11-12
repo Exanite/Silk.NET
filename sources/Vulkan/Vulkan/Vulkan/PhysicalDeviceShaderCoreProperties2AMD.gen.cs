@@ -11,17 +11,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderCoreProperties2AMD
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_shader_core_properties2"],
+        ImpliesSets = ["VK_AMD_shader_core_properties"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_shader_core_properties2"],
+        ImpliesSets = ["VK_AMD_shader_core_properties"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkShaderCorePropertiesFlagsAMD")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_shader_core_properties2"],
+        ImpliesSets = ["VK_AMD_shader_core_properties"]
+    )]
     public ShaderCorePropertiesFlagsAMD ShaderCoreFeatures;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_shader_core_properties2"],
+        ImpliesSets = ["VK_AMD_shader_core_properties"]
+    )]
     public uint ActiveComputeUnitCount;
 }

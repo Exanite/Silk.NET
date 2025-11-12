@@ -12,18 +12,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum PerformanceValueTypeIntel : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     Uint32Intel = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     Uint64Intel = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     FloatIntel = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     BoolIntel = 3,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     StringIntel = 4,
 }

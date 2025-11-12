@@ -10,21 +10,63 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ColorBlendEquationEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendFactor SrcColorBlendFactor;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendFactor DstColorBlendFactor;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendOp ColorBlendOp;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendFactor SrcAlphaBlendFactor;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendFactor DstAlphaBlendFactor;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendOp AlphaBlendOp;
 }

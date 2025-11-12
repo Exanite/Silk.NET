@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceBufferDeviceAddressFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_buffer_device_address"],
+        ImpliesSets = [
+            "VK_EXT_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_buffer_device_address+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_buffer_device_address"],
+        ImpliesSets = [
+            "VK_EXT_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_buffer_device_address+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -22,10 +36,24 @@ public unsafe partial struct PhysicalDeviceBufferDeviceAddressFeaturesEXT
     public MaybeBool<uint> BufferDeviceAddress;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_buffer_device_address"],
+        ImpliesSets = [
+            "VK_EXT_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_buffer_device_address+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> BufferDeviceAddressCaptureReplay;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_buffer_device_address"],
+        ImpliesSets = [
+            "VK_EXT_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_buffer_device_address+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> BufferDeviceAddressMultiDevice;
 }

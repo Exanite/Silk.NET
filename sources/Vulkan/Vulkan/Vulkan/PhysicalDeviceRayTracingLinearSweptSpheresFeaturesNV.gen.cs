@@ -11,17 +11,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public MaybeBool<uint> Spheres;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public MaybeBool<uint> LinearSweptSpheres;
 }

@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePresentWaitFeaturesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_present_wait"],
+        ImpliesSets = ["VK_KHR_present_id", "VK_KHR_swapchain"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_present_wait"],
+        ImpliesSets = ["VK_KHR_present_id", "VK_KHR_swapchain"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

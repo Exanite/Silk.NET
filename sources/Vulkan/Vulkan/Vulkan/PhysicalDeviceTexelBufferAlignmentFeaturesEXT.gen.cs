@@ -10,10 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceTexelBufferAlignmentFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_texel_buffer_alignment"],
+        ImpliesSets = [
+            "VK_EXT_texel_buffer_alignment+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_texel_buffer_alignment+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_texel_buffer_alignment"],
+        ImpliesSets = [
+            "VK_EXT_texel_buffer_alignment+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_texel_buffer_alignment+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

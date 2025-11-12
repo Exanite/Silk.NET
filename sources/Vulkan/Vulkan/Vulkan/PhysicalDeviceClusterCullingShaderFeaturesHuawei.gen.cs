@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceClusterCullingShaderFeaturesHuawei
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_cluster_culling_shader"],
+        ImpliesSets = [
+            "VK_HUAWEI_cluster_culling_shader+VK_KHR_get_physical_device_properties2",
+            "VK_HUAWEI_cluster_culling_shader+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_cluster_culling_shader"],
+        ImpliesSets = [
+            "VK_HUAWEI_cluster_culling_shader+VK_KHR_get_physical_device_properties2",
+            "VK_HUAWEI_cluster_culling_shader+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -29,6 +43,13 @@ public unsafe partial struct PhysicalDeviceClusterCullingShaderFeaturesHuawei
     public MaybeBool<uint> ClustercullingShader;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_cluster_culling_shader"],
+        ImpliesSets = [
+            "VK_HUAWEI_cluster_culling_shader+VK_KHR_get_physical_device_properties2",
+            "VK_HUAWEI_cluster_culling_shader+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> MultiviewClusterCullingShader;
 }

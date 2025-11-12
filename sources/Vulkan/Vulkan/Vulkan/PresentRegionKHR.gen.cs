@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 public unsafe partial struct PresentRegionKHR
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_incremental_present"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public uint RectangleCount;
 
     [NativeTypeName("const VkRectLayerKHR *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_incremental_present"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public RectLayerKHR* PRectangles;
 }

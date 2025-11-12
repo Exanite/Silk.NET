@@ -9,24 +9,66 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImportFenceFdInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_fence_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
+            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_fence_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
+            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkFence")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_fence_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
+            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
+        ]
+    )]
     public FenceHandle Fence;
 
     [NativeTypeName("VkFenceImportFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_fence_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
+            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
+        ]
+    )]
     public FenceImportFlags Flags;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_fence_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
+            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
+        ]
+    )]
     public ExternalFenceHandleTypeFlags HandleType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_fence_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
+            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
+        ]
+    )]
     public int Fd;
 }

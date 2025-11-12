@@ -12,27 +12,27 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ValidationFeatureDisableEXT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     AllEXT = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     ShadersEXT = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     ThreadSafetyEXT = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     ApiParametersEXT = 3,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     ObjectLifetimesEXT = 4,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     CoreChecksEXT = 5,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     UniqueHandlesEXT = 6,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     ShaderValidationCacheEXT = 7,
 }

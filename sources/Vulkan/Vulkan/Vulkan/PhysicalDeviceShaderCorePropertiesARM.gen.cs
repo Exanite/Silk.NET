@@ -10,21 +10,41 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderCorePropertiesARM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_shader_core_properties"],
+        ImpliesSets = ["VK_VERSION_1_1"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_shader_core_properties"],
+        ImpliesSets = ["VK_VERSION_1_1"]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_shader_core_properties"],
+        ImpliesSets = ["VK_VERSION_1_1"]
+    )]
     public uint PixelRate;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_shader_core_properties"],
+        ImpliesSets = ["VK_VERSION_1_1"]
+    )]
     public uint TexelRate;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_shader_core_properties"],
+        ImpliesSets = ["VK_VERSION_1_1"]
+    )]
     public uint FmaRate;
 }

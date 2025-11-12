@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDepthBiasControlFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -29,14 +43,35 @@ public unsafe partial struct PhysicalDeviceDepthBiasControlFeaturesEXT
     public MaybeBool<uint> DepthBiasControl;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> LeastRepresentableValueForceUnormRepresentation;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> FloatRepresentation;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> DepthBiasExact;
 }

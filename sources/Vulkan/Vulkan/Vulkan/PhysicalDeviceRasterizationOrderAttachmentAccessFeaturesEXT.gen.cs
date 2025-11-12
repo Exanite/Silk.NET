@@ -11,21 +11,56 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_rasterization_order_attachment_access"],
+        ImpliesSets = [
+            "VK_EXT_rasterization_order_attachment_access+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_rasterization_order_attachment_access+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_rasterization_order_attachment_access"],
+        ImpliesSets = [
+            "VK_EXT_rasterization_order_attachment_access+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_rasterization_order_attachment_access+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_rasterization_order_attachment_access"],
+        ImpliesSets = [
+            "VK_EXT_rasterization_order_attachment_access+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_rasterization_order_attachment_access+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> RasterizationOrderColorAttachmentAccess;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_rasterization_order_attachment_access"],
+        ImpliesSets = [
+            "VK_EXT_rasterization_order_attachment_access+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_rasterization_order_attachment_access+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> RasterizationOrderDepthAttachmentAccess;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_rasterization_order_attachment_access"],
+        ImpliesSets = [
+            "VK_EXT_rasterization_order_attachment_access+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_rasterization_order_attachment_access+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> RasterizationOrderStencilAttachmentAccess;
 }

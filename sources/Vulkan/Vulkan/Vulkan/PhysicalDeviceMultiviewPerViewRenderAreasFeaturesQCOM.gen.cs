@@ -10,10 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_multiview_per_view_render_areas"],
+        ImpliesSets = [
+            "VK_QCOM_multiview_per_view_render_areas+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_multiview_per_view_render_areas+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_multiview_per_view_render_areas"],
+        ImpliesSets = [
+            "VK_QCOM_multiview_per_view_render_areas+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_multiview_per_view_render_areas+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

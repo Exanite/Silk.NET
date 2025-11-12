@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 public unsafe partial struct IndirectCommandsStreamNV
 {
     [NativeTypeName("VkBuffer")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_generated_commands"],
+        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
+    )]
     public BufferHandle Buffer;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_generated_commands"],
+        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
+    )]
     public ulong Offset;
 }

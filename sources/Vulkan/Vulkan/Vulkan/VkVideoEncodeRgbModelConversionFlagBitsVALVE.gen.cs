@@ -15,18 +15,53 @@ public enum VideoEncodeRgbModelConversionFlagsValve : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     RgbIdentityBitValve = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     YcbcrIdentityBitValve = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     Ycbcr709BitValve = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     Ycbcr601BitValve = 0x00000008,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     Ycbcr2020BitValve = 0x00000010,
 }

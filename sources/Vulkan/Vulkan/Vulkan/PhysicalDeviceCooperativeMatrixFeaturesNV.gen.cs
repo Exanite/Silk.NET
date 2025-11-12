@@ -10,10 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCooperativeMatrixFeaturesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -28,6 +42,13 @@ public unsafe partial struct PhysicalDeviceCooperativeMatrixFeaturesNV
     public MaybeBool<uint> CooperativeMatrix;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> CooperativeMatrixRobustBufferAccess;
 }

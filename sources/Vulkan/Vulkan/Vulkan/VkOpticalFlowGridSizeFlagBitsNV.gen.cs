@@ -13,18 +13,58 @@ namespace Silk.NET.Vulkan;
 [Flags]
 public enum OpticalFlowGridSizeFlagsNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_optical_flow"],
+        ImpliesSets = [
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     SizeUnknownNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_optical_flow"],
+        ImpliesSets = [
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     Size1X1BitNV = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_optical_flow"],
+        ImpliesSets = [
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     Size2X2BitNV = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_optical_flow"],
+        ImpliesSets = [
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     Size4X4BitNV = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_optical_flow"],
+        ImpliesSets = [
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     Size8X8BitNV = 0x00000008,
 }

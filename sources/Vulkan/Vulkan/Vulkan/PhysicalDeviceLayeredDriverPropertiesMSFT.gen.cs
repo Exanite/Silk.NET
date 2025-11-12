@@ -10,12 +10,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceLayeredDriverPropertiesMSFT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MSFT_layered_driver"],
+        ImpliesSets = [
+            "VK_MSFT_layered_driver+VK_KHR_get_physical_device_properties2",
+            "VK_MSFT_layered_driver+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MSFT_layered_driver"],
+        ImpliesSets = [
+            "VK_MSFT_layered_driver+VK_KHR_get_physical_device_properties2",
+            "VK_MSFT_layered_driver+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MSFT_layered_driver"],
+        ImpliesSets = [
+            "VK_MSFT_layered_driver+VK_KHR_get_physical_device_properties2",
+            "VK_MSFT_layered_driver+VK_VERSION_1_1",
+        ]
+    )]
     public LayeredDriverUnderlyingApiMSFT UnderlyingAPI;
 }

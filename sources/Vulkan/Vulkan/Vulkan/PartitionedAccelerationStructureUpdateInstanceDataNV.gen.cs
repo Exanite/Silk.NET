@@ -12,11 +12,19 @@ namespace Silk.NET.Vulkan;
 public partial struct PartitionedAccelerationStructureUpdateInstanceDataNV
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_partitioned_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public uint InstanceIndex;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_partitioned_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public uint InstanceContributionToHitGroupIndex;
 
     [NativeTypeName("VkDeviceAddress")]

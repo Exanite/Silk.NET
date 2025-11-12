@@ -12,12 +12,12 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ShaderInfoTypeAMD : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     StatisticsAMD = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     BinaryAMD = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     DisassemblyAMD = 2,
 }

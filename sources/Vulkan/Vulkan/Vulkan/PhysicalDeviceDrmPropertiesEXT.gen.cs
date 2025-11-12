@@ -11,33 +11,89 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDrmPropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> HasPrimary;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> HasRender;
 
     [NativeTypeName("int64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public long PrimaryMajor;
 
     [NativeTypeName("int64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public long PrimaryMinor;
 
     [NativeTypeName("int64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public long RenderMajor;
 
     [NativeTypeName("int64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_physical_device_drm"],
+        ImpliesSets = [
+            "VK_EXT_physical_device_drm+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_physical_device_drm+VK_VERSION_1_1",
+        ]
+    )]
     public long RenderMinor;
 }

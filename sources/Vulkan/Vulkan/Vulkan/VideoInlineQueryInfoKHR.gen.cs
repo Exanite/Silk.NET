@@ -11,22 +11,42 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoInlineQueryInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_maintenance1"],
+        ImpliesSets = ["VK_KHR_video_queue"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_maintenance1"],
+        ImpliesSets = ["VK_KHR_video_queue"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkQueryPool")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_maintenance1"],
+        ImpliesSets = ["VK_KHR_video_queue"]
+    )]
     public QueryPoolHandle QueryPool;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_maintenance1"],
+        ImpliesSets = ["VK_KHR_video_queue"]
+    )]
     public uint FirstQuery;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_maintenance1"],
+        ImpliesSets = ["VK_KHR_video_queue"]
+    )]
     public uint QueryCount;
 }

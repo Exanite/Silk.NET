@@ -12,6 +12,13 @@ namespace Silk.NET.Vulkan;
 public partial struct RenderPassCreationFeedbackInfoEXT
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_subpass_merge_feedback"],
+        ImpliesSets = [
+            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
+        ]
+    )]
     public uint PostMergeSubpassCount;
 }

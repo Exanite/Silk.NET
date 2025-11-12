@@ -11,16 +11,32 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SamplerBlockMatchWindowCreateInfoQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     public Extent2D WindowExtent;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     public BlockMatchWindowCompareModeQCOM WindowCompareMode;
 }

@@ -12,14 +12,35 @@ namespace Silk.NET.Vulkan;
 public partial struct DeviceFaultVendorInfoEXT
 {
     [NativeTypeName("char[256]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public DeviceFaultVendorInfoEXTDescription Description;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public ulong VendorFaultCode;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_fault"],
+        ImpliesSets = [
+            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_device_fault+VK_VERSION_1_1",
+        ]
+    )]
     public ulong VendorFaultData;
 }

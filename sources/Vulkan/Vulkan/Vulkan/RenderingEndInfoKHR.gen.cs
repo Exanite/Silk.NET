@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct RenderingEndInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_maintenance10"],
+        ImpliesSets = [
+            "VK_KHR_maintenance10+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_maintenance10+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_maintenance10"],
+        ImpliesSets = [
+            "VK_KHR_maintenance10+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_maintenance10+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 }

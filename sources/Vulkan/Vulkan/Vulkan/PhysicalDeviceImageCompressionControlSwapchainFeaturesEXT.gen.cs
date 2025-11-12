@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceImageCompressionControlSwapchainFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_image_compression_control_swapchain"],
+        ImpliesSets = ["VK_EXT_image_compression_control"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_image_compression_control_swapchain"],
+        ImpliesSets = ["VK_EXT_image_compression_control"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderUniformBufferUnsizedArrayFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_uniform_buffer_unsized_array"],
+        ImpliesSets = [
+            "VK_EXT_shader_uniform_buffer_unsized_array+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_shader_uniform_buffer_unsized_array+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_uniform_buffer_unsized_array"],
+        ImpliesSets = [
+            "VK_EXT_shader_uniform_buffer_unsized_array+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_shader_uniform_buffer_unsized_array+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -12,9 +12,9 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum DirectDriverLoadingModeLunarg : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_LUNARG_direct_driver_loading"])]
     ExclusiveLunarg = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_LUNARG_direct_driver_loading"])]
     InclusiveLunarg = 1,
 }

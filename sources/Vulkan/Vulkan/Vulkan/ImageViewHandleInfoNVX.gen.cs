@@ -11,21 +11,21 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageViewHandleInfoNVX
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public void* PNext;
 
     [NativeTypeName("VkImageView")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public ImageViewHandle ImageView;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public DescriptorType DescriptorType;
 
     [NativeTypeName("VkSampler")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public SamplerHandle Sampler;
 }

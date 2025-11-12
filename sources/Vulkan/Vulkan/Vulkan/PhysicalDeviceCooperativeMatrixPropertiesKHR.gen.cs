@@ -11,13 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCooperativeMatrixPropertiesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkShaderStageFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     public ShaderStageFlags CooperativeMatrixSupportedStages;
 }

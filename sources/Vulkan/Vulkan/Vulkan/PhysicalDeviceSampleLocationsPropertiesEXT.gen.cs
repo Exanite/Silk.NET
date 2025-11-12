@@ -11,28 +11,77 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceSampleLocationsPropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkSampleCountFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public SampleCountFlags SampleLocationSampleCounts;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public Extent2D MaxSampleLocationGridSize;
 
     [NativeTypeName("float[2]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public PhysicalDeviceSampleLocationsPropertiesEXTSampleLocationCoordinateRange SampleLocationCoordinateRange;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public uint SampleLocationSubPixelBits;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_sample_locations"],
+        ImpliesSets = [
+            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_sample_locations+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> VariableSampleLocations;
 }

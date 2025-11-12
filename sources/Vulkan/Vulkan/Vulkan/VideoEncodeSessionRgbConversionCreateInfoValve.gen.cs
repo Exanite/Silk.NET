@@ -11,22 +11,64 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeSessionRgbConversionCreateInfoValve
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     public VideoEncodeRgbModelConversionFlagsValve RgbModel;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     public VideoEncodeRgbRangeCompressionFlagsValve RgbRange;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     public VideoEncodeRgbChromaOffsetFlagsValve XChromaOffset;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     public VideoEncodeRgbChromaOffsetFlagsValve YChromaOffset;
 }

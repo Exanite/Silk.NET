@@ -15,6 +15,13 @@ public enum DeviceAddressBindingFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_address_binding_report"],
+        ImpliesSets = [
+            "VK_EXT_debug_utils+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_debug_utils+VK_VERSION_1_1",
+        ]
+    )]
     InternalObjectBitEXT = 0x00000001,
 }

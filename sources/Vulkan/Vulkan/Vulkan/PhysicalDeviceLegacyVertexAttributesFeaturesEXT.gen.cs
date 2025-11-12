@@ -10,10 +10,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceLegacyVertexAttributesFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_legacy_vertex_attributes"],
+        ImpliesSets = ["VK_EXT_vertex_input_dynamic_state"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_legacy_vertex_attributes"],
+        ImpliesSets = ["VK_EXT_vertex_input_dynamic_state"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -12,9 +12,23 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum CoverageReductionModeNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_coverage_reduction_mode"],
+        ImpliesSets = [
+            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
+            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
+        ]
+    )]
     MergeNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_coverage_reduction_mode"],
+        ImpliesSets = [
+            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
+            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
+        ]
+    )]
     TruncateNV = 1,
 }

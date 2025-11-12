@@ -12,14 +12,35 @@ namespace Silk.NET.Vulkan;
 public partial struct TraceRaysIndirectCommandKHR
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_tracing_pipeline"],
+        ImpliesSets = [
+            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
+            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
+        ]
+    )]
     public uint Width;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_tracing_pipeline"],
+        ImpliesSets = [
+            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
+            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
+        ]
+    )]
     public uint Height;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_tracing_pipeline"],
+        ImpliesSets = [
+            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
+            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
+        ]
+    )]
     public uint Depth;
 }

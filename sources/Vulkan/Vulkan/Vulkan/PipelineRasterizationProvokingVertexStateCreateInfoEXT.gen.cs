@@ -11,13 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineRasterizationProvokingVertexStateCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_provoking_vertex"],
+        ImpliesSets = [
+            "VK_EXT_provoking_vertex+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_provoking_vertex+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_provoking_vertex"],
+        ImpliesSets = [
+            "VK_EXT_provoking_vertex+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_provoking_vertex+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_provoking_vertex"],
+        ImpliesSets = [
+            "VK_EXT_provoking_vertex+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_provoking_vertex+VK_VERSION_1_1",
+        ]
+    )]
     public ProvokingVertexModeEXT ProvokingVertexMode;
 }

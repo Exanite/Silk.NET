@@ -11,15 +11,36 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineRasterizationDepthClipStateCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_clip_enable"],
+        ImpliesSets = [
+            "VK_EXT_depth_clip_enable+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_clip_enable+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_clip_enable"],
+        ImpliesSets = [
+            "VK_EXT_depth_clip_enable+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_clip_enable+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkPipelineRasterizationDepthClipStateCreateFlagsEXT")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_clip_enable"],
+        ImpliesSets = [
+            "VK_EXT_depth_clip_enable+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_clip_enable+VK_VERSION_1_1",
+        ]
+    )]
     public uint Flags;
 
     [NativeTypeName("VkBool32")]

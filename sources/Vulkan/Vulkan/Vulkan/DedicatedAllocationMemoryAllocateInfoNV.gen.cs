@@ -11,18 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DedicatedAllocationMemoryAllocateInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_dedicated_allocation"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_dedicated_allocation"])]
     public void* PNext;
 
     [NativeTypeName("VkImage")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_dedicated_allocation"])]
     public ImageHandle Image;
 
     [NativeTypeName("VkBuffer")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_dedicated_allocation"])]
     public BufferHandle Buffer;
 }

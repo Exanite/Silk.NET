@@ -10,22 +10,22 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineViewportSwizzleStateCreateInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public void* PNext;
 
     [NativeTypeName("VkPipelineViewportSwizzleStateCreateFlagsNV")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public uint Flags;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public uint ViewportCount;
 
     [NativeTypeName("const VkViewportSwizzleNV *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public ViewportSwizzleNV* PViewportSwizzles;
 }

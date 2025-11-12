@@ -11,18 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ExternalImageFormatPropertiesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     public ImageFormatProperties ImageFormatProperties;
 
     [NativeTypeName("VkExternalMemoryFeatureFlagsNV")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     public ExternalMemoryFeatureFlagsNV ExternalMemoryFeatures;
 
     [NativeTypeName("VkExternalMemoryHandleTypeFlagsNV")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     public ExternalMemoryHandleTypeFlagsNV ExportFromImportedHandleTypes;
 
     [NativeTypeName("VkExternalMemoryHandleTypeFlagsNV")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     public ExternalMemoryHandleTypeFlagsNV CompatibleHandleTypes;
 }

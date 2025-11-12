@@ -15,15 +15,43 @@ public enum GraphicsPipelineLibraryFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_graphics_pipeline_library"],
+        ImpliesSets = [
+            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_pipeline_library+VK_VERSION_1_1",
+        ]
+    )]
     VertexInputInterfaceBitEXT = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_graphics_pipeline_library"],
+        ImpliesSets = [
+            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_pipeline_library+VK_VERSION_1_1",
+        ]
+    )]
     PreRasterizationShadersBitEXT = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_graphics_pipeline_library"],
+        ImpliesSets = [
+            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_pipeline_library+VK_VERSION_1_1",
+        ]
+    )]
     FragmentShaderBitEXT = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_graphics_pipeline_library"],
+        ImpliesSets = [
+            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_pipeline_library+VK_VERSION_1_1",
+        ]
+    )]
     FragmentOutputInterfaceBitEXT = 0x00000008,
 }

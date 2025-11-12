@@ -15,12 +15,12 @@ public enum ExternalMemoryFeatureFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     DedicatedOnlyBitNV = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     ExportableBitNV = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_external_memory_capabilities"])]
     ImportableBitNV = 0x00000004,
 }

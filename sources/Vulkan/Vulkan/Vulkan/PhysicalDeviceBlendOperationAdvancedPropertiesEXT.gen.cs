@@ -10,33 +10,89 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceBlendOperationAdvancedPropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public uint AdvancedBlendMaxColorAttachments;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> AdvancedBlendIndependentBlend;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> AdvancedBlendNonPremultipliedSrcColor;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> AdvancedBlendNonPremultipliedDstColor;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> AdvancedBlendCorrelatedOverlap;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_blend_operation_advanced"],
+        ImpliesSets = [
+            "VK_EXT_blend_operation_advanced+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_blend_operation_advanced+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> AdvancedBlendAllOperations;
 }

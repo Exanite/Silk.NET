@@ -11,17 +11,49 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderObjectPropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_object"],
+        ImpliesSets = [
+            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_object"],
+        ImpliesSets = [
+            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint8_t[16]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_object"],
+        ImpliesSets = [
+            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public PhysicalDeviceShaderObjectPropertiesEXTShaderBinaryUUID ShaderBinaryUUID;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_object"],
+        ImpliesSets = [
+            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public uint ShaderBinaryVersion;
 }

@@ -10,10 +10,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceVideoMaintenance2FeaturesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_maintenance2"],
+        ImpliesSets = ["VK_KHR_video_queue"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_maintenance2"],
+        ImpliesSets = ["VK_KHR_video_queue"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

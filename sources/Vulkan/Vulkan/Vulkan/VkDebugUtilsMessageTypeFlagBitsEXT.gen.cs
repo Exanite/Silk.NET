@@ -14,13 +14,13 @@ public enum DebugUtilsMessageTypeFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     GeneralBitEXT = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     ValidationBitEXT = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     PerformanceBitEXT = 0x00000004,
 
     [SupportedApiProfile(

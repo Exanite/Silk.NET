@@ -11,10 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCopyMemoryIndirectFeaturesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_copy_memory_indirect"],
+        ImpliesSets = [
+            "VK_KHR_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_buffer_device_address+VK_VERSION_1_1",
+            "VK_VERSION_1_2",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_copy_memory_indirect"],
+        ImpliesSets = [
+            "VK_KHR_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_buffer_device_address+VK_VERSION_1_1",
+            "VK_VERSION_1_2",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

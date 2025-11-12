@@ -10,14 +10,35 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ExternalMemoryAcquireUnmodifiedEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_external_memory_acquire_unmodified"],
+        ImpliesSets = [
+            "VK_EXT_external_memory_acquire_unmodified+VK_KHR_external_memory",
+            "VK_EXT_external_memory_acquire_unmodified+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_external_memory_acquire_unmodified"],
+        ImpliesSets = [
+            "VK_EXT_external_memory_acquire_unmodified+VK_KHR_external_memory",
+            "VK_EXT_external_memory_acquire_unmodified+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_external_memory_acquire_unmodified"],
+        ImpliesSets = [
+            "VK_EXT_external_memory_acquire_unmodified+VK_KHR_external_memory",
+            "VK_EXT_external_memory_acquire_unmodified+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> AcquireUnmodifiedMemory;
 }

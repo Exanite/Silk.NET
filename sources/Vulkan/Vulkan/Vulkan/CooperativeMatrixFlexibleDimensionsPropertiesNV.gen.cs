@@ -11,44 +11,92 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct CooperativeMatrixFlexibleDimensionsPropertiesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public uint MGranularity;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public uint NGranularity;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public uint KGranularity;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public ComponentTypeKHR AType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public ComponentTypeKHR BType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public ComponentTypeKHR CType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public ComponentTypeKHR ResultType;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public MaybeBool<uint> SaturatingAccumulation;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public ScopeKHR Scope;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cooperative_matrix2"],
+        ImpliesSets = ["VK_KHR_cooperative_matrix"]
+    )]
     public uint WorkgroupInvocations;
 }

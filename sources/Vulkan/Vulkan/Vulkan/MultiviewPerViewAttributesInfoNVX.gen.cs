@@ -9,18 +9,58 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct MultiviewPerViewAttributesInfoNVX
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_dynamic_rendering",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_multiview",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_dynamic_rendering",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_multiview",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_dynamic_rendering",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_multiview",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> PerViewAttributes;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_dynamic_rendering",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_multiview",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> PerViewAttributesPositionXOnly;
 }

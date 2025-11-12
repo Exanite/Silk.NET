@@ -15,6 +15,10 @@ public enum ClusterAccelerationStructureClusterFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     AllowDisableOpacityMicromapsNV = 0x00000001,
 }

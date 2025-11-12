@@ -11,14 +11,29 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoDecodeAV1InlineSessionParametersInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_decode_av1", "VK_KHR_video_maintenance2"],
+        ImpliesSets = ["VK_KHR_video_queue"],
+        RequireAll = true
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_decode_av1", "VK_KHR_video_maintenance2"],
+        ImpliesSets = ["VK_KHR_video_queue"],
+        RequireAll = true
+    )]
     public void* PNext;
 
     [NativeTypeName("const StdVideoAV1SequenceHeader *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_video_decode_av1", "VK_KHR_video_maintenance2"],
+        ImpliesSets = ["VK_KHR_video_queue"],
+        RequireAll = true
+    )]
     public StdVideoAV1SequenceHeader* PStdSequenceHeader;
 }

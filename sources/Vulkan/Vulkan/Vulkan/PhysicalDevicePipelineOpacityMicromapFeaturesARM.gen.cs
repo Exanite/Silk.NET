@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePipelineOpacityMicromapFeaturesARM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_pipeline_opacity_micromap"],
+        ImpliesSets = ["VK_EXT_opacity_micromap"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_pipeline_opacity_micromap"],
+        ImpliesSets = ["VK_EXT_opacity_micromap"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

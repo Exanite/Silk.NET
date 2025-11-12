@@ -10,24 +10,66 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct VertexInputBindingDescription2EXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_vertex_input_dynamic_state"],
+        ImpliesSets = [
+            "VK_EXT_vertex_input_dynamic_state+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_vertex_input_dynamic_state+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_vertex_input_dynamic_state"],
+        ImpliesSets = [
+            "VK_EXT_vertex_input_dynamic_state+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_vertex_input_dynamic_state+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_vertex_input_dynamic_state"],
+        ImpliesSets = [
+            "VK_EXT_vertex_input_dynamic_state+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_vertex_input_dynamic_state+VK_VERSION_1_1",
+        ]
+    )]
     public uint Binding;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_vertex_input_dynamic_state"],
+        ImpliesSets = [
+            "VK_EXT_vertex_input_dynamic_state+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_vertex_input_dynamic_state+VK_VERSION_1_1",
+        ]
+    )]
     public uint Stride;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_vertex_input_dynamic_state"],
+        ImpliesSets = [
+            "VK_EXT_vertex_input_dynamic_state+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_vertex_input_dynamic_state+VK_VERSION_1_1",
+        ]
+    )]
     public VertexInputRate InputRate;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_vertex_input_dynamic_state"],
+        ImpliesSets = [
+            "VK_EXT_vertex_input_dynamic_state+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_vertex_input_dynamic_state+VK_VERSION_1_1",
+        ]
+    )]
     public uint Divisor;
 }

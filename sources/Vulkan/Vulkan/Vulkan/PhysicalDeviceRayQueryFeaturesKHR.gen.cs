@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRayQueryFeaturesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_query"],
+        ImpliesSets = [
+            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
+            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_query"],
+        ImpliesSets = [
+            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
+            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

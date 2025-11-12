@@ -11,14 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SurfaceProtectedCapabilitiesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_surface_protected_capabilities"],
+        ImpliesSets = ["VK_KHR_get_surface_capabilities2", "VK_VERSION_1_1"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_surface_protected_capabilities"],
+        ImpliesSets = ["VK_KHR_get_surface_capabilities2", "VK_VERSION_1_1"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_surface_protected_capabilities"],
+        ImpliesSets = ["VK_KHR_get_surface_capabilities2", "VK_VERSION_1_1"]
+    )]
     public MaybeBool<uint> SupportsProtected;
 }

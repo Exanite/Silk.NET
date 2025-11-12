@@ -10,10 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRGBA10X6FormatsFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_rgba10x6_formats"],
+        ImpliesSets = [
+            "VK_EXT_rgba10x6_formats+VK_KHR_sampler_ycbcr_conversion",
+            "VK_EXT_rgba10x6_formats+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_rgba10x6_formats"],
+        ImpliesSets = [
+            "VK_EXT_rgba10x6_formats+VK_KHR_sampler_ycbcr_conversion",
+            "VK_EXT_rgba10x6_formats+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

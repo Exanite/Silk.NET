@@ -10,21 +10,56 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ColorBlendAdvancedEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendOp AdvancedBlendOp;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> SrcPremultiplied;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> DstPremultiplied;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public BlendOverlapEXT BlendOverlap;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> ClampResults;
 }

@@ -10,17 +10,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SamplerBorderColorComponentMappingCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_border_color_swizzle"],
+        ImpliesSets = ["VK_EXT_custom_border_color"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_border_color_swizzle"],
+        ImpliesSets = ["VK_EXT_custom_border_color"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_border_color_swizzle"],
+        ImpliesSets = ["VK_EXT_custom_border_color"]
+    )]
     public ComponentMapping Components;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_border_color_swizzle"],
+        ImpliesSets = ["VK_EXT_custom_border_color"]
+    )]
     public MaybeBool<uint> Srgb;
 }

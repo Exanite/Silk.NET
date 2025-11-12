@@ -10,18 +10,46 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PresentIdKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_present_id"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_present_id"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_present_id"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_VERSION_1_1",
+        ]
+    )]
     public uint SwapchainCount;
 
     [NativeTypeName("const uint64_t *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_present_id"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_VERSION_1_1",
+        ]
+    )]
     public ulong* PPresentIds;
 }

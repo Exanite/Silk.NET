@@ -11,14 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplayModeStereoPropertiesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     public MaybeBool<uint> Hdmi3DSupported;
 }

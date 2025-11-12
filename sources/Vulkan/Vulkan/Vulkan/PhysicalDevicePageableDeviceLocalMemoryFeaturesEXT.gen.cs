@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePageableDeviceLocalMemoryFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pageable_device_local_memory"],
+        ImpliesSets = ["VK_EXT_memory_priority"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pageable_device_local_memory"],
+        ImpliesSets = ["VK_EXT_memory_priority"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

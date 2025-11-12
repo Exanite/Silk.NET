@@ -12,18 +12,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ValidationFeatureEnableEXT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     GpuAssistedEXT = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     GpuAssistedReserveBindingSlotEXT = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     BestPracticesEXT = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     DebugPrintfEXT = 3,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     SynchronizationValidationEXT = 4,
 }

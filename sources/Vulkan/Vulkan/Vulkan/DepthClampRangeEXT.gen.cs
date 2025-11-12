@@ -10,9 +10,23 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct DepthClampRangeEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_clamp_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_clamp_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_clamp_control+VK_VERSION_1_1",
+        ]
+    )]
     public float MinDepthClamp;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_clamp_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_clamp_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_clamp_control+VK_VERSION_1_1",
+        ]
+    )]
     public float MaxDepthClamp;
 }

@@ -10,10 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PerTileBeginInfoQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_tile_shading"],
+        ImpliesSets = [
+            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_tile_shading"],
+        ImpliesSets = [
+            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
+            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
+        ]
+    )]
     public void* PNext;
 }

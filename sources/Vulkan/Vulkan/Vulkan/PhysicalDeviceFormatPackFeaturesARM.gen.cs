@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFormatPackFeaturesARM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_format_pack"],
+        ImpliesSets = [
+            "VK_ARM_format_pack+VK_KHR_get_physical_device_properties2",
+            "VK_ARM_format_pack+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_format_pack"],
+        ImpliesSets = [
+            "VK_ARM_format_pack+VK_KHR_get_physical_device_properties2",
+            "VK_ARM_format_pack+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

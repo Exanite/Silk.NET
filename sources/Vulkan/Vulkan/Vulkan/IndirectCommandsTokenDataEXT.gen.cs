@@ -14,21 +14,53 @@ public unsafe partial struct IndirectCommandsTokenDataEXT
 {
     [FieldOffset(0)]
     [NativeTypeName("const VkIndirectCommandsPushConstantTokenEXT *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_generated_commands"],
+        ImpliesSets = [
+            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
+            "VK_KHR_maintenance5+VK_VERSION_1_2",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public IndirectCommandsPushConstantTokenEXT* PPushConstant;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkIndirectCommandsVertexBufferTokenEXT *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_generated_commands"],
+        ImpliesSets = [
+            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
+            "VK_KHR_maintenance5+VK_VERSION_1_2",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public IndirectCommandsVertexBufferTokenEXT* PVertexBuffer;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkIndirectCommandsIndexBufferTokenEXT *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_generated_commands"],
+        ImpliesSets = [
+            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
+            "VK_KHR_maintenance5+VK_VERSION_1_2",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public IndirectCommandsIndexBufferTokenEXT* PIndexBuffer;
 
     [FieldOffset(0)]
     [NativeTypeName("const VkIndirectCommandsExecutionSetTokenEXT *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_device_generated_commands"],
+        ImpliesSets = [
+            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
+            "VK_KHR_maintenance5+VK_VERSION_1_2",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public IndirectCommandsExecutionSetTokenEXT* PExecutionSet;
 }

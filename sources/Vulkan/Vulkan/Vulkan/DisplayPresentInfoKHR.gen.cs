@@ -11,20 +11,40 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplayPresentInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_display_swapchain"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_display_swapchain"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_display_swapchain"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
+    )]
     public Rect2D SrcRect;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_display_swapchain"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
+    )]
     public Rect2D DstRect;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_display_swapchain"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_swapchain"]
+    )]
     public MaybeBool<uint> Persistent;
 }

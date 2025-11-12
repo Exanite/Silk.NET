@@ -11,14 +11,35 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct BufferDeviceAddressCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_buffer_device_address"],
+        ImpliesSets = [
+            "VK_EXT_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_buffer_device_address+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_buffer_device_address"],
+        ImpliesSets = [
+            "VK_EXT_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_buffer_device_address+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkDeviceAddress")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_buffer_device_address"],
+        ImpliesSets = [
+            "VK_EXT_buffer_device_address+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_buffer_device_address+VK_VERSION_1_1",
+        ]
+    )]
     public ulong DeviceAddress;
 }

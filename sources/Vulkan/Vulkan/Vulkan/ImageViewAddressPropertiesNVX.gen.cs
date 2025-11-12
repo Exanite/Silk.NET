@@ -10,17 +10,17 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageViewAddressPropertiesNVX
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public void* PNext;
 
     [NativeTypeName("VkDeviceAddress")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public ulong DeviceAddress;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public ulong Size;
 }

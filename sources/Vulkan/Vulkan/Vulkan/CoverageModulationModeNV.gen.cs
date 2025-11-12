@@ -12,15 +12,15 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum CoverageModulationModeNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
     NoneNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
     RgbNV = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
     AlphaNV = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
     RgbaNV = 3,
 }

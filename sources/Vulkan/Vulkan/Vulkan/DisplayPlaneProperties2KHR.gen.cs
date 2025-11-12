@@ -11,12 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplayPlaneProperties2KHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_display_properties2"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_display_properties2"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_display_properties2"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public DisplayPlanePropertiesKHR DisplayPlaneProperties;
 }

@@ -11,21 +11,51 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct AttachmentSampleCountInfoAMD
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
+            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
+            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
+            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
+        ]
+    )]
     public uint ColorAttachmentCount;
 
     [NativeTypeName("const VkSampleCountFlagBits *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
+            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
+        ]
+    )]
     public SampleCountFlags* PColorAttachmentSamples;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
+            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
+        ]
+    )]
     public SampleCountFlags DepthStencilAttachmentSamples;
 }

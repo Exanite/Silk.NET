@@ -11,13 +11,25 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SamplerCubicWeightsCreateInfoQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     public CubicFilterWeightsQCOM CubicWeights;
 }

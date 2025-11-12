@@ -12,14 +12,26 @@ namespace Silk.NET.Vulkan;
 public unsafe partial struct ClusterAccelerationStructureOpInputNV
 {
     [FieldOffset(0)]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public ClusterAccelerationStructureClustersBottomLevelInputNV* PClustersBottomLevel;
 
     [FieldOffset(0)]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public ClusterAccelerationStructureTriangleClusterInputNV* PTriangleClusters;
 
     [FieldOffset(0)]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public ClusterAccelerationStructureMoveObjectsInputNV* PMoveObjects;
 }

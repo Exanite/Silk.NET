@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderIntegerFunctions2FeaturesIntel
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_INTEL_shader_integer_functions2"],
+        ImpliesSets = [
+            "VK_INTEL_shader_integer_functions2+VK_KHR_get_physical_device_properties2",
+            "VK_INTEL_shader_integer_functions2+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_INTEL_shader_integer_functions2"],
+        ImpliesSets = [
+            "VK_INTEL_shader_integer_functions2+VK_KHR_get_physical_device_properties2",
+            "VK_INTEL_shader_integer_functions2+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

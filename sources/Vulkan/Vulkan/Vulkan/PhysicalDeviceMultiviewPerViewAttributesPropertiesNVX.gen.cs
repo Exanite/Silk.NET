@@ -11,13 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NVX_multiview_per_view_attributes"],
+        ImpliesSets = [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_multiview",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NVX_multiview_per_view_attributes"],
+        ImpliesSets = [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_multiview",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NVX_multiview_per_view_attributes"],
+        ImpliesSets = [
+            "VK_NVX_multiview_per_view_attributes+VK_KHR_multiview",
+            "VK_NVX_multiview_per_view_attributes+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> PerViewPositionAllComponents;
 }

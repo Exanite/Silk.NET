@@ -11,13 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceMapMemoryPlacedPropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_map_memory_placed"],
+        ImpliesSets = [
+            "VK_EXT_map_memory_placed+VK_KHR_map_memory2",
+            "VK_EXT_map_memory_placed+VK_VERSION_1_4",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_map_memory_placed"],
+        ImpliesSets = [
+            "VK_EXT_map_memory_placed+VK_KHR_map_memory2",
+            "VK_EXT_map_memory_placed+VK_VERSION_1_4",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_map_memory_placed"],
+        ImpliesSets = [
+            "VK_EXT_map_memory_placed+VK_KHR_map_memory2",
+            "VK_EXT_map_memory_placed+VK_VERSION_1_4",
+        ]
+    )]
     public ulong MinPlacedMemoryMapAlignment;
 }

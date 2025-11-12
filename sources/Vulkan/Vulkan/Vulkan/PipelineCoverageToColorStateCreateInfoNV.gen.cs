@@ -11,22 +11,22 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineCoverageToColorStateCreateInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_fragment_coverage_to_color"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_fragment_coverage_to_color"])]
     public void* PNext;
 
     [NativeTypeName("VkPipelineCoverageToColorStateCreateFlagsNV")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_fragment_coverage_to_color"])]
     public uint Flags;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_fragment_coverage_to_color"])]
     public MaybeBool<uint> CoverageToColorEnable;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_fragment_coverage_to_color"])]
     public uint CoverageToColorLocation;
 }

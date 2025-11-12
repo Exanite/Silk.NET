@@ -10,16 +10,44 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SamplerCustomBorderColorCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_custom_border_color"],
+        ImpliesSets = [
+            "VK_EXT_custom_border_color+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_custom_border_color+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_custom_border_color"],
+        ImpliesSets = [
+            "VK_EXT_custom_border_color+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_custom_border_color+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_custom_border_color"],
+        ImpliesSets = [
+            "VK_EXT_custom_border_color+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_custom_border_color+VK_VERSION_1_1",
+        ]
+    )]
     public ClearColorValue CustomBorderColor;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_custom_border_color"],
+        ImpliesSets = [
+            "VK_EXT_custom_border_color+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_custom_border_color+VK_VERSION_1_1",
+        ]
+    )]
     public Format Format;
 }

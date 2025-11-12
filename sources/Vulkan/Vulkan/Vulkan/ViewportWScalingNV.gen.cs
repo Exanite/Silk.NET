@@ -11,9 +11,9 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ViewportWScalingNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_clip_space_w_scaling"])]
     public float Xcoeff;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_clip_space_w_scaling"])]
     public float Ycoeff;
 }

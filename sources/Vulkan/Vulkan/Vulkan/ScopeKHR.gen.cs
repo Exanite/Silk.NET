@@ -12,16 +12,44 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ScopeKHR : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     DeviceKHR = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     WorkgroupKHR = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     SubgroupKHR = 3,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_cooperative_matrix"],
+        ImpliesSets = [
+            "VK_KHR_cooperative_matrix+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_cooperative_matrix+VK_VERSION_1_1",
+        ]
+    )]
     QueueFamilyKHR = 5,
 
     [SupportedApiProfile(

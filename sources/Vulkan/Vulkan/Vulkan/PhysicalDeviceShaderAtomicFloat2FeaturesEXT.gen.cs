@@ -10,50 +10,98 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderAtomicFloat2FeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderBufferFloat16Atomics;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderBufferFloat16AtomicAdd;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderBufferFloat16AtomicMinMax;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderBufferFloat32AtomicMinMax;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderBufferFloat64AtomicMinMax;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderSharedFloat16Atomics;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderSharedFloat16AtomicAdd;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderSharedFloat16AtomicMinMax;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderSharedFloat32AtomicMinMax;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> ShaderSharedFloat64AtomicMinMax;
 
     [NativeTypeName("VkBool32")]
@@ -69,6 +117,10 @@ public unsafe partial struct PhysicalDeviceShaderAtomicFloat2FeaturesEXT
     public MaybeBool<uint> ShaderImageFloat32AtomicMinMax;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_shader_atomic_float2"],
+        ImpliesSets = ["VK_EXT_shader_atomic_float"]
+    )]
     public MaybeBool<uint> SparseImageFloat32AtomicMinMax;
 }

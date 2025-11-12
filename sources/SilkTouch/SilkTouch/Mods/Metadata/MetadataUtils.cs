@@ -176,10 +176,14 @@ public static class MetadataUtils
             if (
                 apimd.TryGetSymbolMetadata(jobKey, parentSymbol, out var parentVers)
                 && parentVers.FirstOrDefault(x => filter?.Invoke(x) ?? true) is { } parent
-                && childSymbol is null
             )
             {
                 yield return parent;
+
+                if (childSymbol is null)
+                {
+                    break;
+                }
             }
         }
     }

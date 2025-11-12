@@ -11,13 +11,25 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceSchedulingControlsPropertiesARM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_scheduling_controls"],
+        ImpliesSets = ["VK_ARM_shader_core_builtins"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_scheduling_controls"],
+        ImpliesSets = ["VK_ARM_shader_core_builtins"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkPhysicalDeviceSchedulingControlsFlagsARM")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_scheduling_controls"],
+        ImpliesSets = ["VK_ARM_shader_core_builtins"]
+    )]
     public PhysicalDeviceSchedulingControlsFlagsARM SchedulingControlsFlags;
 }

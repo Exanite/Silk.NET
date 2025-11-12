@@ -11,18 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplayPlaneInfo2KHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_display_properties2"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_display_properties2"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkDisplayModeKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_display_properties2"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public DisplayModeKHRHandle Mode;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_display_properties2"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public uint PlaneIndex;
 }

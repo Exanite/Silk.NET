@@ -10,13 +10,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceExtendedDynamicState3PropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_extended_dynamic_state3"],
+        ImpliesSets = [
+            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> DynamicPrimitiveTopologyUnrestricted;
 }

@@ -11,9 +11,17 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum FragmentShadingRateTypeNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_fragment_shading_rate_enums"],
+        ImpliesSets = ["VK_KHR_fragment_shading_rate"]
+    )]
     FragmentSizeNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_fragment_shading_rate_enums"],
+        ImpliesSets = ["VK_KHR_fragment_shading_rate"]
+    )]
     EnumsNV = 1,
 }

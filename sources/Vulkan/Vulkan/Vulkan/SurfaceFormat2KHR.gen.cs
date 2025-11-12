@@ -10,12 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SurfaceFormat2KHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_surface_capabilities2"],
+        ImpliesSets = ["VK_KHR_surface"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_surface_capabilities2"],
+        ImpliesSets = ["VK_KHR_surface"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_get_surface_capabilities2"],
+        ImpliesSets = ["VK_KHR_surface"]
+    )]
     public SurfaceFormatKHR SurfaceFormat;
 }

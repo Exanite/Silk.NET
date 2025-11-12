@@ -12,27 +12,27 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ViewportCoordinateSwizzleNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     PositiveXNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     NegativeXNV = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     PositiveYNV = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     NegativeYNV = 3,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     PositiveZNV = 4,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     NegativeZNV = 5,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     PositiveWNV = 6,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     NegativeWNV = 7,
 }

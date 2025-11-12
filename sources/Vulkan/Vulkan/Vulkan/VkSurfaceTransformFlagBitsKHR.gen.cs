@@ -15,30 +15,30 @@ public enum SurfaceTransformFlagsKHR : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     IdentityBitKHR = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     Rotate90BitKHR = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     Rotate180BitKHR = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     Rotate270BitKHR = 0x00000008,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     HorizontalMirrorBitKHR = 0x00000010,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     HorizontalMirrorRotate90BitKHR = 0x00000020,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     HorizontalMirrorRotate180BitKHR = 0x00000040,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     HorizontalMirrorRotate270BitKHR = 0x00000080,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_surface"])]
     InheritBitKHR = 0x00000100,
 }

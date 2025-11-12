@@ -11,16 +11,44 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct AntiLagPresentationInfoAMD
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_anti_lag"],
+        ImpliesSets = [
+            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
+            "VK_AMD_anti_lag+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_anti_lag"],
+        ImpliesSets = [
+            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
+            "VK_AMD_anti_lag+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_anti_lag"],
+        ImpliesSets = [
+            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
+            "VK_AMD_anti_lag+VK_VERSION_1_1",
+        ]
+    )]
     public AntiLagStageAMD Stage;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_anti_lag"],
+        ImpliesSets = [
+            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
+            "VK_AMD_anti_lag+VK_VERSION_1_1",
+        ]
+    )]
     public ulong FrameIndex;
 }

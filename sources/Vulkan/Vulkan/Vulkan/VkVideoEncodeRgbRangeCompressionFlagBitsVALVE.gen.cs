@@ -14,9 +14,23 @@ public enum VideoEncodeRgbRangeCompressionFlagsValve : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     FullRangeBitValve = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_video_encode_rgb_conversion"],
+        ImpliesSets = [
+            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
+            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
+        ]
+    )]
     NarrowRangeBitValve = 0x00000002,
 }

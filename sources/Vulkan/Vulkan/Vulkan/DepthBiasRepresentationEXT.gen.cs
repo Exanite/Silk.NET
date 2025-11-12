@@ -12,12 +12,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum DepthBiasRepresentationEXT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     LeastRepresentableValueFormatEXT = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     LeastRepresentableValueForceUnormEXT = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     FloatEXT = 2,
 }

@@ -12,9 +12,17 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum BlockMatchWindowCompareModeQCOM : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     MinQCOM = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     MaxQCOM = 1,
 }

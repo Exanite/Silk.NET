@@ -10,20 +10,75 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct RenderingFragmentShadingRateAttachmentInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_KHR_fragment_shading_rate+VK_KHR_dynamic_rendering",
+            "VK_KHR_fragment_shading_rate+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
+            "VK_VERSION_1_2",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_KHR_fragment_shading_rate+VK_KHR_dynamic_rendering",
+            "VK_KHR_fragment_shading_rate+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
+            "VK_VERSION_1_2",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkImageView")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_KHR_fragment_shading_rate+VK_KHR_dynamic_rendering",
+            "VK_KHR_fragment_shading_rate+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
+            "VK_VERSION_1_2",
+        ]
+    )]
     public ImageViewHandle ImageView;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_KHR_fragment_shading_rate+VK_KHR_dynamic_rendering",
+            "VK_KHR_fragment_shading_rate+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
+            "VK_VERSION_1_2",
+        ]
+    )]
     public ImageLayout ImageLayout;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        [
+            "VK_KHR_fragment_shading_rate+VK_KHR_dynamic_rendering",
+            "VK_KHR_fragment_shading_rate+VK_VERSION_1_3",
+        ],
+        ImpliesSets = [
+            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
+            "VK_VERSION_1_2",
+        ]
+    )]
     public Extent2D ShadingRateAttachmentTexelSize;
 }

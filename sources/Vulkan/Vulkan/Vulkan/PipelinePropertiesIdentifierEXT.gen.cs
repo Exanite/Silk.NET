@@ -10,13 +10,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelinePropertiesIdentifierEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pipeline_properties"],
+        ImpliesSets = [
+            "VK_EXT_pipeline_properties+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pipeline_properties+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pipeline_properties"],
+        ImpliesSets = [
+            "VK_EXT_pipeline_properties+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pipeline_properties+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint8_t[16]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pipeline_properties"],
+        ImpliesSets = [
+            "VK_EXT_pipeline_properties+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pipeline_properties+VK_VERSION_1_1",
+        ]
+    )]
     public PipelinePropertiesIdentifierEXTPipelineIdentifier PipelineIdentifier;
 }

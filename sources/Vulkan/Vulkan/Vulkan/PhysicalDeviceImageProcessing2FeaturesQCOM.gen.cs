@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceImageProcessing2FeaturesQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_image_processing2"],
+        ImpliesSets = ["VK_QCOM_image_processing"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -15,15 +15,15 @@ public enum DebugUtilsMessageSeverityFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     VerboseBitEXT = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     InfoBitEXT = 0x00000010,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     WarningBitEXT = 0x00000100,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     ErrorBitEXT = 0x00001000,
 }

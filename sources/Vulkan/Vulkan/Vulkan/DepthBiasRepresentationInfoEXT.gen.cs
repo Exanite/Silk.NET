@@ -11,17 +11,45 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DepthBiasRepresentationInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public DepthBiasRepresentationEXT DepthBiasRepresentation;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_depth_bias_control"],
+        ImpliesSets = [
+            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> DepthBiasExact;
 }

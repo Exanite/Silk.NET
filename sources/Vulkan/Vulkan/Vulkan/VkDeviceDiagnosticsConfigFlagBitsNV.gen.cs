@@ -14,15 +14,43 @@ public enum DeviceDiagnosticsConfigFlagsNV : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_diagnostics_config"],
+        ImpliesSets = [
+            "VK_NV_device_diagnostics_config+VK_KHR_get_physical_device_properties2",
+            "VK_NV_device_diagnostics_config+VK_VERSION_1_1",
+        ]
+    )]
     EnableShaderDebugInfoBitNV = 0x00000001,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_diagnostics_config"],
+        ImpliesSets = [
+            "VK_NV_device_diagnostics_config+VK_KHR_get_physical_device_properties2",
+            "VK_NV_device_diagnostics_config+VK_VERSION_1_1",
+        ]
+    )]
     EnableResourceTrackingBitNV = 0x00000002,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_diagnostics_config"],
+        ImpliesSets = [
+            "VK_NV_device_diagnostics_config+VK_KHR_get_physical_device_properties2",
+            "VK_NV_device_diagnostics_config+VK_VERSION_1_1",
+        ]
+    )]
     EnableAutomaticCheckpointsBitNV = 0x00000004,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_diagnostics_config"],
+        ImpliesSets = [
+            "VK_NV_device_diagnostics_config+VK_KHR_get_physical_device_properties2",
+            "VK_NV_device_diagnostics_config+VK_VERSION_1_1",
+        ]
+    )]
     EnableShaderErrorReportingBitNV = 0x00000008,
 }

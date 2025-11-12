@@ -11,15 +11,15 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public partial struct ViewportSwizzleNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public ViewportCoordinateSwizzleNV X;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public ViewportCoordinateSwizzleNV Y;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public ViewportCoordinateSwizzleNV Z;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_NV_viewport_swizzle"])]
     public ViewportCoordinateSwizzleNV W;
 }

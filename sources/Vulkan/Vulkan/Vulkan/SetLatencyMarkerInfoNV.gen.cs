@@ -11,17 +11,53 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SetLatencyMarkerInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_low_latency2"],
+        ImpliesSets = [
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
+            "VK_VERSION_1_2+VK_KHR_present_id",
+            "VK_VERSION_1_2+VK_KHR_present_id2",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_low_latency2"],
+        ImpliesSets = [
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
+            "VK_VERSION_1_2+VK_KHR_present_id",
+            "VK_VERSION_1_2+VK_KHR_present_id2",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_low_latency2"],
+        ImpliesSets = [
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
+            "VK_VERSION_1_2+VK_KHR_present_id",
+            "VK_VERSION_1_2+VK_KHR_present_id2",
+        ]
+    )]
     public ulong PresentID;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_low_latency2"],
+        ImpliesSets = [
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
+            "VK_VERSION_1_2+VK_KHR_present_id",
+            "VK_VERSION_1_2+VK_KHR_present_id2",
+        ]
+    )]
     public LatencyMarkerNV Marker;
 }

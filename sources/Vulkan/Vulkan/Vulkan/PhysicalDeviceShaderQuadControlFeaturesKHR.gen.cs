@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderQuadControlFeaturesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_shader_quad_control"],
+        ImpliesSets = [
+            "VK_KHR_shader_maximal_reconvergence+VK_VERSION_1_1+VK_KHR_vulkan_memory_model",
+            "VK_KHR_shader_maximal_reconvergence+VK_VERSION_1_2",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_shader_quad_control"],
+        ImpliesSets = [
+            "VK_KHR_shader_maximal_reconvergence+VK_VERSION_1_1+VK_KHR_vulkan_memory_model",
+            "VK_KHR_shader_maximal_reconvergence+VK_VERSION_1_2",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

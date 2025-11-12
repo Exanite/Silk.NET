@@ -10,10 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct FramebufferMixedSamplesCombinationNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_coverage_reduction_mode"],
+        ImpliesSets = [
+            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
+            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_coverage_reduction_mode"],
+        ImpliesSets = [
+            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
+            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [SupportedApiProfile(
@@ -26,14 +40,35 @@ public unsafe partial struct FramebufferMixedSamplesCombinationNV
     )]
     public CoverageReductionModeNV CoverageReductionMode;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_coverage_reduction_mode"],
+        ImpliesSets = [
+            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
+            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
+        ]
+    )]
     public SampleCountFlags RasterizationSamples;
 
     [NativeTypeName("VkSampleCountFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_coverage_reduction_mode"],
+        ImpliesSets = [
+            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
+            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
+        ]
+    )]
     public SampleCountFlags DepthStencilSamples;
 
     [NativeTypeName("VkSampleCountFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_coverage_reduction_mode"],
+        ImpliesSets = [
+            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
+            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
+        ]
+    )]
     public SampleCountFlags ColorSamples;
 }

@@ -12,9 +12,27 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum OutOfBandQueueTypeNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_low_latency2"],
+        ImpliesSets = [
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
+            "VK_VERSION_1_2+VK_KHR_present_id",
+            "VK_VERSION_1_2+VK_KHR_present_id2",
+        ]
+    )]
     RenderNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_low_latency2"],
+        ImpliesSets = [
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
+            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
+            "VK_VERSION_1_2+VK_KHR_present_id",
+            "VK_VERSION_1_2+VK_KHR_present_id2",
+        ]
+    )]
     PresentNV = 1,
 }

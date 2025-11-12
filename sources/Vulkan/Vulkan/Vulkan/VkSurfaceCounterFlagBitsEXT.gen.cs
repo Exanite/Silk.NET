@@ -15,6 +15,10 @@ public enum SurfaceCounterFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     VblankBitEXT = 0x00000001,
 }

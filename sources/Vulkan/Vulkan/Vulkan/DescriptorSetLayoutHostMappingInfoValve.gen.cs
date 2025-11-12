@@ -10,17 +10,45 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DescriptorSetLayoutHostMappingInfoValve
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_descriptor_set_host_mapping"],
+        ImpliesSets = [
+            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
+            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_descriptor_set_host_mapping"],
+        ImpliesSets = [
+            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
+            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("size_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_descriptor_set_host_mapping"],
+        ImpliesSets = [
+            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
+            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
+        ]
+    )]
     public nuint DescriptorOffset;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_VALVE_descriptor_set_host_mapping"],
+        ImpliesSets = [
+            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
+            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
+        ]
+    )]
     public uint DescriptorSize;
 }

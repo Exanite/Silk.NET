@@ -10,10 +10,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceSubpassShadingFeaturesHuawei
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_subpass_shading"],
+        ImpliesSets = [
+            "VK_KHR_synchronization2+VK_KHR_create_renderpass2",
+            "VK_KHR_synchronization2+VK_VERSION_1_2",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_subpass_shading"],
+        ImpliesSets = [
+            "VK_KHR_synchronization2+VK_KHR_create_renderpass2",
+            "VK_KHR_synchronization2+VK_VERSION_1_2",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

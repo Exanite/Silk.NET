@@ -11,14 +11,35 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageAlignmentControlCreateInfoMESA
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MESA_image_alignment_control"],
+        ImpliesSets = [
+            "VK_MESA_image_alignment_control+VK_KHR_get_physical_device_properties2",
+            "VK_MESA_image_alignment_control+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MESA_image_alignment_control"],
+        ImpliesSets = [
+            "VK_MESA_image_alignment_control+VK_KHR_get_physical_device_properties2",
+            "VK_MESA_image_alignment_control+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_MESA_image_alignment_control"],
+        ImpliesSets = [
+            "VK_MESA_image_alignment_control+VK_KHR_get_physical_device_properties2",
+            "VK_MESA_image_alignment_control+VK_VERSION_1_1",
+        ]
+    )]
     public uint MaximumRequestedAlignment;
 }

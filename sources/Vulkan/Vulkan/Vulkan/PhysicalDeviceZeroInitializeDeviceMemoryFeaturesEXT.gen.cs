@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_zero_initialize_device_memory"],
+        ImpliesSets = [
+            "VK_EXT_zero_initialize_device_memory+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_zero_initialize_device_memory+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_zero_initialize_device_memory"],
+        ImpliesSets = [
+            "VK_EXT_zero_initialize_device_memory+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_zero_initialize_device_memory+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

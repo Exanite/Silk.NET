@@ -11,18 +11,46 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct HdrVividDynamicMetadataHuawei
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_hdr_vivid"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_hdr_vivid"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("size_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_hdr_vivid"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
+        ]
+    )]
     public nuint DynamicMetadataSize;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_HUAWEI_hdr_vivid"],
+        ImpliesSets = [
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
+        ]
+    )]
     public void* PDynamicMetadata;
 }

@@ -11,10 +11,26 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_dynamic_rendering_unused_attachments"],
+        ImpliesSets = [
+            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_dynamic_rendering_unused_attachments"],
+        ImpliesSets = [
+            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
+            "VK_VERSION_1_3",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceAmigoProfilingFeaturesSEC
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_SEC_amigo_profiling"],
+        ImpliesSets = [
+            "VK_SEC_amigo_profiling+VK_KHR_get_physical_device_properties2",
+            "VK_SEC_amigo_profiling+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_SEC_amigo_profiling"],
+        ImpliesSets = [
+            "VK_SEC_amigo_profiling+VK_KHR_get_physical_device_properties2",
+            "VK_SEC_amigo_profiling+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -10,22 +10,57 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct CommandBufferInheritanceViewportScissorInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_inherited_viewport_scissor"],
+        ImpliesSets = [
+            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
+            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_inherited_viewport_scissor"],
+        ImpliesSets = [
+            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
+            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_inherited_viewport_scissor"],
+        ImpliesSets = [
+            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
+            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> ViewportScissor2D;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_inherited_viewport_scissor"],
+        ImpliesSets = [
+            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
+            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
+        ]
+    )]
     public uint ViewportDepthCount;
 
     [NativeTypeName("const VkViewport *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_inherited_viewport_scissor"],
+        ImpliesSets = [
+            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
+            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
+        ]
+    )]
     public Viewport* PViewportDepths;
 }

@@ -12,9 +12,17 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum RayTracingLssIndexingModeNV : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     ListNV = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     SuccessiveNV = 1,
 }

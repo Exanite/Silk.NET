@@ -12,10 +12,18 @@ namespace Silk.NET.Vulkan;
 public partial struct PartitionedAccelerationStructureWritePartitionTranslationDataNV
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_partitioned_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public uint PartitionIndex;
 
     [NativeTypeName("float[3]")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_partitioned_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public PartitionedAccelerationStructureWritePartitionTranslationDataNVPartitionTranslation PartitionTranslation;
 }

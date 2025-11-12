@@ -12,12 +12,12 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum MemoryOverallocationBehaviorAMD : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_memory_overallocation_behavior"])]
     DefaultAMD = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_memory_overallocation_behavior"])]
     AllowedAMD = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_memory_overallocation_behavior"])]
     DisallowedAMD = 2,
 }

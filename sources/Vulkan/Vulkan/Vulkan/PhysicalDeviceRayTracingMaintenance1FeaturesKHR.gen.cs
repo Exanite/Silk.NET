@@ -10,10 +10,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRayTracingMaintenance1FeaturesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_tracing_maintenance1"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_tracing_maintenance1"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -25,6 +33,10 @@ public unsafe partial struct PhysicalDeviceRayTracingMaintenance1FeaturesKHR
     public MaybeBool<uint> RayTracingMaintenance1;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_ray_tracing_maintenance1"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public MaybeBool<uint> RayTracingPipelineTraceRaysIndirect2;
 }

@@ -10,13 +10,25 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplaySurfaceStereoCreateInfoNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_display_stereo"],
+        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
+    )]
     public DisplaySurfaceStereoTypeNV StereoType;
 }

@@ -11,13 +11,34 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct QueueFamilyCheckpointPropertiesNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_diagnostic_checkpoints"],
+        ImpliesSets = [
+            "VK_NV_device_diagnostic_checkpoints+VK_KHR_get_physical_device_properties2",
+            "VK_NV_device_diagnostic_checkpoints+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_diagnostic_checkpoints"],
+        ImpliesSets = [
+            "VK_NV_device_diagnostic_checkpoints+VK_KHR_get_physical_device_properties2",
+            "VK_NV_device_diagnostic_checkpoints+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkPipelineStageFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_device_diagnostic_checkpoints"],
+        ImpliesSets = [
+            "VK_NV_device_diagnostic_checkpoints+VK_KHR_get_physical_device_properties2",
+            "VK_NV_device_diagnostic_checkpoints+VK_VERSION_1_1",
+        ]
+    )]
     public PipelineStageFlags CheckpointExecutionStageMask;
 }

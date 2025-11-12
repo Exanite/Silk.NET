@@ -11,10 +11,18 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCubicWeightsFeaturesQCOM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

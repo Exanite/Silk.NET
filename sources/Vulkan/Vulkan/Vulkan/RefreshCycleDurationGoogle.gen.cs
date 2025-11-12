@@ -12,6 +12,10 @@ namespace Silk.NET.Vulkan;
 public partial struct RefreshCycleDurationGoogle
 {
     [NativeTypeName("uint64_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_GOOGLE_display_timing"],
+        ImpliesSets = ["VK_KHR_swapchain"]
+    )]
     public ulong RefreshDuration;
 }

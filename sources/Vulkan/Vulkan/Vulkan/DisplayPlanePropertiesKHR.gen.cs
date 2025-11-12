@@ -12,10 +12,10 @@ namespace Silk.NET.Vulkan;
 public unsafe partial struct DisplayPlanePropertiesKHR
 {
     [NativeTypeName("VkDisplayKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
     public DisplayKHRHandle CurrentDisplay;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
     public uint CurrentStackIndex;
 }

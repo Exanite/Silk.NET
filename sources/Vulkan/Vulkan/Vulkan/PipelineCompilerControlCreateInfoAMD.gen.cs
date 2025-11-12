@@ -10,14 +10,14 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineCompilerControlCreateInfoAMD
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_pipeline_compiler_control"])]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_pipeline_compiler_control"])]
     public void* PNext;
 
     [NativeTypeName("VkPipelineCompilerControlFlagsAMD")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_pipeline_compiler_control"])]
     public PipelineCompilerControlFlagsAMD CompilerControlFlags;
 }

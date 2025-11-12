@@ -11,15 +11,31 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum CubicFilterWeightsQCOM : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     CatmullRomQCOM = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     ZeroTangentCardinalQCOM = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     BSplineQCOM = 2,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_QCOM_filter_cubic_weights"],
+        ImpliesSets = ["VK_EXT_filter_cubic"]
+    )]
     MitchellNetravaliQCOM = 3,
 }

@@ -11,9 +11,23 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum AntiLagStageAMD : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_anti_lag"],
+        ImpliesSets = [
+            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
+            "VK_AMD_anti_lag+VK_VERSION_1_1",
+        ]
+    )]
     InputAMD = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_AMD_anti_lag"],
+        ImpliesSets = [
+            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
+            "VK_AMD_anti_lag+VK_VERSION_1_1",
+        ]
+    )]
     PresentAMD = 1,
 }

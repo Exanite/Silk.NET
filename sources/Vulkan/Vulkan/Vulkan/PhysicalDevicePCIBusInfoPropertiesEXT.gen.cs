@@ -10,25 +10,67 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePCIBusInfoPropertiesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pci_bus_info"],
+        ImpliesSets = [
+            "VK_EXT_pci_bus_info+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pci_bus_info+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pci_bus_info"],
+        ImpliesSets = [
+            "VK_EXT_pci_bus_info+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pci_bus_info+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pci_bus_info"],
+        ImpliesSets = [
+            "VK_EXT_pci_bus_info+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pci_bus_info+VK_VERSION_1_1",
+        ]
+    )]
     public uint PciDomain;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pci_bus_info"],
+        ImpliesSets = [
+            "VK_EXT_pci_bus_info+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pci_bus_info+VK_VERSION_1_1",
+        ]
+    )]
     public uint PciBus;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pci_bus_info"],
+        ImpliesSets = [
+            "VK_EXT_pci_bus_info+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pci_bus_info+VK_VERSION_1_1",
+        ]
+    )]
     public uint PciDevice;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_pci_bus_info"],
+        ImpliesSets = [
+            "VK_EXT_pci_bus_info+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_pci_bus_info+VK_VERSION_1_1",
+        ]
+    )]
     public uint PciFunction;
 }

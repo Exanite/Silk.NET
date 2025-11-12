@@ -12,14 +12,26 @@ namespace Silk.NET.Vulkan;
 public partial struct ClusterAccelerationStructureInstantiateClusterInfoNV
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public uint ClusterIdOffset;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public uint Bitfield;
 
     [NativeTypeName("uint32_t : 24")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public uint geometryIndexOffset
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -29,7 +41,11 @@ public partial struct ClusterAccelerationStructureInstantiateClusterInfoNV
     }
 
     [NativeTypeName("uint32_t : 8")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public uint reserved
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -39,9 +55,17 @@ public partial struct ClusterAccelerationStructureInstantiateClusterInfoNV
     }
 
     [NativeTypeName("VkDeviceAddress")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public ulong ClusterTemplateAddress;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_cluster_acceleration_structure"],
+        ImpliesSets = ["VK_KHR_acceleration_structure"]
+    )]
     public StridedDeviceAddressNV VertexBuffer;
 }

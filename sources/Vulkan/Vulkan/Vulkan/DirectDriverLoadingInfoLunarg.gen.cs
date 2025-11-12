@@ -11,17 +11,17 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct DirectDriverLoadingInfoLunarg
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_LUNARG_direct_driver_loading"])]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_LUNARG_direct_driver_loading"])]
     public void* PNext;
 
     [NativeTypeName("VkDirectDriverLoadingFlagsLUNARG")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_LUNARG_direct_driver_loading"])]
     public uint Flags;
 
     [NativeTypeName("PFN_vkGetInstanceProcAddrLUNARG")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_LUNARG_direct_driver_loading"])]
     public PFNVkGetInstanceProcAddrLunarg PfnGetInstanceProcAddr;
 }

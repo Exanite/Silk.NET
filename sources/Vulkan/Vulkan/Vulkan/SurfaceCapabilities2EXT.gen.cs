@@ -11,49 +11,101 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct SurfaceCapabilities2EXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public uint MinImageCount;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public uint MaxImageCount;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public Extent2D CurrentExtent;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public Extent2D MinImageExtent;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public Extent2D MaxImageExtent;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public uint MaxImageArrayLayers;
 
     [NativeTypeName("VkSurfaceTransformFlagsKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public SurfaceTransformFlagsKHR SupportedTransforms;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public SurfaceTransformFlagsKHR CurrentTransform;
 
     [NativeTypeName("VkCompositeAlphaFlagsKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public CompositeAlphaFlagsKHR SupportedCompositeAlpha;
 
     [NativeTypeName("VkImageUsageFlags")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public ImageUsageFlags SupportedUsageFlags;
 
     [NativeTypeName("VkSurfaceCounterFlagsEXT")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_display_surface_counter"],
+        ImpliesSets = ["VK_KHR_display"]
+    )]
     public SurfaceCounterFlagsEXT SupportedSurfaceCounters;
 }

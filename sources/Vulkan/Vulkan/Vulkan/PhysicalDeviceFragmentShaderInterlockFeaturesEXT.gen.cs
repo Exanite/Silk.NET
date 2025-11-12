@@ -11,21 +11,56 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFragmentShaderInterlockFeaturesEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_fragment_shader_interlock"],
+        ImpliesSets = [
+            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_fragment_shader_interlock"],
+        ImpliesSets = [
+            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_fragment_shader_interlock"],
+        ImpliesSets = [
+            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> FragmentShaderSampleInterlock;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_fragment_shader_interlock"],
+        ImpliesSets = [
+            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> FragmentShaderPixelInterlock;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_fragment_shader_interlock"],
+        ImpliesSets = [
+            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> FragmentShaderShadingRateInterlock;
 }

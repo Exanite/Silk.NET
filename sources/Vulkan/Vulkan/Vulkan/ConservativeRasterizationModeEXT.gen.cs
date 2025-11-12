@@ -12,12 +12,33 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum ConservativeRasterizationModeEXT : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     DisabledEXT = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     OverestimateEXT = 1,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_conservative_rasterization"],
+        ImpliesSets = [
+            "VK_EXT_conservative_rasterization+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_conservative_rasterization+VK_VERSION_1_1",
+        ]
+    )]
     UnderestimateEXT = 2,
 }

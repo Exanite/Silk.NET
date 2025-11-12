@@ -11,40 +11,84 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct AccelerationStructureGeometrySpheresDataNV
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public void* PNext;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public Format VertexFormat;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public DeviceOrHostAddressConstKHR VertexData;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public ulong VertexStride;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public Format RadiusFormat;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public DeviceOrHostAddressConstKHR RadiusData;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public ulong RadiusStride;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public IndexType IndexType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public DeviceOrHostAddressConstKHR IndexData;
 
     [NativeTypeName("VkDeviceSize")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_NV_ray_tracing_linear_swept_spheres"],
+        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
+    )]
     public ulong IndexStride;
 }

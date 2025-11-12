@@ -10,10 +10,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderCoreBuiltinsFeaturesARM
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_shader_core_builtins"],
+        ImpliesSets = [
+            "VK_ARM_shader_core_builtins+VK_KHR_get_physical_device_properties2",
+            "VK_ARM_shader_core_builtins+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_ARM_shader_core_builtins"],
+        ImpliesSets = [
+            "VK_ARM_shader_core_builtins+VK_KHR_get_physical_device_properties2",
+            "VK_ARM_shader_core_builtins+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]

@@ -11,22 +11,22 @@ namespace Silk.NET.Vulkan;
 public partial struct ShaderResourceUsageAMD
 {
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     public uint NumUsedVgprs;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     public uint NumUsedSgprs;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     public uint LdsSizePerLocalWorkGroup;
 
     [NativeTypeName("size_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     public nuint LdsUsageSizeInBytes;
 
     [NativeTypeName("size_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_AMD_shader_info"])]
     public nuint ScratchMemUsageInBytes;
 }

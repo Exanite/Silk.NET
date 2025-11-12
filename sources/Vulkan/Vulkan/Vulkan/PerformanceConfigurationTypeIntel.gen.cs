@@ -12,6 +12,6 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public enum PerformanceConfigurationTypeIntel : uint
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     CommandQueueMetricsDiscoveryActivatedIntel = 0,
 }

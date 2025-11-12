@@ -10,18 +10,46 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineColorWriteCreateInfoEXT
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_color_write_enable"],
+        ImpliesSets = [
+            "VK_EXT_color_write_enable+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_color_write_enable+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_color_write_enable"],
+        ImpliesSets = [
+            "VK_EXT_color_write_enable+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_color_write_enable+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("uint32_t")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_color_write_enable"],
+        ImpliesSets = [
+            "VK_EXT_color_write_enable+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_color_write_enable+VK_VERSION_1_1",
+        ]
+    )]
     public uint AttachmentCount;
 
     [NativeTypeName("const VkBool32 *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_color_write_enable"],
+        ImpliesSets = [
+            "VK_EXT_color_write_enable+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_color_write_enable+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint>* PColorWriteEnables;
 }

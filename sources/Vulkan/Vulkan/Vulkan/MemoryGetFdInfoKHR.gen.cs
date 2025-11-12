@@ -10,17 +10,45 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct MemoryGetFdInfoKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_memory_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_memory_fd+VK_KHR_external_memory",
+            "VK_KHR_external_memory_fd+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
     [NativeTypeName("const void *")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_memory_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_memory_fd+VK_KHR_external_memory",
+            "VK_KHR_external_memory_fd+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkDeviceMemory")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_memory_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_memory_fd+VK_KHR_external_memory",
+            "VK_KHR_external_memory_fd+VK_VERSION_1_1",
+        ]
+    )]
     public DeviceMemoryHandle Memory;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_external_memory_fd"],
+        ImpliesSets = [
+            "VK_KHR_external_memory_fd+VK_KHR_external_memory",
+            "VK_KHR_external_memory_fd+VK_VERSION_1_1",
+        ]
+    )]
     public ExternalMemoryHandleTypeFlags HandleType;
 }

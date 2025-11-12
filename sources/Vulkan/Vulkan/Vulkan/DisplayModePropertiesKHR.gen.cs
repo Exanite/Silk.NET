@@ -12,9 +12,9 @@ namespace Silk.NET.Vulkan;
 public unsafe partial struct DisplayModePropertiesKHR
 {
     [NativeTypeName("VkDisplayModeKHR")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
     public DisplayModeKHRHandle DisplayMode;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
     public DisplayModeParametersKHR Parameters;
 }

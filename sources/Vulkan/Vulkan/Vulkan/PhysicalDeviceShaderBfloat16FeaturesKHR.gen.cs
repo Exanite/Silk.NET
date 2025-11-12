@@ -11,10 +11,24 @@ namespace Silk.NET.Vulkan;
 [SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderBfloat16FeaturesKHR
 {
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_shader_bfloat16"],
+        ImpliesSets = [
+            "VK_KHR_shader_bfloat16+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_shader_bfloat16+VK_VERSION_1_1",
+        ]
+    )]
     public StructureType SType;
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_shader_bfloat16"],
+        ImpliesSets = [
+            "VK_KHR_shader_bfloat16+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_shader_bfloat16+VK_VERSION_1_1",
+        ]
+    )]
     public void* PNext;
 
     [NativeTypeName("VkBool32")]
@@ -29,10 +43,24 @@ public unsafe partial struct PhysicalDeviceShaderBfloat16FeaturesKHR
     public MaybeBool<uint> ShaderBFloat16Type;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_shader_bfloat16"],
+        ImpliesSets = [
+            "VK_KHR_shader_bfloat16+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_shader_bfloat16+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> ShaderBFloat16DotProduct;
 
     [NativeTypeName("VkBool32")]
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_KHR_shader_bfloat16"],
+        ImpliesSets = [
+            "VK_KHR_shader_bfloat16+VK_KHR_get_physical_device_properties2",
+            "VK_KHR_shader_bfloat16+VK_VERSION_1_1",
+        ]
+    )]
     public MaybeBool<uint> ShaderBFloat16CooperativeMatrix;
 }

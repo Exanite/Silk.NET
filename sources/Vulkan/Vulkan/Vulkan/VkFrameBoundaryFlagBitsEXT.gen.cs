@@ -14,6 +14,13 @@ public enum FrameBoundaryFlagsEXT : uint
 {
     None = 0,
 
-    [SupportedApiProfile("vulkan")]
+    [SupportedApiProfile(
+        "vulkan",
+        ["VK_EXT_frame_boundary"],
+        ImpliesSets = [
+            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
+            "VK_EXT_frame_boundary+VK_VERSION_1_1",
+        ]
+    )]
     FrameEndBitEXT = 0x00000001,
 }
