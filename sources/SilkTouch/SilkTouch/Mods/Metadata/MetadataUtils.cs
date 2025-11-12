@@ -160,29 +160,30 @@ public static class MetadataUtils
             yield break;
         }
 
-        foreach (var apimd in metadataProviders)
+        filter ??= static _ => true;
+
+        if (childSymbol is not null)
         {
-            if (
-                childSymbol is not null
-                && apimd.TryGetChildSymbolMetadata(jobKey, parentSymbol, childSymbol, out var vers)
-                && vers.FirstOrDefault(x => filter?.Invoke(x) ?? true) is { } ver
-            )
+            foreach (var provider in metadataProviders)
             {
-                yield return ver;
-                continue;
-            }
-
-            // parentVers.FirstOrDefault(x => x.Profile == Profile.Profile) ?? parent
-            if (
-                apimd.TryGetSymbolMetadata(jobKey, parentSymbol, out var parentVers)
-                && parentVers.FirstOrDefault(x => filter?.Invoke(x) ?? true) is { } parent
-            )
-            {
-                yield return parent;
-
-                if (childSymbol is null)
+                if (provider.TryGetChildSymbolMetadata(jobKey, parentSymbol, childSymbol, out var childMetadata))
                 {
-                    break;
+                    foreach (var child in childMetadata.Where(x => filter.Invoke(x)))
+                    {
+                        yield return child;
+                    }
+                }
+            }
+        }
+
+        foreach (var provider in metadataProviders)
+        {
+            // parentMetadata.FirstOrDefault(x => x.Profile == Profile.Profile) ?? parent
+            if (provider.TryGetSymbolMetadata(jobKey, parentSymbol, out var parentMetadata))
+            {
+                foreach (var parent in parentMetadata.Where(x => filter.Invoke(x)))
+                {
+                    yield return parent;
                 }
             }
         }
