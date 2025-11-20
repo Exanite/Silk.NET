@@ -64,3 +64,9 @@
 [submodule "build/submodules/slang"]
 	path = build/submodules/slang
 	url = https://github.com/shader-slang/slang.git
+[submodule "build/submodules/freetype"]
+	path = build/submodules/freetype
+	url = https://github.com/freetype/freetype.git
+[submodule "build/submodules/harfbuzz"]
+	path = build/submodules/harfbuzz
+	url = https://github.com/harfbuzz/harfbuzz.git
