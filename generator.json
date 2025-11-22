@@ -1067,7 +1067,9 @@
                 }
             },
             "exclude": [],
-            "rename": {},
+            "rename": {
+                "HB_VERSION_STRING": "LibraryVersionString",
+            },
             "bakery": {
                 "profileNames": [
                     "hb"

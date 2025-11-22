@@ -42,7 +42,7 @@ namespace Silk.NET.HarfBuzz
         public const int VersionMicro = unchecked((int) 0x0);
         [NativeName("Type", "")]
         [NativeName("Name", "HB_VERSION_STRING")]
-        public const string VersionString = unchecked((string) "12.2.0");
+        public const string LibraryVersionString = unchecked((string) "12.2.0");
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 1 in hb-common.h")]
