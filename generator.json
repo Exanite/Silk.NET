@@ -933,6 +933,65 @@
             ]
         },
         {
+            "profileName": "FreeType",
+            "sources": [
+                "build/submodules/freetype/include/freetype/freetype.h"
+            ],
+            "mode": "Clang",
+            "cacheDir": "build/cache",
+            "cacheKey": "freetype",
+            "controlDescriptors": [
+                "no-pre-2.18-obsolete-enums",
+                "convert-windows-only"
+            ],
+            "converter": {},
+            "clang": {
+                "args": [
+                    "--language=c++",
+                    "--std=c++17",
+                    "-m64",
+                    "-DFT_REQUIRE_HARFBUZZ=ON",
+                    "-Ibuild/submodules/freetype/include"
+                ],
+                "traverse": [
+                    "build/submodules/freetype/include/freetype/*.h"
+                ],
+                "classes": {
+                    "freetype.h": "[Core]FreeType"
+                }
+            },
+            "exclude": [],
+            "rename": {},
+            "bakery": {
+                "profileNames": [
+                    "freetype"
+                ]
+            },
+            "output": {
+                "mode": "Default",
+                "path": "src/FreeType",
+                "licenseFile": "build/LICENSE_HEADER.txt",
+                "props": "build/props/bindings.props"
+            },
+            "prefix": "FT_",
+            "namespace": "Silk.NET.FreeType",
+            "extensionsNamespace": "Silk.NET.FreeType.Extensions",
+            "nameContainer": {
+                "linux-x64": "libfreetype.so",
+                "win-x64": "freetype.dll",
+                "win-x86": "freetype.dll",
+                "osx-x64": "libfreetype.dylib",
+                "android": "libfreetype.so",
+                "iOS": "libfreetype.dylib",
+                "className": "FreeTypeLibraryNameContainer"
+            },
+            "typeMaps": [
+                {
+                    "$include.commonTypeMap": "build/csharp_typemap.json"
+                }
+            ]
+        },
+        {
             "profileName": "HarfBuzz",
             "sources": [
                 "build/submodules/harfbuzz/src/hb.h"
