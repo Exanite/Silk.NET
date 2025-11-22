@@ -935,7 +935,7 @@
         {
             "profileName": "FreeType",
             "sources": [
-                "build/submodules/freetype/include/freetype/freetype.h"
+                "src/FreeType/freetype.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
@@ -951,10 +951,12 @@
                     "--std=c++17",
                     "-m64",
                     "-DFT_REQUIRE_HARFBUZZ=ON",
+                    "-DFT2_BUILD_LIBRARY=ON",
+                    "-DDLL_EXPORT=ON",
                     "-Ibuild/submodules/freetype/include"
                 ],
                 "traverse": [
-                    "build/submodules/freetype/include/freetype/*.h"
+                    "build/submodules/freetype/include/**/*.h"
                 ],
                 "classes": {
                     "freetype.h": "[Core]FreeType"
@@ -1068,7 +1070,7 @@
             },
             "exclude": [],
             "rename": {
-                "HB_VERSION_STRING": "LibraryVersionString",
+                "HB_VERSION_STRING": "LibraryVersionString"
             },
             "bakery": {
                 "profileNames": [
