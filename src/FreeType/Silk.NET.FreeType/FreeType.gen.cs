@@ -53,27 +53,6 @@ namespace Silk.NET.FreeType
         [NativeName("Name", "FT_OUTLINE_SINGLE_PASS")]
         public const int OutlineSinglePass = unchecked((int) 0x200);
         [NativeName("Type", "int")]
-        [NativeName("Name", "ft_outline_none")]
-        public const int OutlineNone = unchecked((int) 0x0);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_outline_owner")]
-        public const int OutlineOwner = unchecked((int) 0x1);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_outline_even_odd_fill")]
-        public const int OutlineEvenOddFill = unchecked((int) 0x2);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_outline_reverse_fill")]
-        public const int OutlineReverseFill = unchecked((int) 0x4);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_outline_ignore_dropouts")]
-        public const int OutlineIgnoreDropouts = unchecked((int) 0x8);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_outline_high_precision")]
-        public const int OutlineHighPrecision = unchecked((int) 0x100);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_outline_single_pass")]
-        public const int OutlineSinglePass = unchecked((int) 0x200);
-        [NativeName("Type", "int")]
         [NativeName("Name", "FT_CURVE_TAG_ON")]
         public const int CurveTagOn = unchecked((int) 0x1);
         [NativeName("Type", "int")]
@@ -92,21 +71,6 @@ namespace Silk.NET.FreeType
         [NativeName("Name", "FT_CURVE_TAG_TOUCH_Y")]
         public const int CurveTagTouchY = unchecked((int) 0x10);
         [NativeName("Type", "int")]
-        [NativeName("Name", "FT_Curve_Tag_On")]
-        public const int CurveTagOn = unchecked((int) 0x1);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "FT_Curve_Tag_Conic")]
-        public const int CurveTagConic = unchecked((int) 0x0);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "FT_Curve_Tag_Cubic")]
-        public const int CurveTagCubic = unchecked((int) 0x2);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "FT_Curve_Tag_Touch_X")]
-        public const int CurveTagTouchX = unchecked((int) 0x8);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "FT_Curve_Tag_Touch_Y")]
-        public const int CurveTagTouchY = unchecked((int) 0x10);
-        [NativeName("Type", "int")]
         [NativeName("Name", "FT_RASTER_FLAG_DEFAULT")]
         public const int RasterFlagDefault = unchecked((int) 0x0);
         [NativeName("Type", "int")]
@@ -121,18 +85,6 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "int")]
         [NativeName("Name", "FT_RASTER_FLAG_SDF")]
         public const int RasterFlagSdf = unchecked((int) 0x8);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_raster_flag_default")]
-        public const int RasterFlagDefault = unchecked((int) 0x0);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_raster_flag_aa")]
-        public const int RasterFlagAa = unchecked((int) 0x1);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_raster_flag_direct")]
-        public const int RasterFlagDirect = unchecked((int) 0x2);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_raster_flag_clip")]
-        public const int RasterFlagClip = unchecked((int) 0x4);
         [NativeName("Type", "int")]
         [NativeName("Name", "FT_ERR_BASE")]
         public const int ErrBase = unchecked((int) 0x0);
@@ -150,21 +102,6 @@ namespace Silk.NET.FreeType
         public const int OpenDriver = unchecked((int) 0x8);
         [NativeName("Type", "int")]
         [NativeName("Name", "FT_OPEN_PARAMS")]
-        public const int OpenParams = unchecked((int) 0x10);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_open_memory")]
-        public const int OpenMemory = unchecked((int) 0x1);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_open_stream")]
-        public const int OpenStream = unchecked((int) 0x2);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_open_pathname")]
-        public const int OpenPathname = unchecked((int) 0x4);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_open_driver")]
-        public const int OpenDriver = unchecked((int) 0x8);
-        [NativeName("Type", "int")]
-        [NativeName("Name", "ft_open_params")]
         public const int OpenParams = unchecked((int) 0x10);
         [NativeName("Type", "int")]
         [NativeName("Name", "FT_LOAD_DEFAULT")]
