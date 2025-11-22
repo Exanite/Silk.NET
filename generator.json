@@ -933,6 +933,65 @@
             ]
         },
         {
+            "profileName": "HarfBuzz",
+            "sources": [
+                "build/submodules/harfbuzz/src/hb.h"
+            ],
+            "mode": "Clang",
+            "cacheDir": "build/cache",
+            "cacheKey": "harfbuzz",
+            "controlDescriptors": [
+                "no-pre-2.18-obsolete-enums",
+                "convert-windows-only"
+            ],
+            "converter": {},
+            "clang": {
+                "args": [
+                    "--language=c++",
+                    "--std=c++17",
+                    "-m64",
+                    "-DHB_HAVE_FREETYPE=ON",
+                    "-Ibuild/submodules/harfbuzz/src"
+                ],
+                "traverse": [
+                    "build/submodules/harfbuzz/src/*.h"
+                ],
+                "classes": {
+                    "hb.h": "[Core]HarfBuzz"
+                }
+            },
+            "exclude": [],
+            "rename": {},
+            "bakery": {
+                "profileNames": [
+                    "hb"
+                ]
+            },
+            "output": {
+                "mode": "Default",
+                "path": "src/HarfBuzz",
+                "licenseFile": "build/LICENSE_HEADER.txt",
+                "props": "build/props/bindings.props"
+            },
+            "prefix": "hb_",
+            "namespace": "Silk.NET.HarfBuzz",
+            "extensionsNamespace": "Silk.NET.HarfBuzz.Extensions",
+            "nameContainer": {
+                "linux-x64": "libharfbuzz.so",
+                "win-x64": "harfbuzz.dll",
+                "win-x86": "harfbuzz.dll",
+                "osx-x64": "libharfbuzz.dylib",
+                "android": "libharfbuzz.so",
+                "iOS": "libharfbuzz.dylib",
+                "className": "HarfBuzzLibraryNameContainer"
+            },
+            "typeMaps": [
+                {
+                    "$include.commonTypeMap": "build/csharp_typemap.json"
+                }
+            ]
+        },
+        {
             "profileName": "Assimp",
             "sources": [
                 "src/Assimp/Include/assimp.h"
