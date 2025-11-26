@@ -4975,7 +4975,7 @@ public unsafe partial interface IGL
         static abstract void BufferAddressRangeNV(
             [NativeTypeName("GLenum")] uint pname,
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT")] ulong address,
+            [NativeTypeName("GLuint64EXT")] nuint address,
             [NativeTypeName("GLsizeiptr")] nuint length
         );
 
@@ -31101,7 +31101,7 @@ public unsafe partial interface IGL
         static abstract void GetBufferParameterNV(
             [NativeTypeName("GLenum")] uint target,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint64EXT *")] ulong* @params
+            [NativeTypeName("GLuint64EXT *")] nuint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -31111,14 +31111,14 @@ public unsafe partial interface IGL
         static abstract void GetBufferParameterNV(
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, BufferTarget> target,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
         [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
         [Transformed]
         [NativeFunction("opengl", EntryPoint = "glGetBufferParameterui64vNV")]
-        static abstract ulong GetBufferParameterNV(
+        static abstract nuint GetBufferParameterNV(
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, BufferTarget> target
         );
 
@@ -34501,7 +34501,7 @@ public unsafe partial interface IGL
         static abstract void GetIntegerui64NV(
             [NativeTypeName("GLenum")] uint value,
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT *")] ulong* result
+            [NativeTypeName("GLuint64EXT *")] nuint* result
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_buffer_unified_memory"])]
@@ -34511,21 +34511,21 @@ public unsafe partial interface IGL
         static abstract void GetIntegerui64NV(
             [NativeTypeName("GLenum")] uint value,
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> result
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> result
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_buffer_unified_memory"])]
         [SupportedApiProfile("glcore", ["GL_NV_vertex_buffer_unified_memory"])]
         [Transformed]
         [NativeFunction("opengl", EntryPoint = "glGetIntegerui64i_vNV")]
-        static abstract ulong GetIntegerui64NV([NativeTypeName("GLuint")] uint index);
+        static abstract nuint GetIntegerui64NV([NativeTypeName("GLuint")] uint index);
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
         [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
         [NativeFunction("opengl", EntryPoint = "glGetIntegerui64vNV")]
         static abstract void GetIntegerNV(
             [NativeTypeName("GLenum")] uint value,
-            [NativeTypeName("GLuint64EXT *")] ulong* result
+            [NativeTypeName("GLuint64EXT *")] nuint* result
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -34534,14 +34534,14 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glGetIntegerui64vNV")]
         static abstract void GetIntegerNV(
             [NativeTypeName("GLenum")] uint value,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> result
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> result
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
         [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
         [Transformed]
         [NativeFunction("opengl", EntryPoint = "glGetIntegerui64vNV")]
-        static abstract ulong GetIntegerNV();
+        static abstract nuint GetIntegerNV();
 
         [SupportedApiProfile(
             "gl",
@@ -36357,7 +36357,7 @@ public unsafe partial interface IGL
         static abstract void GetNamedBufferParameterNV(
             [NativeTypeName("GLuint")] uint buffer,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint64EXT *")] ulong* @params
+            [NativeTypeName("GLuint64EXT *")] nuint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -36367,7 +36367,7 @@ public unsafe partial interface IGL
         static abstract void GetNamedBufferParameterNV(
             [NativeTypeName("GLuint")] uint buffer,
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, BufferPName> pname,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
         );
 
         [SupportedApiProfile(
@@ -41003,6 +41003,11 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint index,
             [NativeTypeName("GLuint *")] Ref<uint> param2
         );
+
+        [SupportedApiProfile("gl", ["GL_NV_gpu_program5"])]
+        [Transformed]
+        [NativeFunction("opengl", EntryPoint = "glGetProgramSubroutineParameteruivNV")]
+        static abstract uint GetProgramSubroutineParameterNV([NativeTypeName("GLuint")] uint index);
 
         [SupportedApiProfile(
             "gl",
@@ -46453,7 +46458,7 @@ public unsafe partial interface IGL
         static abstract void GetUniformNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT *")] long* @params
+            [NativeTypeName("GLint64EXT *")] nint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -46464,7 +46469,7 @@ public unsafe partial interface IGL
         static abstract void GetUniformNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT *")] Ref<long> @params
+            [NativeTypeName("GLint64EXT *")] Ref<nint> @params
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -46472,7 +46477,7 @@ public unsafe partial interface IGL
         [SupportedApiProfile("gles2", ["GL_NV_gpu_shader5"])]
         [Transformed]
         [NativeFunction("opengl", EntryPoint = "glGetUniformi64vNV")]
-        static abstract long GetUniformNV([NativeTypeName("GLint")] int location);
+        static abstract nint GetUniformNV([NativeTypeName("GLint")] int location);
 
         [SupportedApiProfile(
             "gl",
@@ -46992,7 +46997,7 @@ public unsafe partial interface IGL
         static abstract void GetUniformui64VNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT *")] ulong* @params
+            [NativeTypeName("GLuint64EXT *")] nuint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_shader_buffer_load"])]
@@ -47002,14 +47007,14 @@ public unsafe partial interface IGL
         static abstract void GetUniformui64VNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_shader_buffer_load"])]
         [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
         [Transformed]
         [NativeFunction("opengl", EntryPoint = "glGetUniformui64vNV")]
-        static abstract ulong GetUniformui64VNV([NativeTypeName("GLint")] int location);
+        static abstract nuint GetUniformui64VNV([NativeTypeName("GLint")] int location);
 
         [SupportedApiProfile(
             "gl",
@@ -48382,7 +48387,7 @@ public unsafe partial interface IGL
         static abstract void GetVertexAttribLNV(
             [NativeTypeName("GLuint")] uint index,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLint64EXT *")] long* @params
+            [NativeTypeName("GLint64EXT *")] nint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -48392,7 +48397,7 @@ public unsafe partial interface IGL
         static abstract void GetVertexAttribLNV(
             [NativeTypeName("GLuint")] uint index,
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, VertexAttribEnum> pname,
-            [NativeTypeName("GLint64EXT *")] Ref<long> @params
+            [NativeTypeName("GLint64EXT *")] Ref<nint> @params
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -48401,7 +48406,7 @@ public unsafe partial interface IGL
         static abstract void GetVertexAttribLARB(
             [NativeTypeName("GLuint")] uint index,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint64EXT *")] ulong* @params
+            [NativeTypeName("GLuint64EXT *")] nuint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -48411,7 +48416,7 @@ public unsafe partial interface IGL
         static abstract void GetVertexAttribLARB(
             [NativeTypeName("GLuint")] uint index,
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, VertexAttribEnum> pname,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -48420,7 +48425,7 @@ public unsafe partial interface IGL
         static abstract void GetVertexAttribLNV(
             [NativeTypeName("GLuint")] uint index,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint64EXT *")] ulong* @params
+            [NativeTypeName("GLuint64EXT *")] nuint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -48430,7 +48435,7 @@ public unsafe partial interface IGL
         static abstract void GetVertexAttribLNV(
             [NativeTypeName("GLuint")] uint index,
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, VertexAttribEnum> pname,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
         );
 
         [SupportedApiProfile(
@@ -48676,7 +48681,7 @@ public unsafe partial interface IGL
         static abstract void GetVideoi64VNV(
             [NativeTypeName("GLuint")] uint video_slot,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLint64EXT *")] long* @params
+            [NativeTypeName("GLint64EXT *")] nint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_present_video"])]
@@ -48685,13 +48690,13 @@ public unsafe partial interface IGL
         static abstract void GetVideoi64VNV(
             [NativeTypeName("GLuint")] uint video_slot,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLint64EXT *")] Ref<long> @params
+            [NativeTypeName("GLint64EXT *")] Ref<nint> @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_present_video"])]
         [Transformed]
         [NativeFunction("opengl", EntryPoint = "glGetVideoi64vNV")]
-        static abstract long GetVideoi64VNV([NativeTypeName("GLuint")] uint video_slot);
+        static abstract nint GetVideoi64VNV([NativeTypeName("GLuint")] uint video_slot);
 
         [SupportedApiProfile("gl", ["GL_NV_present_video"])]
         [NativeFunction("opengl", EntryPoint = "glGetVideoivNV")]
@@ -48720,7 +48725,7 @@ public unsafe partial interface IGL
         static abstract void GetVideoui64VNV(
             [NativeTypeName("GLuint")] uint video_slot,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint64EXT *")] ulong* @params
+            [NativeTypeName("GLuint64EXT *")] nuint* @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_present_video"])]
@@ -48729,13 +48734,13 @@ public unsafe partial interface IGL
         static abstract void GetVideoui64VNV(
             [NativeTypeName("GLuint")] uint video_slot,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
         );
 
         [SupportedApiProfile("gl", ["GL_NV_present_video"])]
         [Transformed]
         [NativeFunction("opengl", EntryPoint = "glGetVideoui64vNV")]
-        static abstract ulong GetVideoui64VNV([NativeTypeName("GLuint")] uint video_slot);
+        static abstract nuint GetVideoui64VNV([NativeTypeName("GLuint")] uint video_slot);
 
         [SupportedApiProfile("gl", ["GL_NV_present_video"])]
         [NativeFunction("opengl", EntryPoint = "glGetVideouivNV")]
@@ -52934,7 +52939,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glLightEnviSGIX")]
         static abstract void LightEnvSGIX(
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, LightEnvParameterSGIX> pname,
-            [NativeTypeName("GLint")] int param1
+            [NativeTypeName("GLint")] Constant<int, GLEnum, LightEnvMode> param1
         );
 
         [SupportedApiProfile(
@@ -67398,7 +67403,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glPresentFrameDualFillNV")]
         static abstract void PresentFrameDualFillNV(
             [NativeTypeName("GLuint")] uint video_slot,
-            [NativeTypeName("GLuint64EXT")] ulong minPresentTime,
+            [NativeTypeName("GLuint64EXT")] nuint minPresentTime,
             [NativeTypeName("GLuint")] uint beginPresentTimeId,
             [NativeTypeName("GLuint")] uint presentDurationId,
             [NativeTypeName("GLenum")] uint type,
@@ -67416,7 +67421,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glPresentFrameKeyedNV")]
         static abstract void PresentFrameKeyeNV(
             [NativeTypeName("GLuint")] uint video_slot,
-            [NativeTypeName("GLuint64EXT")] ulong minPresentTime,
+            [NativeTypeName("GLuint64EXT")] nuint minPresentTime,
             [NativeTypeName("GLuint")] uint beginPresentTimeId,
             [NativeTypeName("GLuint")] uint presentDurationId,
             [NativeTypeName("GLenum")] uint type,
@@ -69082,7 +69087,7 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform1NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x
+            [NativeTypeName("GLint64EXT")] nint x
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -69124,7 +69129,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -69136,7 +69141,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -69147,7 +69152,7 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform1I64VNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("const GLint64EXT *")] long value
+            [NativeTypeName("const GLint64EXT *")] nint value
         );
 
         [SupportedApiProfile(
@@ -69370,7 +69375,7 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform1Ui64NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x
+            [NativeTypeName("GLuint64EXT")] nuint x
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -69412,7 +69417,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -69424,7 +69429,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -69435,7 +69440,7 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform1Ui64VNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("const GLuint64EXT *")] ulong value
+            [NativeTypeName("const GLuint64EXT *")] nuint value
         );
 
         [SupportedApiProfile(
@@ -69949,8 +69954,8 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform2NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -69982,7 +69987,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -69994,7 +69999,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile(
@@ -70169,8 +70174,8 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform2NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -70202,7 +70207,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -70214,7 +70219,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile(
@@ -70684,9 +70689,9 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform3NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y,
-            [NativeTypeName("GLint64EXT")] long z
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y,
+            [NativeTypeName("GLint64EXT")] nint z
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -70718,7 +70723,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -70730,7 +70735,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile(
@@ -70908,9 +70913,9 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform3NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y,
-            [NativeTypeName("GLuint64EXT")] ulong z
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y,
+            [NativeTypeName("GLuint64EXT")] nuint z
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -70942,7 +70947,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -70954,7 +70959,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile(
@@ -71431,10 +71436,10 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform4NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y,
-            [NativeTypeName("GLint64EXT")] long z,
-            [NativeTypeName("GLint64EXT")] long w
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y,
+            [NativeTypeName("GLint64EXT")] nint z,
+            [NativeTypeName("GLint64EXT")] nint w
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -71466,7 +71471,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -71478,7 +71483,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile(
@@ -71659,10 +71664,10 @@ public unsafe partial interface IGL
         static abstract void ProgramUniform4NV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y,
-            [NativeTypeName("GLuint64EXT")] ulong z,
-            [NativeTypeName("GLuint64EXT")] ulong w
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y,
+            [NativeTypeName("GLuint64EXT")] nuint z,
+            [NativeTypeName("GLuint64EXT")] nuint w
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -71694,7 +71699,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -71706,7 +71711,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile(
@@ -73776,7 +73781,7 @@ public unsafe partial interface IGL
         static abstract void ProgramUniformNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong value
+            [NativeTypeName("GLuint64EXT")] nuint value
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -73786,7 +73791,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -73797,7 +73802,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -73807,7 +73812,7 @@ public unsafe partial interface IGL
         static abstract void ProgramUniformui64VNV(
             [NativeTypeName("GLuint")] uint program,
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("const GLuint64EXT *")] ulong value
+            [NativeTypeName("const GLuint64EXT *")] nuint value
         );
 
         [SupportedApiProfile("gl", ["GL_NV_geometry_program4"])]
@@ -74319,7 +74324,7 @@ public unsafe partial interface IGL
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, QueryTarget> target,
             [NativeTypeName("GLuint")] uint id,
             [NativeTypeName("GLenum")] uint pname,
-            [NativeTypeName("GLuint")] uint param3
+            [NativeTypeName("GLuint")] Constant<uint, GLEnum, OcclusionQueryEventMaskAMD> param3
         );
 
         [return: NativeTypeName("GLint")]
@@ -81194,7 +81199,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glSpriteParameteriSGIX")]
         static abstract void SpriteParameterSGIX(
             [NativeTypeName("GLenum")] Constant<uint, GLEnum, SpriteParameterNameSGIX> pname,
-            [NativeTypeName("GLint")] int param1
+            [NativeTypeName("GLint")] Constant<int, GLEnum, SpriteModeSGIX> param1
         );
 
         [SupportedApiProfile("gl", ["GL_SGIX_sprite"])]
@@ -91152,7 +91157,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform1i64NV")]
         static abstract void Uniform1NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x
+            [NativeTypeName("GLint64EXT")] nint x
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -91181,7 +91186,7 @@ public unsafe partial interface IGL
         static abstract void Uniform1NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -91192,7 +91197,7 @@ public unsafe partial interface IGL
         static abstract void Uniform1NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -91374,7 +91379,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform1ui64NV")]
         static abstract void Uniform1NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x
+            [NativeTypeName("GLuint64EXT")] nuint x
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -91403,7 +91408,7 @@ public unsafe partial interface IGL
         static abstract void Uniform1NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -91414,7 +91419,7 @@ public unsafe partial interface IGL
         static abstract void Uniform1NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -91871,8 +91876,8 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform2i64NV")]
         static abstract void Uniform2NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -91901,7 +91906,7 @@ public unsafe partial interface IGL
         static abstract void Uniform2NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -91912,7 +91917,7 @@ public unsafe partial interface IGL
         static abstract void Uniform2NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -92097,8 +92102,8 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform2ui64NV")]
         static abstract void Uniform2NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -92127,7 +92132,7 @@ public unsafe partial interface IGL
         static abstract void Uniform2NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -92138,7 +92143,7 @@ public unsafe partial interface IGL
         static abstract void Uniform2NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -92601,9 +92606,9 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform3i64NV")]
         static abstract void Uniform3NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y,
-            [NativeTypeName("GLint64EXT")] long z
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y,
+            [NativeTypeName("GLint64EXT")] nint z
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -92632,7 +92637,7 @@ public unsafe partial interface IGL
         static abstract void Uniform3NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -92643,7 +92648,7 @@ public unsafe partial interface IGL
         static abstract void Uniform3NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -92831,9 +92836,9 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform3ui64NV")]
         static abstract void Uniform3NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y,
-            [NativeTypeName("GLuint64EXT")] ulong z
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y,
+            [NativeTypeName("GLuint64EXT")] nuint z
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -92862,7 +92867,7 @@ public unsafe partial interface IGL
         static abstract void Uniform3NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -92873,7 +92878,7 @@ public unsafe partial interface IGL
         static abstract void Uniform3NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -93342,10 +93347,10 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform4i64NV")]
         static abstract void Uniform4NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y,
-            [NativeTypeName("GLint64EXT")] long z,
-            [NativeTypeName("GLint64EXT")] long w
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y,
+            [NativeTypeName("GLint64EXT")] nint z,
+            [NativeTypeName("GLint64EXT")] nint w
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -93374,7 +93379,7 @@ public unsafe partial interface IGL
         static abstract void Uniform4NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] long* value
+            [NativeTypeName("const GLint64EXT *")] nint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -93385,7 +93390,7 @@ public unsafe partial interface IGL
         static abstract void Uniform4NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> value
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> value
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -93576,10 +93581,10 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniform4ui64NV")]
         static abstract void Uniform4NV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y,
-            [NativeTypeName("GLuint64EXT")] ulong z,
-            [NativeTypeName("GLuint64EXT")] ulong w
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y,
+            [NativeTypeName("GLuint64EXT")] nuint z,
+            [NativeTypeName("GLuint64EXT")] nuint w
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -93608,7 +93613,7 @@ public unsafe partial interface IGL
         static abstract void Uniform4NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -93619,7 +93624,7 @@ public unsafe partial interface IGL
         static abstract void Uniform4NV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -95671,7 +95676,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glUniformui64NV")]
         static abstract void UniformNV(
             [NativeTypeName("GLint")] int location,
-            [NativeTypeName("GLuint64EXT")] ulong value
+            [NativeTypeName("GLuint64EXT")] nuint value
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -95680,7 +95685,7 @@ public unsafe partial interface IGL
         static abstract void UniformNV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] ulong* value
+            [NativeTypeName("const GLuint64EXT *")] nuint* value
         );
 
         [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -95690,7 +95695,7 @@ public unsafe partial interface IGL
         static abstract void UniformNV(
             [NativeTypeName("GLint")] int location,
             [NativeTypeName("GLsizei")] uint count,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
         );
 
         [SupportedApiProfile("gl", ["GL_EXT_compiled_vertex_array"])]
@@ -104350,7 +104355,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64NV")]
         static abstract void VertexAttribL1NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLint64EXT")] long x
+            [NativeTypeName("GLint64EXT")] nint x
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104358,16 +104363,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
         static abstract void VertexAttribL1I64VNV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] long* v
-        );
-
-        [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
-        [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
-        [Transformed]
-        [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
-        static abstract void VertexAttribL1I64VNV(
-            [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> v
+            [NativeTypeName("const GLint64EXT *")] nint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104376,7 +104372,16 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
         static abstract void VertexAttribL1I64VNV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] long v
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> v
+        );
+
+        [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
+        [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
+        [Transformed]
+        [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
+        static abstract void VertexAttribL1I64VNV(
+            [NativeTypeName("GLuint")] uint index,
+            [NativeTypeName("const GLint64EXT *")] nint v
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -104384,7 +104389,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64ARB")]
         static abstract void VertexAttribL1ARB(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT")] ulong x
+            [NativeTypeName("GLuint64EXT")] nuint x
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104392,7 +104397,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64NV")]
         static abstract void VertexAttribL1Ui64NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT")] ulong x
+            [NativeTypeName("GLuint64EXT")] nuint x
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -104400,7 +104405,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vARB")]
         static abstract void VertexAttribL1ARB(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] ulong* v
+            [NativeTypeName("const GLuint64EXT *")] nuint* v
         );
 
         [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -104409,7 +104414,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vARB")]
         static abstract void VertexAttribL1ARB(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104417,16 +104422,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
         static abstract void VertexAttribL1Ui64VNV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] ulong* v
-        );
-
-        [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
-        [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
-        [Transformed]
-        [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
-        static abstract void VertexAttribL1Ui64VNV(
-            [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+            [NativeTypeName("const GLuint64EXT *")] nuint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104435,7 +104431,16 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
         static abstract void VertexAttribL1Ui64VNV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] ulong v
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
+        );
+
+        [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
+        [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
+        [Transformed]
+        [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
+        static abstract void VertexAttribL1Ui64VNV(
+            [NativeTypeName("GLuint")] uint index,
+            [NativeTypeName("const GLuint64EXT *")] nuint v
         );
 
         [SupportedApiProfile(
@@ -104564,8 +104569,8 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL2i64NV")]
         static abstract void VertexAttribL2NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104573,7 +104578,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL2i64vNV")]
         static abstract void VertexAttribL2NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] long* v
+            [NativeTypeName("const GLint64EXT *")] nint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104582,7 +104587,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL2i64vNV")]
         static abstract void VertexAttribL2NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> v
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104590,8 +104595,8 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL2ui64NV")]
         static abstract void VertexAttribL2NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104599,7 +104604,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL2ui64vNV")]
         static abstract void VertexAttribL2NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] ulong* v
+            [NativeTypeName("const GLuint64EXT *")] nuint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104608,7 +104613,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL2ui64vNV")]
         static abstract void VertexAttribL2NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
         );
 
         [SupportedApiProfile(
@@ -104739,9 +104744,9 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL3i64NV")]
         static abstract void VertexAttribL3NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y,
-            [NativeTypeName("GLint64EXT")] long z
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y,
+            [NativeTypeName("GLint64EXT")] nint z
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104749,7 +104754,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL3i64vNV")]
         static abstract void VertexAttribL3NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] long* v
+            [NativeTypeName("const GLint64EXT *")] nint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104758,7 +104763,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL3i64vNV")]
         static abstract void VertexAttribL3NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> v
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104766,9 +104771,9 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL3ui64NV")]
         static abstract void VertexAttribL3NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y,
-            [NativeTypeName("GLuint64EXT")] ulong z
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y,
+            [NativeTypeName("GLuint64EXT")] nuint z
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104776,7 +104781,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL3ui64vNV")]
         static abstract void VertexAttribL3NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] ulong* v
+            [NativeTypeName("const GLuint64EXT *")] nuint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104785,7 +104790,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL3ui64vNV")]
         static abstract void VertexAttribL3NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
         );
 
         [SupportedApiProfile(
@@ -104918,10 +104923,10 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL4i64NV")]
         static abstract void VertexAttribL4NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLint64EXT")] long x,
-            [NativeTypeName("GLint64EXT")] long y,
-            [NativeTypeName("GLint64EXT")] long z,
-            [NativeTypeName("GLint64EXT")] long w
+            [NativeTypeName("GLint64EXT")] nint x,
+            [NativeTypeName("GLint64EXT")] nint y,
+            [NativeTypeName("GLint64EXT")] nint z,
+            [NativeTypeName("GLint64EXT")] nint w
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104929,7 +104934,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL4i64vNV")]
         static abstract void VertexAttribL4NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] long* v
+            [NativeTypeName("const GLint64EXT *")] nint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104938,7 +104943,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL4i64vNV")]
         static abstract void VertexAttribL4NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLint64EXT *")] Ref<long> v
+            [NativeTypeName("const GLint64EXT *")] Ref<nint> v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104946,10 +104951,10 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL4ui64NV")]
         static abstract void VertexAttribL4NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("GLuint64EXT")] ulong x,
-            [NativeTypeName("GLuint64EXT")] ulong y,
-            [NativeTypeName("GLuint64EXT")] ulong z,
-            [NativeTypeName("GLuint64EXT")] ulong w
+            [NativeTypeName("GLuint64EXT")] nuint x,
+            [NativeTypeName("GLuint64EXT")] nuint y,
+            [NativeTypeName("GLuint64EXT")] nuint z,
+            [NativeTypeName("GLuint64EXT")] nuint w
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104957,7 +104962,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL4ui64vNV")]
         static abstract void VertexAttribL4NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] ulong* v
+            [NativeTypeName("const GLuint64EXT *")] nuint* v
         );
 
         [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -104966,7 +104971,7 @@ public unsafe partial interface IGL
         [NativeFunction("opengl", EntryPoint = "glVertexAttribL4ui64vNV")]
         static abstract void VertexAttribL4NV(
             [NativeTypeName("GLuint")] uint index,
-            [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+            [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
         );
 
         [SupportedApiProfile(
@@ -107374,7 +107379,7 @@ public unsafe partial interface IGL
         static abstract uint VideoCaptureNV(
             [NativeTypeName("GLuint")] uint video_capture_slot,
             [NativeTypeName("GLuint *")] uint* sequence_num,
-            [NativeTypeName("GLuint64EXT *")] ulong* capture_time
+            [NativeTypeName("GLuint64EXT *")] nuint* capture_time
         );
 
         [return: NativeTypeName("GLenum")]
@@ -107384,7 +107389,7 @@ public unsafe partial interface IGL
         static abstract uint VideoCaptureNV(
             [NativeTypeName("GLuint")] uint video_capture_slot,
             [NativeTypeName("GLuint *")] Ref<uint> sequence_num,
-            [NativeTypeName("GLuint64EXT *")] Ref<ulong> capture_time
+            [NativeTypeName("GLuint64EXT *")] Ref<nuint> capture_time
         );
 
         [SupportedApiProfile("gl", ["GL_NV_video_capture"])]
@@ -114192,7 +114197,7 @@ public unsafe partial interface IGL
     void BufferAddressRangeNV(
         [NativeTypeName("GLenum")] uint pname,
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT")] ulong address,
+        [NativeTypeName("GLuint64EXT")] nuint address,
         [NativeTypeName("GLsizeiptr")] nuint length
     );
 
@@ -139999,7 +140004,7 @@ public unsafe partial interface IGL
     void GetBufferParameterNV(
         [NativeTypeName("GLenum")] uint target,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint64EXT *")] ulong* @params
+        [NativeTypeName("GLuint64EXT *")] nuint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -140009,14 +140014,14 @@ public unsafe partial interface IGL
     void GetBufferParameterNV(
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, BufferTarget> target,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
     [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
     [Transformed]
     [NativeFunction("opengl", EntryPoint = "glGetBufferParameterui64vNV")]
-    ulong GetBufferParameterNV(
+    nuint GetBufferParameterNV(
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, BufferTarget> target
     );
 
@@ -143336,7 +143341,7 @@ public unsafe partial interface IGL
     void GetIntegerui64NV(
         [NativeTypeName("GLenum")] uint value,
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT *")] ulong* result
+        [NativeTypeName("GLuint64EXT *")] nuint* result
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_buffer_unified_memory"])]
@@ -143346,21 +143351,21 @@ public unsafe partial interface IGL
     void GetIntegerui64NV(
         [NativeTypeName("GLenum")] uint value,
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> result
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> result
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_buffer_unified_memory"])]
     [SupportedApiProfile("glcore", ["GL_NV_vertex_buffer_unified_memory"])]
     [Transformed]
     [NativeFunction("opengl", EntryPoint = "glGetIntegerui64i_vNV")]
-    ulong GetIntegerui64NV([NativeTypeName("GLuint")] uint index);
+    nuint GetIntegerui64NV([NativeTypeName("GLuint")] uint index);
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
     [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
     [NativeFunction("opengl", EntryPoint = "glGetIntegerui64vNV")]
     void GetIntegerNV(
         [NativeTypeName("GLenum")] uint value,
-        [NativeTypeName("GLuint64EXT *")] ulong* result
+        [NativeTypeName("GLuint64EXT *")] nuint* result
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -143369,14 +143374,14 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glGetIntegerui64vNV")]
     void GetIntegerNV(
         [NativeTypeName("GLenum")] uint value,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> result
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> result
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
     [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
     [Transformed]
     [NativeFunction("opengl", EntryPoint = "glGetIntegerui64vNV")]
-    ulong GetIntegerNV();
+    nuint GetIntegerNV();
 
     [SupportedApiProfile(
         "gl",
@@ -145189,7 +145194,7 @@ public unsafe partial interface IGL
     void GetNamedBufferParameterNV(
         [NativeTypeName("GLuint")] uint buffer,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint64EXT *")] ulong* @params
+        [NativeTypeName("GLuint64EXT *")] nuint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -145199,7 +145204,7 @@ public unsafe partial interface IGL
     void GetNamedBufferParameterNV(
         [NativeTypeName("GLuint")] uint buffer,
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, BufferPName> pname,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
     );
 
     [SupportedApiProfile(
@@ -149749,6 +149754,11 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint index,
         [NativeTypeName("GLuint *")] Ref<uint> param2
     );
+
+    [SupportedApiProfile("gl", ["GL_NV_gpu_program5"])]
+    [Transformed]
+    [NativeFunction("opengl", EntryPoint = "glGetProgramSubroutineParameteruivNV")]
+    uint GetProgramSubroutineParameterNV([NativeTypeName("GLuint")] uint index);
 
     [SupportedApiProfile(
         "gl",
@@ -155174,7 +155184,7 @@ public unsafe partial interface IGL
     void GetUniformNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT *")] long* @params
+        [NativeTypeName("GLint64EXT *")] nint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -155185,7 +155195,7 @@ public unsafe partial interface IGL
     void GetUniformNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT *")] Ref<long> @params
+        [NativeTypeName("GLint64EXT *")] Ref<nint> @params
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -155193,7 +155203,7 @@ public unsafe partial interface IGL
     [SupportedApiProfile("gles2", ["GL_NV_gpu_shader5"])]
     [Transformed]
     [NativeFunction("opengl", EntryPoint = "glGetUniformi64vNV")]
-    long GetUniformNV([NativeTypeName("GLint")] int location);
+    nint GetUniformNV([NativeTypeName("GLint")] int location);
 
     [SupportedApiProfile(
         "gl",
@@ -155713,7 +155723,7 @@ public unsafe partial interface IGL
     void GetUniformui64VNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT *")] ulong* @params
+        [NativeTypeName("GLuint64EXT *")] nuint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_shader_buffer_load"])]
@@ -155723,14 +155733,14 @@ public unsafe partial interface IGL
     void GetUniformui64VNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_shader_buffer_load"])]
     [SupportedApiProfile("glcore", ["GL_NV_shader_buffer_load"])]
     [Transformed]
     [NativeFunction("opengl", EntryPoint = "glGetUniformui64vNV")]
-    ulong GetUniformui64VNV([NativeTypeName("GLint")] int location);
+    nuint GetUniformui64VNV([NativeTypeName("GLint")] int location);
 
     [SupportedApiProfile(
         "gl",
@@ -157103,7 +157113,7 @@ public unsafe partial interface IGL
     void GetVertexAttribLNV(
         [NativeTypeName("GLuint")] uint index,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLint64EXT *")] long* @params
+        [NativeTypeName("GLint64EXT *")] nint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -157113,7 +157123,7 @@ public unsafe partial interface IGL
     void GetVertexAttribLNV(
         [NativeTypeName("GLuint")] uint index,
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, VertexAttribEnum> pname,
-        [NativeTypeName("GLint64EXT *")] Ref<long> @params
+        [NativeTypeName("GLint64EXT *")] Ref<nint> @params
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -157122,7 +157132,7 @@ public unsafe partial interface IGL
     void GetVertexAttribLARB(
         [NativeTypeName("GLuint")] uint index,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint64EXT *")] ulong* @params
+        [NativeTypeName("GLuint64EXT *")] nuint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -157132,7 +157142,7 @@ public unsafe partial interface IGL
     void GetVertexAttribLARB(
         [NativeTypeName("GLuint")] uint index,
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, VertexAttribEnum> pname,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -157141,7 +157151,7 @@ public unsafe partial interface IGL
     void GetVertexAttribLNV(
         [NativeTypeName("GLuint")] uint index,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint64EXT *")] ulong* @params
+        [NativeTypeName("GLuint64EXT *")] nuint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -157151,7 +157161,7 @@ public unsafe partial interface IGL
     void GetVertexAttribLNV(
         [NativeTypeName("GLuint")] uint index,
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, VertexAttribEnum> pname,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
     );
 
     [SupportedApiProfile(
@@ -157397,7 +157407,7 @@ public unsafe partial interface IGL
     void GetVideoi64VNV(
         [NativeTypeName("GLuint")] uint video_slot,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLint64EXT *")] long* @params
+        [NativeTypeName("GLint64EXT *")] nint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_present_video"])]
@@ -157406,13 +157416,13 @@ public unsafe partial interface IGL
     void GetVideoi64VNV(
         [NativeTypeName("GLuint")] uint video_slot,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLint64EXT *")] Ref<long> @params
+        [NativeTypeName("GLint64EXT *")] Ref<nint> @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_present_video"])]
     [Transformed]
     [NativeFunction("opengl", EntryPoint = "glGetVideoi64vNV")]
-    long GetVideoi64VNV([NativeTypeName("GLuint")] uint video_slot);
+    nint GetVideoi64VNV([NativeTypeName("GLuint")] uint video_slot);
 
     [SupportedApiProfile("gl", ["GL_NV_present_video"])]
     [NativeFunction("opengl", EntryPoint = "glGetVideoivNV")]
@@ -157441,7 +157451,7 @@ public unsafe partial interface IGL
     void GetVideoui64VNV(
         [NativeTypeName("GLuint")] uint video_slot,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint64EXT *")] ulong* @params
+        [NativeTypeName("GLuint64EXT *")] nuint* @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_present_video"])]
@@ -157450,13 +157460,13 @@ public unsafe partial interface IGL
     void GetVideoui64VNV(
         [NativeTypeName("GLuint")] uint video_slot,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> @params
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> @params
     );
 
     [SupportedApiProfile("gl", ["GL_NV_present_video"])]
     [Transformed]
     [NativeFunction("opengl", EntryPoint = "glGetVideoui64vNV")]
-    ulong GetVideoui64VNV([NativeTypeName("GLuint")] uint video_slot);
+    nuint GetVideoui64VNV([NativeTypeName("GLuint")] uint video_slot);
 
     [SupportedApiProfile("gl", ["GL_NV_present_video"])]
     [NativeFunction("opengl", EntryPoint = "glGetVideouivNV")]
@@ -161596,7 +161606,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glLightEnviSGIX")]
     void LightEnvSGIX(
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, LightEnvParameterSGIX> pname,
-        [NativeTypeName("GLint")] int param1
+        [NativeTypeName("GLint")] Constant<int, GLEnum, LightEnvMode> param1
     );
 
     [SupportedApiProfile(
@@ -175917,7 +175927,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glPresentFrameDualFillNV")]
     void PresentFrameDualFillNV(
         [NativeTypeName("GLuint")] uint video_slot,
-        [NativeTypeName("GLuint64EXT")] ulong minPresentTime,
+        [NativeTypeName("GLuint64EXT")] nuint minPresentTime,
         [NativeTypeName("GLuint")] uint beginPresentTimeId,
         [NativeTypeName("GLuint")] uint presentDurationId,
         [NativeTypeName("GLenum")] uint type,
@@ -175935,7 +175945,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glPresentFrameKeyedNV")]
     void PresentFrameKeyeNV(
         [NativeTypeName("GLuint")] uint video_slot,
-        [NativeTypeName("GLuint64EXT")] ulong minPresentTime,
+        [NativeTypeName("GLuint64EXT")] nuint minPresentTime,
         [NativeTypeName("GLuint")] uint beginPresentTimeId,
         [NativeTypeName("GLuint")] uint presentDurationId,
         [NativeTypeName("GLenum")] uint type,
@@ -177589,7 +177599,7 @@ public unsafe partial interface IGL
     void ProgramUniform1NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT")] long x
+        [NativeTypeName("GLint64EXT")] nint x
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -177631,7 +177641,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -177643,7 +177653,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -177654,7 +177664,7 @@ public unsafe partial interface IGL
     void ProgramUniform1I64VNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("const GLint64EXT *")] long value
+        [NativeTypeName("const GLint64EXT *")] nint value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -177865,7 +177875,7 @@ public unsafe partial interface IGL
     void ProgramUniform1Ui64NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x
+        [NativeTypeName("GLuint64EXT")] nuint x
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -177907,7 +177917,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -177919,7 +177929,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -177930,7 +177940,7 @@ public unsafe partial interface IGL
     void ProgramUniform1Ui64VNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("const GLuint64EXT *")] ulong value
+        [NativeTypeName("const GLuint64EXT *")] nuint value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -178423,8 +178433,8 @@ public unsafe partial interface IGL
     void ProgramUniform2NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -178456,7 +178466,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -178468,7 +178478,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -178634,8 +178644,8 @@ public unsafe partial interface IGL
     void ProgramUniform2NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -178667,7 +178677,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -178679,7 +178689,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -179131,9 +179141,9 @@ public unsafe partial interface IGL
     void ProgramUniform3NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y,
-        [NativeTypeName("GLint64EXT")] long z
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y,
+        [NativeTypeName("GLint64EXT")] nint z
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -179165,7 +179175,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -179177,7 +179187,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -179346,9 +179356,9 @@ public unsafe partial interface IGL
     void ProgramUniform3NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y,
-        [NativeTypeName("GLuint64EXT")] ulong z
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y,
+        [NativeTypeName("GLuint64EXT")] nuint z
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -179380,7 +179390,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -179392,7 +179402,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -179851,10 +179861,10 @@ public unsafe partial interface IGL
     void ProgramUniform4NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y,
-        [NativeTypeName("GLint64EXT")] long z,
-        [NativeTypeName("GLint64EXT")] long w
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y,
+        [NativeTypeName("GLint64EXT")] nint z,
+        [NativeTypeName("GLint64EXT")] nint w
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -179886,7 +179896,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -179898,7 +179908,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -180070,10 +180080,10 @@ public unsafe partial interface IGL
     void ProgramUniform4NV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y,
-        [NativeTypeName("GLuint64EXT")] ulong z,
-        [NativeTypeName("GLuint64EXT")] ulong w
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y,
+        [NativeTypeName("GLuint64EXT")] nuint z,
+        [NativeTypeName("GLuint64EXT")] nuint w
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -180105,7 +180115,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -180117,7 +180127,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_direct_state_access", "GL_EXT_separate_shader_objects"])]
@@ -182124,7 +182134,7 @@ public unsafe partial interface IGL
     void ProgramUniformNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong value
+        [NativeTypeName("GLuint64EXT")] nuint value
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -182134,7 +182144,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -182145,7 +182155,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -182155,7 +182165,7 @@ public unsafe partial interface IGL
     void ProgramUniformui64VNV(
         [NativeTypeName("GLuint")] uint program,
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("const GLuint64EXT *")] ulong value
+        [NativeTypeName("const GLuint64EXT *")] nuint value
     );
 
     [SupportedApiProfile("gl", ["GL_NV_geometry_program4"])]
@@ -182638,7 +182648,7 @@ public unsafe partial interface IGL
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, QueryTarget> target,
         [NativeTypeName("GLuint")] uint id,
         [NativeTypeName("GLenum")] uint pname,
-        [NativeTypeName("GLuint")] uint param3
+        [NativeTypeName("GLuint")] Constant<uint, GLEnum, OcclusionQueryEventMaskAMD> param3
     );
 
     [return: NativeTypeName("GLint")]
@@ -189413,7 +189423,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glSpriteParameteriSGIX")]
     void SpriteParameterSGIX(
         [NativeTypeName("GLenum")] Constant<uint, GLEnum, SpriteParameterNameSGIX> pname,
-        [NativeTypeName("GLint")] int param1
+        [NativeTypeName("GLint")] Constant<int, GLEnum, SpriteModeSGIX> param1
     );
 
     [SupportedApiProfile("gl", ["GL_SGIX_sprite"])]
@@ -199311,7 +199321,7 @@ public unsafe partial interface IGL
     [SupportedApiProfile("glcore", ["GL_NV_gpu_shader5"])]
     [SupportedApiProfile("gles2", ["GL_NV_gpu_shader5"])]
     [NativeFunction("opengl", EntryPoint = "glUniform1i64NV")]
-    void Uniform1NV([NativeTypeName("GLint")] int location, [NativeTypeName("GLint64EXT")] long x);
+    void Uniform1NV([NativeTypeName("GLint")] int location, [NativeTypeName("GLint64EXT")] nint x);
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
     [SupportedApiProfile("glcore", ["GL_ARB_gpu_shader_int64"])]
@@ -199339,7 +199349,7 @@ public unsafe partial interface IGL
     void Uniform1NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -199350,7 +199360,7 @@ public unsafe partial interface IGL
     void Uniform1NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -199523,7 +199533,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniform1ui64NV")]
     void Uniform1NV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x
+        [NativeTypeName("GLuint64EXT")] nuint x
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -199552,7 +199562,7 @@ public unsafe partial interface IGL
     void Uniform1NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -199563,7 +199573,7 @@ public unsafe partial interface IGL
     void Uniform1NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -200017,8 +200027,8 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniform2i64NV")]
     void Uniform2NV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -200047,7 +200057,7 @@ public unsafe partial interface IGL
     void Uniform2NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -200058,7 +200068,7 @@ public unsafe partial interface IGL
     void Uniform2NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -200243,8 +200253,8 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniform2ui64NV")]
     void Uniform2NV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -200273,7 +200283,7 @@ public unsafe partial interface IGL
     void Uniform2NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -200284,7 +200294,7 @@ public unsafe partial interface IGL
     void Uniform2NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -200747,9 +200757,9 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniform3i64NV")]
     void Uniform3NV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y,
-        [NativeTypeName("GLint64EXT")] long z
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y,
+        [NativeTypeName("GLint64EXT")] nint z
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -200778,7 +200788,7 @@ public unsafe partial interface IGL
     void Uniform3NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -200789,7 +200799,7 @@ public unsafe partial interface IGL
     void Uniform3NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -200977,9 +200987,9 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniform3ui64NV")]
     void Uniform3NV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y,
-        [NativeTypeName("GLuint64EXT")] ulong z
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y,
+        [NativeTypeName("GLuint64EXT")] nuint z
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -201008,7 +201018,7 @@ public unsafe partial interface IGL
     void Uniform3NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -201019,7 +201029,7 @@ public unsafe partial interface IGL
     void Uniform3NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -201488,10 +201498,10 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniform4i64NV")]
     void Uniform4NV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y,
-        [NativeTypeName("GLint64EXT")] long z,
-        [NativeTypeName("GLint64EXT")] long w
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y,
+        [NativeTypeName("GLint64EXT")] nint z,
+        [NativeTypeName("GLint64EXT")] nint w
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -201520,7 +201530,7 @@ public unsafe partial interface IGL
     void Uniform4NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] long* value
+        [NativeTypeName("const GLint64EXT *")] nint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -201531,7 +201541,7 @@ public unsafe partial interface IGL
     void Uniform4NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> value
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> value
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_shader_objects"])]
@@ -201722,10 +201732,10 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniform4ui64NV")]
     void Uniform4NV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y,
-        [NativeTypeName("GLuint64EXT")] ulong z,
-        [NativeTypeName("GLuint64EXT")] ulong w
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y,
+        [NativeTypeName("GLuint64EXT")] nuint z,
+        [NativeTypeName("GLuint64EXT")] nuint w
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_gpu_shader_int64"])]
@@ -201754,7 +201764,7 @@ public unsafe partial interface IGL
     void Uniform4NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_AMD_gpu_shader_int64", "GL_NV_gpu_shader5"])]
@@ -201765,7 +201775,7 @@ public unsafe partial interface IGL
     void Uniform4NV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_gpu_shader4"])]
@@ -203817,7 +203827,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glUniformui64NV")]
     void UniformNV(
         [NativeTypeName("GLint")] int location,
-        [NativeTypeName("GLuint64EXT")] ulong value
+        [NativeTypeName("GLuint64EXT")] nuint value
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -203826,7 +203836,7 @@ public unsafe partial interface IGL
     void UniformNV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] ulong* value
+        [NativeTypeName("const GLuint64EXT *")] nuint* value
     );
 
     [SupportedApiProfile("gl", ["GL_NV_shader_buffer_load"])]
@@ -203836,7 +203846,7 @@ public unsafe partial interface IGL
     void UniformNV(
         [NativeTypeName("GLint")] int location,
         [NativeTypeName("GLsizei")] uint count,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> value
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> value
     );
 
     [SupportedApiProfile("gl", ["GL_EXT_compiled_vertex_array"])]
@@ -212446,7 +212456,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64NV")]
     void VertexAttribL1NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLint64EXT")] long x
+        [NativeTypeName("GLint64EXT")] nint x
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212454,16 +212464,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
     void VertexAttribL1I64VNV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] long* v
-    );
-
-    [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
-    [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
-    [Transformed]
-    [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
-    void VertexAttribL1I64VNV(
-        [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> v
+        [NativeTypeName("const GLint64EXT *")] nint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212472,7 +212473,16 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
     void VertexAttribL1I64VNV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] long v
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> v
+    );
+
+    [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
+    [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
+    [Transformed]
+    [NativeFunction("opengl", EntryPoint = "glVertexAttribL1i64vNV")]
+    void VertexAttribL1I64VNV(
+        [NativeTypeName("GLuint")] uint index,
+        [NativeTypeName("const GLint64EXT *")] nint v
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -212480,7 +212490,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64ARB")]
     void VertexAttribL1ARB(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT")] ulong x
+        [NativeTypeName("GLuint64EXT")] nuint x
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212488,7 +212498,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64NV")]
     void VertexAttribL1Ui64NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT")] ulong x
+        [NativeTypeName("GLuint64EXT")] nuint x
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -212496,7 +212506,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vARB")]
     void VertexAttribL1ARB(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] ulong* v
+        [NativeTypeName("const GLuint64EXT *")] nuint* v
     );
 
     [SupportedApiProfile("gl", ["GL_ARB_bindless_texture"])]
@@ -212505,7 +212515,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vARB")]
     void VertexAttribL1ARB(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212513,16 +212523,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
     void VertexAttribL1Ui64VNV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] ulong* v
-    );
-
-    [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
-    [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
-    [Transformed]
-    [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
-    void VertexAttribL1Ui64VNV(
-        [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+        [NativeTypeName("const GLuint64EXT *")] nuint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212531,7 +212532,16 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
     void VertexAttribL1Ui64VNV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] ulong v
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
+    );
+
+    [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
+    [SupportedApiProfile("glcore", ["GL_NV_vertex_attrib_integer_64bit"])]
+    [Transformed]
+    [NativeFunction("opengl", EntryPoint = "glVertexAttribL1ui64vNV")]
+    void VertexAttribL1Ui64VNV(
+        [NativeTypeName("GLuint")] uint index,
+        [NativeTypeName("const GLuint64EXT *")] nuint v
     );
 
     [SupportedApiProfile(
@@ -212660,8 +212670,8 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL2i64NV")]
     void VertexAttribL2NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212669,7 +212679,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL2i64vNV")]
     void VertexAttribL2NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] long* v
+        [NativeTypeName("const GLint64EXT *")] nint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212678,7 +212688,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL2i64vNV")]
     void VertexAttribL2NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> v
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212686,8 +212696,8 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL2ui64NV")]
     void VertexAttribL2NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212695,7 +212705,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL2ui64vNV")]
     void VertexAttribL2NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] ulong* v
+        [NativeTypeName("const GLuint64EXT *")] nuint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212704,7 +212714,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL2ui64vNV")]
     void VertexAttribL2NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
     );
 
     [SupportedApiProfile(
@@ -212835,9 +212845,9 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL3i64NV")]
     void VertexAttribL3NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y,
-        [NativeTypeName("GLint64EXT")] long z
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y,
+        [NativeTypeName("GLint64EXT")] nint z
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212845,7 +212855,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL3i64vNV")]
     void VertexAttribL3NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] long* v
+        [NativeTypeName("const GLint64EXT *")] nint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212854,7 +212864,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL3i64vNV")]
     void VertexAttribL3NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> v
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212862,9 +212872,9 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL3ui64NV")]
     void VertexAttribL3NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y,
-        [NativeTypeName("GLuint64EXT")] ulong z
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y,
+        [NativeTypeName("GLuint64EXT")] nuint z
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212872,7 +212882,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL3ui64vNV")]
     void VertexAttribL3NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] ulong* v
+        [NativeTypeName("const GLuint64EXT *")] nuint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -212881,7 +212891,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL3ui64vNV")]
     void VertexAttribL3NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
     );
 
     [SupportedApiProfile(
@@ -213014,10 +213024,10 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL4i64NV")]
     void VertexAttribL4NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLint64EXT")] long x,
-        [NativeTypeName("GLint64EXT")] long y,
-        [NativeTypeName("GLint64EXT")] long z,
-        [NativeTypeName("GLint64EXT")] long w
+        [NativeTypeName("GLint64EXT")] nint x,
+        [NativeTypeName("GLint64EXT")] nint y,
+        [NativeTypeName("GLint64EXT")] nint z,
+        [NativeTypeName("GLint64EXT")] nint w
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -213025,7 +213035,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL4i64vNV")]
     void VertexAttribL4NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] long* v
+        [NativeTypeName("const GLint64EXT *")] nint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -213034,7 +213044,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL4i64vNV")]
     void VertexAttribL4NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLint64EXT *")] Ref<long> v
+        [NativeTypeName("const GLint64EXT *")] Ref<nint> v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -213042,10 +213052,10 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL4ui64NV")]
     void VertexAttribL4NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("GLuint64EXT")] ulong x,
-        [NativeTypeName("GLuint64EXT")] ulong y,
-        [NativeTypeName("GLuint64EXT")] ulong z,
-        [NativeTypeName("GLuint64EXT")] ulong w
+        [NativeTypeName("GLuint64EXT")] nuint x,
+        [NativeTypeName("GLuint64EXT")] nuint y,
+        [NativeTypeName("GLuint64EXT")] nuint z,
+        [NativeTypeName("GLuint64EXT")] nuint w
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -213053,7 +213063,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL4ui64vNV")]
     void VertexAttribL4NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] ulong* v
+        [NativeTypeName("const GLuint64EXT *")] nuint* v
     );
 
     [SupportedApiProfile("gl", ["GL_NV_vertex_attrib_integer_64bit"])]
@@ -213062,7 +213072,7 @@ public unsafe partial interface IGL
     [NativeFunction("opengl", EntryPoint = "glVertexAttribL4ui64vNV")]
     void VertexAttribL4NV(
         [NativeTypeName("GLuint")] uint index,
-        [NativeTypeName("const GLuint64EXT *")] Ref<ulong> v
+        [NativeTypeName("const GLuint64EXT *")] Ref<nuint> v
     );
 
     [SupportedApiProfile(
@@ -215454,7 +215464,7 @@ public unsafe partial interface IGL
     uint VideoCaptureNV(
         [NativeTypeName("GLuint")] uint video_capture_slot,
         [NativeTypeName("GLuint *")] uint* sequence_num,
-        [NativeTypeName("GLuint64EXT *")] ulong* capture_time
+        [NativeTypeName("GLuint64EXT *")] nuint* capture_time
     );
 
     [return: NativeTypeName("GLenum")]
@@ -215464,7 +215474,7 @@ public unsafe partial interface IGL
     uint VideoCaptureNV(
         [NativeTypeName("GLuint")] uint video_capture_slot,
         [NativeTypeName("GLuint *")] Ref<uint> sequence_num,
-        [NativeTypeName("GLuint64EXT *")] Ref<ulong> capture_time
+        [NativeTypeName("GLuint64EXT *")] Ref<nuint> capture_time
     );
 
     [SupportedApiProfile("gl", ["GL_NV_video_capture"])]
