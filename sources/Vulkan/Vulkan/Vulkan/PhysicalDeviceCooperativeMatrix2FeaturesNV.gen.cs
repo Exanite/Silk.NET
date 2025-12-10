@@ -8,79 +8,29 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceCooperativeMatrix2FeaturesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCooperativeMatrix2FeaturesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
     public void* PNext;
 
-    [NativeName("cooperativeMatrixWorkgroupScope")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CooperativeMatrixWorkgroupScope;
 
-    [NativeName("cooperativeMatrixFlexibleDimensions")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CooperativeMatrixFlexibleDimensions;
 
-    [NativeName("cooperativeMatrixReductions")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CooperativeMatrixReductions;
 
-    [NativeName("cooperativeMatrixConversions")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CooperativeMatrixConversions;
 
-    [NativeName("cooperativeMatrixPerElementOperations")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CooperativeMatrixPerElementOperations;
 
-    [NativeName("cooperativeMatrixTensorAddressing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CooperativeMatrixTensorAddressing;
 
-    [NativeName("cooperativeMatrixBlockLoads")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix2"],
-        ImpliesSets = ["VK_KHR_cooperative_matrix"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CooperativeMatrixBlockLoads;
 }

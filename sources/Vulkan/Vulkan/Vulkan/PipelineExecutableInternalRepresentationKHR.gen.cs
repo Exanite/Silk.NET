@@ -7,84 +7,21 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineExecutableInternalRepresentationKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineExecutableInternalRepresentationKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("name")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("char[256]")]
     public PipelineExecutableInternalRepresentationKHRName Name;
 
-    [NativeName("description")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("char[256]")]
     public PipelineExecutableInternalRepresentationKHRDescription Description;
 
-    [NativeName("isText")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint IsText;
 
-    [NativeName("dataSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint DataSize;
-
-    [NativeName("pData")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public void* PData;
 }

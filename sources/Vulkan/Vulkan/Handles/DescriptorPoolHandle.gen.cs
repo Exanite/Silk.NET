@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDescriptorPool")]
 public readonly unsafe partial struct DescriptorPoolHandle
 {
     public readonly void* Handle;

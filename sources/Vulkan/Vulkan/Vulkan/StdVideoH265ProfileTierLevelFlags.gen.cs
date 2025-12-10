@@ -8,16 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265ProfileTierLevelFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoH265ProfileTierLevelFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("general_tier_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint GeneralTierFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -26,8 +21,7 @@ public partial struct StdVideoH265ProfileTierLevelFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("general_progressive_source_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint GeneralProgressiveSourceFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -36,8 +30,7 @@ public partial struct StdVideoH265ProfileTierLevelFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("general_interlaced_source_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint GeneralInterlacedSourceFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -46,8 +39,7 @@ public partial struct StdVideoH265ProfileTierLevelFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("general_non_packed_constraint_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint GeneralNonPackedConstraintFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -56,8 +48,7 @@ public partial struct StdVideoH265ProfileTierLevelFlags
         set { Bitfield = (Bitfield & ~(0x1u << 3)) | ((value & 0x1u) << 3); }
     }
 
-    [NativeName("general_frame_only_constraint_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint GeneralFrameOnlyConstraintFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

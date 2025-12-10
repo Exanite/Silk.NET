@@ -75,13 +75,12 @@
       },
       "TransformEnums": {
         "AddNoneMemberToFlags": true,
-        "RewriteMemberValues": true
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
+          "NativeName",
           "NameAffix",
-          "Transformed"
+          "SupportedApiProfile"
         ]
       }
     },
@@ -185,7 +184,6 @@
       },
       "TransformEnums": {
         "AddNoneMemberToFlags": true,
-        "RewriteMemberValues": true
       },
       "TransformFunctions": {
         "BoolTypes": {
@@ -194,9 +192,9 @@
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
+          "NativeName",
           "NameAffix",
-          "Transformed"
+          "SupportedApiProfile"
         ]
       }
     },
@@ -301,7 +299,6 @@
       },
       "TransformEnums": {
         "AddNoneMemberToFlags": true,
-        "RewriteMemberValues": true
       },
       "TransformFunctions": {
         "BoolTypes": {
@@ -320,9 +317,9 @@
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
+          "NativeName",
           "NameAffix",
-          "Transformed"
+          "SupportedApiProfile"
         ]
       }
     },
@@ -434,9 +431,9 @@
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
+          "NativeName",
           "NameAffix",
-          "Transformed"
+          "SupportedApiProfile"
         ]
       }
     }

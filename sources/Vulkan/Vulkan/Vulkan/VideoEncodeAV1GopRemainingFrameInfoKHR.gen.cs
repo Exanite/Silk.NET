@@ -7,55 +7,22 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeAV1GopRemainingFrameInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeAV1GopRemainingFrameInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("useGopRemainingFrames")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint UseGopRemainingFrames;
 
-    [NativeName("gopRemainingIntra")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint GopRemainingIntra;
 
-    [NativeName("gopRemainingPredictive")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint GopRemainingPredictive;
 
-    [NativeName("gopRemainingBipredictive")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint GopRemainingBipredictive;
 }

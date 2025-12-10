@@ -8,63 +8,25 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDataGraphPipelineShaderModuleCreateInfoARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DataGraphPipelineShaderModuleCreateInfoARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("module")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkShaderModule")]
     public ShaderModuleHandle Module;
 
-    [NativeName("pName")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const char *")]
     public sbyte* PName;
 
-    [NativeName("pSpecializationInfo")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const VkSpecializationInfo *")]
     public SpecializationInfo* PSpecializationInfo;
 
-    [NativeName("constantCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ConstantCount;
 
-    [NativeName("pConstants")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const VkDataGraphPipelineConstantARM *")]
     public DataGraphPipelineConstantARM* PConstants;
 }

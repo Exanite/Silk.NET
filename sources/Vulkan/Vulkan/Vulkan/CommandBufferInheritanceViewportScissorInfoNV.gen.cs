@@ -7,62 +7,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkCommandBufferInheritanceViewportScissorInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct CommandBufferInheritanceViewportScissorInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("viewportScissor2D")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ViewportScissor2D;
 
-    [NativeName("viewportDepthCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ViewportDepthCount;
 
-    [NativeName("pViewportDepths")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const VkViewport *")]
     public Viewport* PViewportDepths;
 }

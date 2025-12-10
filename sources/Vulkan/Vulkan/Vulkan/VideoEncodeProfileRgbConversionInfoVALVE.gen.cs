@@ -8,40 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeProfileRgbConversionInfoVALVE")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeProfileRgbConversionInfoVALVE
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VALVE_video_encode_rgb_conversion"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VALVE_video_encode_rgb_conversion"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("performEncodeRgbConversion")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VALVE_video_encode_rgb_conversion"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_sampler_ycbcr_conversion",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint PerformEncodeRgbConversion;
 }

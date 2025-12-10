@@ -8,16 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoDecodeH264ReferenceInfoFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoDecodeH264ReferenceInfoFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("top_field_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint TopFieldFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -26,8 +21,7 @@ public partial struct StdVideoDecodeH264ReferenceInfoFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("bottom_field_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint BottomFieldFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -36,8 +30,7 @@ public partial struct StdVideoDecodeH264ReferenceInfoFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("used_for_long_term_reference")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint UsedForLongTermReference
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -46,8 +39,7 @@ public partial struct StdVideoDecodeH264ReferenceInfoFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("is_non_existing")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint IsNonExisting
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

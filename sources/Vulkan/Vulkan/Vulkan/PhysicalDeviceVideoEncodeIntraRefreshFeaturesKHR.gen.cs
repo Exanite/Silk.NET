@@ -8,31 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceVideoEncodeIntraRefreshFeaturesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceVideoEncodeIntraRefreshFeaturesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public void* PNext;
 
-    [NativeName("videoEncodeIntraRefresh")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_intra_refresh"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint VideoEncodeIntraRefresh;
 }

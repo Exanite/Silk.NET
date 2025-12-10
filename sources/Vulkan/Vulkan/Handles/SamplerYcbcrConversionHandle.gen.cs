@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkSamplerYcbcrConversion")]
 public readonly unsafe partial struct SamplerYcbcrConversionHandle
 {
     public readonly void* Handle;

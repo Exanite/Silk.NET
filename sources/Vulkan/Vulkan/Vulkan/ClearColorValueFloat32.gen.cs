@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_float32_e__FixedBuffer")]
 [InlineArray(4)]
-[SupportedApiProfile("vulkan")]
 public partial struct ClearColorValueFloat32
 {
-    [NativeName("e0")]
-    [SupportedApiProfile("vulkan")]
     public float E0;
 }

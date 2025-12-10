@@ -8,32 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkClusterAccelerationStructureInstantiateClusterInfoNV")]
-[SupportedApiProfile("vulkan")]
 public partial struct ClusterAccelerationStructureInstantiateClusterInfoNV
 {
-    [NativeName("clusterIdOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ClusterIdOffset;
-
-    [NativeName("_bitfield")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public uint Bitfield;
 
-    [NativeName("geometryIndexOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("uint32_t : 24")]
     public uint GeometryIndexOffset
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -42,12 +23,7 @@ public partial struct ClusterAccelerationStructureInstantiateClusterInfoNV
         set { Bitfield = (Bitfield & ~0xFFFFFFu) | (value & 0xFFFFFFu); }
     }
 
-    [NativeName("reserved")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("uint32_t : 8")]
     public uint Reserved
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -56,19 +32,7 @@ public partial struct ClusterAccelerationStructureInstantiateClusterInfoNV
         set { Bitfield = (Bitfield & ~(0xFFu << 24)) | ((value & 0xFFu) << 24); }
     }
 
-    [NativeName("clusterTemplateAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong ClusterTemplateAddress;
-
-    [NativeName("vertexBuffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public StridedDeviceAddressNV VertexBuffer;
 }

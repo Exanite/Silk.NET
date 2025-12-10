@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_matrix_e__FixedBuffer")]
 [InlineArray(3 * 4)]
-[SupportedApiProfile("vulkan")]
 public partial struct TransformMatrixKHRMatrix
 {
-    [NativeName("e0_0")]
-    [SupportedApiProfile("vulkan")]
     public float E0X0;
 }

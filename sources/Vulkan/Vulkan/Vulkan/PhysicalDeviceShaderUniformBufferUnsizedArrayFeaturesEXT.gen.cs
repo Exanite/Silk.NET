@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceShaderUniformBufferUnsizedArrayFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderUniformBufferUnsizedArrayFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_uniform_buffer_unsized_array"],
-        ImpliesSets = [
-            "VK_EXT_shader_uniform_buffer_unsized_array+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_shader_uniform_buffer_unsized_array+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_uniform_buffer_unsized_array"],
-        ImpliesSets = [
-            "VK_EXT_shader_uniform_buffer_unsized_array+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_shader_uniform_buffer_unsized_array+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("shaderUniformBufferUnsizedArray")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_uniform_buffer_unsized_array"],
-        ImpliesSets = [
-            "VK_EXT_shader_uniform_buffer_unsized_array+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_shader_uniform_buffer_unsized_array+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderUniformBufferUnsizedArray;
 }

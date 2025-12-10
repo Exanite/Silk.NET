@@ -7,40 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceNestedCommandBufferPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceNestedCommandBufferPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("maxCommandBufferNestingLevel")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxCommandBufferNestingLevel;
 }

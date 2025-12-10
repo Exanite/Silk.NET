@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceAmigoProfilingFeaturesSEC")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceAmigoProfilingFeaturesSEC
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_SEC_amigo_profiling"],
-        ImpliesSets = [
-            "VK_SEC_amigo_profiling+VK_KHR_get_physical_device_properties2",
-            "VK_SEC_amigo_profiling+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_SEC_amigo_profiling"],
-        ImpliesSets = [
-            "VK_SEC_amigo_profiling+VK_KHR_get_physical_device_properties2",
-            "VK_SEC_amigo_profiling+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("amigoProfiling")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_SEC_amigo_profiling"],
-        ImpliesSets = [
-            "VK_SEC_amigo_profiling+VK_KHR_get_physical_device_properties2",
-            "VK_SEC_amigo_profiling+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint AmigoProfiling;
 }

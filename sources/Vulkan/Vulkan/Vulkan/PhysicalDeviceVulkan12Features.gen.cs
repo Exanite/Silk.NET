@@ -7,590 +7,149 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceVulkan12Features")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceVulkan12Features
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
     public void* PNext;
 
-    [NativeName("samplerMirrorClampToEdge")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint SamplerMirrorClampToEdge;
 
-    [NativeName("drawIndirectCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DrawIndirectCount;
 
-    [NativeName("storageBuffer8BitAccess")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint StorageBuffer8BitAccess;
 
-    [NativeName("uniformAndStorageBuffer8BitAccess")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint UniformAndStorageBuffer8BitAccess;
 
-    [NativeName("storagePushConstant8")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint StoragePushConstant8;
 
-    [NativeName("shaderBufferInt64Atomics")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_shader_atomic_int64"],
-        ImpliesSets = [
-            "VK_KHR_shader_atomic_int64+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_shader_atomic_int64+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderBufferInt64Atomics;
 
-    [NativeName("shaderSharedInt64Atomics")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderSharedInt64Atomics;
 
-    [NativeName("shaderFloat16")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderFloat16;
 
-    [NativeName("shaderInt8")]
-    [SupportedApiProfile("vulkan", ["VK_VERSION_1_4"], MinVersion = "1.4")]
+    [NativeTypeName("VkBool32")]
     public uint ShaderInt8;
 
-    [NativeName("descriptorIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorIndexing;
 
-    [NativeName("shaderInputAttachmentArrayDynamicIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderInputAttachmentArrayDynamicIndexing;
 
-    [NativeName("shaderUniformTexelBufferArrayDynamicIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderUniformTexelBufferArrayDynamicIndexing;
 
-    [NativeName("shaderStorageTexelBufferArrayDynamicIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderStorageTexelBufferArrayDynamicIndexing;
 
-    [NativeName("shaderUniformBufferArrayNonUniformIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderUniformBufferArrayNonUniformIndexing;
 
-    [NativeName("shaderSampledImageArrayNonUniformIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderSampledImageArrayNonUniformIndexing;
 
-    [NativeName("shaderStorageBufferArrayNonUniformIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderStorageBufferArrayNonUniformIndexing;
 
-    [NativeName("shaderStorageImageArrayNonUniformIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderStorageImageArrayNonUniformIndexing;
 
-    [NativeName("shaderInputAttachmentArrayNonUniformIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderInputAttachmentArrayNonUniformIndexing;
 
-    [NativeName("shaderUniformTexelBufferArrayNonUniformIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderUniformTexelBufferArrayNonUniformIndexing;
 
-    [NativeName("shaderStorageTexelBufferArrayNonUniformIndexing")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderStorageTexelBufferArrayNonUniformIndexing;
 
-    [NativeName("descriptorBindingUniformBufferUpdateAfterBind")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingUniformBufferUpdateAfterBind;
 
-    [NativeName("descriptorBindingSampledImageUpdateAfterBind")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingSampledImageUpdateAfterBind;
 
-    [NativeName("descriptorBindingStorageImageUpdateAfterBind")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingStorageImageUpdateAfterBind;
 
-    [NativeName("descriptorBindingStorageBufferUpdateAfterBind")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingStorageBufferUpdateAfterBind;
 
-    [NativeName("descriptorBindingUniformTexelBufferUpdateAfterBind")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingUniformTexelBufferUpdateAfterBind;
 
-    [NativeName("descriptorBindingStorageTexelBufferUpdateAfterBind")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingStorageTexelBufferUpdateAfterBind;
 
-    [NativeName("descriptorBindingUpdateUnusedWhilePending")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingUpdateUnusedWhilePending;
 
-    [NativeName("descriptorBindingPartiallyBound")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingPartiallyBound;
 
-    [NativeName("descriptorBindingVariableDescriptorCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DescriptorBindingVariableDescriptorCount;
 
-    [NativeName("runtimeDescriptorArray")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RuntimeDescriptorArray;
 
-    [NativeName("samplerFilterMinmax")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint SamplerFilterMinmax;
 
-    [NativeName("scalarBlockLayout")]
-    [SupportedApiProfile("vulkan", ["VK_VERSION_1_4"], MinVersion = "1.4")]
+    [NativeTypeName("VkBool32")]
     public uint ScalarBlockLayout;
 
-    [NativeName("imagelessFramebuffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ImagelessFramebuffer;
 
-    [NativeName("uniformBufferStandardLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint UniformBufferStandardLayout;
 
-    [NativeName("shaderSubgroupExtendedTypes")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderSubgroupExtendedTypes;
 
-    [NativeName("separateDepthStencilLayouts")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint SeparateDepthStencilLayouts;
 
-    [NativeName("hostQueryReset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint HostQueryReset;
 
-    [NativeName("timelineSemaphore")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TimelineSemaphore;
 
-    [NativeName("bufferDeviceAddress")]
-    [SupportedApiProfile("vulkan", ["VK_VERSION_1_3", "VK_VERSION_1_4"], MinVersion = "1.3")]
+    [NativeTypeName("VkBool32")]
     public uint BufferDeviceAddress;
 
-    [NativeName("bufferDeviceAddressCaptureReplay")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint BufferDeviceAddressCaptureReplay;
 
-    [NativeName("bufferDeviceAddressMultiDevice")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint BufferDeviceAddressMultiDevice;
 
-    [NativeName("vulkanMemoryModel")]
-    [SupportedApiProfile("vulkan", ["VK_VERSION_1_3", "VK_VERSION_1_4"], MinVersion = "1.3")]
+    [NativeTypeName("VkBool32")]
     public uint VulkanMemoryModel;
 
-    [NativeName("vulkanMemoryModelDeviceScope")]
-    [SupportedApiProfile("vulkan", ["VK_VERSION_1_3", "VK_VERSION_1_4"], MinVersion = "1.3")]
+    [NativeTypeName("VkBool32")]
     public uint VulkanMemoryModelDeviceScope;
 
-    [NativeName("vulkanMemoryModelAvailabilityVisibilityChains")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_BASE_VERSION_1_2",
-            "VK_BASE_VERSION_1_3",
-            "VK_BASE_VERSION_1_4",
-            "VK_COMPUTE_VERSION_1_2",
-            "VK_COMPUTE_VERSION_1_3",
-            "VK_COMPUTE_VERSION_1_4",
-            "VK_GRAPHICS_VERSION_1_2",
-            "VK_GRAPHICS_VERSION_1_3",
-            "VK_GRAPHICS_VERSION_1_4",
-            "VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-            "VK_VERSION_1_4",
-        ],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint VulkanMemoryModelAvailabilityVisibilityChains;
 
-    [NativeName("shaderOutputViewportIndex")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderOutputViewportIndex;
 
-    [NativeName("shaderOutputLayer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderOutputLayer;
 
-    [NativeName("subgroupBroadcastDynamicId")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VERSION_1_2", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.2"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint SubgroupBroadcastDynamicId;
 }

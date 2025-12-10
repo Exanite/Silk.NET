@@ -8,84 +8,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkSurfacePresentScalingCapabilitiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct SurfacePresentScalingCapabilitiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("supportedPresentScaling")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [NativeTypeName("VkPresentScalingFlagsKHR")]
     public PresentScalingFlagsKHR SupportedPresentScaling;
 
-    [NativeName("supportedPresentGravityX")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [NativeTypeName("VkPresentGravityFlagsKHR")]
     public PresentGravityFlagsKHR SupportedPresentGravityX;
 
-    [NativeName("supportedPresentGravityY")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
+    [NativeTypeName("VkPresentGravityFlagsKHR")]
     public PresentGravityFlagsKHR SupportedPresentGravityY;
-
-    [NativeName("minScaledImageExtent")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
     public Extent2D MinScaledImageExtent;
-
-    [NativeName("maxScaledImageExtent")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_surface_maintenance1"],
-        ImpliesSets = [
-            "VK_KHR_surface_maintenance1+VK_KHR_get_surface_capabilities2",
-            "VK_KHR_surface_maintenance1+VK_KHR_surface",
-        ]
-    )]
     public Extent2D MaxScaledImageExtent;
 }

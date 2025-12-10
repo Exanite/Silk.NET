@@ -7,163 +7,119 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265SequenceParameterSet")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoH265SequenceParameterSet
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH265SpsFlags Flags;
-
-    [NativeName("chroma_format_idc")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH265ChromaFormatIdc ChromaFormatIdc;
 
-    [NativeName("pic_width_in_luma_samples")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint PicWidthInLumaSamples;
 
-    [NativeName("pic_height_in_luma_samples")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint PicHeightInLumaSamples;
 
-    [NativeName("sps_video_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte SpsVideoParameterSetId;
 
-    [NativeName("sps_max_sub_layers_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte SpsMaxSubLayersMinus1;
 
-    [NativeName("sps_seq_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte SpsSeqParameterSetId;
 
-    [NativeName("bit_depth_luma_minus8")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte BitDepthLumaMinus8;
 
-    [NativeName("bit_depth_chroma_minus8")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte BitDepthChromaMinus8;
 
-    [NativeName("log2_max_pic_order_cnt_lsb_minus4")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2MaxPicOrderCntLsbMinus4;
 
-    [NativeName("log2_min_luma_coding_block_size_minus3")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2MinLumaCodingBlockSizeMinus3;
 
-    [NativeName("log2_diff_max_min_luma_coding_block_size")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2DiffMaxMinLumaCodingBlockSize;
 
-    [NativeName("log2_min_luma_transform_block_size_minus2")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2MinLumaTransformBlockSizeMinus2;
 
-    [NativeName("log2_diff_max_min_luma_transform_block_size")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2DiffMaxMinLumaTransformBlockSize;
 
-    [NativeName("max_transform_hierarchy_depth_inter")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MaxTransformHierarchyDepthInter;
 
-    [NativeName("max_transform_hierarchy_depth_intra")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MaxTransformHierarchyDepthIntra;
 
-    [NativeName("num_short_term_ref_pic_sets")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte NumShortTermRefPicSets;
 
-    [NativeName("num_long_term_ref_pics_sps")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte NumLongTermRefPicsSps;
 
-    [NativeName("pcm_sample_bit_depth_luma_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte PcmSampleBitDepthLumaMinus1;
 
-    [NativeName("pcm_sample_bit_depth_chroma_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte PcmSampleBitDepthChromaMinus1;
 
-    [NativeName("log2_min_pcm_luma_coding_block_size_minus3")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2MinPcmLumaCodingBlockSizeMinus3;
 
-    [NativeName("log2_diff_max_min_pcm_luma_coding_block_size")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2DiffMaxMinPcmLumaCodingBlockSize;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Reserved1;
 
-    [NativeName("reserved2")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Reserved2;
 
-    [NativeName("palette_max_size")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte PaletteMaxSize;
 
-    [NativeName("delta_palette_max_predictor_size")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte DeltaPaletteMaxPredictorSize;
 
-    [NativeName("motion_vector_resolution_control_idc")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MotionVectorResolutionControlIdc;
 
-    [NativeName("sps_num_palette_predictor_initializers_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte SpsNumPalettePredictorInitializersMinus1;
 
-    [NativeName("conf_win_left_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint ConfWinLeftOffset;
 
-    [NativeName("conf_win_right_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint ConfWinRightOffset;
 
-    [NativeName("conf_win_top_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint ConfWinTopOffset;
 
-    [NativeName("conf_win_bottom_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint ConfWinBottomOffset;
 
-    [NativeName("pProfileTierLevel")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265ProfileTierLevel *")]
     public StdVideoH265ProfileTierLevel* PProfileTierLevel;
 
-    [NativeName("pDecPicBufMgr")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265DecPicBufMgr *")]
     public StdVideoH265DecPicBufMgr* PDecPicBufMgr;
 
-    [NativeName("pScalingLists")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265ScalingLists *")]
     public StdVideoH265ScalingLists* PScalingLists;
 
-    [NativeName("pShortTermRefPicSet")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265ShortTermRefPicSet *")]
     public StdVideoH265ShortTermRefPicSet* PShortTermRefPicSet;
 
-    [NativeName("pLongTermRefPicsSps")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265LongTermRefPicsSps *")]
     public StdVideoH265LongTermRefPicsSps* PLongTermRefPicsSps;
 
-    [NativeName("pSequenceParameterSetVui")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265SequenceParameterSetVui *")]
     public StdVideoH265SequenceParameterSetVui* PSequenceParameterSetVui;
 
-    [NativeName("pPredictorPaletteEntries")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265PredictorPaletteEntries *")]
     public StdVideoH265PredictorPaletteEntries* PPredictorPaletteEntries;
 }

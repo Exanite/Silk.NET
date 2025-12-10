@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_memoryHeaps_e__FixedBuffer")]
 [InlineArray(16)]
-[SupportedApiProfile("vulkan")]
 public partial struct PhysicalDeviceMemoryPropertiesMemoryHeaps
 {
-    [NativeName("e0")]
-    [SupportedApiProfile("vulkan")]
     public MemoryHeap E0;
 }

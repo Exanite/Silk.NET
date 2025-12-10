@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPerformanceConfigurationINTEL")]
 public readonly unsafe partial struct PerformanceConfigurationHandleINTEL
 {
     public readonly void* Handle;

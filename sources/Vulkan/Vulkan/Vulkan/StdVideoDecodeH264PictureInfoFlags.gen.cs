@@ -8,16 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoDecodeH264PictureInfoFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoDecodeH264PictureInfoFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("field_pic_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint FieldPicFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -26,8 +21,7 @@ public partial struct StdVideoDecodeH264PictureInfoFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("is_intra")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint IsIntra
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -36,8 +30,7 @@ public partial struct StdVideoDecodeH264PictureInfoFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("IdrPicFlag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint IdrPicFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -46,8 +39,7 @@ public partial struct StdVideoDecodeH264PictureInfoFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("bottom_field_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint BottomFieldFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -56,8 +48,7 @@ public partial struct StdVideoDecodeH264PictureInfoFlags
         set { Bitfield = (Bitfield & ~(0x1u << 3)) | ((value & 0x1u) << 3); }
     }
 
-    [NativeName("is_reference")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint IsReference
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -66,8 +57,7 @@ public partial struct StdVideoDecodeH264PictureInfoFlags
         set { Bitfield = (Bitfield & ~(0x1u << 4)) | ((value & 0x1u) << 4); }
     }
 
-    [NativeName("complementary_field_pair")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ComplementaryFieldPair
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

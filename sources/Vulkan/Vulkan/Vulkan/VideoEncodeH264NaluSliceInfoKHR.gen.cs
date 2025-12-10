@@ -8,39 +8,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeH264NaluSliceInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeH264NaluSliceInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("constantQp")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("int32_t")]
     public int ConstantQp;
 
-    [NativeName("pStdSliceHeader")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h264"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("const StdVideoEncodeH264SliceHeader *")]
     public StdVideoEncodeH264SliceHeader* PStdSliceHeader;
 }

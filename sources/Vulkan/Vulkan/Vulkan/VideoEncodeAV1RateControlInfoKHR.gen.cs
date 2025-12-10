@@ -8,63 +8,25 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeAV1RateControlInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeAV1RateControlInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkVideoEncodeAV1RateControlFlagsKHR")]
     public VideoEncodeAV1RateControlFlagsKHR Flags;
 
-    [NativeName("gopFrameCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint GopFrameCount;
 
-    [NativeName("keyFramePeriod")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint KeyFramePeriod;
 
-    [NativeName("consecutiveBipredictiveFrameCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ConsecutiveBipredictiveFrameCount;
 
-    [NativeName("temporalLayerCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint TemporalLayerCount;
 }

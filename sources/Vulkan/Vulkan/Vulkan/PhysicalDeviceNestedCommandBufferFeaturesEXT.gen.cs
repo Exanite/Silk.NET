@@ -8,62 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceNestedCommandBufferFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceNestedCommandBufferFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("nestedCommandBuffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint NestedCommandBuffer;
 
-    [NativeName("nestedCommandBufferRendering")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint NestedCommandBufferRendering;
 
-    [NativeName("nestedCommandBufferSimultaneousUse")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_nested_command_buffer"],
-        ImpliesSets = [
-            "VK_EXT_nested_command_buffer+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_nested_command_buffer+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint NestedCommandBufferSimultaneousUse;
 }

@@ -8,15 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoAV1Segmentation")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoAV1Segmentation
 {
-    [NativeName("FeatureEnabled")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[8]")]
     public StdVideoAV1SegmentationFeatureEnabled FeatureEnabled;
 
-    [NativeName("FeatureData")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int16_t[8][8]")]
     public StdVideoAV1SegmentationFeatureData FeatureData;
 }

@@ -7,13 +7,10 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.OpenGL;
 
-[NativeName("PerformanceQueryCapsMaskINTEL")]
+[Transformed]
 [Flags]
 public enum PerformanceQueryCapsMaskINTEL : uint
 {
-    [NativeName("GL_PERFQUERY_SINGLE_CONTEXT_INTEL")]
-    SingleContext = 0x0,
-
-    [NativeName("GL_PERFQUERY_GLOBAL_CONTEXT_INTEL")]
-    GlobalContext = 0x1,
+    SingleContext = unchecked((uint)0x00000000),
+    GlobalContext = unchecked((uint)0x00000001),
 }

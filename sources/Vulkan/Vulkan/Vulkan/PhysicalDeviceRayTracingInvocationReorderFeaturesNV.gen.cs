@@ -8,31 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRayTracingInvocationReorderFeaturesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_invocation_reorder"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_invocation_reorder"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
     public void* PNext;
 
-    [NativeName("rayTracingInvocationReorder")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_invocation_reorder"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTracingInvocationReorder;
 }

@@ -7,43 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoFormatAV1QuantizationMapPropertiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoFormatAV1QuantizationMapPropertiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1", "VK_KHR_video_encode_quantization_map"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
-        ],
-        RequireAll = true
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1", "VK_KHR_video_encode_quantization_map"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
-        ],
-        RequireAll = true
-    )]
     public void* PNext;
 
-    [NativeName("compatibleSuperblockSizes")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1", "VK_KHR_video_encode_quantization_map"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
-        ],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkVideoEncodeAV1SuperblockSizeFlagsKHR")]
     public VideoEncodeAV1SuperblockSizeFlagsKHR CompatibleSuperblockSizes;
 }

@@ -8,55 +8,38 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoEncodeH265PictureInfo")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoEncodeH265PictureInfo
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoEncodeH265PictureInfoFlags Flags;
-
-    [NativeName("pic_type")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH265PictureType PicType;
 
-    [NativeName("sps_video_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte SpsVideoParameterSetId;
 
-    [NativeName("pps_seq_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte PpsSeqParameterSetId;
 
-    [NativeName("pps_pic_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte PpsPicParameterSetId;
 
-    [NativeName("short_term_ref_pic_set_idx")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte ShortTermRefPicSetIdx;
 
-    [NativeName("PicOrderCntVal")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int32_t")]
     public int PicOrderCntVal;
 
-    [NativeName("TemporalId")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte TemporalId;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[7]")]
     public StdVideoEncodeH265PictureInfoReserved1 Reserved1;
 
-    [NativeName("pRefLists")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoEncodeH265ReferenceListsInfo *")]
     public StdVideoEncodeH265ReferenceListsInfo* PRefLists;
 
-    [NativeName("pShortTermRefPicSet")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265ShortTermRefPicSet *")]
     public StdVideoH265ShortTermRefPicSet* PShortTermRefPicSet;
 
-    [NativeName("pLongTermRefPics")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoEncodeH265LongTermRefPics *")]
     public StdVideoEncodeH265LongTermRefPics* PLongTermRefPics;
 }

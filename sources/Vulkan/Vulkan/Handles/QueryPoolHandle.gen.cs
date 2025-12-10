@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkQueryPool")]
 public readonly unsafe partial struct QueryPoolHandle
 {
     public readonly void* Handle;

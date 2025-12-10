@@ -8,27 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceExternalTensorInfoARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceExternalTensorInfoARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkTensorCreateFlagsARM")]
     public TensorCreateFlagsARM Flags;
 
-    [NativeName("pDescription")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("const VkTensorDescriptionARM *")]
     public TensorDescriptionARM* PDescription;
-
-    [NativeName("handleType")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
     public ExternalMemoryHandleTypeFlags HandleType;
 }

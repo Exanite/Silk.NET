@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkCuFunctionNVX")]
 public readonly unsafe partial struct CuFunctionHandleNVX
 {
     public readonly void* Handle;

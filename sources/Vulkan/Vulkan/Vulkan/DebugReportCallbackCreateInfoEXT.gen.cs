@@ -8,27 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDebugReportCallbackCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugReportCallbackCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [NativeTypeName("VkDebugReportFlagsEXT")]
     public DebugReportFlagsEXT Flags;
 
-    [NativeName("pfnCallback")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
+    [NativeTypeName("PFN_vkDebugReportCallbackEXT")]
     public DebugReportCallbackEXT PfnCallback;
-
-    [NativeName("pUserData")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_report"])]
     public void* PUserData;
 }

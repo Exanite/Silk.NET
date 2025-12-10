@@ -8,23 +8,12 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkCommandBufferInheritanceRenderPassTransformInfoQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct CommandBufferInheritanceRenderPassTransformInfoQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_QCOM_render_pass_transform"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_QCOM_render_pass_transform"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("transform")]
-    [SupportedApiProfile("vulkan", ["VK_QCOM_render_pass_transform"])]
     public SurfaceTransformFlagsKHR Transform;
-
-    [NativeName("renderArea")]
-    [SupportedApiProfile("vulkan", ["VK_QCOM_render_pass_transform"])]
     public Rect2D RenderArea;
 }

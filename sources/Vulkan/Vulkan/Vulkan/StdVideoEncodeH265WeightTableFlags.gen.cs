@@ -7,23 +7,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoEncodeH265WeightTableFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoEncodeH265WeightTableFlags
 {
-    [NativeName("luma_weight_l0_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort LumaWeightL0Flag;
 
-    [NativeName("chroma_weight_l0_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort ChromaWeightL0Flag;
 
-    [NativeName("luma_weight_l1_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort LumaWeightL1Flag;
 
-    [NativeName("chroma_weight_l1_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort ChromaWeightL1Flag;
 }

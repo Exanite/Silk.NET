@@ -8,55 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceShaderObjectPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderObjectPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("shaderBinaryUUID")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint8_t[16]")]
     public PhysicalDeviceShaderObjectPropertiesEXTShaderBinaryUUID ShaderBinaryUUID;
 
-    [NativeName("shaderBinaryVersion")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_object"],
-        ImpliesSets = [
-            "VK_KHR_dynamic_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_dynamic_rendering+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ShaderBinaryVersion;
 }

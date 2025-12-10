@@ -8,51 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceShaderClockFeaturesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderClockFeaturesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_shader_clock"],
-        ImpliesSets = [
-            "VK_KHR_shader_clock+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_shader_clock+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_shader_clock"],
-        ImpliesSets = [
-            "VK_KHR_shader_clock+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_shader_clock+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("shaderSubgroupClock")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_shader_clock"],
-        ImpliesSets = [
-            "VK_KHR_shader_clock+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_shader_clock+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderSubgroupClock;
 
-    [NativeName("shaderDeviceClock")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_shader_clock"],
-        ImpliesSets = [
-            "VK_KHR_shader_clock+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_shader_clock+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderDeviceClock;
 }

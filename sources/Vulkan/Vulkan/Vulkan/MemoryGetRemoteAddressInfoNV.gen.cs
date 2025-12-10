@@ -7,51 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkMemoryGetRemoteAddressInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct MemoryGetRemoteAddressInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_external_memory_rdma"],
-        ImpliesSets = [
-            "VK_NV_external_memory_rdma+VK_KHR_external_memory",
-            "VK_NV_external_memory_rdma+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_external_memory_rdma"],
-        ImpliesSets = [
-            "VK_NV_external_memory_rdma+VK_KHR_external_memory",
-            "VK_NV_external_memory_rdma+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("memory")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_external_memory_rdma"],
-        ImpliesSets = [
-            "VK_NV_external_memory_rdma+VK_KHR_external_memory",
-            "VK_NV_external_memory_rdma+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceMemory")]
     public DeviceMemoryHandle Memory;
-
-    [NativeName("handleType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_external_memory_rdma"],
-        ImpliesSets = [
-            "VK_NV_external_memory_rdma+VK_KHR_external_memory",
-            "VK_NV_external_memory_rdma+VK_VERSION_1_1",
-        ]
-    )]
     public ExternalMemoryHandleTypeFlags HandleType;
 }

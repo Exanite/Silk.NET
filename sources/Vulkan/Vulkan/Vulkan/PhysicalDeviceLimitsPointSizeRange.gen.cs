@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_pointSizeRange_e__FixedBuffer")]
 [InlineArray(2)]
-[SupportedApiProfile("vulkan")]
 public partial struct PhysicalDeviceLimitsPointSizeRange
 {
-    [NativeName("e0")]
-    [SupportedApiProfile("vulkan")]
     public float E0;
 }

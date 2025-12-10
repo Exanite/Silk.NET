@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_iconv_data_t")]
 public readonly unsafe partial struct IconvDataTHandle
 {
     public readonly void* Handle;

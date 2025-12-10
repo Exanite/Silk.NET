@@ -7,47 +7,34 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoAV1Quantization")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoAV1Quantization
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoAV1QuantizationFlags Flags;
 
-    [NativeName("base_q_idx")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte BaseQIdx;
 
-    [NativeName("DeltaQYDc")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte DeltaQYDc;
 
-    [NativeName("DeltaQUDc")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte DeltaQUDc;
 
-    [NativeName("DeltaQUAc")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte DeltaQUAc;
 
-    [NativeName("DeltaQVDc")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte DeltaQVDc;
 
-    [NativeName("DeltaQVAc")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte DeltaQVAc;
 
-    [NativeName("qm_y")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte QmY;
 
-    [NativeName("qm_u")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte QmU;
 
-    [NativeName("qm_v")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte QmV;
 }

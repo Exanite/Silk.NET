@@ -7,40 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkMultisamplePropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct MultisamplePropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
-
-    [NativeName("maxSampleLocationGridSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
     public Extent2D MaxSampleLocationGridSize;
 }

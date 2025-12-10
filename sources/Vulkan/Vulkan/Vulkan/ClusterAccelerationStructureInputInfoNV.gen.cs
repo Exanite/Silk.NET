@@ -8,63 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkClusterAccelerationStructureInputInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ClusterAccelerationStructureInputInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public void* PNext;
 
-    [NativeName("maxAccelerationStructureCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxAccelerationStructureCount;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("VkBuildAccelerationStructureFlagsKHR")]
     public BuildAccelerationStructureFlagsKHR Flags;
-
-    [NativeName("opType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public ClusterAccelerationStructureOpTypeNV OpType;
-
-    [NativeName("opMode")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public ClusterAccelerationStructureOpModeNV OpMode;
-
-    [NativeName("opInput")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public ClusterAccelerationStructureOpInputNV OpInput;
 }

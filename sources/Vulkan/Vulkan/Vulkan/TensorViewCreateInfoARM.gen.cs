@@ -8,27 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkTensorViewCreateInfoARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct TensorViewCreateInfoARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkTensorViewCreateFlagsARM")]
     public TensorViewCreateFlagsARM Flags;
 
-    [NativeName("tensor")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkTensorARM")]
     public TensorHandleARM Tensor;
-
-    [NativeName("format")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
     public Format Format;
 }

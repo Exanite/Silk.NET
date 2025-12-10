@@ -8,63 +8,25 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoBeginCodingInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoBeginCodingInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkVideoBeginCodingFlagsKHR")]
     public uint Flags;
 
-    [NativeName("videoSession")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkVideoSessionKHR")]
     public VideoSessionHandleKHR VideoSession;
 
-    [NativeName("videoSessionParameters")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkVideoSessionParametersKHR")]
     public VideoSessionParametersHandleKHR VideoSessionParameters;
 
-    [NativeName("referenceSlotCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ReferenceSlotCount;
 
-    [NativeName("pReferenceSlots")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const VkVideoReferenceSlotInfoKHR *")]
     public VideoReferenceSlotInfoKHR* PReferenceSlots;
 }

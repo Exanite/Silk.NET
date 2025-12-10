@@ -7,40 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkMicromapUsageEXT")]
-[SupportedApiProfile("vulkan")]
 public partial struct MicromapUsageEXT
 {
-    [NativeName("count")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Count;
 
-    [NativeName("subdivisionLevel")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SubdivisionLevel;
 
-    [NativeName("format")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_opacity_micromap"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_synchronization2",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Format;
 }

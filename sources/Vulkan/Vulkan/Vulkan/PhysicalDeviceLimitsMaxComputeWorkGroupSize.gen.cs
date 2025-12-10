@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_maxComputeWorkGroupSize_e__FixedBuffer")]
 [InlineArray(3)]
-[SupportedApiProfile("vulkan")]
 public partial struct PhysicalDeviceLimitsMaxComputeWorkGroupSize
 {
-    [NativeName("e0")]
-    [SupportedApiProfile("vulkan")]
     public uint E0;
 }

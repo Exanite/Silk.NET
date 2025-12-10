@@ -7,27 +7,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDebugUtilsObjectNameInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugUtilsObjectNameInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("objectType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public ObjectType ObjectType;
 
-    [NativeName("objectHandle")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("uint64_t")]
     public ulong ObjectHandle;
 
-    [NativeName("pObjectName")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("const char *")]
     public sbyte* PObjectName;
 }

@@ -7,51 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceUnifiedImageLayoutsFeaturesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceUnifiedImageLayoutsFeaturesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_unified_image_layouts"],
-        ImpliesSets = [
-            "VK_KHR_unified_image_layouts+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_unified_image_layouts+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_unified_image_layouts"],
-        ImpliesSets = [
-            "VK_KHR_unified_image_layouts+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_unified_image_layouts+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("unifiedImageLayouts")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_unified_image_layouts"],
-        ImpliesSets = [
-            "VK_KHR_unified_image_layouts+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_unified_image_layouts+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint UnifiedImageLayouts;
 
-    [NativeName("unifiedImageLayoutsVideo")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_unified_image_layouts"],
-        ImpliesSets = [
-            "VK_KHR_unified_image_layouts+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_unified_image_layouts+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint UnifiedImageLayoutsVideo;
 }

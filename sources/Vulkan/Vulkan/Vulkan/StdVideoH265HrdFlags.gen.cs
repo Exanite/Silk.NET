@@ -7,16 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265HrdFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoH265HrdFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("nal_hrd_parameters_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint NalHrdParametersPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -25,8 +20,7 @@ public partial struct StdVideoH265HrdFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("vcl_hrd_parameters_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint VclHrdParametersPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -35,8 +29,7 @@ public partial struct StdVideoH265HrdFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("sub_pic_hrd_params_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SubPicHrdParamsPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -45,8 +38,7 @@ public partial struct StdVideoH265HrdFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("sub_pic_cpb_params_in_pic_timing_sei_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SubPicCpbParamsInPicTimingSeiFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -55,8 +47,7 @@ public partial struct StdVideoH265HrdFlags
         set { Bitfield = (Bitfield & ~(0x1u << 3)) | ((value & 0x1u) << 3); }
     }
 
-    [NativeName("fixed_pic_rate_general_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 8")]
     public uint FixedPicRateGeneralFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -65,8 +56,7 @@ public partial struct StdVideoH265HrdFlags
         set { Bitfield = (Bitfield & ~(0xFFu << 4)) | ((value & 0xFFu) << 4); }
     }
 
-    [NativeName("fixed_pic_rate_within_cvs_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 8")]
     public uint FixedPicRateWithinCvsFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -75,8 +65,7 @@ public partial struct StdVideoH265HrdFlags
         set { Bitfield = (Bitfield & ~(0xFFu << 12)) | ((value & 0xFFu) << 12); }
     }
 
-    [NativeName("low_delay_hrd_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 8")]
     public uint LowDelayHrdFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

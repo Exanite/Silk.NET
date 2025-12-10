@@ -7,40 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceMemoryPriorityFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceMemoryPriorityFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_priority"],
-        ImpliesSets = [
-            "VK_EXT_memory_priority+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_memory_priority+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_priority"],
-        ImpliesSets = [
-            "VK_EXT_memory_priority+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_memory_priority+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("memoryPriority")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_priority"],
-        ImpliesSets = [
-            "VK_EXT_memory_priority+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_memory_priority+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint MemoryPriority;
 }

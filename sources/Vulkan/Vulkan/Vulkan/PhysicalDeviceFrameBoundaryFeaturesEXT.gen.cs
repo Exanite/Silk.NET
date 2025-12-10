@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceFrameBoundaryFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFrameBoundaryFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("frameBoundary")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FrameBoundary;
 }

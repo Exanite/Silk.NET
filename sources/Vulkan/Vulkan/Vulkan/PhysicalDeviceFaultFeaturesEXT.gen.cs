@@ -8,51 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceFaultFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFaultFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("deviceFault")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DeviceFault;
 
-    [NativeName("deviceFaultVendorBinary")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DeviceFaultVendorBinary;
 }

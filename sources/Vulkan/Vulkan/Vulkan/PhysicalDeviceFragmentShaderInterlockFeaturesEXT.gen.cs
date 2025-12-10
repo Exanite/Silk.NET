@@ -8,62 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFragmentShaderInterlockFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_shader_interlock"],
-        ImpliesSets = [
-            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_shader_interlock"],
-        ImpliesSets = [
-            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("fragmentShaderSampleInterlock")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_shader_interlock"],
-        ImpliesSets = [
-            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FragmentShaderSampleInterlock;
 
-    [NativeName("fragmentShaderPixelInterlock")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_shader_interlock"],
-        ImpliesSets = [
-            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FragmentShaderPixelInterlock;
 
-    [NativeName("fragmentShaderShadingRateInterlock")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_shader_interlock"],
-        ImpliesSets = [
-            "VK_EXT_fragment_shader_interlock+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_shader_interlock+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FragmentShaderShadingRateInterlock;
 }

@@ -8,16 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoVP9SegmentationFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoVP9SegmentationFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("segmentation_update_map")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SegmentationUpdateMap
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -26,8 +21,7 @@ public partial struct StdVideoVP9SegmentationFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("segmentation_temporal_update")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SegmentationTemporalUpdate
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -36,8 +30,7 @@ public partial struct StdVideoVP9SegmentationFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("segmentation_update_data")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SegmentationUpdateData
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -46,8 +39,7 @@ public partial struct StdVideoVP9SegmentationFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("segmentation_abs_or_delta_update")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SegmentationAbsOrDeltaUpdate
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -56,8 +48,7 @@ public partial struct StdVideoVP9SegmentationFlags
         set { Bitfield = (Bitfield & ~(0x1u << 3)) | ((value & 0x1u) << 3); }
     }
 
-    [NativeName("reserved")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 28")]
     public uint Reserved
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

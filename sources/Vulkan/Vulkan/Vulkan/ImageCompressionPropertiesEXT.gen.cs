@@ -7,51 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkImageCompressionPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageCompressionPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_compression_control"],
-        ImpliesSets = [
-            "VK_EXT_image_compression_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_compression_control+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_compression_control"],
-        ImpliesSets = [
-            "VK_EXT_image_compression_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_compression_control+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("imageCompressionFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_compression_control"],
-        ImpliesSets = [
-            "VK_EXT_image_compression_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_compression_control+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkImageCompressionFlagsEXT")]
     public ImageCompressionFlagsEXT ImageCompressionFlags;
 
-    [NativeName("imageCompressionFixedRateFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_compression_control"],
-        ImpliesSets = [
-            "VK_EXT_image_compression_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_compression_control+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkImageCompressionFixedRateFlagsEXT")]
     public ImageCompressionFixedRateFlagsEXT ImageCompressionFixedRateFlags;
 }

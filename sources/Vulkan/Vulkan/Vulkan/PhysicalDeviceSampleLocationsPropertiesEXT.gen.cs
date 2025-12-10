@@ -8,84 +8,21 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceSampleLocationsPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceSampleLocationsPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("sampleLocationSampleCounts")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkSampleCountFlags")]
     public SampleCountFlags SampleLocationSampleCounts;
-
-    [NativeName("maxSampleLocationGridSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
     public Extent2D MaxSampleLocationGridSize;
 
-    [NativeName("sampleLocationCoordinateRange")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("float[2]")]
     public PhysicalDeviceSampleLocationsPropertiesEXTSampleLocationCoordinateRange SampleLocationCoordinateRange;
 
-    [NativeName("sampleLocationSubPixelBits")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SampleLocationSubPixelBits;
 
-    [NativeName("variableSampleLocations")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint VariableSampleLocations;
 }

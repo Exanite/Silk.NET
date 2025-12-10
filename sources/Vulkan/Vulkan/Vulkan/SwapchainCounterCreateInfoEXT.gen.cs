@@ -7,31 +7,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkSwapchainCounterCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct SwapchainCounterCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_display_control"],
-        ImpliesSets = ["VK_EXT_display_surface_counter", "VK_KHR_swapchain"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_display_control"],
-        ImpliesSets = ["VK_EXT_display_surface_counter", "VK_KHR_swapchain"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("surfaceCounters")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_display_control"],
-        ImpliesSets = ["VK_EXT_display_surface_counter", "VK_KHR_swapchain"]
-    )]
+    [NativeTypeName("VkSurfaceCounterFlagsEXT")]
     public SurfaceCounterFlagsEXT SurfaceCounters;
 }

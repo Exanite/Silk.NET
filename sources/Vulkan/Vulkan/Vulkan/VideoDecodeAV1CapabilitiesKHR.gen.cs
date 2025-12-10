@@ -7,31 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoDecodeAV1CapabilitiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoDecodeAV1CapabilitiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
     public void* PNext;
-
-    [NativeName("maxLevel")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
     public StdVideoAV1Level MaxLevel;
 }

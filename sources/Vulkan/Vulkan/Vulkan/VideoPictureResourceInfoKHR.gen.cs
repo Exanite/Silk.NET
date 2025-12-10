@@ -8,55 +8,18 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoPictureResourceInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoPictureResourceInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("codedOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public Offset2D CodedOffset;
-
-    [NativeName("codedExtent")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public Extent2D CodedExtent;
 
-    [NativeName("baseArrayLayer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint BaseArrayLayer;
 
-    [NativeName("imageViewBinding")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkImageView")]
     public ImageViewHandle ImageViewBinding;
 }

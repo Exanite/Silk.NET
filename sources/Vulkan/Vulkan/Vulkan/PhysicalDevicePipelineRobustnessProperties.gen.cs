@@ -7,55 +7,12 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDevicePipelineRobustnessProperties")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePipelineRobustnessProperties
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public void* PNext;
-
-    [NativeName("defaultRobustnessStorageBuffers")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public PipelineRobustnessBufferBehavior DefaultRobustnessStorageBuffers;
-
-    [NativeName("defaultRobustnessUniformBuffers")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public PipelineRobustnessBufferBehavior DefaultRobustnessUniformBuffers;
-
-    [NativeName("defaultRobustnessVertexInputs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public PipelineRobustnessBufferBehavior DefaultRobustnessVertexInputs;
-
-    [NativeName("defaultRobustnessImages")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public PipelineRobustnessImageBehavior DefaultRobustnessImages;
 }

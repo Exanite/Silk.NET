@@ -7,15 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_IOWhence")]
 public enum IOWhence
 {
-    [NativeName("SDL_IO_SEEK_SET")]
-    Set = 0,
-
-    [NativeName("SDL_IO_SEEK_CUR")]
-    Cur = 1,
-
-    [NativeName("SDL_IO_SEEK_END")]
-    End = 2,
+    Set,
+    Cur,
+    End,
 }

@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineCache")]
 public readonly unsafe partial struct PipelineCacheHandle
 {
     public readonly void* Handle;

@@ -7,95 +7,27 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoCapabilitiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoCapabilitiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkVideoCapabilityFlagsKHR")]
     public VideoCapabilityFlagsKHR Flags;
 
-    [NativeName("minBitstreamBufferOffsetAlignment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong MinBitstreamBufferOffsetAlignment;
 
-    [NativeName("minBitstreamBufferSizeAlignment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong MinBitstreamBufferSizeAlignment;
-
-    [NativeName("pictureAccessGranularity")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public Extent2D PictureAccessGranularity;
-
-    [NativeName("minCodedExtent")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public Extent2D MinCodedExtent;
-
-    [NativeName("maxCodedExtent")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public Extent2D MaxCodedExtent;
 
-    [NativeName("maxDpbSlots")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxDpbSlots;
 
-    [NativeName("maxActiveReferencePictures")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxActiveReferencePictures;
-
-    [NativeName("stdHeaderVersion")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_queue"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_synchronization2", "VK_VERSION_1_3"]
-    )]
     public ExtensionProperties StdHeaderVersion;
 }

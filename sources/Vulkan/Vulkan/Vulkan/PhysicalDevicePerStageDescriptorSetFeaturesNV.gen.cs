@@ -8,51 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDevicePerStageDescriptorSetFeaturesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePerStageDescriptorSetFeaturesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_per_stage_descriptor_set"],
-        ImpliesSets = [
-            "VK_NV_per_stage_descriptor_set+VK_KHR_maintenance6",
-            "VK_NV_per_stage_descriptor_set+VK_VERSION_1_4",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_per_stage_descriptor_set"],
-        ImpliesSets = [
-            "VK_NV_per_stage_descriptor_set+VK_KHR_maintenance6",
-            "VK_NV_per_stage_descriptor_set+VK_VERSION_1_4",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("perStageDescriptorSet")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_per_stage_descriptor_set"],
-        ImpliesSets = [
-            "VK_NV_per_stage_descriptor_set+VK_KHR_maintenance6",
-            "VK_NV_per_stage_descriptor_set+VK_VERSION_1_4",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint PerStageDescriptorSet;
 
-    [NativeName("dynamicPipelineLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_per_stage_descriptor_set"],
-        ImpliesSets = [
-            "VK_NV_per_stage_descriptor_set+VK_KHR_maintenance6",
-            "VK_NV_per_stage_descriptor_set+VK_VERSION_1_4",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DynamicPipelineLayout;
 }

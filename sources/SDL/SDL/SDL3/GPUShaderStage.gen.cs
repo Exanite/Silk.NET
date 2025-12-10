@@ -7,12 +7,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_GPUShaderStage")]
 public enum GPUShaderStage
 {
-    [NativeName("SDL_GPU_SHADERSTAGE_VERTEX")]
-    Vertex = 0,
-
-    [NativeName("SDL_GPU_SHADERSTAGE_FRAGMENT")]
-    Fragment = 1,
+    Vertex,
+    Fragment,
 }

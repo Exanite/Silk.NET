@@ -8,51 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDeviceGeneratedCommandsFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("deviceGeneratedCommands")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DeviceGeneratedCommands;
 
-    [NativeName("dynamicGeneratedPipelineLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DynamicGeneratedPipelineLayout;
 }

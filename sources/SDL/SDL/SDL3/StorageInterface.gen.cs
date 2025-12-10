@@ -7,42 +7,43 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_StorageInterface")]
 public unsafe partial struct StorageInterface
 {
-    [NativeName("version")]
+    [NativeTypeName("Uint32")]
     public uint Version;
 
-    [NativeName("close")]
+    [NativeTypeName("bool (*)(void *) __attribute__((cdecl))")]
     public StorageInterfaceClose Close;
 
-    [NativeName("ready")]
+    [NativeTypeName("bool (*)(void *) __attribute__((cdecl))")]
     public StorageInterfaceReady Ready;
 
-    [NativeName("enumerate")]
+    [NativeTypeName(
+        "bool (*)(void *, const char *, SDL_EnumerateDirectoryCallback, void *) __attribute__((cdecl))"
+    )]
     public StorageInterfaceEnumerate Enumerate;
 
-    [NativeName("info")]
+    [NativeTypeName("bool (*)(void *, const char *, SDL_PathInfo *) __attribute__((cdecl))")]
     public StorageInterfaceInfo Info;
 
-    [NativeName("read_file")]
+    [NativeTypeName("bool (*)(void *, const char *, void *, Uint64) __attribute__((cdecl))")]
     public StorageInterfaceReadFile ReadFile;
 
-    [NativeName("write_file")]
+    [NativeTypeName("bool (*)(void *, const char *, const void *, Uint64) __attribute__((cdecl))")]
     public StorageInterfaceWriteFile WriteFile;
 
-    [NativeName("mkdir")]
+    [NativeTypeName("bool (*)(void *, const char *) __attribute__((cdecl))")]
     public StorageInterfaceMkdir Mkdir;
 
-    [NativeName("remove")]
+    [NativeTypeName("bool (*)(void *, const char *) __attribute__((cdecl))")]
     public StorageInterfaceRemove Remove;
 
-    [NativeName("rename")]
+    [NativeTypeName("bool (*)(void *, const char *, const char *) __attribute__((cdecl))")]
     public StorageInterfaceRename Rename;
 
-    [NativeName("copy")]
+    [NativeTypeName("bool (*)(void *, const char *, const char *) __attribute__((cdecl))")]
     public StorageInterfaceCopy Copy;
 
-    [NativeName("space_remaining")]
+    [NativeTypeName("Uint64 (*)(void *) __attribute__((cdecl))")]
     public StorageInterfaceSpaceRemaining SpaceRemaining;
 }

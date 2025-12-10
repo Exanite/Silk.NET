@@ -8,73 +8,20 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineExecutablePropertiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineExecutablePropertiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("stages")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkShaderStageFlags")]
     public ShaderStageFlags Stages;
 
-    [NativeName("name")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("char[256]")]
     public PipelineExecutablePropertiesKHRName Name;
 
-    [NativeName("description")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("char[256]")]
     public PipelineExecutablePropertiesKHRDescription Description;
 
-    [NativeName("subgroupSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SubgroupSize;
 }

@@ -8,31 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDevicePresentWaitFeaturesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePresentWaitFeaturesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait"],
-        ImpliesSets = ["VK_KHR_present_id", "VK_KHR_swapchain"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait"],
-        ImpliesSets = ["VK_KHR_present_id", "VK_KHR_swapchain"]
-    )]
     public void* PNext;
 
-    [NativeName("presentWait")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait"],
-        ImpliesSets = ["VK_KHR_present_id", "VK_KHR_swapchain"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint PresentWait;
 }

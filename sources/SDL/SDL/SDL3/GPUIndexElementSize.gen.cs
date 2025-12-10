@@ -7,12 +7,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_GPUIndexElementSize")]
 public enum GPUIndexElementSize
 {
-    [NativeName("SDL_GPU_INDEXELEMENTSIZE_16BIT")]
-    Indexelementsize16Bit = 0,
-
-    [NativeName("SDL_GPU_INDEXELEMENTSIZE_32BIT")]
-    Indexelementsize32Bit = 1,
+    Indexelementsize16Bit,
+    Indexelementsize32Bit,
 }

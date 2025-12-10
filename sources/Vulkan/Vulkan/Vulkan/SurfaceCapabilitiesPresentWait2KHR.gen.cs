@@ -7,46 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkSurfaceCapabilitiesPresentWait2KHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct SurfaceCapabilitiesPresentWait2KHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait2"],
-        ImpliesSets = [
-            "VK_KHR_get_surface_capabilities2",
-            "VK_KHR_present_id2",
-            "VK_KHR_surface",
-            "VK_KHR_swapchain",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait2"],
-        ImpliesSets = [
-            "VK_KHR_get_surface_capabilities2",
-            "VK_KHR_present_id2",
-            "VK_KHR_surface",
-            "VK_KHR_swapchain",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("presentWait2Supported")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_wait2"],
-        ImpliesSets = [
-            "VK_KHR_get_surface_capabilities2",
-            "VK_KHR_present_id2",
-            "VK_KHR_surface",
-            "VK_KHR_swapchain",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint PresentWait2Supported;
 }

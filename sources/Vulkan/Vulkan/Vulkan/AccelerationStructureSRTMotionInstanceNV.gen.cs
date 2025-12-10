@@ -8,40 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkAccelerationStructureSRTMotionInstanceNV")]
-[SupportedApiProfile("vulkan")]
 public partial struct AccelerationStructureSRTMotionInstanceNV
 {
-    [NativeName("transformT0")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
     public SRTDataNV TransformT0;
-
-    [NativeName("transformT1")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
     public SRTDataNV TransformT1;
-
-    [NativeName("_bitfield1")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
     public uint Bitfield1;
 
-    [NativeName("instanceCustomIndex")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [NativeTypeName("uint32_t : 24")]
     public uint InstanceCustomIndex
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -50,12 +23,7 @@ public partial struct AccelerationStructureSRTMotionInstanceNV
         set { Bitfield1 = (Bitfield1 & ~0xFFFFFFu) | (value & 0xFFFFFFu); }
     }
 
-    [NativeName("mask")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [NativeTypeName("uint32_t : 8")]
     public uint Mask
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -63,21 +31,9 @@ public partial struct AccelerationStructureSRTMotionInstanceNV
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         set { Bitfield1 = (Bitfield1 & ~(0xFFu << 24)) | ((value & 0xFFu) << 24); }
     }
-
-    [NativeName("_bitfield2")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
     public uint Bitfield2;
 
-    [NativeName("instanceShaderBindingTableRecordOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [NativeTypeName("uint32_t : 24")]
     public uint InstanceShaderBindingTableRecordOffset
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -86,12 +42,7 @@ public partial struct AccelerationStructureSRTMotionInstanceNV
         set { Bitfield2 = (Bitfield2 & ~0xFFFFFFu) | (value & 0xFFFFFFu); }
     }
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [NativeTypeName("VkGeometryInstanceFlagsKHR : 8")]
     public GeometryInstanceFlagsKHR Flags
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -100,11 +51,6 @@ public partial struct AccelerationStructureSRTMotionInstanceNV
         set { Bitfield2 = (Bitfield2 & ~(0xFFu << 24)) | (((uint)(value) & 0xFFu) << 24); }
     }
 
-    [NativeName("accelerationStructureReference")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_ray_tracing_motion_blur"],
-        ImpliesSets = ["VK_KHR_ray_tracing_pipeline"]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong AccelerationStructureReference;
 }

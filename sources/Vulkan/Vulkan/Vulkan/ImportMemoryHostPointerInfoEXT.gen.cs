@@ -8,51 +8,12 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkImportMemoryHostPointerInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ImportMemoryHostPointerInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_external_memory_host"],
-        ImpliesSets = [
-            "VK_EXT_external_memory_host+VK_KHR_external_memory",
-            "VK_EXT_external_memory_host+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_external_memory_host"],
-        ImpliesSets = [
-            "VK_EXT_external_memory_host+VK_KHR_external_memory",
-            "VK_EXT_external_memory_host+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("handleType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_external_memory_host"],
-        ImpliesSets = [
-            "VK_EXT_external_memory_host+VK_KHR_external_memory",
-            "VK_EXT_external_memory_host+VK_VERSION_1_1",
-        ]
-    )]
     public ExternalMemoryHandleTypeFlags HandleType;
-
-    [NativeName("pHostPointer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_external_memory_host"],
-        ImpliesSets = [
-            "VK_EXT_external_memory_host+VK_KHR_external_memory",
-            "VK_EXT_external_memory_host+VK_VERSION_1_1",
-        ]
-    )]
     public void* PHostPointer;
 }

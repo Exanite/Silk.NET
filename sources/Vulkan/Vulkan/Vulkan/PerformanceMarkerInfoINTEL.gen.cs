@@ -8,19 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPerformanceMarkerInfoINTEL")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PerformanceMarkerInfoINTEL
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("marker")]
-    [SupportedApiProfile("vulkan", ["VK_INTEL_performance_query"])]
+    [NativeTypeName("uint64_t")]
     public ulong Marker;
 }

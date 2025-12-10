@@ -7,27 +7,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoVP9Segmentation")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoVP9Segmentation
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoVP9SegmentationFlags Flags;
 
-    [NativeName("segmentation_tree_probs")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[7]")]
     public StdVideoVP9SegmentationSegmentationTreeProbs SegmentationTreeProbs;
 
-    [NativeName("segmentation_pred_prob")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[3]")]
     public StdVideoVP9SegmentationSegmentationPredProb SegmentationPredProb;
 
-    [NativeName("FeatureEnabled")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[8]")]
     public StdVideoVP9SegmentationFeatureEnabled FeatureEnabled;
 
-    [NativeName("FeatureData")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int16_t[8][4]")]
     public StdVideoVP9SegmentationFeatureData FeatureData;
 }

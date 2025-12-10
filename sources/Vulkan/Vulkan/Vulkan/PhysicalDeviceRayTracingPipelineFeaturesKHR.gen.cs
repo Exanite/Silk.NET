@@ -8,85 +8,23 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceRayTracingPipelineFeaturesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRayTracingPipelineFeaturesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("rayTracingPipeline")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTracingPipeline;
 
-    [NativeName("rayTracingPipelineShaderGroupHandleCaptureReplay")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTracingPipelineShaderGroupHandleCaptureReplay;
 
-    [NativeName("rayTracingPipelineShaderGroupHandleCaptureReplayMixed")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTracingPipelineShaderGroupHandleCaptureReplayMixed;
 
-    [NativeName("rayTracingPipelineTraceRaysIndirect")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTracingPipelineTraceRaysIndirect;
 
-    [NativeName("rayTraversalPrimitiveCulling")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_query", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTraversalPrimitiveCulling;
 }

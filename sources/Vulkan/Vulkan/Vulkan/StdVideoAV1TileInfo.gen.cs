@@ -7,47 +7,34 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoAV1TileInfo")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoAV1TileInfo
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoAV1TileInfoFlags Flags;
 
-    [NativeName("TileCols")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte TileCols;
 
-    [NativeName("TileRows")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte TileRows;
 
-    [NativeName("context_update_tile_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort ContextUpdateTileId;
 
-    [NativeName("tile_size_bytes_minus_1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte TileSizeBytesMinus1;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[7]")]
     public StdVideoAV1TileInfoReserved1 Reserved1;
 
-    [NativeName("pMiColStarts")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const uint16_t *")]
     public ushort* PMiColStarts;
 
-    [NativeName("pMiRowStarts")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const uint16_t *")]
     public ushort* PMiRowStarts;
 
-    [NativeName("pWidthInSbsMinus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const uint16_t *")]
     public ushort* PWidthInSbsMinus1;
 
-    [NativeName("pHeightInSbsMinus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const uint16_t *")]
     public ushort* PHeightInSbsMinus1;
 }

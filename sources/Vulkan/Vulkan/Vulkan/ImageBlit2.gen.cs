@@ -8,55 +8,18 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkImageBlit2")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageBlit2
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("srcSubresource")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
     public ImageSubresourceLayers SrcSubresource;
 
-    [NativeName("srcOffsets")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("VkOffset3D[2]")]
     public ImageBlit2SrcOffsets SrcOffsets;
-
-    [NativeName("dstSubresource")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
     public ImageSubresourceLayers DstSubresource;
 
-    [NativeName("dstOffsets")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("VkOffset3D[2]")]
     public ImageBlit2DstOffsets DstOffsets;
 }

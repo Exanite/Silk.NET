@@ -7,18 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDeviceFaultVendorBinaryHeaderVersionEXT")]
-[SupportedApiProfile("vulkan")]
 public enum DeviceFaultVendorBinaryHeaderVersionEXT : uint
 {
-    [NativeName("VK_DEVICE_FAULT_VENDOR_BINARY_HEADER_VERSION_ONE_EXT")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
     One = 1,
 }

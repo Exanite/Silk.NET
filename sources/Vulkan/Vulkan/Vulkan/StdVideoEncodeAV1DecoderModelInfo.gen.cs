@@ -7,27 +7,20 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoEncodeAV1DecoderModelInfo")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoEncodeAV1DecoderModelInfo
 {
-    [NativeName("buffer_delay_length_minus_1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte BufferDelayLengthMinus1;
 
-    [NativeName("buffer_removal_time_length_minus_1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte BufferRemovalTimeLengthMinus1;
 
-    [NativeName("frame_presentation_time_length_minus_1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte FramePresentationTimeLengthMinus1;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Reserved1;
 
-    [NativeName("num_units_in_decoding_tick")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint NumUnitsInDecodingTick;
 }

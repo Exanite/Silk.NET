@@ -6,73 +6,18 @@ using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkImportFenceFdInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ImportFenceFdInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_external_fence_fd"],
-        ImpliesSets = [
-            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
-            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_external_fence_fd"],
-        ImpliesSets = [
-            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
-            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("fence")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_external_fence_fd"],
-        ImpliesSets = [
-            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
-            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkFence")]
     public FenceHandle Fence;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_external_fence_fd"],
-        ImpliesSets = [
-            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
-            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkFenceImportFlags")]
     public FenceImportFlags Flags;
-
-    [NativeName("handleType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_external_fence_fd"],
-        ImpliesSets = [
-            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
-            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
-        ]
-    )]
     public ExternalFenceHandleTypeFlags HandleType;
-
-    [NativeName("fd")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_external_fence_fd"],
-        ImpliesSets = [
-            "VK_KHR_external_fence_fd+VK_KHR_external_fence",
-            "VK_KHR_external_fence_fd+VK_VERSION_1_1",
-        ]
-    )]
     public int Fd;
 }

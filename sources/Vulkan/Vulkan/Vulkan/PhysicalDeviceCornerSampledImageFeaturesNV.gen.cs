@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceCornerSampledImageFeaturesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCornerSampledImageFeaturesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_corner_sampled_image"],
-        ImpliesSets = [
-            "VK_NV_corner_sampled_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_corner_sampled_image+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_corner_sampled_image"],
-        ImpliesSets = [
-            "VK_NV_corner_sampled_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_corner_sampled_image+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("cornerSampledImage")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_corner_sampled_image"],
-        ImpliesSets = [
-            "VK_NV_corner_sampled_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_corner_sampled_image+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CornerSampledImage;
 }

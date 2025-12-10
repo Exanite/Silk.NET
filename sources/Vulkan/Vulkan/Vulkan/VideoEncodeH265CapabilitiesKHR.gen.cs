@@ -8,151 +8,52 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeH265CapabilitiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeH265CapabilitiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkVideoEncodeH265CapabilityFlagsKHR")]
     public VideoEncodeH265CapabilityFlagsKHR Flags;
-
-    [NativeName("maxLevelIdc")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public StdVideoH265LevelIdc MaxLevelIdc;
 
-    [NativeName("maxSliceSegmentCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxSliceSegmentCount;
-
-    [NativeName("maxTiles")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public Extent2D MaxTiles;
 
-    [NativeName("ctbSizes")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkVideoEncodeH265CtbSizeFlagsKHR")]
     public VideoEncodeH265CtbSizeFlagsKHR CtbSizes;
 
-    [NativeName("transformBlockSizes")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkVideoEncodeH265TransformBlockSizeFlagsKHR")]
     public VideoEncodeH265TransformBlockSizeFlagsKHR TransformBlockSizes;
 
-    [NativeName("maxPPictureL0ReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxPPictureL0ReferenceCount;
 
-    [NativeName("maxBPictureL0ReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxBPictureL0ReferenceCount;
 
-    [NativeName("maxL1ReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxL1ReferenceCount;
 
-    [NativeName("maxSubLayerCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxSubLayerCount;
 
-    [NativeName("expectDyadicTemporalSubLayerPattern")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ExpectDyadicTemporalSubLayerPattern;
 
-    [NativeName("minQp")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("int32_t")]
     public int MinQp;
 
-    [NativeName("maxQp")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("int32_t")]
     public int MaxQp;
 
-    [NativeName("prefersGopRemainingFrames")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint PrefersGopRemainingFrames;
 
-    [NativeName("requiresGopRemainingFrames")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RequiresGopRemainingFrames;
 
-    [NativeName("stdSyntaxFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_h265"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkVideoEncodeH265StdFlagsKHR")]
     public VideoEncodeH265StdFlagsKHR StdSyntaxFlags;
 }

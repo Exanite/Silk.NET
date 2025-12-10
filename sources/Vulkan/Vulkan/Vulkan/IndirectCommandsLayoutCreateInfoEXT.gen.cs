@@ -7,103 +7,28 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkIndirectCommandsLayoutCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct IndirectCommandsLayoutCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkIndirectCommandsLayoutUsageFlagsEXT")]
     public IndirectCommandsLayoutUsageFlagsEXT Flags;
 
-    [NativeName("shaderStages")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkShaderStageFlags")]
     public ShaderStageFlags ShaderStages;
 
-    [NativeName("indirectStride")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint IndirectStride;
 
-    [NativeName("pipelineLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkPipelineLayout")]
     public PipelineLayoutHandle PipelineLayout;
 
-    [NativeName("tokenCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint TokenCount;
 
-    [NativeName("pTokens")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const VkIndirectCommandsLayoutTokenEXT *")]
     public IndirectCommandsLayoutTokenEXT* PTokens;
 }

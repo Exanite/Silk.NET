@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFragmentShaderBarycentricPropertiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_fragment_shader_barycentric"],
-        ImpliesSets = [
-            "VK_KHR_fragment_shader_barycentric+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_fragment_shader_barycentric+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_fragment_shader_barycentric"],
-        ImpliesSets = [
-            "VK_KHR_fragment_shader_barycentric+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_fragment_shader_barycentric+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("triStripVertexOrderIndependentOfProvokingVertex")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_fragment_shader_barycentric"],
-        ImpliesSets = [
-            "VK_KHR_fragment_shader_barycentric+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_fragment_shader_barycentric+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TriStripVertexOrderIndependentOfProvokingVertex;
 }

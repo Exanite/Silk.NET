@@ -8,47 +8,32 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoEncodeH264PictureInfo")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoEncodeH264PictureInfo
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoEncodeH264PictureInfoFlags Flags;
 
-    [NativeName("seq_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte SeqParameterSetId;
 
-    [NativeName("pic_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte PicParameterSetId;
 
-    [NativeName("idr_pic_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort IdrPicId;
-
-    [NativeName("primary_pic_type")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH264PictureType PrimaryPicType;
 
-    [NativeName("frame_num")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint FrameNum;
 
-    [NativeName("PicOrderCnt")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int32_t")]
     public int PicOrderCnt;
 
-    [NativeName("temporal_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte TemporalId;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[3]")]
     public StdVideoEncodeH264PictureInfoReserved1 Reserved1;
 
-    [NativeName("pRefLists")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoEncodeH264ReferenceListsInfo *")]
     public StdVideoEncodeH264ReferenceListsInfo* PRefLists;
 }

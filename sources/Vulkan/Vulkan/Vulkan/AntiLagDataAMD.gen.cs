@@ -8,62 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkAntiLagDataAMD")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct AntiLagDataAMD
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_anti_lag"],
-        ImpliesSets = [
-            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_anti_lag+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_anti_lag"],
-        ImpliesSets = [
-            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_anti_lag+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("mode")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_anti_lag"],
-        ImpliesSets = [
-            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_anti_lag+VK_VERSION_1_1",
-        ]
-    )]
     public AntiLagModeAMD Mode;
 
-    [NativeName("maxFPS")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_anti_lag"],
-        ImpliesSets = [
-            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_anti_lag+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxFPS;
 
-    [NativeName("pPresentationInfo")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_anti_lag"],
-        ImpliesSets = [
-            "VK_AMD_anti_lag+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_anti_lag+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const VkAntiLagPresentationInfoAMD *")]
     public AntiLagPresentationInfoAMD* PPresentationInfo;
 }

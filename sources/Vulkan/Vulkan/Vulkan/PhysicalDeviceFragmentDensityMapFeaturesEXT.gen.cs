@@ -8,62 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceFragmentDensityMapFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceFragmentDensityMapFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_density_map"],
-        ImpliesSets = [
-            "VK_EXT_fragment_density_map+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_density_map+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_density_map"],
-        ImpliesSets = [
-            "VK_EXT_fragment_density_map+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_density_map+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("fragmentDensityMap")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_density_map"],
-        ImpliesSets = [
-            "VK_EXT_fragment_density_map+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_density_map+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FragmentDensityMap;
 
-    [NativeName("fragmentDensityMapDynamic")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_density_map"],
-        ImpliesSets = [
-            "VK_EXT_fragment_density_map+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_density_map+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FragmentDensityMapDynamic;
 
-    [NativeName("fragmentDensityMapNonSubsampledImages")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_fragment_density_map"],
-        ImpliesSets = [
-            "VK_EXT_fragment_density_map+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_fragment_density_map+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FragmentDensityMapNonSubsampledImages;
 }

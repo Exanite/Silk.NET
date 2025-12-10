@@ -7,15 +7,10 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDisplayModeParametersKHR")]
-[SupportedApiProfile("vulkan")]
 public partial struct DisplayModeParametersKHR
 {
-    [NativeName("visibleRegion")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
     public Extent2D VisibleRegion;
 
-    [NativeName("refreshRate")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_display"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("uint32_t")]
     public uint RefreshRate;
 }

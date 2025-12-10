@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceMultiDrawPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceMultiDrawPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_multi_draw"],
-        ImpliesSets = [
-            "VK_EXT_multi_draw+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_multi_draw+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_multi_draw"],
-        ImpliesSets = [
-            "VK_EXT_multi_draw+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_multi_draw+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("maxMultiDrawCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_multi_draw"],
-        ImpliesSets = [
-            "VK_EXT_multi_draw+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_multi_draw+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxMultiDrawCount;
 }

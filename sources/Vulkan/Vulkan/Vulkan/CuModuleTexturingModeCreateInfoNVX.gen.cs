@@ -8,19 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkCuModuleTexturingModeCreateInfoNVX")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct CuModuleTexturingModeCreateInfoNVX
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_binary_import"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_binary_import"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("use64bitTexturing")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_binary_import"])]
+    [NativeTypeName("VkBool32")]
     public uint Use64BitTexturing;
 }

@@ -7,12 +7,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_ScaleMode")]
 public enum ScaleMode
 {
-    [NativeName("SDL_SCALEMODE_NEAREST")]
-    Nearest = 0,
-
-    [NativeName("SDL_SCALEMODE_LINEAR")]
-    Linear = 1,
+    Nearest,
+    Linear,
 }

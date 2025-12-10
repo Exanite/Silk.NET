@@ -6,51 +6,16 @@ using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct MultiviewPerViewRenderAreasRenderPassBeginInfoQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_multiview_per_view_render_areas"],
-        ImpliesSets = [
-            "VK_QCOM_multiview_per_view_render_areas+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_multiview_per_view_render_areas+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_multiview_per_view_render_areas"],
-        ImpliesSets = [
-            "VK_QCOM_multiview_per_view_render_areas+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_multiview_per_view_render_areas+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("perViewRenderAreaCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_multiview_per_view_render_areas"],
-        ImpliesSets = [
-            "VK_QCOM_multiview_per_view_render_areas+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_multiview_per_view_render_areas+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PerViewRenderAreaCount;
 
-    [NativeName("pPerViewRenderAreas")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_multiview_per_view_render_areas"],
-        ImpliesSets = [
-            "VK_QCOM_multiview_per_view_render_areas+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_multiview_per_view_render_areas+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const VkRect2D *")]
     public Rect2D* PPerViewRenderAreas;
 }

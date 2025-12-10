@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDisplayModeKHR")]
 public readonly unsafe partial struct DisplayModeHandleKHR
 {
     public readonly void* Handle;

@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPerformanceCounterARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PerformanceCounterARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("counterID")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint CounterID;
 }

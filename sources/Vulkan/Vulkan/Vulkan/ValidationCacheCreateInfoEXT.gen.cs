@@ -8,27 +8,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkValidationCacheCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ValidationCacheCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_cache"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_cache"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_cache"])]
+    [NativeTypeName("VkValidationCacheCreateFlagsEXT")]
     public uint Flags;
 
-    [NativeName("initialDataSize")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_cache"])]
+    [NativeTypeName("size_t")]
     public nuint InitialDataSize;
 
-    [NativeName("pInitialData")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_cache"])]
+    [NativeTypeName("const void *")]
     public void* PInitialData;
 }

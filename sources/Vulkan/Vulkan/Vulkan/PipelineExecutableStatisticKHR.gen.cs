@@ -8,73 +8,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineExecutableStatisticKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineExecutableStatisticKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("name")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("char[256]")]
     public PipelineExecutableStatisticKHRName Name;
 
-    [NativeName("description")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("char[256]")]
     public PipelineExecutableStatisticKHRDescription Description;
-
-    [NativeName("format")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public PipelineExecutableStatisticFormatKHR Format;
-
-    [NativeName("value")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public PipelineExecutableStatisticValueKHR Value;
 }

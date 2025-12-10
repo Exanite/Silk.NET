@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_GPUComputePass")]
 public readonly unsafe partial struct GPUComputePassHandle
 {
     public readonly void* Handle;

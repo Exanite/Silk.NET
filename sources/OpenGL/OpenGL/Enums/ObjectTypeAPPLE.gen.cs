@@ -7,12 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.OpenGL;
 
-[NativeName("ObjectTypeAPPLE")]
+[Transformed]
 public enum ObjectTypeAPPLE : uint
 {
-    [NativeName("GL_DRAW_PIXELS_APPLE")]
-    DrawPixels = 35338,
-
-    [NativeName("GL_FENCE_APPLE")]
-    Fence = 35339,
+    DrawPixels = unchecked((uint)0x8A0A),
+    Fence = unchecked((uint)0x8A0B),
 }

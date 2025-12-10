@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_heapBudget_e__FixedBuffer")]
 [InlineArray(16)]
-[SupportedApiProfile("vulkan")]
 public partial struct PhysicalDeviceMemoryBudgetPropertiesEXTHeapBudget
 {
-    [NativeName("e0")]
-    [SupportedApiProfile("vulkan")]
     public ulong E0;
 }

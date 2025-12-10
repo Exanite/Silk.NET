@@ -7,51 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkRenderPassTileShadingCreateInfoQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct RenderPassTileShadingCreateInfoQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkTileShadingRenderPassFlagsQCOM")]
     public TileShadingRenderPassFlagsQCOM Flags;
-
-    [NativeName("tileApronSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public Extent2D TileApronSize;
 }

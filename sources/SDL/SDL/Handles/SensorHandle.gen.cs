@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_Sensor")]
 public readonly unsafe partial struct SensorHandle
 {
     public readonly void* Handle;

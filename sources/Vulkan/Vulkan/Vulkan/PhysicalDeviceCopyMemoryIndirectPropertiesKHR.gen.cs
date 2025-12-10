@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCopyMemoryIndirectPropertiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("supportedQueues")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_copy_memory_indirect"],
-        ImpliesSets = [
-            "VK_KHR_get_physical_device_properties2+VK_KHR_buffer_device_address",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkQueueFlags")]
     public QueueFlags SupportedQueues;
 }

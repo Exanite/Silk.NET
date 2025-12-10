@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceInheritedViewportScissorFeaturesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceInheritedViewportScissorFeaturesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("inheritedViewportScissor2D")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_inherited_viewport_scissor"],
-        ImpliesSets = [
-            "VK_NV_inherited_viewport_scissor+VK_KHR_get_physical_device_properties2",
-            "VK_NV_inherited_viewport_scissor+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint InheritedViewportScissor2D;
 }

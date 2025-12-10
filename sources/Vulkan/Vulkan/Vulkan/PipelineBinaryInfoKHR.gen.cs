@@ -8,51 +8,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineBinaryInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineBinaryInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_binary"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_binary+VK_KHR_maintenance5",
-            "VK_KHR_pipeline_binary+VK_VERSION_1_4",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_binary"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_binary+VK_KHR_maintenance5",
-            "VK_KHR_pipeline_binary+VK_VERSION_1_4",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("binaryCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_binary"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_binary+VK_KHR_maintenance5",
-            "VK_KHR_pipeline_binary+VK_VERSION_1_4",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint BinaryCount;
 
-    [NativeName("pPipelineBinaries")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_binary"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_binary+VK_KHR_maintenance5",
-            "VK_KHR_pipeline_binary+VK_VERSION_1_4",
-        ]
-    )]
+    [NativeTypeName("const VkPipelineBinaryKHR *")]
     public PipelineBinaryHandleKHR* PPipelineBinaries;
 }

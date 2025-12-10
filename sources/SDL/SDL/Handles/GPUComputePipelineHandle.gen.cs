@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_GPUComputePipeline")]
 public readonly unsafe partial struct GPUComputePipelineHandle
 {
     public readonly void* Handle;

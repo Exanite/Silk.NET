@@ -8,35 +8,23 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDebugUtilsMessengerCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugUtilsMessengerCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("VkDebugUtilsMessengerCreateFlagsEXT")]
     public uint Flags;
 
-    [NativeName("messageSeverity")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("VkDebugUtilsMessageSeverityFlagsEXT")]
     public DebugUtilsMessageSeverityFlagsEXT MessageSeverity;
 
-    [NativeName("messageType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("VkDebugUtilsMessageTypeFlagsEXT")]
     public DebugUtilsMessageTypeFlagsEXT MessageType;
 
-    [NativeName("pfnUserCallback")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("PFN_vkDebugUtilsMessengerCallbackEXT")]
     public DebugUtilsMessengerCallbackEXT PfnUserCallback;
-
-    [NativeName("pUserData")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public void* PUserData;
 }

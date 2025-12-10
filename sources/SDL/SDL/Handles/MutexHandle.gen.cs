@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_Mutex")]
 public readonly unsafe partial struct MutexHandle
 {
     public readonly void* Handle;

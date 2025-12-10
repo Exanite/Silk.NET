@@ -7,47 +7,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkComputePipelineIndirectBufferInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ComputePipelineIndirectBufferInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands_compute"],
-        ImpliesSets = ["VK_NV_device_generated_commands"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands_compute"],
-        ImpliesSets = ["VK_NV_device_generated_commands"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("deviceAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands_compute"],
-        ImpliesSets = ["VK_NV_device_generated_commands"]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong DeviceAddress;
 
-    [NativeName("size")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands_compute"],
-        ImpliesSets = ["VK_NV_device_generated_commands"]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong Size;
 
-    [NativeName("pipelineDeviceAddressCaptureReplay")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands_compute"],
-        ImpliesSets = ["VK_NV_device_generated_commands"]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong PipelineDeviceAddressCaptureReplay;
 }

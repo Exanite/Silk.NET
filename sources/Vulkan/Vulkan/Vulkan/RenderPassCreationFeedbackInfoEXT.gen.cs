@@ -8,18 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkRenderPassCreationFeedbackInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public partial struct RenderPassCreationFeedbackInfoEXT
 {
-    [NativeName("postMergeSubpassCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PostMergeSubpassCount;
 }

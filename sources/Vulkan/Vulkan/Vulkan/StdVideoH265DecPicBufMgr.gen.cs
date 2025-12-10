@@ -7,19 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265DecPicBufMgr")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoH265DecPicBufMgr
 {
-    [NativeName("max_latency_increase_plus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t[7]")]
     public StdVideoH265DecPicBufMgrMaxLatencyIncreasePlus1 MaxLatencyIncreasePlus1;
 
-    [NativeName("max_dec_pic_buffering_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[7]")]
     public StdVideoH265DecPicBufMgrMaxDecPicBufferingMinus1 MaxDecPicBufferingMinus1;
 
-    [NativeName("max_num_reorder_pics")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t[7]")]
     public StdVideoH265DecPicBufMgrMaxNumReorderPics MaxNumReorderPics;
 }

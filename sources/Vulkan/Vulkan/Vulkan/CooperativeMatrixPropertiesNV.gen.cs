@@ -8,117 +8,32 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkCooperativeMatrixPropertiesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct CooperativeMatrixPropertiesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("MSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MSize;
 
-    [NativeName("NSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint NSize;
 
-    [NativeName("KSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint KSize;
 
-    [NativeName("AType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkComponentTypeNV")]
     public ComponentTypeKHR AType;
 
-    [NativeName("BType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkComponentTypeNV")]
     public ComponentTypeKHR BType;
 
-    [NativeName("CType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkComponentTypeNV")]
     public ComponentTypeKHR CType;
 
-    [NativeName("DType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkComponentTypeNV")]
     public ComponentTypeKHR DType;
 
-    [NativeName("scope")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkScopeNV")]
     public ScopeKHR Scope;
 }

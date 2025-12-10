@@ -8,62 +8,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkConditionalRenderingBeginInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ConditionalRenderingBeginInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_conditional_rendering"],
-        ImpliesSets = [
-            "VK_EXT_conditional_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_conditional_rendering+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_conditional_rendering"],
-        ImpliesSets = [
-            "VK_EXT_conditional_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_conditional_rendering+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("buffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_conditional_rendering"],
-        ImpliesSets = [
-            "VK_EXT_conditional_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_conditional_rendering+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBuffer")]
     public BufferHandle Buffer;
 
-    [NativeName("offset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_conditional_rendering"],
-        ImpliesSets = [
-            "VK_EXT_conditional_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_conditional_rendering+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong Offset;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_conditional_rendering"],
-        ImpliesSets = [
-            "VK_EXT_conditional_rendering+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_conditional_rendering+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkConditionalRenderingFlagsEXT")]
     public ConditionalRenderingFlagsEXT Flags;
 }
