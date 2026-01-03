@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoDecodeCapabilitiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoDecodeCapabilitiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkVideoDecodeCapabilityFlagsKHR")]
     public VideoDecodeCapabilityFlagsKHR Flags;
 }

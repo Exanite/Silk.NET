@@ -8,55 +8,20 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineRasterizationLineStateCreateInfo")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineRasterizationLineStateCreateInfo
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("lineRasterizationMode")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public LineRasterizationMode LineRasterizationMode;
 
-    [NativeName("stippledLineEnable")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("VkBool32")]
     public uint StippledLineEnable;
 
-    [NativeName("lineStippleFactor")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint LineStippleFactor;
 
-    [NativeName("lineStipplePattern")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("uint16_t")]
     public ushort LineStipplePattern;
 }

@@ -8,79 +8,44 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkSwapchainCreateInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct SwapchainCreateInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("VkSwapchainCreateFlagsKHR")]
     public SwapchainCreateFlagsKHR Flags;
 
-    [NativeName("surface")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("VkSurfaceKHR")]
     public SurfaceHandleKHR Surface;
 
-    [NativeName("minImageCount")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("uint32_t")]
     public uint MinImageCount;
-
-    [NativeName("imageFormat")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public Format ImageFormat;
-
-    [NativeName("imageColorSpace")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public ColorSpaceKHR ImageColorSpace;
-
-    [NativeName("imageExtent")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public Extent2D ImageExtent;
 
-    [NativeName("imageArrayLayers")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("uint32_t")]
     public uint ImageArrayLayers;
 
-    [NativeName("imageUsage")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("VkImageUsageFlags")]
     public ImageUsageFlags ImageUsage;
-
-    [NativeName("imageSharingMode")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public SharingMode ImageSharingMode;
 
-    [NativeName("queueFamilyIndexCount")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("uint32_t")]
     public uint QueueFamilyIndexCount;
 
-    [NativeName("pQueueFamilyIndices")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("const uint32_t *")]
     public uint* PQueueFamilyIndices;
-
-    [NativeName("preTransform")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public SurfaceTransformFlagsKHR PreTransform;
-
-    [NativeName("compositeAlpha")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public CompositeAlphaFlagsKHR CompositeAlpha;
-
-    [NativeName("presentMode")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public PresentModeKHR PresentMode;
 
-    [NativeName("clipped")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("VkBool32")]
     public uint Clipped;
 
-    [NativeName("oldSwapchain")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("VkSwapchainKHR")]
     public SwapchainHandleKHR OldSwapchain;
 }

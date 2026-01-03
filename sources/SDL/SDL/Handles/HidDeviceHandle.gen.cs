@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_hid_device")]
 public readonly unsafe partial struct HidDeviceHandle
 {
     public readonly void* Handle;

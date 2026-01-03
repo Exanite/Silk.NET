@@ -8,29 +8,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkAttachmentSampleLocationsEXT")]
-[SupportedApiProfile("vulkan")]
 public partial struct AttachmentSampleLocationsEXT
 {
-    [NativeName("attachmentIndex")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint AttachmentIndex;
-
-    [NativeName("sampleLocationsInfo")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_sample_locations"],
-        ImpliesSets = [
-            "VK_EXT_sample_locations+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_sample_locations+VK_VERSION_1_1",
-        ]
-    )]
     public SampleLocationsInfoEXT SampleLocationsInfo;
 }

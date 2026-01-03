@@ -8,47 +8,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoInlineQueryInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoInlineQueryInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_maintenance1"],
-        ImpliesSets = ["VK_KHR_video_queue"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_maintenance1"],
-        ImpliesSets = ["VK_KHR_video_queue"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("queryPool")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_maintenance1"],
-        ImpliesSets = ["VK_KHR_video_queue"]
-    )]
+    [NativeTypeName("VkQueryPool")]
     public QueryPoolHandle QueryPool;
 
-    [NativeName("firstQuery")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_maintenance1"],
-        ImpliesSets = ["VK_KHR_video_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint FirstQuery;
 
-    [NativeName("queryCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_maintenance1"],
-        ImpliesSets = ["VK_KHR_video_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint QueryCount;
 }

@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkImageFormatConstraintsFlagBitsFUCHSIA")]
+[Transformed]
 [Flags]
 public enum ImageFormatConstraintsFlagsFUCHSIA : uint
 {

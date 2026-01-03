@@ -7,15 +7,10 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.OpenGL;
 
-[NativeName("SyncObjectMask")]
+[Transformed]
 [Flags]
 public enum SyncObjectMask : uint
 {
-    None = 0x0,
-
-    [NativeName("GL_SYNC_FLUSH_COMMANDS_BIT")]
-    FlushCommandsBit = 0x1,
-
-    [NativeName("GL_SYNC_FLUSH_COMMANDS_BIT_APPLE")]
-    FlushCommandsBitAPPLE = 0x1,
+    FlushCommandsBit = unchecked((uint)0x00000001),
+    FlushCommandsBitAPPLE = unchecked((uint)0x00000001),
 }

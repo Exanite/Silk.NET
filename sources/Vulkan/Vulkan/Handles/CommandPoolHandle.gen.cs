@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkCommandPool")]
 public readonly unsafe partial struct CommandPoolHandle
 {
     public readonly void* Handle;

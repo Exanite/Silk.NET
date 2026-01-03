@@ -7,40 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkRenderPassCreationFeedbackCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct RenderPassCreationFeedbackCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("pRenderPassFeedback")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_subpass_merge_feedback"],
-        ImpliesSets = [
-            "VK_EXT_subpass_merge_feedback+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_subpass_merge_feedback+VK_VERSION_1_1",
-        ]
-    )]
     public RenderPassCreationFeedbackInfoEXT* PRenderPassFeedback;
 }

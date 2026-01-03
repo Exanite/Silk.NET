@@ -7,15 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_AppResult")]
 public enum AppResult
 {
-    [NativeName("SDL_APP_CONTINUE")]
-    Continue = 0,
-
-    [NativeName("SDL_APP_SUCCESS")]
-    Success = 1,
-
-    [NativeName("SDL_APP_FAILURE")]
-    Failure = 2,
+    Continue,
+    Success,
+    Failure,
 }

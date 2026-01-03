@@ -8,51 +8,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkRayTracingPipelineInterfaceCreateInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct RayTracingPipelineInterfaceCreateInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("maxPipelineRayPayloadSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxPipelineRayPayloadSize;
 
-    [NativeName("maxPipelineRayHitAttributeSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = [
-            "VK_KHR_acceleration_structure+VK_KHR_spirv_1_4",
-            "VK_KHR_acceleration_structure+VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxPipelineRayHitAttributeSize;
 }

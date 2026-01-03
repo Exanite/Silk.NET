@@ -8,31 +8,22 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkValidationFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ValidationFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("enabledValidationFeatureCount")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [NativeTypeName("uint32_t")]
     public uint EnabledValidationFeatureCount;
 
-    [NativeName("pEnabledValidationFeatures")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [NativeTypeName("const VkValidationFeatureEnableEXT *")]
     public ValidationFeatureEnableEXT* PEnabledValidationFeatures;
 
-    [NativeName("disabledValidationFeatureCount")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [NativeTypeName("uint32_t")]
     public uint DisabledValidationFeatureCount;
 
-    [NativeName("pDisabledValidationFeatures")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_validation_features"])]
+    [NativeTypeName("const VkValidationFeatureDisableEXT *")]
     public ValidationFeatureDisableEXT* PDisabledValidationFeatures;
 }

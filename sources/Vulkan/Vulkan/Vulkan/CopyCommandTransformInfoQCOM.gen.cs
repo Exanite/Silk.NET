@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkCopyCommandTransformInfoQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct CopyCommandTransformInfoQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_rotated_copy_commands"],
-        ImpliesSets = [
-            "VK_QCOM_rotated_copy_commands+VK_KHR_copy_commands2",
-            "VK_QCOM_rotated_copy_commands+VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_rotated_copy_commands"],
-        ImpliesSets = [
-            "VK_QCOM_rotated_copy_commands+VK_KHR_copy_commands2",
-            "VK_QCOM_rotated_copy_commands+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("transform")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_rotated_copy_commands"],
-        ImpliesSets = [
-            "VK_QCOM_rotated_copy_commands+VK_KHR_copy_commands2",
-            "VK_QCOM_rotated_copy_commands+VK_VERSION_1_3",
-        ]
-    )]
     public SurfaceTransformFlagsKHR Transform;
 }

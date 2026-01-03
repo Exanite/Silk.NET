@@ -8,143 +8,51 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeAV1QualityLevelPropertiesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeAV1QualityLevelPropertiesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public void* PNext;
 
-    [NativeName("preferredRateControlFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("VkVideoEncodeAV1RateControlFlagsKHR")]
     public VideoEncodeAV1RateControlFlagsKHR PreferredRateControlFlags;
 
-    [NativeName("preferredGopFrameCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredGopFrameCount;
 
-    [NativeName("preferredKeyFramePeriod")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredKeyFramePeriod;
 
-    [NativeName("preferredConsecutiveBipredictiveFrameCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredConsecutiveBipredictiveFrameCount;
 
-    [NativeName("preferredTemporalLayerCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredTemporalLayerCount;
-
-    [NativeName("preferredConstantQIndex")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
     public VideoEncodeAV1QIndexKHR PreferredConstantQIndex;
 
-    [NativeName("preferredMaxSingleReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredMaxSingleReferenceCount;
 
-    [NativeName("preferredSingleReferenceNameMask")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredSingleReferenceNameMask;
 
-    [NativeName("preferredMaxUnidirectionalCompoundReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredMaxUnidirectionalCompoundReferenceCount;
 
-    [NativeName("preferredMaxUnidirectionalCompoundGroup1ReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredMaxUnidirectionalCompoundGroup1ReferenceCount;
 
-    [NativeName("preferredUnidirectionalCompoundReferenceNameMask")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredUnidirectionalCompoundReferenceNameMask;
 
-    [NativeName("preferredMaxBidirectionalCompoundReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredMaxBidirectionalCompoundReferenceCount;
 
-    [NativeName("preferredMaxBidirectionalCompoundGroup1ReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredMaxBidirectionalCompoundGroup1ReferenceCount;
 
-    [NativeName("preferredMaxBidirectionalCompoundGroup2ReferenceCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredMaxBidirectionalCompoundGroup2ReferenceCount;
 
-    [NativeName("preferredBidirectionalCompoundReferenceNameMask")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_av1"],
-        ImpliesSets = ["VK_KHR_video_encode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PreferredBidirectionalCompoundReferenceNameMask;
 }

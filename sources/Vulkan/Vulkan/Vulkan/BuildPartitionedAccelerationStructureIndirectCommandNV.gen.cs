@@ -8,31 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkBuildPartitionedAccelerationStructureIndirectCommandNV")]
-[SupportedApiProfile("vulkan")]
 public partial struct BuildPartitionedAccelerationStructureIndirectCommandNV
 {
-    [NativeName("opType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public PartitionedAccelerationStructureOpTypeNV OpType;
 
-    [NativeName("argCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ArgCount;
-
-    [NativeName("argData")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_partitioned_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public StridedDeviceAddressNV ArgData;
 }

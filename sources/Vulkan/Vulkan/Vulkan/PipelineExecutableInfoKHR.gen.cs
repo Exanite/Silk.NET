@@ -7,51 +7,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineExecutableInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineExecutableInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("pipeline")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkPipeline")]
     public PipelineHandle Pipeline;
 
-    [NativeName("executableIndex")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_pipeline_executable_properties"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_executable_properties+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_executable_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ExecutableIndex;
 }

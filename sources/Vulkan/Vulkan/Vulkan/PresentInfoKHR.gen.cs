@@ -7,39 +7,26 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPresentInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PresentInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("waitSemaphoreCount")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("uint32_t")]
     public uint WaitSemaphoreCount;
 
-    [NativeName("pWaitSemaphores")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("const VkSemaphore *")]
     public SemaphoreHandle* PWaitSemaphores;
 
-    [NativeName("swapchainCount")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("uint32_t")]
     public uint SwapchainCount;
 
-    [NativeName("pSwapchains")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("const VkSwapchainKHR *")]
     public SwapchainHandleKHR* PSwapchains;
 
-    [NativeName("pImageIndices")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
+    [NativeTypeName("const uint32_t *")]
     public uint* PImageIndices;
-
-    [NativeName("pResults")]
-    [SupportedApiProfile("vulkan", ["VK_KHR_swapchain"], ImpliesSets = ["VK_KHR_surface"])]
     public Result* PResults;
 }

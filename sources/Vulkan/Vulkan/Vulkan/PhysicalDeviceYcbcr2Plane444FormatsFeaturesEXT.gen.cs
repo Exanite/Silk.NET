@@ -7,40 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_2plane_444_formats"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_2plane_444_formats+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_2plane_444_formats+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_2plane_444_formats"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_2plane_444_formats+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_2plane_444_formats+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("ycbcr2plane444Formats")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_2plane_444_formats"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_2plane_444_formats+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_2plane_444_formats+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint Ycbcr2Plane444Formats;
 }

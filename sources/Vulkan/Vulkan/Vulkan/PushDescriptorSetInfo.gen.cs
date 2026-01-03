@@ -7,63 +7,25 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPushDescriptorSetInfo")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PushDescriptorSetInfo
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("stageFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("VkShaderStageFlags")]
     public ShaderStageFlags StageFlags;
 
-    [NativeName("layout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("VkPipelineLayout")]
     public PipelineLayoutHandle Layout;
 
-    [NativeName("set")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Set;
 
-    [NativeName("descriptorWriteCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint DescriptorWriteCount;
 
-    [NativeName("pDescriptorWrites")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_COMPUTE_VERSION_1_4", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("const VkWriteDescriptorSet *")]
     public WriteDescriptorSet* PDescriptorWrites;
 }

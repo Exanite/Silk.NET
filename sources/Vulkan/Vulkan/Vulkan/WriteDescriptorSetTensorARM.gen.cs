@@ -7,23 +7,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkWriteDescriptorSetTensorARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct WriteDescriptorSetTensorARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("tensorViewCount")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint TensorViewCount;
 
-    [NativeName("pTensorViews")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("const VkTensorViewARM *")]
     public TensorViewHandleARM* PTensorViews;
 }

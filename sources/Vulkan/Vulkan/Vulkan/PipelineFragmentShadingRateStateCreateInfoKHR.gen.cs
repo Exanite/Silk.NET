@@ -8,55 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineFragmentShadingRateStateCreateInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineFragmentShadingRateStateCreateInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_fragment_shading_rate"],
-        ImpliesSets = [
-            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_fragment_shading_rate"],
-        ImpliesSets = [
-            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("fragmentSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_fragment_shading_rate"],
-        ImpliesSets = [
-            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
     public Extent2D FragmentSize;
 
-    [NativeName("combinerOps")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_fragment_shading_rate"],
-        ImpliesSets = [
-            "VK_KHR_create_renderpass2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_create_renderpass2+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkFragmentShadingRateCombinerOpKHR[2]")]
     public PipelineFragmentShadingRateStateCreateInfoKHRCombinerOps CombinerOps;
 }

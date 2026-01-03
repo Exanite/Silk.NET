@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_Semaphore")]
 public readonly unsafe partial struct SemaphoreHandle
 {
     public readonly void* Handle;

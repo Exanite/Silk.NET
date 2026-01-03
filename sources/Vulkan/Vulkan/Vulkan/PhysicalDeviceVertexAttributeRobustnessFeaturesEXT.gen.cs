@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceVertexAttributeRobustnessFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_vertex_attribute_robustness"],
-        ImpliesSets = [
-            "VK_EXT_vertex_attribute_robustness+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_vertex_attribute_robustness+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_vertex_attribute_robustness"],
-        ImpliesSets = [
-            "VK_EXT_vertex_attribute_robustness+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_vertex_attribute_robustness+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("vertexAttributeRobustness")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_vertex_attribute_robustness"],
-        ImpliesSets = [
-            "VK_EXT_vertex_attribute_robustness+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_vertex_attribute_robustness+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint VertexAttributeRobustness;
 }

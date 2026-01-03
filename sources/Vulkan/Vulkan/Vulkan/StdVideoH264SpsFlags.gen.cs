@@ -8,16 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH264SpsFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoH264SpsFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("constraint_set0_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ConstraintSet0Flag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -26,8 +21,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("constraint_set1_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ConstraintSet1Flag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -36,8 +30,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("constraint_set2_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ConstraintSet2Flag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -46,8 +39,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("constraint_set3_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ConstraintSet3Flag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -56,8 +48,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 3)) | ((value & 0x1u) << 3); }
     }
 
-    [NativeName("constraint_set4_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ConstraintSet4Flag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -66,8 +57,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 4)) | ((value & 0x1u) << 4); }
     }
 
-    [NativeName("constraint_set5_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ConstraintSet5Flag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -76,8 +66,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 5)) | ((value & 0x1u) << 5); }
     }
 
-    [NativeName("direct_8x8_inference_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint Direct8X8InferenceFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -86,8 +75,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 6)) | ((value & 0x1u) << 6); }
     }
 
-    [NativeName("mb_adaptive_frame_field_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint MbAdaptiveFrameFieldFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -96,8 +84,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 7)) | ((value & 0x1u) << 7); }
     }
 
-    [NativeName("frame_mbs_only_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint FrameMbsOnlyFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -106,8 +93,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 8)) | ((value & 0x1u) << 8); }
     }
 
-    [NativeName("delta_pic_order_always_zero_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint DeltaPicOrderAlwaysZeroFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -116,8 +102,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 9)) | ((value & 0x1u) << 9); }
     }
 
-    [NativeName("separate_colour_plane_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SeparateColourPlaneFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -126,8 +111,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 10)) | ((value & 0x1u) << 10); }
     }
 
-    [NativeName("gaps_in_frame_num_value_allowed_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint GapsInFrameNumValueAllowedFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -136,8 +120,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 11)) | ((value & 0x1u) << 11); }
     }
 
-    [NativeName("qpprime_y_zero_transform_bypass_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint QpprimeYZeroTransformBypassFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -146,8 +129,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 12)) | ((value & 0x1u) << 12); }
     }
 
-    [NativeName("frame_cropping_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint FrameCroppingFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -156,8 +138,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 13)) | ((value & 0x1u) << 13); }
     }
 
-    [NativeName("seq_scaling_matrix_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SeqScalingMatrixPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -166,8 +147,7 @@ public partial struct StdVideoH264SpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 14)) | ((value & 0x1u) << 14); }
     }
 
-    [NativeName("vui_parameters_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint VuiParametersPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

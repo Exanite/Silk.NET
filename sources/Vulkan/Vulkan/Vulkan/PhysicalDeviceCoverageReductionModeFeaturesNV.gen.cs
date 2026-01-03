@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceCoverageReductionModeFeaturesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCoverageReductionModeFeaturesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_coverage_reduction_mode"],
-        ImpliesSets = [
-            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
-            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_coverage_reduction_mode"],
-        ImpliesSets = [
-            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
-            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("coverageReductionMode")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_coverage_reduction_mode"],
-        ImpliesSets = [
-            "VK_NV_framebuffer_mixed_samples+VK_KHR_get_physical_device_properties2",
-            "VK_NV_framebuffer_mixed_samples+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CoverageReductionMode;
 }

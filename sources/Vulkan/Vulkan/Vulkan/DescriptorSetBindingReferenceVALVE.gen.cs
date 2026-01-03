@@ -7,51 +7,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDescriptorSetBindingReferenceVALVE")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DescriptorSetBindingReferenceVALVE
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VALVE_descriptor_set_host_mapping"],
-        ImpliesSets = [
-            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
-            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VALVE_descriptor_set_host_mapping"],
-        ImpliesSets = [
-            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
-            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("descriptorSetLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VALVE_descriptor_set_host_mapping"],
-        ImpliesSets = [
-            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
-            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDescriptorSetLayout")]
     public DescriptorSetLayoutHandle DescriptorSetLayout;
 
-    [NativeName("binding")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_VALVE_descriptor_set_host_mapping"],
-        ImpliesSets = [
-            "VK_VALVE_descriptor_set_host_mapping+VK_KHR_get_physical_device_properties2",
-            "VK_VALVE_descriptor_set_host_mapping+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Binding;
 }

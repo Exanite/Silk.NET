@@ -8,462 +8,107 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceDescriptorBufferPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDescriptorBufferPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("combinedImageSamplerDescriptorSingleArray")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint CombinedImageSamplerDescriptorSingleArray;
 
-    [NativeName("bufferlessPushDescriptors")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint BufferlessPushDescriptors;
 
-    [NativeName("allowSamplerImageViewPostSubmitCreation")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint AllowSamplerImageViewPostSubmitCreation;
 
-    [NativeName("descriptorBufferOffsetAlignment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong DescriptorBufferOffsetAlignment;
 
-    [NativeName("maxDescriptorBufferBindings")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxDescriptorBufferBindings;
 
-    [NativeName("maxResourceDescriptorBufferBindings")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxResourceDescriptorBufferBindings;
 
-    [NativeName("maxSamplerDescriptorBufferBindings")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxSamplerDescriptorBufferBindings;
 
-    [NativeName("maxEmbeddedImmutableSamplerBindings")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxEmbeddedImmutableSamplerBindings;
 
-    [NativeName("maxEmbeddedImmutableSamplers")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxEmbeddedImmutableSamplers;
 
-    [NativeName("bufferCaptureReplayDescriptorDataSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint BufferCaptureReplayDescriptorDataSize;
 
-    [NativeName("imageCaptureReplayDescriptorDataSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint ImageCaptureReplayDescriptorDataSize;
 
-    [NativeName("imageViewCaptureReplayDescriptorDataSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint ImageViewCaptureReplayDescriptorDataSize;
 
-    [NativeName("samplerCaptureReplayDescriptorDataSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint SamplerCaptureReplayDescriptorDataSize;
 
-    [NativeName("accelerationStructureCaptureReplayDescriptorDataSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint AccelerationStructureCaptureReplayDescriptorDataSize;
 
-    [NativeName("samplerDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint SamplerDescriptorSize;
 
-    [NativeName("combinedImageSamplerDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint CombinedImageSamplerDescriptorSize;
 
-    [NativeName("sampledImageDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint SampledImageDescriptorSize;
 
-    [NativeName("storageImageDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint StorageImageDescriptorSize;
 
-    [NativeName("uniformTexelBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint UniformTexelBufferDescriptorSize;
 
-    [NativeName("robustUniformTexelBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint RobustUniformTexelBufferDescriptorSize;
 
-    [NativeName("storageTexelBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint StorageTexelBufferDescriptorSize;
 
-    [NativeName("robustStorageTexelBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint RobustStorageTexelBufferDescriptorSize;
 
-    [NativeName("uniformBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint UniformBufferDescriptorSize;
 
-    [NativeName("robustUniformBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint RobustUniformBufferDescriptorSize;
 
-    [NativeName("storageBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint StorageBufferDescriptorSize;
 
-    [NativeName("robustStorageBufferDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint RobustStorageBufferDescriptorSize;
 
-    [NativeName("inputAttachmentDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint InputAttachmentDescriptorSize;
 
-    [NativeName("accelerationStructureDescriptorSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint AccelerationStructureDescriptorSize;
 
-    [NativeName("maxSamplerDescriptorBufferRange")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong MaxSamplerDescriptorBufferRange;
 
-    [NativeName("maxResourceDescriptorBufferRange")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong MaxResourceDescriptorBufferRange;
 
-    [NativeName("samplerDescriptorBufferAddressSpaceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong SamplerDescriptorBufferAddressSpaceSize;
 
-    [NativeName("resourceDescriptorBufferAddressSpaceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong ResourceDescriptorBufferAddressSpaceSize;
 
-    [NativeName("descriptorBufferAddressSpaceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_descriptor_buffer"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_synchronization2+VK_KHR_buffer_device_address+VK_EXT_descriptor_indexing+VK_VERSION_1_1",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong DescriptorBufferAddressSpaceSize;
 }

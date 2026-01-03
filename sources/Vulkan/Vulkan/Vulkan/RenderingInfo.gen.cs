@@ -8,87 +8,32 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkRenderingInfo")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct RenderingInfo
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("VkRenderingFlags")]
     public RenderingFlags Flags;
-
-    [NativeName("renderArea")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
     public Rect2D RenderArea;
 
-    [NativeName("layerCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint LayerCount;
 
-    [NativeName("viewMask")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ViewMask;
 
-    [NativeName("colorAttachmentCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ColorAttachmentCount;
 
-    [NativeName("pColorAttachments")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("const VkRenderingAttachmentInfo *")]
     public RenderingAttachmentInfo* PColorAttachments;
 
-    [NativeName("pDepthAttachment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("const VkRenderingAttachmentInfo *")]
     public RenderingAttachmentInfo* PDepthAttachment;
 
-    [NativeName("pStencilAttachment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_3", "VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_3", "VK_VERSION_1_4"],
-        MinVersion = "1.3"
-    )]
+    [NativeTypeName("const VkRenderingAttachmentInfo *")]
     public RenderingAttachmentInfo* PStencilAttachment;
 }

@@ -7,23 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkImageViewAddressPropertiesNVX")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageViewAddressPropertiesNVX
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public void* PNext;
 
-    [NativeName("deviceAddress")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong DeviceAddress;
 
-    [NativeName("size")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
+    [NativeTypeName("VkDeviceSize")]
     public ulong Size;
 }

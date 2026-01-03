@@ -7,183 +7,50 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceTileShadingFeaturesQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceTileShadingFeaturesQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("tileShading")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShading;
 
-    [NativeName("tileShadingFragmentStage")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingFragmentStage;
 
-    [NativeName("tileShadingColorAttachments")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingColorAttachments;
 
-    [NativeName("tileShadingDepthAttachments")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingDepthAttachments;
 
-    [NativeName("tileShadingStencilAttachments")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingStencilAttachments;
 
-    [NativeName("tileShadingInputAttachments")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingInputAttachments;
 
-    [NativeName("tileShadingSampledAttachments")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingSampledAttachments;
 
-    [NativeName("tileShadingPerTileDraw")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingPerTileDraw;
 
-    [NativeName("tileShadingPerTileDispatch")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingPerTileDispatch;
 
-    [NativeName("tileShadingDispatchTile")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingDispatchTile;
 
-    [NativeName("tileShadingApron")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingApron;
 
-    [NativeName("tileShadingAnisotropicApron")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingAnisotropicApron;
 
-    [NativeName("tileShadingAtomicOps")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingAtomicOps;
 
-    [NativeName("tileShadingImageProcessing")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileShadingImageProcessing;
 }

@@ -7,15 +7,10 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.OpenGL;
 
-[NativeName("ContextProfileMask")]
+[Transformed]
 [Flags]
 public enum ContextProfileMask : uint
 {
-    None = 0x0,
-
-    [NativeName("GL_CONTEXT_CORE_PROFILE_BIT")]
-    CoreProfileBit = 0x1,
-
-    [NativeName("GL_CONTEXT_COMPATIBILITY_PROFILE_BIT")]
-    CompatibilityProfileBit = 0x2,
+    CoreProfileBit = unchecked((uint)0x00000001),
+    CompatibilityProfileBit = unchecked((uint)0x00000002),
 }

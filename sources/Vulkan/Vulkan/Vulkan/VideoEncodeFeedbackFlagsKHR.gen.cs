@@ -8,43 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeFeedbackFlagBitsKHR")]
 [Flags]
-[SupportedApiProfile("vulkan")]
 public enum VideoEncodeFeedbackFlagsKHR : uint
 {
     None = 0x0,
-
-    [NativeName("VK_VIDEO_ENCODE_FEEDBACK_BITSTREAM_BUFFER_OFFSET_BIT_KHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
     BitstreamBufferOffsetBit = 0x1,
-
-    [NativeName("VK_VIDEO_ENCODE_FEEDBACK_BITSTREAM_BYTES_WRITTEN_BIT_KHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
     BitstreamBytesWrittenBit = 0x2,
-
-    [NativeName("VK_VIDEO_ENCODE_FEEDBACK_BITSTREAM_HAS_OVERRIDES_BIT_KHR")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
     BitstreamHasOverridesBit = 0x4,
 }

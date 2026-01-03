@@ -8,51 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDevice4444FormatsFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevice4444FormatsFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_4444_formats"],
-        ImpliesSets = [
-            "VK_EXT_4444_formats+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_4444_formats+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_4444_formats"],
-        ImpliesSets = [
-            "VK_EXT_4444_formats+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_4444_formats+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("formatA4R4G4B4")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_4444_formats"],
-        ImpliesSets = [
-            "VK_EXT_4444_formats+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_4444_formats+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FormatA4R4G4B4;
 
-    [NativeName("formatA4B4G4R4")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_4444_formats"],
-        ImpliesSets = [
-            "VK_EXT_4444_formats+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_4444_formats+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FormatA4B4G4R4;
 }

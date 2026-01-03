@@ -7,39 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceRayTracingMaintenance1FeaturesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
     public void* PNext;
 
-    [NativeName("rayTracingMaintenance1")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTracingMaintenance1;
 
-    [NativeName("rayTracingPipelineTraceRaysIndirect2")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RayTracingPipelineTraceRaysIndirect2;
 }

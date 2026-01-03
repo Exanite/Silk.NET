@@ -7,67 +7,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkOpticalFlowExecuteInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct OpticalFlowExecuteInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkOpticalFlowExecuteFlagsNV")]
     public OpticalFlowExecuteFlagsNV Flags;
 
-    [NativeName("regionCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint RegionCount;
 
-    [NativeName("pRegions")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_optical_flow"],
-        ImpliesSets = [
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_format_feature_flags2+VK_KHR_synchronization2+VK_VERSION_1_1",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const VkRect2D *")]
     public Rect2D* PRegions;
 }

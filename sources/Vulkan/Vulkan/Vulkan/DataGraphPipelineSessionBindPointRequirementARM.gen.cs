@@ -8,47 +8,15 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDataGraphPipelineSessionBindPointRequirementARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DataGraphPipelineSessionBindPointRequirementARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("bindPoint")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
     public DataGraphPipelineSessionBindPointARM BindPoint;
-
-    [NativeName("bindPointType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
     public DataGraphPipelineSessionBindPointTypeARM BindPointType;
 
-    [NativeName("numObjects")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint NumObjects;
 }

@@ -7,31 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkSubpassResolvePerformanceQueryEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct SubpassResolvePerformanceQueryEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_multisampled_render_to_single_sampled"],
-        ImpliesSets = ["VK_KHR_create_renderpass2+VK_KHR_depth_stencil_resolve", "VK_VERSION_1_2"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_multisampled_render_to_single_sampled"],
-        ImpliesSets = ["VK_KHR_create_renderpass2+VK_KHR_depth_stencil_resolve", "VK_VERSION_1_2"]
-    )]
     public void* PNext;
 
-    [NativeName("optimal")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_multisampled_render_to_single_sampled"],
-        ImpliesSets = ["VK_KHR_create_renderpass2+VK_KHR_depth_stencil_resolve", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint Optimal;
 }

@@ -7,12 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.OpenGL;
 
-[NativeName("TextureStorageMaskAMD")]
+[Transformed]
 [Flags]
 public enum TextureStorageMaskAMD : uint
 {
-    None = 0x0,
-
-    [NativeName("GL_TEXTURE_STORAGE_SPARSE_BIT_AMD")]
-    TextureStorageSparseBit = 0x1,
+    TextureStorageSparseBit = unchecked((uint)0x00000001),
 }

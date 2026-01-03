@@ -8,67 +8,47 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoEncodeH265SliceSegmentHeader")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoEncodeH265SliceSegmentHeader
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoEncodeH265SliceSegmentHeaderFlags Flags;
-
-    [NativeName("slice_type")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH265SliceType SliceType;
 
-    [NativeName("slice_segment_address")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint SliceSegmentAddress;
 
-    [NativeName("collocated_ref_idx")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte CollocatedRefIdx;
 
-    [NativeName("MaxNumMergeCand")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MaxNumMergeCand;
 
-    [NativeName("slice_cb_qp_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceCbQpOffset;
 
-    [NativeName("slice_cr_qp_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceCrQpOffset;
 
-    [NativeName("slice_beta_offset_div2")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceBetaOffsetDiv2;
 
-    [NativeName("slice_tc_offset_div2")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceTcOffsetDiv2;
 
-    [NativeName("slice_act_y_qp_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceActYQpOffset;
 
-    [NativeName("slice_act_cb_qp_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceActCbQpOffset;
 
-    [NativeName("slice_act_cr_qp_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceActCrQpOffset;
 
-    [NativeName("slice_qp_delta")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("int8_t")]
     public sbyte SliceQpDelta;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort Reserved1;
 
-    [NativeName("pWeightTable")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoEncodeH265WeightTable *")]
     public StdVideoEncodeH265WeightTable* PWeightTable;
 }

@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkShaderEXT")]
 public readonly unsafe partial struct ShaderHandleEXT
 {
     public readonly void* Handle;

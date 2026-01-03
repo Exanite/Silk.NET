@@ -8,128 +8,35 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkVideoEncodeFlagsKHR")]
     public VideoEncodeFlagsKHR Flags;
 
-    [NativeName("dstBuffer")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkBuffer")]
     public BufferHandle DstBuffer;
 
-    [NativeName("dstBufferOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong DstBufferOffset;
 
-    [NativeName("dstBufferRange")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong DstBufferRange;
-
-    [NativeName("srcPictureResource")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
     public VideoPictureResourceInfoKHR SrcPictureResource;
 
-    [NativeName("pSetupReferenceSlot")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const VkVideoReferenceSlotInfoKHR *")]
     public VideoReferenceSlotInfoKHR* PSetupReferenceSlot;
 
-    [NativeName("referenceSlotCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ReferenceSlotCount;
 
-    [NativeName("pReferenceSlots")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const VkVideoReferenceSlotInfoKHR *")]
     public VideoReferenceSlotInfoKHR* PReferenceSlots;
 
-    [NativeName("precedingExternallyEncodedBytes")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_queue"],
-        ImpliesSets = [
-            "VK_KHR_video_queue+VK_KHR_synchronization2",
-            "VK_KHR_video_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PrecedingExternallyEncodedBytes;
 }

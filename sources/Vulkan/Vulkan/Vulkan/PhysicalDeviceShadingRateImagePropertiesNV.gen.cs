@@ -8,62 +8,15 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceShadingRateImagePropertiesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShadingRateImagePropertiesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_shading_rate_image"],
-        ImpliesSets = [
-            "VK_NV_shading_rate_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_shading_rate_image+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_shading_rate_image"],
-        ImpliesSets = [
-            "VK_NV_shading_rate_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_shading_rate_image+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
-
-    [NativeName("shadingRateTexelSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_shading_rate_image"],
-        ImpliesSets = [
-            "VK_NV_shading_rate_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_shading_rate_image+VK_VERSION_1_1",
-        ]
-    )]
     public Extent2D ShadingRateTexelSize;
 
-    [NativeName("shadingRatePaletteSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_shading_rate_image"],
-        ImpliesSets = [
-            "VK_NV_shading_rate_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_shading_rate_image+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ShadingRatePaletteSize;
 
-    [NativeName("shadingRateMaxCoarseSamples")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_shading_rate_image"],
-        ImpliesSets = [
-            "VK_NV_shading_rate_image+VK_KHR_get_physical_device_properties2",
-            "VK_NV_shading_rate_image+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ShadingRateMaxCoarseSamples;
 }

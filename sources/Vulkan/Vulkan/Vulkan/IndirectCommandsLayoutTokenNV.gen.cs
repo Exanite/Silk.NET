@@ -8,127 +8,47 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkIndirectCommandsLayoutTokenNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct IndirectCommandsLayoutTokenNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("tokenType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
     public IndirectCommandsTokenTypeNV TokenType;
 
-    [NativeName("stream")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Stream;
 
-    [NativeName("offset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Offset;
 
-    [NativeName("vertexBindingUnit")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint VertexBindingUnit;
 
-    [NativeName("vertexDynamicStride")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint VertexDynamicStride;
 
-    [NativeName("pushconstantPipelineLayout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("VkPipelineLayout")]
     public PipelineLayoutHandle PushconstantPipelineLayout;
 
-    [NativeName("pushconstantShaderStageFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("VkShaderStageFlags")]
     public ShaderStageFlags PushconstantShaderStageFlags;
 
-    [NativeName("pushconstantOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PushconstantOffset;
 
-    [NativeName("pushconstantSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PushconstantSize;
 
-    [NativeName("indirectStateFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("VkIndirectStateFlagsNV")]
     public IndirectStateFlagsNV IndirectStateFlags;
 
-    [NativeName("indexTypeCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint IndexTypeCount;
 
-    [NativeName("pIndexTypes")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("const VkIndexType *")]
     public IndexType* PIndexTypes;
 
-    [NativeName("pIndexTypeValues")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("const uint32_t *")]
     public uint* PIndexTypeValues;
 }

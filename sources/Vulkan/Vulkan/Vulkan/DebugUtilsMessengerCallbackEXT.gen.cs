@@ -8,14 +8,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("PFN_vkDebugUtilsMessengerCallbackEXT")]
-[SupportedApiProfile("vulkan")]
 public readonly unsafe struct DebugUtilsMessengerCallbackEXT : IDisposable
 {
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     private readonly void* Pointer;
-
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public delegate* unmanaged<
         DebugUtilsMessageSeverityFlagsEXT,
         DebugUtilsMessageTypeFlagsEXT,
@@ -29,7 +24,6 @@ public readonly unsafe struct DebugUtilsMessengerCallbackEXT : IDisposable
             void*,
             uint>)Pointer;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public DebugUtilsMessengerCallbackEXT(
         delegate* unmanaged<
             DebugUtilsMessageSeverityFlagsEXT,
@@ -39,14 +33,11 @@ public readonly unsafe struct DebugUtilsMessengerCallbackEXT : IDisposable
             uint> ptr
     ) => Pointer = ptr;
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public DebugUtilsMessengerCallbackEXT(DebugUtilsMessengerCallbackDelegateEXT proc) =>
         Pointer = SilkMarshal.DelegateToPtr(proc);
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public void Dispose() => SilkMarshal.Free(Pointer);
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public static implicit operator DebugUtilsMessengerCallbackEXT(
         delegate* unmanaged<
             DebugUtilsMessageSeverityFlagsEXT,
@@ -56,7 +47,6 @@ public readonly unsafe struct DebugUtilsMessengerCallbackEXT : IDisposable
             uint> pfn
     ) => new(pfn);
 
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public static implicit operator delegate* unmanaged<
         DebugUtilsMessageSeverityFlagsEXT,
         DebugUtilsMessageTypeFlagsEXT,

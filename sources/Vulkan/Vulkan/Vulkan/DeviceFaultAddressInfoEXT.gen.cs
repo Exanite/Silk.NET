@@ -8,40 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDeviceFaultAddressInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public partial struct DeviceFaultAddressInfoEXT
 {
-    [NativeName("addressType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
     public DeviceFaultAddressTypeEXT AddressType;
 
-    [NativeName("reportedAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong ReportedAddress;
 
-    [NativeName("addressPrecision")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_fault"],
-        ImpliesSets = [
-            "VK_EXT_device_fault+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_fault+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong AddressPrecision;
 }

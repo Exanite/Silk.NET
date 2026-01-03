@@ -8,35 +8,23 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDebugUtilsObjectTagInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugUtilsObjectTagInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("objectType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
     public ObjectType ObjectType;
 
-    [NativeName("objectHandle")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("uint64_t")]
     public ulong ObjectHandle;
 
-    [NativeName("tagName")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("uint64_t")]
     public ulong TagName;
 
-    [NativeName("tagSize")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("size_t")]
     public nuint TagSize;
 
-    [NativeName("pTag")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_utils"])]
+    [NativeTypeName("const void *")]
     public void* PTag;
 }

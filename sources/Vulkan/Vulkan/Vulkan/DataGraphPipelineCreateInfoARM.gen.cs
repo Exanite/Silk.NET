@@ -8,55 +8,22 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDataGraphPipelineCreateInfoARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DataGraphPipelineCreateInfoARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkPipelineCreateFlags2KHR")]
     public ulong Flags;
 
-    [NativeName("layout")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("VkPipelineLayout")]
     public PipelineLayoutHandle Layout;
 
-    [NativeName("resourceInfoCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ResourceInfoCount;
 
-    [NativeName("pResourceInfos")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"]
-    )]
+    [NativeTypeName("const VkDataGraphPipelineResourceInfoARM *")]
     public DataGraphPipelineResourceInfoARM* PResourceInfos;
 }

@@ -8,23 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVertexInputBindingDivisorDescription")]
-[SupportedApiProfile("vulkan")]
 public partial struct VertexInputBindingDivisorDescription
 {
-    [NativeName("binding")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Binding;
 
-    [NativeName("divisor")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_GRAPHICS_VERSION_1_4", "VK_VERSION_1_4"],
-        MinVersion = "1.4"
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Divisor;
 }

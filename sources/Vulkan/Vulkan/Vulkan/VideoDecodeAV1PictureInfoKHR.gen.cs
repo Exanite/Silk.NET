@@ -8,71 +8,28 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoDecodeAV1PictureInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoDecodeAV1PictureInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("pStdPictureInfo")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("const StdVideoDecodeAV1PictureInfo *")]
     public StdVideoDecodeAV1PictureInfo* PStdPictureInfo;
 
-    [NativeName("referenceNameSlotIndices")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("int32_t[7]")]
     public VideoDecodeAV1PictureInfoKHRReferenceNameSlotIndices ReferenceNameSlotIndices;
 
-    [NativeName("frameHeaderOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint FrameHeaderOffset;
 
-    [NativeName("tileCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint TileCount;
 
-    [NativeName("pTileOffsets")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("const uint32_t *")]
     public uint* PTileOffsets;
 
-    [NativeName("pTileSizes")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_av1"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("const uint32_t *")]
     public uint* PTileSizes;
 }

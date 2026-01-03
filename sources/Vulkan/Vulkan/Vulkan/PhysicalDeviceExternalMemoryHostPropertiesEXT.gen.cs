@@ -7,40 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceExternalMemoryHostPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceExternalMemoryHostPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_external_memory_host"],
-        ImpliesSets = [
-            "VK_EXT_external_memory_host+VK_KHR_external_memory",
-            "VK_EXT_external_memory_host+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_external_memory_host"],
-        ImpliesSets = [
-            "VK_EXT_external_memory_host+VK_KHR_external_memory",
-            "VK_EXT_external_memory_host+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("minImportedHostPointerAlignment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_external_memory_host"],
-        ImpliesSets = [
-            "VK_EXT_external_memory_host+VK_KHR_external_memory",
-            "VK_EXT_external_memory_host+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong MinImportedHostPointerAlignment;
 }

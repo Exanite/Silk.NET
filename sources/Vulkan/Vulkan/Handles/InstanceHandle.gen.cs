@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkInstance")]
 public readonly unsafe partial struct InstanceHandle
 {
     public readonly void* Handle;

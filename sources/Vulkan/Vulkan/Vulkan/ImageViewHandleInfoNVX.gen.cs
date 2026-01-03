@@ -8,27 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkImageViewHandleInfoNVX")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct ImageViewHandleInfoNVX
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("imageView")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
+    [NativeTypeName("VkImageView")]
     public ImageViewHandle ImageView;
-
-    [NativeName("descriptorType")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
     public DescriptorType DescriptorType;
 
-    [NativeName("sampler")]
-    [SupportedApiProfile("vulkan", ["VK_NVX_image_view_handle"])]
+    [NativeTypeName("VkSampler")]
     public SamplerHandle Sampler;
 }

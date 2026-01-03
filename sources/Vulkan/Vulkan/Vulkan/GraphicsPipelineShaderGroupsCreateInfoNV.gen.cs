@@ -8,55 +8,22 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkGraphicsPipelineShaderGroupsCreateInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct GraphicsPipelineShaderGroupsCreateInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("groupCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint GroupCount;
 
-    [NativeName("pGroups")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("const VkGraphicsShaderGroupCreateInfoNV *")]
     public GraphicsShaderGroupCreateInfoNV* PGroups;
 
-    [NativeName("pipelineCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint PipelineCount;
 
-    [NativeName("pPipelines")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_generated_commands"],
-        ImpliesSets = ["VK_VERSION_1_1+VK_KHR_buffer_device_address", "VK_VERSION_1_2"]
-    )]
+    [NativeTypeName("const VkPipeline *")]
     public PipelineHandle* PPipelines;
 }

@@ -8,62 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceExtendedSparseAddressSpacePropertiesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("extendedSparseAddressSpaceSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong ExtendedSparseAddressSpaceSize;
 
-    [NativeName("extendedSparseImageUsageFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkImageUsageFlags")]
     public ImageUsageFlags ExtendedSparseImageUsageFlags;
 
-    [NativeName("extendedSparseBufferUsageFlags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_extended_sparse_address_space"],
-        ImpliesSets = [
-            "VK_NV_extended_sparse_address_space+VK_KHR_get_physical_device_properties2",
-            "VK_NV_extended_sparse_address_space+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBufferUsageFlags")]
     public BufferUsageFlags ExtendedSparseBufferUsageFlags;
 }

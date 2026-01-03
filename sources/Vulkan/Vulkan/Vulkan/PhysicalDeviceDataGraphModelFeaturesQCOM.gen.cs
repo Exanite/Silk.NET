@@ -8,31 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceDataGraphModelFeaturesQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDataGraphModelFeaturesQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_data_graph_model"],
-        ImpliesSets = ["VK_ARM_data_graph"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_data_graph_model"],
-        ImpliesSets = ["VK_ARM_data_graph"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("dataGraphModel")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_data_graph_model"],
-        ImpliesSets = ["VK_ARM_data_graph"]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DataGraphModel;
 }

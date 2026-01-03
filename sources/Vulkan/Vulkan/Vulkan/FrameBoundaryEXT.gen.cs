@@ -8,128 +8,37 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkFrameBoundaryEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct FrameBoundaryEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkFrameBoundaryFlagsEXT")]
     public FrameBoundaryFlagsEXT Flags;
 
-    [NativeName("frameID")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong FrameID;
 
-    [NativeName("imageCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ImageCount;
 
-    [NativeName("pImages")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const VkImage *")]
     public ImageHandle* PImages;
 
-    [NativeName("bufferCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint BufferCount;
 
-    [NativeName("pBuffers")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const VkBuffer *")]
     public BufferHandle* PBuffers;
 
-    [NativeName("tagName")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong TagName;
 
-    [NativeName("tagSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint TagSize;
 
-    [NativeName("pTag")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_frame_boundary"],
-        ImpliesSets = [
-            "VK_EXT_frame_boundary+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_frame_boundary+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PTag;
 }

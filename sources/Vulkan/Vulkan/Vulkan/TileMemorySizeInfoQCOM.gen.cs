@@ -8,43 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkTileMemorySizeInfoQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct TileMemorySizeInfoQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap", "VK_QCOM_tile_properties"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ],
-        RequireAll = true
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap", "VK_QCOM_tile_properties"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ],
-        RequireAll = true
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("size")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap", "VK_QCOM_tile_properties"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong Size;
 }

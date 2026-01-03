@@ -7,62 +7,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkColorBlendAdvancedEXT")]
-[SupportedApiProfile("vulkan")]
 public partial struct ColorBlendAdvancedEXT
 {
-    [NativeName("advancedBlendOp")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
     public BlendOp AdvancedBlendOp;
 
-    [NativeName("srcPremultiplied")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint SrcPremultiplied;
 
-    [NativeName("dstPremultiplied")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DstPremultiplied;
-
-    [NativeName("blendOverlap")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
     public BlendOverlapEXT BlendOverlap;
 
-    [NativeName("clampResults")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_extended_dynamic_state3"],
-        ImpliesSets = [
-            "VK_EXT_extended_dynamic_state3+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_extended_dynamic_state3+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ClampResults;
 }

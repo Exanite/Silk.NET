@@ -8,133 +8,47 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkTraceRaysIndirectCommand2KHR")]
-[SupportedApiProfile("vulkan")]
 public partial struct TraceRaysIndirectCommand2KHR
 {
-    [NativeName("raygenShaderRecordAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong RaygenShaderRecordAddress;
 
-    [NativeName("raygenShaderRecordSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong RaygenShaderRecordSize;
 
-    [NativeName("missShaderBindingTableAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong MissShaderBindingTableAddress;
 
-    [NativeName("missShaderBindingTableSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong MissShaderBindingTableSize;
 
-    [NativeName("missShaderBindingTableStride")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong MissShaderBindingTableStride;
 
-    [NativeName("hitShaderBindingTableAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong HitShaderBindingTableAddress;
 
-    [NativeName("hitShaderBindingTableSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong HitShaderBindingTableSize;
 
-    [NativeName("hitShaderBindingTableStride")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong HitShaderBindingTableStride;
 
-    [NativeName("callableShaderBindingTableAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong CallableShaderBindingTableAddress;
 
-    [NativeName("callableShaderBindingTableSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong CallableShaderBindingTableSize;
 
-    [NativeName("callableShaderBindingTableStride")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong CallableShaderBindingTableStride;
 
-    [NativeName("width")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Width;
 
-    [NativeName("height")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Height;
 
-    [NativeName("depth")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_maintenance1", "VK_KHR_ray_tracing_pipeline"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Depth;
 }

@@ -8,55 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDepthBiasInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DepthBiasInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_bias_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_bias_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("depthBiasConstantFactor")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_bias_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
-        ]
-    )]
     public float DepthBiasConstantFactor;
-
-    [NativeName("depthBiasClamp")]
-    [SupportedApiProfile("vulkan", ["VK_VERSION_1_4"], MinVersion = "1.4")]
     public float DepthBiasClamp;
-
-    [NativeName("depthBiasSlopeFactor")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_bias_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_bias_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_bias_control+VK_VERSION_1_1",
-        ]
-    )]
     public float DepthBiasSlopeFactor;
 }

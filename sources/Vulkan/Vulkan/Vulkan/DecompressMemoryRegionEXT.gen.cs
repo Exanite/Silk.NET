@@ -7,39 +7,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDecompressMemoryRegionEXT")]
-[SupportedApiProfile("vulkan")]
 public partial struct DecompressMemoryRegionEXT
 {
-    [NativeName("srcAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong SrcAddress;
 
-    [NativeName("dstAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong DstAddress;
 
-    [NativeName("compressedSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong CompressedSize;
 
-    [NativeName("decompressedSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong DecompressedSize;
 }

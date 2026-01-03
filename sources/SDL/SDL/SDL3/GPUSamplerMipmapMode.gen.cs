@@ -7,12 +7,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_GPUSamplerMipmapMode")]
 public enum GPUSamplerMipmapMode
 {
-    [NativeName("SDL_GPU_SAMPLERMIPMAPMODE_NEAREST")]
-    Nearest = 0,
-
-    [NativeName("SDL_GPU_SAMPLERMIPMAPMODE_LINEAR")]
-    Linear = 1,
+    Nearest,
+    Linear,
 }

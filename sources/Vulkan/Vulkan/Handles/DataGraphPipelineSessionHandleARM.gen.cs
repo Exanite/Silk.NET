@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDataGraphPipelineSessionARM")]
 public readonly unsafe partial struct DataGraphPipelineSessionHandleARM
 {
     public readonly void* Handle;

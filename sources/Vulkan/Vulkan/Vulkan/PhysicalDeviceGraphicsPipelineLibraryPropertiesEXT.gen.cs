@@ -7,51 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceGraphicsPipelineLibraryPropertiesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("graphicsPipelineLibraryFastLinking")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint GraphicsPipelineLibraryFastLinking;
 
-    [NativeName("graphicsPipelineLibraryIndependentInterpolationDecoration")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_graphics_pipeline_library"],
-        ImpliesSets = [
-            "VK_KHR_pipeline_library+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_pipeline_library+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint GraphicsPipelineLibraryIndependentInterpolationDecoration;
 }

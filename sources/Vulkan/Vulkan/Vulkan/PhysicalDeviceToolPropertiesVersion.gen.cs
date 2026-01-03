@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_version_e__FixedBuffer")]
 [InlineArray(256)]
-[SupportedApiProfile("vulkan")]
 public partial struct PhysicalDeviceToolPropertiesVersion
 {
-    [NativeName("e0")]
-    [SupportedApiProfile("vulkan")]
     public sbyte E0;
 }

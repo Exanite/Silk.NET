@@ -7,84 +7,21 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDevicePerformanceCountersByRegionPropertiesARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDevicePerformanceCountersByRegionPropertiesARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("maxPerRegionPerformanceCounters")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxPerRegionPerformanceCounters;
-
-    [NativeName("performanceCounterRegionSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
     public Extent2D PerformanceCounterRegionSize;
 
-    [NativeName("rowStrideAlignment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint RowStrideAlignment;
 
-    [NativeName("regionAlignment")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint RegionAlignment;
 
-    [NativeName("identityTransformOrder")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_performance_counters_by_region"],
-        ImpliesSets = [
-            "VK_ARM_performance_counters_by_region+VK_KHR_get_physical_device_properties2",
-            "VK_ARM_performance_counters_by_region+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint IdentityTransformOrder;
 }

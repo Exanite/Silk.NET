@@ -7,15 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_GPUCullMode")]
 public enum GPUCullMode
 {
-    [NativeName("SDL_GPU_CULLMODE_NONE")]
-    None = 0,
-
-    [NativeName("SDL_GPU_CULLMODE_FRONT")]
-    Front = 1,
-
-    [NativeName("SDL_GPU_CULLMODE_BACK")]
-    Back = 2,
+    None,
+    Front,
+    Back,
 }

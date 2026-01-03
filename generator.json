@@ -47,7 +47,6 @@
         "TransformFunctions",
         "TransformProperties",
         "PrettifyNames",
-        "TransformEnums",
         "AddVTables",
         "StripAttributes"
       ],
@@ -71,14 +70,12 @@
         "GlobalPrefixHints": ["SDL"]
       },
       "TransformEnums": {
-        "AddNoneMemberToFlags": true,
-        "RewriteMemberValues": true
+        "AddNoneMemberToFlags": true
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
-          "NameAffix",
-          "Transformed"
+          "NativeName",
+          "NameAffix"
         ]
       }
     },
@@ -90,13 +87,11 @@
         "AddIncludes",
         "ClangScraper",
         "MarkNativeNames",
-        "AddApiProfiles",
         "BakeSourceSets",
         "MixKhronosData",
         "AddOpaqueStructs",
         "TransformFunctions",
         "PrettifyNames",
-        "TransformEnums",
         "AddVTables",
         "StripAttributes"
       ],
@@ -208,9 +203,8 @@
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
-          "NameAffix",
-          "Transformed"
+          "NativeName",
+          "NameAffix"
         ]
       }
     },
@@ -223,14 +217,12 @@
         "ClangScraper",
         "MarkNativeNames",
         "ChangeNativeClass",
-        "AddApiProfiles",
         "MixKhronosData",
         "ExtractNestedTyping",
         "TransformHandles",
         "InterceptNativeFunctions",
         "TransformFunctions",
         "PrettifyNames",
-        "TransformEnums",
         "AddVTables",
         "StripAttributes"
       ],
@@ -347,9 +339,8 @@
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
-          "NameAffix",
-          "Transformed"
+          "NativeName",
+          "NameAffix"
         ]
       }
     },
@@ -364,7 +355,6 @@
         "ExtractNestedTyping",
         "TransformHandles",
         "MixKhronosData",
-        "AddApiProfiles",
         "InterceptNativeFunctions",
         "TransformFunctions",
         "TransformProperties",
@@ -471,9 +461,8 @@
       },
       "StripAttributes": {
         "Remove": [
-          "NativeTypeName",
-          "NameAffix",
-          "Transformed"
+          "NativeName",
+          "NameAffix"
         ]
       }
     }

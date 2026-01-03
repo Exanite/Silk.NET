@@ -8,6 +8,4 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("PFN_vkVoidFunction")]
-[SupportedApiProfile("vulkan")]
 public unsafe delegate void VoidFunctionDelegate();

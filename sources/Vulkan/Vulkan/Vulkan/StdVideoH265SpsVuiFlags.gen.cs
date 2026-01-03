@@ -7,16 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265SpsVuiFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoH265SpsVuiFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("aspect_ratio_info_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint AspectRatioInfoPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -25,8 +20,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("overscan_info_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint OverscanInfoPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -35,8 +29,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("overscan_appropriate_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint OverscanAppropriateFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -45,8 +38,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("video_signal_type_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint VideoSignalTypePresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -55,8 +47,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 3)) | ((value & 0x1u) << 3); }
     }
 
-    [NativeName("video_full_range_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint VideoFullRangeFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -65,8 +56,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 4)) | ((value & 0x1u) << 4); }
     }
 
-    [NativeName("colour_description_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ColourDescriptionPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -75,8 +65,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 5)) | ((value & 0x1u) << 5); }
     }
 
-    [NativeName("chroma_loc_info_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ChromaLocInfoPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -85,8 +74,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 6)) | ((value & 0x1u) << 6); }
     }
 
-    [NativeName("neutral_chroma_indication_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint NeutralChromaIndicationFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -95,8 +83,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 7)) | ((value & 0x1u) << 7); }
     }
 
-    [NativeName("field_seq_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint FieldSeqFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -105,8 +92,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 8)) | ((value & 0x1u) << 8); }
     }
 
-    [NativeName("frame_field_info_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint FrameFieldInfoPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -115,8 +101,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 9)) | ((value & 0x1u) << 9); }
     }
 
-    [NativeName("default_display_window_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint DefaultDisplayWindowFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -125,8 +110,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 10)) | ((value & 0x1u) << 10); }
     }
 
-    [NativeName("vui_timing_info_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint VuiTimingInfoPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -135,8 +119,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 11)) | ((value & 0x1u) << 11); }
     }
 
-    [NativeName("vui_poc_proportional_to_timing_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint VuiPocProportionalToTimingFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -145,8 +128,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 12)) | ((value & 0x1u) << 12); }
     }
 
-    [NativeName("vui_hrd_parameters_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint VuiHrdParametersPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -155,8 +137,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 13)) | ((value & 0x1u) << 13); }
     }
 
-    [NativeName("bitstream_restriction_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint BitstreamRestrictionFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -165,8 +146,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 14)) | ((value & 0x1u) << 14); }
     }
 
-    [NativeName("tiles_fixed_structure_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint TilesFixedStructureFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -175,8 +155,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 15)) | ((value & 0x1u) << 15); }
     }
 
-    [NativeName("motion_vectors_over_pic_boundaries_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint MotionVectorsOverPicBoundariesFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -185,8 +164,7 @@ public partial struct StdVideoH265SpsVuiFlags
         set { Bitfield = (Bitfield & ~(0x1u << 16)) | ((value & 0x1u) << 16); }
     }
 
-    [NativeName("restricted_ref_pic_lists_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint RestrictedRefPicListsFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

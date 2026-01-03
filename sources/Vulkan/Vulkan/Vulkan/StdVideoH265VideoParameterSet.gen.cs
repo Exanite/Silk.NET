@@ -7,55 +7,40 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265VideoParameterSet")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoH265VideoParameterSet
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH265VpsFlags Flags;
 
-    [NativeName("vps_video_parameter_set_id")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte VpsVideoParameterSetId;
 
-    [NativeName("vps_max_sub_layers_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte VpsMaxSubLayersMinus1;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Reserved1;
 
-    [NativeName("reserved2")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Reserved2;
 
-    [NativeName("vps_num_units_in_tick")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint VpsNumUnitsInTick;
 
-    [NativeName("vps_time_scale")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint VpsTimeScale;
 
-    [NativeName("vps_num_ticks_poc_diff_one_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint VpsNumTicksPocDiffOneMinus1;
 
-    [NativeName("reserved3")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint Reserved3;
 
-    [NativeName("pDecPicBufMgr")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265DecPicBufMgr *")]
     public StdVideoH265DecPicBufMgr* PDecPicBufMgr;
 
-    [NativeName("pHrdParameters")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265HrdParameters *")]
     public StdVideoH265HrdParameters* PHrdParameters;
 
-    [NativeName("pProfileTierLevel")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265ProfileTierLevel *")]
     public StdVideoH265ProfileTierLevel* PProfileTierLevel;
 }

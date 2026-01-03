@@ -8,35 +8,23 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineCoverageModulationStateCreateInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineCoverageModulationStateCreateInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [NativeTypeName("VkPipelineCoverageModulationStateCreateFlagsNV")]
     public uint Flags;
-
-    [NativeName("coverageModulationMode")]
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
     public CoverageModulationModeNV CoverageModulationMode;
 
-    [NativeName("coverageModulationTableEnable")]
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [NativeTypeName("VkBool32")]
     public uint CoverageModulationTableEnable;
 
-    [NativeName("coverageModulationTableCount")]
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [NativeTypeName("uint32_t")]
     public uint CoverageModulationTableCount;
 
-    [NativeName("pCoverageModulationTable")]
-    [SupportedApiProfile("vulkan", ["VK_NV_framebuffer_mixed_samples"])]
+    [NativeTypeName("const float *")]
     public float* PCoverageModulationTable;
 }

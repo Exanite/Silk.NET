@@ -7,39 +7,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPresentRegionsKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PresentRegionsKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_incremental_present"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_incremental_present"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("swapchainCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_incremental_present"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SwapchainCount;
 
-    [NativeName("pRegions")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_incremental_present"],
-        ImpliesSets = ["VK_KHR_swapchain"]
-    )]
+    [NativeTypeName("const VkPresentRegionKHR *")]
     public PresentRegionKHR* PRegions;
 }

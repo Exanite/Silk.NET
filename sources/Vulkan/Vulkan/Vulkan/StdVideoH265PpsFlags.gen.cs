@@ -8,16 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265PpsFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoH265PpsFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("dependent_slice_segments_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint DependentSliceSegmentsEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -26,8 +21,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("output_flag_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint OutputFlagPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -36,8 +30,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("sign_data_hiding_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SignDataHidingEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -46,8 +39,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 2)) | ((value & 0x1u) << 2); }
     }
 
-    [NativeName("cabac_init_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint CabacInitPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -56,8 +48,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 3)) | ((value & 0x1u) << 3); }
     }
 
-    [NativeName("constrained_intra_pred_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ConstrainedIntraPredFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -66,8 +57,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 4)) | ((value & 0x1u) << 4); }
     }
 
-    [NativeName("transform_skip_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint TransformSkipEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -76,8 +66,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 5)) | ((value & 0x1u) << 5); }
     }
 
-    [NativeName("cu_qp_delta_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint CuQpDeltaEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -86,8 +75,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 6)) | ((value & 0x1u) << 6); }
     }
 
-    [NativeName("pps_slice_chroma_qp_offsets_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsSliceChromaQpOffsetsPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -96,8 +84,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 7)) | ((value & 0x1u) << 7); }
     }
 
-    [NativeName("weighted_pred_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint WeightedPredFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -106,8 +93,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 8)) | ((value & 0x1u) << 8); }
     }
 
-    [NativeName("weighted_bipred_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint WeightedBipredFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -116,8 +102,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 9)) | ((value & 0x1u) << 9); }
     }
 
-    [NativeName("transquant_bypass_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint TransquantBypassEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -126,8 +111,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 10)) | ((value & 0x1u) << 10); }
     }
 
-    [NativeName("tiles_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint TilesEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -136,8 +120,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 11)) | ((value & 0x1u) << 11); }
     }
 
-    [NativeName("entropy_coding_sync_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint EntropyCodingSyncEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -146,8 +129,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 12)) | ((value & 0x1u) << 12); }
     }
 
-    [NativeName("uniform_spacing_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint UniformSpacingFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -156,8 +138,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 13)) | ((value & 0x1u) << 13); }
     }
 
-    [NativeName("loop_filter_across_tiles_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint LoopFilterAcrossTilesEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -166,8 +147,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 14)) | ((value & 0x1u) << 14); }
     }
 
-    [NativeName("pps_loop_filter_across_slices_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsLoopFilterAcrossSlicesEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -176,8 +156,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 15)) | ((value & 0x1u) << 15); }
     }
 
-    [NativeName("deblocking_filter_control_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint DeblockingFilterControlPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -186,8 +165,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 16)) | ((value & 0x1u) << 16); }
     }
 
-    [NativeName("deblocking_filter_override_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint DeblockingFilterOverrideEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -196,8 +174,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 17)) | ((value & 0x1u) << 17); }
     }
 
-    [NativeName("pps_deblocking_filter_disabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsDeblockingFilterDisabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -206,8 +183,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 18)) | ((value & 0x1u) << 18); }
     }
 
-    [NativeName("pps_scaling_list_data_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsScalingListDataPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -216,8 +192,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 19)) | ((value & 0x1u) << 19); }
     }
 
-    [NativeName("lists_modification_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ListsModificationPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -226,8 +201,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 20)) | ((value & 0x1u) << 20); }
     }
 
-    [NativeName("slice_segment_header_extension_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint SliceSegmentHeaderExtensionPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -236,8 +210,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 21)) | ((value & 0x1u) << 21); }
     }
 
-    [NativeName("pps_extension_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsExtensionPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -246,8 +219,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 22)) | ((value & 0x1u) << 22); }
     }
 
-    [NativeName("cross_component_prediction_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint CrossComponentPredictionEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -256,8 +228,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 23)) | ((value & 0x1u) << 23); }
     }
 
-    [NativeName("chroma_qp_offset_list_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ChromaQpOffsetListEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -266,8 +237,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 24)) | ((value & 0x1u) << 24); }
     }
 
-    [NativeName("pps_curr_pic_ref_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsCurrPicRefEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -276,8 +246,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 25)) | ((value & 0x1u) << 25); }
     }
 
-    [NativeName("residual_adaptive_colour_transform_enabled_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint ResidualAdaptiveColourTransformEnabledFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -286,8 +255,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 26)) | ((value & 0x1u) << 26); }
     }
 
-    [NativeName("pps_slice_act_qp_offsets_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsSliceActQpOffsetsPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -296,8 +264,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 27)) | ((value & 0x1u) << 27); }
     }
 
-    [NativeName("pps_palette_predictor_initializers_present_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsPalettePredictorInitializersPresentFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -306,8 +273,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 28)) | ((value & 0x1u) << 28); }
     }
 
-    [NativeName("monochrome_palette_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint MonochromePaletteFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -316,8 +282,7 @@ public partial struct StdVideoH265PpsFlags
         set { Bitfield = (Bitfield & ~(0x1u << 29)) | ((value & 0x1u) << 29); }
     }
 
-    [NativeName("pps_range_extension_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint PpsRangeExtensionFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

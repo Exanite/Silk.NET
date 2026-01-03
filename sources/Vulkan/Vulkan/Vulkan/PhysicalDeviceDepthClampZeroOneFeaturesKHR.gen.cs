@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceDepthClampZeroOneFeaturesKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceDepthClampZeroOneFeaturesKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_depth_clamp_zero_one"],
-        ImpliesSets = [
-            "VK_KHR_depth_clamp_zero_one+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_depth_clamp_zero_one+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_depth_clamp_zero_one"],
-        ImpliesSets = [
-            "VK_KHR_depth_clamp_zero_one+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_depth_clamp_zero_one+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("depthClampZeroOne")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_clamp_zero_one"],
-        ImpliesSets = [
-            "VK_EXT_depth_clamp_zero_one+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_clamp_zero_one+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint DepthClampZeroOne;
 }

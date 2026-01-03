@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_GPUVertexInputRate")]
 public enum GPUVertexInputRate
 {
-    [NativeName("SDL_GPU_VERTEXINPUTRATE_VERTEX")]
-    Vertex = 0,
-
-    [NativeName("SDL_GPU_VERTEXINPUTRATE_INSTANCE")]
-    Instance = 1,
+    Vertex,
+    Instance,
 }

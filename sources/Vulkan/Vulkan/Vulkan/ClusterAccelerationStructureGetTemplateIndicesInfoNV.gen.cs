@@ -8,15 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkClusterAccelerationStructureGetTemplateIndicesInfoNV")]
-[SupportedApiProfile("vulkan")]
 public partial struct ClusterAccelerationStructureGetTemplateIndicesInfoNV
 {
-    [NativeName("clusterTemplateAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong ClusterTemplateAddress;
 }

@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoSessionParametersKHR")]
 public readonly unsafe partial struct VideoSessionParametersHandleKHR
 {
     public readonly void* Handle;

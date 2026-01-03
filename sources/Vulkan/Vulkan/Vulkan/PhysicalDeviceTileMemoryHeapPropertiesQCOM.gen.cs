@@ -8,51 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceTileMemoryHeapPropertiesQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceTileMemoryHeapPropertiesQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("queueSubmitBoundary")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint QueueSubmitBoundary;
 
-    [NativeName("tileBufferTransfers")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint TileBufferTransfers;
 }

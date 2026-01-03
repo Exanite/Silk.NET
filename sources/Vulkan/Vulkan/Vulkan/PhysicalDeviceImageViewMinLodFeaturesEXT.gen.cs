@@ -6,40 +6,11 @@ using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceImageViewMinLodFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceImageViewMinLodFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_view_min_lod"],
-        ImpliesSets = [
-            "VK_EXT_image_view_min_lod+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_view_min_lod+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_view_min_lod"],
-        ImpliesSets = [
-            "VK_EXT_image_view_min_lod+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_view_min_lod+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("minLod")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_view_min_lod"],
-        ImpliesSets = [
-            "VK_EXT_image_view_min_lod+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_image_view_min_lod+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint MinLod;
 }

@@ -7,73 +7,20 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineDiscardRectangleStateCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineDiscardRectangleStateCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_discard_rectangles"],
-        ImpliesSets = [
-            "VK_EXT_discard_rectangles+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_discard_rectangles+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_discard_rectangles"],
-        ImpliesSets = [
-            "VK_EXT_discard_rectangles+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_discard_rectangles+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_discard_rectangles"],
-        ImpliesSets = [
-            "VK_EXT_discard_rectangles+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_discard_rectangles+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkPipelineDiscardRectangleStateCreateFlagsEXT")]
     public uint Flags;
-
-    [NativeName("discardRectangleMode")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_discard_rectangles"],
-        ImpliesSets = [
-            "VK_EXT_discard_rectangles+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_discard_rectangles+VK_VERSION_1_1",
-        ]
-    )]
     public DiscardRectangleModeEXT DiscardRectangleMode;
 
-    [NativeName("discardRectangleCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_discard_rectangles"],
-        ImpliesSets = [
-            "VK_EXT_discard_rectangles+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_discard_rectangles+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint DiscardRectangleCount;
 
-    [NativeName("pDiscardRectangles")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_discard_rectangles"],
-        ImpliesSets = [
-            "VK_EXT_discard_rectangles+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_discard_rectangles+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const VkRect2D *")]
     public Rect2D* PDiscardRectangles;
 }

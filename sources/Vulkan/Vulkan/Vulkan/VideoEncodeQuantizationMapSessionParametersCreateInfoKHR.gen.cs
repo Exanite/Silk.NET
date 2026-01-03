@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoEncodeQuantizationMapSessionParametersCreateInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_quantization_map"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_quantization_map"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("quantizationMapTexelSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_encode_quantization_map"],
-        ImpliesSets = [
-            "VK_KHR_video_encode_queue+VK_KHR_format_feature_flags2",
-            "VK_KHR_video_encode_queue+VK_VERSION_1_3",
-        ]
-    )]
     public Extent2D QuantizationMapTexelSize;
 }

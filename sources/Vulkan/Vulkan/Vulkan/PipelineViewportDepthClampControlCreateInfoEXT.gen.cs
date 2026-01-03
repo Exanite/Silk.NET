@@ -8,51 +8,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineViewportDepthClampControlCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineViewportDepthClampControlCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_clamp_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_clamp_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_clamp_control+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_clamp_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_clamp_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_clamp_control+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("depthClampMode")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_clamp_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_clamp_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_clamp_control+VK_VERSION_1_1",
-        ]
-    )]
     public DepthClampModeEXT DepthClampMode;
 
-    [NativeName("pDepthClampRange")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_depth_clamp_control"],
-        ImpliesSets = [
-            "VK_EXT_depth_clamp_control+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_depth_clamp_control+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const VkDepthClampRangeEXT *")]
     public DepthClampRangeEXT* PDepthClampRange;
 }

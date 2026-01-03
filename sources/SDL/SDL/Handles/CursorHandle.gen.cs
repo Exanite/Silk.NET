@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_Cursor")]
 public readonly unsafe partial struct CursorHandle
 {
     public readonly void* Handle;

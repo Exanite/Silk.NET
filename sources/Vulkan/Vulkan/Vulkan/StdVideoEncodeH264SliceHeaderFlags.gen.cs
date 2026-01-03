@@ -7,16 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoEncodeH264SliceHeaderFlags")]
-[SupportedApiProfile("vulkan")]
 public partial struct StdVideoEncodeH264SliceHeaderFlags
 {
-    [NativeName("_bitfield")]
-    [SupportedApiProfile("vulkan")]
     public uint Bitfield;
 
-    [NativeName("direct_spatial_mv_pred_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint DirectSpatialMvPredFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -25,8 +20,7 @@ public partial struct StdVideoEncodeH264SliceHeaderFlags
         set { Bitfield = (Bitfield & ~0x1u) | (value & 0x1u); }
     }
 
-    [NativeName("num_ref_idx_active_override_flag")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 1")]
     public uint NumRefIdxActiveOverrideFlag
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -35,8 +29,7 @@ public partial struct StdVideoEncodeH264SliceHeaderFlags
         set { Bitfield = (Bitfield & ~(0x1u << 1)) | ((value & 0x1u) << 1); }
     }
 
-    [NativeName("reserved")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t : 30")]
     public uint Reserved
     {
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

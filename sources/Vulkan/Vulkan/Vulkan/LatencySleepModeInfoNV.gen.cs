@@ -7,72 +7,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkLatencySleepModeInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct LatencySleepModeInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("lowLatencyMode")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint LowLatencyMode;
 
-    [NativeName("lowLatencyBoost")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint LowLatencyBoost;
 
-    [NativeName("minimumIntervalUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MinimumIntervalUs;
 }

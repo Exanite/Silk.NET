@@ -8,12 +8,8 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("_name_e__FixedBuffer")]
 [InlineArray(256)]
-[SupportedApiProfile("vulkan")]
 public partial struct PerformanceCounterDescriptionKHRName
 {
-    [NativeName("e0")]
-    [SupportedApiProfile("vulkan")]
     public sbyte E0;
 }

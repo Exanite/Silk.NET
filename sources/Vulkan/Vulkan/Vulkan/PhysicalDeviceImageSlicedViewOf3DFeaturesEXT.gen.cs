@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceImageSlicedViewOf3DFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_sliced_view_of_3d"],
-        ImpliesSets = [
-            "VK_KHR_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_sliced_view_of_3d"],
-        ImpliesSets = [
-            "VK_KHR_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("imageSlicedViewOf3D")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_image_sliced_view_of_3d"],
-        ImpliesSets = [
-            "VK_KHR_maintenance1+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ImageSlicedViewOf3D;
 }

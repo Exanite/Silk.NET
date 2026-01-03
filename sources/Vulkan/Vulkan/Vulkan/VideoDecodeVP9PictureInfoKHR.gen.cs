@@ -7,63 +7,25 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkVideoDecodeVP9PictureInfoKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct VideoDecodeVP9PictureInfoKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_vp9"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_vp9"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("pStdPictureInfo")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_vp9"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("const StdVideoDecodeVP9PictureInfo *")]
     public StdVideoDecodeVP9PictureInfo* PStdPictureInfo;
 
-    [NativeName("referenceNameSlotIndices")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_vp9"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("int32_t[3]")]
     public VideoDecodeVP9PictureInfoKHRReferenceNameSlotIndices ReferenceNameSlotIndices;
 
-    [NativeName("uncompressedHeaderOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_vp9"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint UncompressedHeaderOffset;
 
-    [NativeName("compressedHeaderOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_vp9"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint CompressedHeaderOffset;
 
-    [NativeName("tilesOffset")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_video_decode_vp9"],
-        ImpliesSets = ["VK_KHR_video_decode_queue"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint TilesOffset;
 }

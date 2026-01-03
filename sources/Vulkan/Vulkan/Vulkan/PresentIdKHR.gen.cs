@@ -7,51 +7,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPresentIdKHR")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PresentIdKHR
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_id"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_id"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("swapchainCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_id"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SwapchainCount;
 
-    [NativeName("pPresentIds")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_present_id"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const uint64_t *")]
     public ulong* PPresentIds;
 }

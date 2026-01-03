@@ -8,34 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct RayTracingPipelineClusterAccelerationStructureCreateInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline", "VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline", "VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
     public void* PNext;
 
-    [NativeName("allowClusterAccelerationStructure")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_KHR_ray_tracing_pipeline", "VK_NV_cluster_acceleration_structure"],
-        ImpliesSets = ["VK_KHR_acceleration_structure"],
-        RequireAll = true
-    )]
+    [NativeTypeName("VkBool32")]
     public uint AllowClusterAccelerationStructure;
 }

@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceCooperativeMatrixPropertiesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceCooperativeMatrixPropertiesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("cooperativeMatrixSupportedStages")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_cooperative_matrix"],
-        ImpliesSets = [
-            "VK_NV_cooperative_matrix+VK_KHR_get_physical_device_properties2",
-            "VK_NV_cooperative_matrix+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkShaderStageFlags")]
     public ShaderStageFlags CooperativeMatrixSupportedStages;
 }

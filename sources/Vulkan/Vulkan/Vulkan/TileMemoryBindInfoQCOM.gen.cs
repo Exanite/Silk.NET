@@ -6,40 +6,13 @@ using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkTileMemoryBindInfoQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct TileMemoryBindInfoQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("memory")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_memory_heap"],
-        ImpliesSets = [
-            "VK_KHR_get_memory_requirements2+VK_KHR_get_physical_device_properties2",
-            "VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceMemory")]
     public DeviceMemoryHandle Memory;
 }

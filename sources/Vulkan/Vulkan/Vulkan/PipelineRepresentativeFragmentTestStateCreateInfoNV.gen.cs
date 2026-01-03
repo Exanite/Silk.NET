@@ -8,40 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPipelineRepresentativeFragmentTestStateCreateInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PipelineRepresentativeFragmentTestStateCreateInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_representative_fragment_test"],
-        ImpliesSets = [
-            "VK_NV_representative_fragment_test+VK_KHR_get_physical_device_properties2",
-            "VK_NV_representative_fragment_test+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_representative_fragment_test"],
-        ImpliesSets = [
-            "VK_NV_representative_fragment_test+VK_KHR_get_physical_device_properties2",
-            "VK_NV_representative_fragment_test+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("representativeFragmentTestEnable")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_representative_fragment_test"],
-        ImpliesSets = [
-            "VK_NV_representative_fragment_test+VK_KHR_get_physical_device_properties2",
-            "VK_NV_representative_fragment_test+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint RepresentativeFragmentTestEnable;
 }

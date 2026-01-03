@@ -8,215 +8,52 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkLatencyTimingsFrameReportNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct LatencyTimingsFrameReportNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("presentID")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong PresentID;
 
-    [NativeName("inputSampleTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong InputSampleTimeUs;
 
-    [NativeName("simStartTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong SimStartTimeUs;
 
-    [NativeName("simEndTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong SimEndTimeUs;
 
-    [NativeName("renderSubmitStartTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong RenderSubmitStartTimeUs;
 
-    [NativeName("renderSubmitEndTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong RenderSubmitEndTimeUs;
 
-    [NativeName("presentStartTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong PresentStartTimeUs;
 
-    [NativeName("presentEndTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong PresentEndTimeUs;
 
-    [NativeName("driverStartTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong DriverStartTimeUs;
 
-    [NativeName("driverEndTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong DriverEndTimeUs;
 
-    [NativeName("osRenderQueueStartTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong OsRenderQueueStartTimeUs;
 
-    [NativeName("osRenderQueueEndTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong OsRenderQueueEndTimeUs;
 
-    [NativeName("gpuRenderStartTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong GpuRenderStartTimeUs;
 
-    [NativeName("gpuRenderEndTimeUs")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_low_latency2"],
-        ImpliesSets = [
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id",
-            "VK_KHR_timeline_semaphore+VK_KHR_present_id2",
-            "VK_VERSION_1_2+VK_KHR_present_id",
-            "VK_VERSION_1_2+VK_KHR_present_id2",
-        ]
-    )]
+    [NativeTypeName("uint64_t")]
     public ulong GpuRenderEndTimeUs;
 }

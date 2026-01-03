@@ -8,73 +8,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceTileShadingPropertiesQCOM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceTileShadingPropertiesQCOM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("maxApronSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxApronSize;
 
-    [NativeName("preferNonCoherent")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint PreferNonCoherent;
-
-    [NativeName("tileGranularity")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public Extent2D TileGranularity;
-
-    [NativeName("maxTileShadingRate")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_QCOM_tile_shading"],
-        ImpliesSets = [
-            "VK_QCOM_tile_shading+VK_KHR_get_physical_device_properties2",
-            "VK_QCOM_tile_shading+VK_QCOM_tile_properties",
-        ]
-    )]
     public Extent2D MaxTileShadingRate;
 }

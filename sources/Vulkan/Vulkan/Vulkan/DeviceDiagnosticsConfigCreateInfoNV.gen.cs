@@ -8,40 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDeviceDiagnosticsConfigCreateInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DeviceDiagnosticsConfigCreateInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_diagnostics_config"],
-        ImpliesSets = [
-            "VK_NV_device_diagnostics_config+VK_KHR_get_physical_device_properties2",
-            "VK_NV_device_diagnostics_config+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_diagnostics_config"],
-        ImpliesSets = [
-            "VK_NV_device_diagnostics_config+VK_KHR_get_physical_device_properties2",
-            "VK_NV_device_diagnostics_config+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_device_diagnostics_config"],
-        ImpliesSets = [
-            "VK_NV_device_diagnostics_config+VK_KHR_get_physical_device_properties2",
-            "VK_NV_device_diagnostics_config+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceDiagnosticsConfigFlagsNV")]
     public DeviceDiagnosticsConfigFlagsNV Flags;
 }

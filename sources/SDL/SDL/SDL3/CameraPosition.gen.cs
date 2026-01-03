@@ -7,15 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.SDL;
 
-[NativeName("SDL_CameraPosition")]
 public enum CameraPosition
 {
-    [NativeName("SDL_CAMERA_POSITION_UNKNOWN")]
-    Unknown = 0,
-
-    [NativeName("SDL_CAMERA_POSITION_FRONT_FACING")]
-    FrontFacing = 1,
-
-    [NativeName("SDL_CAMERA_POSITION_BACK_FACING")]
-    BackFacing = 2,
+    Unknown,
+    FrontFacing,
+    BackFacing,
 }

@@ -7,55 +7,12 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkIndirectExecutionSetCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct IndirectExecutionSetCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("type")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public IndirectExecutionSetInfoTypeEXT Type;
-
-    [NativeName("info")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_generated_commands"],
-        ImpliesSets = [
-            "VK_KHR_maintenance5+VK_KHR_buffer_device_address",
-            "VK_KHR_maintenance5+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public IndirectExecutionSetInfoEXT Info;
 }

@@ -7,55 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkSubpassShadingPipelineCreateInfoHUAWEI")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct SubpassShadingPipelineCreateInfoHUAWEI
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_subpass_shading"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_create_renderpass2",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_subpass_shading"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_create_renderpass2",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("renderPass")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_subpass_shading"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_create_renderpass2",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("VkRenderPass")]
     public RenderPassHandle RenderPass;
 
-    [NativeName("subpass")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_subpass_shading"],
-        ImpliesSets = [
-            "VK_KHR_synchronization2+VK_KHR_create_renderpass2",
-            "VK_KHR_synchronization2+VK_VERSION_1_2",
-            "VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Subpass;
 }

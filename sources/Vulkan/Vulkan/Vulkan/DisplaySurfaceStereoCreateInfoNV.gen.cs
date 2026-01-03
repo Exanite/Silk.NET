@@ -7,31 +7,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDisplaySurfaceStereoCreateInfoNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DisplaySurfaceStereoCreateInfoNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_display_stereo"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_display_stereo"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("stereoType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_display_stereo"],
-        ImpliesSets = ["VK_KHR_display", "VK_KHR_get_display_properties2"]
-    )]
     public DisplaySurfaceStereoTypeNV StereoType;
 }

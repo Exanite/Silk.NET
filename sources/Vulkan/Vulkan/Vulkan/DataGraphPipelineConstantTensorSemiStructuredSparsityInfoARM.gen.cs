@@ -6,52 +6,19 @@ using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDataGraphPipelineConstantTensorSemiStructuredSparsityInfoARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DataGraphPipelineConstantTensorSemiStructuredSparsityInfoARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("dimension")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [NativeTypeName("uint32_t")]
     public uint Dimension;
 
-    [NativeName("zeroCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ZeroCount;
 
-    [NativeName("groupSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_data_graph", "VK_ARM_tensors"],
-        ImpliesSets = ["VK_KHR_deferred_host_operations", "VK_KHR_maintenance5", "VK_VERSION_1_3"],
-        RequireAll = true
-    )]
+    [NativeTypeName("uint32_t")]
     public uint GroupSize;
 }

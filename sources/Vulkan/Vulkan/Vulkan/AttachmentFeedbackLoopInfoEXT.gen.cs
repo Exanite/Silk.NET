@@ -8,49 +8,13 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkAttachmentFeedbackLoopInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct AttachmentFeedbackLoopInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_KHR_unified_image_layouts+VK_EXT_attachment_feedback_loop_layout+VK_KHR_dynamic_rendering",
-            "VK_KHR_unified_image_layouts+VK_EXT_attachment_feedback_loop_layout+VK_VERSION_1_3",
-        ],
-        ImpliesSets = [
-            "VK_KHR_unified_image_layouts+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_unified_image_layouts+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_KHR_unified_image_layouts+VK_EXT_attachment_feedback_loop_layout+VK_KHR_dynamic_rendering",
-            "VK_KHR_unified_image_layouts+VK_EXT_attachment_feedback_loop_layout+VK_VERSION_1_3",
-        ],
-        ImpliesSets = [
-            "VK_KHR_unified_image_layouts+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_unified_image_layouts+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("feedbackLoopEnable")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_KHR_unified_image_layouts+VK_EXT_attachment_feedback_loop_layout+VK_KHR_dynamic_rendering",
-            "VK_KHR_unified_image_layouts+VK_EXT_attachment_feedback_loop_layout+VK_VERSION_1_3",
-        ],
-        ImpliesSets = [
-            "VK_KHR_unified_image_layouts+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_unified_image_layouts+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint FeedbackLoopEnable;
 }

@@ -8,21 +8,9 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkMemoryMapFlagBits")]
 [Flags]
-[SupportedApiProfile("vulkan")]
 public enum MemoryMapFlags : uint
 {
     None = 0x0,
-
-    [NativeName("VK_MEMORY_MAP_PLACED_BIT_EXT")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_map_memory_placed"],
-        ImpliesSets = [
-            "VK_EXT_map_memory_placed+VK_KHR_map_memory2",
-            "VK_EXT_map_memory_placed+VK_VERSION_1_4",
-        ]
-    )]
     PlacedBitEXT = 0x1,
 }

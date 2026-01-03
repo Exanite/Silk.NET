@@ -8,62 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDeviceDeviceMemoryReportCreateInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DeviceDeviceMemoryReportCreateInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_memory_report"],
-        ImpliesSets = [
-            "VK_EXT_device_memory_report+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_memory_report+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_memory_report"],
-        ImpliesSets = [
-            "VK_EXT_device_memory_report+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_memory_report+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("flags")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_memory_report"],
-        ImpliesSets = [
-            "VK_EXT_device_memory_report+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_memory_report+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkDeviceMemoryReportFlagsEXT")]
     public uint Flags;
 
-    [NativeName("pfnUserCallback")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_memory_report"],
-        ImpliesSets = [
-            "VK_EXT_device_memory_report+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_memory_report+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("PFN_vkDeviceMemoryReportCallbackEXT")]
     public DeviceMemoryReportCallbackEXT PfnUserCallback;
-
-    [NativeName("pUserData")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_device_memory_report"],
-        ImpliesSets = [
-            "VK_EXT_device_memory_report+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_device_memory_report+VK_VERSION_1_1",
-        ]
-    )]
     public void* PUserData;
 }

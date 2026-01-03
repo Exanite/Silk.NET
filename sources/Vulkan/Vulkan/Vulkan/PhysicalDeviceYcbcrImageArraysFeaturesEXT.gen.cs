@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceYcbcrImageArraysFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceYcbcrImageArraysFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_image_arrays"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_image_arrays+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_image_arrays+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_image_arrays"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_image_arrays+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_image_arrays+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("ycbcrImageArrays")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_ycbcr_image_arrays"],
-        ImpliesSets = [
-            "VK_EXT_ycbcr_image_arrays+VK_KHR_sampler_ycbcr_conversion",
-            "VK_EXT_ycbcr_image_arrays+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint YcbcrImageArrays;
 }

@@ -8,40 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceExclusiveScissorFeaturesNV")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceExclusiveScissorFeaturesNV
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_scissor_exclusive"],
-        ImpliesSets = [
-            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
-            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_scissor_exclusive"],
-        ImpliesSets = [
-            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
-            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("exclusiveScissor")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_scissor_exclusive"],
-        ImpliesSets = [
-            "VK_NV_scissor_exclusive+VK_KHR_get_physical_device_properties2",
-            "VK_NV_scissor_exclusive+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ExclusiveScissor;
 }

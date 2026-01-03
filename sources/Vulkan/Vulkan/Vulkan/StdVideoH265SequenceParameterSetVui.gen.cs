@@ -8,111 +8,80 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH265SequenceParameterSetVui")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoH265SequenceParameterSetVui
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH265SpsVuiFlags Flags;
-
-    [NativeName("aspect_ratio_idc")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH265AspectRatioIdc AspectRatioIdc;
 
-    [NativeName("sar_width")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort SarWidth;
 
-    [NativeName("sar_height")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort SarHeight;
 
-    [NativeName("video_format")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte VideoFormat;
 
-    [NativeName("colour_primaries")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte ColourPrimaries;
 
-    [NativeName("transfer_characteristics")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte TransferCharacteristics;
 
-    [NativeName("matrix_coeffs")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MatrixCoeffs;
 
-    [NativeName("chroma_sample_loc_type_top_field")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte ChromaSampleLocTypeTopField;
 
-    [NativeName("chroma_sample_loc_type_bottom_field")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte ChromaSampleLocTypeBottomField;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Reserved1;
 
-    [NativeName("reserved2")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Reserved2;
 
-    [NativeName("def_disp_win_left_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort DefDispWinLeftOffset;
 
-    [NativeName("def_disp_win_right_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort DefDispWinRightOffset;
 
-    [NativeName("def_disp_win_top_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort DefDispWinTopOffset;
 
-    [NativeName("def_disp_win_bottom_offset")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort DefDispWinBottomOffset;
 
-    [NativeName("vui_num_units_in_tick")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint VuiNumUnitsInTick;
 
-    [NativeName("vui_time_scale")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint VuiTimeScale;
 
-    [NativeName("vui_num_ticks_poc_diff_one_minus1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint VuiNumTicksPocDiffOneMinus1;
 
-    [NativeName("min_spatial_segmentation_idc")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort MinSpatialSegmentationIdc;
 
-    [NativeName("reserved3")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort Reserved3;
 
-    [NativeName("max_bytes_per_pic_denom")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MaxBytesPerPicDenom;
 
-    [NativeName("max_bits_per_min_cu_denom")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MaxBitsPerMinCuDenom;
 
-    [NativeName("log2_max_mv_length_horizontal")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2MaxMvLengthHorizontal;
 
-    [NativeName("log2_max_mv_length_vertical")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte Log2MaxMvLengthVertical;
 
-    [NativeName("pHrdParameters")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH265HrdParameters *")]
     public StdVideoH265HrdParameters* PHrdParameters;
 }

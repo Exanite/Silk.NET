@@ -8,57 +8,17 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkAttachmentSampleCountInfoAMD")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct AttachmentSampleCountInfoAMD
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
-            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
-            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("colorAttachmentCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
-            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ColorAttachmentCount;
 
-    [NativeName("pColorAttachmentSamples")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
-            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
-        ]
-    )]
+    [NativeTypeName("const VkSampleCountFlagBits *")]
     public SampleCountFlags* PColorAttachmentSamples;
-
-    [NativeName("depthStencilAttachmentSamples")]
-    [SupportedApiProfile(
-        "vulkan",
-        [
-            "VK_AMD_mixed_attachment_samples+VK_KHR_dynamic_rendering",
-            "VK_AMD_mixed_attachment_samples+VK_VERSION_1_3",
-        ]
-    )]
     public SampleCountFlags DepthStencilAttachmentSamples;
 }

@@ -8,71 +8,50 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("StdVideoH264SequenceParameterSetVui")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct StdVideoH264SequenceParameterSetVui
 {
-    [NativeName("flags")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH264SpsVuiFlags Flags;
-
-    [NativeName("aspect_ratio_idc")]
-    [SupportedApiProfile("vulkan")]
     public StdVideoH264AspectRatioIdc AspectRatioIdc;
 
-    [NativeName("sar_width")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort SarWidth;
 
-    [NativeName("sar_height")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint16_t")]
     public ushort SarHeight;
 
-    [NativeName("video_format")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte VideoFormat;
 
-    [NativeName("colour_primaries")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte ColourPrimaries;
 
-    [NativeName("transfer_characteristics")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte TransferCharacteristics;
 
-    [NativeName("matrix_coefficients")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MatrixCoefficients;
 
-    [NativeName("num_units_in_tick")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint NumUnitsInTick;
 
-    [NativeName("time_scale")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint TimeScale;
 
-    [NativeName("max_num_reorder_frames")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MaxNumReorderFrames;
 
-    [NativeName("max_dec_frame_buffering")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte MaxDecFrameBuffering;
 
-    [NativeName("chroma_sample_loc_type_top_field")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte ChromaSampleLocTypeTopField;
 
-    [NativeName("chroma_sample_loc_type_bottom_field")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint8_t")]
     public byte ChromaSampleLocTypeBottomField;
 
-    [NativeName("reserved1")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("uint32_t")]
     public uint Reserved1;
 
-    [NativeName("pHrdParameters")]
-    [SupportedApiProfile("vulkan")]
+    [NativeTypeName("const StdVideoH264HrdParameters *")]
     public StdVideoH264HrdParameters* PHrdParameters;
 }

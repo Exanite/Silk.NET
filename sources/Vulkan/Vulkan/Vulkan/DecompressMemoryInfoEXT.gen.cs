@@ -8,47 +8,19 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDecompressMemoryInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DecompressMemoryInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("decompressionMethod")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("VkMemoryDecompressionMethodFlagsEXT")]
     public MemoryDecompressionMethodFlagsEXT DecompressionMethod;
 
-    [NativeName("regionCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint RegionCount;
 
-    [NativeName("pRegions")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_memory_decompression"],
-        ImpliesSets = ["VK_KHR_buffer_device_address", "VK_KHR_get_physical_device_properties2"]
-    )]
+    [NativeTypeName("const VkDecompressMemoryRegionEXT *")]
     public DecompressMemoryRegionEXT* PRegions;
 }

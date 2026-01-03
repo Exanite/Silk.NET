@@ -8,51 +8,16 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkHdrVividDynamicMetadataHUAWEI")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct HdrVividDynamicMetadataHUAWEI
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_hdr_vivid"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_hdr_vivid"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PNext;
 
-    [NativeName("dynamicMetadataSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_hdr_vivid"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("size_t")]
     public nuint DynamicMetadataSize;
 
-    [NativeName("pDynamicMetadata")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_HUAWEI_hdr_vivid"],
-        ImpliesSets = [
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_swapchain+VK_EXT_hdr_metadata+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("const void *")]
     public void* PDynamicMetadata;
 }

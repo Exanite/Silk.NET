@@ -8,31 +8,11 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDeviceQueueShaderCoreControlCreateInfoARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DeviceQueueShaderCoreControlCreateInfoARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_scheduling_controls"],
-        ImpliesSets = ["VK_ARM_shader_core_builtins"]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_scheduling_controls"],
-        ImpliesSets = ["VK_ARM_shader_core_builtins"]
-    )]
     public void* PNext;
 
-    [NativeName("shaderCoreCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_ARM_scheduling_controls"],
-        ImpliesSets = ["VK_ARM_shader_core_builtins"]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ShaderCoreCount;
 }

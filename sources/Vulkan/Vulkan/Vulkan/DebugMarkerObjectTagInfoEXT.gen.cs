@@ -8,35 +8,23 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDebugMarkerObjectTagInfoEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct DebugMarkerObjectTagInfoEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
     public StructureType SType;
 
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
+    [NativeTypeName("const void *")]
     public void* PNext;
-
-    [NativeName("objectType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
     public DebugReportObjectTypeEXT ObjectType;
 
-    [NativeName("@object")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
+    [NativeTypeName("uint64_t")]
     public ulong @object;
 
-    [NativeName("tagName")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
+    [NativeTypeName("uint64_t")]
     public ulong TagName;
 
-    [NativeName("tagSize")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
+    [NativeTypeName("size_t")]
     public nuint TagSize;
 
-    [NativeName("pTag")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_debug_marker"], ImpliesSets = ["VK_EXT_debug_report"])]
+    [NativeTypeName("const void *")]
     public void* PTag;
 }

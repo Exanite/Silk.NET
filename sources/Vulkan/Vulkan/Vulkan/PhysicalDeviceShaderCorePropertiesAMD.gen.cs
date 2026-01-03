@@ -8,183 +8,50 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceShaderCorePropertiesAMD")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderCorePropertiesAMD
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("shaderEngineCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ShaderEngineCount;
 
-    [NativeName("shaderArraysPerEngineCount")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ShaderArraysPerEngineCount;
 
-    [NativeName("computeUnitsPerShaderArray")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint ComputeUnitsPerShaderArray;
 
-    [NativeName("simdPerComputeUnit")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SimdPerComputeUnit;
 
-    [NativeName("wavefrontsPerSimd")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint WavefrontsPerSimd;
 
-    [NativeName("wavefrontSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint WavefrontSize;
 
-    [NativeName("sgprsPerSimd")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SgprsPerSimd;
 
-    [NativeName("minSgprAllocation")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MinSgprAllocation;
 
-    [NativeName("maxSgprAllocation")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxSgprAllocation;
 
-    [NativeName("sgprAllocationGranularity")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint SgprAllocationGranularity;
 
-    [NativeName("vgprsPerSimd")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint VgprsPerSimd;
 
-    [NativeName("minVgprAllocation")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MinVgprAllocation;
 
-    [NativeName("maxVgprAllocation")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint MaxVgprAllocation;
 
-    [NativeName("vgprAllocationGranularity")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_AMD_shader_core_properties"],
-        ImpliesSets = [
-            "VK_AMD_shader_core_properties+VK_KHR_get_physical_device_properties2",
-            "VK_AMD_shader_core_properties+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("uint32_t")]
     public uint VgprAllocationGranularity;
 }

@@ -8,67 +8,20 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkDecompressMemoryRegionNV")]
-[SupportedApiProfile("vulkan")]
 public partial struct DecompressMemoryRegionNV
 {
-    [NativeName("srcAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_memory_decompression"],
-        ImpliesSets = [
-            "VK_KHR_buffer_device_address+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_buffer_device_address+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong SrcAddress;
 
-    [NativeName("dstAddress")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_memory_decompression"],
-        ImpliesSets = [
-            "VK_KHR_buffer_device_address+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_buffer_device_address+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkDeviceAddress")]
     public ulong DstAddress;
 
-    [NativeName("compressedSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_memory_decompression"],
-        ImpliesSets = [
-            "VK_KHR_buffer_device_address+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_buffer_device_address+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong CompressedSize;
 
-    [NativeName("decompressedSize")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_memory_decompression"],
-        ImpliesSets = [
-            "VK_KHR_buffer_device_address+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_buffer_device_address+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkDeviceSize")]
     public ulong DecompressedSize;
 
-    [NativeName("decompressionMethod")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_NV_memory_decompression"],
-        ImpliesSets = [
-            "VK_KHR_buffer_device_address+VK_KHR_get_physical_device_properties2",
-            "VK_KHR_buffer_device_address+VK_VERSION_1_1",
-            "VK_VERSION_1_2",
-        ]
-    )]
+    [NativeTypeName("VkMemoryDecompressionMethodFlagsNV")]
     public ulong DecompressionMethod;
 }

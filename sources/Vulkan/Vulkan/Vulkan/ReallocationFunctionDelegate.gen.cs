@@ -8,8 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("PFN_vkReallocationFunction")]
-[SupportedApiProfile("vulkan")]
 public unsafe delegate void* ReallocationFunctionDelegate(
     void* arg0,
     void* arg1,

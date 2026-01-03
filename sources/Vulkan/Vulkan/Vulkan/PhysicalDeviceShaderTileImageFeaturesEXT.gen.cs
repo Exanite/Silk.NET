@@ -6,27 +6,17 @@ using System.Runtime.CompilerServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceShaderTileImageFeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderTileImageFeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_shader_tile_image"], ImpliesSets = ["VK_VERSION_1_3"])]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_shader_tile_image"], ImpliesSets = ["VK_VERSION_1_3"])]
     public void* PNext;
 
-    [NativeName("shaderTileImageColorReadAccess")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_shader_tile_image"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkBool32")]
     public uint ShaderTileImageColorReadAccess;
 
-    [NativeName("shaderTileImageDepthReadAccess")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_shader_tile_image"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkBool32")]
     public uint ShaderTileImageDepthReadAccess;
 
-    [NativeName("shaderTileImageStencilReadAccess")]
-    [SupportedApiProfile("vulkan", ["VK_EXT_shader_tile_image"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkBool32")]
     public uint ShaderTileImageStencilReadAccess;
 }

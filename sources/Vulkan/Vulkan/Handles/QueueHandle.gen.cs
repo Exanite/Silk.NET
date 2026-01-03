@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkQueue")]
 public readonly unsafe partial struct QueueHandle
 {
     public readonly void* Handle;

@@ -8,67 +8,47 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceTensorPropertiesARM")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceTensorPropertiesARM
 {
-    [NativeName("sType")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
     public void* PNext;
 
-    [NativeName("maxTensorDimensionCount")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint MaxTensorDimensionCount;
 
-    [NativeName("maxTensorElements")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint64_t")]
     public ulong MaxTensorElements;
 
-    [NativeName("maxPerDimensionTensorElements")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint64_t")]
     public ulong MaxPerDimensionTensorElements;
 
-    [NativeName("maxTensorStride")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("int64_t")]
     public long MaxTensorStride;
 
-    [NativeName("maxTensorSize")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint64_t")]
     public ulong MaxTensorSize;
 
-    [NativeName("maxTensorShaderAccessArrayLength")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint MaxTensorShaderAccessArrayLength;
 
-    [NativeName("maxTensorShaderAccessSize")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint MaxTensorShaderAccessSize;
 
-    [NativeName("maxDescriptorSetStorageTensors")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint MaxDescriptorSetStorageTensors;
 
-    [NativeName("maxPerStageDescriptorSetStorageTensors")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint MaxPerStageDescriptorSetStorageTensors;
 
-    [NativeName("maxDescriptorSetUpdateAfterBindStorageTensors")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint MaxDescriptorSetUpdateAfterBindStorageTensors;
 
-    [NativeName("maxPerStageDescriptorUpdateAfterBindStorageTensors")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("uint32_t")]
     public uint MaxPerStageDescriptorUpdateAfterBindStorageTensors;
 
-    [NativeName("shaderStorageTensorArrayNonUniformIndexingNative")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkBool32")]
     public uint ShaderStorageTensorArrayNonUniformIndexingNative;
 
-    [NativeName("shaderTensorSupportedStages")]
-    [SupportedApiProfile("vulkan", ["VK_ARM_tensors"], ImpliesSets = ["VK_VERSION_1_3"])]
+    [NativeTypeName("VkShaderStageFlags")]
     public ShaderStageFlags ShaderTensorSupportedStages;
 }

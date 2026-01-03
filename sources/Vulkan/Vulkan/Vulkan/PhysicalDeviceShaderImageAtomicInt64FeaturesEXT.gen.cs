@@ -7,51 +7,14 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT")]
-[SupportedApiProfile("vulkan")]
 public unsafe partial struct PhysicalDeviceShaderImageAtomicInt64FeaturesEXT
 {
-    [NativeName("sType")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_image_atomic_int64"],
-        ImpliesSets = [
-            "VK_EXT_shader_image_atomic_int64+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_shader_image_atomic_int64+VK_VERSION_1_1",
-        ]
-    )]
     public StructureType SType;
-
-    [NativeName("pNext")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_image_atomic_int64"],
-        ImpliesSets = [
-            "VK_EXT_shader_image_atomic_int64+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_shader_image_atomic_int64+VK_VERSION_1_1",
-        ]
-    )]
     public void* PNext;
 
-    [NativeName("shaderImageInt64Atomics")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_image_atomic_int64"],
-        ImpliesSets = [
-            "VK_EXT_shader_image_atomic_int64+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_shader_image_atomic_int64+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint ShaderImageInt64Atomics;
 
-    [NativeName("sparseImageInt64Atomics")]
-    [SupportedApiProfile(
-        "vulkan",
-        ["VK_EXT_shader_image_atomic_int64"],
-        ImpliesSets = [
-            "VK_EXT_shader_image_atomic_int64+VK_KHR_get_physical_device_properties2",
-            "VK_EXT_shader_image_atomic_int64+VK_VERSION_1_1",
-        ]
-    )]
+    [NativeTypeName("VkBool32")]
     public uint SparseImageInt64Atomics;
 }

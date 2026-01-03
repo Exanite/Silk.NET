@@ -8,6 +8,5 @@ using System.Runtime.InteropServices;
 
 namespace Silk.NET.Vulkan;
 
-[NativeName("PFN_vkGetInstanceProcAddrLUNARG_p2")]
-[SupportedApiProfile("vulkan")]
+[Transformed]
 public unsafe delegate void GetInstanceProcAddrLunargP2Delegate();
