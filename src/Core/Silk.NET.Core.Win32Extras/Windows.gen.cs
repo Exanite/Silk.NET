@@ -10825,17 +10825,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 44, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CompareFileTime")]
-        public unsafe partial int CompareFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpFileTime1, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpFileTime2);
+        public unsafe partial int CompareFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpFileTime1, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpFileTime2);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 44, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CompareFileTime")]
-        public unsafe partial int CompareFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpFileTime1, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpFileTime2);
+        public unsafe partial int CompareFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpFileTime1, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpFileTime2);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 44, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CompareFileTime")]
-        public partial int CompareFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpFileTime1, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpFileTime2);
+        public partial int CompareFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpFileTime1, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpFileTime2);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 52, Column 1 in fileapi.h")]
@@ -10850,12 +10850,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 52, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateDirectoryA")]
-        public unsafe partial Silk.NET.Core.Bool32 CreateDirectoryA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes);
+        public unsafe partial Silk.NET.Core.Bool32 CreateDirectoryA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 52, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateDirectoryA")]
-        public partial Silk.NET.Core.Bool32 CreateDirectoryA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes);
+        public partial Silk.NET.Core.Bool32 CreateDirectoryA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 52, Column 1 in fileapi.h")]
@@ -10880,12 +10880,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 60, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateDirectoryW")]
-        public unsafe partial Silk.NET.Core.Bool32 CreateDirectoryW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes);
+        public unsafe partial Silk.NET.Core.Bool32 CreateDirectoryW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 60, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateDirectoryW")]
-        public partial Silk.NET.Core.Bool32 CreateDirectoryW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes);
+        public partial Silk.NET.Core.Bool32 CreateDirectoryW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 60, Column 1 in fileapi.h")]
@@ -10920,22 +10920,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileA")]
-        public unsafe partial void* CreateFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
+        public unsafe partial void* CreateFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileA")]
-        public unsafe partial void* CreateFileA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
+        public unsafe partial void* CreateFileA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileA")]
-        public unsafe partial void* CreateFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
+        public unsafe partial void* CreateFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileA")]
-        public unsafe partial void* CreateFileA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
+        public unsafe partial void* CreateFileA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in fileapi.h")]
@@ -10980,22 +10980,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 92, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileW")]
-        public unsafe partial void* CreateFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
+        public unsafe partial void* CreateFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 92, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileW")]
-        public unsafe partial void* CreateFileW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
+        public unsafe partial void* CreateFileW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwDesiredAccess, uint dwShareMode, Silk.NET.Core.Native.SecurityAttributes* lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 92, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileW")]
-        public unsafe partial void* CreateFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
+        public unsafe partial void* CreateFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, void* hTemplateFile);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 92, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFileW")]
-        public unsafe partial void* CreateFileW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
+        public unsafe partial void* CreateFileW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwDesiredAccess, uint dwShareMode, ref Silk.NET.Core.Native.SecurityAttributes lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, ref T0 hTemplateFile) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 92, Column 1 in fileapi.h")]
@@ -11025,7 +11025,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DefineDosDeviceW")]
-        public unsafe partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpTargetPath);
+        public unsafe partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpTargetPath);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
@@ -11035,17 +11035,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DefineDosDeviceW")]
-        public unsafe partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpTargetPath);
+        public unsafe partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpTargetPath);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DefineDosDeviceW")]
-        public partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpTargetPath);
+        public partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpTargetPath);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DefineDosDeviceW")]
-        public partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTargetPath);
+        public partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTargetPath);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
@@ -11055,7 +11055,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DefineDosDeviceW")]
-        public partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpTargetPath);
+        public partial Silk.NET.Core.Bool32 DefineDosDeviceW(uint dwFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpDeviceName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpTargetPath);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 116, Column 1 in fileapi.h")]
@@ -11070,7 +11070,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 135, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DeleteFileA")]
-        public partial Silk.NET.Core.Bool32 DeleteFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName);
+        public partial Silk.NET.Core.Bool32 DeleteFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 135, Column 1 in fileapi.h")]
@@ -11085,7 +11085,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 142, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DeleteFileW")]
-        public partial Silk.NET.Core.Bool32 DeleteFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName);
+        public partial Silk.NET.Core.Bool32 DeleteFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 142, Column 1 in fileapi.h")]
@@ -11100,7 +11100,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 160, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "DeleteVolumeMountPointW")]
-        public partial Silk.NET.Core.Bool32 DeleteVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeMountPoint);
+        public partial Silk.NET.Core.Bool32 DeleteVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeMountPoint);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 160, Column 1 in fileapi.h")]
@@ -11120,12 +11120,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 177, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FileTimeToLocalFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 FileTimeToLocalFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpFileTime, Filetime* lpLocalFileTime);
+        public unsafe partial Silk.NET.Core.Bool32 FileTimeToLocalFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpFileTime, Filetime* lpLocalFileTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 177, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FileTimeToLocalFileTime")]
-        public partial Silk.NET.Core.Bool32 FileTimeToLocalFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpFileTime, ref Filetime lpLocalFileTime);
+        public partial Silk.NET.Core.Bool32 FileTimeToLocalFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpFileTime, ref Filetime lpLocalFileTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 191, Column 1 in fileapi.h")]
@@ -11155,7 +11155,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 211, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstChangeNotificationA")]
-        public unsafe partial void* FindFirstChangeNotificationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, Silk.NET.Core.Bool32 bWatchSubtree, uint dwNotifyFilter);
+        public unsafe partial void* FindFirstChangeNotificationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, Silk.NET.Core.Bool32 bWatchSubtree, uint dwNotifyFilter);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 211, Column 1 in fileapi.h")]
@@ -11170,7 +11170,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 220, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstChangeNotificationW")]
-        public unsafe partial void* FindFirstChangeNotificationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, Silk.NET.Core.Bool32 bWatchSubtree, uint dwNotifyFilter);
+        public unsafe partial void* FindFirstChangeNotificationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, Silk.NET.Core.Bool32 bWatchSubtree, uint dwNotifyFilter);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 220, Column 1 in fileapi.h")]
@@ -11190,12 +11190,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 240, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileA")]
-        public unsafe partial void* FindFirstFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, Win32FindDataa* lpFindFileData);
+        public unsafe partial void* FindFirstFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, Win32FindDataa* lpFindFileData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 240, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileA")]
-        public unsafe partial void* FindFirstFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, ref Win32FindDataa lpFindFileData);
+        public unsafe partial void* FindFirstFileA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, ref Win32FindDataa lpFindFileData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 240, Column 1 in fileapi.h")]
@@ -11220,12 +11220,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 248, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileW")]
-        public unsafe partial void* FindFirstFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, Win32FindDataw* lpFindFileData);
+        public unsafe partial void* FindFirstFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, Win32FindDataw* lpFindFileData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 248, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileW")]
-        public unsafe partial void* FindFirstFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, ref Win32FindDataw lpFindFileData);
+        public unsafe partial void* FindFirstFileW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, ref Win32FindDataw lpFindFileData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 248, Column 1 in fileapi.h")]
@@ -11260,22 +11260,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 263, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExA")]
-        public unsafe partial void* FindFirstFileExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags);
+        public unsafe partial void* FindFirstFileExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 263, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExA")]
-        public unsafe partial void* FindFirstFileExA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, ref T0 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
+        public unsafe partial void* FindFirstFileExA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, ref T0 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 263, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExA")]
-        public unsafe partial void* FindFirstFileExA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
+        public unsafe partial void* FindFirstFileExA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 263, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExA")]
-        public unsafe partial void* FindFirstFileExA<T0, T1>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, ref T1 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged where T1 : unmanaged;
+        public unsafe partial void* FindFirstFileExA<T0, T1>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, ref T1 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 263, Column 1 in fileapi.h")]
@@ -11320,22 +11320,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExW")]
-        public unsafe partial void* FindFirstFileExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags);
+        public unsafe partial void* FindFirstFileExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExW")]
-        public unsafe partial void* FindFirstFileExW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, ref T0 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
+        public unsafe partial void* FindFirstFileExW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, FindexInfoLevels fInfoLevelId, void* lpFindFileData, FindexSearchOps fSearchOp, ref T0 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExW")]
-        public unsafe partial void* FindFirstFileExW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
+        public unsafe partial void* FindFirstFileExW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, void* lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileExW")]
-        public unsafe partial void* FindFirstFileExW<T0, T1>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, ref T1 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged where T1 : unmanaged;
+        public unsafe partial void* FindFirstFileExW<T0, T1>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, FindexInfoLevels fInfoLevelId, ref T0 lpFindFileData, FindexSearchOps fSearchOp, ref T1 lpSearchFilter, uint dwAdditionalFlags) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 1 in fileapi.h")]
@@ -11555,82 +11555,82 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceA")]
-        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 385, Column 1 in fileapi.h")]
@@ -11795,82 +11795,82 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, uint* lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, uint* lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, uint* lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, uint* lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceW")]
-        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
+        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref uint lpSectorsPerCluster, ref uint lpBytesPerSector, ref uint lpNumberOfFreeClusters, ref uint lpTotalNumberOfClusters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 396, Column 1 in fileapi.h")]
@@ -11995,42 +11995,42 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExA")]
-        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 412, Column 1 in fileapi.h")]
@@ -12115,42 +12115,42 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ulong* lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ulong* lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
+        public unsafe partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ulong* lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskFreeSpaceExW")]
-        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
+        public partial Silk.NET.Core.Bool32 GetDiskFreeSpaceExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDirectoryName, ref ulong lpFreeBytesAvailableToCaller, ref ulong lpTotalNumberOfBytes, ref ulong lpTotalNumberOfFreeBytes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 422, Column 1 in fileapi.h")]
@@ -12205,12 +12205,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 534, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskSpaceInformationA")]
-        public unsafe partial int GetDiskSpaceInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte rootPath, DiskSpaceInformation* diskSpaceInfo);
+        public unsafe partial int GetDiskSpaceInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte rootPath, DiskSpaceInformation* diskSpaceInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 534, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskSpaceInformationA")]
-        public partial int GetDiskSpaceInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte rootPath, ref DiskSpaceInformation diskSpaceInfo);
+        public partial int GetDiskSpaceInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte rootPath, ref DiskSpaceInformation diskSpaceInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 534, Column 1 in fileapi.h")]
@@ -12235,12 +12235,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 542, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskSpaceInformationW")]
-        public unsafe partial int GetDiskSpaceInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char rootPath, DiskSpaceInformation* diskSpaceInfo);
+        public unsafe partial int GetDiskSpaceInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char rootPath, DiskSpaceInformation* diskSpaceInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 542, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDiskSpaceInformationW")]
-        public partial int GetDiskSpaceInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char rootPath, ref DiskSpaceInformation diskSpaceInfo);
+        public partial int GetDiskSpaceInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char rootPath, ref DiskSpaceInformation diskSpaceInfo);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 542, Column 1 in fileapi.h")]
@@ -12260,7 +12260,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 561, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDriveTypeA")]
-        public partial uint GetDriveTypeA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName);
+        public partial uint GetDriveTypeA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 561, Column 1 in fileapi.h")]
@@ -12275,7 +12275,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 568, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetDriveTypeW")]
-        public partial uint GetDriveTypeW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName);
+        public partial uint GetDriveTypeW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 568, Column 1 in fileapi.h")]
@@ -12290,7 +12290,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 589, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFileAttributesA")]
-        public partial uint GetFileAttributesA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName);
+        public partial uint GetFileAttributesA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 589, Column 1 in fileapi.h")]
@@ -12305,7 +12305,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 596, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFileAttributesW")]
-        public partial uint GetFileAttributesW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName);
+        public partial uint GetFileAttributesW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 596, Column 1 in fileapi.h")]
@@ -12325,12 +12325,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 608, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFileAttributesExA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetFileAttributesExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, GetFileexInfoLevels fInfoLevelId, void* lpFileInformation);
+        public unsafe partial Silk.NET.Core.Bool32 GetFileAttributesExA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, GetFileexInfoLevels fInfoLevelId, void* lpFileInformation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 608, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFileAttributesExA")]
-        public partial Silk.NET.Core.Bool32 GetFileAttributesExA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, GetFileexInfoLevels fInfoLevelId, ref T0 lpFileInformation) where T0 : unmanaged;
+        public partial Silk.NET.Core.Bool32 GetFileAttributesExA<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, GetFileexInfoLevels fInfoLevelId, ref T0 lpFileInformation) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 608, Column 1 in fileapi.h")]
@@ -12355,12 +12355,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 617, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFileAttributesExW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetFileAttributesExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, GetFileexInfoLevels fInfoLevelId, void* lpFileInformation);
+        public unsafe partial Silk.NET.Core.Bool32 GetFileAttributesExW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, GetFileexInfoLevels fInfoLevelId, void* lpFileInformation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 617, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFileAttributesExW")]
-        public partial Silk.NET.Core.Bool32 GetFileAttributesExW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, GetFileexInfoLevels fInfoLevelId, ref T0 lpFileInformation) where T0 : unmanaged;
+        public partial Silk.NET.Core.Bool32 GetFileAttributesExW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, GetFileexInfoLevels fInfoLevelId, ref T0 lpFileInformation) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 617, Column 1 in fileapi.h")]
@@ -12615,32 +12615,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameW")]
-        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, char* lpBuffer, char** lpFilePart);
+        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, char* lpBuffer, char** lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameW")]
-        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, char* lpBuffer, ref char* lpFilePart);
+        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, char* lpBuffer, ref char* lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameW")]
-        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, ref char lpBuffer, char** lpFilePart);
+        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, ref char lpBuffer, char** lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameW")]
-        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, ref char lpBuffer, ref char* lpFilePart);
+        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, ref char lpBuffer, ref char* lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameW")]
-        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpBuffer, char** lpFilePart);
+        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpBuffer, char** lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameW")]
-        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpBuffer, ref char* lpFilePart);
+        public unsafe partial uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpBuffer, ref char* lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
@@ -12705,32 +12705,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameA")]
-        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, byte* lpBuffer, byte** lpFilePart);
+        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, byte* lpBuffer, byte** lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameA")]
-        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, byte* lpBuffer, ref byte* lpFilePart);
+        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, byte* lpBuffer, ref byte* lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameA")]
-        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, ref byte lpBuffer, byte** lpFilePart);
+        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, ref byte lpBuffer, byte** lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameA")]
-        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, ref byte lpBuffer, ref byte* lpFilePart);
+        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, ref byte lpBuffer, ref byte* lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameA")]
-        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpBuffer, byte** lpFilePart);
+        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpBuffer, byte** lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetFullPathNameA")]
-        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpBuffer, ref byte* lpFilePart);
+        public unsafe partial uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpBuffer, ref byte* lpFilePart);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
@@ -12800,17 +12800,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 788, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetLongPathNameA")]
-        public unsafe partial uint GetLongPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpszShortPath, byte* lpszLongPath, uint cchBuffer);
+        public unsafe partial uint GetLongPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpszShortPath, byte* lpszLongPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 788, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetLongPathNameA")]
-        public partial uint GetLongPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpszShortPath, ref byte lpszLongPath, uint cchBuffer);
+        public partial uint GetLongPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpszShortPath, ref byte lpszLongPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 788, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetLongPathNameA")]
-        public partial uint GetLongPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpszShortPath, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpszLongPath, uint cchBuffer);
+        public partial uint GetLongPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpszShortPath, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpszLongPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 788, Column 1 in fileapi.h")]
@@ -12845,17 +12845,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 802, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetLongPathNameW")]
-        public unsafe partial uint GetLongPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszShortPath, char* lpszLongPath, uint cchBuffer);
+        public unsafe partial uint GetLongPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszShortPath, char* lpszLongPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 802, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetLongPathNameW")]
-        public partial uint GetLongPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszShortPath, ref char lpszLongPath, uint cchBuffer);
+        public partial uint GetLongPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszShortPath, ref char lpszLongPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 802, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetLongPathNameW")]
-        public partial uint GetLongPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszShortPath, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszLongPath, uint cchBuffer);
+        public partial uint GetLongPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszShortPath, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszLongPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 802, Column 1 in fileapi.h")]
@@ -12910,17 +12910,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 834, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetShortPathNameW")]
-        public unsafe partial uint GetShortPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszLongPath, char* lpszShortPath, uint cchBuffer);
+        public unsafe partial uint GetShortPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszLongPath, char* lpszShortPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 834, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetShortPathNameW")]
-        public partial uint GetShortPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszLongPath, ref char lpszShortPath, uint cchBuffer);
+        public partial uint GetShortPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszLongPath, ref char lpszShortPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 834, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetShortPathNameW")]
-        public partial uint GetShortPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszLongPath, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszShortPath, uint cchBuffer);
+        public partial uint GetShortPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszLongPath, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszShortPath, uint cchBuffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 834, Column 1 in fileapi.h")]
@@ -12955,17 +12955,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, char* lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, char* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, ref char lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, ref char lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
@@ -12985,47 +12985,47 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPrefixString, uint uUnique, char* lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPrefixString, uint uUnique, char* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPrefixString, uint uUnique, ref char lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPrefixString, uint uUnique, ref char lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, char* lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, char* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, ref char lpTempFileName);
+        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, ref char lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
+        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPrefixString, uint uUnique, char* lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPrefixString, uint uUnique, char* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPrefixString, uint uUnique, ref char lpTempFileName);
+        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPrefixString, uint uUnique, ref char lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
+        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
@@ -13045,17 +13045,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, char* lpTempFileName);
+        public unsafe partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, char* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, ref char lpTempFileName);
+        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, ref char lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameW")]
-        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
+        public partial uint GetTempFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 853, Column 1 in fileapi.h")]
@@ -14155,362 +14155,362 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, char* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, ref char lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, char* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref char lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationW")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 891, Column 1 in fileapi.h")]
@@ -14890,17 +14890,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 909, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNameW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszFileName, char* lpszVolumePathName, uint cchBufferLength);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszFileName, char* lpszVolumePathName, uint cchBufferLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 909, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNameW")]
-        public partial Silk.NET.Core.Bool32 GetVolumePathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszFileName, ref char lpszVolumePathName, uint cchBufferLength);
+        public partial Silk.NET.Core.Bool32 GetVolumePathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszFileName, ref char lpszVolumePathName, uint cchBufferLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 909, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNameW")]
-        public partial Silk.NET.Core.Bool32 GetVolumePathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszFileName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszVolumePathName, uint cchBufferLength);
+        public partial Silk.NET.Core.Bool32 GetVolumePathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszFileName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszVolumePathName, uint cchBufferLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 909, Column 1 in fileapi.h")]
@@ -14930,12 +14930,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 922, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "LocalFileTimeToFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 LocalFileTimeToFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLocalFileTime, Filetime* lpFileTime);
+        public unsafe partial Silk.NET.Core.Bool32 LocalFileTimeToFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLocalFileTime, Filetime* lpFileTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 922, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "LocalFileTimeToFileTime")]
-        public partial Silk.NET.Core.Bool32 LocalFileTimeToFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLocalFileTime, ref Filetime lpFileTime);
+        public partial Silk.NET.Core.Bool32 LocalFileTimeToFileTime([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLocalFileTime, ref Filetime lpFileTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 930, Column 1 in fileapi.h")]
@@ -14985,17 +14985,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 959, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "QueryDosDeviceW")]
-        public unsafe partial uint QueryDosDeviceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDeviceName, char* lpTargetPath, uint ucchMax);
+        public unsafe partial uint QueryDosDeviceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDeviceName, char* lpTargetPath, uint ucchMax);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 959, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "QueryDosDeviceW")]
-        public partial uint QueryDosDeviceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDeviceName, ref char lpTargetPath, uint ucchMax);
+        public partial uint QueryDosDeviceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDeviceName, ref char lpTargetPath, uint ucchMax);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 959, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "QueryDosDeviceW")]
-        public partial uint QueryDosDeviceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpDeviceName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTargetPath, uint ucchMax);
+        public partial uint QueryDosDeviceW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpDeviceName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpTargetPath, uint ucchMax);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 959, Column 1 in fileapi.h")]
@@ -15220,7 +15220,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1014, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "RemoveDirectoryA")]
-        public partial Silk.NET.Core.Bool32 RemoveDirectoryA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName);
+        public partial Silk.NET.Core.Bool32 RemoveDirectoryA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1014, Column 1 in fileapi.h")]
@@ -15235,7 +15235,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1021, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "RemoveDirectoryW")]
-        public partial Silk.NET.Core.Bool32 RemoveDirectoryW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpPathName);
+        public partial Silk.NET.Core.Bool32 RemoveDirectoryW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpPathName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1021, Column 1 in fileapi.h")]
@@ -15260,7 +15260,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1040, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileAttributesA")]
-        public partial Silk.NET.Core.Bool32 SetFileAttributesA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint dwFileAttributes);
+        public partial Silk.NET.Core.Bool32 SetFileAttributesA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint dwFileAttributes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1040, Column 1 in fileapi.h")]
@@ -15275,7 +15275,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1048, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileAttributesW")]
-        public partial Silk.NET.Core.Bool32 SetFileAttributesW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwFileAttributes);
+        public partial Silk.NET.Core.Bool32 SetFileAttributesW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwFileAttributes);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1048, Column 1 in fileapi.h")]
@@ -15350,37 +15350,37 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime);
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime);
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime);
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime);
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime);
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime);
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime);
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
@@ -15390,37 +15390,37 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Filetime* lpLastWriteTime) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1095, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "SetFileTime")]
-        public partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Filetime lpLastWriteTime) where T0 : unmanaged;
+        public partial Silk.NET.Core.Bool32 SetFileTime<T0>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpCreationTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastAccessTime, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Filetime lpLastWriteTime) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1107, Column 1 in fileapi.h")]
@@ -15485,22 +15485,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
@@ -15525,22 +15525,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T1 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T1 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T1 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T1 lpBuffer, uint nNumberOfBytesToWrite, uint* lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T1 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T1 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, Overlapped* lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1139, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFile")]
-        public partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T1 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
+        public partial Silk.NET.Core.Bool32 WriteFile<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T1 lpBuffer, uint nNumberOfBytesToWrite, ref uint lpNumberOfBytesWritten, ref Overlapped lpOverlapped) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1150, Column 1 in fileapi.h")]
@@ -15555,12 +15555,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1150, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFileEx")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFileEx<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 lpBuffer, uint nNumberOfBytesToWrite, Overlapped* lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFileEx<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 lpBuffer, uint nNumberOfBytesToWrite, Overlapped* lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1150, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFileEx")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFileEx<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 lpBuffer, uint nNumberOfBytesToWrite, ref Overlapped lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFileEx<T0>(void* hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 lpBuffer, uint nNumberOfBytesToWrite, ref Overlapped lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1150, Column 1 in fileapi.h")]
@@ -15575,12 +15575,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1150, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFileEx")]
-        public unsafe partial Silk.NET.Core.Bool32 WriteFileEx<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T1 lpBuffer, uint nNumberOfBytesToWrite, Overlapped* lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged where T1 : unmanaged;
+        public unsafe partial Silk.NET.Core.Bool32 WriteFileEx<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T1 lpBuffer, uint nNumberOfBytesToWrite, Overlapped* lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1150, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "WriteFileEx")]
-        public partial Silk.NET.Core.Bool32 WriteFileEx<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T1 lpBuffer, uint nNumberOfBytesToWrite, ref Overlapped lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged where T1 : unmanaged;
+        public partial Silk.NET.Core.Bool32 WriteFileEx<T0, T1>(ref T0 hFile, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T1 lpBuffer, uint nNumberOfBytesToWrite, ref Overlapped lpOverlapped, PfnLpoverlappedCompletionRoutine lpCompletionRoutine) where T0 : unmanaged where T1 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1161, Column 1 in fileapi.h")]
@@ -15695,17 +15695,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1190, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeNameForVolumeMountPointW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeNameForVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeMountPoint, char* lpszVolumeName, uint cchBufferLength);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeNameForVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeMountPoint, char* lpszVolumeName, uint cchBufferLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1190, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeNameForVolumeMountPointW")]
-        public partial Silk.NET.Core.Bool32 GetVolumeNameForVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeMountPoint, ref char lpszVolumeName, uint cchBufferLength);
+        public partial Silk.NET.Core.Bool32 GetVolumeNameForVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeMountPoint, ref char lpszVolumeName, uint cchBufferLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1190, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeNameForVolumeMountPointW")]
-        public partial Silk.NET.Core.Bool32 GetVolumeNameForVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeMountPoint, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszVolumeName, uint cchBufferLength);
+        public partial Silk.NET.Core.Bool32 GetVolumeNameForVolumeMountPointW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeMountPoint, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpszVolumeName, uint cchBufferLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1190, Column 1 in fileapi.h")]
@@ -15755,32 +15755,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1211, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNamesForVolumeNameW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeName, char* lpszVolumePathNames, uint cchBufferLength, uint* lpcchReturnLength);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeName, char* lpszVolumePathNames, uint cchBufferLength, uint* lpcchReturnLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1211, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNamesForVolumeNameW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeName, char* lpszVolumePathNames, uint cchBufferLength, ref uint lpcchReturnLength);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeName, char* lpszVolumePathNames, uint cchBufferLength, ref uint lpcchReturnLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1211, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNamesForVolumeNameW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeName, ref char lpszVolumePathNames, uint cchBufferLength, uint* lpcchReturnLength);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeName, ref char lpszVolumePathNames, uint cchBufferLength, uint* lpcchReturnLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1211, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNamesForVolumeNameW")]
-        public partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeName, ref char lpszVolumePathNames, uint cchBufferLength, ref uint lpcchReturnLength);
+        public partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeName, ref char lpszVolumePathNames, uint cchBufferLength, ref uint lpcchReturnLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1211, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNamesForVolumeNameW")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string lpszVolumePathNames, uint cchBufferLength, uint* lpcchReturnLength);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string lpszVolumePathNames, uint cchBufferLength, uint* lpcchReturnLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1211, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumePathNamesForVolumeNameW")]
-        public partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpszVolumeName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string lpszVolumePathNames, uint cchBufferLength, ref uint lpcchReturnLength);
+        public partial Silk.NET.Core.Bool32 GetVolumePathNamesForVolumeNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpszVolumeName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string lpszVolumePathNames, uint cchBufferLength, ref uint lpcchReturnLength);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1211, Column 1 in fileapi.h")]
@@ -15825,12 +15825,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1244, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFile2")]
-        public unsafe partial void* CreateFile2([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwDesiredAccess, uint dwShareMode, uint dwCreationDisposition, Createfile2ExtendedParameters* pCreateExParams);
+        public unsafe partial void* CreateFile2([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwDesiredAccess, uint dwShareMode, uint dwCreationDisposition, Createfile2ExtendedParameters* pCreateExParams);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1244, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "CreateFile2")]
-        public unsafe partial void* CreateFile2([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwDesiredAccess, uint dwShareMode, uint dwCreationDisposition, ref Createfile2ExtendedParameters pCreateExParams);
+        public unsafe partial void* CreateFile2([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwDesiredAccess, uint dwShareMode, uint dwCreationDisposition, ref Createfile2ExtendedParameters pCreateExParams);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1244, Column 1 in fileapi.h")]
@@ -15885,12 +15885,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1278, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetCompressedFileSizeA")]
-        public unsafe partial uint GetCompressedFileSizeA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint* lpFileSizeHigh);
+        public unsafe partial uint GetCompressedFileSizeA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint* lpFileSizeHigh);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1278, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetCompressedFileSizeA")]
-        public partial uint GetCompressedFileSizeA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, ref uint lpFileSizeHigh);
+        public partial uint GetCompressedFileSizeA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, ref uint lpFileSizeHigh);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1278, Column 1 in fileapi.h")]
@@ -15915,12 +15915,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1286, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetCompressedFileSizeW")]
-        public unsafe partial uint GetCompressedFileSizeW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint* lpFileSizeHigh);
+        public unsafe partial uint GetCompressedFileSizeW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint* lpFileSizeHigh);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1286, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetCompressedFileSizeW")]
-        public partial uint GetCompressedFileSizeW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, ref uint lpFileSizeHigh);
+        public partial uint GetCompressedFileSizeW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, ref uint lpFileSizeHigh);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1286, Column 1 in fileapi.h")]
@@ -15945,12 +15945,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1317, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstStreamW")]
-        public unsafe partial void* FindFirstStreamW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, StreamInfoLevels InfoLevel, void* lpFindStreamData, uint dwFlags);
+        public unsafe partial void* FindFirstStreamW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, StreamInfoLevels InfoLevel, void* lpFindStreamData, uint dwFlags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1317, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstStreamW")]
-        public unsafe partial void* FindFirstStreamW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, StreamInfoLevels InfoLevel, ref T0 lpFindStreamData, uint dwFlags) where T0 : unmanaged;
+        public unsafe partial void* FindFirstStreamW<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, StreamInfoLevels InfoLevel, ref T0 lpFindStreamData, uint dwFlags) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1317, Column 1 in fileapi.h")]
@@ -16035,32 +16035,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1376, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileNameW")]
-        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwFlags, uint* StringLength, char* LinkName);
+        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwFlags, uint* StringLength, char* LinkName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1376, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileNameW")]
-        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwFlags, uint* StringLength, ref char LinkName);
+        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwFlags, uint* StringLength, ref char LinkName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1376, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileNameW")]
-        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwFlags, uint* StringLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LinkName);
+        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwFlags, uint* StringLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LinkName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1376, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileNameW")]
-        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwFlags, ref uint StringLength, char* LinkName);
+        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwFlags, ref uint StringLength, char* LinkName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1376, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileNameW")]
-        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwFlags, ref uint StringLength, ref char LinkName);
+        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwFlags, ref uint StringLength, ref char LinkName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1376, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "FindFirstFileNameW")]
-        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint dwFlags, ref uint StringLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LinkName);
+        public unsafe partial void* FindFirstFileNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint dwFlags, ref uint StringLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LinkName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1376, Column 1 in fileapi.h")]
@@ -16515,362 +16515,362 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, byte* lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, ref byte lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, uint* lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, uint* lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, uint* lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public unsafe partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, byte* lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, ref byte lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetVolumeInformationA")]
-        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
+        public partial Silk.NET.Core.Bool32 GetVolumeInformationA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpRootPathName, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpVolumeNameBuffer, uint nVolumeNameSize, ref uint lpVolumeSerialNumber, ref uint lpMaximumComponentLength, ref uint lpFileSystemFlags, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpFileSystemNameBuffer, uint nFileSystemNameSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1403, Column 1 in fileapi.h")]
@@ -17250,17 +17250,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, byte* lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, byte* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, ref byte lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, ref byte lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
@@ -17280,47 +17280,47 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPrefixString, uint uUnique, byte* lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPrefixString, uint uUnique, byte* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPrefixString, uint uUnique, ref byte lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPrefixString, uint uUnique, ref byte lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, byte* lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, byte* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, ref byte lpTempFileName);
+        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, ref byte lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
+        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPrefixString, uint uUnique, byte* lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPrefixString, uint uUnique, byte* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPrefixString, uint uUnique, ref byte lpTempFileName);
+        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPrefixString, uint uUnique, ref byte lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
+        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
@@ -17340,17 +17340,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, byte* lpTempFileName);
+        public unsafe partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, byte* lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, ref byte lpTempFileName);
+        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, ref byte lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
         [NativeApi(EntryPoint = "GetTempFileNameA")]
-        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
+        public partial uint GetTempFileNameA([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpPathName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpPrefixString, uint uUnique, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpTempFileName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1427, Column 1 in fileapi.h")]
@@ -17940,12 +17940,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_RemoteWrite_Proxy")]
-        public unsafe partial int ISequentialStreamRemoteWriteProxy(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ISequentialStreamRemoteWriteProxy(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_RemoteWrite_Proxy")]
-        public unsafe partial int ISequentialStreamRemoteWriteProxy(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int ISequentialStreamRemoteWriteProxy(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
@@ -17970,12 +17970,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_RemoteWrite_Proxy")]
-        public unsafe partial int ISequentialStreamRemoteWriteProxy(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ISequentialStreamRemoteWriteProxy(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_RemoteWrite_Proxy")]
-        public partial int ISequentialStreamRemoteWriteProxy(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int ISequentialStreamRemoteWriteProxy(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
@@ -18600,12 +18600,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8496, Column 41 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Proxy")]
-        public unsafe partial int ISequentialStreamWriteProxy<T0>(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int ISequentialStreamWriteProxy<T0>(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8496, Column 41 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Proxy")]
-        public unsafe partial int ISequentialStreamWriteProxy<T0>(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public unsafe partial int ISequentialStreamWriteProxy<T0>(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8496, Column 41 in objidlbase.h")]
@@ -18620,12 +18620,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8496, Column 41 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Proxy")]
-        public unsafe partial int ISequentialStreamWriteProxy<T0>(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int ISequentialStreamWriteProxy<T0>(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8496, Column 41 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Proxy")]
-        public partial int ISequentialStreamWriteProxy<T0>(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public partial int ISequentialStreamWriteProxy<T0>(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
@@ -18640,12 +18640,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Stub")]
-        public unsafe partial int ISequentialStreamWriteStub(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ISequentialStreamWriteStub(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Stub")]
-        public unsafe partial int ISequentialStreamWriteStub(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int ISequentialStreamWriteStub(ISequentialStream* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
@@ -18670,12 +18670,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Stub")]
-        public unsafe partial int ISequentialStreamWriteStub(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ISequentialStreamWriteStub(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
         [NativeApi(EntryPoint = "ISequentialStream_Write_Stub")]
-        public partial int ISequentialStreamWriteStub(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int ISequentialStreamWriteStub(ref ISequentialStream This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
@@ -19930,32 +19930,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
@@ -20020,32 +20020,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteOpenStream_Proxy")]
-        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageRemoteOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
@@ -20180,22 +20180,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
@@ -20220,22 +20220,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_RemoteCopyTo_Proxy")]
-        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11023, Column 17 in objidl.h")]
@@ -20610,12 +20610,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_RemoteWriteAt_Proxy")]
-        public unsafe partial int ILockBytesRemoteWriteAtProxy(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ILockBytesRemoteWriteAtProxy(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_RemoteWriteAt_Proxy")]
-        public unsafe partial int ILockBytesRemoteWriteAtProxy(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int ILockBytesRemoteWriteAtProxy(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
@@ -20640,12 +20640,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_RemoteWriteAt_Proxy")]
-        public unsafe partial int ILockBytesRemoteWriteAtProxy(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ILockBytesRemoteWriteAtProxy(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_RemoteWriteAt_Proxy")]
-        public partial int ILockBytesRemoteWriteAtProxy(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int ILockBytesRemoteWriteAtProxy(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
@@ -23070,12 +23070,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAppend_Proxy")]
-        public unsafe partial int IFillLockBytesRemoteFillAppendProxy(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesRemoteFillAppendProxy(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAppend_Proxy")]
-        public unsafe partial int IFillLockBytesRemoteFillAppendProxy(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int IFillLockBytesRemoteFillAppendProxy(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
@@ -23100,12 +23100,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAppend_Proxy")]
-        public unsafe partial int IFillLockBytesRemoteFillAppendProxy(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesRemoteFillAppendProxy(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAppend_Proxy")]
-        public partial int IFillLockBytesRemoteFillAppendProxy(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int IFillLockBytesRemoteFillAppendProxy(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
@@ -23210,12 +23210,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAt_Proxy")]
-        public unsafe partial int IFillLockBytesRemoteFillAtProxy(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesRemoteFillAtProxy(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAt_Proxy")]
-        public unsafe partial int IFillLockBytesRemoteFillAtProxy(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int IFillLockBytesRemoteFillAtProxy(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
@@ -23240,12 +23240,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAt_Proxy")]
-        public unsafe partial int IFillLockBytesRemoteFillAtProxy(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesRemoteFillAtProxy(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_RemoteFillAt_Proxy")]
-        public partial int IFillLockBytesRemoteFillAtProxy(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int IFillLockBytesRemoteFillAtProxy(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
@@ -29124,22 +29124,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, void* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, void* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamProxy(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy<T0>(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm) where T0 : unmanaged;
+        public unsafe partial int IStorageOpenStreamProxy<T0>(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy<T0>(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where T0 : unmanaged;
+        public unsafe partial int IStorageOpenStreamProxy<T0>(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
@@ -29184,22 +29184,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, void* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, void* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamProxy(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy<T0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm) where T0 : unmanaged;
+        public unsafe partial int IStorageOpenStreamProxy<T0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Proxy")]
-        public unsafe partial int IStorageOpenStreamProxy<T0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where T0 : unmanaged;
+        public unsafe partial int IStorageOpenStreamProxy<T0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
@@ -29254,32 +29254,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamStub(IStorage* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
@@ -29344,32 +29344,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
+        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, Silk.NET.Core.Win32Extras.IStream** ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_OpenStream_Stub")]
-        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
+        public unsafe partial int IStorageOpenStreamStub(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
@@ -29424,22 +29424,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
@@ -29464,22 +29464,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Proxy")]
-        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
@@ -29504,22 +29504,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
@@ -29544,22 +29544,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
+        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, IStorage* pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "IStorage_CopyTo_Stub")]
-        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
+        public unsafe partial int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15772, Column 41 in objidl.h")]
@@ -29774,12 +29774,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15809, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Proxy")]
-        public unsafe partial int ILockBytesWriteAtProxy<T0>(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int ILockBytesWriteAtProxy<T0>(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15809, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Proxy")]
-        public unsafe partial int ILockBytesWriteAtProxy<T0>(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public unsafe partial int ILockBytesWriteAtProxy<T0>(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15809, Column 41 in objidl.h")]
@@ -29794,12 +29794,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15809, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Proxy")]
-        public unsafe partial int ILockBytesWriteAtProxy<T0>(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int ILockBytesWriteAtProxy<T0>(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15809, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Proxy")]
-        public partial int ILockBytesWriteAtProxy<T0>(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public partial int ILockBytesWriteAtProxy<T0>(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
@@ -29814,12 +29814,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Stub")]
-        public unsafe partial int ILockBytesWriteAtStub(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ILockBytesWriteAtStub(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Stub")]
-        public unsafe partial int ILockBytesWriteAtStub(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int ILockBytesWriteAtStub(ILockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
@@ -29844,12 +29844,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Stub")]
-        public unsafe partial int ILockBytesWriteAtStub(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int ILockBytesWriteAtStub(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
         [NativeApi(EntryPoint = "ILockBytes_WriteAt_Stub")]
-        public partial int ILockBytesWriteAtStub(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int ILockBytesWriteAtStub(ref ILockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
@@ -30834,12 +30834,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16055, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Proxy")]
-        public unsafe partial int IFillLockBytesFillAppendProxy<T0>(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int IFillLockBytesFillAppendProxy<T0>(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16055, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Proxy")]
-        public unsafe partial int IFillLockBytesFillAppendProxy<T0>(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public unsafe partial int IFillLockBytesFillAppendProxy<T0>(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16055, Column 41 in objidl.h")]
@@ -30854,12 +30854,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16055, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Proxy")]
-        public unsafe partial int IFillLockBytesFillAppendProxy<T0>(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int IFillLockBytesFillAppendProxy<T0>(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16055, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Proxy")]
-        public partial int IFillLockBytesFillAppendProxy<T0>(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public partial int IFillLockBytesFillAppendProxy<T0>(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
@@ -30874,12 +30874,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Stub")]
-        public unsafe partial int IFillLockBytesFillAppendStub(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesFillAppendStub(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Stub")]
-        public unsafe partial int IFillLockBytesFillAppendStub(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int IFillLockBytesFillAppendStub(IFillLockBytes* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
@@ -30904,12 +30904,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Stub")]
-        public unsafe partial int IFillLockBytesFillAppendStub(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesFillAppendStub(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAppend_Stub")]
-        public partial int IFillLockBytesFillAppendStub(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int IFillLockBytesFillAppendStub(ref IFillLockBytes This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
@@ -30934,12 +30934,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16071, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Proxy")]
-        public unsafe partial int IFillLockBytesFillAtProxy<T0>(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int IFillLockBytesFillAtProxy<T0>(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16071, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Proxy")]
-        public unsafe partial int IFillLockBytesFillAtProxy<T0>(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public unsafe partial int IFillLockBytesFillAtProxy<T0>(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16071, Column 41 in objidl.h")]
@@ -30954,12 +30954,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16071, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Proxy")]
-        public unsafe partial int IFillLockBytesFillAtProxy<T0>(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
+        public unsafe partial int IFillLockBytesFillAtProxy<T0>(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16071, Column 41 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Proxy")]
-        public partial int IFillLockBytesFillAtProxy<T0>(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
+        public partial int IFillLockBytesFillAtProxy<T0>(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
@@ -30974,12 +30974,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Stub")]
-        public unsafe partial int IFillLockBytesFillAtStub(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesFillAtStub(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Stub")]
-        public unsafe partial int IFillLockBytesFillAtStub(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public unsafe partial int IFillLockBytesFillAtStub(IFillLockBytes* This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
@@ -31004,12 +31004,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Stub")]
-        public unsafe partial int IFillLockBytesFillAtStub(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten);
+        public unsafe partial int IFillLockBytesFillAtStub(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
         [NativeApi(EntryPoint = "IFillLockBytes_FillAt_Stub")]
-        public partial int IFillLockBytesFillAtStub(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten);
+        public partial int IFillLockBytesFillAtStub(ref IFillLockBytes This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
@@ -38094,42 +38094,42 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
@@ -38214,42 +38214,42 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_RemoteRead_Proxy")]
-        public partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public partial int IPropertyBagRemoteReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
@@ -47418,22 +47418,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog);
+        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog);
+        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog);
+        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog);
+        public unsafe partial int IPropertyBagReadProxy(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
@@ -47478,22 +47478,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public unsafe partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog);
+        public unsafe partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public unsafe partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog);
+        public unsafe partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public unsafe partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog);
+        public unsafe partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Proxy")]
-        public partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog);
+        public partial int IPropertyBagReadProxy(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
@@ -47558,42 +47558,42 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(IPropertyBag* This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
@@ -47678,42 +47678,42 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, IErrorLog* pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
+        public unsafe partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, Silk.NET.Core.Native.IUnknown* pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
         [NativeApi(EntryPoint = "IPropertyBag_Read_Stub")]
-        public partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
+        public partial int IPropertyBagReadStub(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
@@ -48771,7 +48771,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1215, Column 26 in propidl.h")]
         [NativeApi(EntryPoint = "PropVariantCopy")]
-        public unsafe partial int PropVariantCopy(PropVariant* pvarDest, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvarSrc);
+        public unsafe partial int PropVariantCopy(PropVariant* pvarDest, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvarSrc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1215, Column 26 in propidl.h")]
@@ -48781,7 +48781,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1215, Column 26 in propidl.h")]
         [NativeApi(EntryPoint = "PropVariantCopy")]
-        public partial int PropVariantCopy(ref PropVariant pvarDest, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvarSrc);
+        public partial int PropVariantCopy(ref PropVariant pvarDest, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvarSrc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1219, Column 11 in propidl.h")]
@@ -48846,42 +48846,42 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, uint* pcb, uint pid, byte fReserved, uint* pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, uint* pcb, uint pid, byte fReserved, uint* pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, uint* pcb, uint pid, byte fReserved, ref uint pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, uint* pcb, uint pid, byte fReserved, ref uint pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, ref uint pcb, uint pid, byte fReserved, uint* pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, ref uint pcb, uint pid, byte fReserved, uint* pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, ref uint pcb, uint pid, byte fReserved, ref uint pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, SerializedPropertyValue* pprop, ref uint pcb, uint pid, byte fReserved, ref uint pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, uint* pcb, uint pid, byte fReserved, uint* pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, uint* pcb, uint pid, byte fReserved, uint* pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, uint* pcb, uint pid, byte fReserved, ref uint pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, uint* pcb, uint pid, byte fReserved, ref uint pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, ref uint pcb, uint pid, byte fReserved, uint* pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, ref uint pcb, uint pid, byte fReserved, uint* pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1265, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertVariantToProperty")]
-        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, ref uint pcb, uint pid, byte fReserved, ref uint pcIndirect);
+        public unsafe partial SerializedPropertyValue* StgConvertVariantToProperty([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly PropVariant pvar, ushort CodePage, ref SerializedPropertyValue pprop, ref uint pcb, uint pid, byte fReserved, ref uint pcIndirect);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1280, Column 1 in propidl.h")]
@@ -48896,12 +48896,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1280, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertPropertyToVariant")]
-        public unsafe partial byte StgConvertPropertyToVariant([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SerializedPropertyValue pprop, ushort CodePage, PropVariant* pvar, PMemoryAllocator* pma);
+        public unsafe partial byte StgConvertPropertyToVariant([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SerializedPropertyValue pprop, ushort CodePage, PropVariant* pvar, PMemoryAllocator* pma);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1280, Column 1 in propidl.h")]
         [NativeApi(EntryPoint = "StgConvertPropertyToVariant")]
-        public unsafe partial byte StgConvertPropertyToVariant([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SerializedPropertyValue pprop, ushort CodePage, ref PropVariant pvar, PMemoryAllocator* pma);
+        public unsafe partial byte StgConvertPropertyToVariant([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SerializedPropertyValue pprop, ushort CodePage, ref PropVariant pvar, PMemoryAllocator* pma);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 588, Column 43 in ocidl.h")]
@@ -53996,22 +53996,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 542, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventRegister")]
-        public unsafe partial uint EventRegister([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, PfnPenablecallback EnableCallback, void* CallbackContext, ulong* RegHandle);
+        public unsafe partial uint EventRegister([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, PfnPenablecallback EnableCallback, void* CallbackContext, ulong* RegHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 542, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventRegister")]
-        public unsafe partial uint EventRegister([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, PfnPenablecallback EnableCallback, void* CallbackContext, ref ulong RegHandle);
+        public unsafe partial uint EventRegister([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, PfnPenablecallback EnableCallback, void* CallbackContext, ref ulong RegHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 542, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventRegister")]
-        public unsafe partial uint EventRegister<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, PfnPenablecallback EnableCallback, ref T0 CallbackContext, ulong* RegHandle) where T0 : unmanaged;
+        public unsafe partial uint EventRegister<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, PfnPenablecallback EnableCallback, ref T0 CallbackContext, ulong* RegHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 542, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventRegister")]
-        public partial uint EventRegister<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, PfnPenablecallback EnableCallback, ref T0 CallbackContext, ref ulong RegHandle) where T0 : unmanaged;
+        public partial uint EventRegister<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, PfnPenablecallback EnableCallback, ref T0 CallbackContext, ref ulong RegHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 556, Column 1 in evntprov.h")]
@@ -54036,7 +54036,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 612, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventEnabled")]
-        public partial byte EventEnabled(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor);
+        public partial byte EventEnabled(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 653, Column 1 in evntprov.h")]
@@ -54056,12 +54056,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 678, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWrite")]
-        public unsafe partial uint EventWrite(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWrite(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 678, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWrite")]
-        public partial uint EventWrite(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, uint UserDataCount, ref EventDataDescriptor UserData);
+        public partial uint EventWrite(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
@@ -54076,72 +54076,72 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 703, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteTransfer")]
-        public partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public partial uint EventWriteTransfer(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
@@ -54156,72 +54156,72 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EventDescriptor* EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
+        public unsafe partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, EventDataDescriptor* UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 737, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteEx")]
-        public partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
+        public partial uint EventWriteEx(ulong RegHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EventDescriptor EventDescriptor, ulong Filter, uint Flags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ActivityId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid RelatedActivityId, uint UserDataCount, ref EventDataDescriptor UserData);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 755, Column 1 in evntprov.h")]
@@ -54231,7 +54231,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 755, Column 1 in evntprov.h")]
         [NativeApi(EntryPoint = "EventWriteString")]
-        public partial uint EventWriteString(ulong RegHandle, byte Level, ulong Keyword, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char String);
+        public partial uint EventWriteString(ulong RegHandle, byte Level, ulong Keyword, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char String);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 755, Column 1 in evntprov.h")]
@@ -54261,12 +54261,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceW")]
-        public unsafe partial uint StartTraceW(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint StartTraceW(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceW")]
-        public unsafe partial uint StartTraceW(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, ref EventTraceProperties Properties);
+        public unsafe partial uint StartTraceW(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
@@ -54291,12 +54291,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceW")]
-        public unsafe partial uint StartTraceW(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint StartTraceW(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceW")]
-        public partial uint StartTraceW(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, ref EventTraceProperties Properties);
+        public partial uint StartTraceW(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1704, Column 1 in evntrace.h")]
@@ -54321,12 +54321,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceA")]
-        public unsafe partial uint StartTraceA(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint StartTraceA(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceA")]
-        public unsafe partial uint StartTraceA(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, ref EventTraceProperties Properties);
+        public unsafe partial uint StartTraceA(ulong* TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
@@ -54351,12 +54351,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceA")]
-        public unsafe partial uint StartTraceA(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint StartTraceA(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StartTraceA")]
-        public partial uint StartTraceA(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, ref EventTraceProperties Properties);
+        public partial uint StartTraceA(ref ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1719, Column 1 in evntrace.h")]
@@ -54381,12 +54381,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1738, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StopTraceW")]
-        public unsafe partial uint StopTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint StopTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1738, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StopTraceW")]
-        public partial uint StopTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, ref EventTraceProperties Properties);
+        public partial uint StopTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1738, Column 1 in evntrace.h")]
@@ -54411,12 +54411,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1753, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StopTraceA")]
-        public unsafe partial uint StopTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint StopTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1753, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "StopTraceA")]
-        public partial uint StopTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, ref EventTraceProperties Properties);
+        public partial uint StopTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1753, Column 1 in evntrace.h")]
@@ -54441,12 +54441,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1772, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "QueryTraceW")]
-        public unsafe partial uint QueryTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint QueryTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1772, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "QueryTraceW")]
-        public partial uint QueryTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, ref EventTraceProperties Properties);
+        public partial uint QueryTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1772, Column 1 in evntrace.h")]
@@ -54471,12 +54471,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1787, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "QueryTraceA")]
-        public unsafe partial uint QueryTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint QueryTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1787, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "QueryTraceA")]
-        public partial uint QueryTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, ref EventTraceProperties Properties);
+        public partial uint QueryTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1787, Column 1 in evntrace.h")]
@@ -54501,12 +54501,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1800, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "UpdateTraceW")]
-        public unsafe partial uint UpdateTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint UpdateTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1800, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "UpdateTraceW")]
-        public partial uint UpdateTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, ref EventTraceProperties Properties);
+        public partial uint UpdateTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1800, Column 1 in evntrace.h")]
@@ -54531,12 +54531,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1809, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "UpdateTraceA")]
-        public unsafe partial uint UpdateTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint UpdateTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1809, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "UpdateTraceA")]
-        public partial uint UpdateTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, ref EventTraceProperties Properties);
+        public partial uint UpdateTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1809, Column 1 in evntrace.h")]
@@ -54561,12 +54561,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1830, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "FlushTraceW")]
-        public unsafe partial uint FlushTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint FlushTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1830, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "FlushTraceW")]
-        public partial uint FlushTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, ref EventTraceProperties Properties);
+        public partial uint FlushTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1830, Column 1 in evntrace.h")]
@@ -54591,12 +54591,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1847, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "FlushTraceA")]
-        public unsafe partial uint FlushTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, EventTraceProperties* Properties);
+        public unsafe partial uint FlushTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, EventTraceProperties* Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1847, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "FlushTraceA")]
-        public partial uint FlushTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, ref EventTraceProperties Properties);
+        public partial uint FlushTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, ref EventTraceProperties Properties);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1847, Column 1 in evntrace.h")]
@@ -54621,12 +54621,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1866, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "ControlTraceW")]
-        public unsafe partial uint ControlTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, EventTraceProperties* Properties, uint ControlCode);
+        public unsafe partial uint ControlTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, EventTraceProperties* Properties, uint ControlCode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1866, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "ControlTraceW")]
-        public partial uint ControlTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char InstanceName, ref EventTraceProperties Properties, uint ControlCode);
+        public partial uint ControlTraceW(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char InstanceName, ref EventTraceProperties Properties, uint ControlCode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1866, Column 1 in evntrace.h")]
@@ -54651,12 +54651,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1882, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "ControlTraceA")]
-        public unsafe partial uint ControlTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, EventTraceProperties* Properties, uint ControlCode);
+        public unsafe partial uint ControlTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, EventTraceProperties* Properties, uint ControlCode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1882, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "ControlTraceA")]
-        public partial uint ControlTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte InstanceName, ref EventTraceProperties Properties, uint ControlCode);
+        public partial uint ControlTraceA(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte InstanceName, ref EventTraceProperties Properties, uint ControlCode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1882, Column 1 in evntrace.h")]
@@ -54716,7 +54716,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1920, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTrace")]
-        public partial uint EnableTrace(uint Enable, uint EnableFlag, uint EnableLevel, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, ulong TraceId);
+        public partial uint EnableTrace(uint Enable, uint EnableFlag, uint EnableLevel, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, ulong TraceId);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
@@ -54731,32 +54731,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx")]
-        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc);
+        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx")]
-        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, ref EventFilterDescriptor EnableFilterDesc);
+        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, ref EventFilterDescriptor EnableFilterDesc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx")]
-        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc);
+        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx")]
-        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, ref EventFilterDescriptor EnableFilterDesc);
+        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, ref EventFilterDescriptor EnableFilterDesc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx")]
-        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc);
+        public unsafe partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, EventFilterDescriptor* EnableFilterDesc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1942, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx")]
-        public partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, ref EventFilterDescriptor EnableFilterDesc);
+        public partial uint EnableTraceEx([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid SourceId, ulong TraceId, uint IsEnabled, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint EnableProperty, ref EventFilterDescriptor EnableFilterDesc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1989, Column 1 in evntrace.h")]
@@ -54771,12 +54771,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1989, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx2")]
-        public unsafe partial uint EnableTraceEx2(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, uint ControlCode, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint Timeout, EnableTraceParameters* EnableParameters);
+        public unsafe partial uint EnableTraceEx2(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, uint ControlCode, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint Timeout, EnableTraceParameters* EnableParameters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1989, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "EnableTraceEx2")]
-        public partial uint EnableTraceEx2(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ProviderId, uint ControlCode, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint Timeout, ref EnableTraceParameters EnableParameters);
+        public partial uint EnableTraceEx2(ulong TraceId, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ProviderId, uint ControlCode, byte Level, ulong MatchAnyKeyword, ulong MatchAllKeyword, uint Timeout, ref EnableTraceParameters EnableParameters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2382, Column 1 in evntrace.h")]
@@ -54931,12 +54931,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -54951,32 +54951,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -54991,12 +54991,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55021,12 +55021,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55041,32 +55041,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55081,12 +55081,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55101,182 +55101,182 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsW(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55291,12 +55291,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55311,32 +55311,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55351,12 +55351,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55381,12 +55381,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55401,32 +55401,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55441,12 +55441,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
@@ -55461,182 +55461,182 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] char* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2537, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsW")]
-        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsW<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -55651,12 +55651,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -55671,32 +55671,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -55711,12 +55711,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -55741,12 +55741,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -55761,32 +55761,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -55801,12 +55801,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -55821,182 +55821,182 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
+        public unsafe partial uint RegisterTraceGuidsA(PfnWmidprequest RequestAddress, void* RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -56011,12 +56011,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -56031,32 +56031,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -56071,12 +56071,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -56101,12 +56101,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -56121,32 +56121,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -56161,12 +56161,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] Guid* ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
@@ -56181,182 +56181,182 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, TraceGuidRegistration* TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
+        public unsafe partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ulong* RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2557, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RegisterTraceGuidsA")]
-        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
+        public partial uint RegisterTraceGuidsA<T0>(PfnWmidprequest RequestAddress, ref T0 RequestContext, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid ControlGuid, uint GuidCount, ref TraceGuidRegistration TraceGuidReg, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofImagePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string MofResourceName, ref ulong RegistrationHandle) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2572, Column 1 in evntrace.h")]
@@ -56471,12 +56471,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2655, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromBufferStream")]
-        public unsafe partial ulong OpenTraceFromBufferStream([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, PfnPetwBufferCompletionCallback BufferCompletionCallback, void* BufferCompletionContext);
+        public unsafe partial ulong OpenTraceFromBufferStream([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, PfnPetwBufferCompletionCallback BufferCompletionCallback, void* BufferCompletionContext);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2655, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromBufferStream")]
-        public partial ulong OpenTraceFromBufferStream<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, PfnPetwBufferCompletionCallback BufferCompletionCallback, ref T0 BufferCompletionContext) where T0 : unmanaged;
+        public partial ulong OpenTraceFromBufferStream<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, PfnPetwBufferCompletionCallback BufferCompletionCallback, ref T0 BufferCompletionContext) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
@@ -56491,32 +56491,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
+        public partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
@@ -56531,12 +56531,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2666, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLogger")]
-        public partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
+        public partial ulong OpenTraceFromRealTimeLogger([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
@@ -56561,62 +56561,62 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
+        public partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
@@ -56641,22 +56641,22 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, void* MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
+        public unsafe partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, TraceLogfileHeader* LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2677, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromRealTimeLoggerWithAllocationOptions")]
-        public partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
+        public partial ulong OpenTraceFromRealTimeLoggerWithAllocationOptions<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LoggerName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, nuint AllocationSize, ref T0 MemoryPartitionHandle, ref TraceLogfileHeader LogFileHeader) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
@@ -56671,32 +56671,32 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] char* LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, ref TraceLogfileHeader LogFileHeader);
+        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] EtwOpenTraceOptions* Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
+        public partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
@@ -56711,12 +56711,12 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
+        public unsafe partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, TraceLogfileHeader* LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2690, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "OpenTraceFromFile")]
-        public partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
+        public partial ulong OpenTraceFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string LogFileName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwOpenTraceOptions Options, ref TraceLogfileHeader LogFileHeader);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2701, Column 1 in evntrace.h")]
@@ -56726,7 +56726,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2701, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "ProcessTraceBufferIncrementReference")]
-        public partial uint ProcessTraceBufferIncrementReference(ulong TraceHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwBufferHeader Buffer);
+        public partial uint ProcessTraceBufferIncrementReference(ulong TraceHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwBufferHeader Buffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2711, Column 1 in evntrace.h")]
@@ -56736,7 +56736,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2711, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "ProcessTraceBufferDecrementReference")]
-        public partial uint ProcessTraceBufferDecrementReference([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwBufferHeader Buffer);
+        public partial uint ProcessTraceBufferDecrementReference([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwBufferHeader Buffer);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2720, Column 1 in evntrace.h")]
@@ -56746,7 +56746,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2720, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "ProcessTraceAddBufferToBufferStream")]
-        public partial uint ProcessTraceAddBufferToBufferStream(ulong TraceHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in EtwBufferHeader Buffer, uint BufferSize);
+        public partial uint ProcessTraceAddBufferToBufferStream(ulong TraceHandle, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly EtwBufferHeader Buffer, uint BufferSize);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2757, Column 1 in evntrace.h")]
@@ -56806,7 +56806,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2787, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "SetTraceCallback")]
-        public partial uint SetTraceCallback([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid pGuid, PfnPeventCallback EventCallback);
+        public partial uint SetTraceCallback([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid pGuid, PfnPeventCallback EventCallback);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2795, Column 1 in evntrace.h")]
@@ -56816,7 +56816,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2795, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "RemoveTraceCallback")]
-        public partial uint RemoveTraceCallback([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid pGuid);
+        public partial uint RemoveTraceCallback([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid pGuid);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2812, Column 1 in evntrace.h")]
@@ -56826,7 +56826,7 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2812, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "TraceMessage")]
-        public partial uint TraceMessage(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid MessageGuid, ushort MessageNumber);
+        public partial uint TraceMessage(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid MessageGuid, ushort MessageNumber);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
@@ -56846,17 +56846,17 @@ namespace Silk.NET.Core.Win32Extras
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "TraceMessageVa")]
-        public unsafe partial uint TraceMessageVa(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid MessageGuid, ushort MessageNumber, byte* MessageArgList);
+        public unsafe partial uint TraceMessageVa(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid MessageGuid, ushort MessageNumber, byte* MessageArgList);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "TraceMessageVa")]
-        public partial uint TraceMessageVa(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid MessageGuid, ushort MessageNumber, ref byte MessageArgList);
+        public partial uint TraceMessageVa(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid MessageGuid, ushort MessageNumber, ref byte MessageArgList);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2828, Column 1 in evntrace.h")]
         [NativeApi(EntryPoint = "TraceMessageVa")]
-        public partial uint TraceMessageVa(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid MessageGuid, ushort MessageNumber, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string MessageArgList);
+        public partial uint TraceMessageVa(ulong LoggerHandle, uint MessageFlags, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid MessageGuid, ushort MessageNumber, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string MessageArgList);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
@@ -56896,7 +56896,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
-        public unsafe uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, char* lpBuffer, string[] lpFilePartSa)
+        public unsafe uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, char* lpBuffer, string[] lpFilePartSa)
         {
             // StringArrayOverloader
             var lpFilePart = (char**) SilkMarshal.StringArrayToPtr(lpFilePartSa);
@@ -56908,7 +56908,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
-        public unsafe uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, ref char lpBuffer, string[] lpFilePartSa)
+        public unsafe uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, ref char lpBuffer, string[] lpFilePartSa)
         {
             // StringArrayOverloader
             var lpFilePart = (char**) SilkMarshal.StringArrayToPtr(lpFilePartSa);
@@ -56920,7 +56920,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 727, Column 1 in fileapi.h")]
-        public unsafe uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpBuffer, string[] lpFilePartSa)
+        public unsafe uint GetFullPathNameW([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPWStr)] string lpBuffer, string[] lpFilePartSa)
         {
             // StringArrayOverloader
             var lpFilePart = (char**) SilkMarshal.StringArrayToPtr(lpFilePartSa);
@@ -57004,7 +57004,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
-        public unsafe uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, byte* lpBuffer, string[] lpFilePartSa)
+        public unsafe uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, byte* lpBuffer, string[] lpFilePartSa)
         {
             // StringArrayOverloader
             var lpFilePart = (byte**) SilkMarshal.StringArrayToPtr(lpFilePartSa);
@@ -57016,7 +57016,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
-        public unsafe uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, ref byte lpBuffer, string[] lpFilePartSa)
+        public unsafe uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, ref byte lpBuffer, string[] lpFilePartSa)
         {
             // StringArrayOverloader
             var lpFilePart = (byte**) SilkMarshal.StringArrayToPtr(lpFilePartSa);
@@ -57028,7 +57028,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 742, Column 1 in fileapi.h")]
-        public unsafe uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpBuffer, string[] lpFilePartSa)
+        public unsafe uint GetFullPathNameA([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte lpFileName, uint nBufferLength, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPStr)] string lpBuffer, string[] lpFilePartSa)
         {
             // StringArrayOverloader
             var lpFilePart = (byte**) SilkMarshal.StringArrayToPtr(lpFilePartSa);
@@ -57556,7 +57556,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
-        public unsafe int ISequentialStreamRemoteWriteProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
+        public unsafe int ISequentialStreamRemoteWriteProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ISequentialStreamRemoteWriteProxy((ISequentialStream*) This.Handle, in pv, cb, pcbWritten);
@@ -57564,7 +57564,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2287, Column 43 in objidlbase.h")]
-        public unsafe int ISequentialStreamRemoteWriteProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
+        public unsafe int ISequentialStreamRemoteWriteProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ISequentialStreamRemoteWriteProxy((ISequentialStream*) This.Handle, in pv, cb, ref pcbWritten);
@@ -58340,7 +58340,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8496, Column 41 in objidlbase.h")]
-        public unsafe int ISequentialStreamWriteProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
+        public unsafe int ISequentialStreamWriteProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ISequentialStreamWriteProxy((ISequentialStream*) This.Handle, in pv, cb, pcbWritten);
@@ -58348,7 +58348,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8496, Column 41 in objidlbase.h")]
-        public unsafe int ISequentialStreamWriteProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
+        public unsafe int ISequentialStreamWriteProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ISequentialStreamWriteProxy((ISequentialStream*) This.Handle, in pv, cb, ref pcbWritten);
@@ -58372,7 +58372,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
-        public unsafe int ISequentialStreamWriteStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
+        public unsafe int ISequentialStreamWriteStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ISequentialStreamWriteStub((ISequentialStream*) This.Handle, in pv, cb, pcbWritten);
@@ -58380,7 +58380,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 8506, Column 43 in objidlbase.h")]
-        public unsafe int ISequentialStreamWriteStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
+        public unsafe int ISequentialStreamWriteStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ISequentialStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ISequentialStreamWriteStub((ISequentialStream*) This.Handle, in pv, cb, ref pcbWritten);
@@ -59964,7 +59964,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -59972,7 +59972,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, ref ppstm);
@@ -59980,7 +59980,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy((IStorage*) This.Handle, in pwcsName, cbReserved1, ref reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -59988,7 +59988,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy((IStorage*) This.Handle, in pwcsName, cbReserved1, ref reserved1, grfMode, reserved2, ref ppstm);
@@ -59996,7 +59996,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -60004,7 +60004,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, ref ppstm);
@@ -60084,7 +60084,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy(ref This, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -60092,7 +60092,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy(ref This, in pwcsName, cbReserved1, ref reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -60100,7 +60100,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 10998, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteOpenStreamProxy(ref This, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -60284,7 +60284,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
+        public unsafe int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -60296,7 +60296,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
+        public unsafe int IStorageRemoteCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageRemoteCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, snbExclude, (IStorage*) pstgDest.Handle);
@@ -60304,7 +60304,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
+        public unsafe int IStorageRemoteCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -60316,7 +60316,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, snbExclude, ref pstgDest);
@@ -60324,7 +60324,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
+        public unsafe int IStorageRemoteCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageRemoteCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, ref snbExclude, (IStorage*) pstgDest.Handle);
@@ -60332,7 +60332,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, ref snbExclude, ref pstgDest);
@@ -60380,7 +60380,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
+        public unsafe int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -60392,7 +60392,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteCopyToProxy(ref This, ciidExclude, in rgiidExclude, snbExclude, (IStorage*) pstgDest.Handle);
@@ -60400,7 +60400,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
+        public unsafe int IStorageRemoteCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -60412,7 +60412,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11015, Column 43 in objidl.h")]
-        public unsafe int IStorageRemoteCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageRemoteCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageRemoteCopyToProxy(ref This, ciidExclude, in rgiidExclude, ref snbExclude, (IStorage*) pstgDest.Handle);
@@ -60844,7 +60844,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
-        public unsafe int ILockBytesRemoteWriteAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
+        public unsafe int ILockBytesRemoteWriteAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ILockBytesRemoteWriteAtProxy((ILockBytes*) This.Handle, ulOffset, in pv, cb, pcbWritten);
@@ -60852,7 +60852,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 11554, Column 43 in objidl.h")]
-        public unsafe int ILockBytesRemoteWriteAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
+        public unsafe int ILockBytesRemoteWriteAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ILockBytesRemoteWriteAtProxy((ILockBytes*) This.Handle, ulOffset, in pv, cb, ref pcbWritten);
@@ -63612,7 +63612,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesRemoteFillAppendProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesRemoteFillAppendProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesRemoteFillAppendProxy((IFillLockBytes*) This.Handle, in pv, cb, pcbWritten);
@@ -63620,7 +63620,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13830, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesRemoteFillAppendProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesRemoteFillAppendProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesRemoteFillAppendProxy((IFillLockBytes*) This.Handle, in pv, cb, ref pcbWritten);
@@ -63756,7 +63756,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesRemoteFillAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesRemoteFillAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesRemoteFillAtProxy((IFillLockBytes*) This.Handle, ulOffset, in pv, cb, pcbWritten);
@@ -63764,7 +63764,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 13844, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesRemoteFillAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesRemoteFillAtProxy<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesRemoteFillAtProxy((IFillLockBytes*) This.Handle, ulOffset, in pv, cb, ref pcbWritten);
@@ -65132,7 +65132,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
-        public unsafe int IStorageOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageOpenStreamProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageOpenStreamProxy((IStorage*) This.Handle, in pwcsName, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65140,7 +65140,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
-        public unsafe int IStorageOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamProxy((IStorage*) This.Handle, in pwcsName, reserved1, grfMode, reserved2, ref ppstm);
@@ -65148,7 +65148,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
-        public unsafe int IStorageOpenStreamProxy<T0, TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageOpenStreamProxy<T0, TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageOpenStreamProxy((IStorage*) This.Handle, in pwcsName, ref reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65156,7 +65156,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
-        public unsafe int IStorageOpenStreamProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamProxy((IStorage*) This.Handle, in pwcsName, ref reserved1, grfMode, reserved2, ref ppstm);
@@ -65212,7 +65212,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
-        public unsafe int IStorageOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamProxy<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, void* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamProxy(ref This, in pwcsName, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65220,7 +65220,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15733, Column 41 in objidl.h")]
-        public unsafe int IStorageOpenStreamProxy<T0, TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamProxy<T0, TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, ref T0 reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamProxy(ref This, in pwcsName, ref reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65292,7 +65292,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageOpenStreamStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65300,7 +65300,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, ref ppstm);
@@ -65308,7 +65308,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageOpenStreamStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub((IStorage*) This.Handle, in pwcsName, cbReserved1, ref reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65316,7 +65316,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub((IStorage*) This.Handle, in pwcsName, cbReserved1, ref reserved1, grfMode, reserved2, ref ppstm);
@@ -65324,7 +65324,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
+        public unsafe int IStorageOpenStreamStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI1> ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65332,7 +65332,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref Silk.NET.Core.Win32Extras.IStream* ppstm) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub((IStorage*) This.Handle, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, ref ppstm);
@@ -65412,7 +65412,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamStub<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, byte* reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub(ref This, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65420,7 +65420,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamStub<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, ref byte reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub(ref This, in pwcsName, cbReserved1, ref reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65428,7 +65428,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15745, Column 43 in objidl.h")]
-        public unsafe int IStorageOpenStreamStub<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
+        public unsafe int IStorageOpenStreamStub<TI0>(ref IStorage This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pwcsName, uint cbReserved1, [UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string reserved1, uint grfMode, uint reserved2, ref ComPtr<TI0> ppstm) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Win32Extras.IStream>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageOpenStreamStub(ref This, in pwcsName, cbReserved1, reserved1, grfMode, reserved2, (Silk.NET.Core.Win32Extras.IStream**) ppstm.GetAddressOf());
@@ -65516,7 +65516,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
+        public unsafe int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65528,7 +65528,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
+        public unsafe int IStorageCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, snbExclude, (IStorage*) pstgDest.Handle);
@@ -65536,7 +65536,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
+        public unsafe int IStorageCopyToProxy(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65548,7 +65548,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, snbExclude, ref pstgDest);
@@ -65556,7 +65556,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
+        public unsafe int IStorageCopyToProxy<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, ref snbExclude, (IStorage*) pstgDest.Handle);
@@ -65564,7 +65564,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToProxy<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToProxy((IStorage*) This.Handle, ciidExclude, in rgiidExclude, ref snbExclude, ref pstgDest);
@@ -65612,7 +65612,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
+        public unsafe int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65624,7 +65624,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToProxy(ref This, ciidExclude, in rgiidExclude, snbExclude, (IStorage*) pstgDest.Handle);
@@ -65632,7 +65632,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
+        public unsafe int IStorageCopyToProxy(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65644,7 +65644,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15754, Column 41 in objidl.h")]
-        public unsafe int IStorageCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToProxy<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToProxy(ref This, ciidExclude, in rgiidExclude, ref snbExclude, (IStorage*) pstgDest.Handle);
@@ -65708,7 +65708,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
+        public unsafe int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65720,7 +65720,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
+        public unsafe int IStorageCopyToStub<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageCopyToStub((IStorage*) This.Handle, ciidExclude, in rgiidExclude, snbExclude, (IStorage*) pstgDest.Handle);
@@ -65728,7 +65728,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
+        public unsafe int IStorageCopyToStub(IStorage* This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65740,7 +65740,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToStub<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToStub((IStorage*) This.Handle, ciidExclude, in rgiidExclude, snbExclude, ref pstgDest);
@@ -65748,7 +65748,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
+        public unsafe int IStorageCopyToStub<TI0, TI1>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ComPtr<TI1> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IStorageCopyToStub((IStorage*) This.Handle, ciidExclude, in rgiidExclude, ref snbExclude, (IStorage*) pstgDest.Handle);
@@ -65756,7 +65756,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToStub<TI0>(ComPtr<TI0> This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ref IStorage pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToStub((IStorage*) This.Handle, ciidExclude, in rgiidExclude, ref snbExclude, ref pstgDest);
@@ -65804,7 +65804,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
+        public unsafe int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, IStorage* pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65816,7 +65816,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, char** snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToStub<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, char** snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToStub(ref This, ciidExclude, in rgiidExclude, snbExclude, (IStorage*) pstgDest.Handle);
@@ -65824,7 +65824,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
+        public unsafe int IStorageCopyToStub(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, string[] snbExcludeSa, ref IStorage pstgDest)
         {
             // StringArrayOverloader
             var snbExclude = (char**) SilkMarshal.StringArrayToPtr(snbExcludeSa);
@@ -65836,7 +65836,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15765, Column 43 in objidl.h")]
-        public unsafe int IStorageCopyToStub<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Guid rgiidExclude, ref char* snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
+        public unsafe int IStorageCopyToStub<TI0>(ref IStorage This, uint ciidExclude, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Guid rgiidExclude, ref char* snbExclude, ComPtr<TI0> pstgDest) where TI0 : unmanaged, IComVtbl<IStorage>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IStorageCopyToStub(ref This, ciidExclude, in rgiidExclude, ref snbExclude, (IStorage*) pstgDest.Handle);
@@ -66060,7 +66060,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15809, Column 41 in objidl.h")]
-        public unsafe int ILockBytesWriteAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
+        public unsafe int ILockBytesWriteAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ILockBytesWriteAtProxy((ILockBytes*) This.Handle, ulOffset, in pv, cb, pcbWritten);
@@ -66068,7 +66068,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15809, Column 41 in objidl.h")]
-        public unsafe int ILockBytesWriteAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
+        public unsafe int ILockBytesWriteAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ILockBytesWriteAtProxy((ILockBytes*) This.Handle, ulOffset, in pv, cb, ref pcbWritten);
@@ -66092,7 +66092,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
-        public unsafe int ILockBytesWriteAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
+        public unsafe int ILockBytesWriteAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ILockBytesWriteAtStub((ILockBytes*) This.Handle, ulOffset, in pv, cb, pcbWritten);
@@ -66100,7 +66100,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 15819, Column 43 in objidl.h")]
-        public unsafe int ILockBytesWriteAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
+        public unsafe int ILockBytesWriteAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<ILockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return ILockBytesWriteAtStub((ILockBytes*) This.Handle, ulOffset, in pv, cb, ref pcbWritten);
@@ -66972,7 +66972,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16055, Column 41 in objidl.h")]
-        public unsafe int IFillLockBytesFillAppendProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAppendProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAppendProxy((IFillLockBytes*) This.Handle, in pv, cb, pcbWritten);
@@ -66980,7 +66980,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16055, Column 41 in objidl.h")]
-        public unsafe int IFillLockBytesFillAppendProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAppendProxy<T0, TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAppendProxy((IFillLockBytes*) This.Handle, in pv, cb, ref pcbWritten);
@@ -67004,7 +67004,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesFillAppendStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAppendStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAppendStub((IFillLockBytes*) This.Handle, in pv, cb, pcbWritten);
@@ -67012,7 +67012,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16065, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesFillAppendStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAppendStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAppendStub((IFillLockBytes*) This.Handle, in pv, cb, ref pcbWritten);
@@ -67052,7 +67052,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16071, Column 41 in objidl.h")]
-        public unsafe int IFillLockBytesFillAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, uint* pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAtProxy((IFillLockBytes*) This.Handle, ulOffset, in pv, cb, pcbWritten);
@@ -67060,7 +67060,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16071, Column 41 in objidl.h")]
-        public unsafe int IFillLockBytesFillAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAtProxy<T0, TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 pv, uint cb, ref uint pcbWritten) where T0 : unmanaged where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAtProxy((IFillLockBytes*) This.Handle, ulOffset, in pv, cb, ref pcbWritten);
@@ -67084,7 +67084,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesFillAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, uint* pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAtStub((IFillLockBytes*) This.Handle, ulOffset, in pv, cb, pcbWritten);
@@ -67092,7 +67092,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 16083, Column 35 in objidl.h")]
-        public unsafe int IFillLockBytesFillAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
+        public unsafe int IFillLockBytesFillAtStub<TI0>(ComPtr<TI0> This, ulong ulOffset, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte pv, uint cb, ref uint pcbWritten) where TI0 : unmanaged, IComVtbl<IFillLockBytes>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IFillLockBytesFillAtStub((IFillLockBytes*) This.Handle, ulOffset, in pv, cb, ref pcbWritten);
@@ -77098,7 +77098,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -77106,7 +77106,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -77114,7 +77114,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -77122,7 +77122,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, pVar, ref pErrorLog, varType, ref pUnkObj);
@@ -77130,7 +77130,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -77138,7 +77138,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -77146,7 +77146,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, ref pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -77154,7 +77154,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy((IPropertyBag*) This.Handle, in pszPropName, ref pVar, ref pErrorLog, varType, ref pUnkObj);
@@ -77274,7 +77274,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy(ref This, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -77282,7 +77282,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy(ref This, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -77290,7 +77290,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy(ref This, in pszPropName, pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -77298,7 +77298,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy(ref This, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -77306,7 +77306,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy(ref This, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -77314,7 +77314,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5627, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
+        public unsafe int IPropertyBagRemoteReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagRemoteReadProxy(ref This, in pszPropName, ref pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89060,7 +89060,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
-        public unsafe int IPropertyBagReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadProxy((IPropertyBag*) This.Handle, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle);
@@ -89068,7 +89068,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
-        public unsafe int IPropertyBagReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadProxy((IPropertyBag*) This.Handle, in pszPropName, pVar, ref pErrorLog);
@@ -89076,7 +89076,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
-        public unsafe int IPropertyBagReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadProxy<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadProxy((IPropertyBag*) This.Handle, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle);
@@ -89084,7 +89084,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
-        public unsafe int IPropertyBagReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadProxy<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadProxy((IPropertyBag*) This.Handle, in pszPropName, ref pVar, ref pErrorLog);
@@ -89140,7 +89140,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
-        public unsafe int IPropertyBagReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadProxy(ref This, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle);
@@ -89148,7 +89148,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6333, Column 41 in oaidl.h")]
-        public unsafe int IPropertyBagReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadProxy<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadProxy(ref This, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle);
@@ -89236,7 +89236,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
+        public unsafe int IPropertyBagReadStub<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89244,7 +89244,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -89252,7 +89252,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89260,7 +89260,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, pVar, ref pErrorLog, varType, ref pUnkObj);
@@ -89268,7 +89268,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
+        public unsafe int IPropertyBagReadStub<TI0, TI1, TI2>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ComPtr<TI2> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1> where TI2 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI2>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89276,7 +89276,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI1> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -89284,7 +89284,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadStub<TI0, TI1>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, ref pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89292,7 +89292,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadStub<TI0>(ComPtr<TI0> This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IPropertyBag>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub((IPropertyBag*) This.Handle, in pszPropName, ref pVar, ref pErrorLog, varType, ref pUnkObj);
@@ -89412,7 +89412,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadStub<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub(ref This, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89420,7 +89420,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub(ref This, in pszPropName, pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -89428,7 +89428,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, Variant* pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub(ref This, in pszPropName, pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89436,7 +89436,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
+        public unsafe int IPropertyBagReadStub<TI0, TI1>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ComPtr<TI1> pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0> where TI1 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI1>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub(ref This, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);
@@ -89444,7 +89444,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ComPtr<TI0> pErrorLog, uint varType, ref Silk.NET.Core.Native.IUnknown pUnkObj) where TI0 : unmanaged, IComVtbl<IErrorLog>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub(ref This, in pszPropName, ref pVar, (IErrorLog*) pErrorLog.Handle, varType, ref pUnkObj);
@@ -89452,7 +89452,7 @@ namespace Silk.NET.Core.Win32Extras
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 6340, Column 43 in oaidl.h")]
-        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
+        public unsafe int IPropertyBagReadStub<TI0>(ref IPropertyBag This, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly char pszPropName, ref Variant pVar, ref IErrorLog pErrorLog, uint varType, ComPtr<TI0> pUnkObj) where TI0 : unmanaged, IComVtbl<Silk.NET.Core.Native.IUnknown>, IComVtbl<TI0>
         {
             // ComPtrOverloader
             return IPropertyBagReadStub(ref This, in pszPropName, ref pVar, ref pErrorLog, varType, (Silk.NET.Core.Native.IUnknown*) pUnkObj.Handle);

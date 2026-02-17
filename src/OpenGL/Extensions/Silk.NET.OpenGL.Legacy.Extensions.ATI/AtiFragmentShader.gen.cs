@@ -42135,13 +42135,13 @@ namespace Silk.NET.OpenGL.Legacy.Extensions.ATI
         public unsafe partial void SetFragmentShaderConstant([Flow(Silk.NET.Core.Native.FlowDirection.In)] uint dst, [Count(Count = 4), Flow(Silk.NET.Core.Native.FlowDirection.In)] float* value);
 
         [NativeApi(EntryPoint = "glSetFragmentShaderConstantATI", Convention = CallingConvention.Winapi)]
-        public partial void SetFragmentShaderConstant([Flow(Silk.NET.Core.Native.FlowDirection.In)] uint dst, [Count(Count = 4), Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in float value);
+        public partial void SetFragmentShaderConstant([Flow(Silk.NET.Core.Native.FlowDirection.In)] uint dst, [Count(Count = 4), Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly float value);
 
         [NativeApi(EntryPoint = "glSetFragmentShaderConstantATI", Convention = CallingConvention.Winapi)]
         public unsafe partial void SetFragmentShaderConstant([Flow(Silk.NET.Core.Native.FlowDirection.In)] FragmentShaderConATI dst, [Count(Count = 4), Flow(Silk.NET.Core.Native.FlowDirection.In)] float* value);
 
         [NativeApi(EntryPoint = "glSetFragmentShaderConstantATI", Convention = CallingConvention.Winapi)]
-        public partial void SetFragmentShaderConstant([Flow(Silk.NET.Core.Native.FlowDirection.In)] FragmentShaderConATI dst, [Count(Count = 4), Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in float value);
+        public partial void SetFragmentShaderConstant([Flow(Silk.NET.Core.Native.FlowDirection.In)] FragmentShaderConATI dst, [Count(Count = 4), Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly float value);
 
         public AtiFragmentShader(INativeContext ctx)
             : base(ctx)
