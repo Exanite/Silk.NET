@@ -11,21 +11,21 @@ namespace Silk.NET.Tracy
     internal class TracyLibraryNameContainer : SearchPathContainer
     {
         /// <inheritdoc />
-        public override string[] Linux => new[] { "libTracyClient.so" };
+        public override string[] Linux => new[] { "libExaniteTracyClient.so" };
 
         /// <inheritdoc />
-        public override string[] MacOS => new[] { "libTracyClient.dylib" };
+        public override string[] MacOS => new[] { "libExaniteTracyClient.dylib" };
 
         /// <inheritdoc />
-        public override string[] Android => new[] { "libTracyClient.so" };
+        public override string[] Android => new[] { "libExaniteTracyClient.so" };
 
         /// <inheritdoc />
-        public override string[] IOS => new[] { "libTracyClient.dylib" };
+        public override string[] IOS => new[] { "libExaniteTracyClient.dylib" };
 
         /// <inheritdoc />
-        public override string[] Windows64 => new[] { "TracyClient.dll" };
+        public override string[] Windows64 => new[] { "ExaniteTracyClient.dll" };
 
         /// <inheritdoc />
-        public override string[] Windows86 => new[] { "TracyClient.dll" };
+        public override string[] Windows86 => new[] { "ExaniteTracyClient.dll" };
     }
 }

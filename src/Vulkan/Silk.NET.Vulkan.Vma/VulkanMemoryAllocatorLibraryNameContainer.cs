@@ -11,21 +11,21 @@ namespace Silk.NET.Vulkan.Vma
     internal class VulkanMemoryAllocatorLibraryNameContainer : SearchPathContainer
     {
         /// <inheritdoc />
-        public override string[] Linux => new[] { "libvma.so" };
+        public override string[] Linux => new[] { "libExaniteVma.so" };
 
         /// <inheritdoc />
-        public override string[] MacOS => new[] { "libvma.dylib" };
+        public override string[] MacOS => new[] { "libExaniteVma.dylib" };
 
         /// <inheritdoc />
-        public override string[] Android => new[] { "libvma.so" };
+        public override string[] Android => new[] { "libExaniteVma.so" };
 
         /// <inheritdoc />
-        public override string[] IOS => new[] { "libvma.dylib" };
+        public override string[] IOS => new[] { "libExaniteVma.dylib" };
 
         /// <inheritdoc />
-        public override string[] Windows64 => new[] { "vma.dll" };
+        public override string[] Windows64 => new[] { "ExaniteVma.dll" };
 
         /// <inheritdoc />
-        public override string[] Windows86 => new[] { "vma.dll" };
+        public override string[] Windows86 => new[] { "ExaniteVma.dll" };
     }
 }

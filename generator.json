@@ -1019,12 +1019,12 @@
             "namespace": "Silk.NET.Vulkan.Vma",
             "extensionsNamespace": "Silk.NET.Vulkan.Vma.Extensions",
             "nameContainer": {
-                "linux-x64": "libvma.so",
-                "win-x64": "vma.dll",
-                "win-x86": "vma.dll",
-                "osx-x64": "libvma.dylib",
-                "android": "libvma.so",
-                "iOS": "libvma.dylib",
+                "linux-x64": "libExaniteVma.so",
+                "win-x64": "ExaniteVma.dll",
+                "win-x86": "ExaniteVma.dll",
+                "osx-x64": "libExaniteVma.dylib",
+                "android": "libExaniteVma.so",
+                "iOS": "libExaniteVma.dylib",
                 "className": "VulkanMemoryAllocatorLibraryNameContainer"
             },
             "typeMaps": [
@@ -1121,12 +1121,12 @@
             "namespace": "Silk.NET.Tracy",
             "extensionsNamespace": "Silk.NET.Tracy.Extensions",
             "nameContainer": {
-                "linux-x64": "libTracyClient.so",
-                "win-x64": "TracyClient.dll",
-                "win-x86": "TracyClient.dll",
-                "osx-x64": "libTracyClient.dylib",
-                "android": "libTracyClient.so",
-                "iOS": "libTracyClient.dylib",
+                "linux-x64": "libExaniteTracyClient.so",
+                "win-x64": "ExaniteTracyClient.dll",
+                "win-x86": "ExaniteTracyClient.dll",
+                "osx-x64": "libExaniteTracyClient.dylib",
+                "android": "libExaniteTracyClient.so",
+                "iOS": "libExaniteTracyClient.dylib",
                 "className": "TracyLibraryNameContainer"
             },
             "typeMaps": [
