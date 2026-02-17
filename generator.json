@@ -1202,7 +1202,7 @@
         {
             "profileName": "FreeType",
             "sources": [
-                "../Exanite.GameDev/native/Exanite.FreeType/src/FreeType/freetype.h"
+                "../Exanite.GameDev/native/Exanite.FreeType/include/FreeType/freetype.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
