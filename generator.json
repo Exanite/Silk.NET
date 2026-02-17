@@ -1019,12 +1019,12 @@
             "namespace": "Silk.NET.Vulkan.Vma",
             "extensionsNamespace": "Silk.NET.Vulkan.Vma.Extensions",
             "nameContainer": {
-                "linux-x64": "libExaniteVma.so",
-                "win-x64": "ExaniteVma.dll",
-                "win-x86": "ExaniteVma.dll",
-                "osx-x64": "libExaniteVma.dylib",
-                "android": "libExaniteVma.so",
-                "iOS": "libExaniteVma.dylib",
+                "linux-x64": "libExaniteVulkanMemoryAllocator.so",
+                "win-x64": "ExaniteVulkanMemoryAllocator.dll",
+                "win-x86": "ExaniteVulkanMemoryAllocator.dll",
+                "osx-x64": "libExaniteVulkanMemoryAllocator.dylib",
+                "android": "libExaniteVulkanMemoryAllocator.so",
+                "iOS": "libExaniteVulkanMemoryAllocator.dylib",
                 "className": "VulkanMemoryAllocatorLibraryNameContainer"
             },
             "typeMaps": [
