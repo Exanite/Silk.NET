@@ -55,18 +55,3 @@
 [submodule "build/submodules/openal-soft"]
 	path = build/submodules/openal-soft
 	url = https://github.com/kcat/openal-soft
-[submodule "build/submodules/VulkanMemoryAllocator"]
-	path = build/submodules/VulkanMemoryAllocator
-	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
-[submodule "build/submodules/tracy"]
-	path = build/submodules/tracy
-	url = https://github.com/wolfpld/tracy.git
-[submodule "build/submodules/slang"]
-	path = build/submodules/slang
-	url = https://github.com/shader-slang/slang.git
-[submodule "build/submodules/freetype"]
-	path = build/submodules/freetype
-	url = https://github.com/freetype/freetype.git
-[submodule "build/submodules/harfbuzz"]
-	path = build/submodules/harfbuzz
-	url = https://github.com/harfbuzz/harfbuzz.git
