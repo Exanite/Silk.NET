@@ -76,7 +76,17 @@ namespace Silk.NET.Slang
         WgslSpirv = 0x1E,
         [NativeName("Name", "SLANG_HOST_VM")]
         HostVM = 0x1F,
+        [NativeName("Name", "SLANG_CPP_HEADER")]
+        CppHeader = 0x20,
+        [NativeName("Name", "SLANG_CUDA_HEADER")]
+        CudaHeader = 0x21,
+        [NativeName("Name", "SLANG_HOST_OBJECT_CODE")]
+        HostObjectCode = 0x22,
+        [NativeName("Name", "SLANG_HOST_LLVM_IR")]
+        HostLlvmIR = 0x23,
+        [NativeName("Name", "SLANG_SHADER_LLVM_IR")]
+        ShaderLlvmIR = 0x24,
         [NativeName("Name", "SLANG_TARGET_COUNT_OF")]
-        TargetCountOf = 0x20,
+        TargetCountOf = 0x25,
     }
 }

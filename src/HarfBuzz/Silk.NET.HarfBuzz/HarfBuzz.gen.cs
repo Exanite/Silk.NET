@@ -36,13 +36,13 @@ namespace Silk.NET.HarfBuzz
         public const int VersionMajor = unchecked((int) 0xC);
         [NativeName("Type", "int")]
         [NativeName("Name", "HB_VERSION_MINOR")]
-        public const int VersionMinor = unchecked((int) 0x2);
+        public const int VersionMinor = unchecked((int) 0x3);
         [NativeName("Type", "int")]
         [NativeName("Name", "HB_VERSION_MICRO")]
-        public const int VersionMicro = unchecked((int) 0x0);
+        public const int VersionMicro = unchecked((int) 0x2);
         [NativeName("Type", "")]
         [NativeName("Name", "HB_VERSION_STRING")]
-        public const string LibraryVersionString = unchecked((string) "12.2.0");
+        public const string LibraryVersionString = unchecked((string) "12.3.2");
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 1 in hb-common.h")]

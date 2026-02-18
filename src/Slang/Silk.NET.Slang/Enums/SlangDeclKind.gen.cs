@@ -26,5 +26,7 @@ namespace Silk.NET.Slang
         Variable = 0x5,
         [NativeName("Name", "SLANG_DECL_KIND_NAMESPACE")]
         Namespace = 0x6,
+        [NativeName("Name", "SLANG_DECL_KIND_ENUM")]
+        Enum = 0x7,
     }
 }

@@ -270,7 +270,33 @@ namespace Silk.NET.Slang
         ForceCLayout = 0x7F,
         [NativeName("Name", "ExperimentalFeature")]
         ExperimentalFeature = 0x80,
+        [NativeName("Name", "ReportDetailedPerfBenchmark")]
+        ReportDetailedPerfBenchmark = 0x81,
+        [NativeName("Name", "ValidateIRDetailed")]
+        ValidateIrdetailed = 0x82,
+        [NativeName("Name", "DumpIRBefore")]
+        DumpIrbefore = 0x83,
+        [NativeName("Name", "DumpIRAfter")]
+        DumpIrafter = 0x84,
+        [NativeName("Name", "EmitCPUMethod")]
+        EmitCpumethod = 0x85,
+        [NativeName("Name", "EmitCPUViaCPP")]
+        EmitCpuviaCpp = 0x86,
+        [NativeName("Name", "EmitCPUViaLLVM")]
+        EmitCpuviaLlvm = 0x87,
+        [NativeName("Name", "LLVMTargetTriple")]
+        LlvmtargetTriple = 0x88,
+        [NativeName("Name", "LLVMCPU")]
+        Llvmcpu = 0x89,
+        [NativeName("Name", "LLVMFeatures")]
+        Llvmfeatures = 0x8A,
+        [NativeName("Name", "EnableRichDiagnostics")]
+        EnableRichDiagnostics = 0x8B,
+        [NativeName("Name", "ReportDynamicDispatchSites")]
+        ReportDynamicDispatchSites = 0x8C,
+        [NativeName("Name", "EnableMachineReadableDiagnostics")]
+        EnableMachineReadableDiagnostics = 0x8D,
         [NativeName("Name", "CountOf")]
-        CountOf = 0x81,
+        CountOf = 0x8E,
     }
 }

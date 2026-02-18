@@ -181,6 +181,54 @@ public unsafe static class ComponentType2VtblExtensions
     }
 
     /// <summary>To be documented.</summary>
+    public static unsafe int GetTargetHostCallable(this ComPtr<IComponentType2> thisVtbl, int targetIndex, ISlangSharedLibrary** outSharedLibrary, ISlangBlob** outDiagnostics)
+    {
+        var @this = thisVtbl.Handle;
+        int ret = default;
+        ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibrary, outDiagnostics);
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
+    public static unsafe int GetTargetHostCallable(this ComPtr<IComponentType2> thisVtbl, int targetIndex, ISlangSharedLibrary** outSharedLibrary, ref ISlangBlob* outDiagnostics)
+    {
+        var @this = thisVtbl.Handle;
+        int ret = default;
+        fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+        {
+            ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibrary, outDiagnosticsPtr);
+        }
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
+    public static unsafe int GetTargetHostCallable(this ComPtr<IComponentType2> thisVtbl, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ISlangBlob** outDiagnostics)
+    {
+        var @this = thisVtbl.Handle;
+        int ret = default;
+        fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
+        {
+            ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibraryPtr, outDiagnostics);
+        }
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
+    public static unsafe int GetTargetHostCallable(this ComPtr<IComponentType2> thisVtbl, int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ref ISlangBlob* outDiagnostics)
+    {
+        var @this = thisVtbl.Handle;
+        int ret = default;
+        fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
+        {
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibraryPtr, outDiagnosticsPtr);
+            }
+        }
+        return ret;
+    }
+
+    /// <summary>To be documented.</summary>
     public static unsafe int QueryInterface(this ComPtr<IComponentType2> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangUUID> uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;

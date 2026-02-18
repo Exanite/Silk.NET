@@ -52,5 +52,7 @@ namespace Silk.NET.Slang
         DynamicResource = 0x13,
         [NativeName("Name", "MeshOutput")]
         MeshOutput = 0xF,
+        [NativeName("Name", "Enum")]
+        Enum = 0x14,
     }
 }

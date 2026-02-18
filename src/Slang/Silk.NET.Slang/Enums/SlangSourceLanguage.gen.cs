@@ -32,7 +32,9 @@ namespace Silk.NET.Slang
         Metal = 0x8,
         [NativeName("Name", "SLANG_SOURCE_LANGUAGE_WGSL")]
         Wgsl = 0x9,
+        [NativeName("Name", "SLANG_SOURCE_LANGUAGE_LLVM")]
+        Llvm = 0xA,
         [NativeName("Name", "SLANG_SOURCE_LANGUAGE_COUNT_OF")]
-        CountOf = 0xA,
+        CountOf = 0xB,
     }
 }

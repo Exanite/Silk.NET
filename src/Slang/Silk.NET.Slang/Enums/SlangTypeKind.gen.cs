@@ -52,7 +52,9 @@ namespace Silk.NET.Slang
         Pointer = 0x12,
         [NativeName("Name", "SLANG_TYPE_KIND_DYNAMIC_RESOURCE")]
         DynamicResource = 0x13,
+        [NativeName("Name", "SLANG_TYPE_KIND_ENUM")]
+        Enum = 0x14,
         [NativeName("Name", "SLANG_TYPE_KIND_COUNT")]
-        Count = 0x14,
+        Count = 0x15,
     }
 }

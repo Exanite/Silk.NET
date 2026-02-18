@@ -16,5 +16,9 @@ namespace Silk.NET.Slang
         Default = 0x0,
         [NativeName("Name", "MetalArgumentBufferTier2")]
         MetalArgumentBufferTier2 = 0x1,
+        [NativeName("Name", "DefaultStructuredBuffer")]
+        DefaultStructuredBuffer = 0x2,
+        [NativeName("Name", "DefaultConstantBuffer")]
+        DefaultConstantBuffer = 0x3,
     }
 }

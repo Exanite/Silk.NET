@@ -55,7 +55,7 @@ namespace Silk.NET.Slang
         public Kind Kind;
 
         [NativeName("Type", "")]
-        [NativeName("Type.Name", "__AnonymousRecord_slang_L4652_C5")]
+        [NativeName("Type.Name", "__AnonymousRecord_slang_L4855_C5")]
         [NativeName("Name", "anonymous1")]
         public SpecializationArgUnion Anonymous;
 #if NETSTANDARD2_1 || NETCOREAPP3_1 || NET5_0 || NET5_0_OR_GREATER

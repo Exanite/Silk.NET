@@ -203,5 +203,53 @@ namespace Silk.NET.Slang
             return ret;
         }
 
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int GetTargetHostCallable(int targetIndex, ISlangSharedLibrary** outSharedLibrary, ISlangBlob** outDiagnostics)
+        {
+            var @this = (IComponentType2*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibrary, outDiagnostics);
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int GetTargetHostCallable(int targetIndex, ISlangSharedLibrary** outSharedLibrary, ref ISlangBlob* outDiagnostics)
+        {
+            var @this = (IComponentType2*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibrary, outDiagnosticsPtr);
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int GetTargetHostCallable(int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ISlangBlob** outDiagnostics)
+        {
+            var @this = (IComponentType2*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
+            {
+                ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibraryPtr, outDiagnostics);
+            }
+            return ret;
+        }
+
+        /// <summary>To be documented.</summary>
+        public readonly unsafe int GetTargetHostCallable(int targetIndex, ref ISlangSharedLibrary* outSharedLibrary, ref ISlangBlob* outDiagnostics)
+        {
+            var @this = (IComponentType2*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
+            int ret = default;
+            fixed (ISlangSharedLibrary** outSharedLibraryPtr = &outSharedLibrary)
+            {
+                fixed (ISlangBlob** outDiagnosticsPtr = &outDiagnostics)
+                {
+                    ret = ((delegate* unmanaged[Cdecl]<IComponentType2*, int, ISlangSharedLibrary**, ISlangBlob**, int>)@this->LpVtbl[5])(@this, targetIndex, outSharedLibraryPtr, outDiagnosticsPtr);
+                }
+            }
+            return ret;
+        }
+
     }
 }

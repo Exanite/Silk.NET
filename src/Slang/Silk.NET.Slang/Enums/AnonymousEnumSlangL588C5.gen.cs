@@ -9,8 +9,8 @@ using Silk.NET.Core.Attributes;
 
 namespace Silk.NET.Slang
 {
-    [NativeName("Name", "__AnonymousEnum_slang_L581_C5")]
-    public enum AnonymousEnumSlangL581C5 : int
+    [NativeName("Name", "__AnonymousEnum_slang_L588_C5")]
+    public enum AnonymousEnumSlangL588C5 : int
     {
         [NativeName("Name", "SLANG_DIAGNOSTIC_FLAG_VERBOSE_PATHS")]
         VerbosePaths = 0x1,

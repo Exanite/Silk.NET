@@ -17,7 +17,7 @@ using Silk.NET.Core.Loader;
 namespace Silk.NET.Slang
 {
     [StructLayout(LayoutKind.Explicit)]
-    [NativeName("Name", "__AnonymousRecord_slang_L4652_C5")]
+    [NativeName("Name", "__AnonymousRecord_slang_L4855_C5")]
     public unsafe partial struct SpecializationArgUnion
     {
         public SpecializationArgUnion
