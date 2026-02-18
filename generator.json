@@ -1081,7 +1081,7 @@
         {
             "profileName": "Tracy",
             "sources": [
-                "../Exanite.GameDev/native/tracy/public/tracy/TracyC.h"
+                "../Exanite.GameDev/native/Exanite.Tracy/include/Exanite/Tracy.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
@@ -1097,18 +1097,21 @@
                     "--std=c++17",
                     "-m64",
                     "-DTRACY_ENABLE",
+                    "-I../Exanite.GameDev/native/tracy/public",
                     "-I../Exanite.GameDev/native/tracy/public/tracy"
                 ],
-                "traverse": [],
+                "traverse": [
+                    "../Exanite.GameDev/native/tracy/public/tracy/TracyC.h"
+                ],
                 "classes": {
-                    "TracyC.h": "[Core]Tracy"
+                    "Tracy.h": "[Core]Tracy"
                 }
             },
             "exclude": [],
             "rename": {},
             "bakery": {
                 "profileNames": [
-                    "TracyC"
+                    "Tracy"
                 ]
             },
             "output": {
@@ -1326,10 +1329,10 @@
                     "--std=c++17",
                     "-m64",
                     "-DHB_HAVE_FREETYPE=ON",
-                    "-I../Exanite.GameDev/native/harfbuzz/harfbuzz/src"
+                    "-I../Exanite.GameDev/native/harfbuzz/src"
                 ],
                 "traverse": [
-                    "../Exanite.GameDev/native/harfbuzz/harfbuzz/src/*.h"
+                    "../Exanite.GameDev/native/harfbuzz/src/*.h"
                 ],
                 "classes": {
                     "hb.h": "[Core]HarfBuzz"

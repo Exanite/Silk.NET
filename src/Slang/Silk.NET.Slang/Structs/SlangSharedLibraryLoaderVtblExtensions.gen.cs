@@ -40,7 +40,7 @@ public unsafe static class SlangSharedLibraryLoaderVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class SlangSharedLibraryLoaderVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -106,7 +106,7 @@ public unsafe static class SlangSharedLibraryLoaderVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadSharedLibrary(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangSharedLibrary** sharedLibraryOut)
+    public static unsafe int LoadSharedLibrary(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangSharedLibrary** sharedLibraryOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -118,7 +118,7 @@ public unsafe static class SlangSharedLibraryLoaderVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadSharedLibrary(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangSharedLibrary* sharedLibraryOut)
+    public static unsafe int LoadSharedLibrary(this ComPtr<ISlangSharedLibraryLoader> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangSharedLibrary* sharedLibraryOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;

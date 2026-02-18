@@ -40,7 +40,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -115,7 +115,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModule(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModule(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -127,7 +127,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModule(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModule(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -215,7 +215,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -227,7 +227,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -242,7 +242,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -257,7 +257,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -331,7 +331,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -343,7 +343,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -358,7 +358,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -373,7 +373,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -391,7 +391,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -406,7 +406,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -424,7 +424,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -442,7 +442,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -463,7 +463,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -477,7 +477,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -494,7 +494,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -511,7 +511,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -587,7 +587,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -601,7 +601,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -618,7 +618,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -635,7 +635,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSource(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -767,7 +767,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ISlangBlob** outDiagnostics)
+    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -779,7 +779,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ref ISlangBlob* outDiagnostics)
+    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -794,7 +794,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ISlangBlob** outDiagnostics)
+    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -809,7 +809,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ref ISlangBlob* outDiagnostics)
+    public static unsafe int CreateCompositeComponentType(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -848,7 +848,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe TypeReflection* SpecializeType(this ComPtr<ISession> thisVtbl, TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ISlangBlob** outDiagnostics)
+    public static unsafe TypeReflection* SpecializeType(this ComPtr<ISession> thisVtbl, TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         TypeReflection* ret = default;
@@ -860,7 +860,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe TypeReflection* SpecializeType(this ComPtr<ISession> thisVtbl, TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ISlangBlob* outDiagnostics)
+    public static unsafe TypeReflection* SpecializeType(this ComPtr<ISession> thisVtbl, TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         TypeReflection* ret = default;
@@ -1106,7 +1106,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1118,7 +1118,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1133,7 +1133,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1148,7 +1148,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1222,7 +1222,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1234,7 +1234,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1249,7 +1249,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1264,7 +1264,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1282,7 +1282,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1297,7 +1297,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1315,7 +1315,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1333,7 +1333,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1354,7 +1354,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1368,7 +1368,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1385,7 +1385,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1402,7 +1402,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1478,7 +1478,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1492,7 +1492,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1509,7 +1509,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1526,7 +1526,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromIRBlob(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1649,7 +1649,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, ISlangBlob* binaryModuleBlob)
+    public static unsafe bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte modulePath, ISlangBlob* binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         bool ret = default;
@@ -1661,7 +1661,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, ref ISlangBlob binaryModuleBlob)
+    public static bool IsBinaryModuleUpToDate(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte modulePath, ref ISlangBlob binaryModuleBlob)
     {
         var @this = thisVtbl.Handle;
         bool ret = default;
@@ -1722,7 +1722,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1734,7 +1734,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1774,7 +1774,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1786,7 +1786,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1801,7 +1801,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1816,7 +1816,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1834,7 +1834,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1848,7 +1848,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1890,7 +1890,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1904,7 +1904,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1950,7 +1950,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1962,7 +1962,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1977,7 +1977,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -1992,7 +1992,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2010,7 +2010,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2024,7 +2024,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2041,7 +2041,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2056,7 +2056,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2074,7 +2074,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2092,7 +2092,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2113,7 +2113,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2130,7 +2130,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2150,7 +2150,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2164,7 +2164,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2181,7 +2181,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2198,7 +2198,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2218,7 +2218,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2234,7 +2234,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2278,7 +2278,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2292,7 +2292,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2338,7 +2338,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2352,7 +2352,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2369,7 +2369,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2386,7 +2386,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2406,7 +2406,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2422,7 +2422,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2470,7 +2470,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2486,7 +2486,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+    public static unsafe IModule* LoadModuleFromSourceString(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         IModule* ret = default;
@@ -2568,7 +2568,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2580,7 +2580,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2592,7 +2592,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2619,7 +2619,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2634,7 +2634,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2649,7 +2649,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2679,7 +2679,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2694,7 +2694,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2709,7 +2709,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2742,7 +2742,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2760,7 +2760,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -2778,7 +2778,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -3087,7 +3087,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateCompositeComponentType<TI0>(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+    public static unsafe int CreateCompositeComponentType<TI0>(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
@@ -3095,7 +3095,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateCompositeComponentType<TI0>(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+    public static unsafe int CreateCompositeComponentType<TI0>(this ComPtr<ISession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
@@ -3710,7 +3710,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3722,7 +3722,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3757,7 +3757,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3769,7 +3769,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3777,7 +3777,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3789,7 +3789,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3797,7 +3797,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ISlangBlob* source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3828,7 +3828,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3840,7 +3840,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3848,7 +3848,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3860,7 +3860,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3868,7 +3868,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3899,7 +3899,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3911,7 +3911,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3919,7 +3919,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
     {
         var @this = thisVtbl.Handle;
         // StringArrayOverloader
@@ -3931,7 +3931,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -3939,7 +3939,7 @@ public unsafe static class SessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+    public static unsafe int LoadModuleInfoFromIRBlob(this ComPtr<ISession> thisVtbl, Span<ISlangBlob> source, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

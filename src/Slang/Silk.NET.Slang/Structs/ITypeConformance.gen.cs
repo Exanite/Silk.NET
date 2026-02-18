@@ -66,7 +66,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -78,7 +78,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -284,7 +284,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ISlangBlob** outDiagnostics)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -296,7 +296,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -311,7 +311,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ISlangBlob** outDiagnostics)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -326,7 +326,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int Specialize([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -461,7 +461,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int RenameEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte newName, IComponentType** outEntryPoint)
+        public readonly unsafe int RenameEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte newName, IComponentType** outEntryPoint)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -473,7 +473,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int RenameEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte newName, ref IComponentType* outEntryPoint)
+        public readonly unsafe int RenameEntryPoint([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte newName, ref IComponentType* outEntryPoint)
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -781,7 +781,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -789,7 +789,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int Specialize<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -821,7 +821,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int RenameEntryPoint<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte newName, ref ComPtr<TI0> outEntryPoint) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly int RenameEntryPoint<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte newName, ref ComPtr<TI0> outEntryPoint) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (ITypeConformance*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader

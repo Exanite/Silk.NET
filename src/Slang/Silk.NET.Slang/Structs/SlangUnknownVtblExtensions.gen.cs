@@ -40,7 +40,7 @@ public unsafe static class SlangUnknownVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class SlangUnknownVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangUnknown> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;

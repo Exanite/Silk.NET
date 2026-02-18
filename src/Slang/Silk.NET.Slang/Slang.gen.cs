@@ -171,7 +171,7 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4719, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_createBlob")]
-        public unsafe partial ISlangBlob* SlangCreateBlob<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 data, nuint size) where T0 : unmanaged;
+        public unsafe partial ISlangBlob* SlangCreateBlob<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 data, nuint size) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -186,12 +186,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -206,32 +206,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -246,12 +246,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -266,92 +266,92 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -366,12 +366,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -386,32 +386,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -426,12 +426,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -456,12 +456,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -476,32 +476,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -516,12 +516,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -536,92 +536,92 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -636,12 +636,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -656,32 +656,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -696,12 +696,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromSource")]
-        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromSource(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4731, Column 42 in slang.h")]
@@ -726,32 +726,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
@@ -766,72 +766,72 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
@@ -846,32 +846,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
@@ -886,12 +886,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
@@ -906,32 +906,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
@@ -946,72 +946,72 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
@@ -1026,32 +1026,32 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
@@ -1066,12 +1066,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4748, Column 42 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleFromIRBlob")]
-        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
+        public unsafe partial IModule* SlangLoadModuleFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
@@ -1081,17 +1081,17 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
@@ -1101,57 +1101,57 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
@@ -1161,17 +1161,17 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
@@ -1181,57 +1181,57 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName);
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_loadModuleInfoFromIRBlob")]
-        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged;
+        public unsafe partial int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4779, Column 1 in slang.h")]
@@ -1256,12 +1256,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4787, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_createGlobalSession2")]
-        public unsafe partial int SlangCreateGlobalSession2([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangGlobalSessionDesc desc, IGlobalSession** outGlobalSession);
+        public unsafe partial int SlangCreateGlobalSession2([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangGlobalSessionDesc desc, IGlobalSession** outGlobalSession);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4787, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_createGlobalSession2")]
-        public unsafe partial int SlangCreateGlobalSession2([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangGlobalSessionDesc desc, ref IGlobalSession* outGlobalSession);
+        public unsafe partial int SlangCreateGlobalSession2([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangGlobalSessionDesc desc, ref IGlobalSession* outGlobalSession);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4799, Column 38 in slang.h")]
@@ -1307,12 +1307,12 @@ namespace Silk.NET.Slang
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4933, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_createByteCodeRunner")]
-        public unsafe partial int SlangCreateByteCodeRunner([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ByteCodeRunnerDesc desc, IByteCodeRunner** outByteCodeRunner);
+        public unsafe partial int SlangCreateByteCodeRunner([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly ByteCodeRunnerDesc desc, IByteCodeRunner** outByteCodeRunner);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4933, Column 38 in slang.h")]
         [NativeApi(EntryPoint = "slang_createByteCodeRunner")]
-        public unsafe partial int SlangCreateByteCodeRunner([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ByteCodeRunnerDesc desc, ref IByteCodeRunner* outByteCodeRunner);
+        public unsafe partial int SlangCreateByteCodeRunner([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly ByteCodeRunnerDesc desc, ref IByteCodeRunner* outByteCodeRunner);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4939, Column 1 in slang.h")]
@@ -1351,7 +1351,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1363,7 +1363,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
@@ -1390,7 +1390,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1402,7 +1402,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
@@ -1414,7 +1414,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1429,7 +1429,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1441,7 +1441,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
@@ -1453,7 +1453,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1468,7 +1468,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1480,7 +1480,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
@@ -1507,7 +1507,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1519,7 +1519,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
@@ -1546,7 +1546,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1558,7 +1558,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public unsafe int SlangLoadModuleInfoFromIRBlob(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
@@ -1570,7 +1570,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1585,7 +1585,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1597,7 +1597,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);
@@ -1609,7 +1609,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1624,7 +1624,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleCompilerVersion = (byte**) SilkMarshal.StringArrayToPtr(outModuleCompilerVersionSa);
@@ -1636,7 +1636,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
+        public unsafe int SlangLoadModuleInfoFromIRBlob<T0>(ref ISession session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 source, nuint sourceSize, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa) where T0 : unmanaged
         {
             // StringArrayOverloader
             var outModuleName = (byte**) SilkMarshal.StringArrayToPtr(outModuleNameSa);

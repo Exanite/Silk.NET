@@ -40,7 +40,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -94,7 +94,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID guid)
     {
         var @this = thisVtbl.Handle;
         void* ret = default;
@@ -127,7 +127,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** outBlob)
+    public static unsafe int LoadFile(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -139,7 +139,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* outBlob)
+    public static unsafe int LoadFile(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -200,7 +200,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetFileUniqueIdentity(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** outUniqueIdentity)
+    public static unsafe int GetFileUniqueIdentity(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** outUniqueIdentity)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -212,7 +212,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetFileUniqueIdentity(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* outUniqueIdentity)
+    public static unsafe int GetFileUniqueIdentity(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* outUniqueIdentity)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -273,7 +273,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -285,7 +285,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -325,7 +325,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -337,7 +337,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -352,7 +352,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -367,7 +367,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -385,7 +385,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -399,7 +399,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -441,7 +441,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -455,7 +455,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* pathOut)
+    public static unsafe int CalcCombinedPath(this ComPtr<ISlangFileSystemExt> thisVtbl, SlangPathType fromPathType, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string fromPath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* pathOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -522,7 +522,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, SlangPathType* pathTypeOut)
+    public static unsafe int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, SlangPathType* pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -534,7 +534,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref SlangPathType pathTypeOut)
+    public static int GetPathType(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref SlangPathType pathTypeOut)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -595,7 +595,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathKind kind, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** outPath)
+    public static unsafe int GetPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathKind kind, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** outPath)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -607,7 +607,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int GetPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathKind kind, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* outPath)
+    public static unsafe int GetPath(this ComPtr<ISlangFileSystemExt> thisVtbl, PathKind kind, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* outPath)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -675,7 +675,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int EnumeratePathContents(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, PfnFileSystemContentsCallBack callback, void* userData)
+    public static unsafe int EnumeratePathContents(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, PfnFileSystemContentsCallBack callback, void* userData)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -687,7 +687,7 @@ public unsafe static class SlangFileSystemExtVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int EnumeratePathContents<T0>(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, PfnFileSystemContentsCallBack callback, ref T0 userData) where T0 : unmanaged
+    public static int EnumeratePathContents<T0>(this ComPtr<ISlangFileSystemExt> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, PfnFileSystemContentsCallBack callback, ref T0 userData) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;

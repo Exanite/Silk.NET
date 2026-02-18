@@ -40,7 +40,7 @@ public unsafe static class SlangFileSystemVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class SlangFileSystemVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -94,7 +94,7 @@ public unsafe static class SlangFileSystemVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void* CastAs(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID guid)
+    public static unsafe void* CastAs(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID guid)
     {
         var @this = thisVtbl.Handle;
         void* ret = default;
@@ -127,7 +127,7 @@ public unsafe static class SlangFileSystemVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** outBlob)
+    public static unsafe int LoadFile(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -139,7 +139,7 @@ public unsafe static class SlangFileSystemVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int LoadFile(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* outBlob)
+    public static unsafe int LoadFile(this ComPtr<ISlangFileSystem> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* outBlob)
     {
         var @this = thisVtbl.Handle;
         int ret = default;

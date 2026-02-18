@@ -66,7 +66,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
         {
             var @this = (ISlangFileSystem*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -78,7 +78,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
         {
             var @this = (ISlangFileSystem*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -120,7 +120,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void* CastAs([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID guid)
+        public readonly unsafe void* CastAs([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID guid)
         {
             var @this = (ISlangFileSystem*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             void* ret = default;
@@ -153,7 +153,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob** outBlob)
+        public readonly unsafe int LoadFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob** outBlob)
         {
             var @this = (ISlangFileSystem*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -165,7 +165,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob* outBlob)
+        public readonly unsafe int LoadFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob* outBlob)
         {
             var @this = (ISlangFileSystem*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;

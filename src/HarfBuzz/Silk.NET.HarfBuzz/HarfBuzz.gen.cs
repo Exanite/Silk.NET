@@ -52,7 +52,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_tag_from_string")]
-        public partial uint TagFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len);
+        public partial uint TagFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 1 in hb-common.h")]
@@ -82,7 +82,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 247, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_direction_from_string")]
-        public partial DirectionT DirectionFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len);
+        public partial DirectionT DirectionFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 247, Column 1 in hb-common.h")]
@@ -108,7 +108,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 320, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_language_from_string")]
-        public unsafe partial LanguageImplT* LanguageFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len);
+        public unsafe partial LanguageImplT* LanguageFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 320, Column 1 in hb-common.h")]
@@ -149,7 +149,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 349, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_script_from_string")]
-        public partial ScriptT ScriptFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len);
+        public partial ScriptT ScriptFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 349, Column 1 in hb-common.h")]
@@ -179,12 +179,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 426, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_feature_from_string")]
-        public unsafe partial int FeatureFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len, FeatureT* feature);
+        public unsafe partial int FeatureFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len, FeatureT* feature);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 426, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_feature_from_string")]
-        public partial int FeatureFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len, ref FeatureT feature);
+        public partial int FeatureFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len, ref FeatureT feature);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 426, Column 1 in hb-common.h")]
@@ -239,12 +239,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 450, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_variation_from_string")]
-        public unsafe partial int VariationFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len, VariationT* variation);
+        public unsafe partial int VariationFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len, VariationT* variation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 450, Column 1 in hb-common.h")]
         [NativeApi(EntryPoint = "hb_variation_from_string")]
-        public partial int VariationFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len, ref VariationT variation);
+        public partial int VariationFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len, ref VariationT variation);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 450, Column 1 in hb-common.h")]
@@ -349,12 +349,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 87, Column 1 in hb-blob.h")]
         [NativeApi(EntryPoint = "hb_blob_create")]
-        public unsafe partial BlobT* BlobCreate([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte data, uint length, MemoryModeT mode, void* user_data, PfnDestroyFuncT destroy);
+        public unsafe partial BlobT* BlobCreate([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte data, uint length, MemoryModeT mode, void* user_data, PfnDestroyFuncT destroy);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 87, Column 1 in hb-blob.h")]
         [NativeApi(EntryPoint = "hb_blob_create")]
-        public unsafe partial BlobT* BlobCreate<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte data, uint length, MemoryModeT mode, ref T0 user_data, PfnDestroyFuncT destroy) where T0 : unmanaged;
+        public unsafe partial BlobT* BlobCreate<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte data, uint length, MemoryModeT mode, ref T0 user_data, PfnDestroyFuncT destroy) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 87, Column 1 in hb-blob.h")]
@@ -379,12 +379,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 94, Column 1 in hb-blob.h")]
         [NativeApi(EntryPoint = "hb_blob_create_or_fail")]
-        public unsafe partial BlobT* BlobCreateOrFail([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte data, uint length, MemoryModeT mode, void* user_data, PfnDestroyFuncT destroy);
+        public unsafe partial BlobT* BlobCreateOrFail([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte data, uint length, MemoryModeT mode, void* user_data, PfnDestroyFuncT destroy);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 94, Column 1 in hb-blob.h")]
         [NativeApi(EntryPoint = "hb_blob_create_or_fail")]
-        public unsafe partial BlobT* BlobCreateOrFail<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte data, uint length, MemoryModeT mode, ref T0 user_data, PfnDestroyFuncT destroy) where T0 : unmanaged;
+        public unsafe partial BlobT* BlobCreateOrFail<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte data, uint length, MemoryModeT mode, ref T0 user_data, PfnDestroyFuncT destroy) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 94, Column 1 in hb-blob.h")]
@@ -404,7 +404,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 101, Column 1 in hb-blob.h")]
         [NativeApi(EntryPoint = "hb_blob_create_from_file")]
-        public unsafe partial BlobT* BlobCreateFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_name);
+        public unsafe partial BlobT* BlobCreateFromFile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 101, Column 1 in hb-blob.h")]
@@ -419,7 +419,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 104, Column 1 in hb-blob.h")]
         [NativeApi(EntryPoint = "hb_blob_create_from_file_or_fail")]
-        public unsafe partial BlobT* BlobCreateFromFileOrFail([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_name);
+        public unsafe partial BlobT* BlobCreateFromFileOrFail([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 104, Column 1 in hb-blob.h")]
@@ -823,7 +823,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 117, Column 1 in hb-set.h")]
         [NativeApi(EntryPoint = "hb_set_add_sorted_array")]
-        public unsafe partial void SetAddSortedArray(SetT* set, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint sorted_codepoints, uint num_codepoints);
+        public unsafe partial void SetAddSortedArray(SetT* set, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint sorted_codepoints, uint num_codepoints);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 122, Column 1 in hb-set.h")]
@@ -1143,7 +1143,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 67, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_create_or_fail_using")]
-        public unsafe partial FaceT* FaceCreateOrFailUsing(BlobT* blob, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte loader_name);
+        public unsafe partial FaceT* FaceCreateOrFailUsing(BlobT* blob, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte loader_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 67, Column 1 in hb-face.h")]
@@ -1158,7 +1158,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 72, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_create_from_file_or_fail")]
-        public unsafe partial FaceT* FaceCreateFromFileOrFail([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_name, uint index);
+        public unsafe partial FaceT* FaceCreateFromFileOrFail([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_name, uint index);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 72, Column 1 in hb-face.h")]
@@ -1173,7 +1173,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_create_from_file_or_fail_using")]
-        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte loader_name);
+        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte loader_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
@@ -1183,17 +1183,17 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_create_from_file_or_fail_using")]
-        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* loader_name);
+        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* loader_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_create_from_file_or_fail_using")]
-        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte loader_name);
+        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte loader_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_create_from_file_or_fail_using")]
-        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string loader_name);
+        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string loader_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
@@ -1203,7 +1203,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_create_from_file_or_fail_using")]
-        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte loader_name);
+        public unsafe partial FaceT* FaceCreateFromFileOrFailUsing([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string file_name, uint index, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte loader_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 76, Column 1 in hb-face.h")]
@@ -1388,7 +1388,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 236, Column 1 in hb-face.h")]
         [NativeApi(EntryPoint = "hb_face_builder_sort_tables")]
-        public unsafe partial void FaceBuilderSortTables(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint tags);
+        public unsafe partial void FaceBuilderSortTables(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint tags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 210, Column 1 in hb-draw.h")]
@@ -2373,12 +2373,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 932, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_nominal_glyphs")]
-        public unsafe partial uint FontGetNominalGlyphs(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_unicode, uint unicode_stride, uint* first_glyph, uint glyph_stride);
+        public unsafe partial uint FontGetNominalGlyphs(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_unicode, uint unicode_stride, uint* first_glyph, uint glyph_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 932, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_nominal_glyphs")]
-        public unsafe partial uint FontGetNominalGlyphs(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_unicode, uint unicode_stride, ref uint first_glyph, uint glyph_stride);
+        public unsafe partial uint FontGetNominalGlyphs(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_unicode, uint unicode_stride, ref uint first_glyph, uint glyph_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 940, Column 1 in hb-font.h")]
@@ -2403,12 +2403,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 947, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_h_advances")]
-        public unsafe partial void FontGetGlyphHAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, int* first_advance, uint advance_stride);
+        public unsafe partial void FontGetGlyphHAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, int* first_advance, uint advance_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 947, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_h_advances")]
-        public unsafe partial void FontGetGlyphHAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, ref int first_advance, uint advance_stride);
+        public unsafe partial void FontGetGlyphHAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, ref int first_advance, uint advance_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 954, Column 1 in hb-font.h")]
@@ -2423,12 +2423,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 954, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_v_advances")]
-        public unsafe partial void FontGetGlyphVAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, int* first_advance, uint advance_stride);
+        public unsafe partial void FontGetGlyphVAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, int* first_advance, uint advance_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 954, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_v_advances")]
-        public unsafe partial void FontGetGlyphVAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, ref int first_advance, uint advance_stride);
+        public unsafe partial void FontGetGlyphVAdvances(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, ref int first_advance, uint advance_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 962, Column 1 in hb-font.h")]
@@ -2493,22 +2493,22 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 971, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_h_origins")]
-        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, int* first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, int* first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 971, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_h_origins")]
-        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, ref int first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, ref int first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 971, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_h_origins")]
-        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, int* first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, int* first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 971, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_h_origins")]
-        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, ref int first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphHOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, ref int first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 981, Column 1 in hb-font.h")]
@@ -2533,22 +2533,22 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 981, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_v_origins")]
-        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, int* first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, int* first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 981, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_v_origins")]
-        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, ref int first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, int* first_x, uint x_stride, ref int first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 981, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_v_origins")]
-        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, int* first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, int* first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 981, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_v_origins")]
-        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, ref int first_y, uint y_stride);
+        public unsafe partial int FontGetGlyphVOrigins(FontT* font, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, ref int first_x, uint x_stride, ref int first_y, uint y_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 991, Column 1 in hb-font.h")]
@@ -2613,12 +2613,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1009, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_from_name")]
-        public unsafe partial int FontGetGlyphFromName(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, int len, uint* glyph);
+        public unsafe partial int FontGetGlyphFromName(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, int len, uint* glyph);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1009, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_from_name")]
-        public unsafe partial int FontGetGlyphFromName(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, int len, ref uint glyph);
+        public unsafe partial int FontGetGlyphFromName(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, int len, ref uint glyph);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1009, Column 1 in hb-font.h")]
@@ -2703,12 +2703,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1044, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_advances_for_direction")]
-        public unsafe partial void FontGetGlyphAdvancesForDirection(FontT* font, DirectionT direction, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, int* first_advance, uint advance_stride);
+        public unsafe partial void FontGetGlyphAdvancesForDirection(FontT* font, DirectionT direction, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, int* first_advance, uint advance_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1044, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_get_glyph_advances_for_direction")]
-        public unsafe partial void FontGetGlyphAdvancesForDirection(FontT* font, DirectionT direction, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint first_glyph, uint glyph_stride, ref int first_advance, uint advance_stride);
+        public unsafe partial void FontGetGlyphAdvancesForDirection(FontT* font, DirectionT direction, uint count, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint first_glyph, uint glyph_stride, ref int first_advance, uint advance_stride);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1052, Column 1 in hb-font.h")]
@@ -2848,12 +2848,12 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1092, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_glyph_from_string")]
-        public unsafe partial int FontGlyphFromString(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte s, int len, uint* glyph);
+        public unsafe partial int FontGlyphFromString(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte s, int len, uint* glyph);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1092, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_glyph_from_string")]
-        public unsafe partial int FontGlyphFromString(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte s, int len, ref uint glyph);
+        public unsafe partial int FontGlyphFromString(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte s, int len, ref uint glyph);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1092, Column 1 in hb-font.h")]
@@ -3008,7 +3008,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1183, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_set_funcs_using")]
-        public unsafe partial int FontSetFuncsUsing(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public unsafe partial int FontSetFuncsUsing(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1183, Column 1 in hb-font.h")]
@@ -3148,7 +3148,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1242, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_set_variations")]
-        public unsafe partial void FontSetVariations(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in VariationT variations, uint variations_length);
+        public unsafe partial void FontSetVariations(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly VariationT variations, uint variations_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1247, Column 1 in hb-font.h")]
@@ -3163,7 +3163,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1252, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_set_var_coords_design")]
-        public unsafe partial void FontSetVarCoordsDesign(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in float coords, uint coords_length);
+        public unsafe partial void FontSetVarCoordsDesign(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly float coords, uint coords_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1257, Column 1 in hb-font.h")]
@@ -3183,7 +3183,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1261, Column 1 in hb-font.h")]
         [NativeApi(EntryPoint = "hb_font_set_var_coords_normalized")]
-        public unsafe partial void FontSetVarCoordsNormalized(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint coords_length);
+        public unsafe partial void FontSetVarCoordsNormalized(FontT* font, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint coords_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 1266, Column 1 in hb-font.h")]
@@ -3213,7 +3213,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 169, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_glyph_info_get_glyph_flags")]
-        public partial GlyphFlagsT GlyphInfoGetGlyphFlags([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in GlyphInfoT info);
+        public partial GlyphFlagsT GlyphInfoGetGlyphFlags([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly GlyphInfoT info);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 232, Column 1 in hb-buffer.h")]
@@ -3223,17 +3223,17 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 232, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_segment_properties_equal")]
-        public unsafe partial int SegmentPropertiesEqual([Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* a, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT b);
+        public unsafe partial int SegmentPropertiesEqual([Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* a, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT b);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 232, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_segment_properties_equal")]
-        public unsafe partial int SegmentPropertiesEqual([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT a, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* b);
+        public unsafe partial int SegmentPropertiesEqual([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT a, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* b);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 232, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_segment_properties_equal")]
-        public partial int SegmentPropertiesEqual([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT a, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT b);
+        public partial int SegmentPropertiesEqual([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT a, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT b);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 236, Column 1 in hb-buffer.h")]
@@ -3243,7 +3243,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 236, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_segment_properties_hash")]
-        public partial uint SegmentPropertiesHash([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT p);
+        public partial uint SegmentPropertiesHash([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT p);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 239, Column 1 in hb-buffer.h")]
@@ -3253,7 +3253,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 239, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_segment_properties_overlay")]
-        public unsafe partial void SegmentPropertiesOverlay(SegmentPropertiesT* p, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT src);
+        public unsafe partial void SegmentPropertiesOverlay(SegmentPropertiesT* p, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT src);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 239, Column 1 in hb-buffer.h")]
@@ -3263,7 +3263,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 239, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_segment_properties_overlay")]
-        public partial void SegmentPropertiesOverlay(ref SegmentPropertiesT p, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT src);
+        public partial void SegmentPropertiesOverlay(ref SegmentPropertiesT p, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT src);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 253, Column 1 in hb-buffer.h")]
@@ -3383,7 +3383,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 335, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_set_segment_properties")]
-        public unsafe partial void BufferSetSegmentProperties(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props);
+        public unsafe partial void BufferSetSegmentProperties(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 339, Column 1 in hb-buffer.h")]
@@ -3513,7 +3513,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 597, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_add_utf8")]
-        public unsafe partial void BufferAddUtf8(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte text, int text_length, uint item_offset, int item_length);
+        public unsafe partial void BufferAddUtf8(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte text, int text_length, uint item_offset, int item_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 597, Column 1 in hb-buffer.h")]
@@ -3528,7 +3528,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 604, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_add_utf16")]
-        public unsafe partial void BufferAddUtf16(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in ushort text, int text_length, uint item_offset, int item_length);
+        public unsafe partial void BufferAddUtf16(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly ushort text, int text_length, uint item_offset, int item_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 611, Column 1 in hb-buffer.h")]
@@ -3538,7 +3538,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 611, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_add_utf32")]
-        public unsafe partial void BufferAddUtf32(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint text, int text_length, uint item_offset, int item_length);
+        public unsafe partial void BufferAddUtf32(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint text, int text_length, uint item_offset, int item_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 618, Column 1 in hb-buffer.h")]
@@ -3548,7 +3548,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 618, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_add_latin1")]
-        public unsafe partial void BufferAddLatin1(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte text, int text_length, uint item_offset, int item_length);
+        public unsafe partial void BufferAddLatin1(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte text, int text_length, uint item_offset, int item_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 618, Column 1 in hb-buffer.h")]
@@ -3563,7 +3563,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 625, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_add_codepoints")]
-        public unsafe partial void BufferAddCodepoints(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in uint text, int text_length, uint item_offset, int item_length);
+        public unsafe partial void BufferAddCodepoints(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly uint text, int text_length, uint item_offset, int item_length);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 632, Column 1 in hb-buffer.h")]
@@ -3618,7 +3618,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 712, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_serialize_format_from_string")]
-        public partial BufferSerializeFormatT BufferSerializeFormatFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte str, int len);
+        public partial BufferSerializeFormatT BufferSerializeFormatFromString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte str, int len);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 712, Column 1 in hb-buffer.h")]
@@ -3739,17 +3739,17 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 753, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_glyphs")]
-        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, FontT* font, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, FontT* font, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 753, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_glyphs")]
-        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** end_ptr, FontT* font, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** end_ptr, FontT* font, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 753, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_glyphs")]
-        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, FontT* font, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, FontT* font, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 753, Column 1 in hb-buffer.h")]
@@ -3759,7 +3759,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 753, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_glyphs")]
-        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, FontT* font, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, FontT* font, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
@@ -3769,17 +3769,17 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_unicode")]
-        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_unicode")]
-        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** end_ptr, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** end_ptr, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_unicode")]
-        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
@@ -3789,7 +3789,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
         [NativeApi(EntryPoint = "hb_buffer_deserialize_unicode")]
-        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, BufferSerializeFormatT format);
+        public unsafe partial int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, BufferSerializeFormatT format);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 831, Column 1 in hb-buffer.h")]
@@ -3914,7 +3914,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 44, Column 1 in hb-shape.h")]
         [NativeApi(EntryPoint = "hb_shape")]
-        public unsafe partial void Shape(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT features, uint num_features);
+        public unsafe partial void Shape(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT features, uint num_features);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 50, Column 1 in hb-shape.h")]
@@ -3924,17 +3924,17 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 50, Column 1 in hb-shape.h")]
         [NativeApi(EntryPoint = "hb_shape_full")]
-        public unsafe partial int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 50, Column 1 in hb-shape.h")]
         [NativeApi(EntryPoint = "hb_shape_full")]
-        public unsafe partial int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 50, Column 1 in hb-shape.h")]
         [NativeApi(EntryPoint = "hb_shape_full")]
-        public unsafe partial int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 71, Column 1 in hb-shape.h")]
@@ -3949,37 +3949,37 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create")]
-        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create")]
-        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create")]
-        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create")]
-        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create")]
-        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create")]
-        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create")]
-        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
@@ -3989,37 +3989,37 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
@@ -4029,77 +4029,77 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create2")]
-        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
@@ -4109,77 +4109,77 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_create_cached2")]
-        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list);
+        public unsafe partial ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 89, Column 1 in hb-shape-plan.h")]
@@ -4234,7 +4234,7 @@ namespace Silk.NET.HarfBuzz
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 110, Column 1 in hb-shape-plan.h")]
         [NativeApi(EntryPoint = "hb_shape_plan_execute")]
-        public unsafe partial int ShapePlanExecute(ShapePlanT* shape_plan, FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT features, uint num_features);
+        public unsafe partial int ShapePlanExecute(ShapePlanT* shape_plan, FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT features, uint num_features);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 117, Column 1 in hb-shape-plan.h")]
@@ -4322,7 +4322,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 753, Column 1 in hb-buffer.h")]
-        public unsafe int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] end_ptrSa, FontT* font, BufferSerializeFormatT format)
+        public unsafe int BufferDeserializeGlyphs(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] end_ptrSa, FontT* font, BufferSerializeFormatT format)
         {
             // StringArrayOverloader
             var end_ptr = (byte**) SilkMarshal.StringArrayToPtr(end_ptrSa);
@@ -4358,7 +4358,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
-        public unsafe int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] end_ptrSa, BufferSerializeFormatT format)
+        public unsafe int BufferDeserializeUnicode(BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] end_ptrSa, BufferSerializeFormatT format)
         {
             // StringArrayOverloader
             var end_ptr = (byte**) SilkMarshal.StringArrayToPtr(end_ptrSa);
@@ -4394,7 +4394,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 50, Column 1 in hb-shape.h")]
-        public unsafe int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe int ShapeFull(FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4418,7 +4418,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4430,7 +4430,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4442,7 +4442,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4466,7 +4466,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4478,7 +4478,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4490,7 +4490,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4514,7 +4514,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4526,7 +4526,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4538,7 +4538,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4550,7 +4550,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4562,7 +4562,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4574,7 +4574,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4586,7 +4586,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreate2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4610,7 +4610,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4622,7 +4622,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4634,7 +4634,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4646,7 +4646,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4658,7 +4658,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4670,7 +4670,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);
@@ -4682,7 +4682,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
+        public unsafe ShapePlanT* ShapePlanCreateCached2(FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SegmentPropertiesT props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly FeatureT user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly int coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] shaper_listSa)
         {
             // StringArrayOverloader
             var shaper_list = (byte**) SilkMarshal.StringArrayToPtr(shaper_listSa);

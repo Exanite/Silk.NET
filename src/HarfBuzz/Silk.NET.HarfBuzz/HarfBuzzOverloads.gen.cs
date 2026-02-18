@@ -2658,7 +2658,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 753, Column 1 in hb-buffer.h")]
-        public static unsafe int BufferDeserializeGlyphs(this HarfBuzz thisApi, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, FontT* font, BufferSerializeFormatT format)
+        public static unsafe int BufferDeserializeGlyphs(this HarfBuzz thisApi, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, FontT* font, BufferSerializeFormatT format)
         {
             // SpanOverloader
             return thisApi.BufferDeserializeGlyphs(buffer, in buf.GetPinnableReference(), buf_len, in end_ptr, font, format);
@@ -2674,7 +2674,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 761, Column 1 in hb-buffer.h")]
-        public static unsafe int BufferDeserializeUnicode(this HarfBuzz thisApi, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* end_ptr, BufferSerializeFormatT format)
+        public static unsafe int BufferDeserializeUnicode(this HarfBuzz thisApi, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> buf, int buf_len, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* end_ptr, BufferSerializeFormatT format)
         {
             // SpanOverloader
             return thisApi.BufferDeserializeUnicode(buffer, in buf.GetPinnableReference(), buf_len, in end_ptr, format);
@@ -2778,7 +2778,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 50, Column 1 in hb-shape.h")]
-        public static unsafe int ShapeFull(this HarfBuzz thisApi, FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe int ShapeFull(this HarfBuzz thisApi, FontT* font, BufferT* buffer, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> features, uint num_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapeFull(font, buffer, in features.GetPinnableReference(), num_features, in shaper_list);
@@ -2794,7 +2794,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate(face, props, in user_features.GetPinnableReference(), num_user_features, in shaper_list);
@@ -2810,7 +2810,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate(face, in props.GetPinnableReference(), user_features, num_user_features, in shaper_list);
@@ -2826,7 +2826,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 56, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate(face, in props.GetPinnableReference(), in user_features.GetPinnableReference(), num_user_features, in shaper_list);
@@ -2842,7 +2842,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached(face, props, in user_features.GetPinnableReference(), num_user_features, in shaper_list);
@@ -2858,7 +2858,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached(face, in props.GetPinnableReference(), user_features, num_user_features, in shaper_list);
@@ -2874,7 +2874,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 63, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached(face, in props.GetPinnableReference(), in user_features.GetPinnableReference(), num_user_features, in shaper_list);
@@ -2890,7 +2890,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate2(face, props, user_features, num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);
@@ -2906,7 +2906,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate2(face, props, in user_features.GetPinnableReference(), num_user_features, coords, num_coords, in shaper_list);
@@ -2922,7 +2922,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate2(face, props, in user_features.GetPinnableReference(), num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);
@@ -2938,7 +2938,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate2(face, in props.GetPinnableReference(), user_features, num_user_features, coords, num_coords, in shaper_list);
@@ -2954,7 +2954,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate2(face, in props.GetPinnableReference(), user_features, num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);
@@ -2970,7 +2970,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate2(face, in props.GetPinnableReference(), in user_features.GetPinnableReference(), num_user_features, coords, num_coords, in shaper_list);
@@ -2986,7 +2986,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 70, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreate2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreate2(face, in props.GetPinnableReference(), in user_features.GetPinnableReference(), num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);
@@ -3002,7 +3002,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached2(face, props, user_features, num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);
@@ -3018,7 +3018,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached2(face, props, in user_features.GetPinnableReference(), num_user_features, coords, num_coords, in shaper_list);
@@ -3034,7 +3034,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] SegmentPropertiesT* props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached2(face, props, in user_features.GetPinnableReference(), num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);
@@ -3050,7 +3050,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached2(face, in props.GetPinnableReference(), user_features, num_user_features, coords, num_coords, in shaper_list);
@@ -3066,7 +3066,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] FeatureT* user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached2(face, in props.GetPinnableReference(), user_features, num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);
@@ -3082,7 +3082,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] int* coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached2(face, in props.GetPinnableReference(), in user_features.GetPinnableReference(), num_user_features, coords, num_coords, in shaper_list);
@@ -3098,7 +3098,7 @@ namespace Silk.NET.HarfBuzz
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 79, Column 1 in hb-shape-plan.h")]
-        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* shaper_list)
+        public static unsafe ShapePlanT* ShapePlanCreateCached2(this HarfBuzz thisApi, FaceT* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SegmentPropertiesT> props, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<FeatureT> user_features, uint num_user_features, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<int> coords, uint num_coords, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* shaper_list)
         {
             // SpanOverloader
             return thisApi.ShapePlanCreateCached2(face, in props.GetPinnableReference(), in user_features.GetPinnableReference(), num_user_features, in coords.GetPinnableReference(), num_coords, in shaper_list);

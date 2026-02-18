@@ -40,7 +40,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -106,7 +106,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateSession(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SessionDesc desc, ISession** outSession)
+    public static unsafe int CreateSession(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SessionDesc desc, ISession** outSession)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -118,7 +118,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int CreateSession(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SessionDesc desc, ref ISession* outSession)
+    public static unsafe int CreateSession(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SessionDesc desc, ref ISession* outSession)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -142,7 +142,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static SlangProfileID FindProfile(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+    public static SlangProfileID FindProfile(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name)
     {
         var @this = thisVtbl.Handle;
         SlangProfileID ret = default;
@@ -172,7 +172,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static void SetDownstreamCompilerPath(this ComPtr<IGlobalSession> thisVtbl, SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path)
+    public static void SetDownstreamCompilerPath(this ComPtr<IGlobalSession> thisVtbl, SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path)
     {
         var @this = thisVtbl.Handle;
         fixed (byte* pathPtr = &path)
@@ -198,7 +198,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static void SetDownstreamCompilerPrelude(this ComPtr<IGlobalSession> thisVtbl, SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
+    public static void SetDownstreamCompilerPrelude(this ComPtr<IGlobalSession> thisVtbl, SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte preludeText)
     {
         var @this = thisVtbl.Handle;
         fixed (byte* preludeTextPtr = &preludeText)
@@ -278,7 +278,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static void SetLanguagePrelude(this ComPtr<IGlobalSession> thisVtbl, SlangSourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
+    public static void SetLanguagePrelude(this ComPtr<IGlobalSession> thisVtbl, SlangSourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte preludeText)
     {
         var @this = thisVtbl.Handle;
         fixed (byte* preludeTextPtr = &preludeText)
@@ -342,7 +342,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourceString)
+    public static unsafe void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourceString)
     {
         var @this = thisVtbl.Handle;
         fixed (byte* sourceStringPtr = &sourceString)
@@ -361,7 +361,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourceString)
+    public static unsafe void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourceString)
     {
         var @this = thisVtbl.Handle;
         fixed (byte* sourcePathPtr = &sourcePath)
@@ -371,7 +371,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourceString)
+    public static void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourceString)
     {
         var @this = thisVtbl.Handle;
         fixed (byte* sourcePathPtr = &sourcePath)
@@ -384,7 +384,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourceString)
+    public static void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourceString)
     {
         var @this = thisVtbl.Handle;
         fixed (byte* sourcePathPtr = &sourcePath)
@@ -405,7 +405,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourceString)
+    public static void AddBuiltins(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourceString)
     {
         var @this = thisVtbl.Handle;
         var sourcePathPtr = (byte*) SilkMarshal.StringToPtr(sourcePath, NativeStringEncoding.UTF8);
@@ -490,7 +490,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int LoadCoreModule<T0>(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 coreModule, nuint coreModuleSizeInBytes) where T0 : unmanaged
+    public static int LoadCoreModule<T0>(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 coreModule, nuint coreModuleSizeInBytes) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -532,7 +532,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static SlangCapabilityID FindCapability(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+    public static SlangCapabilityID FindCapability(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name)
     {
         var @this = thisVtbl.Handle;
         SlangCapabilityID ret = default;
@@ -620,7 +620,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int SetSPIRVCoreGrammar(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte jsonPath)
+    public static int SetSPIRVCoreGrammar(this ComPtr<IGlobalSession> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte jsonPath)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -691,7 +691,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -703,7 +703,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -718,7 +718,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -733,7 +733,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -817,7 +817,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int LoadBuiltinModule<T0>(this ComPtr<IGlobalSession> thisVtbl, BuiltinModuleName module, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 moduleData, nuint sizeInBytes) where T0 : unmanaged
+    public static int LoadBuiltinModule<T0>(this ComPtr<IGlobalSession> thisVtbl, BuiltinModuleName module, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 moduleData, nuint sizeInBytes) where T0 : unmanaged
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -1090,7 +1090,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
@@ -1098,7 +1098,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, Span<SessionDesc> outSessionDesc, ISlangUnknown** outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, Span<SessionDesc> outSessionDesc, ISlangUnknown** outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader
@@ -1106,7 +1106,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+    public static unsafe int ParseCommandLineArguments<TI0>(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
@@ -1114,7 +1114,7 @@ public unsafe static class GlobalSessionVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, Span<SessionDesc> outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+    public static unsafe int ParseCommandLineArguments(this ComPtr<IGlobalSession> thisVtbl, int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, Span<SessionDesc> outSessionDesc, ref ISlangUnknown* outAuxAllocation)
     {
         var @this = thisVtbl.Handle;
         // SpanOverloader

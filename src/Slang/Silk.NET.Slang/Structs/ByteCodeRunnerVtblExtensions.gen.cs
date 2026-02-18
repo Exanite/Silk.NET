@@ -40,7 +40,7 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -124,7 +124,7 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int FindFunctionByName(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+    public static int FindFunctionByName(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -262,7 +262,7 @@ public unsafe static class ByteCodeRunnerVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int RegisterExtCall(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, PfnVMExtFunction functionPtr)
+    public static int RegisterExtCall(this ComPtr<IByteCodeRunner> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, PfnVMExtFunction functionPtr)
     {
         var @this = thisVtbl.Handle;
         int ret = default;

@@ -263,12 +263,12 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte filepathname, int face_index, FaceRec** aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname, int face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte filepathname, int face_index, ref FaceRec* aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname, int face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
@@ -293,12 +293,12 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_base, int file_size, int face_index, FaceRec** aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_base, int file_size, int face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte file_base, int file_size, int face_index, ref FaceRec* aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_base, int file_size, int face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
@@ -323,12 +323,12 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Open_Face")]
-        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in OpenArgs args, int face_index, FaceRec** aface);
+        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs args, int face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Open_Face")]
-        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in OpenArgs args, int face_index, ref FaceRec* aface);
+        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs args, int face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2789, Column 3 in freetype.h")]
@@ -338,7 +338,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2789, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Attach_File")]
-        public unsafe partial int AttachFile(FaceRec* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte filepathname);
+        public unsafe partial int AttachFile(FaceRec* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2789, Column 3 in freetype.h")]
@@ -353,7 +353,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2789, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Attach_File")]
-        public partial int AttachFile(ref FaceRec face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte filepathname);
+        public partial int AttachFile(ref FaceRec face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2789, Column 3 in freetype.h")]
@@ -368,7 +368,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2825, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Attach_Stream")]
-        public unsafe partial int AttachStream(FaceRec* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in OpenArgs parameters);
+        public unsafe partial int AttachStream(FaceRec* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs parameters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2825, Column 3 in freetype.h")]
@@ -378,7 +378,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2825, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Attach_Stream")]
-        public partial int AttachStream(ref FaceRec face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in OpenArgs parameters);
+        public partial int AttachStream(ref FaceRec face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs parameters);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2855, Column 3 in freetype.h")]
@@ -718,7 +718,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4437, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Name_Index")]
-        public unsafe partial uint GetNameIndex(FaceRec* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte glyph_name);
+        public unsafe partial uint GetNameIndex(FaceRec* face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte glyph_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4437, Column 3 in freetype.h")]
@@ -733,7 +733,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4437, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Name_Index")]
-        public partial uint GetNameIndex(ref FaceRec face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte glyph_name);
+        public partial uint GetNameIndex(ref FaceRec face, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte glyph_name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4437, Column 3 in freetype.h")]
@@ -1200,7 +1200,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5146, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Vector_Transform")]
-        public unsafe partial void VectorTransform(Vector* vector, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Matrix matrix);
+        public unsafe partial void VectorTransform(Vector* vector, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Matrix matrix);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5146, Column 3 in freetype.h")]
@@ -1210,7 +1210,7 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5146, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Vector_Transform")]
-        public partial void VectorTransform(ref Vector vector, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in Matrix matrix);
+        public partial void VectorTransform(ref Vector vector, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly Matrix matrix);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5217, Column 3 in freetype.h")]

@@ -40,7 +40,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+    public static unsafe int QueryInterface(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -52,7 +52,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int QueryInterface(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+    public static unsafe int QueryInterface(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -258,7 +258,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ISlangBlob** outDiagnostics)
+    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -270,7 +270,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, IComponentType** outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -285,7 +285,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ISlangBlob** outDiagnostics)
+    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ISlangBlob** outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -300,7 +300,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
+    public static unsafe int Specialize(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref IComponentType* outSpecializedComponentType, ref ISlangBlob* outDiagnostics)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -435,7 +435,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int RenameEntryPoint(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte newName, IComponentType** outEntryPoint)
+    public static unsafe int RenameEntryPoint(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte newName, IComponentType** outEntryPoint)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -447,7 +447,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int RenameEntryPoint(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte newName, ref IComponentType* outEntryPoint)
+    public static unsafe int RenameEntryPoint(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte newName, ref IComponentType* outEntryPoint)
     {
         var @this = thisVtbl.Handle;
         int ret = default;
@@ -788,7 +788,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int Specialize<TI0>(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+    public static unsafe int Specialize<TI0>(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
@@ -804,7 +804,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static unsafe int Specialize<TI0>(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+    public static unsafe int Specialize<TI0>(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref ComPtr<TI0> outSpecializedComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader
@@ -860,7 +860,7 @@ public unsafe static class EntryPointVtblExtensions
     }
 
     /// <summary>To be documented.</summary>
-    public static int RenameEntryPoint<TI0>(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte newName, ref ComPtr<TI0> outEntryPoint) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+    public static int RenameEntryPoint<TI0>(this ComPtr<IEntryPoint> thisVtbl, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte newName, ref ComPtr<TI0> outEntryPoint) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
     {
         var @this = thisVtbl.Handle;
         // ComPtrOverloader

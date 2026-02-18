@@ -1282,7 +1282,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, source, sourceSize, ref outModuleVersion.GetPinnableReference(), outModuleCompilerVersion, in outModuleName);
@@ -1290,7 +1290,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, source, sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, outModuleName);
@@ -1298,7 +1298,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, source, sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, in outModuleName);
@@ -1314,7 +1314,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, in source.GetPinnableReference(), sourceSize, outModuleVersion, outModuleCompilerVersion, in outModuleName);
@@ -1322,7 +1322,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, in source.GetPinnableReference(), sourceSize, outModuleVersion, in outModuleCompilerVersion, outModuleName);
@@ -1330,7 +1330,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, in source.GetPinnableReference(), sourceSize, outModuleVersion, in outModuleCompilerVersion, in outModuleName);
@@ -1346,7 +1346,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, in source.GetPinnableReference(), sourceSize, ref outModuleVersion.GetPinnableReference(), outModuleCompilerVersion, in outModuleName);
@@ -1354,7 +1354,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, in source.GetPinnableReference(), sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, outModuleName);
@@ -1362,7 +1362,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(session, in source.GetPinnableReference(), sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, in outModuleName);
@@ -1378,7 +1378,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), source, sourceSize, outModuleVersion, outModuleCompilerVersion, in outModuleName);
@@ -1386,7 +1386,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), source, sourceSize, outModuleVersion, in outModuleCompilerVersion, outModuleName);
@@ -1394,7 +1394,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), source, sourceSize, outModuleVersion, in outModuleCompilerVersion, in outModuleName);
@@ -1410,7 +1410,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), source, sourceSize, ref outModuleVersion.GetPinnableReference(), outModuleCompilerVersion, in outModuleName);
@@ -1418,7 +1418,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), source, sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, outModuleName);
@@ -1426,7 +1426,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), source, sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, in outModuleName);
@@ -1442,7 +1442,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), in source.GetPinnableReference(), sourceSize, outModuleVersion, outModuleCompilerVersion, in outModuleName);
@@ -1450,7 +1450,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), in source.GetPinnableReference(), sourceSize, outModuleVersion, in outModuleCompilerVersion, outModuleName);
@@ -1458,7 +1458,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), in source.GetPinnableReference(), sourceSize, outModuleVersion, in outModuleCompilerVersion, in outModuleName);
@@ -1474,7 +1474,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), in source.GetPinnableReference(), sourceSize, ref outModuleVersion.GetPinnableReference(), outModuleCompilerVersion, in outModuleName);
@@ -1482,7 +1482,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), in source.GetPinnableReference(), sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, outModuleName);
@@ -1490,7 +1490,7 @@ namespace Silk.NET.Slang
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4765, Column 38 in slang.h")]
-        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName) where T0 : unmanaged
+        public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
             return thisApi.SlangLoadModuleInfoFromIRBlob(ref session.GetPinnableReference(), in source.GetPinnableReference(), sourceSize, ref outModuleVersion.GetPinnableReference(), in outModuleCompilerVersion, in outModuleName);

@@ -18,10 +18,10 @@ namespace Silk.NET.Tracy
     {
         [NativeName("Type", "")]
         [NativeName("Name", "TracyFile")]
-        public const string TracyFile = unchecked((string) "TracyC.h");
+        public const string TracyFile = unchecked((string) "Tracy.h");
         [NativeName("Type", "int")]
         [NativeName("Name", "TracyLine")]
-        public const int TracyLine = unchecked((int) 0x186);
+        public const int TracyLine = unchecked((int) 0x18);
         [NativeName("Type", "int")]
         [NativeName("Name", "TracyCIsStarted")]
         public const int TracyCIsStarted = unchecked((int) 0x1);
@@ -37,7 +37,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 21, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_set_thread_name")]
-        public partial void TracySetThreadName([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public partial void TracySetThreadName([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 21, Column 16 in TracyC.h")]
@@ -52,7 +52,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc")]
-        public unsafe partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, uint color);
+        public unsafe partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
@@ -62,17 +62,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc")]
-        public unsafe partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, uint color);
+        public unsafe partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc")]
-        public partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, uint color);
+        public partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc")]
-        public partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, uint color);
+        public partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
@@ -82,7 +82,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc")]
-        public partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, uint color);
+        public partial ulong TracyAllocSrcloc(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
@@ -97,7 +97,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
@@ -107,17 +107,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
@@ -127,7 +127,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
@@ -137,47 +137,47 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
+        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
+        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
@@ -187,7 +187,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
@@ -197,17 +197,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
+        public unsafe partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
+        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
@@ -217,7 +217,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_alloc_srcloc_name")]
-        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz, uint color);
+        public partial ulong TracyAllocSrclocName(uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
@@ -232,7 +232,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 217, Column 25 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_zone_begin")]
-        public partial TracyCZoneContext TracyEmitZoneBegin([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in TracySourceLocationData srcloc, int active);
+        public partial TracyCZoneContext TracyEmitZoneBegin([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly TracySourceLocationData srcloc, int active);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 218, Column 25 in TracyC.h")]
@@ -242,7 +242,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 218, Column 25 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_zone_begin_callstack")]
-        public partial TracyCZoneContext TracyEmitZoneBeginCallstack([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in TracySourceLocationData srcloc, int depth, int active);
+        public partial TracyCZoneContext TracyEmitZoneBeginCallstack([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly TracySourceLocationData srcloc, int depth, int active);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 219, Column 25 in TracyC.h")]
@@ -267,7 +267,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 222, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_zone_text")]
-        public partial void TracyEmitZoneText(TracyCZoneContext ctx, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte txt, nuint size);
+        public partial void TracyEmitZoneText(TracyCZoneContext ctx, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte txt, nuint size);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 222, Column 16 in TracyC.h")]
@@ -282,7 +282,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 223, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_zone_name")]
-        public partial void TracyEmitZoneName(TracyCZoneContext ctx, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte txt, nuint size);
+        public partial void TracyEmitZoneName(TracyCZoneContext ctx, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte txt, nuint size);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 223, Column 16 in TracyC.h")]
@@ -412,7 +412,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 268, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc")]
-        public partial void TracyEmitMemoryAlloc<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int secure) where T0 : unmanaged;
+        public partial void TracyEmitMemoryAlloc<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int secure) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 269, Column 16 in TracyC.h")]
@@ -422,7 +422,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 269, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_callstack")]
-        public partial void TracyEmitMemoryAllocCallstack<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int depth, int secure) where T0 : unmanaged;
+        public partial void TracyEmitMemoryAllocCallstack<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int depth, int secure) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 270, Column 16 in TracyC.h")]
@@ -432,7 +432,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 270, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free")]
-        public partial void TracyEmitMemoryFree<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int secure) where T0 : unmanaged;
+        public partial void TracyEmitMemoryFree<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int secure) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 271, Column 16 in TracyC.h")]
@@ -442,7 +442,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 271, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_callstack")]
-        public partial void TracyEmitMemoryFreeCallstack<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int depth, int secure) where T0 : unmanaged;
+        public partial void TracyEmitMemoryFreeCallstack<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int depth, int secure) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
@@ -452,7 +452,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_named")]
-        public unsafe partial void TracyEmitMemoryAllocNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public unsafe partial void TracyEmitMemoryAllocNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
@@ -462,17 +462,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_named")]
-        public unsafe partial void TracyEmitMemoryAllocNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
+        public unsafe partial void TracyEmitMemoryAllocNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_named")]
-        public partial void TracyEmitMemoryAllocNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryAllocNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_named")]
-        public partial void TracyEmitMemoryAllocNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryAllocNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
@@ -482,7 +482,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_callstack_named")]
-        public unsafe partial void TracyEmitMemoryAllocCallstackNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public unsafe partial void TracyEmitMemoryAllocCallstackNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
@@ -492,17 +492,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_callstack_named")]
-        public unsafe partial void TracyEmitMemoryAllocCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
+        public unsafe partial void TracyEmitMemoryAllocCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_callstack_named")]
-        public partial void TracyEmitMemoryAllocCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryAllocCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_alloc_callstack_named")]
-        public partial void TracyEmitMemoryAllocCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryAllocCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
@@ -512,7 +512,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_named")]
-        public unsafe partial void TracyEmitMemoryFreeNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public unsafe partial void TracyEmitMemoryFreeNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
@@ -522,17 +522,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_named")]
-        public unsafe partial void TracyEmitMemoryFreeNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
+        public unsafe partial void TracyEmitMemoryFreeNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_named")]
-        public partial void TracyEmitMemoryFreeNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryFreeNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_named")]
-        public partial void TracyEmitMemoryFreeNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryFreeNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
@@ -542,7 +542,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_callstack_named")]
-        public unsafe partial void TracyEmitMemoryFreeCallstackNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public unsafe partial void TracyEmitMemoryFreeCallstackNamed([Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
@@ -552,17 +552,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_callstack_named")]
-        public unsafe partial void TracyEmitMemoryFreeCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
+        public unsafe partial void TracyEmitMemoryFreeCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_callstack_named")]
-        public partial void TracyEmitMemoryFreeCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryFreeCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_free_callstack_named")]
-        public partial void TracyEmitMemoryFreeCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
+        public partial void TracyEmitMemoryFreeCallstackNamed<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 276, Column 16 in TracyC.h")]
@@ -572,7 +572,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 276, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_discard")]
-        public partial void TracyEmitMemoryDiscard([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, int secure);
+        public partial void TracyEmitMemoryDiscard([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, int secure);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 276, Column 16 in TracyC.h")]
@@ -587,7 +587,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 277, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_memory_discard_callstack")]
-        public partial void TracyEmitMemoryDiscardCallstack([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, int secure, int depth);
+        public partial void TracyEmitMemoryDiscardCallstack([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, int secure, int depth);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 277, Column 16 in TracyC.h")]
@@ -602,7 +602,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 279, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_message")]
-        public partial void TracyEmitMessage([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte txt, nuint size, int callstack_depth);
+        public partial void TracyEmitMessage([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte txt, nuint size, int callstack_depth);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 279, Column 16 in TracyC.h")]
@@ -617,7 +617,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 280, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_messageL")]
-        public partial void TracyEmitMessageL([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte txt, int callstack_depth);
+        public partial void TracyEmitMessageL([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte txt, int callstack_depth);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 280, Column 16 in TracyC.h")]
@@ -632,7 +632,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 281, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_messageC")]
-        public partial void TracyEmitMessageC([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte txt, nuint size, uint color, int callstack_depth);
+        public partial void TracyEmitMessageC([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte txt, nuint size, uint color, int callstack_depth);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 281, Column 16 in TracyC.h")]
@@ -647,7 +647,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 282, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_messageLC")]
-        public partial void TracyEmitMessageLC([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte txt, uint color, int callstack_depth);
+        public partial void TracyEmitMessageLC([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte txt, uint color, int callstack_depth);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 282, Column 16 in TracyC.h")]
@@ -662,7 +662,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 302, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_frame_mark")]
-        public partial void TracyEmitFrameMark([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public partial void TracyEmitFrameMark([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 302, Column 16 in TracyC.h")]
@@ -677,7 +677,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 303, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_frame_mark_start")]
-        public partial void TracyEmitFrameMarkStart([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public partial void TracyEmitFrameMarkStart([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 303, Column 16 in TracyC.h")]
@@ -692,7 +692,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 304, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_frame_mark_end")]
-        public partial void TracyEmitFrameMarkEnd([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name);
+        public partial void TracyEmitFrameMarkEnd([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 304, Column 16 in TracyC.h")]
@@ -707,7 +707,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 305, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_frame_image")]
-        public partial void TracyEmitFrameImage<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 image, ushort w, ushort h, byte offset, int flip) where T0 : unmanaged;
+        public partial void TracyEmitFrameImage<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 image, ushort w, ushort h, byte offset, int flip) where T0 : unmanaged;
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 314, Column 16 in TracyC.h")]
@@ -717,7 +717,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 314, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_plot")]
-        public partial void TracyEmitPlot([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, double val);
+        public partial void TracyEmitPlot([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, double val);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 314, Column 16 in TracyC.h")]
@@ -732,7 +732,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 315, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_plot_float")]
-        public partial void TracyEmitPlotFloat([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, float val);
+        public partial void TracyEmitPlotFloat([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, float val);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 315, Column 16 in TracyC.h")]
@@ -747,7 +747,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 316, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_plot_int")]
-        public partial void TracyEmitPlotInt([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, long val);
+        public partial void TracyEmitPlotInt([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, long val);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 316, Column 16 in TracyC.h")]
@@ -762,7 +762,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 317, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_plot_config")]
-        public partial void TracyEmitPlotConfig([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, int type, int step, int fill, uint color);
+        public partial void TracyEmitPlotConfig([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, int type, int step, int fill, uint color);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 317, Column 16 in TracyC.h")]
@@ -777,7 +777,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 318, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_emit_message_appinfo")]
-        public partial void TracyEmitMessageAppinfo([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte txt, nuint size);
+        public partial void TracyEmitMessageAppinfo([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte txt, nuint size);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 318, Column 16 in TracyC.h")]
@@ -792,7 +792,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 350, Column 49 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_announce_lockable_ctx")]
-        public unsafe partial TracyLockableContextData* TracyAnnounceLockableCtx([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in TracySourceLocationData srcloc);
+        public unsafe partial TracyLockableContextData* TracyAnnounceLockableCtx([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly TracySourceLocationData srcloc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 351, Column 16 in TracyC.h")]
@@ -827,7 +827,7 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 356, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_mark_lockable_ctx")]
-        public unsafe partial void TracyMarkLockableCtx(TracyLockableContextData* lockdata, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in TracySourceLocationData srcloc);
+        public unsafe partial void TracyMarkLockableCtx(TracyLockableContextData* lockdata, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly TracySourceLocationData srcloc);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 357, Column 16 in TracyC.h")]
@@ -837,12 +837,17 @@ namespace Silk.NET.Tracy
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 357, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_custom_name_lockable_ctx")]
-        public unsafe partial void TracyCustomNameLockableCtx(TracyLockableContextData* lockdata, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, nuint nameSz);
+        public unsafe partial void TracyCustomNameLockableCtx(TracyLockableContextData* lockdata, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, nuint nameSz);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 357, Column 16 in TracyC.h")]
         [NativeApi(EntryPoint = "___tracy_custom_name_lockable_ctx")]
         public unsafe partial void TracyCustomNameLockableCtx(TracyLockableContextData* lockdata, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz);
+
+        /// <summary>To be documented.</summary>
+        [NativeName("Src", "Line 17, Column 31 in Tracy.h")]
+        [NativeApi(EntryPoint = "___tracy_get_time")]
+        public partial long TracyGetTime();
 
 
         public Tracy(INativeContext ctx)

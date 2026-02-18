@@ -63,7 +63,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -75,7 +75,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -129,7 +129,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateSession([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SessionDesc desc, ISession** outSession)
+        public readonly unsafe int CreateSession([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SessionDesc desc, ISession** outSession)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -141,7 +141,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateSession([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SessionDesc desc, ref ISession* outSession)
+        public readonly unsafe int CreateSession([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SessionDesc desc, ref ISession* outSession)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -165,7 +165,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+        public readonly SlangProfileID FindProfile([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             SlangProfileID ret = default;
@@ -195,7 +195,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetDownstreamCompilerPath(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path)
+        public readonly void SetDownstreamCompilerPath(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* pathPtr = &path)
@@ -221,7 +221,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetDownstreamCompilerPrelude(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
+        public readonly void SetDownstreamCompilerPrelude(SlangPassThrough passThrough, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* preludeTextPtr = &preludeText)
@@ -301,7 +301,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void SetLanguagePrelude(SlangSourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte preludeText)
+        public readonly void SetLanguagePrelude(SlangSourceLanguage sourceLanguage, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte preludeText)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* preludeTextPtr = &preludeText)
@@ -365,7 +365,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourceString)
+        public readonly unsafe void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourceString)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* sourceStringPtr = &sourceString)
@@ -384,7 +384,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourceString)
+        public readonly unsafe void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* sourceString)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* sourcePathPtr = &sourcePath)
@@ -394,7 +394,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourceString)
+        public readonly void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourceString)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* sourcePathPtr = &sourcePath)
@@ -407,7 +407,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourceString)
+        public readonly void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourceString)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             fixed (byte* sourcePathPtr = &sourcePath)
@@ -428,7 +428,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte sourceString)
+        public readonly void AddBuiltins([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string sourcePath, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte sourceString)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             var sourcePathPtr = (byte*) SilkMarshal.StringToPtr(sourcePath, NativeStringEncoding.UTF8);
@@ -513,7 +513,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int LoadCoreModule<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 coreModule, nuint coreModuleSizeInBytes) where T0 : unmanaged
+        public readonly int LoadCoreModule<T0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 coreModule, nuint coreModuleSizeInBytes) where T0 : unmanaged
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -555,7 +555,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly SlangCapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+        public readonly SlangCapabilityID FindCapability([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             SlangCapabilityID ret = default;
@@ -643,7 +643,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int SetSPIRVCoreGrammar([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte jsonPath)
+        public readonly int SetSPIRVCoreGrammar([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte jsonPath)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -714,7 +714,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, SessionDesc* outSessionDesc, ISlangUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -726,7 +726,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, SessionDesc* outSessionDesc, ref ISlangUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -741,7 +741,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, ref SessionDesc outSessionDesc, ISlangUnknown** outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -756,7 +756,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
+        public readonly unsafe int ParseCommandLineArguments(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, ref SessionDesc outSessionDesc, ref ISlangUnknown* outAuxAllocation)
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -840,7 +840,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int LoadBuiltinModule<T0>(BuiltinModuleName module, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in T0 moduleData, nuint sizeInBytes) where T0 : unmanaged
+        public readonly int LoadBuiltinModule<T0>(BuiltinModuleName module, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly T0 moduleData, nuint sizeInBytes) where T0 : unmanaged
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -937,7 +937,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, SessionDesc* outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -945,7 +945,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
+        public readonly unsafe int ParseCommandLineArguments<TI0>(int argc, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* argv, ref SessionDesc outSessionDesc, ref ComPtr<TI0> outAuxAllocation) where TI0 : unmanaged, IComVtbl<ISlangUnknown>, IComVtbl<TI0>
         {
             var @this = (IGlobalSession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader

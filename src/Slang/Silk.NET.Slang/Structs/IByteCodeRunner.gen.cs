@@ -63,7 +63,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -75,7 +75,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -147,7 +147,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int FindFunctionByName([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name)
+        public readonly int FindFunctionByName([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -285,7 +285,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly int RegisterExtCall([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte name, PfnVMExtFunction functionPtr)
+        public readonly int RegisterExtCall([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte name, PfnVMExtFunction functionPtr)
         {
             var @this = (IByteCodeRunner*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;

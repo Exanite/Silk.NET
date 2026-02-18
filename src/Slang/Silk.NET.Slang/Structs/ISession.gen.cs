@@ -63,7 +63,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, void** outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, void** outObject)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -75,7 +75,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SlangUUID uuid, ref void* outObject)
+        public readonly unsafe int QueryInterface([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SlangUUID uuid, ref void* outObject)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -138,7 +138,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModule([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModule([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -150,7 +150,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModule([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModule([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -238,7 +238,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -250,7 +250,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -265,7 +265,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -280,7 +280,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -354,7 +354,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -366,7 +366,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -381,7 +381,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -396,7 +396,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -414,7 +414,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -429,7 +429,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -447,7 +447,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -465,7 +465,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -486,7 +486,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -500,7 +500,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -517,7 +517,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -534,7 +534,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -610,7 +610,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -624,7 +624,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -641,7 +641,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -658,7 +658,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSource([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -790,7 +790,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -802,7 +802,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, IComponentType** outCompositeComponentType, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -817,7 +817,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ISlangBlob** outDiagnostics)
+        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -832,7 +832,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe int CreateCompositeComponentType([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref IComponentType* outCompositeComponentType, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -871,7 +871,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe TypeReflection* SpecializeType(TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ISlangBlob** outDiagnostics)
+        public readonly unsafe TypeReflection* SpecializeType(TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             TypeReflection* ret = default;
@@ -883,7 +883,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe TypeReflection* SpecializeType(TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in SpecializationArg specializationArgs, long specializationArgCount, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe TypeReflection* SpecializeType(TypeReflection* type, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly SpecializationArg specializationArgs, long specializationArgCount, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             TypeReflection* ret = default;
@@ -1129,7 +1129,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1141,7 +1141,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1156,7 +1156,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1171,7 +1171,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1245,7 +1245,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1257,7 +1257,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1272,7 +1272,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1287,7 +1287,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1305,7 +1305,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1320,7 +1320,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1338,7 +1338,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1356,7 +1356,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1377,7 +1377,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1391,7 +1391,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1408,7 +1408,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1425,7 +1425,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1501,7 +1501,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1515,7 +1515,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ISlangBlob* source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1532,7 +1532,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1549,7 +1549,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromIRBlob([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, ref ISlangBlob source, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1672,7 +1672,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe bool IsBinaryModuleUpToDate([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, ISlangBlob* binaryModuleBlob)
+        public readonly unsafe bool IsBinaryModuleUpToDate([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte modulePath, ISlangBlob* binaryModuleBlob)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             bool ret = default;
@@ -1684,7 +1684,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly bool IsBinaryModuleUpToDate([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte modulePath, ref ISlangBlob binaryModuleBlob)
+        public readonly bool IsBinaryModuleUpToDate([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte modulePath, ref ISlangBlob binaryModuleBlob)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             bool ret = default;
@@ -1745,7 +1745,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1757,7 +1757,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1797,7 +1797,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1809,7 +1809,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1824,7 +1824,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1839,7 +1839,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1857,7 +1857,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1871,7 +1871,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1913,7 +1913,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1927,7 +1927,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1973,7 +1973,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -1985,7 +1985,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2000,7 +2000,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2015,7 +2015,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2033,7 +2033,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2047,7 +2047,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2064,7 +2064,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2079,7 +2079,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2097,7 +2097,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2115,7 +2115,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2136,7 +2136,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2153,7 +2153,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2173,7 +2173,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2187,7 +2187,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2204,7 +2204,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2221,7 +2221,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2241,7 +2241,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2257,7 +2257,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2301,7 +2301,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2315,7 +2315,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2361,7 +2361,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2375,7 +2375,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2392,7 +2392,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2409,7 +2409,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2429,7 +2429,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2445,7 +2445,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2493,7 +2493,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ISlangBlob** outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ISlangBlob** outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2509,7 +2509,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte @string, ref ISlangBlob* outDiagnostics)
+        public readonly unsafe IModule* LoadModuleFromSourceString([Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte @string, ref ISlangBlob* outDiagnostics)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             IModule* ret = default;
@@ -2591,7 +2591,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2603,7 +2603,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2615,7 +2615,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2642,7 +2642,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2657,7 +2657,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2672,7 +2672,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2702,7 +2702,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2717,7 +2717,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2732,7 +2732,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2765,7 +2765,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2783,7 +2783,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2801,7 +2801,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             int ret = default;
@@ -2854,7 +2854,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateCompositeComponentType<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int CreateCompositeComponentType<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ISlangBlob** outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -2862,7 +2862,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int CreateCompositeComponentType<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
+        public readonly unsafe int CreateCompositeComponentType<TI0>([Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly IComponentType* componentTypes, long componentTypeCount, ref ComPtr<TI0> outCompositeComponentType, ref ISlangBlob* outDiagnostics) where TI0 : unmanaged, IComVtbl<IComponentType>, IComVtbl<TI0>
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // ComPtrOverloader
@@ -2885,7 +2885,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -2897,7 +2897,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -2924,7 +2924,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -2936,7 +2936,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ISlangBlob* source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -2963,7 +2963,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -2975,7 +2975,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -3002,7 +3002,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleName)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleCompilerVersionSa, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
@@ -3014,7 +3014,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] [RequiresLocation] in byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
+        public readonly unsafe int LoadModuleInfoFromIRBlob(ref ISlangBlob source, ref long outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] string[] outModuleNameSa)
         {
             var @this = (ISession*) Unsafe.AsPointer(ref Unsafe.AsRef(in this));
             // StringArrayOverloader
