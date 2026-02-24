@@ -17,7 +17,7 @@ namespace Silk.NET.Slang
     public static class SlangOverloads
     {
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4922, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4931, Column 38 in slang.h")]
         public static unsafe ISlangBlob* SlangCreateBlob<T0>(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> data, nuint size) where T0 : unmanaged
         {
             // SpanOverloader
@@ -25,7 +25,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -33,7 +33,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -41,7 +41,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -49,7 +49,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -57,7 +57,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -65,7 +65,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -73,7 +73,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -81,7 +81,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -89,7 +89,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -97,7 +97,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -105,7 +105,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -113,7 +113,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -121,7 +121,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -129,7 +129,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -137,7 +137,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -145,7 +145,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -153,7 +153,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -161,7 +161,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -169,7 +169,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -177,7 +177,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -185,7 +185,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -193,7 +193,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -201,7 +201,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -209,7 +209,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -217,7 +217,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -225,7 +225,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -233,7 +233,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -241,7 +241,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -249,7 +249,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -257,7 +257,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -265,7 +265,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -273,7 +273,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -281,7 +281,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -289,7 +289,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -297,7 +297,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -305,7 +305,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -313,7 +313,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -321,7 +321,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -329,7 +329,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -337,7 +337,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -345,7 +345,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -353,7 +353,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -361,7 +361,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -369,7 +369,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -377,7 +377,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -385,7 +385,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -393,7 +393,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -401,7 +401,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -409,7 +409,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -417,7 +417,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -425,7 +425,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -433,7 +433,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -441,7 +441,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -449,7 +449,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -457,7 +457,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -465,7 +465,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -473,7 +473,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -481,7 +481,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -489,7 +489,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -497,7 +497,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -505,7 +505,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -513,7 +513,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -521,7 +521,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -529,7 +529,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -537,7 +537,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -545,7 +545,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -553,7 +553,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -561,7 +561,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -569,7 +569,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -577,7 +577,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -585,7 +585,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -593,7 +593,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -601,7 +601,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -609,7 +609,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -617,7 +617,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -625,7 +625,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -633,7 +633,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -641,7 +641,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -649,7 +649,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -657,7 +657,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -665,7 +665,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -673,7 +673,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -681,7 +681,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -689,7 +689,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -697,7 +697,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -705,7 +705,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -713,7 +713,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -721,7 +721,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -729,7 +729,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -737,7 +737,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -745,7 +745,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -753,7 +753,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4934, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4943, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromSource(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -761,7 +761,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -769,7 +769,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -777,7 +777,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -785,7 +785,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -793,7 +793,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -801,7 +801,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -809,7 +809,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -817,7 +817,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -825,7 +825,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -833,7 +833,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -841,7 +841,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -849,7 +849,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -857,7 +857,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -865,7 +865,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -873,7 +873,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -881,7 +881,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -889,7 +889,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -897,7 +897,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -905,7 +905,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -913,7 +913,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -921,7 +921,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -929,7 +929,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -937,7 +937,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -945,7 +945,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -953,7 +953,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -961,7 +961,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -969,7 +969,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -977,7 +977,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -985,7 +985,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -993,7 +993,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1001,7 +1001,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1009,7 +1009,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1017,7 +1017,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1025,7 +1025,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1033,7 +1033,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1041,7 +1041,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1049,7 +1049,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1057,7 +1057,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1065,7 +1065,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1073,7 +1073,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1081,7 +1081,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1089,7 +1089,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1097,7 +1097,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1105,7 +1105,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1113,7 +1113,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1121,7 +1121,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1129,7 +1129,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1137,7 +1137,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1145,7 +1145,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1153,7 +1153,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1161,7 +1161,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1169,7 +1169,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1177,7 +1177,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1185,7 +1185,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1193,7 +1193,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1201,7 +1201,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1209,7 +1209,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1217,7 +1217,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1225,7 +1225,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1233,7 +1233,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1241,7 +1241,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ISlangBlob** outDiagnostics)
         {
             // SpanOverloader
@@ -1249,7 +1249,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, ref ISlangBlob* outDiagnostics)
         {
             // SpanOverloader
@@ -1257,7 +1257,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ISlangBlob** outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1265,7 +1265,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4951, Column 42 in slang.h")]
+        [NativeName("Src", "Line 4960, Column 42 in slang.h")]
         public static unsafe IModule* SlangLoadModuleFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string moduleName, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string path, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, ref ISlangBlob* outDiagnostics) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1273,7 +1273,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
@@ -1281,7 +1281,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
@@ -1289,7 +1289,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
@@ -1297,7 +1297,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
@@ -1305,7 +1305,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1313,7 +1313,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1321,7 +1321,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1329,7 +1329,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1337,7 +1337,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1345,7 +1345,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1353,7 +1353,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1361,7 +1361,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, ISession* session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1369,7 +1369,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
@@ -1377,7 +1377,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
@@ -1385,7 +1385,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
@@ -1393,7 +1393,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
@@ -1401,7 +1401,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
@@ -1409,7 +1409,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
@@ -1417,7 +1417,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName)
         {
             // SpanOverloader
@@ -1425,7 +1425,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName)
         {
             // SpanOverloader
@@ -1433,7 +1433,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1441,7 +1441,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1449,7 +1449,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1457,7 +1457,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, long* outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1465,7 +1465,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1473,7 +1473,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1481,7 +1481,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte** outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1489,7 +1489,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4968, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4977, Column 38 in slang.h")]
         public static unsafe int SlangLoadModuleInfoFromIRBlob<T0>(this Slang thisApi, Span<ISession> session, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> source, nuint sourceSize, Span<long> outModuleVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleCompilerVersion, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte* outModuleName) where T0 : unmanaged
         {
             // SpanOverloader
@@ -1497,7 +1497,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4990, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4999, Column 38 in slang.h")]
         public static unsafe int SlangCreateGlobalSession2(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangGlobalSessionDesc> desc, IGlobalSession** outGlobalSession)
         {
             // SpanOverloader
@@ -1505,7 +1505,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 4990, Column 38 in slang.h")]
+        [NativeName("Src", "Line 4999, Column 38 in slang.h")]
         public static unsafe int SlangCreateGlobalSession2(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<SlangGlobalSessionDesc> desc, ref IGlobalSession* outGlobalSession)
         {
             // SpanOverloader
@@ -1513,7 +1513,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 5136, Column 38 in slang.h")]
+        [NativeName("Src", "Line 5145, Column 38 in slang.h")]
         public static unsafe int SlangCreateByteCodeRunner(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ByteCodeRunnerDesc> desc, IByteCodeRunner** outByteCodeRunner)
         {
             // SpanOverloader
@@ -1521,7 +1521,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 5136, Column 38 in slang.h")]
+        [NativeName("Src", "Line 5145, Column 38 in slang.h")]
         public static unsafe int SlangCreateByteCodeRunner(this Slang thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<ByteCodeRunnerDesc> desc, ref IByteCodeRunner* outByteCodeRunner)
         {
             // SpanOverloader
@@ -1529,7 +1529,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 5142, Column 1 in slang.h")]
+        [NativeName("Src", "Line 5151, Column 1 in slang.h")]
         public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ISlangBlob** outDisassemblyBlob)
         {
             // SpanOverloader
@@ -1537,7 +1537,7 @@ namespace Silk.NET.Slang
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 5142, Column 1 in slang.h")]
+        [NativeName("Src", "Line 5151, Column 1 in slang.h")]
         public static unsafe int SlangDisassembleByteCode(this Slang thisApi, Span<ISlangBlob> moduleBlob, ref ISlangBlob* outDisassemblyBlob)
         {
             // SpanOverloader

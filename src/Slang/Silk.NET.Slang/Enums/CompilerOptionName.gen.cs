@@ -296,7 +296,9 @@ namespace Silk.NET.Slang
         ReportDynamicDispatchSites = 0x8C,
         [NativeName("Name", "EnableMachineReadableDiagnostics")]
         EnableMachineReadableDiagnostics = 0x8D,
+        [NativeName("Name", "DiagnosticColor")]
+        DiagnosticColor = 0x8E,
         [NativeName("Name", "CountOf")]
-        CountOf = 0x8E,
+        CountOf = 0x8F,
     }
 }

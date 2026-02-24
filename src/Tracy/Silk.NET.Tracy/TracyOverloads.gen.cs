@@ -17,7 +17,7 @@ namespace Silk.NET.Tracy
     public static class TracyOverloads
     {
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 21, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 31, Column 16 in TracyC.h")]
         public static unsafe void TracySetThreadName(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -25,7 +25,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 227, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrcloc(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, uint color)
         {
             // SpanOverloader
@@ -33,7 +33,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 227, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrcloc(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, uint color)
         {
             // SpanOverloader
@@ -41,7 +41,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 227, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrcloc(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, uint color)
         {
             // SpanOverloader
@@ -49,7 +49,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 227, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrcloc(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, uint color)
         {
             // SpanOverloader
@@ -57,7 +57,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 214, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 227, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrcloc(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, uint color)
         {
             // SpanOverloader
@@ -65,7 +65,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -73,7 +73,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -81,7 +81,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -89,7 +89,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -97,7 +97,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -105,7 +105,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -113,7 +113,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -121,7 +121,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -129,7 +129,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -137,7 +137,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -145,7 +145,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -153,7 +153,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -161,7 +161,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -169,7 +169,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -177,7 +177,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -185,7 +185,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -193,7 +193,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -201,7 +201,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -209,7 +209,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 215, Column 20 in TracyC.h")]
+        [NativeName("Src", "Line 228, Column 20 in TracyC.h")]
         public static unsafe ulong TracyAllocSrclocName(this Tracy thisApi, uint line, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string source, nuint sourceSz, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string function, nuint functionSz, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz, uint color)
         {
             // SpanOverloader
@@ -217,7 +217,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 217, Column 25 in TracyC.h")]
+        [NativeName("Src", "Line 230, Column 25 in TracyC.h")]
         public static unsafe TracyCZoneContext TracyEmitZoneBegin(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<TracySourceLocationData> srcloc, int active)
         {
             // SpanOverloader
@@ -225,7 +225,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 218, Column 25 in TracyC.h")]
+        [NativeName("Src", "Line 231, Column 25 in TracyC.h")]
         public static unsafe TracyCZoneContext TracyEmitZoneBeginCallstack(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<TracySourceLocationData> srcloc, int depth, int active)
         {
             // SpanOverloader
@@ -233,7 +233,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 222, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 235, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitZoneText(this Tracy thisApi, TracyCZoneContext ctx, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt, nuint size)
         {
             // SpanOverloader
@@ -241,7 +241,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 223, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 236, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitZoneName(this Tracy thisApi, TracyCZoneContext ctx, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt, nuint size)
         {
             // SpanOverloader
@@ -249,7 +249,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 268, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 281, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAlloc<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int secure) where T0 : unmanaged
         {
             // SpanOverloader
@@ -257,7 +257,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 269, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 282, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocCallstack<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int depth, int secure) where T0 : unmanaged
         {
             // SpanOverloader
@@ -265,7 +265,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 270, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 283, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFree<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int secure) where T0 : unmanaged
         {
             // SpanOverloader
@@ -273,7 +273,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 271, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 284, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeCallstack<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int depth, int secure) where T0 : unmanaged
         {
             // SpanOverloader
@@ -281,7 +281,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 285, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocNamed(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -289,7 +289,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 285, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -297,7 +297,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 285, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -305,7 +305,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 272, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 285, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -313,7 +313,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 286, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocCallstackNamed(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -321,7 +321,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 286, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocCallstackNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -329,7 +329,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 286, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocCallstackNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -337,7 +337,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 273, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 286, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryAllocCallstackNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, nuint size, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -345,7 +345,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 287, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeNamed(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -353,7 +353,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 287, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -361,7 +361,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 287, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -369,7 +369,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 274, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 287, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -377,7 +377,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 288, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeCallstackNamed(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] void* ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -385,7 +385,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 288, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeCallstackNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -393,7 +393,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 288, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeCallstackNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -401,7 +401,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 275, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 288, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryFreeCallstackNamed<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> ptr, int depth, int secure, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string name) where T0 : unmanaged
         {
             // SpanOverloader
@@ -409,7 +409,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 276, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 289, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryDiscard(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, int secure)
         {
             // SpanOverloader
@@ -417,7 +417,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 277, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 290, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMemoryDiscardCallstack(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, int secure, int depth)
         {
             // SpanOverloader
@@ -425,39 +425,23 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 279, Column 16 in TracyC.h")]
-        public static unsafe void TracyEmitMessage(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt, nuint size, int callstack_depth)
+        [NativeName("Src", "Line 292, Column 16 in TracyC.h")]
+        public static unsafe void TracyEmitLogString(this Tracy thisApi, byte severity, int color, int callstack_depth, nuint size, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt)
         {
             // SpanOverloader
-            thisApi.TracyEmitMessage(in txt.GetPinnableReference(), size, callstack_depth);
+            thisApi.TracyEmitLogString(severity, color, callstack_depth, size, in txt.GetPinnableReference());
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 280, Column 16 in TracyC.h")]
-        public static unsafe void TracyEmitMessageL(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt, int callstack_depth)
+        [NativeName("Src", "Line 293, Column 16 in TracyC.h")]
+        public static unsafe void TracyEmitLogStringL(this Tracy thisApi, byte severity, int color, int callstack_depth, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt)
         {
             // SpanOverloader
-            thisApi.TracyEmitMessageL(in txt.GetPinnableReference(), callstack_depth);
+            thisApi.TracyEmitLogStringL(severity, color, callstack_depth, in txt.GetPinnableReference());
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 281, Column 16 in TracyC.h")]
-        public static unsafe void TracyEmitMessageC(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt, nuint size, uint color, int callstack_depth)
-        {
-            // SpanOverloader
-            thisApi.TracyEmitMessageC(in txt.GetPinnableReference(), size, color, callstack_depth);
-        }
-
-        /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 282, Column 16 in TracyC.h")]
-        public static unsafe void TracyEmitMessageLC(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt, uint color, int callstack_depth)
-        {
-            // SpanOverloader
-            thisApi.TracyEmitMessageLC(in txt.GetPinnableReference(), color, callstack_depth);
-        }
-
-        /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 302, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 313, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitFrameMark(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -465,7 +449,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 303, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 314, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitFrameMarkStart(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -473,7 +457,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 304, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 315, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitFrameMarkEnd(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name)
         {
             // SpanOverloader
@@ -481,7 +465,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 305, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 316, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitFrameImage<T0>(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<T0> image, ushort w, ushort h, byte offset, int flip) where T0 : unmanaged
         {
             // SpanOverloader
@@ -489,7 +473,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 314, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 325, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitPlot(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, double val)
         {
             // SpanOverloader
@@ -497,7 +481,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 315, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 326, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitPlotFloat(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, float val)
         {
             // SpanOverloader
@@ -505,7 +489,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 316, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 327, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitPlotInt(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, long val)
         {
             // SpanOverloader
@@ -513,7 +497,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 317, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 328, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitPlotConfig(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, int type, int step, int fill, uint color)
         {
             // SpanOverloader
@@ -521,7 +505,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 318, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 329, Column 16 in TracyC.h")]
         public static unsafe void TracyEmitMessageAppinfo(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> txt, nuint size)
         {
             // SpanOverloader
@@ -529,7 +513,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 350, Column 49 in TracyC.h")]
+        [NativeName("Src", "Line 361, Column 49 in TracyC.h")]
         public static unsafe TracyLockableContextData* TracyAnnounceLockableCtx(this Tracy thisApi, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<TracySourceLocationData> srcloc)
         {
             // SpanOverloader
@@ -537,7 +521,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 356, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 367, Column 16 in TracyC.h")]
         public static unsafe void TracyMarkLockableCtx(this Tracy thisApi, TracyLockableContextData* lockdata, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<TracySourceLocationData> srcloc)
         {
             // SpanOverloader
@@ -545,7 +529,7 @@ namespace Silk.NET.Tracy
         }
 
         /// <summary>To be documented.</summary>
-        [NativeName("Src", "Line 357, Column 16 in TracyC.h")]
+        [NativeName("Src", "Line 368, Column 16 in TracyC.h")]
         public static unsafe void TracyCustomNameLockableCtx(this Tracy thisApi, TracyLockableContextData* lockdata, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> name, nuint nameSz)
         {
             // SpanOverloader

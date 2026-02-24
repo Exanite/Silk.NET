@@ -9,8 +9,8 @@ using Silk.NET.Core.Attributes;
 
 namespace Silk.NET.Slang
 {
-    [NativeName("Name", "__AnonymousEnum_slang_L4118_C1")]
-    public enum AnonymousEnumSlangL4118C1 : int
+    [NativeName("Name", "__AnonymousEnum_slang_L4127_C1")]
+    public enum AnonymousEnumSlangL4127C1 : int
     {
         [NativeName("Name", "kSessionFlags_None")]
         KSessionFlagsNone = 0x0,
