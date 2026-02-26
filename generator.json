@@ -1081,7 +1081,7 @@
         {
             "profileName": "Tracy",
             "sources": [
-                "../Exanite.GameDev/native/Exanite.Tracy/include/Exanite/Tracy.h"
+                "../Exanite.GameDev/native/Exanite.Tracy/include/Exanite/Tracy/Tracy.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
@@ -1205,7 +1205,7 @@
         {
             "profileName": "FreeType",
             "sources": [
-                "../Exanite.GameDev/native/Exanite.FreeType/include/FreeType/freetype.h"
+                "../Exanite.GameDev/native/Exanite.FreeType/include/Exanite/FreeType/FreeType.h"
             ],
             "mode": "Clang",
             "cacheDir": "build/cache",
