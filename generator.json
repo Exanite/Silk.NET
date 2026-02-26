@@ -1223,6 +1223,7 @@
                     "-DFT_REQUIRE_HARFBUZZ=ON",
                     "-DFT2_BUILD_LIBRARY=ON",
                     "-DDLL_EXPORT=ON",
+                    "-I../Exanite.GameDev/cmake/FreeType/include",
                     "-I../Exanite.GameDev/native/freetype/include"
                 ],
                 "traverse": [
