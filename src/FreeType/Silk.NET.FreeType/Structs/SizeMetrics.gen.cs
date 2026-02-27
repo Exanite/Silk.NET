@@ -23,8 +23,8 @@ namespace Silk.NET.FreeType
         (
             ushort? xPpem = null,
             ushort? yPpem = null,
-            int? xScale = null,
-            int? yScale = null,
+            nint? xScale = null,
+            nint? yScale = null,
             int? ascender = null,
             int? descender = null,
             int? height = null,
@@ -86,12 +86,12 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "x_scale")]
-        public int XScale;
+        public nint XScale;
 
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "y_scale")]
-        public int YScale;
+        public nint YScale;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]

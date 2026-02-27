@@ -21,10 +21,10 @@ namespace Silk.NET.FreeType
     {
         public Matrix
         (
-            int? xx = null,
-            int? xy = null,
-            int? yx = null,
-            int? yy = null
+            nint? xx = null,
+            nint? xy = null,
+            nint? yx = null,
+            nint? yy = null
         ) : this()
         {
             if (xx is not null)
@@ -52,21 +52,21 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "xx")]
-        public int Xx;
+        public nint Xx;
 
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "xy")]
-        public int Xy;
+        public nint Xy;
 
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "yx")]
-        public int Yx;
+        public nint Yx;
 
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "yy")]
-        public int Yy;
+        public nint Yy;
     }
 }

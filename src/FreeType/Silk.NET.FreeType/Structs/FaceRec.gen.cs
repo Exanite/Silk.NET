@@ -21,11 +21,11 @@ namespace Silk.NET.FreeType
     {
         public FaceRec
         (
-            int? numFaces = null,
-            int? faceIndex = null,
-            int? faceFlags = null,
-            int? styleFlags = null,
-            int? numGlyphs = null,
+            nint? numFaces = null,
+            nint? faceIndex = null,
+            nint? faceFlags = null,
+            nint? styleFlags = null,
+            nint? numGlyphs = null,
             byte* familyName = null,
             byte* styleName = null,
             int? numFixedSizes = null,
@@ -214,27 +214,27 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "num_faces")]
-        public int NumFaces;
+        public nint NumFaces;
 
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "face_index")]
-        public int FaceIndex;
+        public nint FaceIndex;
 
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "face_flags")]
-        public int FaceFlags;
+        public nint FaceFlags;
 
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "style_flags")]
-        public int StyleFlags;
+        public nint StyleFlags;
 
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "num_glyphs")]
-        public int NumGlyphs;
+        public nint NumGlyphs;
 
         [NativeName("Type", "FT_String *")]
         [NativeName("Type.Name", "FT_String *")]

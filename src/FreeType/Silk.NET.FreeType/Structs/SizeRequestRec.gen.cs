@@ -22,8 +22,8 @@ namespace Silk.NET.FreeType
         public SizeRequestRec
         (
             SizeRequestType? type = null,
-            int? width = null,
-            int? height = null,
+            nint? width = null,
+            nint? height = null,
             uint? horiResolution = null,
             uint? vertResolution = null
         ) : this()
@@ -63,12 +63,12 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "width")]
-        public int Width;
+        public nint Width;
 
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "height")]
-        public int Height;
+        public nint Height;
 
         [NativeName("Type", "FT_UInt")]
         [NativeName("Type.Name", "FT_UInt")]

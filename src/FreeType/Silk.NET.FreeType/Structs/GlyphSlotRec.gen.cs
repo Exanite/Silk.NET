@@ -27,8 +27,8 @@ namespace Silk.NET.FreeType
             uint? glyphIndex = null,
             Generic? generic = null,
             GlyphMetrics? metrics = null,
-            int? linearHoriAdvance = null,
-            int? linearVertAdvance = null,
+            nint? linearHoriAdvance = null,
+            nint? linearVertAdvance = null,
             Vector? advance = null,
             GlyphFormat? format = null,
             Bitmap? bitmap = null,
@@ -190,12 +190,12 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "linearHoriAdvance")]
-        public int LinearHoriAdvance;
+        public nint LinearHoriAdvance;
 
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "linearVertAdvance")]
-        public int LinearVertAdvance;
+        public nint LinearVertAdvance;
 
         [NativeName("Type", "FT_Vector")]
         [NativeName("Type.Name", "FT_Vector")]
