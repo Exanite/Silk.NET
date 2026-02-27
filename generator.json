@@ -1227,10 +1227,11 @@
                     "-I../Exanite.GameDev/native/freetype/include"
                 ],
                 "traverse": [
+                    "../Exanite.GameDev/cmake/FreeType/include/**/*.h",
                     "../Exanite.GameDev/native/freetype/include/**/*.h"
                 ],
                 "classes": {
-                    "freetype.h": "[Core]FreeType"
+                    "FreeType.h": "[Core]FreeType"
                 }
             },
             "exclude": [
@@ -1284,7 +1285,7 @@
             "rename": {},
             "bakery": {
                 "profileNames": [
-                    "freetype"
+                    "FreeType"
                 ]
             },
             "output": {
