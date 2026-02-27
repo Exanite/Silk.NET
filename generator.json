@@ -1280,7 +1280,9 @@
                 "ft_render_mode_mono",
                 "ft_kerning_default",
                 "ft_kerning_unfitted",
-                "ft_kerning_unscaled"
+                "ft_kerning_unscaled",
+                "FT_Stream_IoFunc",
+                "FT_StreamRec_"
             ],
             "rename": {},
             "bakery": {
@@ -1308,7 +1310,10 @@
             },
             "typeMaps": [
                 {
-                    "$include.commonTypeMap": "build/csharp_typemap.json"
+                    "$include.commonTypeMap": "build/csharp_typemap.json",
+                },
+                {
+                    "FT_StreamRec_*": "void*"
                 }
             ]
         },

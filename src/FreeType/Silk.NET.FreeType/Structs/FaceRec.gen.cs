@@ -47,7 +47,7 @@ namespace Silk.NET.FreeType
             CharMapRec* charmap = null,
             DriverRec* driver = null,
             MemoryRec* memory = null,
-            StreamRec* stream = null,
+            void* stream = null,
             ListRec? sizesList = null,
             Generic? autohint = null,
             void* extensions = null,
@@ -344,7 +344,7 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Stream")]
         [NativeName("Type.Name", "FT_Stream")]
         [NativeName("Name", "stream")]
-        public StreamRec* Stream;
+        public void* Stream;
 
         [NativeName("Type", "FT_ListRec")]
         [NativeName("Type.Name", "FT_ListRec")]

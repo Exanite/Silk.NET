@@ -25,7 +25,7 @@ namespace Silk.NET.FreeType
             byte* memoryBase = null,
             nint? memorySize = null,
             byte* pathname = null,
-            StreamRec* stream = null,
+            void* stream = null,
             ModuleRec* driver = null,
             int? numParams = null,
             Parameter* @params = null
@@ -96,7 +96,7 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Stream")]
         [NativeName("Type.Name", "FT_Stream")]
         [NativeName("Name", "stream")]
-        public StreamRec* Stream;
+        public void* Stream;
 
         [NativeName("Type", "FT_Module")]
         [NativeName("Type.Name", "FT_Module")]
