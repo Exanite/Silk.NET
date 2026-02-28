@@ -253,82 +253,82 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* filepathname, nint face_index, FaceRec** aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* filepathname, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* filepathname, nint face_index, ref FaceRec* aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* filepathname, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname, nint face_index, FaceRec** aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname, nint face_index, ref FaceRec* aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte filepathname, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string filepathname, nint face_index, FaceRec** aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string filepathname, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Face")]
-        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string filepathname, nint face_index, ref FaceRec* aface);
+        public unsafe partial int NewFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string filepathname, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* file_base, nint file_size, nint face_index, FaceRec** aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* file_base, long file_size, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* file_base, nint file_size, nint face_index, ref FaceRec* aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] byte* file_base, long file_size, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_base, nint file_size, nint face_index, FaceRec** aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_base, long file_size, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_base, nint file_size, nint face_index, ref FaceRec* aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly byte file_base, long file_size, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string file_base, nint file_size, nint face_index, FaceRec** aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string file_base, long file_size, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_New_Memory_Face")]
-        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string file_base, nint file_size, nint face_index, ref FaceRec* aface);
+        public unsafe partial int NewMemoryFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In), UnmanagedType(Silk.NET.Core.Native.UnmanagedType.LPUTF8Str)] string file_base, long file_size, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Open_Face")]
-        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] OpenArgs* args, nint face_index, FaceRec** aface);
+        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] OpenArgs* args, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Open_Face")]
-        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] OpenArgs* args, nint face_index, ref FaceRec* aface);
+        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] OpenArgs* args, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Open_Face")]
-        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs args, nint face_index, FaceRec** aface);
+        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs args, long face_index, FaceRec** aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Open_Face")]
-        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs args, nint face_index, ref FaceRec* aface);
+        public unsafe partial int OpenFace(LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ref readonly OpenArgs args, long face_index, ref FaceRec* aface);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2789, Column 3 in freetype.h")]
@@ -433,12 +433,12 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3139, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Set_Char_Size")]
-        public unsafe partial int SetCharSize(FaceRec* face, nint char_width, nint char_height, uint horz_resolution, uint vert_resolution);
+        public unsafe partial int SetCharSize(FaceRec* face, long char_width, long char_height, uint horz_resolution, uint vert_resolution);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3139, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Set_Char_Size")]
-        public partial int SetCharSize(ref FaceRec face, nint char_width, nint char_height, uint horz_resolution, uint vert_resolution);
+        public partial int SetCharSize(ref FaceRec face, long char_width, long char_height, uint horz_resolution, uint vert_resolution);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3176, Column 3 in freetype.h")]
@@ -463,12 +463,12 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3281, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Load_Char")]
-        public unsafe partial int LoadChar(FaceRec* face, nuint char_code, int load_flags);
+        public unsafe partial int LoadChar(FaceRec* face, ulong char_code, int load_flags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3281, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Load_Char")]
-        public partial int LoadChar(ref FaceRec face, nuint char_code, int load_flags);
+        public partial int LoadChar(ref FaceRec face, ulong char_code, int load_flags);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3683, Column 3 in freetype.h")]
@@ -583,22 +583,22 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4066, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Track_Kerning")]
-        public unsafe partial int GetTrackKerning(FaceRec* face, nint point_size, int degree, nint* akerning);
+        public unsafe partial int GetTrackKerning(FaceRec* face, long point_size, int degree, long* akerning);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4066, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Track_Kerning")]
-        public unsafe partial int GetTrackKerning(FaceRec* face, nint point_size, int degree, ref nint akerning);
+        public unsafe partial int GetTrackKerning(FaceRec* face, long point_size, int degree, ref long akerning);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4066, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Track_Kerning")]
-        public unsafe partial int GetTrackKerning(ref FaceRec face, nint point_size, int degree, nint* akerning);
+        public unsafe partial int GetTrackKerning(ref FaceRec face, long point_size, int degree, long* akerning);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4066, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Track_Kerning")]
-        public partial int GetTrackKerning(ref FaceRec face, nint point_size, int degree, ref nint akerning);
+        public partial int GetTrackKerning(ref FaceRec face, long point_size, int degree, ref long akerning);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4110, Column 3 in freetype.h")]
@@ -643,52 +643,52 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4198, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Char_Index")]
-        public unsafe partial uint GetCharIndex(FaceRec* face, nuint charcode);
+        public unsafe partial uint GetCharIndex(FaceRec* face, ulong charcode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4198, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Char_Index")]
-        public partial uint GetCharIndex(ref FaceRec face, nuint charcode);
+        public partial uint GetCharIndex(ref FaceRec face, ulong charcode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4253, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_First_Char")]
-        public unsafe partial nuint GetFirstChar(FaceRec* face, uint* agindex);
+        public unsafe partial ulong GetFirstChar(FaceRec* face, uint* agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4253, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_First_Char")]
-        public unsafe partial nuint GetFirstChar(FaceRec* face, ref uint agindex);
+        public unsafe partial ulong GetFirstChar(FaceRec* face, ref uint agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4253, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_First_Char")]
-        public unsafe partial nuint GetFirstChar(ref FaceRec face, uint* agindex);
+        public unsafe partial ulong GetFirstChar(ref FaceRec face, uint* agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4253, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_First_Char")]
-        public partial nuint GetFirstChar(ref FaceRec face, ref uint agindex);
+        public partial ulong GetFirstChar(ref FaceRec face, ref uint agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4290, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Next_Char")]
-        public unsafe partial nuint GetNextChar(FaceRec* face, nuint char_code, uint* agindex);
+        public unsafe partial ulong GetNextChar(FaceRec* face, ulong char_code, uint* agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4290, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Next_Char")]
-        public unsafe partial nuint GetNextChar(FaceRec* face, nuint char_code, ref uint agindex);
+        public unsafe partial ulong GetNextChar(FaceRec* face, ulong char_code, ref uint agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4290, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Next_Char")]
-        public unsafe partial nuint GetNextChar(ref FaceRec face, nuint char_code, uint* agindex);
+        public unsafe partial ulong GetNextChar(ref FaceRec face, ulong char_code, uint* agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4290, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Get_Next_Char")]
-        public partial nuint GetNextChar(ref FaceRec face, nuint char_code, ref uint agindex);
+        public partial ulong GetNextChar(ref FaceRec face, ulong char_code, ref uint agindex);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4395, Column 3 in freetype.h")]
@@ -1115,22 +1115,22 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4793, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetCharVariantIndex")]
-        public unsafe partial uint FaceGetCharVariantIndex(FaceRec* face, nuint charcode, nuint variantSelector);
+        public unsafe partial uint FaceGetCharVariantIndex(FaceRec* face, ulong charcode, ulong variantSelector);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4793, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetCharVariantIndex")]
-        public partial uint FaceGetCharVariantIndex(ref FaceRec face, nuint charcode, nuint variantSelector);
+        public partial uint FaceGetCharVariantIndex(ref FaceRec face, ulong charcode, ulong variantSelector);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4830, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetCharVariantIsDefault")]
-        public unsafe partial int FaceGetCharVariantIsDefault(FaceRec* face, nuint charcode, nuint variantSelector);
+        public unsafe partial int FaceGetCharVariantIsDefault(FaceRec* face, ulong charcode, ulong variantSelector);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4830, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetCharVariantIsDefault")]
-        public partial int FaceGetCharVariantIsDefault(ref FaceRec face, nuint charcode, nuint variantSelector);
+        public partial int FaceGetCharVariantIsDefault(ref FaceRec face, ulong charcode, ulong variantSelector);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4862, Column 3 in freetype.h")]
@@ -1145,52 +1145,52 @@ namespace Silk.NET.FreeType
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4896, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetVariantsOfChar")]
-        public unsafe partial uint* FaceGetVariantsOfChar(FaceRec* face, nuint charcode);
+        public unsafe partial uint* FaceGetVariantsOfChar(FaceRec* face, ulong charcode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4896, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetVariantsOfChar")]
-        public unsafe partial uint* FaceGetVariantsOfChar(ref FaceRec face, nuint charcode);
+        public unsafe partial uint* FaceGetVariantsOfChar(ref FaceRec face, ulong charcode);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4931, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetCharsOfVariant")]
-        public unsafe partial uint* FaceGetCharsOfVariant(FaceRec* face, nuint variantSelector);
+        public unsafe partial uint* FaceGetCharsOfVariant(FaceRec* face, ulong variantSelector);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4931, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_Face_GetCharsOfVariant")]
-        public unsafe partial uint* FaceGetCharsOfVariant(ref FaceRec face, nuint variantSelector);
+        public unsafe partial uint* FaceGetCharsOfVariant(ref FaceRec face, ulong variantSelector);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4998, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_MulDiv")]
-        public partial nint MulDiv(nint a, nint b, nint c);
+        public partial long MulDiv(long a, long b, long c);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5034, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_MulFix")]
-        public partial nint MulFix(nint a, nint b);
+        public partial long MulFix(long a, long b);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5058, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_DivFix")]
-        public partial nint DivFix(nint a, nint b);
+        public partial long DivFix(long a, long b);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5082, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_RoundFix")]
-        public partial nint RoundFix(nint a);
+        public partial long RoundFix(long a);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5104, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_CeilFix")]
-        public partial nint CeilFix(nint a);
+        public partial long CeilFix(long a);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5123, Column 3 in freetype.h")]
         [NativeApi(EntryPoint = "FT_FloorFix")]
-        public partial nint FloorFix(nint a);
+        public partial long FloorFix(long a);
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 5146, Column 3 in freetype.h")]

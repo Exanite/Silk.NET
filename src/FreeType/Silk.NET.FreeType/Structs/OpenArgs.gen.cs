@@ -23,7 +23,7 @@ namespace Silk.NET.FreeType
         (
             uint? flags = null,
             byte* memoryBase = null,
-            nint? memorySize = null,
+            long? memorySize = null,
             byte* pathname = null,
             void* stream = null,
             ModuleRec* driver = null,
@@ -86,7 +86,7 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Long")]
         [NativeName("Type.Name", "FT_Long")]
         [NativeName("Name", "memory_size")]
-        public nint MemorySize;
+        public long MemorySize;
 
         [NativeName("Type", "FT_String *")]
         [NativeName("Type.Name", "FT_String *")]

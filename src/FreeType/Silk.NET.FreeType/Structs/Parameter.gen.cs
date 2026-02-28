@@ -21,7 +21,7 @@ namespace Silk.NET.FreeType
     {
         public Parameter
         (
-            nuint? tag = null,
+            ulong? tag = null,
             void* data = null
         ) : this()
         {
@@ -40,7 +40,7 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_ULong")]
         [NativeName("Type.Name", "FT_ULong")]
         [NativeName("Name", "tag")]
-        public nuint Tag;
+        public ulong Tag;
 
         [NativeName("Type", "FT_Pointer")]
         [NativeName("Type.Name", "FT_Pointer")]

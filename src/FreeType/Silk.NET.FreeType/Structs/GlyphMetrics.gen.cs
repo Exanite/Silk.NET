@@ -21,14 +21,14 @@ namespace Silk.NET.FreeType
     {
         public GlyphMetrics
         (
-            int? width = null,
-            int? height = null,
-            int? horiBearingX = null,
-            int? horiBearingY = null,
-            int? horiAdvance = null,
-            int? vertBearingX = null,
-            int? vertBearingY = null,
-            int? vertAdvance = null
+            long? width = null,
+            long? height = null,
+            long? horiBearingX = null,
+            long? horiBearingY = null,
+            long? horiAdvance = null,
+            long? vertBearingX = null,
+            long? vertBearingY = null,
+            long? vertAdvance = null
         ) : this()
         {
             if (width is not null)
@@ -76,41 +76,41 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "width")]
-        public int Width;
+        public long Width;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "height")]
-        public int Height;
+        public long Height;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "horiBearingX")]
-        public int HoriBearingX;
+        public long HoriBearingX;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "horiBearingY")]
-        public int HoriBearingY;
+        public long HoriBearingY;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "horiAdvance")]
-        public int HoriAdvance;
+        public long HoriAdvance;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "vertBearingX")]
-        public int VertBearingX;
+        public long VertBearingX;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "vertBearingY")]
-        public int VertBearingY;
+        public long VertBearingY;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "vertAdvance")]
-        public int VertAdvance;
+        public long VertAdvance;
     }
 }

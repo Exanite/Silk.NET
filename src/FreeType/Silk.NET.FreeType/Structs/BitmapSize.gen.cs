@@ -23,9 +23,9 @@ namespace Silk.NET.FreeType
         (
             short? height = null,
             short? width = null,
-            int? size = null,
-            int? xPpem = null,
-            int? yPpem = null
+            long? size = null,
+            long? xPpem = null,
+            long? yPpem = null
         ) : this()
         {
             if (height is not null)
@@ -68,16 +68,16 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "size")]
-        public int Size;
+        public long Size;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "x_ppem")]
-        public int XPpem;
+        public long XPpem;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "y_ppem")]
-        public int YPpem;
+        public long YPpem;
     }
 }

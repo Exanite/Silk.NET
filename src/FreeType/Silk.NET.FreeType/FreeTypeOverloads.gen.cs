@@ -18,7 +18,7 @@ namespace Silk.NET.FreeType
     {
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
-        public static unsafe int NewFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> filepathname, nint face_index, FaceRec** aface)
+        public static unsafe int NewFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> filepathname, long face_index, FaceRec** aface)
         {
             // SpanOverloader
             return thisApi.NewFace(library, in filepathname.GetPinnableReference(), face_index, aface);
@@ -26,7 +26,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2574, Column 3 in freetype.h")]
-        public static unsafe int NewFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> filepathname, nint face_index, ref FaceRec* aface)
+        public static unsafe int NewFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> filepathname, long face_index, ref FaceRec* aface)
         {
             // SpanOverloader
             return thisApi.NewFace(library, in filepathname.GetPinnableReference(), face_index, ref aface);
@@ -34,7 +34,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
-        public static unsafe int NewMemoryFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> file_base, nint file_size, nint face_index, FaceRec** aface)
+        public static unsafe int NewMemoryFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> file_base, long file_size, long face_index, FaceRec** aface)
         {
             // SpanOverloader
             return thisApi.NewMemoryFace(library, in file_base.GetPinnableReference(), file_size, face_index, aface);
@@ -42,7 +42,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2614, Column 3 in freetype.h")]
-        public static unsafe int NewMemoryFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> file_base, nint file_size, nint face_index, ref FaceRec* aface)
+        public static unsafe int NewMemoryFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<byte> file_base, long file_size, long face_index, ref FaceRec* aface)
         {
             // SpanOverloader
             return thisApi.NewMemoryFace(library, in file_base.GetPinnableReference(), file_size, face_index, ref aface);
@@ -50,7 +50,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
-        public static unsafe int OpenFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<OpenArgs> args, nint face_index, FaceRec** aface)
+        public static unsafe int OpenFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<OpenArgs> args, long face_index, FaceRec** aface)
         {
             // SpanOverloader
             return thisApi.OpenFace(library, in args.GetPinnableReference(), face_index, aface);
@@ -58,7 +58,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 2763, Column 3 in freetype.h")]
-        public static unsafe int OpenFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<OpenArgs> args, nint face_index, ref FaceRec* aface)
+        public static unsafe int OpenFace(this FreeType thisApi, LibraryRec* library, [Flow(Silk.NET.Core.Native.FlowDirection.In)] ReadOnlySpan<OpenArgs> args, long face_index, ref FaceRec* aface)
         {
             // SpanOverloader
             return thisApi.OpenFace(library, in args.GetPinnableReference(), face_index, ref aface);
@@ -170,7 +170,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3139, Column 3 in freetype.h")]
-        public static unsafe int SetCharSize(this FreeType thisApi, Span<FaceRec> face, nint char_width, nint char_height, uint horz_resolution, uint vert_resolution)
+        public static unsafe int SetCharSize(this FreeType thisApi, Span<FaceRec> face, long char_width, long char_height, uint horz_resolution, uint vert_resolution)
         {
             // SpanOverloader
             return thisApi.SetCharSize(ref face.GetPinnableReference(), char_width, char_height, horz_resolution, vert_resolution);
@@ -194,7 +194,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 3281, Column 3 in freetype.h")]
-        public static unsafe int LoadChar(this FreeType thisApi, Span<FaceRec> face, nuint char_code, int load_flags)
+        public static unsafe int LoadChar(this FreeType thisApi, Span<FaceRec> face, ulong char_code, int load_flags)
         {
             // SpanOverloader
             return thisApi.LoadChar(ref face.GetPinnableReference(), char_code, load_flags);
@@ -346,7 +346,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4066, Column 3 in freetype.h")]
-        public static unsafe int GetTrackKerning(this FreeType thisApi, FaceRec* face, nint point_size, int degree, Span<nint> akerning)
+        public static unsafe int GetTrackKerning(this FreeType thisApi, FaceRec* face, long point_size, int degree, Span<long> akerning)
         {
             // SpanOverloader
             return thisApi.GetTrackKerning(face, point_size, degree, ref akerning.GetPinnableReference());
@@ -354,7 +354,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4066, Column 3 in freetype.h")]
-        public static unsafe int GetTrackKerning(this FreeType thisApi, Span<FaceRec> face, nint point_size, int degree, nint* akerning)
+        public static unsafe int GetTrackKerning(this FreeType thisApi, Span<FaceRec> face, long point_size, int degree, long* akerning)
         {
             // SpanOverloader
             return thisApi.GetTrackKerning(ref face.GetPinnableReference(), point_size, degree, akerning);
@@ -362,7 +362,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4066, Column 3 in freetype.h")]
-        public static unsafe int GetTrackKerning(this FreeType thisApi, Span<FaceRec> face, nint point_size, int degree, Span<nint> akerning)
+        public static unsafe int GetTrackKerning(this FreeType thisApi, Span<FaceRec> face, long point_size, int degree, Span<long> akerning)
         {
             // SpanOverloader
             return thisApi.GetTrackKerning(ref face.GetPinnableReference(), point_size, degree, ref akerning.GetPinnableReference());
@@ -410,7 +410,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4198, Column 3 in freetype.h")]
-        public static unsafe uint GetCharIndex(this FreeType thisApi, Span<FaceRec> face, nuint charcode)
+        public static unsafe uint GetCharIndex(this FreeType thisApi, Span<FaceRec> face, ulong charcode)
         {
             // SpanOverloader
             return thisApi.GetCharIndex(ref face.GetPinnableReference(), charcode);
@@ -418,7 +418,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4253, Column 3 in freetype.h")]
-        public static unsafe nuint GetFirstChar(this FreeType thisApi, FaceRec* face, Span<uint> agindex)
+        public static unsafe ulong GetFirstChar(this FreeType thisApi, FaceRec* face, Span<uint> agindex)
         {
             // SpanOverloader
             return thisApi.GetFirstChar(face, ref agindex.GetPinnableReference());
@@ -426,7 +426,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4253, Column 3 in freetype.h")]
-        public static unsafe nuint GetFirstChar(this FreeType thisApi, Span<FaceRec> face, uint* agindex)
+        public static unsafe ulong GetFirstChar(this FreeType thisApi, Span<FaceRec> face, uint* agindex)
         {
             // SpanOverloader
             return thisApi.GetFirstChar(ref face.GetPinnableReference(), agindex);
@@ -434,7 +434,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4253, Column 3 in freetype.h")]
-        public static unsafe nuint GetFirstChar(this FreeType thisApi, Span<FaceRec> face, Span<uint> agindex)
+        public static unsafe ulong GetFirstChar(this FreeType thisApi, Span<FaceRec> face, Span<uint> agindex)
         {
             // SpanOverloader
             return thisApi.GetFirstChar(ref face.GetPinnableReference(), ref agindex.GetPinnableReference());
@@ -442,7 +442,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4290, Column 3 in freetype.h")]
-        public static unsafe nuint GetNextChar(this FreeType thisApi, FaceRec* face, nuint char_code, Span<uint> agindex)
+        public static unsafe ulong GetNextChar(this FreeType thisApi, FaceRec* face, ulong char_code, Span<uint> agindex)
         {
             // SpanOverloader
             return thisApi.GetNextChar(face, char_code, ref agindex.GetPinnableReference());
@@ -450,7 +450,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4290, Column 3 in freetype.h")]
-        public static unsafe nuint GetNextChar(this FreeType thisApi, Span<FaceRec> face, nuint char_code, uint* agindex)
+        public static unsafe ulong GetNextChar(this FreeType thisApi, Span<FaceRec> face, ulong char_code, uint* agindex)
         {
             // SpanOverloader
             return thisApi.GetNextChar(ref face.GetPinnableReference(), char_code, agindex);
@@ -458,7 +458,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4290, Column 3 in freetype.h")]
-        public static unsafe nuint GetNextChar(this FreeType thisApi, Span<FaceRec> face, nuint char_code, Span<uint> agindex)
+        public static unsafe ulong GetNextChar(this FreeType thisApi, Span<FaceRec> face, ulong char_code, Span<uint> agindex)
         {
             // SpanOverloader
             return thisApi.GetNextChar(ref face.GetPinnableReference(), char_code, ref agindex.GetPinnableReference());
@@ -1066,7 +1066,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4793, Column 3 in freetype.h")]
-        public static unsafe uint FaceGetCharVariantIndex(this FreeType thisApi, Span<FaceRec> face, nuint charcode, nuint variantSelector)
+        public static unsafe uint FaceGetCharVariantIndex(this FreeType thisApi, Span<FaceRec> face, ulong charcode, ulong variantSelector)
         {
             // SpanOverloader
             return thisApi.FaceGetCharVariantIndex(ref face.GetPinnableReference(), charcode, variantSelector);
@@ -1074,7 +1074,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4830, Column 3 in freetype.h")]
-        public static unsafe int FaceGetCharVariantIsDefault(this FreeType thisApi, Span<FaceRec> face, nuint charcode, nuint variantSelector)
+        public static unsafe int FaceGetCharVariantIsDefault(this FreeType thisApi, Span<FaceRec> face, ulong charcode, ulong variantSelector)
         {
             // SpanOverloader
             return thisApi.FaceGetCharVariantIsDefault(ref face.GetPinnableReference(), charcode, variantSelector);
@@ -1090,7 +1090,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4896, Column 3 in freetype.h")]
-        public static unsafe uint* FaceGetVariantsOfChar(this FreeType thisApi, Span<FaceRec> face, nuint charcode)
+        public static unsafe uint* FaceGetVariantsOfChar(this FreeType thisApi, Span<FaceRec> face, ulong charcode)
         {
             // SpanOverloader
             return thisApi.FaceGetVariantsOfChar(ref face.GetPinnableReference(), charcode);
@@ -1098,7 +1098,7 @@ namespace Silk.NET.FreeType
 
         /// <summary>To be documented.</summary>
         [NativeName("Src", "Line 4931, Column 3 in freetype.h")]
-        public static unsafe uint* FaceGetCharsOfVariant(this FreeType thisApi, Span<FaceRec> face, nuint variantSelector)
+        public static unsafe uint* FaceGetCharsOfVariant(this FreeType thisApi, Span<FaceRec> face, ulong variantSelector)
         {
             // SpanOverloader
             return thisApi.FaceGetCharsOfVariant(ref face.GetPinnableReference(), variantSelector);

@@ -27,8 +27,8 @@ namespace Silk.NET.FreeType
             uint? glyphIndex = null,
             Generic? generic = null,
             GlyphMetrics? metrics = null,
-            nint? linearHoriAdvance = null,
-            nint? linearVertAdvance = null,
+            long? linearHoriAdvance = null,
+            long? linearVertAdvance = null,
             Vector? advance = null,
             GlyphFormat? format = null,
             Bitmap? bitmap = null,
@@ -39,8 +39,8 @@ namespace Silk.NET.FreeType
             SubGlyphRec* subglyphs = null,
             void* controlData = null,
             int? controlLen = null,
-            int? lsbDelta = null,
-            int? rsbDelta = null,
+            long? lsbDelta = null,
+            long? rsbDelta = null,
             void* other = null,
             SlotInternalRec* @internal = null
         ) : this()
@@ -190,12 +190,12 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "linearHoriAdvance")]
-        public nint LinearHoriAdvance;
+        public long LinearHoriAdvance;
 
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "linearVertAdvance")]
-        public nint LinearVertAdvance;
+        public long LinearVertAdvance;
 
         [NativeName("Type", "FT_Vector")]
         [NativeName("Type.Name", "FT_Vector")]
@@ -250,12 +250,12 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "lsb_delta")]
-        public int LsbDelta;
+        public long LsbDelta;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "rsb_delta")]
-        public int RsbDelta;
+        public long RsbDelta;
 
         [NativeName("Type", "void *")]
         [NativeName("Type.Name", "void *")]

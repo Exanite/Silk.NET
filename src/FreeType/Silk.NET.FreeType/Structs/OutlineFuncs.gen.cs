@@ -26,7 +26,7 @@ namespace Silk.NET.FreeType
             PfnOutlineConicToFunc? conicTo = null,
             PfnOutlineCubicToFunc? cubicTo = null,
             int? shift = null,
-            int? delta = null
+            long? delta = null
         ) : this()
         {
             if (moveTo is not null)
@@ -89,6 +89,6 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "delta")]
-        public int Delta;
+        public long Delta;
     }
 }

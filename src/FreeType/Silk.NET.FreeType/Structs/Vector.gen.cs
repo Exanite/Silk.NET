@@ -21,8 +21,8 @@ namespace Silk.NET.FreeType
     {
         public Vector
         (
-            int? x = null,
-            int? y = null
+            long? x = null,
+            long? y = null
         ) : this()
         {
             if (x is not null)
@@ -40,11 +40,11 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "x")]
-        public int X;
+        public long X;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "y")]
-        public int Y;
+        public long Y;
     }
 }

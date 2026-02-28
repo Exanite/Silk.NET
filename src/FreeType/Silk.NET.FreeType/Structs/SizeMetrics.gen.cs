@@ -23,12 +23,12 @@ namespace Silk.NET.FreeType
         (
             ushort? xPpem = null,
             ushort? yPpem = null,
-            nint? xScale = null,
-            nint? yScale = null,
-            int? ascender = null,
-            int? descender = null,
-            int? height = null,
-            int? maxAdvance = null
+            long? xScale = null,
+            long? yScale = null,
+            long? ascender = null,
+            long? descender = null,
+            long? height = null,
+            long? maxAdvance = null
         ) : this()
         {
             if (xPpem is not null)
@@ -86,31 +86,31 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "x_scale")]
-        public nint XScale;
+        public long XScale;
 
         [NativeName("Type", "FT_Fixed")]
         [NativeName("Type.Name", "FT_Fixed")]
         [NativeName("Name", "y_scale")]
-        public nint YScale;
+        public long YScale;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "ascender")]
-        public int Ascender;
+        public long Ascender;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "descender")]
-        public int Descender;
+        public long Descender;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "height")]
-        public int Height;
+        public long Height;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "max_advance")]
-        public int MaxAdvance;
+        public long MaxAdvance;
     }
 }

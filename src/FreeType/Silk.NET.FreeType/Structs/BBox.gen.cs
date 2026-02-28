@@ -21,10 +21,10 @@ namespace Silk.NET.FreeType
     {
         public BBox
         (
-            int? xMin = null,
-            int? yMin = null,
-            int? xMax = null,
-            int? yMax = null
+            long? xMin = null,
+            long? yMin = null,
+            long? xMax = null,
+            long? yMax = null
         ) : this()
         {
             if (xMin is not null)
@@ -52,21 +52,21 @@ namespace Silk.NET.FreeType
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "xMin")]
-        public int XMin;
+        public long XMin;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "yMin")]
-        public int YMin;
+        public long YMin;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "xMax")]
-        public int XMax;
+        public long XMax;
 
         [NativeName("Type", "FT_Pos")]
         [NativeName("Type.Name", "FT_Pos")]
         [NativeName("Name", "yMax")]
-        public int YMax;
+        public long YMax;
     }
 }
